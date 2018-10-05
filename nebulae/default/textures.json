@@ -1789,5 +1789,13 @@
 		"textureCoords" : [[[0,0], [1,0], [1,1], [0,1]]],
 		"minResolution" : 0.2169148018,
 		"maxBrightness" : 12.8
-	}]
+	},
+	{
+		"imagecredits" : {"short" : "Sun Shuwei and Wang Lingyi"},
+		"imageUrl" : "n2174.png",
+		"worldCoords" : [[[92.9156,20.1659], [92.0236,20.1609], [92.0166,21.0005], [92.9121,21.0035]]],
+		"textureCoords" : [[[0,0], [1,0], [1,1], [0,1]]],
+		"minResolution" : 0.5,
+		"maxBrightness" : 14.2
+}]
 }
