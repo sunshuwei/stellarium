@@ -639,34 +639,10 @@
 	},
 	{
 		"imageCredits": {"short" : "Grasslands Observatory", "infoUrl": "http://www.grasslands.org/"},
-		"imageUrl" : "m84.png",
-		"worldCoords" : [[[-173.6670, 12.8150], [-173.8070, 12.8150], [-173.8080, 12.9530], [-173.6680, 12.9530]]],
-		"textureCoords" : [[[0,0], [1,0], [1,1], [0,1]]],
-		"minResolution" : 0.1290314248,
-		"maxBrightness" : 13.2
-	},
-	{
-		"imageCredits": {"short" : "Grasslands Observatory", "infoUrl": "http://www.grasslands.org/"},
 		"imageUrl" : "m85.png",
 		"worldCoords" : [[[-173.5890, 18.1342], [-173.7150, 18.1342], [-173.7151, 18.2540], [-173.5889, 18.2540]]],
 		"textureCoords" : [[[0,0], [1,0], [1,1], [0,1]]],
 		"minResolution" : 0.1199523825,
-		"maxBrightness" : 13.0
-	},
-	{
-		"imageCredits": {"short" : "Grasslands Observatory", "infoUrl": "http://www.grasslands.org/"},
-		"imageUrl" : "m86.png",
-		"worldCoords" : [[[-173.3930, 12.8900], [-173.5030, 12.8870], [-173.5060, 12.9960], [-173.3960, 12.9990]]],
-		"textureCoords" : [[[0,0], [1,0], [1,1], [0,1]]],
-		"minResolution" : 0.07602548162,
-		"maxBrightness" : 13.3
-	},
-	{
-		"imageCredits": {"short" : "Grasslands Observatory", "infoUrl": "http://www.grasslands.org/"},
-		"imageUrl" : "m87.png",
-		"worldCoords" : [[[-172.2210, 12.3310], [-172.3550, 12.3220], [-172.3635, 12.4445], [-172.2300, 12.4525]]],
-		"textureCoords" : [[[0,0], [1,0], [1,1], [0,1]]],
-		"minResolution" : 0.1265305884,
 		"maxBrightness" : 13.0
 	},
 	{
@@ -1367,14 +1343,6 @@
 		"maxBrightness" : 12.8
 	},
 	{
-		"imageCredits" : {"Short": "Matthew Todman"},
-		"imageUrl" : "n4438-mtod.png",
-		"worldCoords" : [[[ 187.5950,  12.2400], [ 186.0990,  12.3020], [ 186.1600,  13.7650], [ 187.6646,  13.7000]]],
-		"textureCoords" : [[[0,0], [1,0], [1,1], [0,1]]],
-		"minResolution" : 0.2169148018,
-		"maxBrightness" : 12.8
-	},
-	{
 		"imageCredits" : {"Short": "Plover Hill Observatory", "infoUrl": "http://www.madpc.co.uk/~peterv/"},
 		"imageUrl" : "n4559-vasey.png",
 		"worldCoords" : [[[189.1615, 27.8347], [188.8610, 27.8108], [188.8336, 28.0765], [189.1348, 28.1005]]],
@@ -1781,6 +1749,14 @@
 		"textureCoords" : [[[0,0], [1,0], [1,1], [0,1]]],
 		"minResolution" : 0.2222381739,
 		"maxBrightness" : 13.2
+	},
+	{
+		"imagecredits" : {"short" : "Wang Lingyi"},
+		"imageUrl" : "virgo_cluster.png",
+		"worldCoords" : [[[187.9455,12.1754], [185.9046,12.1717], [185.8905,14.1662], [187.948,14.171]]],
+		"textureCoords" : [[[0,0], [1,0], [1,1], [0,1]]],
+		 "minResolution" : 0.2222381739,
+		"maxBrightness" : 13.4
 	},
 	{
 		"imageCredits": {"short" : "ESO", "infoUrl": "http://www.eso.org/public/images/eso1411a/"},
