@@ -194,7 +194,7 @@ public slots:
 	void setAtmosphereAverageLuminance(const float overrideLuminance);
 
 	//! Return a map of landscape names to landscape IDs (directory names).
-	QMap<QString,QString> getNameToDirMap() const;
+	static QMap<QString,QString> getNameToDirMap();
 
 	//! Retrieve a list of the names of all the available landscapes in
 	//! the file search path sub-directories of the landscape area
@@ -334,7 +334,7 @@ public slots:
 	void setFlagAtmosphere(const bool displayed);
 
 	//! Get current display intensity of atmosphere ([0..1], for smoother transitions)
-	float getAtmosphereFadeIntensity();
+	float getAtmosphereFadeIntensity() const;
 
 	//! Get atmosphere fade duration in s.
 	float getAtmosphereFadeDuration() const;
@@ -439,16 +439,6 @@ public slots:
 	//! Set flag for auto-enable atmosphere and landscape for planets with atmospheres in location window
 	void setFlagEnvironmentAutoEnable(bool b);
 
-	//! Get flag for auto-enable of atmospheres for planets.
-	//! @note this function is enabled for backward compatibility
-	//! @deprecated
-	bool getFlagAtmosphereAutoEnable() const { return getFlagEnvironmentAutoEnable(); }
-
-	//! Set flag for auto-enable atmosphere for planets with atmospheres in location window
-	//! @note this function is enabled for backward compatibility
-	//! @deprecated
-	void setFlagAtmosphereAutoEnable(bool b) { setFlagEnvironmentAutoEnable(b); }
-
 	//! Forward opacity query to current landscape.
 	//! @param azalt direction of view line to sample in azaltimuth coordinates.
 	float getLandscapeOpacity(Vec3d azalt) const {return landscape->getOpacity(azalt);}
@@ -519,8 +509,8 @@ private slots:
 	void setAtmosphereBortleLightPollution(const int bIndex);
 
 	//! Reacts to StelCore::locationChanged.
-	void onLocationChanged(StelLocation loc);
-	void onTargetLocationChanged(StelLocation loc);
+	void onLocationChanged(const StelLocation &loc);
+	void onTargetLocationChanged(const StelLocation &loc);
 
 	//! Translate labels to new language settings.
 	void updateI18n();
@@ -539,13 +529,13 @@ private:
 	//! For a given landscape name, return the landscape ID.
 	//! This takes a name of the landscape, as described in the landscape:name item in the
 	//! landscape.ini, and returns the landscape ID which corresponds to that name.
-	QString nameToID(const QString& name) const;
+	static QString nameToID(const QString& name);
 
 	//! Returns the path to an installed landscape's directory.
 	//! It uses StelFileMgr to look for it in the possible directories.
 	//! @param landscapeID an installed landscape's identifier (the folder name)
 	//! @returns an empty string, if no such landscape was found.
-	QString getLandscapePath(const QString landscapeID) const;
+	static QString getLandscapePath(const QString landscapeID);
 
 	Atmosphere* atmosphere;			// Atmosphere
 	Cardinals* cardinalsPoints;		// Cardinals points

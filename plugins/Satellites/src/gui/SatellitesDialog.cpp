@@ -49,6 +49,14 @@
 #include "StelActionMgr.hpp"
 #include "StelUtils.hpp"
 
+#include "external/qxlsx/xlsxdocument.h"
+#include "external/qxlsx/xlsxchartsheet.h"
+#include "external/qxlsx/xlsxcellrange.h"
+#include "external/qxlsx/xlsxchart.h"
+#include "external/qxlsx/xlsxrichstring.h"
+#include "external/qxlsx/xlsxworkbook.h"
+using namespace QXlsx;
+
 SatellitesDialog::SatellitesDialog()
 	: StelDialog("Satellites")
 	, satelliteModified(false)
@@ -101,14 +109,17 @@ void SatellitesDialog::createDialogContent()
 	ui->labelAutoAdd->setVisible(false);
 	connect(ui->closeStelWindow, SIGNAL(clicked()), this, SLOT(close()));
 	connect(ui->TitleBar, SIGNAL(movedTo(QPoint)), this, SLOT(handleMovedTo(QPoint)));
-	connect(&StelApp::getInstance(), SIGNAL(languageChanged()),
-		this, SLOT(retranslate()));
+	connect(&StelApp::getInstance(), SIGNAL(languageChanged()), this, SLOT(retranslate()));
 	Satellites* plugin = GETSTELMODULE(Satellites);
 
 	// Kinetic scrolling
-	QList<QWidget *> addscroll;
-	addscroll << ui->satellitesList << ui->sourceList << ui->aboutTextBrowser;
-	installKineticScrolling(addscroll);
+	kineticScrollingList << ui->satellitesList << ui->sourceList << ui->aboutTextBrowser;
+	StelGui* gui= dynamic_cast<StelGui*>(StelApp::getInstance().getGui());
+	if (gui)
+	{
+		enableKineticScrolling(gui->getFlagUseKineticScrolling());
+		connect(gui, SIGNAL(flagUseKineticScrollingChanged(bool)), this, SLOT(enableKineticScrolling(bool)));
+	}
 
 #ifdef Q_OS_WIN
 	acEndl="\r\n";
@@ -120,21 +131,14 @@ void SatellitesDialog::createDialogContent()
 	// These controls are refreshed by updateSettingsPage(), which in
 	// turn is triggered by setting any of these values. Because
 	// clicked() is issued only by user input, there's no endless loop.
-	connect(ui->internetUpdatesCheckbox, SIGNAL(clicked(bool)),
-		plugin, SLOT(enableInternetUpdates(bool)));
-	connect(ui->checkBoxAutoAdd, SIGNAL(clicked(bool)),
-		plugin, SLOT(enableAutoAdd(bool)));
-	connect(ui->checkBoxAutoRemove, SIGNAL(clicked(bool)),
-		plugin, SLOT(enableAutoRemove(bool)));
-	connect(ui->updateFrequencySpinBox, SIGNAL(valueChanged(int)),
-		plugin, SLOT(setUpdateFrequencyHours(int)));
-	connect(ui->updateButton, SIGNAL(clicked()), this, SLOT(updateTLEs()));
-	connect(ui->jumpToSourcesButton, SIGNAL(clicked()),
-		this, SLOT(jumpToSourcesTab()));
-	connect(plugin, SIGNAL(updateStateChanged(Satellites::UpdateState)),
-		this, SLOT(showUpdateState(Satellites::UpdateState)));
-	connect(plugin, SIGNAL(tleUpdateComplete(int, int, int, int)),
-		this, SLOT(showUpdateCompleted(int, int, int, int)));
+	connect(ui->internetUpdatesCheckbox, SIGNAL(clicked(bool)),     plugin, SLOT(enableInternetUpdates(bool)));
+	connect(ui->checkBoxAutoAdd,         SIGNAL(clicked(bool)),     plugin, SLOT(enableAutoAdd(bool)));
+	connect(ui->checkBoxAutoRemove,      SIGNAL(clicked(bool)),     plugin, SLOT(enableAutoRemove(bool)));
+	connect(ui->updateFrequencySpinBox,  SIGNAL(valueChanged(int)), plugin, SLOT(setUpdateFrequencyHours(int)));
+	connect(ui->updateButton,            SIGNAL(clicked()),         this,   SLOT(updateTLEs()));
+	connect(ui->jumpToSourcesButton,     SIGNAL(clicked()),         this,   SLOT(jumpToSourcesTab()));
+	connect(plugin, SIGNAL(updateStateChanged(Satellites::UpdateState)), this, SLOT(showUpdateState(Satellites::UpdateState)));
+	connect(plugin, SIGNAL(tleUpdateComplete(int, int, int, int)),       this, SLOT(showUpdateCompleted(int, int, int, int)));
 
 	updateTimer = new QTimer(this);
 	connect(updateTimer, SIGNAL(timeout()), this, SLOT(updateCountdown()));
@@ -143,29 +147,22 @@ void SatellitesDialog::createDialogContent()
 	// Settings tab / General settings group
 	// This does call Satellites::setFlagLabels() indirectly.
 	StelAction* action = StelApp::getInstance().getStelActionManager()->findAction("actionShow_Satellite_Labels");
-	connect(ui->labelsGroup, SIGNAL(clicked(bool)),
-		action, SLOT(setChecked(bool)));
-	connect(ui->fontSizeSpinBox, SIGNAL(valueChanged(int)),
-		plugin, SLOT(setLabelFontSize(int)));
-	connect(ui->restoreDefaultsButton, SIGNAL(clicked()),
-		this, SLOT(restoreDefaults()));
-	connect(ui->saveSettingsButton, SIGNAL(clicked()),
-		this, SLOT(saveSettings()));
+	connect(ui->labelsGroup,           SIGNAL(clicked(bool)),     action, SLOT(setChecked(bool)));
+	connect(ui->fontSizeSpinBox,       SIGNAL(valueChanged(int)), plugin, SLOT(setLabelFontSize(int)));
+	connect(ui->restoreDefaultsButton, SIGNAL(clicked()),         this,   SLOT(restoreDefaults()));
+	connect(ui->saveSettingsButton,    SIGNAL(clicked()),         this,   SLOT(saveSettings()));
 
 	// Settings tab / realistic mode group
-	connect(ui->realisticGroup, SIGNAL(clicked(bool)),
-		this, SLOT(setFlagRealisticMode(bool)));
-	connect(ui->hideInvisibleSatellites, SIGNAL(clicked(bool)),
-		plugin, SLOT(setFlagHideInvisibleSatellites(bool)));
+	connect(ui->realisticGroup,          SIGNAL(clicked(bool)), this,   SLOT(setFlagRealisticMode(bool)));
+	connect(ui->hideInvisibleSatellites, SIGNAL(clicked(bool)), plugin, SLOT(setFlagHideInvisibleSatellites(bool)));
 
 	// Settings tab - populate all values
 	updateSettingsPage();
 
 	// Settings tab / orbit lines group
-	connect(ui->orbitLinesGroup, SIGNAL(clicked(bool)),
-		plugin, SLOT(setOrbitLinesFlag(bool)));
+	connect(ui->orbitLinesGroup,   SIGNAL(clicked(bool)),   plugin, SLOT(setFlagOrbitLines(bool)));
 	connect(ui->orbitSegmentsSpin, SIGNAL(valueChanged(int)), this, SLOT(setOrbitParams()));
-	connect(ui->orbitFadeSpin, SIGNAL(valueChanged(int)), this, SLOT(setOrbitParams()));
+	connect(ui->orbitFadeSpin,     SIGNAL(valueChanged(int)), this, SLOT(setOrbitParams()));
 	connect(ui->orbitDurationSpin, SIGNAL(valueChanged(int)), this, SLOT(setOrbitParams()));
 
 	// Satellites tab
@@ -173,8 +170,7 @@ void SatellitesDialog::createDialogContent()
 	filterModel->setSourceModel(plugin->getSatellitesListModel());
 	filterModel->setFilterCaseSensitivity(Qt::CaseInsensitive);
 	ui->satellitesList->setModel(filterModel);
-	connect(ui->lineEditSearch, SIGNAL(textChanged(QString)),
-		filterModel, SLOT(setFilterWildcard(QString)));
+	connect(ui->lineEditSearch, SIGNAL(textChanged(QString)), filterModel, SLOT(setFilterWildcard(QString)));
 
 	QAction *clearAction = ui->lineEditSearch->addAction(QIcon(":/graphicGui/backspace-white.png"),
 							     QLineEdit::ActionPosition::TrailingPosition);
@@ -189,33 +185,26 @@ void SatellitesDialog::createDialogContent()
 		this, SLOT(trackSatellite(QModelIndex)));
 
 	// Two-state input, three-state display
-	connect(ui->displayedCheckbox, SIGNAL(clicked(bool)),
-		ui->displayedCheckbox, SLOT(setChecked(bool)));
-	connect(ui->orbitCheckbox, SIGNAL(clicked(bool)),
-		ui->orbitCheckbox, SLOT(setChecked(bool)));
-	connect(ui->userCheckBox, SIGNAL(clicked(bool)),
-		ui->userCheckBox, SLOT(setChecked(bool)));
+	connect(ui->displayedCheckbox, SIGNAL(clicked(bool)), ui->displayedCheckbox, SLOT(setChecked(bool)));
+	connect(ui->orbitCheckbox,     SIGNAL(clicked(bool)), ui->orbitCheckbox,     SLOT(setChecked(bool)));
+	connect(ui->userCheckBox,      SIGNAL(clicked(bool)), ui->userCheckBox,      SLOT(setChecked(bool)));
 
 	// Because the previous signals and slots were connected first,
 	// they will be executed before these.
-	connect(ui->displayedCheckbox, SIGNAL(clicked()),
-		this, SLOT(setFlags()));
-	connect(ui->orbitCheckbox, SIGNAL(clicked()),
-		this, SLOT(setFlags()));
-	connect(ui->userCheckBox, SIGNAL(clicked()),
-		this, SLOT(setFlags()));
+	connect(ui->displayedCheckbox, SIGNAL(clicked()), this, SLOT(setFlags()));
+	connect(ui->orbitCheckbox,     SIGNAL(clicked()), this, SLOT(setFlags()));
+	connect(ui->userCheckBox,      SIGNAL(clicked()), this, SLOT(setFlags()));
 
 	connect(ui->satColorPickerButton, SIGNAL(clicked(bool)), this, SLOT(askSatColor()));
-	connect(ui->descriptionTextEdit, SIGNAL(textChanged()), this, SLOT(descriptionTextChanged()));
+	connect(ui->descriptionTextEdit,  SIGNAL(textChanged()), this, SLOT(descriptionTextChanged()));
 
 
 	connect(ui->groupsListWidget, SIGNAL(itemChanged(QListWidgetItem*)),
 		this, SLOT(handleGroupChanges(QListWidgetItem*)));
 
-	connect(ui->groupFilterCombo, SIGNAL(currentIndexChanged(int)),
-		this, SLOT(filterListByGroup(int)));
-	connect(ui->saveSatellitesButton, SIGNAL(clicked()), this, SLOT(saveSatellites()));
-	connect(ui->removeSatellitesButton, SIGNAL(clicked()), this, SLOT(removeSatellites()));
+	connect(ui->groupFilterCombo,       SIGNAL(currentIndexChanged(int)), this, SLOT(filterListByGroup(int)));
+	connect(ui->saveSatellitesButton,   SIGNAL(clicked()),                this, SLOT(saveSatellites()));
+	connect(ui->removeSatellitesButton, SIGNAL(clicked()),                this, SLOT(removeSatellites()));
 
 	importWindow = new SatellitesImportDialog();
 	connect(ui->addSatellitesButton, SIGNAL(clicked()), importWindow, SLOT(setVisible()));
@@ -223,14 +212,11 @@ void SatellitesDialog::createDialogContent()
 
 	// Sources tab
 	connect(ui->sourceList, SIGNAL(currentTextChanged(const QString&)), ui->sourceEdit, SLOT(setText(const QString&)));
-	connect(ui->sourceList, SIGNAL(itemChanged(QListWidgetItem*)),
-		this, SLOT(saveSourceList()));
-	connect(ui->sourceEdit, SIGNAL(editingFinished()),
-		this, SLOT(saveEditedSource()));
-	connect(ui->deleteSourceButton, SIGNAL(clicked()), this, SLOT(deleteSourceRow()));
-	connect(ui->addSourceButton, SIGNAL(clicked()), this, SLOT(addSourceRow()));
-	connect(plugin, SIGNAL(settingsChanged()),
-		this, SLOT(toggleCheckableSources()));
+	connect(ui->sourceList, SIGNAL(itemChanged(QListWidgetItem*)),      this,           SLOT(saveSourceList()));
+	connect(ui->sourceEdit, SIGNAL(editingFinished()),                  this,           SLOT(saveEditedSource()));
+	connect(ui->deleteSourceButton, SIGNAL(clicked()),         this, SLOT(deleteSourceRow()));
+	connect(ui->addSourceButton,    SIGNAL(clicked()),         this, SLOT(addSourceRow()));
+	connect(plugin,                 SIGNAL(settingsChanged()), this, SLOT(toggleCheckableSources()));
 
 	// bug #1350669 (https://bugs.launchpad.net/stellarium/+bug/1350669)
 	connect(ui->sourceList, SIGNAL(currentRowChanged(int)), ui->sourceList, SLOT(repaint()));
@@ -321,37 +307,100 @@ void SatellitesDialog::searchSatellitesClear()
 
 void SatellitesDialog::savePredictedIridiumFlares()
 {
-	QString filter = q_("CSV (Comma delimited)");
+	QString filter = q_("Microsoft Excel Open XML Spreadsheet");
+	filter.append(" (*.xlsx);;");
+	filter.append(q_("CSV (Comma delimited)"));
 	filter.append(" (*.csv)");
-	QString filePath = QFileDialog::getSaveFileName(0, q_("Save predicted Iridium flares as..."), QDir::homePath() + "/iridium_flares.csv", filter);
-	QFile predictedIridiumFlares(filePath);
-	if (!predictedIridiumFlares.open(QFile::WriteOnly | QFile::Truncate))
-	{
-		qWarning() << "[Satellites]: Unable to open file"
-			   << QDir::toNativeSeparators(filePath);
-		return;
-	}
-
-	QTextStream predictedIridiumFlaresList(&predictedIridiumFlares);
-	predictedIridiumFlaresList.setCodec("UTF-8");
+	QString defaultFilter("(*.xlsx)");
+	QString filePath = QFileDialog::getSaveFileName(Q_NULLPTR,
+							q_("Save predicted Iridium flares as..."),
+							QDir::homePath() + "/iridium_flares.xlsx",
+							filter,
+							&defaultFilter);
 
 	int count = ui->iridiumFlaresTreeWidget->topLevelItemCount();
+	int columns = iridiumFlaresHeader.size();
 
-	predictedIridiumFlaresList << iridiumFlaresHeader.join(delimiter) << acEndl;
-	for (int i = 0; i < count; i++)
+	if (defaultFilter.contains(".csv", Qt::CaseInsensitive))
 	{
-		int columns = iridiumFlaresHeader.size();
-		for (int j=0; j<columns; j++)
+		QFile predictedIridiumFlares(filePath);
+		if (!predictedIridiumFlares.open(QFile::WriteOnly | QFile::Truncate))
 		{
-			predictedIridiumFlaresList << ui->iridiumFlaresTreeWidget->topLevelItem(i)->text(j);
-			if (j<columns-1)
-				predictedIridiumFlaresList << delimiter;
-			else
-				predictedIridiumFlaresList << acEndl;
+			qWarning() << "[Satellites]: Unable to open file"
+					  << QDir::toNativeSeparators(filePath);
+			return;
 		}
-	}
 
-	predictedIridiumFlares.close();
+		QTextStream predictedIridiumFlaresList(&predictedIridiumFlares);
+		predictedIridiumFlaresList.setCodec("UTF-8");
+
+		predictedIridiumFlaresList << iridiumFlaresHeader.join(delimiter) << acEndl;
+
+		for (int i = 0; i < count; i++)
+		{
+			int columns = iridiumFlaresHeader.size();
+			for (int j=0; j<columns; j++)
+			{
+				predictedIridiumFlaresList << ui->iridiumFlaresTreeWidget->topLevelItem(i)->text(j);
+				if (j<columns-1)
+					predictedIridiumFlaresList << delimiter;
+				else
+					predictedIridiumFlaresList << acEndl;
+			}
+		}
+		predictedIridiumFlares.close();
+	}
+	else
+	{
+		int *width;
+		width = new int[columns];
+		QString sData;
+		int w;
+
+		QXlsx::Document xlsx;
+		xlsx.setDocumentProperty("title", q_("Predicted Iridium flares"));
+		xlsx.setDocumentProperty("creator", StelUtils::getApplicationName());
+		xlsx.addSheet(q_("Predicted Iridium flares"), AbstractSheet::ST_WorkSheet);
+
+		QXlsx::Format header;
+		header.setHorizontalAlignment(QXlsx::Format::AlignHCenter);
+		header.setPatternBackgroundColor(Qt::yellow);
+		header.setBorderStyle(QXlsx::Format::BorderThin);
+		header.setBorderColor(Qt::black);
+		header.setFontBold(true);
+		for (int i = 0; i < columns; i++)
+		{
+			// Row 1: Names of columns
+			sData = iridiumFlaresHeader.at(i).trimmed();
+			xlsx.write(1, i + 1, sData, header);
+			width[i] = sData.size();
+		}
+
+		QXlsx::Format data;
+		data.setHorizontalAlignment(QXlsx::Format::AlignRight);
+		for (int i = 0; i < count; i++)
+		{
+			for (int j = 0; j < columns; j++)
+			{
+				// Row 2 and next: the data
+				sData = ui->iridiumFlaresTreeWidget->topLevelItem(i)->text(j).trimmed();
+				xlsx.write(i + 2, j + 1, sData, data);
+				w = sData.size();
+				if (w > width[j])
+				{
+					width[j] = w;
+				}
+			}
+		}
+
+		for (int i = 0; i < columns; i++)
+		{
+			xlsx.setColumnWidth(i+1, width[i]+2);
+		}
+
+		delete[] width;
+		xlsx.saveAs(filePath);
+	}
 }
 
 void SatellitesDialog::filterListByGroup(int index)
@@ -410,7 +459,7 @@ void SatellitesDialog::updateSatelliteData()
 	Vec3f vColor;
 
 	// set default
-	buttonColor = QColor(0.4, 0.4, 0.4);
+	buttonColor = QColor(QColor::fromRgbF(0.4, 0.4, 0.4));
 
 
 	if (selection.count() > 1)
@@ -466,7 +515,6 @@ void SatellitesDialog::updateSatelliteData()
 
 			ui->descriptionTextEdit->setText(descText);
 		}
-
 	}
 	else
 	{
@@ -721,8 +769,8 @@ void SatellitesDialog::showUpdateCompleted(int updated,
 	// display the status for another full interval before refreshing status
 	updateTimer->start();
 	ui->lastUpdateDateTimeEdit->setDateTime(plugin->getLastUpdate());
-	QTimer *timer = new QTimer(this); // FIXME: What's the point of this? --BM
-	connect(timer, SIGNAL(timeout()), this, SLOT(updateCountdown()));
+	//QTimer *timer = new QTimer(this); // FIXME: What's the point of this? --BM. GZ Indeed, never triggered. Remove?
+	//connect(timer, SIGNAL(timeout()), this, SLOT(updateCountdown()));
 }
 
 void SatellitesDialog::saveEditedSource()
@@ -844,7 +892,7 @@ void SatellitesDialog::updateSettingsPage()
 	ui->labelsGroup->setChecked(plugin->getFlagLabels());
 	ui->fontSizeSpinBox->setValue(plugin->getLabelFontSize());
 
-	ui->orbitLinesGroup->setChecked(plugin->getOrbitLinesFlag());
+	ui->orbitLinesGroup->setChecked(plugin->getFlagOrbitLines());
 	ui->orbitSegmentsSpin->setValue(Satellite::orbitLineSegments);
 	ui->orbitFadeSpin->setValue(Satellite::orbitLineFadeSegments);
 	ui->orbitDurationSpin->setValue(Satellite::orbitLineSegmentDuration);

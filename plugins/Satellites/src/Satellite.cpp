@@ -99,9 +99,6 @@ Satellite::Satellite(const QString& identifier, const QVariantMap& map)
 	if (!map.contains("name") || !map.contains("tle1") || !map.contains("tle2"))
 		return;
 
-	// Font size is 16
-	font.setPixelSize(StelApp::getInstance().getBaseFontSize()+3);
-
 	id = identifier;
 	name  = map.value("name").toString();
 	if (name.isEmpty())
@@ -119,18 +116,18 @@ Satellite::Satellite(const QString& identifier, const QVariantMap& map)
 	QVariantList list = map.value("hintColor", QVariantList()).toList();
 	if (list.count() == 3)
 	{
-		hintColor[0] = list.at(0).toDouble();
-		hintColor[1] = list.at(1).toDouble();
-		hintColor[2] = list.at(2).toDouble();
+		hintColor[0] = list.at(0).toFloat();
+		hintColor[1] = list.at(1).toFloat();
+		hintColor[2] = list.at(2).toFloat();
 	}
-	
+
 	// Satellite orbit section color
 	list = map.value("orbitColor", QVariantList()).toList();
 	if (list.count() == 3)
 	{
-		orbitColor[0] = list.at(0).toDouble();
-		orbitColor[1] = list.at(1).toDouble();
-		orbitColor[2] = list.at(2).toDouble();
+		orbitColor[0] = list.at(0).toFloat();
+		orbitColor[1] = list.at(1).toFloat();
+		orbitColor[2] = list.at(2).toFloat();
 	}
 	else
 	{
@@ -182,7 +179,6 @@ Satellite::~Satellite()
 	}
 }
 
-// TODO: REMOVE THIS FUNCTION! It is used for string formatting only.
 double Satellite::roundToDp(float n, int dp)
 {
 	// round n to dp decimal places
@@ -329,6 +325,18 @@ QString Satellite::getInfoString(const StelCore *core, const InfoStringGroup& fl
 		// TRANSLATORS: TEME (True Equator, Mean Equinox) is an Earth-centered inertial coordinate system
 		oss << QString("%1: %2 %3").arg(q_("TEME velocity")).arg(temeVel).arg(qc_("km/s", "speed")) << "<br/>";
 
+		bool withDecimalDegree = StelApp::getInstance().getFlagShowDecimalDegrees();
+		QString pha;
+		if (withDecimalDegree)
+		{
+			pha = StelUtils::radToDecDegStr(phaseAngle,4,false,true);
+		}
+		else
+		{
+			pha = StelUtils::radToDmsStr(phaseAngle, true);
+		}
+		oss << QString("%1: %2").arg(q_("Phase angle"), pha) << "<br />";
+
 		if (sunReflAngle>0)
 		{  // Iridium
 			oss << QString("%1: %2%3").arg(q_("Sun reflection angle"))
@@ -376,6 +384,7 @@ QString Satellite::getInfoString(const StelCore *core, const InfoStringGroup& fl
 
 		if (comms.size() > 0)
 		{
+			oss << q_("Radio communication") << ":<br/>";
 			for (const auto& c : comms)
 			{
 				double dop = getDoppler(c.frequency);
@@ -389,17 +398,16 @@ QString Satellite::getInfoString(const StelCore *core, const InfoStringGroup& fl
 				else
 					sign='+';
 
-				oss << "<br/>";
 				if (!c.modulation.isEmpty() && c.modulation != "") oss << "  " << c.modulation;
 				if (!c.description.isEmpty() && c.description != "") oss << "  " << c.description;
-				if ((!c.modulation.isEmpty() && c.modulation != "") || (!c.description.isEmpty() && c.description != "")) oss << "<br/>";
-				oss << QString("%1 %2 (%3%4%5)")
-				       .arg(qc_("MHz", "frequency"))
+				if ((!c.modulation.isEmpty() && c.modulation != "") || (!c.description.isEmpty() && c.description != "")) oss << ": ";
+				oss << QString("%1 %2 (%3%4 %5)")
 				       .arg(c.frequency, 8, 'f', 5)
+				       .arg(qc_("MHz", "frequency"))
 				       .arg(sign)
 				       .arg(ddop, 6, 'f', 3)
 				       .arg(qc_("kHz", "frequency"));
-				oss << "<br />";
+				oss << "<br/>";
 			}
 		}
 	}
@@ -442,6 +450,9 @@ QVariantMap Satellite::getInfoMap(const StelCore *core) const
 		map.insert("sun-reflection-angle", sunReflAngle);
 	}
 	map.insert("operational-status", getOperationalStatus());
+	map.insert("phase-angle", phaseAngle);
+	map.insert("phase-angle-dms", StelUtils::radToDmsStr(phaseAngle));
+	map.insert("phase-angle-deg", StelUtils::radToDecDegStr(phaseAngle));
 
 	//TODO: Move to a more prominent place.
 	QString visibilityState;
@@ -655,8 +666,6 @@ float Satellite::getVMagnitude(const StelCore* core) const
 					myText += QString("Angle = %1").arg(QString::number(sunReflAngle, 'f', 1)) + "<br>";
 #endif
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
 				}
 
 				// very simple flare model
@@ -675,7 +684,6 @@ float Satellite::getVMagnitude(const StelCore* core) const
 					iridiumFlare = -3.92 + (sunReflAngle-0.7)*5;
 				}
 
-
 				 vmag = qMin(stdMag, iridiumFlare);
 			}
 			else // not Iridium
@@ -685,7 +693,6 @@ float Satellite::getVMagnitude(const StelCore* core) const
 			}
 
 			vmag = vmag - 15.75 + 2.5 * std::log10(range * range / fracil);
-
 		}
 	}
 	return vmag;
@@ -925,7 +932,6 @@ void Satellite::draw(StelCore* core, StelPainter& painter)
 			// Draw the label of the satellite when it enabled
 			if (txtMag <= sd->getLimitMagnitude() && showLabels)
 				painter.drawText(XYZ, name, 0, 10, 10, false);
-
 		}
 		else
 		{
@@ -1024,8 +1030,8 @@ void Satellite::computeOrbitPoints()
 		lastEpochCompForOrbit = epochTime;
 	}
 	else if (epochTime > lastEpochCompForOrbit)
-	{ // compute next orbit point when clock runs forward
-
+	{
+		// compute next orbit point when clock runs forward
 		gTimeSpan diffTime = epoch - lastEpochComp;
 		diffSlots          = (int)(diffTime.getDblSeconds()/orbitLineSegmentDuration);
 
@@ -1057,7 +1063,8 @@ void Satellite::computeOrbitPoints()
 		}
 	}
 	else if (epochTime < lastEpochCompForOrbit)
-	{ // compute next orbit point when clock runs backward
+	{
+		// compute next orbit point when clock runs backward
 		gTimeSpan diffTime = lastEpochComp - epoch;
 		diffSlots          = (int)(diffTime.getDblSeconds()/orbitLineSegmentDuration);
 
@@ -1081,7 +1088,6 @@ void Satellite::computeOrbitPoints()
 				orbitPoints.push_front(elAzVector);
 				visibilityPoints.push_front(pSatWrapper->getVisibilityPredict());
 				epochTm -= computeInterval;
-
 			}
 			lastEpochCompForOrbit = epochTime;
 		}

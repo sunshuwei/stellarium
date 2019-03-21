@@ -9,11 +9,11 @@
 HttpConnectionHandler::HttpConnectionHandler(const HttpConnectionHandlerSettings& settings, HttpRequestHandler* requestHandler, HttpSslConfiguration *sslConfiguration)
     : QThread()
 {
-    Q_ASSERT(requestHandler!=0);
+    Q_ASSERT(requestHandler!=Q_NULLPTR);
     this->settings=settings;
     this->requestHandler=requestHandler;
     this->sslConfiguration=sslConfiguration;
-    currentRequest=0;
+    currentRequest=Q_NULLPTR;
     busy=false;
 
     // Create TCP or SSL socket
@@ -41,6 +41,11 @@ HttpConnectionHandler::~HttpConnectionHandler()
 {
     quit();
     wait();
+    if (socket)
+    {
+	socket->close();
+	delete socket;
+    }
 #ifndef NDEBUG
     qDebug("HttpConnectionHandler (%p): destroyed", this);
 #endif
@@ -124,7 +129,7 @@ void HttpConnectionHandler::handleConnection(tSocketDescriptor socketDescriptor)
     readTimer.start(readTimeout);
     // delete previous request
     delete currentRequest;
-    currentRequest=0;
+    currentRequest=Q_NULLPTR;
 }
 
 
@@ -150,7 +155,7 @@ void HttpConnectionHandler::readTimeout()
     socket->flush();
     socket->disconnectFromHost();
     delete currentRequest;
-    currentRequest=0;
+    currentRequest=Q_NULLPTR;
 }
 
 
@@ -199,7 +204,7 @@ void HttpConnectionHandler::read()
             socket->flush();
             socket->disconnectFromHost();
             delete currentRequest;
-            currentRequest=0;
+	    currentRequest=Q_NULLPTR;
             return;
         }
 
@@ -289,7 +294,7 @@ void HttpConnectionHandler::read()
                 readTimer.start(readTimeout);
             }
             delete currentRequest;
-            currentRequest=0;
+	    currentRequest=Q_NULLPTR;
         }
     }
 }
