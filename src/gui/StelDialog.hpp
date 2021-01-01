@@ -28,6 +28,7 @@
 #include "StelApp.hpp"
 
 class QAbstractButton;
+class QGroupBox;
 class QComboBox;
 class QSpinBox;
 class QLineEdit;
@@ -77,7 +78,10 @@ class StelDialog : public QObject
 	Q_PROPERTY(bool visible READ visible WRITE setVisible NOTIFY visibleChanged)
 public:
 	StelDialog(QString dialogName="Default", QObject* parent=Q_NULLPTR);
-	virtual ~StelDialog();
+	virtual ~StelDialog() Q_DECL_OVERRIDE;
+
+	//! Notify that the application style changed
+	virtual void styleChanged();
 
 	//! Returns true if the dialog contents have been constructed and are currently shown
 	bool visible() const;
@@ -95,9 +99,9 @@ public slots:
 	//! \endcode
 	virtual void retranslate() = 0;
 	//! On the first call with "true" populates the window contents.
-	void setVisible(bool);
+	virtual void setVisible(bool);
 	//! Closes the window (the window widget is not deleted, just not visible).
-	void close();
+	virtual void close();
 	//! Adds dialog location to config.ini; should be connected in createDialogContent()
 	void handleMovedTo(QPoint newPos);
 	//! Stores dialog sizes into config.ini; should be connected from the proxy.
@@ -166,20 +170,31 @@ protected:
 	//! @warning If the action with \c propName is invalid/unregistered, or cannot be converted
 	//! to the required datatype, the application will crash
 	static void connectBoolProperty(QAbstractButton* checkBox, const QString& propName);
+	//! Helper function to connect a groupbox to a bool StelProperty
+	//! @warning If the action with \c propName is invalid/unregistered, or cannot be converted
+	//! to the required datatype, the application will crash
+	static void connectBoolProperty(QGroupBox *checkBox, const QString &propName);
 
 	//! Prepare a QToolButton so that it can receive and handle askColor() connections properly.
 	//! @param toolButton the QToolButton which shows the color
 	//! @param propertyName a StelProperty name which must represent a color (coded as Vec3f)
 	//! @param iniName the associated entry for config.ini, in the form group/name. Usually "color/some_feature_name_color".
+	//! @param moduleName if the iniName is for a module (plugin)-specific ini file, add the module name here. The module needs an implementation of getSettings()
 	//! @warning If the action with \c propName is invalid/unregistered, or cannot be converted
 	//! to the required datatype, the application will crash
-	void connectColorButton(QToolButton* button, QString propertyName, QString iniName);
+	void connectColorButton(QToolButton* button, QString propertyName, QString iniName, QString moduleName="");
+
+	bool askConfirmation();
 
 	//! The main dialog
 	QWidget* dialog;
 	class CustomProxy* proxy;
 	//! The name should be set in derived classes' constructors and can be used to store and retrieve the panel locations.
 	QString dialogName;
+
+	//! A list of widgets where kinetic scrolling can be activated or deactivated
+	//! The list must be filled once, in the constructor or init() of fillDialog() etc. functions.
+	QList<QWidget *> kineticScrollingList;
 
 protected slots:
 	//! To be called by a connected QToolButton with a color background.
@@ -190,12 +205,6 @@ protected slots:
 	//! connect from StelApp to handle font and font size changes.
 	void handleFontChanged();
 
-
-protected:
-	//! A list of widgets where kinetic scrolling can be activated or deactivated
-	//! The list must be filled once, in the constructor or init() of fillDialog() etc. functions.
-	QList<QWidget *> kineticScrollingList;
-
 private slots:
 	void updateNightModeProperty();
 };
@@ -204,7 +213,7 @@ class CustomProxy : public QGraphicsProxyWidget
 {	private:
 	Q_OBJECT
 	public:
-		CustomProxy(QGraphicsItem *parent = Q_NULLPTR, Qt::WindowFlags wFlags = 0) : QGraphicsProxyWidget(parent, wFlags)
+		CustomProxy(QGraphicsItem *parent = Q_NULLPTR, Qt::WindowFlags wFlags = Qt::Widget) : QGraphicsProxyWidget(parent, wFlags)
 		{
 			setFocusPolicy(Qt::StrongFocus);
 		}

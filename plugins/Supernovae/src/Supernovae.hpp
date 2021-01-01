@@ -168,6 +168,9 @@ public:
 	//! Get count of supernovae from catalog
 	int getCountSupernovae(void) const {return SNCount;}
 
+	//! Get the list of all bright historical supernovae.
+	const QList<SupernovaP>& getAllBrightSupernovae() const {return snstar;}
+
 signals:
 	//! @param state the new update state.
 	void updateStateChanged(Supernovae::UpdateState state);
@@ -176,7 +179,7 @@ signals:
 	void jsonUpdateComplete(void);
 
 public slots:
-	// FIXME: Add functions for scripting support
+	// TODO: Add functions for scripting support
 
 	//! Download JSON from web recources described in the module section of the
 	//! module.ini file and update the local JSON file.
@@ -254,6 +257,8 @@ private slots:
 	//! if the last update was longer than updateFrequencyHours ago then the update is
 	//! done.
 	void checkForUpdate(void);
+	//! Call when button "Save settings" in main GUI are pressed
+	void 	saveSettings() { saveSettingsToConfig(); }
 
 	void updateDownloadProgress(qint64 bytesReceived, qint64 bytesTotal);
 	void downloadComplete(QNetworkReply * reply);

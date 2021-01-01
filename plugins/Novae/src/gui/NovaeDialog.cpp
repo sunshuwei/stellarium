@@ -25,6 +25,7 @@
 #include <QFileDialog>
 
 #include "StelApp.hpp"
+#include "StelCore.hpp"
 #include "ui_novaeDialog.h"
 #include "NovaeDialog.hpp"
 #include "Novae.hpp"
@@ -228,14 +229,20 @@ void NovaeDialog::updateCompleteReceiver(void)
 	ui->lastUpdateDateTimeEdit->setDateTime(nova->getLastUpdate());
 	QTimer *timer = new QTimer(this);
 	connect(timer, SIGNAL(timeout()), this, SLOT(refreshUpdateValues()));
+	setAboutHtml();
 }
 
 void NovaeDialog::restoreDefaults(void)
 {
-	qDebug() << "[Novae] restore defaults";
-	nova->restoreDefaults();
-	nova->readSettingsFromConfig();
-	updateGuiFromSettings();
+	if (askConfirmation())
+	{
+		qDebug() << "[Novae] restore defaults...";
+		nova->restoreDefaults();
+		nova->readSettingsFromConfig();
+		updateGuiFromSettings();
+	}
+	else
+		qDebug() << "[Novae] restore defaults is canceled...";
 }
 
 void NovaeDialog::updateGuiFromSettings(void)

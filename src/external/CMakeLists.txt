@@ -83,6 +83,8 @@ target_link_libraries(qtcompress_stel ${ZLIB_LIBRARIES} Qt5::Core)
 set_target_properties(qtcompress_stel PROPERTIES AUTOMOC 0)
 SET_TARGET_PROPERTIES(qtcompress_stel PROPERTIES FOLDER "src/external")
 
+# QCustomPlot should not be unbundled, because upstream uses GPL 3, and
+# Stellarium uses GPL 2. Author of QCustomPlot has agreed for GPL 2+ for this.
 set(qcustomplot_SRCS
     qcustomplot/qcustomplot.cpp
     qcustomplot/qcustomplot.h
@@ -190,7 +192,7 @@ IF(USE_PLUGIN_TELESCOPECONTROL)
     include_directories(libindi)
     include_directories(libindi/libs)
     include_directories(libindi/libs/indibase)
-    add_library(indiclient
+    add_library(indiclient STATIC
         libindi/libs/lilxml.c
         libindi/base64.c
         libindi/libs/indibase/basedevice.h
@@ -201,7 +203,7 @@ IF(USE_PLUGIN_TELESCOPECONTROL)
         libindi/libs/indibase/indistandardproperty.cpp
         libindi/libs/indicom.c
         )
-    target_link_libraries(indiclient zlib_stel)
+    target_link_libraries(indiclient ${ZLIB_LIBRARIES}) # Do not use 2 version of zlib! 
     target_include_directories(indiclient INTERFACE libindi)
     target_include_directories(indiclient INTERFACE libindi/libs)
 

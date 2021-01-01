@@ -22,10 +22,10 @@
 #include <QMouseEvent>
 #include <QPainter>
 
-MapLabel::MapLabel(QWidget *parent) : QLabel(parent), locCursor(":/graphicGui/map-pointeur.png")
+MapLabel::MapLabel(QWidget *parent) : QLabel(parent), locCursor(":/graphicGui/uieMapPointer.png")
 {
 	/*cursor = new QLabel(this);
-	cursor->setPixmap(QPixmap(":/graphicGui/map-pointeur.png"));
+	cursor->setPixmap(QPixmap(":/graphicGui/uieMapPointer.png"));
 	cursor->resize(cursor->pixmap()->size());
 	cursor->show();*/
 }
@@ -39,8 +39,8 @@ void MapLabel::setCursorPos(double longitude, double latitude)
 	//resets the map to the original map
 	map = origMap;
 	const int scale = devicePixelRatio();
-	const int x = ((int)((longitude+180.)/360.*map.width() / scale));
-	const int y = ((int)((latitude-90.)/-180.*map.height() / scale));
+	const int x = (static_cast<int>((longitude+180.)/360.*map.width() / scale));
+	const int y = (static_cast<int>((latitude-90.)/-180.*map.height() / scale));
 	//draws the location cursor on the map every time position is changed
 	QPainter painter(&map);
 	painter.drawPixmap(x-locCursor.width()/2,y-locCursor.height()/2,locCursor.width(),locCursor.height(),locCursor);

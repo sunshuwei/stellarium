@@ -27,13 +27,14 @@
 #include <QDebug>
 #include <QStandardPaths>
 #include <QProcessEnvironment>
+#include <QtGlobal>
 
-#include <stdio.h>
+#include <cstdio>
 
 #ifdef Q_OS_WIN
-#include <windows.h>
+#include <Windows.h>
 #ifndef _SHOBJ_H
-	#include <shlobj.h>
+	#include <ShlObj.h>
 	#include <QLibrary>
 #endif
 #endif
@@ -59,6 +60,19 @@ void StelFileMgr::init()
 	userDir = QDir::homePath() + "/Library/Application Support/Stellarium";
 #else
 	userDir = QDir::homePath() + "/.stellarium";
+#endif
+
+#if QT_VERSION >= 0x050A00
+	if (qEnvironmentVariableIsSet("STEL_USERDIR"))
+	{
+		userDir=qEnvironmentVariable("STEL_USERDIR");
+	}
+#else
+	QByteArray userDirCand=qgetenv("STEL_USERDIR");
+	if (userDirCand.length()>0)
+	{
+		userDir=QString::fromLocal8Bit(userDirCand);
+	}
 #endif
 
 	if (!QFile(userDir).exists())
@@ -512,12 +526,12 @@ QString StelFileMgr::getWin32SpecialDirPath(int csidlId)
 	// therefore it's using only the wide-char version of the code. --BM
 	QLibrary library(QLatin1String("shell32"));
 	typedef BOOL (WINAPI*GetSpecialFolderPath)(HWND, LPTSTR, int, BOOL);
-	GetSpecialFolderPath SHGetSpecialFolderPath = (GetSpecialFolderPath)library.resolve("SHGetSpecialFolderPathW");
+	GetSpecialFolderPath SHGetSpecialFolderPath = reinterpret_cast<GetSpecialFolderPath>(library.resolve("SHGetSpecialFolderPathW"));
 	if (SHGetSpecialFolderPath)
 	{
 		TCHAR tpath[MAX_PATH];
-		SHGetSpecialFolderPath(0, tpath, csidlId, FALSE);
-		return QString::fromUtf16((ushort*)tpath);
+		SHGetSpecialFolderPath(Q_NULLPTR, tpath, csidlId, FALSE);
+		return QString::fromUtf16(reinterpret_cast<ushort*>(tpath));
 	}
 
 	return QString();

@@ -28,7 +28,7 @@
 
 //! @def GETSTELMODULE(m)
 //! Return a pointer on a StelModule from its QMetaObject name @a m
-#define GETSTELMODULE( m ) (( m *)StelApp::getInstance().getModuleMgr().getModule( #m ))
+#define GETSTELMODULE( m ) qobject_cast< m *>(StelApp::getInstance().getModuleMgr().getModule( #m ))
 
 //! @class StelModuleMgr
 //! Manage a collection of StelModules including both core and plugin modules.
@@ -68,6 +68,8 @@ public:
 	//! @param key the key of the plugin as in the PluginDescriptor class.
 	//! @param b the value to set.
 	void setPluginLoadAtStartup(const QString& key, bool b);
+
+	bool isPluginLoaded(const QString& moduleID);
 
 	//! Get the corresponding module or Q_NULLPTR if can't find it.
 	//! @param moduleID the QObject name of the module instance, by convention it is equal to the class name.

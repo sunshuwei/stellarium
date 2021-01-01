@@ -64,6 +64,8 @@ void ArchaeoLinesDialog::createDialogContent()
 	connect(ui->closeStelWindow, SIGNAL(clicked()), this, SLOT(close()));
 	connect(ui->TitleBar, SIGNAL(movedTo(QPoint)), this, SLOT(handleMovedTo(QPoint)));
 
+	connectIntProperty(ui->lineWidthSpinBox, "ArchaeoLines.lineWidth");
+
 	connectBoolProperty(ui->equinoxCheckBox,         "ArchaeoLines.flagShowEquinox");
 	connectBoolProperty(ui->solsticesCheckBox,       "ArchaeoLines.flagShowSolstices");
 	connectBoolProperty(ui->crossquarterCheckBox,    "ArchaeoLines.flagShowCrossquarters");
@@ -129,6 +131,7 @@ void ArchaeoLinesDialog::createDialogContent()
 	connectColorButton(ui->customDeclination2ColorToolButton,      "ArchaeoLines.customDeclination2Color",      "ArchaeoLines/color_custom_declination_2");
 
 	connect(ui->restoreDefaultsButton, SIGNAL(clicked()), this, SLOT(resetArchaeoLinesSettings()));
+	connect(ui->restoreDefaultsButtonCL, SIGNAL(clicked()), this, SLOT(resetArchaeoLinesSettings()));
 
 	setAboutHtml();
 }
@@ -168,6 +171,13 @@ void ArchaeoLinesDialog::setAboutHtml(void)
 			   "The directions are computed based on spherical trigonometry on a spherical Earth.") + "</p>";
 	html += "<p>" + q_("In addition, up to two vertical lines with arbitrary azimuth and declination lines with custom label can be shown.") + "</p>";
 
+	html += "<h3>" + q_("Publications") + "</h3>";
+	html += "<p>"  + q_("If you use this plugin in your publications, please cite:") + "</p>";
+	html += "<p><ul>";
+	html += "<li>" + QString("{Georg Zotti: Open Source Virtual Archaeoastronomy}. Mediterranean Archaeology and Archaeometry, Vol. 16, No 4 (2016), pp. 17-24.")
+			.toHtmlEscaped().replace(a_rx, "<a href=\"http://maajournal.com/Issues/2016/Vol16-4/Full3.pdf\">\\1</a>") + "</li>";
+	html += "</ul></p>";
+
 	html += "<h3>" + q_("Links") + "</h3>";
 	html += "<p>" + QString(q_("Support is provided via the Github website.  Be sure to put \"%1\" in the subject when posting.")).arg("ArchaeoLines plugin") + "</p>";
 	html += "<p><ul>";
@@ -192,13 +202,19 @@ void ArchaeoLinesDialog::setAboutHtml(void)
 
 void ArchaeoLinesDialog::resetArchaeoLinesSettings()
 {
-	al->restoreDefaultSettings();
-	ui->geographicLocation1LineEdit->setText(al->getLineLabel(ArchaeoLine::GeographicLocation1));
-	ui->geographicLocation2LineEdit->setText(al->getLineLabel(ArchaeoLine::GeographicLocation2));
-	ui->customAzimuth1LineEdit->setText(al->getLineLabel(ArchaeoLine::CustomAzimuth1));
-	ui->customAzimuth2LineEdit->setText(al->getLineLabel(ArchaeoLine::CustomAzimuth2));
-	ui->customDeclination1LineEdit->setText(al->getLineLabel(ArchaeoLine::CustomDeclination1));
-	ui->customDeclination2LineEdit->setText(al->getLineLabel(ArchaeoLine::CustomDeclination2));
+	if (askConfirmation())
+	{
+		qDebug() << "[ArchaeoLines] restore defaults...";
+		al->restoreDefaultSettings();
+		ui->geographicLocation1LineEdit->setText(al->getLineLabel(ArchaeoLine::GeographicLocation1));
+		ui->geographicLocation2LineEdit->setText(al->getLineLabel(ArchaeoLine::GeographicLocation2));
+		ui->customAzimuth1LineEdit->setText(al->getLineLabel(ArchaeoLine::CustomAzimuth1));
+		ui->customAzimuth2LineEdit->setText(al->getLineLabel(ArchaeoLine::CustomAzimuth2));
+		ui->customDeclination1LineEdit->setText(al->getLineLabel(ArchaeoLine::CustomDeclination1));
+		ui->customDeclination2LineEdit->setText(al->getLineLabel(ArchaeoLine::CustomDeclination2));
+	}
+	else
+		qDebug() << "[ArchaeoLines] restore defaults is canceled...";
 }
 
 // Notes/Observations by GZ in 2015-04 with Qt5.4.0/MinGW on Windows7SP1.

@@ -73,17 +73,20 @@ class StelGui : public QObject, public StelGuiBase
 	Q_PROPERTY(bool flagShowAsterismLabelsButton READ getFlagShowAsterismLabelsButton WRITE setFlagShowAsterismLabelsButton NOTIFY flagShowAsterismLabelsButtonChanged )
 	Q_PROPERTY(bool flagUseButtonsBackground   READ getFlagUseButtonsBackground   WRITE setFlagUseButtonsBackground   NOTIFY flagUseButtonsBackgroundChanged)
 	Q_PROPERTY(bool flagUseKineticScrolling READ getFlagUseKineticScrolling WRITE setFlagUseKineticScrolling NOTIFY flagUseKineticScrollingChanged)
+	Q_PROPERTY(bool flagEnableFocusOnDaySpinner READ getFlagEnableFocusOnDaySpinner WRITE setFlagEnableFocusOnDaySpinner NOTIFY flagEnableFocusOnDaySpinnerChanged)
+	Q_PROPERTY(bool flagShowCardinalButton READ getFlagShowCardinalButton WRITE setFlagShowCardinalButton NOTIFY  flagShowCardinalButtonChanged)
+	Q_PROPERTY(bool flagShowCompassButton READ getFlagShowCompassButton WRITE setFlagShowCompassButton NOTIFY  flagShowCompassButtonChanged)
 
 public:
 	friend class ViewDialog;
 	
 	StelGui();
-	virtual ~StelGui();
+	virtual ~StelGui() Q_DECL_OVERRIDE;
 
 	///////////////////////////////////////////////////////////////////////////
 	// Methods defined in the StelModule class
 	//! Initialize the StelGui object.
-	virtual void init(QGraphicsWidget* topLevelGraphicsWidget);
+	virtual void init(QGraphicsWidget* topLevelGraphicsWidget) Q_DECL_OVERRIDE;
 	void update();
 
 	StelStyle getStelStyle() const {return currentStelStyle;}
@@ -111,18 +114,18 @@ public:
 #endif
 
 	//! Used to force a refreshing of the GUI elements such as the button bars.
-	virtual void forceRefreshGui();
+	virtual void forceRefreshGui() Q_DECL_OVERRIDE;
 	
-	virtual void setVisible(bool b);
+	virtual void setVisible(bool b) Q_DECL_OVERRIDE;
 
-	virtual bool getVisible() const;
+	virtual bool getVisible() const Q_DECL_OVERRIDE;
 
 	virtual bool getAstroCalcVisible() const;
 
-	virtual bool isCurrentlyUsed() const;
+	virtual bool isCurrentlyUsed() const Q_DECL_OVERRIDE;
 	
-	virtual void setInfoTextFilters(const StelObject::InfoStringGroup& aflags);
-	virtual const StelObject::InfoStringGroup& getInfoTextFilters() const;
+	virtual void setInfoTextFilters(const StelObject::InfoStringGroup& aflags) Q_DECL_OVERRIDE;
+	virtual const StelObject::InfoStringGroup& getInfoTextFilters() const Q_DECL_OVERRIDE;
 
 public slots:
 	//! Set the state of the flag of usage background for GUI buttons
@@ -134,6 +137,11 @@ public slots:
 	void setFlagUseKineticScrolling(bool b);
 	//! Get the state of the flag for kinetic scrolling
 	bool getFlagUseKineticScrolling() const { return flagUseKineticScrolling; }
+
+	//! Set the state of the flag for enable focus on day spinner in Date and Time dialog
+	void setFlagEnableFocusOnDaySpinner(bool b);
+	//! Get the state of the flag for enable focus on day spinner in Date and Time dialog
+	bool getFlagEnableFocusOnDaySpinner() const { return flagEnableFocusOnDaySpinner; }
 
 	//! Define whether the button for exit should be visible
 	void setFlagShowQuitButton(bool b);
@@ -154,6 +162,16 @@ public slots:
 	void setFlagShowDSSButton(bool b);
 	//! Get whether the button toggling DSS survey (TOAST) is visible
 	bool getFlagShowDSSButton() const;
+
+	//! Define whether the button toggling cardinal should be visible
+	void setFlagShowCardinalButton(bool b);
+	//! Get whether the button toggling cardinal is visible
+	bool getFlagShowCardinalButton() const;
+
+	//! Define whether the button toggling compass marks should be visible
+	void setFlagShowCompassButton(bool b);
+	//! Get whether the button toggling compass marks is visible
+	bool getFlagShowCompassButton() const;
 
 	//! Define whether the button toggling HiPS surveys should be visible
 	void setFlagShowHiPSButton(bool b);
@@ -248,6 +266,7 @@ signals:
 	void autoHideVerticalButtonBarChanged(bool b);
 	void flagUseButtonsBackgroundChanged(bool b);
 	void flagUseKineticScrollingChanged(bool b);
+	void flagEnableFocusOnDaySpinnerChanged(bool b);
 	void flagShowQuitButtonChanged(bool b);
 	void flagShowFlipButtonsChanged(bool b);
 	void flagShowNebulaBackgroundButtonChanged(bool b);
@@ -263,6 +282,8 @@ signals:
 	void flagShowConstellationBoundariesButtonChanged(bool b);
 	void flagShowAsterismLinesButtonChanged(bool b);
 	void flagShowAsterismLabelsButtonChanged(bool b);
+	void flagShowCardinalButtonChanged(bool b);
+	void flagShowCompassButtonChanged(bool b);
 
 private slots:
 	void reloadStyle();
@@ -271,7 +292,7 @@ private slots:
 	void scriptStopped();
 #endif
 	//! Load color scheme from the given ini file and section name
-	void setStelStyle(const QString& section);
+	virtual void setStelStyle(const QString& section) Q_DECL_OVERRIDE;
 	void quit();	
 	void updateI18n();
 	void copySelectedObjectInfo(void);
@@ -280,12 +301,16 @@ private:
 	//! convenience method to find an action in the StelActionMgr.
 	StelAction* getAction(const QString& actionName) const;
 
+	void addButtonOnBottomBar(QString buttonName, QString actionName, QString groupName);
+	void addButtonOnLeftBar(QString buttonName, QString actionName);
+
 	QGraphicsWidget* topLevelGraphicsWidget;
 
 	class SkyGui* skyGui;
 
 	bool flagUseButtonsBackground;
 	bool flagUseKineticScrolling;
+	bool flagEnableFocusOnDaySpinner;
 
 	StelButton* buttonTimeRewind;
 	StelButton* buttonTimeRealTimeSpeed;
@@ -350,6 +375,12 @@ private:
 
 	bool flagShowAsterismLabelsButton;
 	StelButton* btShowAsterismLabels;
+
+	bool flagShowCardinalButton;
+	StelButton* btShowCardinal;
+
+	bool flagShowCompassButton;
+	StelButton* btShowCompass;
 
 	bool initDone;
 

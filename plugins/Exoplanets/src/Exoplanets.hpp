@@ -90,11 +90,11 @@ public:
 	//! @enum UpdateState
 	//! Used for keeping for track of the download/update status
 	enum UpdateState {
-		Updating,		//!< Update in progress
+		Updating,				//!< Update in progress
 		CompleteNoUpdates,	//!< Update completed, there we no updates
-		CompleteUpdates,	//!< Update completed, there were updates
-		DownloadError,		//!< Error during download phase
-		OtherError		//!< Other error
+		CompleteUpdates,		//!< Update completed, there were updates
+		DownloadError,			//!< Error during download phase
+		OtherError				//!< Other error
 	};
 	//! @enum TemperatureScale
 	//! Available temperature scales
@@ -102,7 +102,7 @@ public:
 	{
 		Kelvin		= 0,
 		Celsius		= 1,
-		Fahrenheit		= 2
+		Fahrenheit	= 2
 	};
 	
 	Exoplanets();
@@ -198,50 +198,39 @@ public:
 		{
 			case 1:
 				return EPSemiAxisAll;
-				break;
 			case 2:
 				return EPMassAll;
-				break;
 			case 3:
 				return EPRadiusAll;
-				break;
 			case 4:
 				return EPPeriodAll;
-				break;
 			case 5:
 				return EPAngleDistanceAll;
-				break;
 			case 6:
 				return EPEffectiveTempHostStarAll;
-				break;
 			case 7:
 				return EPYearDiscoveryAll;
-				break;
 			case 8:
 				return EPMetallicityHostStarAll;
-				break;
 			case 9:
 				return EPVMagHostStarAll;
-				break;
 			case 10:
 				return EPRAHostStarAll;
-				break;
 			case 11:
 				return EPDecHostStarAll;
-				break;
 			case 12:
 				return EPDistanceHostStarAll;
-				break;
 			case 13:
 				return EPMassHostStarAll;
-				break;
 			case 14:
 				return EPRadiusHostStarAll;
-				break;
 			default:
 				return EPEccentricityAll;
 		}
 	}
+
+	//! Get the list of all exoplanetary systems.
+	const QList<ExoplanetP>& getAllExoplanetarySystems() const {return ep;}
 
 signals:
 	//! @param state the new update state.
@@ -348,12 +337,12 @@ public slots:
 	//! Set the temperature scale
 	void setCurrentTemperatureScale(TemperatureScale tscale)
 	{
-		Exoplanet::temperatureScaleID = (int)tscale;
+		Exoplanet::temperatureScaleID = static_cast<int>(tscale);
 	}
 	//! Get the current temperature scale
 	TemperatureScale getCurrentTemperatureScale() const
 	{
-		return (TemperatureScale)Exoplanet::temperatureScaleID;
+		return static_cast<TemperatureScale>(Exoplanet::temperatureScaleID);
 	}
 	//! Get the key of current temperature scale
 	QString getCurrentTemperatureScaleKey(void) const;
@@ -405,10 +394,11 @@ private:
 
 	QString jsonCatalogPath;
 
-	int PSCount;
-	int EPCountAll;
-	int EPCountPH;
+	int PSCount;	// Count of planetary systems
+	int EPCountAll;	// Count of exoplents
+	int EPCountPH;	// Count of exoplanets in habitable zone
 
+	// Lists of various data about exoplanets for quick plot of graphs
 	QList<double> EPEccentricityAll, EPSemiAxisAll, EPMassAll, EPRadiusAll, EPPeriodAll, EPAngleDistanceAll,
 		      EPEffectiveTempHostStarAll, EPYearDiscoveryAll, EPMetallicityHostStarAll, EPVMagHostStarAll,
 		      EPRAHostStarAll, EPDecHostStarAll, EPDistanceHostStarAll, EPMassHostStarAll, EPRadiusHostStarAll;
@@ -451,7 +441,9 @@ private slots:
 	//! Display a message. This is used for plugin-specific warnings and such
 	void displayMessage(const QString& message, const QString hexColor="#999999");
 
-	void reloadCatalog(void);	
+	void reloadCatalog(void);
+	//! Call when button "Save settings" in main GUI are pressed
+	void 	saveSettings() { saveConfiguration(); }
 };
 
 

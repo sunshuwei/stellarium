@@ -284,7 +284,6 @@ private:
 	bool CheckRise(int day);
 
 	//! Some useful constants (almost self-explanatory).
-	// GZ: Made true constants out of those, and improved accuracy of some.
 	static const double Rad2Deg, Rad2Hr, UA, TFrac, halfpi, MoonT, RefFullMoon, MoonPerilune;
 
 	//! Some useful variables(almost self-explanatory).
@@ -362,9 +361,6 @@ private:
 
 	//! Strings to save ephemeris Times:
 	QString RiseTime, SetTime, CulmTime;
-
-	//! Just the names of the months.
-	QStringList monthNames;
 
 	//! Using for storage date format [i18n]
 	bool dmyFormat;

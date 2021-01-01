@@ -28,6 +28,7 @@
 #include "StelTranslator.hpp"
 #include "StelModuleMgr.hpp"
 #include "StelProjector.hpp"
+#include "StelUtils.hpp"
 
 const QString CustomObject::CUSTOMOBJECT_TYPE = QStringLiteral("CustomObject");
 Vec3f CustomObject::markerColor = Vec3f(0.1f,1.0f,0.1f);
@@ -95,7 +96,7 @@ QString CustomObject::getInfoString(const StelCore* core, const InfoStringGroup&
 
 Vec3f CustomObject::getInfoColor(void) const
 {
-	return Vec3f(1.0, 1.0, 1.0);
+	return Vec3f(1.f, 1.f, 1.f);
 }
 
 float CustomObject::getVMagnitude(const StelCore* core) const
@@ -114,7 +115,7 @@ double CustomObject::getAngularSize(const StelCore*) const
 
 void CustomObject::update(double deltaTime)
 {
-	labelsFader.update((int)(deltaTime*1000));
+	labelsFader.update(static_cast<int>(deltaTime*1000));
 }
 
 void CustomObject::draw(StelCore* core, StelPainter *painter)
@@ -126,19 +127,19 @@ void CustomObject::draw(StelCore* core, StelPainter *painter)
 		return;
 
 	painter->setBlending(true, GL_ONE, GL_ONE);
-	painter->setColor(markerColor[0], markerColor[1], markerColor[2], 1.f);
+	painter->setColor(markerColor, 1.f);
 
 	if (isMarker)
 	{
 		markerTexture->bind();
-		float size = getAngularSize(Q_NULLPTR)*M_PI/180.*painter->getProjector()->getPixelPerRadAtCenter();
-		float shift = markerSize + size/1.6f;
+		const float size = static_cast<float>(getAngularSize(Q_NULLPTR))*M_PI_180f*painter->getProjector()->getPixelPerRadAtCenter();
+		const float shift = markerSize + size/1.6f;
 
-		painter->drawSprite2dMode(pos[0], pos[1], markerSize);
+		painter->drawSprite2dMode(static_cast<float>(pos[0]), static_cast<float>(pos[1]), markerSize);
 
 		if (labelsFader.getInterstate()<=0.f)
 		{
-			painter->drawText(pos[0], pos[1], getNameI18n(), 0, shift, shift, false);
+			painter->drawText(static_cast<float>(pos[0]), static_cast<float>(pos[1]), getNameI18n(), 0, shift, shift, false);
 		}
 	}
 }
