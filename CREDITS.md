@@ -628,7 +628,7 @@
 	     from J. Aleu
 	     https://commons.wikimedia.org/wiki/
 	     License: public domain
-	4.87 Images of IC2395, IC4756, NGC3114, NGC6025, NGC6087, NGC6124, NGC6633
+	4.87 Images of IC2395, IC4756, NGC6025, NGC6087, NGC6124, NGC6633
 	     from Roberto Mura
 	     https://en.wikipedia.org/
 	     License: Creative Commons Attribution-Share Alike 3.0 Unported
@@ -733,6 +733,11 @@
 	4.114 Images of Sh2-82
 	      from T.A. Rector (University of Alaska Anchorage) and H. Schweiker (WIYN and NOIRLab/NSF/AURA)
 	      https://noirlab.edu/
+	      rework by Sun Shuwei
+	      License: Creative Commons Attribution 4.0 International
+	4.114 Images of NGC3114
+	      from Sergio Eguivar
+	      https://commons.wikimedia.org/wiki/
 	      rework by Sun Shuwei
 	      License: Creative Commons Attribution 4.0 International
 ```
