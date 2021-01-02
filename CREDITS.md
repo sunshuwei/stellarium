@@ -735,7 +735,7 @@
 	      https://noirlab.edu/
 	      rework by Sun Shuwei
 	      License: Creative Commons Attribution 4.0 International
-	4.114 Images of M23, NGC3114
+	4.115 Images of M23, NGC3114
 	      from Sergio Eguivar
 	      https://commons.wikimedia.org/wiki/
 	      rework by Sun Shuwei
