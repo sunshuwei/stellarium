@@ -739,7 +739,7 @@
 	      from Sergio Eguivar
 	      https://commons.wikimedia.org/wiki/
 	      rework by Sun Shuwei
-	      License: Creative Commons Attribution 4.0 International
+	      License: Creative Commons Attribution-Share Alike 4.0 International
 ```
 
 ## Appendix
