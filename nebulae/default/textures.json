@@ -678,12 +678,12 @@
 		"maxBrightness" : 12.7
 	},
 	{
-		"imageCredits" : {"short" : "ESO/Digitized Sky Survey 2","infoUrl": "https://www.eso.org/public/images/eso0919c/"}, 
+		"imageCredits" : {"short" : "NOIRLab/NSF/AURA","infoUrl": "https://noirlab.edu/public/images/noao-m90/"}, 
 		"imageUrl" : "m90.png",
-		"worldCoords" : [[[189.3144,13.0797], [189.0936,13.0797], [189.0936,13.2947], [189.3144,13.2947]]],
+		"worldCoords" :	[[[189.3309,13.066], [189.0883,13.0632], [189.0851,13.2994], [189.3282,13.3021]]],
 		"textureCoords" : [[[0,0], [1,0], [1,1], [0,1]]], 
 		"minResolution" : 0.2222381739, 
-		"maxBrightness" : 13
+		"maxBrightness" : 13.4
 	},
 	{
 		"imageCredits" : {"short" : "Adam Block/Mount Lemmon SkyCenter/University of Arizona","infoUrl": "http://www.caelumobservatory.com/gallery/m91.shtml"},

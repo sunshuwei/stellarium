@@ -414,7 +414,7 @@
 	4.33 Images of PGC6830, PGC29653, UGC5373 from Lowell Observatory
 	     http://www2.lowell.edu/
 	     License: public domain
-	4.34 Images of M59, M60, M89, M90, IC2177, IC2220, IC2631, NGC1433,
+	4.34 Images of M59, M60, M89, IC2177, IC2220, IC2631, NGC1433,
 	     NGC2442, NGC3572, PGC10074,
 	     RCW32, RCW38, RCW49, Fornax Cluster, Virgo Cluster
 	     from ESO/Digitized Sky Survey 2
@@ -732,6 +732,11 @@
 	      License: Creative Commons Attribution-Share Alike 4.0 International
 	4.114 Images of Sh2-82
 	      from T.A. Rector (University of Alaska Anchorage) and H. Schweiker (WIYN and NOIRLab/NSF/AURA)
+	      https://noirlab.edu/
+	      rework by Sun Shuwei
+	      License: Creative Commons Attribution 4.0 International
+	4.115 Images of M90
+	      from NOIRLab/NSF/AURA
 	      https://noirlab.edu/
 	      rework by Sun Shuwei
 	      License: Creative Commons Attribution 4.0 International
