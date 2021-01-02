@@ -3913,6 +3913,14 @@
 		"maxBrightness" : 12.5
 	},
 	{
+		"imageCredits" : {"short" : "T.A. Rector (University of Alaska Anchorage) and H. Schweiker (WIYN and NOIRLab/NSF/AURA)","infoUrl": "https://noirlab.edu/public/images/noao-sh2-82/"},
+		"imageUrl" : "sh2-82.png",
+		"worldCoords" :	[[[292.7621,18.1588], [292.5051,18.1592], [292.5059,18.4031], [292.7629,18.4026]]],
+		"textureCoords" : [[[0,0], [1,0], [1,1], [0,1]]],
+		"minResolution" : 0.266023154,
+		"maxBrightness" : 14.8
+	},
+	{
 		"imageCredits": {"short" : "Plover Hill Observatory", "infoUrl": "http://www.madpc.co.uk/~peterv/"},
 		"imageUrl" : "sh2-101-vasey.png",
 		"worldCoords" : [[[ 300.3250, 34.9860], [ 299.5908, 34.9979], [ 299.6025, 35.5995], [ 300.3420, 35.5878]]],
