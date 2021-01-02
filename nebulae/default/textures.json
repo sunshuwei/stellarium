@@ -1527,6 +1527,14 @@
 		"maxBrightness" : 14
 	},
 	{
+		"imageCredits" : {"short" : "SDSS"},
+		"imageUrl" : "n2360-sdss.png",
+		"worldCoords" :	[[[109.5915,-15.7504], [109.3321,-15.7631], [109.3195,-15.5139], [109.5783,-15.5009]]],
+		"textureCoords" : [[[0,0], [1,0], [1,1], [0,1]]],
+		"minResolution" : 0.266023154,
+		"maxBrightness" : 13.6
+	},
+	{
 		"imageCredits" : {"short" : "Adam Block/Mount Lemmon SkyCenter/University of Arizona","infoUrl": "http://www.caelumobservatory.com/gallery/taucanismajoris.shtml"},
 		"imageUrl" : "n2362.png",
 		"worldCoords" : [[[109.772,-25.0401], [109.5868,-25.0401], [109.5867,-24.872], [109.7717,-24.872]]],
@@ -1605,6 +1613,14 @@
 		"textureCoords" : [[[0,0], [1,0], [1,1], [0,1]]],
 		"minResolution" : 0.266023154,
 		"maxBrightness" : 13.4
+	},
+	{
+		"imageCredits" : {"short" : "DSS"},
+		"imageUrl" : "n2506-dss.png",
+		"worldCoords" :	[[[120.1976,-10.9471], [119.8499,-10.9476], [119.8498,-10.6065], [120.1971,-10.6061]]],
+		"textureCoords" : [[[0,0], [1,0], [1,1], [0,1]]],
+		"minResolution" : 0.266023154,
+		"maxBrightness" : 13.6
 	},
 	{
 		"imageCredits" : {"short" : "DSS"},
