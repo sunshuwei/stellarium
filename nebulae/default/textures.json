@@ -182,7 +182,7 @@
 		"maxBrightness" : 12.8
 	},
 	{
-		"imageCredits" : {"short" : "Sergio Eguivar","infoUrl": "https://commons.wikimedia.org/wiki/File:M23_Eguivar.jpg"},
+		"imageCredits" : {"short" : "Sergio Eguivar, Rework: Sun Shuwei","infoUrl": "https://commons.wikimedia.org/wiki/File:M23_Eguivar.jpg"},
 		"imageUrl" : "m23.png",
 		"worldCoords" :	[[[269.4595,-19.2261], [268.9935,-19.2278], [268.9922,-18.7878], [269.457,-18.7861]]],
 		"textureCoords" : [[[0,0], [1,0], [1,1], [0,1]]],
@@ -678,7 +678,7 @@
 		"maxBrightness" : 12.7
 	},
 	{
-		"imageCredits" : {"short" : "NOIRLab/NSF/AURA","infoUrl": "https://noirlab.edu/public/images/noao-m90/"}, 
+		"imageCredits" : {"short" : "NOIRLab/NSF/AURA, Rework: Sun Shuwei","infoUrl": "https://noirlab.edu/public/images/noao-m90/"}, 
 		"imageUrl" : "m90.png",
 		"worldCoords" :	[[[189.3309,13.066], [189.0883,13.0632], [189.0851,13.2994], [189.3282,13.3021]]],
 		"textureCoords" : [[[0,0], [1,0], [1,1], [0,1]]], 
@@ -1783,7 +1783,7 @@
 		"maxBrightness" : 14.5
 	},
 	{
-		"imageCredits" : {"short" : "Sergio Eguivar","infoUrl": "https://commons.wikimedia.org/wiki/File:NGC_3114_Eguivar-crop.jpg"},
+		"imageCredits" : {"short" : "Sergio Eguivar, Rework: Sun Shuwei","infoUrl": "https://commons.wikimedia.org/wiki/File:NGC_3114_Eguivar-crop.jpg"},
 		"imageUrl" : "n3114.png",
 		"worldCoords" :	[[[151.8125,-60.6892], [149.309,-60.7012], [149.333,-59.4759], [151.7494,-59.4648]]],
 		"textureCoords" : [[[0,0], [1,0], [1,1], [0,1]]],
@@ -3929,7 +3929,7 @@
 		"maxBrightness" : 12.5
 	},
 	{
-		"imageCredits" : {"short" : "T.A. Rector (University of Alaska Anchorage) and H. Schweiker (WIYN and NOIRLab/NSF/AURA)","infoUrl": "https://noirlab.edu/public/images/noao-sh2-82/"},
+		"imageCredits" : {"short" : "T.A. Rector (University of Alaska Anchorage) and H. Schweiker (WIYN and NOIRLab/NSF/AURA), Rework: Sun Shuwei","infoUrl": "https://noirlab.edu/public/images/noao-sh2-82/"},
 		"imageUrl" : "sh2-82.png",
 		"worldCoords" :	[[[292.7621,18.1588], [292.5051,18.1592], [292.5059,18.4031], [292.7629,18.4026]]],
 		"textureCoords" : [[[0,0], [1,0], [1,1], [0,1]]],

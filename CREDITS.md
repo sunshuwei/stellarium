@@ -726,19 +726,16 @@
 	      http://eso.org/public/
 	      License: Creative Commons Attribution 4.0 International
 	4.113 Images of M23, NGC3114
-	      from Sergio Eguivar
+	      from Sergio Eguivar, Rework: Sun Shuwei
 	      https://commons.wikimedia.org/wiki/
-	      rework by Sun Shuwei
 	      License: Creative Commons Attribution-Share Alike 4.0 International
 	4.114 Images of Sh2-82
-	      from T.A. Rector (University of Alaska Anchorage) and H. Schweiker (WIYN and NOIRLab/NSF/AURA)
+	      from T.A. Rector (University of Alaska Anchorage) and H. Schweiker (WIYN and NOIRLab/NSF/AURA), Rework: Sun Shuwei
 	      https://noirlab.edu/
-	      rework by Sun Shuwei
 	      License: Creative Commons Attribution 4.0 International
 	4.115 Images of M90
-	      from NOIRLab/NSF/AURA
+	      from NOIRLab/NSF/AURA, Rework: Sun Shuwei
 	      https://noirlab.edu/
-	      rework by Sun Shuwei
 	      License: Creative Commons Attribution 4.0 International
 ```
 
