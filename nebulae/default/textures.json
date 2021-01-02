@@ -183,7 +183,7 @@
 	},
 	{
 		"imageCredits" : {"short" : "Sergio Eguivar","infoUrl": "https://commons.wikimedia.org/wiki/File:M23_Eguivar.jpg"},
-		"imageUrl" : "hd/m23.png",
+		"imageUrl" : "m23.png",
 		"worldCoords" :	[[[269.4595,-19.2261], [268.9935,-19.2278], [268.9922,-18.7878], [269.457,-18.7861]]],
 		"textureCoords" : [[[0,0], [1,0], [1,1], [0,1]]],
 		"minResolution" : 0.2169148018,
