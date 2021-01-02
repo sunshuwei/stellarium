@@ -725,21 +725,16 @@
 	      from ESO/IDA/Danish 1.5 m/R. Gendler, J.-E. Ovaldsen, C. Thone and C. Feron
 	      http://eso.org/public/
 	      License: Creative Commons Attribution 4.0 International
-	4.113 Images of NGC188
-	      from NOIRLab/NSF/AURA
-	      https://noirlab.edu/
+	4.113 Images of M23, NGC3114
+	      from Sergio Eguivar
+	      https://commons.wikimedia.org/wiki/
 	      rework by Sun Shuwei
-	      License: Creative Commons Attribution 4.0 International
+	      License: Creative Commons Attribution-Share Alike 4.0 International
 	4.114 Images of Sh2-82
 	      from T.A. Rector (University of Alaska Anchorage) and H. Schweiker (WIYN and NOIRLab/NSF/AURA)
 	      https://noirlab.edu/
 	      rework by Sun Shuwei
 	      License: Creative Commons Attribution 4.0 International
-	4.115 Images of M23, NGC3114
-	      from Sergio Eguivar
-	      https://commons.wikimedia.org/wiki/
-	      rework by Sun Shuwei
-	      License: Creative Commons Attribution-Share Alike 4.0 International
 ```
 
 ## Appendix

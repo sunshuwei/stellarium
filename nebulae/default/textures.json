@@ -902,9 +902,9 @@
 		"maxBrightness" : 13.2
 	},
 	{
-		"imageCredits" : {"short" : "NOIRLab/NSF/AURA","infoUrl": "https://noirlab.edu/public/images/noao0906a/"},
-		"imageUrl" : "n188.png",
-		"worldCoords" :	[[[13.9071,85.0955], [10.2331,85.0984], [10.1373,85.4126], [14.0625,85.4095]]],
+		"imageCredits" : {"short" : "DSS"},
+		"imageUrl" : "n188-dss.png",
+		"worldCoords" :	[[[14.6479,85.0222], [9.1641,85.018], [8.8281,85.4936], [14.8841,85.4974]]],
 		"textureCoords" : [[[0,0], [1,0], [1,1], [0,1]]],
 		"minResolution" : 0.266023154,
 		"maxBrightness" : 13.5
