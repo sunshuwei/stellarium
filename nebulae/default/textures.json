@@ -902,6 +902,14 @@
 		"maxBrightness" : 13.2
 	},
 	{
+		"imageCredits" : {"short" : "NOIRLab/NSF/AURA","infoUrl": "https://noirlab.edu/public/images/noao0906a/"},
+		"imageUrl" : "n188.png",
+		"worldCoords" :	[[[13.9071,85.0955], [10.2331,85.0984], [10.1373,85.4126], [14.0625,85.4095]]],
+		"textureCoords" : [[[0,0], [1,0], [1,1], [0,1]]],
+		"minResolution" : 0.266023154,
+		"maxBrightness" : 13.5
+	},
+	{
 		"imageCredits" : {"short" : "Hewholooks","infoUrl": "https://commons.wikimedia.org/wiki/File:NGC225HunterWilson.jpg"},
 		"imageUrl" : "n225.png",
 		"worldCoords" : [[[11.3531,61.6316], [10.252,61.6424], [10.2655,62.1656], [11.3854,62.1543]]],
@@ -1004,6 +1012,14 @@
 		"textureCoords" : [[[0,0], [1,0], [1,1], [0,1]]],
 		"minResolution" : 0.2165786418,
 		"maxBrightness" : 13.8
+	},
+	{
+		"imageCredits" : {"short" : "DSS"},
+		"imageUrl" : "n559-dss.png",
+		"worldCoords" :	[[[22.5985,63.1978], [22.1654,63.2046], [22.1801,63.3999], [22.6155,63.3927]]],
+		"textureCoords" : [[[0,0], [1,0], [1,1], [0,1]]],
+		"minResolution" : 0.266023154,
+		"maxBrightness" : 13.6
 	},
 	{
 		"imageCredits" : {"short" : "Adam Block/Mount Lemmon SkyCenter/University of Arizona","infoUrl": "http://www.caelumobservatory.com/gallery/n613.shtml"},

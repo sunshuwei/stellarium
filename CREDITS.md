@@ -725,6 +725,11 @@
 	      from ESO/IDA/Danish 1.5 m/R. Gendler, J.-E. Ovaldsen, C. Thone and C. Feron
 	      http://eso.org/public/
 	      License: Creative Commons Attribution 4.0 International
+	4.113 Images of NGC188
+	      from NOIRLab/NSF/AURA
+	      https://noirlab.edu/
+	      License: Creative Commons Attribution 4.0 International
+	      
 ```
 
 ## Appendix
