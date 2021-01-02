@@ -182,12 +182,12 @@
 		"maxBrightness" : 12.8
 	},
 	{
-		"imageCredits": {"short" : "Grasslands Observatory", "infoUrl": "http://www.grasslands.org/"},
-		"imageUrl" : "m23.png",
-		"worldCoords" : [[[-90.6590, -19.1313], [-90.8883, -19.1395], [-90.8969, -18.9228], [-90.6678, -18.9146]]],
+		"imageCredits" : {"short" : "Sergio Eguivar","infoUrl": "https://commons.wikimedia.org/wiki/File:M23_Eguivar.jpg"},
+		"imageUrl" : "hd/m23.png",
+		"worldCoords" :	[[[269.4595,-19.2261], [268.9935,-19.2278], [268.9922,-18.7878], [269.457,-18.7861]]],
 		"textureCoords" : [[[0,0], [1,0], [1,1], [0,1]]],
-		"minResolution" : 0.2170478438,
-		"maxBrightness" : 13.7
+		"minResolution" : 0.2169148018,
+		"maxBrightness" : 13.6
 	},
 	{
 		"imageCredits" : {"Short":"Plover Hill Observatory","infoUrl": "http://www.madpc.co.uk/~peterv/"},
