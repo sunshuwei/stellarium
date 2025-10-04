@@ -29,6 +29,7 @@
 #include <QDialog>
 #include "StelDialog.hpp"
 #include "VecMath.hpp"
+#include "qvalidator.h" // Added by Kwantsin
 
 // pre declaration of the ui class
 class Ui_searchDialogForm;
@@ -255,6 +256,16 @@ private slots:
 
 	//! Setting coordinates of the center of screen in spinboxes (following axes of current coordinate system)
 	void setCenterOfScreenCoordinates();
+
+	//! Select the local coordinate data JSON file
+	void selectCoordinateDir();
+	void browseForCoordinateDir();
+
+	//! Read coordinate data file, process and visualize
+	void on_importCoordinate_clicked();
+	Vec3f hexColorToVec3f(const QString& hexColor, bool* success);
+	double stringToDouble(QString input, QValidator::State* state);
+	Vec3d manualPositionChangedForData(double spinLong, double spinLat, QString coordinateSystem);
 
 private:
 	bool simbadSearchEnabled() const {return useSimbad;}

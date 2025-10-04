@@ -27,6 +27,7 @@
 #include "StelTranslator.hpp"
 #include "CustomObjectMgr.hpp"
 #include "StelJsonParser.hpp"
+#include "CustomDataObject.hpp" // Added by Kwantsin
 
 #include <QDir>
 #include <QSettings>
@@ -261,6 +262,24 @@ void CustomObjectMgr::addCustomObject(const QString& designation, Vec3d coordina
 			countMarkers++;
 
 		emit StelApp::getInstance().getCore()->updateSearchLists();
+	}
+}
+
+// Added by Kwantsin
+void CustomObjectMgr::addCustomObjectWithoutSearch(const QString& designation, Vec3d coordinates, const QString& icon, Vec3f color, float size, bool isVisible, bool search, bool showNames)
+{
+	if (!designation.isEmpty())
+	{
+		QSharedPointer<CustomDataObject> custObj(new CustomDataObject(designation, coordinates, isVisible, showNames, size, icon, color));
+		if (custObj->initialized)
+			customObjects.append(custObj);
+
+		if (isVisible)
+			countMarkers++;
+
+		if (search) {
+			emit StelApp::getInstance().getCore()->updateSearchLists();
+		}
 	}
 }
 

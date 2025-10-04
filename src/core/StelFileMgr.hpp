@@ -27,6 +27,8 @@
 #include <QString>
 #include <QStringList>
 
+constexpr auto COORDINATE_DIR_KEY = "main/coordinate_dir"; // Adden by Kwantsin
+
 class QFileInfo;
 
 //! Provides utilities for locating and handling files.
@@ -209,6 +211,22 @@ public:
 	//! @return the path to the locale directory or "" if the locale directory could not be found.
 	static QString getLocaleDir();
 
+	// Added by Kwantsin
+
+	//! This is the directory into which screenshots will be saved.
+	//! It is $HOME on Linux, BSD, Solaris etc.
+	//! It is the user's Desktop on MacOS X (??? - someone please verify this)
+	//! It is ??? on Windows
+	//! @return the path to the directory where screenshots are saved
+	static QString getCoordinateDir();
+
+	//! Sets the screenshot directory.
+	//! This is set to platform-specific values in the StelFileMgr constructor,
+	//! but it is settable using this function to make it possible to implement
+	//! the command-line option which specifies where screenshots go.
+	//! @param newDir the new value of the screenshot directory
+	static void setCoordinateDir(const QString& newDir);
+
 private:
 	//! No one can create an instance.
 	StelFileMgr() {}
@@ -233,6 +251,10 @@ private:
 
 	//! Used to store the application data directory
 	static QString installDir;
+
+	// Added by Kwantsin
+	//! Used to store the coordinate data directory
+	static QString coordinateDir;
 	
 #ifdef Q_OS_WIN
 	//! For internal use - retrieves windows special named directories.

@@ -64,7 +64,7 @@ public:
 	//! @param name The case in-sensitive english name
 	StelObjectP searchByName(const QString& name) const override;
 
-	StelObjectP searchByID(const QString &id) const override { return qSharedPointerCast<StelObject>(searchByEnglishName(id)); }
+	StelObjectP searchByID(const QString& id) const override { return qSharedPointerCast<StelObject>(searchByEnglishName(id)); }
 
 	QStringList listAllObjects(bool inEnglish) const override;
 	QString getName() const override { return "Custom Objects"; }
@@ -94,7 +94,18 @@ public slots:
 	//! @param designation - designation of custom object
 	//! @param coordinates - coordinates of custom object
 	//! @param isVisible - flag of visibility of custom object
-	void addCustomObject(const QString& designation, Vec3d coordinates, bool isVisible=false);
+	void addCustomObject(const QString& designation, Vec3d coordinates, bool isVisible = false);
+	// Added by Kwantsin
+	//! Add custom object on the sky
+	//! @param designation - designation of custom object
+	//! @param coordinates - coordinates of custom object
+	//! @param icon - icon of custom object ("cross" or "circcle")
+	//! @param color - color of custom object
+	//! @param size - size of custom object (number 0-7)
+	//! @param isVisible - flag of visibility of custom object
+	//! @param search - whether to update search lists
+	//! @param showNames - whether to display star name of custom object
+	void addCustomObjectWithoutSearch(const QString& designation, Vec3d coordinates, const QString& icon, Vec3f color, float size, bool isVisible = false, bool search = false, bool showNames = true);
 	//! Add custom object on the sky
 	//! @param designation - designation of custom object
 	//! @param ra - right ascension angle (J2000.0) of custom object
@@ -104,7 +115,7 @@ public slots:
 	//! // example of usage in scripts
 	//! CustomObjectMgr.addCustomObject("Marker", "2h10m15s", "60d01m15s", true);
 	//! @endcode
-	void addCustomObject(const QString& designation, const QString& ra, const QString& dec, bool isVisible=false);
+	void addCustomObject(const QString& designation, const QString& ra, const QString& dec, bool isVisible = false);
 	//! Add custom object on the sky
 	//! @param designation - designation of custom object
 	//! @param ra - right ascension angle (on date) of custom object
@@ -114,7 +125,7 @@ public slots:
 	//! // example of usage in scripts
 	//! CustomObjectMgr.addCustomObjectRaDec("Marker", "2h10m15s", "60d01m15s", true);
 	//! @endcode
-	void addCustomObjectRaDec(const QString& designation, const QString& ra, const QString& dec, bool isVisible=false);
+	void addCustomObjectRaDec(const QString& designation, const QString& ra, const QString& dec, bool isVisible = false);
 	//! Add custom object on the sky
 	//! @param designation - designation of custom object
 	//! @param alt - altitude of custom object
@@ -124,7 +135,7 @@ public slots:
 	//! // example of usage in scripts
 	//! CustomObjectMgr.addCustomObjectAltAzi("Marker", "2d10m15s", "60d01m15s", true);
 	//! @endcode
-	void addCustomObjectAltAzi(const QString& designation, const QString& alt, const QString& azi, bool isVisible=false);
+	void addCustomObjectAltAzi(const QString& designation, const QString& alt, const QString& azi, bool isVisible = false);
 	//! Remove all custom objects
 	void removeCustomObjects();
 	//! Remove just one custom object by English name
@@ -168,7 +179,7 @@ private slots:
 	void removeCustomObject(CustomObjectP);
 
 	//! Connect this to StelApp font size.
-	void setFontSize(int s){fontSize=s;}
+	void setFontSize(int s) { fontSize = s; }
 private:
 	// Font used for displaying our text
 	int fontSize;
@@ -196,7 +207,7 @@ private:
 	//! Set selected object from its pointer.
 	void setSelected(CustomObjectP obj);
 	//! Get selected object's pointer.
-	CustomObjectP getSelected(void) const {return selected;}
+	CustomObjectP getSelected(void) const { return selected; }
 	//! The currently selected planet.
 	CustomObjectP selected;
 };

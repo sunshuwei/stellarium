@@ -33,10 +33,11 @@ Vec3f CustomObject::markerColor = Vec3f(0.1f,1.0f,0.1f);
 float CustomObject::markerSize = 1.f;
 float CustomObject::selectPriority = 0.f;
 
-CustomObject::CustomObject(const QString& codesignation, const Vec3d& coordJ2000, const bool isaMarker)
+// Modified by Kwantsin
+CustomObject::CustomObject(const QString& codesignation, const Vec3d& coordJ2000, const bool isaMarker, const QString& icon)
 	: initialized(false)
 	, XYZ(coordJ2000)
-	, markerTexture(StelApp::getInstance().getTextureManager().createTexture(StelFileMgr::getInstallationDir()+"/textures/cross.png"))
+	, markerTexture(StelApp::getInstance().getTextureManager().createTexture(StelFileMgr::getInstallationDir()+"/textures/" + icon + ".png"))
 	, designation(codesignation)
 	, isMarker(isaMarker)
 {
@@ -122,7 +123,13 @@ void CustomObject::update(double deltaTime)
 	labelsFader.update(static_cast<int>(deltaTime*1000));
 }
 
-void CustomObject::draw(StelCore* core, StelPainter *painter)
+// Modified by Kwantsin
+void CustomObject::draw(StelCore* core, StelPainter* painter) {
+	_draw(core, painter, markerColor, true, markerSize);
+}
+
+// Added by Kwantsin
+void CustomObject::_draw(StelCore* core, StelPainter* painter, Vec3f customColor, bool showName, float customSize)
 {
 	Vec3d pos;
 	// Check visibility of custom object
@@ -130,16 +137,16 @@ void CustomObject::draw(StelCore* core, StelPainter *painter)
 		return;
 
 	painter->setBlending(true, GL_ONE, GL_ONE);
-	painter->setColor(markerColor, 1.f);
+	painter->setColor(customColor, 1.f);
 
 	if (isMarker)
 	{
 		markerTexture->bind();
-		const float shift = markerSize + 2.f;
+		const float shift = customSize + 2.f;
 
-		painter->drawSprite2dMode(static_cast<float>(pos[0]), static_cast<float>(pos[1]), markerSize);
+		painter->drawSprite2dMode(static_cast<float>(pos[0]), static_cast<float>(pos[1]), customSize);
 
-		if (labelsFader.getInterstate()<=0.f)
+		if (showName && labelsFader.getInterstate() <= 0.f)
 		{
 			painter->drawText(static_cast<float>(pos[0]), static_cast<float>(pos[1]), getNameI18n(), 0, shift, shift, false);
 		}

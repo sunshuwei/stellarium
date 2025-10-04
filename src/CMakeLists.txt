@@ -191,6 +191,8 @@ SET(stellarium_lib_SRCS
      core/modules/ConstellationMgr.hpp
      core/modules/CoordObject.cpp
      core/modules/CoordObject.hpp
+     core/modules/CustomDataObject.cpp
+     core/modules/CustomDataObject.hpp
      core/modules/CustomObject.cpp
      core/modules/CustomObject.hpp
      core/modules/CustomObjectMgr.cpp
