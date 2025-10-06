@@ -499,6 +499,17 @@ void SearchDialog::createDialogContent()
 	// Clear data from recent search object
 	connect(ui->recentSearchClearDataPushButton, SIGNAL(clicked()), this, SLOT(recentSearchClearDataClicked()));
 	populateRecentSearch();
+
+	// Added by Kwantsin
+	// Load data files and visualize them
+	connect(ui->importCoordinate, SIGNAL(clicked()), this, SLOT(on_importCoordinate_clicked()));
+	connect(ui->coordinateBrowseButton, SIGNAL(clicked()), this, SLOT(browseForCoordinateDir()));
+
+	ui->labelCoordData->setFixedWidth(80);
+	ui->coordinateDir->setText(StelFileMgr::getCoordinateDir());
+	ui->coordinateDir->setMinimumWidth(200);
+	ui->coordinateDir->setMaximumWidth(500);
+	connect(ui->coordinateDir, SIGNAL(editingFinished()), this, SLOT(selectCoordinateDir()));
 }
 
 void SearchDialog::populateRecentSearch()
