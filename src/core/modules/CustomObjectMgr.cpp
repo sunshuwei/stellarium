@@ -27,6 +27,7 @@
 #include "StelTranslator.hpp"
 #include "CustomObjectMgr.hpp"
 #include "StelJsonParser.hpp"
+#include "CustomDataObject.hpp" // Added by Kwantsin
 
 #include <QDir>
 #include <QSettings>
@@ -264,6 +265,24 @@ void CustomObjectMgr::addCustomObject(const QString& designation, Vec3d coordina
 	}
 }
 
+// Added by Kwantsin
+void CustomObjectMgr::addCustomObjectWithoutSearch(const QString& designation, Vec3d coordinates, const QString& icon, Vec3f color, float size, bool isVisible, bool search, bool showNames)
+{
+	if (!designation.isEmpty())
+	{
+		QSharedPointer<CustomDataObject> custObj(new CustomDataObject(designation, coordinates, isVisible, showNames, size, icon, color));
+		if (custObj->initialized)
+			customObjects.append(custObj);
+
+		if (isVisible)
+			countMarkers++;
+
+		if (search) {
+			emit StelApp::getInstance().getCore()->updateSearchLists();
+		}
+	}
+}
+
 void CustomObjectMgr::addCustomObject(const QString& designation, const QString &ra, const QString &dec, bool isVisible)
 {
 	Vec3d j2000;
@@ -369,7 +388,10 @@ void CustomObjectMgr::drawPointer(StelCore* core, StelPainter& painter)
 		painter.setColor(obj->getInfoColor());
 		texPointer->bind();
 		painter.setBlending(true);
-		painter.drawSprite2dMode(screenpos[0], screenpos[1], 13.f, static_cast<float>(StelApp::getInstance().getTotalRunTime()*40.));
+		const float angle = static_cast<float>(StelApp::getInstance().getAnimationTime()) * 40;
+		const float scale = StelApp::getInstance().getScreenScale();
+		const float radius = 9.f * scale;
+		painter.drawSprite2dMode(screenpos[0], screenpos[1], radius, angle);
 	}
 }
 

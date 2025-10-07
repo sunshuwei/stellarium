@@ -1,0 +1,2129 @@
+{
+  "id": "japanese_tenmon_seizou",
+  "region": "Eastern Asia",
+  "classification": ["historical"],
+  "fallback_to_international_names": false,
+  "asterisms": [
+  ],
+  "constellations": [
+    {
+      "id": "CON japanese_tenmon_seizou 001",
+      "lines": [[65474, 66249]],
+      "common_name": {"english": "【角】", "native": "角"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 002",
+      "lines": [[66006, 65420]],
+      "common_name": {"english": "平道", "native": "平道"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 003",
+      "lines": [[66200, 66936]],
+      "common_name": {"english": "天田", "native": "天田"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 004",
+      "lines": [[64238, 64238]],
+      "common_name": {"english": "进贤", "native": "进贤"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 005",
+      "lines": [[67480, 66763, 66727]],
+      "common_name": {"english": "周鼎", "native": "周鼎"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 006",
+      "lines": [[64725, 66015]],
+      "common_name": {"english": "天门", "native": "天门"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 007",
+      "lines": [[64962, 65835]],
+      "common_name": {"english": "平", "native": "平"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 008",
+      "lines": [[68002, 71860, 71352, 68933, 65109, 64408, 62896, 61789, 61468, 63066, 62896]],
+      "common_name": {"english": "库楼", "native": "库楼"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 009",
+      "lines": [[67153, 67457, 67669]],
+      "common_name": {"english": "柱", "native": "柱"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 010",
+      "lines": [[65936, 65535, 65593]],
+      "common_name": {"english": "柱", "native": "柱"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 011",
+      "lines": [[68523, 68282, 67663]],
+      "common_name": {"english": "柱", "native": "柱"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 012",
+      "lines": [[70576, 69996, 70104]],
+      "common_name": {"english": "柱", "native": "柱"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 013",
+      "lines": [[70090, 70300, 70987]],
+      "common_name": {"english": "柱", "native": "柱"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 014",
+      "lines": [[67464, 68245], [67472, 68245, 68862]],
+      "common_name": {"english": "衡", "native": "衡"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 015",
+      "lines": [[61932, 64673]],
+      "common_name": {"english": "南门", "native": "南门"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 016",
+      "lines": [[69974, 69427, 69701, 70755]],
+      "common_name": {"english": "【亢】", "native": "亢"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 017",
+      "lines": [[69673, 69673]],
+      "common_name": {"english": "大角", "native": "大角"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 018",
+      "lines": [[68763, 69269, 69658]],
+      "common_name": {"english": "折威", "native": "折威"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 019",
+      "lines": [[71795, 71762, 72125]],
+      "common_name": {"english": "左摄提", "native": "左摄提"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 020",
+      "lines": [[67927, 67275, 67459]],
+      "common_name": {"english": "右摄提", "native": "右摄提"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 021",
+      "lines": [[68269, 68895]],
+      "common_name": {"english": "顿顽", "native": "顿顽"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 022",
+      "lines": [[67057, 67494]],
+      "common_name": {"english": "阳门", "native": "阳门"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 023",
+      "lines": [[72622, 74392, 76333, 74785]],
+      "common_name": {"english": "【氐】", "native": "氐"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 024",
+      "lines": [[77516, 77516]],
+      "common_name": {"english": "天乳", "native": "天乳"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 025",
+      "lines": [[71075, 71075]],
+      "common_name": {"english": "招摇", "native": "招摇"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 026",
+      "lines": [[72105, 71284, 71053]],
+      "common_name": {"english": "梗河", "native": "梗河"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 027",
+      "lines": [[71115, 69226, 68103]],
+      "common_name": {"english": "帝席", "native": "帝席"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 028",
+      "lines": [[70027, 68279, 68030, 69612, 69989, 69829, 70027]],
+      "common_name": {"english": "亢池", "native": "亢池"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 029",
+      "lines": [[72010, 71865, 73334, 73273, 72683], [73334, 75141, 76297], [75141, 75501, 75304, 75177], [75501, 76939, 77358]],
+      "common_name": {"english": "骑官", "native": "骑官"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 030",
+      "lines": [[73714, 72929, 72571]],
+      "common_name": {"english": "阵车", "native": "阵车"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 031",
+      "lines": [[72683, 74117, 75264]],
+      "common_name": {"english": "车骑", "native": "车骑"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 032",
+      "lines": [[76470, 76600]],
+      "common_name": {"english": "天辐", "native": "天辐"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 033",
+      "lines": [[73273, 73273]],
+      "common_name": {"english": "骑阵将军", "native": "骑阵将军"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 034",
+      "lines": [[78104, 78265, 78401, 78820]],
+      "common_name": {"english": "【房】", "native": "房"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 035",
+      "lines": [[78933, 78990]],
+      "common_name": {"english": "钩钤", "native": "钩钤"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 036",
+      "lines": [[79374, 79374]],
+      "common_name": {"english": "键闭", "native": "键闭"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 037",
+      "lines": [[80343, 80569, 80894]],
+      "common_name": {"english": "罚", "native": "罚"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 038",
+      "lines": [[81724, 81754, 80975, 80473]],
+      "common_name": {"english": "东咸", "native": "东咸"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 039",
+      "lines": [[77853, 78207, 78727, 79375]],
+      "common_name": {"english": "西咸", "native": "西咸"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 040",
+      "lines": [[77840, 77840]],
+      "common_name": {"english": "日", "native": "日"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 041",
+      "lines": [[77634, 78105]],
+      "common_name": {"english": "从官", "native": "从官"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 042",
+      "lines": [[80112, 80763, 81266]],
+      "common_name": {"english": "【心】", "native": "心"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 043",
+      "lines": [[80324, 80911, 81304], [80911, 78918, 78384]],
+      "common_name": {"english": "积卒", "native": "积卒"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 044",
+      "lines": [[82396, 82514, 82729, 84143, 86228, 87073, 86670, 85927, 85696]],
+      "common_name": {"english": "【尾】", "native": "尾"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 045",
+      "lines": [[82545, 82545]],
+      "common_name": {"english": "神宫(附尾)", "native": "神宫"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 046",
+      "lines": [[85792, 85792]],
+      "common_name": {"english": "龟", "native": "龟"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 047",
+      "lines": [[85755, 85340, 84970, 84405]],
+      "common_name": {"english": "天江", "native": "天江"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 048",
+      "lines": [[87261, 87261]],
+      "common_name": {"english": "傅说", "native": "傅说"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 049",
+      "lines": [[87624, 87624], [87567, 87567]],
+      "common_name": {"english": "鱼", "native": "鱼"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 050",
+      "lines": [[88635, 89931, 90185, 89642]],
+      "common_name": {"english": "【箕】", "native": "箕"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 051",
+      "lines": [[90568, 90422, 90200]],
+      "common_name": {"english": "杵", "native": "杵"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 052",
+      "lines": [[88550, 88550]],
+      "common_name": {"english": "糠", "native": "糠"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 053",
+      "lines": [[93506, 93864, 92855, 92041, 90496, 89341]],
+      "common_name": {"english": "【斗】", "native": "斗"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 054",
+      "lines": [[93085, 93683, 94141, 94820, 95168, 95176]],
+      "common_name": {"english": "建", "native": "建星"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 055",
+      "lines": [[91117, 91726, 91845, 91880, 92175, 92202, 93026, 93429, 93805]],
+      "common_name": {"english": "天弁", "native": "天弁"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 056",
+      "lines": [[94114, 93825, 93174, 92989, 91875, 90968, 90887, 90982, 91494, 92308, 92953, 93542, 94005, 94160, 94114]],
+      "common_name": {"english": "鳖", "native": "鳖"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 057",
+      "lines": [[96496, 97290]],
+      "common_name": {"english": "天鸡", "native": "天鸡"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 058",
+      "lines": [[88116, 87706, 87836, 88839, 89678, 89731, 89153, 88380, 88116]],
+      "common_name": {"english": "天籥", "native": "天籥"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 059",
+      "lines": [[98066, 98162, 98688, 98353, 98066]],
+      "common_name": {"english": "狗国", "native": "狗国"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 060",
+      "lines": [[95347, 98412, 98032]],
+      "common_name": {"english": "天渊", "native": "天渊"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 061",
+      "lines": [[96465, 95477]],
+      "common_name": {"english": "狗", "native": "狗"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 062",
+      "lines": [[90763, 90763]],
+      "common_name": {"english": "农丈人", "native": "农丈人"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 063",
+      "lines": [[100310, 100345, 100064], [100881, 100345, 101027, 101123, 100881]],
+      "common_name": {"english": "【牛】", "native": "牛"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 064",
+      "lines": [[99825, 99825], [101384, 101384]],
+      "common_name": {"english": "天田", "native": "天田"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 065",
+      "lines": [[101772, 101772]],
+      "common_name": {"english": "九坎", "native": "九坎"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 066",
+      "lines": [[97278, 97649, 98036]],
+      "common_name": {"english": "河鼓", "native": "河鼓"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 067",
+      "lines": [[91971, 91262, 91919]],
+      "common_name": {"english": "织女", "native": "织女"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 068",
+      "lines": [[95498, 95771], [94703, 95771, 95947, 96683, 98543, 97886, 98337, 99742]],
+      "common_name": {"english": "左旗", "native": "左旗"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 069",
+      "lines": [[97229, 96229], [96665, 96229, 94727, 95501, 94477, 95585, 96468, 95937]],
+      "common_name": {"english": "右旗", "native": "右旗"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 070",
+      "lines": [[99473, 98844, 97980, 97804]],
+      "common_name": {"english": "天桴", "native": "天桴"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 071",
+      "lines": [[101923, 102026, 101984]],
+      "common_name": {"english": "罗堰", "native": "罗堰"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 072",
+      "lines": [[93194, 92420, 92791, 93903, 93194]],
+      "common_name": {"english": "渐台", "native": "渐台"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 073",
+      "lines": [[92862, 94481, 94713, 95556, 96052]],
+      "common_name": {"english": "辇道", "native": "辇道"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 074",
+      "lines": [[102618, 103045, 103005, 102624]],
+      "common_name": {"english": "【女】", "native": "女"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 075",
+      "lines": [[105228, 105228], [102485, 102485]],
+      "common_name": {"english": "十二国", "native": "十二国"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 076",
+      "lines": [[101692, 101847, 101936, 100664, 101101, 101692]],
+      "common_name": {"english": "离珠", "native": "离珠"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 077",
+      "lines": [[101882, 101800, 101421, 101483, 100256], [101483, 101882]],
+      "common_name": {"english": "败瓜", "native": "败瓜"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 078",
+      "lines": [[102281, 102532, 101958, 101769, 102281], [101769, 101589]],
+      "common_name": {"english": "瓠瓜", "native": "瓠瓜"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 079",
+      "lines": [[97165, 100453, 102488, 104732, 105138, 104887, 103413, 102098, 99675, 97165]],
+      "common_name": {"english": "天津", "native": "天津"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 080",
+      "lines": [[94779, 95853, 96441], [95853, 96895]],
+      "common_name": {"english": "奚仲", "native": "奚仲"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 081",
+      "lines": [[91755, 90905, 90156, 89348, 91315, 92512, 94490]],
+      "common_name": {"english": "扶筐", "native": "扶筐"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 082",
+      "lines": [[106278, 104987]],
+      "common_name": {"english": "【虚】", "native": "虚"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 083",
+      "lines": [[106944, 107575]],
+      "common_name": {"english": "司命", "native": "司命"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 084",
+      "lines": [[107151, 106856]],
+      "common_name": {"english": "司禄", "native": "司禄"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 085",
+      "lines": [[105570, 105413]],
+      "common_name": {"english": "司危", "native": "司危"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 086",
+      "lines": [[104858, 104521]],
+      "common_name": {"english": "司非", "native": "司非"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 087",
+      "lines": [[105881, 106039]],
+      "common_name": {"english": "哭", "native": "哭"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 088",
+      "lines": [[110003, 110273]],
+      "common_name": {"english": "泣", "native": "泣"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 089",
+      "lines": [[107380, 109289, 109404, 109285, 109422, 107380]],
+      "common_name": {"english": "天垒城", "native": "天垒城"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 090",
+      "lines": [[109268, 112122]],
+      "common_name": {"english": "败臼", "native": "败臼"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 091",
+      "lines": [[108085, 109111, 109908]],
+      "common_name": {"english": "离瑜", "native": "离瑜"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 092",
+      "lines": [[109074, 109427, 107315]],
+      "common_name": {"english": "【危】", "native": "危"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 093",
+      "lines": [[108022, 107763], [107354, 107763], [107310, 107763], [107354, 107763], [107975, 107763]],
+      "common_name": {"english": "人", "native": "人星"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 094",
+      "lines": [[109410, 109937, 109754]],
+      "common_name": {"english": "杵", "native": "杵"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 095",
+      "lines": [[109056, 109176, 109602, 110371]],
+      "common_name": {"english": "臼", "native": "臼"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 096",
+      "lines": [[106551, 107253, 107235, 106711, 106551], [107235, 109102, 109745, 110351]],
+      "common_name": {"english": "车府", "native": "车府"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 097",
+      "lines": [[105268, 102422, 105199, 108317, 108917, 110817, 112724, 113864, 115088]],
+      "common_name": {"english": "天钩", "native": "天钩"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 098",
+      "lines": [[110991, 109556, 107418], [110991, 109492, 107259]],
+      "common_name": {"english": "造父", "native": "造父"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 099",
+      "lines": [[110672, 110960], [111497, 110960], [110395, 110960]],
+      "common_name": {"english": "坟墓", "native": "坟墓"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 100",
+      "lines": [[111965, 111710, 111170, 110532]],
+      "common_name": {"english": "虚梁", "native": "虚梁"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 101",
+      "lines": [[110529, 110391, 109786, 110529]],
+      "common_name": {"english": "天钱", "native": "天钱"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 102",
+      "lines": [[108991, 108874]],
+      "common_name": {"english": "盖屋", "native": "盖屋"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 103",
+      "lines": [[113963, 113881]],
+      "common_name": {"english": "【室】", "native": "室"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 104",
+      "lines": [[112158, 112051]],
+      "common_name": {"english": "离宫", "native": "离宫"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 105",
+      "lines": [[112748, 112440]],
+      "common_name": {"english": "离宫", "native": "离宫"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 106",
+      "lines": [[115250, 115623]],
+      "common_name": {"english": "离宫", "native": "离宫"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 107",
+      "lines": [[112935, 113186, 114144, 114520, 115444, 115919]],
+      "common_name": {"english": "雷电", "native": "雷电"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 108",
+      "lines": [[107556, 106985, 106723, 107188, 107556, 109139, 111123, 112961, 114724, 118209, 154, 443, 145, 118209]],
+      "common_name": {"english": "垒壁阵", "native": "垒壁阵"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 109",
+      "lines": [[110602, 111086, 110778], [111086, 112716, 113136, 112211, 112529], [112211, 111449], [113136, 113998, 114341, 114375, 114119], [113998, 115404, 115125, 114750], [115125, 115115, 115033, 114855], [115404, 116957, 116971, 116758], [115404, 115438, 115669, 116247, 114366, 114453, 114842], [116247, 116901, 117089, 117629, 117107, 117452, 183], [117629, 301, 983, 1170], [301, 873, 355, 671], [1170, 636, 1096, 761], [636, 1728, 2381, 2159]],
+      "common_name": {"english": "羽林军", "native": "羽林军"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 110",
+      "lines": [[115102, 115833, 116231]],
+      "common_name": {"english": "斧钺", "native": "𫓧钺"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 111",
+      "lines": [[113368, 113368]],
+      "common_name": {"english": "北落师门", "native": "北落师门"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 112",
+      "lines": [[2081, 2072]],
+      "common_name": {"english": "八魁", "native": "八魁"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 113",
+      "lines": [[111954, 111954]],
+      "common_name": {"english": "天纲", "native": "天纲"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 114",
+      "lines": [[112029, 112447]],
+      "common_name": {"english": "土公吏", "native": "土公吏"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 115",
+      "lines": [[116631, 116805, 116584, 115022, 114570, 113919, 113288, 112761, 111169], [113327, 111169], [111022, 111169], [110609, 111169], [109521, 111169], [110538, 111169], [111674, 111169], [112761, 112300, 112641, 112731, 113561, 114104, 115990, 114622, 113561]],
+      "common_name": {"english": "腾蛇", "native": "腾蛇"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 116",
+      "lines": [[1067, 677]],
+      "common_name": {"english": "【壁】", "native": "壁"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 117",
+      "lines": [[113889, 114971, 115830, 116771, 118268]],
+      "common_name": {"english": "霹雳", "native": "霹雳"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 118",
+      "lines": [[115738, 116323, 117375, 116928, 115738]],
+      "common_name": {"english": "云雨", "native": "云雨"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 119",
+      "lines": [[841, 1501, 2225, 2900, 3504, 3300, 2497, 1982, 118188, 106, 841]],
+      "common_name": {"english": "天厩", "native": "天厩"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 120",
+      "lines": [[4852, 4577]],
+      "common_name": {"english": "𫓧锧", "native": "𫓧锧"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 121",
+      "lines": [[813, 1465]],
+      "common_name": {"english": "土公", "native": "土公"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 122",
+      "lines": [[3693, 4463, 5131, 5571, 5742, 6193, 5586, 5544, 5447, 4436, 3881, 3293, 3231, 2912, 3092, 3031, 3693]],
+      "common_name": {"english": "【奎】", "native": "奎"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 123",
+      "lines": [[3786, 4906, 5737, 7007, 7884, 8833, 9487]],
+      "common_name": {"english": "外屏", "native": "外屏"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 124",
+      "lines": [[5951, 5594, 4979, 5510, 6061, 6432, 6226, 5951]],
+      "common_name": {"english": "天溷", "native": "天溷"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 125",
+      "lines": [[3419, 3419]],
+      "common_name": {"english": "土司空", "native": "土司空"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 126",
+      "lines": [[8796, 8796]],
+      "common_name": {"english": "军南门", "native": "军南门"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 127",
+      "lines": [[3801, 5542, 6242, 6686, 8886, 9312]],
+      "common_name": {"english": "阁道", "native": "阁道"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 128",
+      "lines": [[2920, 2920]],
+      "common_name": {"english": "附路", "native": "附路"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 129",
+      "lines": [[746, 3179], [746, 3821], [746, 4422], [746, 4427]],
+      "common_name": {"english": "王良", "native": "王良"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 131",
+      "lines": [[2599, 2599]],
+      "common_name": {"english": "策", "native": "策"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 132",
+      "lines": [[9884, 8903, 8832]],
+      "common_name": {"english": "【娄】", "native": "娄"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 133",
+      "lines": [[9836, 10306, 10732, 10328, 10155, 10306]],
+      "common_name": {"english": "左更", "native": "左更"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 134",
+      "lines": [[6706, 7097, 7535, 8198, 8588, 7097]],
+      "common_name": {"english": "右更", "native": "右更"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 135",
+      "lines": [[1562, 5364, 6537, 8645, 8102, 9347]],
+      "common_name": {"english": "天仓", "native": "天仓"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 136",
+      "lines": [[9440, 9677, 10320]],
+      "common_name": {"english": "天庾", "native": "天庾"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 137",
+      "lines": [[10064, 10670, 9640, 8068, 7607, 6999, 6813, 7719, 7513, 9001, 9977, 10064]],
+      "common_name": {"english": "天将军", "native": "天大将军"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 138",
+      "lines": [[12719, 13061, 13209]],
+      "common_name": {"english": "【胃】", "native": "胃"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 139",
+      "lines": [[15900, 16083, 16322, 16369]],
+      "common_name": {"english": "天廪", "native": "天廪"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 140",
+      "lines": [[14135, 15457, 14915, 13954, 12828, 10324, 11484, 12093, 12706, 12387, 11687, 11046, 10826], [14135, 12706]],
+      "common_name": {"english": "天囷", "native": "天囷"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 141",
+      "lines": [[11313, 12777, 13965, 14668, 14576, 14354, 13254, 12623]],
+      "common_name": {"english": "大陵", "native": "大陵"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 142",
+      "lines": [[11060, 13268, 14328, 15863, 17358, 19343, 19812, 20070, 19949]],
+      "common_name": {"english": "天船", "native": "天船"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 143",
+      "lines": [[13879, 13879]],
+      "common_name": {"english": "积尸", "native": "积尸"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 144",
+      "lines": [[19167, 19167]],
+      "common_name": {"english": "积水", "native": "积水"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 145",
+      "lines": [[17489, 17499, 17531, 17608, 17573, 17702, 17847]],
+      "common_name": {"english": "【昴】", "native": "昴"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 146",
+      "lines": [[15549, 15549]],
+      "common_name": {"english": "天阿", "native": "天阿"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 147",
+      "lines": [[19038, 19038]],
+      "common_name": {"english": "月", "native": "月"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 148",
+      "lines": [[14838, 15737, 15870], [15737, 15627], [15737, 15110]],
+      "common_name": {"english": "天阴", "native": "天阴"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 149",
+      "lines": [[11345, 12390, 11348, 11783, 12562, 11029]],
+      "common_name": {"english": "蒭藁", "native": "蒭藁"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 150",
+      "lines": [[18543, 17593, 17378, 16537, 15197, 13701, 12770, 12843, 13288, 14146, 15474, 16611, 17651, 17717, 18216, 18673]],
+      "common_name": {"english": "天苑", "native": "天苑"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 151",
+      "lines": [[17313, 17448, 18246, 18614, 18532, 17529]],
+      "common_name": {"english": "卷舌", "native": "卷舌"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 152",
+      "lines": [[17886, 17886]],
+      "common_name": {"english": "天谗", "native": "天谗"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 153",
+      "lines": [[19205, 19171, 19513, 20430]],
+      "common_name": {"english": "砺石", "native": "砺石"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 154",
+      "lines": [[20889, 20648, 20455, 20205, 18724], [21421, 20894, 20713, 20205]],
+      "common_name": {"english": "【毕】", "native": "毕"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 155",
+      "lines": [[21683, 21683]],
+      "common_name": {"english": "附耳", "native": "附耳"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 156",
+      "lines": [[20635, 20711]],
+      "common_name": {"english": "天街", "native": "天街"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 157",
+      "lines": [[20261, 20732, 21273, 21036, 21589, 21402], [21589, 20522, 19860]],
+      "common_name": {"english": "天节", "native": "天节"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 158",
+      "lines": [[21881, 23497, 23883, 24822, 25539, 26451]],
+      "common_name": {"english": "诸王", "native": "诸王"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 159",
+      "lines": [[22850, 22565, 23835, 23871, 22850]],
+      "common_name": {"english": "天高", "native": "天高"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 160",
+      "lines": [[19849, 19587, 19777, 20922, 21594, 21644, 21296, 21278, 20507, 19849]],
+      "common_name": {"english": "九州殊口", "native": "九州殊口"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 161",
+      "lines": [[24608, 23015], [24608, 28360, 28380, 25428]],
+      "common_name": {"english": "五车", "native": "五车"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 162",
+      "lines": [[23453, 23416, 23767]],
+      "common_name": {"english": "柱", "native": "西北柱"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 163",
+      "lines": [[27483, 27639, 27673]],
+      "common_name": {"english": "柱", "native": "东北柱"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 164",
+      "lines": [[26712, 25984, 26536]],
+      "common_name": {"english": "柱", "native": "东南柱"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 165",
+      "lines": [[24504, 24575], [24727, 24575], [24879, 24575], [25292, 24575]],
+      "common_name": {"english": "天潢", "native": "天潢"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 166",
+      "lines": [[25048, 24813, 24340]],
+      "common_name": {"english": "咸池", "native": "咸池"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 167",
+      "lines": [[25945, 25945]],
+      "common_name": {"english": "天关", "native": "天关"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 168",
+      "lines": [[23123, 22797, 22549, 22449, 22509, 22845, 22957, 23607, 24010]],
+      "common_name": {"english": "参旗", "native": "参旗"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 169",
+      "lines": [[23362, 21763, 22479, 23231, 23221, 22701, 22109, 21444]],
+      "common_name": {"english": "九斿", "native": "九斿"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 170",
+      "lines": [[21248, 21393, 20535, 20042, 18213, 17874, 17797, 17351, 16870, 15510, 13847, 12486, 12413]],
+      "common_name": {"english": "天园", "native": "天园"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 172",
+      "lines": [[26176, 26207, 26366]],
+      "common_name": {"english": "【觜】", "native": "觜"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 173",
+      "lines": [[29696, 30827, 31173, 32040, 31579, 31789, 31832, 32173, 32562]],
+      "common_name": {"english": "座旗", "native": "座旗"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 174",
+      "lines": [[27338, 27265, 27364, 27511]],
+      "common_name": {"english": "司怪", "native": "司怪"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 175",
+      "lines": [[25336, 25930, 26311, 26727, 27366], [25930, 24436], [26727, 27989]],
+      "common_name": {"english": "【参】", "native": "参"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 176",
+      "lines": [[26237, 26235, 26241]],
+      "common_name": {"english": "伐", "native": "伐"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 177",
+      "lines": [[24674, 23875, 23364, 23972]],
+      "common_name": {"english": "玉井", "native": "玉井"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 178",
+      "lines": [[23685, 24305]],
+      "common_name": {"english": "屏", "native": "屏星"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 179",
+      "lines": [[24244, 24327, 24845, 24873, 24244]],
+      "common_name": {"english": "军井", "native": "军井"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 180",
+      "lines": [[25985, 25606, 27072, 27654]],
+      "common_name": {"english": "天厕", "native": "厕"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 181",
+      "lines": [[26460, 26460]],
+      "common_name": {"english": "天矢", "native": "屎"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 182",
+      "lines": [[30343, 30883, 31681, 32362], [35350, 34088, 32921, 32246], [30883, 32921], [31681, 34088]],
+      "common_name": {"english": "【井】", "native": "井"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 183",
+      "lines": [[29655, 29655]],
+      "common_name": {"english": "钺", "native": "钺"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 184",
+      "lines": [[37279, 36188, 36425]],
+      "common_name": {"english": "南河", "native": "南河"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 185",
+      "lines": [[37826, 36850, 36366]],
+      "common_name": {"english": "北河", "native": "北河"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 186",
+      "lines": [[35550, 35699, 36238, 35550]],
+      "common_name": {"english": "天樽", "native": "天樽"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 187",
+      "lines": [[33018, 34693, 36046, 36962, 37740]],
+      "common_name": {"english": "五诸侯", "native": "五诸侯"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 188",
+      "lines": [[37265, 37265]],
+      "common_name": {"english": "积水", "native": "积水"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 189",
+      "lines": [[39780, 39780]],
+      "common_name": {"english": "积薪", "native": "积薪"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 190",
+      "lines": [[29038, 29426, 29704, 29434, 29038]],
+      "common_name": {"english": "水府", "native": "水府"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 191",
+      "lines": [[36616, 37300, 37908, 38722]],
+      "common_name": {"english": "水位", "native": "水位"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 192",
+      "lines": [[30419, 31216, 31978, 33202]],
+      "common_name": {"english": "四渎", "native": "四渎"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 193",
+      "lines": [[28910, 28816, 29048, 29150, 29843, 31125, 31416, 31592, 31700, 31827, 31084, 30457, 29735, 28910]],
+      "common_name": {"english": "军市", "native": "军市"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 194",
+      "lines": [[30324, 30324]],
+      "common_name": {"english": "野鸡", "native": "野鸡"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 195",
+      "lines": [[29807, 30277]],
+      "common_name": {"english": "孙", "native": "孙"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 196",
+      "lines": [[27628, 28199]],
+      "common_name": {"english": "子", "native": "子"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 197",
+      "lines": [[25859, 26634]],
+      "common_name": {"english": "丈人", "native": "丈人"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 198",
+      "lines": [[34769, 32578]],
+      "common_name": {"english": "阙丘", "native": "阙丘"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 199",
+      "lines": [[32349, 32349]],
+      "common_name": {"english": "狼", "native": "狼星"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 200",
+      "lines": [[33977, 35904, 32759, 33579, 34444, 35415, 36795, 38835, 39757, 35904]],
+      "common_name": {"english": "弧矢", "native": "弧矢"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 201",
+      "lines": [[30438, 30438]],
+      "common_name": {"english": "老人", "native": "老人"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 202",
+      "lines": [[41822, 41909, 42806, 42911]],
+      "common_name": {"english": "【鬼】", "native": "鬼"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 203",
+      "lines": [[42523, 42523], [42542, 42542]],
+      "common_name": {"english": "积尸气", "native": "积尸"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 204",
+      "lines": [[40843, 40023, 39424, 40240, 40843]],
+      "common_name": {"english": "爟", "native": "爟"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 205",
+      "lines": [[36773, 37379, 37891, 38382, 38048, 38253], [37447, 38048]],
+      "common_name": {"english": "天狗", "native": "天狗"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 206",
+      "lines": [[41307, 42146, 42835, 43305, 43142, 42028, 41307]],
+      "common_name": {"english": "外厨", "native": "外厨"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 207",
+      "lines": [[38414, 39429], [37819, 39429, 40706, 42515], [40706, 42828]],
+      "common_name": {"english": "天社", "native": "天社"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 208",
+      "lines": [[43067, 43067]],
+      "common_name": {"english": "天记", "native": "天记"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 209",
+      "lines": [[43234, 42799, 42402, 42313, 43109, 43813, 44659, 45336]],
+      "common_name": {"english": "【柳】", "native": "柳"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 210",
+      "lines": [[46771, 46454, 47205]],
+      "common_name": {"english": "酒旗", "native": "酒旗"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 211",
+      "lines": [[47431, 46776, 46509, 46390, 45811, 45751, 46744, 46390]],
+      "common_name": {"english": "【星】", "native": "星"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 212",
+      "lines": [[43531, 44248, 44700, 45688, 45860, 47701, 46146, 46750, 47908, 48455, 50335, 50583, 49583, 49669, 47508], [49669, 51624], [49669, 49637]],
+      "common_name": {"english": "轩辕", "native": "轩辕"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 213",
+      "lines": [[49637, 49637]],
+      "common_name": {"english": ""}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 214",
+      "lines": [[47300, 47029, 47080], [47029, 46952]],
+      "common_name": {"english": "内平", "native": "内平"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 215",
+      "lines": [[49865, 49900, 50414]],
+      "common_name": {"english": "天相", "native": "天相"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 216",
+      "lines": [[42884, 44191], [42884, 43023, 44816], [42884, 42312]],
+      "common_name": {"english": "天稷", "native": "天稷"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 217",
+      "lines": [[48356, 49321, 51069, 52085], [51069, 49841, 48356, 47452]],
+      "common_name": {"english": "【张】", "native": "张"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 218",
+      "lines": [[46371, 45902, 46026, 45001, 44824, 45037, 46511, 46880, 47522, 47758, 47199, 46810, 46578, 46897]],
+      "common_name": {"english": "天庙", "native": "天庙"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 219",
+      "lines": [[52943, 53740, 55282, 55705, 57283], [55705, 55598, 54960, 53740], [54960, 54682, 56078, 54204, 54477, 51172, 50456], [54477, 56332, 56300], [55282, 56802, 55874, 55687, 54029, 52980], [55687, 56633, 57214]],
+      "common_name": {"english": "【翼】", "native": "翼"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 220",
+      "lines": [[50122, 50191, 50241, 51077, 50799, 50191]],
+      "common_name": {"english": "东瓯", "native": "东瓯"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 221",
+      "lines": [[59316, 59803, 60965, 61359]],
+      "common_name": {"english": "【轸】", "native": "轸"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 222",
+      "lines": [[61174, 61174]],
+      "common_name": {"english": "左辖", "native": "左辖"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 223",
+      "lines": [[59199, 59199]],
+      "common_name": {"english": "右辖", "native": "右辖"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 224",
+      "lines": [[60189, 60189]],
+      "common_name": {"english": "长沙", "native": "长沙"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 225",
+      "lines": [[57936, 56922]],
+      "common_name": {"english": "军门", "native": "军门"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 226",
+      "lines": [[58082, 57613, 56343, 55588]],
+      "common_name": {"english": "土司空", "native": "土司空"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 227",
+      "lines": [[62500, 62131, 61720, 62360, 62683]],
+      "common_name": {"english": "青丘", "native": "青丘"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 228",
+      "lines": [[59196, 60823]],
+      "common_name": {"english": "器府", "native": "器府"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 229",
+      "lines": [[]],
+      "label_positions": [[15.0, 87.0]],
+      "common_name": {"english": "【紫微垣】", "native": "紫微垣"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 230",
+      "lines": [[75097, 72607, 70692, 69112, 62572, 11767]],
+      "common_name": {"english": "北极", "native": "北极"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 231",
+      "lines": [[115746, 5372, 19454, 37391]],
+      "common_name": {"english": "四辅", "native": "四辅"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 232",
+      "lines": [[67627, 67627]],
+      "common_name": {"english": "天乙", "native": "天一"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 233",
+      "lines": [[66798, 66798]],
+      "common_name": {"english": "太乙", "native": "太一"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 234",
+      "lines": [[75458, 78527, 80331, 83895, 89908, 99255, 111056, 3721]],
+      "common_name": {"english": "紫微垣东藩", "native": "紫微左垣"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 235",
+      "lines": [[68756, 61281, 51808, 40793, 24254, 17959, 11569]],
+      "common_name": {"english": "紫微垣西藩", "native": "紫微右垣"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 236",
+      "lines": [[74605, 73199]],
+      "common_name": {"english": "阴德", "native": "阴德"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 237",
+      "lines": [[82860, 81660], [82860, 78893], [82860, 80650], [82860, 83114]],
+      "common_name": {"english": "尚书", "native": "尚书"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 238",
+      "lines": [[89937, 89937]],
+      "common_name": {"english": "女史", "native": "女史"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 239",
+      "lines": [[86614, 86614]],
+      "common_name": {"english": "柱史", "native": "柱史"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 240",
+      "lines": [[80480, 83317, 87234, 88136, 80480]],
+      "common_name": {"english": "御女", "native": "御女"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 241",
+      "lines": [[100965, 102599, 105727, 104756, 102208]],
+      "common_name": {"english": "天柱", "native": "天柱"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 242",
+      "lines": [[77277, 75260]],
+      "common_name": {"english": "大理", "native": "大理"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 243",
+      "lines": [[112519, 113116, 109693, 85822, 82080, 77055]],
+      "common_name": {"english": "勾陈", "native": "勾陈"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 244",
+      "lines": [[20982, 32439], [28532, 25110], [36547, 23265]],
+      "common_name": {"english": "六甲", "native": "六甲"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 245",
+      "lines": [[112833, 112833]],
+      "common_name": {"english": "天皇大帝", "native": "天皇大帝"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 246",
+      "lines": [[3132, 118027], [3132, 5626], [3132, 760], [3132, 4283]],
+      "common_name": {"english": "五帝座", "native": "五帝内座"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 247",
+      "lines": [[7078, 9598], [7078, 9480], [7078, 9009], [7078, 7965], [7078, 6692], [7078, 5518], [7078, 5926]],
+      "common_name": {"english": "华盖", "native": "华盖"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 248",
+      "lines": [[19461, 14844, 13055, 10309, 9568, 9727, 9763], [7650, 7078]],
+      "common_name": {"english": "杠", "native": "杠"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 249",
+      "lines": [[22783, 20266, 17884, 15520, 12239, 7593, 6312, 5566, 3951]],
+      "common_name": {"english": "传舍", "native": "传舍"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 250",
+      "lines": [[40215, 36528, 33104, 32864, 29997, 29490]],
+      "common_name": {"english": "内阶", "native": "内阶"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 251",
+      "lines": [[94376, 95081, 98702, 100261, 97433, 96100, 94376]],
+      "common_name": {"english": "天厨", "native": "天厨"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 252",
+      "lines": [[23522, 25197, 21727], [23040, 22287, 27971], [25197, 27949, 28358]],
+      "common_name": {"english": "八谷", "native": "八谷"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 253",
+      "lines": [[86414, 87833, 85670, 85829, 87585]],
+      "common_name": {"english": "天棓", "native": "天棓"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 254",
+      "lines": [[70952, 71040, 73507], [72664, 71876, 68184]],
+      "common_name": {"english": "天床", "native": "天床"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 255",
+      "lines": [[56211, 52425]],
+      "common_name": {"english": "内厨", "native": "内厨"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 256",
+      "lines": [[45493, 44901, 46853, 48402, 48319, 46733]],
+      "common_name": {"english": "文昌", "native": "文昌"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 257",
+      "lines": [[52353, 50933], [51448, 52353]],
+      "common_name": {"english": "三师", "native": "三师"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 258",
+      "lines": [[54539, 54539]],
+      "common_name": {"english": "太尊", "native": "太尊"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 259",
+      "lines": [[51814, 53261], [51459, 53043], [52136, 52478]],
+      "common_name": {"english": "天牢", "native": "天牢"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 260",
+      "lines": [[57399, 57399]],
+      "common_name": {"english": "太阳守", "native": "太阳守"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 261",
+      "lines": [[56120, 55044, 55086, 56731, 56120]],
+      "common_name": {"english": "势", "native": "势"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 262",
+      "lines": [[60485, 60485]],
+      "common_name": {"english": "相", "native": "相"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 263",
+      "lines": [[65754, 66234, 64906]],
+      "common_name": {"english": "三公", "native": "三公"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 264",
+      "lines": [[69732, 69732]],
+      "common_name": {"english": "玄戈", "native": "玄戈"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 265",
+      "lines": [[57477, 58181, 56944, 56083, 57477]],
+      "common_name": {"english": "天理", "native": "天理"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 266",
+      "lines": [[54061, 53910, 58001, 59774, 62956, 65378, 67301]],
+      "common_name": {"english": "北斗", "native": "北斗"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 267",
+      "lines": [[65477, 65477]],
+      "common_name": {"english": "左辅", "native": "辅星"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 268",
+      "lines": [[69483, 70497, 69713]],
+      "common_name": {"english": "天枪", "native": "天枪"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 269",
+      "lines": [[]],
+      "label_positions": [[12.2, 12.0]],
+      "common_name": {"english": "【太微垣】", "native": "太微垣"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 270",
+      "lines": [[60129, 61941, 63090, 63608, 64241]],
+      "common_name": {"english": "太微左垣", "native": "太微左垣"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 271",
+      "lines": [[57757, 55434, 55642, 54879, 54872]],
+      "common_name": {"english": "太微右垣", "native": "太微右垣"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 272",
+      "lines": [[60172, 60172]],
+      "common_name": {"english": "谒者", "native": "谒者"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 273",
+      "lines": [[61658, 61637, 61428]],
+      "common_name": {"english": "三公", "native": "三公"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 274",
+      "lines": [[61960, 62267, 61968]],
+      "common_name": {"english": "九卿", "native": "九卿"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 275",
+      "lines": [[62886, 61394, 61418, 60202, 59819]],
+      "common_name": {"english": "五诸侯", "native": "五诸侯"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 276",
+      "lines": [[57328, 57380, 58590, 58948]],
+      "common_name": {"english": "内屏", "native": "内屏"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 277",
+      "lines": [[57632, 58159], [57632, 57646], [57632, 57320], [57632, 57779]],
+      "common_name": {"english": "五帝座", "native": "五帝座"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 278",
+      "lines": [[59501, 59501]],
+      "common_name": {"english": "幸臣", "native": "幸臣"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 279",
+      "lines": [[57565, 57565]],
+      "common_name": {"english": "太子", "native": "太子"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 280",
+      "lines": [[56975, 56975]],
+      "common_name": {"english": "从官", "native": "从官"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 281",
+      "lines": [[63121, 63121]],
+      "common_name": {"english": "郎将", "native": "郎将"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 282",
+      "lines": [[54951, 54951]],
+      "common_name": {"english": "虎贲", "native": "虎贲"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 283",
+      "lines": [[61309, 59856, 58512, 58654, 57670, 56997, 56410]],
+      "common_name": {"english": "常陈", "native": "常陈"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 284",
+      "lines": [[60742, 60697, 60746, 60904, 61071, 60941, 60525, 60351, 60514, 60170, 60742], [60697, 60514, 60168], [60746, 60351, 60327, 59847], [60327, 60087], [60327, 60599, 60525, 60904]],
+      "common_name": {"english": "郎位", "native": "郎位"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 285",
+      "lines": [[55945, 55595, 54849]],
+      "common_name": {"english": "明堂", "native": "明堂"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 286",
+      "lines": [[53807, 53824, 54182]],
+      "common_name": {"english": "灵台", "native": "灵台"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 287",
+      "lines": [[53417, 52457, 52686, 53954]],
+      "common_name": {"english": "少微", "native": "少微"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 288",
+      "lines": [[51775, 52911, 52689, 51585]],
+      "common_name": {"english": "长垣", "native": "长垣"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 289",
+      "lines": [[44471, 50372], [50801, 55219, 55203]],
+      "common_name": {"english": "三台", "native": "三台"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 290",
+      "lines": [[44127, 44471]],
+      "common_name": {"english": "上台", "native": "上台"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 291",
+      "lines": [[50372, 50801]],
+      "common_name": {"english": "中台", "native": "中台"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 292",
+      "lines": [[55219, 55203]],
+      "common_name": {"english": "下台", "native": "下台"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 293",
+      "lines": [[57757, 57757], [60129, 60129]],
+      "common_name": {"english": "端门", "native": "端门"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 294",
+      "lines": [[]],
+      "label_positions": [[17.4, 7.0]],
+      "common_name": {"english": "【天市垣】", "native": "天市垣"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 295",
+      "lines": [[84379, 85693, 86974, 88794, 92043, 93747, 92946, 89962, 88048, 86263, 84012]],
+      "label_positions": [[18.6, 10.0]],
+      "common_name": {"english": "天市左垣", "native": "天市左垣"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 296",
+      "lines": [[80816, 80170, 79043, 78072, 77233, 76276, 77070, 77622, 79593, 79882, 81377]],
+      "common_name": {"english": "天市右垣", "native": "天市右垣"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 297",
+      "lines": [[86284, 84880], [86313, 83962], [86565, 85474]],
+      "common_name": {"english": "市楼", "native": "市楼"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 298",
+      "lines": [[82369, 80628]],
+      "common_name": {"english": "车肆", "native": "车肆"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 299",
+      "lines": [[86742, 87108]],
+      "common_name": {"english": "宗正", "native": "宗正"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 300",
+      "lines": [[88149, 88601], [88192, 88601, 88290]],
+      "common_name": {"english": "宗人", "native": "宗人"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 301",
+      "lines": [[88771, 88765]],
+      "common_name": {"english": "宗", "native": "宗星"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 302",
+      "lines": [[88331, 88899]],
+      "common_name": {"english": "帛度", "native": "帛度"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 303",
+      "lines": [[88267, 88886]],
+      "common_name": {"english": "屠肆", "native": "屠肆"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 304",
+      "lines": [[86032, 86032]],
+      "common_name": {"english": "候", "native": "候"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 305",
+      "lines": [[84345, 84345]],
+      "common_name": {"english": "帝座", "native": "帝座"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 306",
+      "lines": [[83613, 83478, 83430, 83308]],
+      "common_name": {"english": "宦者", "native": "宦者"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 307",
+      "lines": [[80883, 80179]],
+      "common_name": {"english": "列肆", "native": "列肆"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 308",
+      "lines": [[83000, 82673, 82073, 82402, 82216]],
+      "common_name": {"english": "斗", "native": "斗"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 309",
+      "lines": [[81641, 81734, 82480]],
+      "common_name": {"english": "斛", "native": "斛"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 310",
+      "lines": [[76267, 76952, 77512, 78159, 78493, 78459], [77048, 76127, 75695, 76267]],
+      "common_name": {"english": "贯索", "native": "贯索"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 311",
+      "lines": [[74666, 75411, 76669, 77655, 79119, 80460, 81833]],
+      "common_name": {"english": "七公", "native": "七公"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 312",
+      "lines": [[80181, 81693, 83207, 83313, 84573, 85181, 87808, 89008, 89826]],
+      "common_name": {"english": "天纪", "native": "天纪"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 313",
+      "lines": [[84380, 84606, 85112]],
+      "common_name": {"english": "女床", "native": "女床"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 314",
+      "lines": [[51232, 52558, 53708, 57363]],
+      "common_name": {"english": "海山^*", "native": "海山"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 315",
+      "lines": [[60710, 59449, 59196]],
+      "common_name": {"english": "马尾*", "native": "马尾"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 316",
+      "lines": [[68702, 65129, 63117]],
+      "common_name": {"english": "马腹#*", "native": "马腹"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 317",
+      "lines": [[62322, 61199], [62322, 61585], [62322, 63613]],
+      "common_name": {"english": "蜜蜂#*", "native": "蜜蜂"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 318",
+      "lines": [[74946, 77952, 82273, 74946]],
+      "common_name": {"english": "三角形*", "native": "三角形"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 319",
+      "lines": [[84969, 84979, 81852, 81065, 70638], [81852, 80047, 69896], [81852, 72370, 70248]],
+      "common_name": {"english": "异雀*", "native": "异雀"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 320",
+      "lines": [[102395, 99240, 93015, 92609, 90797, 88866, 86929, 91792, 98495, 105858, 100751]],
+      "common_name": {"english": "孔雀*", "native": "孔雀"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 321",
+      "lines": [[99120, 105841, 108431, 108626, 108870, 104085, 102333, 102950, 103260]],
+      "common_name": {"english": "波斯^*", "native": "波斯"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 322",
+      "lines": [[2021, 110078, 107089, 104043]],
+      "common_name": {"english": "蛇尾#*", "native": "蛇尾"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 323",
+      "lines": [[12876, 12394, 11001, 8928]],
+      "common_name": {"english": "蛇腹*", "native": "蛇腹"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 324",
+      "lines": [[9236, 17440]],
+      "common_name": {"english": "蛇首*", "native": "蛇首"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 325",
+      "lines": [[110130, 110838, 118092, 2484, 3330, 1599, 118322]],
+      "common_name": {"english": "鸟喙*", "native": "鸟喙"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 326",
+      "lines": [[109268, 112122, 112623, 112374, 114996, 113638, 112122, 114421]],
+      "common_name": {"english": "鹤^*", "native": "鹤"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 327",
+      "lines": [[116389, 116602], [2072, 3245, 2472, 5165, 6867]],
+      "common_name": {"english": "火鸟*", "native": "火鸟"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 328",
+      "lines": [[7588, 5348, 3405]],
+      "common_name": {"english": "水委*", "native": "水委"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 329",
+      "lines": [[17678, 13244]],
+      "common_name": {"english": "附白*", "native": "附白"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 330",
+      "lines": [[24372, 19780]],
+      "common_name": {"english": "夹白*", "native": "夹白"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 331",
+      "lines": [[19893, 21281, 26069, 27100, 29134]],
+      "common_name": {"english": "金鱼*", "native": "金鱼"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 332",
+      "lines": [[39953, 41037, 42568, 43783, 45556, 46974, 47854, 48002]],
+      "common_name": {"english": "海石*", "native": "海石"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 333",
+      "lines": [[44382, 34481], [44382, 41312], [44382, 40817], [44382, 35228], [44382, 37504]],
+      "common_name": {"english": "飞鱼*", "native": "飞鱼"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 334",
+      "lines": [[50371, 51576, 52419, 50099, 45238]],
+      "common_name": {"english": "南船*", "native": "南船"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 335",
+      "lines": [[60000, 58484, 51839, 52633, 46928, 46107, 43012, 40888, 36744]],
+      "common_name": {"english": "小斗*", "native": "小斗"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 336",
+      "lines": [[102485, 102978]],
+      "common_name": {"english": "周", "native": "周"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 337",
+      "lines": [[104019, 104365]],
+      "common_name": {"english": "秦", "native": "秦"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 338",
+      "lines": [[105143, 105515]],
+      "common_name": {"english": "代", "native": "代"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 339",
+      "lines": [[102092, 102901]],
+      "common_name": {"english": "赵", "native": "赵"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 404",
+      "lines": [[102014, 102014]],
+      "common_name": {"english": "越", "native": "越"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 405",
+      "lines": [[105140, 105140]],
+      "common_name": {"english": "晋", "native": "晋"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 406",
+      "lines": [[104750, 104750]],
+      "common_name": {"english": "韩", "native": "韩"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 407",
+      "lines": [[104234, 104234]],
+      "common_name": {"english": "魏", "native": "魏"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 408",
+      "lines": [[103389, 103389]],
+      "common_name": {"english": "楚", "native": "楚"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 409",
+      "lines": [[104174, 104174]],
+      "common_name": {"english": "燕", "native": "燕"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 410",
+      "lines": [[102831, 102831]],
+      "common_name": {"english": "齐", "native": "齐"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 411",
+      "lines": [[103738, 103738]],
+      "common_name": {"english": "郑", "native": "郑"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 340",
+      "lines": [[112051, 113881], [112748, 113881], [115250, 113881]],
+      "common_name": {"english": ""}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 341",
+      "lines": [[49669, 49637]],
+      "common_name": {"english": ""}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 342",
+      "lines": [[65378, 65477]],
+      "common_name": {"english": ""}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 343",
+      "lines": [[64407, 64924, 65639]],
+      "common_name": {"english": "左卫门*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 344",
+      "lines": [[68520, 69389, 70400, 70327, 71832]],
+      "common_name": {"english": "天湖*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 345",
+      "lines": [[72220, 73620, 74975, 75761]],
+      "common_name": {"english": "汤母*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 346",
+      "lines": [[71957, 73165]],
+      "common_name": {"english": "汤坐*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 347",
+      "lines": [[76243, 76219, 75352]],
+      "common_name": {"english": "内侍*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 348",
+      "lines": [[81126, 82321, 81497, 79992, 79101, 77760, 76041, 73555], [79101, 78592]],
+      "common_name": {"english": "宰相*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 349",
+      "lines": [[78554, 77661, 76852, 77450, 78481, 80463, 81008]],
+      "common_name": {"english": "市正*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 350",
+      "lines": [[86414, 86182, 85670, 85829, 87833], [85829, 83608]],
+      "common_name": {"english": "兵部*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 351",
+      "lines": [[87933, 87998]],
+      "common_name": {"english": "镇守府*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 352",
+      "lines": [[90139, 92161, 93244]],
+      "common_name": {"english": "军鉴*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 353",
+      "lines": [[86011, 87220]],
+      "common_name": {"english": "腹赤*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 354",
+      "lines": [[85423, 87072]],
+      "common_name": {"english": "采女*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 355",
+      "lines": [[93408, 93299, 92549, 92133, 91013, 89981]],
+      "common_name": {"english": "天蚕*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 356",
+      "lines": [[102388, 103200, 102453, 101076, 99874, 99824, 100435, 101867]],
+      "common_name": {"english": "右京*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 357",
+      "lines": [[106140, 107472, 108060, 107788, 107348, 106064, 105502, 106062]],
+      "common_name": {"english": "左京*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 358",
+      "lines": [[108691, 109068, 110785, 110882, 111062]],
+      "common_name": {"english": "诸陵*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 359",
+      "lines": [[113246, 112948, 111188, 110997]],
+      "common_name": {"english": "外卫*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 360",
+      "lines": [[111104, 111944, 112917], [112242, 112917, 113726, 113281, 112241, 111841]],
+      "common_name": {"english": "右马寮*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 361",
+      "lines": [[1366, 1686, 1473]],
+      "common_name": {"english": "左马寮*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 362",
+      "lines": [[5434, 5434]],
+      "common_name": {"english": "兵库*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 363",
+      "lines": [[3455, 3909, 3436, 3849], [3909, 4371, 4587, 5169, 5164], [5169, 6670, 6748], [6670, 7450, 7916], [7450, 7679, 8209], [7679, 9061]],
+      "common_name": {"english": "天俵*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 364",
+      "lines": [[5165, 6867]],
+      "common_name": {"english": "主计*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 365",
+      "lines": [[13782, 13202, 11918, 10798, 11072]],
+      "common_name": {"english": "主税*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 366",
+      "lines": [[17304, 14879, 13147, 11477], [13147, 13265]],
+      "common_name": {"english": "松竹*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 367",
+      "lines": [[17214, 17057, 16780, 16803, 15411], [16803, 18173, 19037, 19571]],
+      "common_name": {"english": "鸿雁*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 368",
+      "lines": [[16341, 17167, 18141, 18255, 16852, 14954, 13717], [16852, 18907, 17771]],
+      "common_name": {"english": "大炊*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 369",
+      "lines": [[13914, 13702, 13165, 12640], [13165, 12803, 12832, 13327, 13165]],
+      "common_name": {"english": "大藏*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 370",
+      "lines": [[16292, 16281, 16228, 17587, 18505, 19968, 20376, 19018, 17707]],
+      "common_name": {"english": "天帆*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 371",
+      "lines": [[23179, 22678, 22453, 21476, 19811, 20252, 20591, 20250]],
+      "common_name": {"english": "天辕*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 372",
+      "lines": [[27913, 28716, 28734, 28237, 27830]],
+      "common_name": {"english": "玄蕃*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 373",
+      "lines": [[26549, 26563, 25923, 25247, 25281]],
+      "common_name": {"english": "太宰府*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 374",
+      "lines": [[28103, 27288]],
+      "common_name": {"english": "小贰*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 375",
+      "lines": [[30867, 29651]],
+      "common_name": {"english": "大贰*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 376",
+      "lines": [[24659, 23595, 21861, 21770, 19747]],
+      "common_name": {"english": "萩部*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 377",
+      "lines": [[30122, 30788]],
+      "common_name": {"english": "曾孙*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 378",
+      "lines": [[31685, 28328]],
+      "common_name": {"english": "玄孙*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 379",
+      "lines": [[35363, 35264], [35226, 35264, 36377, 37823, 38872]],
+      "common_name": {"english": "胡籙*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 380",
+      "lines": [[33160, 34045, 33347, 33302]],
+      "common_name": {"english": "隼人*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 381",
+      "lines": [[37229, 35037], [37229, 36514], [37229, 37677], [37229, 38170]],
+      "common_name": {"english": "箙*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 382",
+      "lines": [[40526, 41325], [40526, 40167], [40526, 39863]],
+      "common_name": {"english": "主水*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 383",
+      "lines": [[41075, 42372, 41152, 39847, 37701, 36145]],
+      "common_name": {"english": "大学寮*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 384",
+      "lines": [[43932, 43103, 43834, 44946, 43970, 44066, 44798]],
+      "common_name": {"english": "造酒司*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 385",
+      "lines": [[55086, 53781, 52469], [53781, 53295, 53721, 53838, 54136, 55266]],
+      "common_name": {"english": "少将*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 386",
+      "lines": [[61317, 58684]],
+      "common_name": {"english": "大将*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 387",
+      "lines": [[66257, 64844, 64540, 64246, 63901, 64022, 64394], [64022, 62763]],
+      "common_name": {"english": "中将*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 388",
+      "lines": [[54487, 52638, 52098, 53229, 53426], [52098, 51056, 49593], [51056, 51233, 51658]],
+      "common_name": {"english": "宫内*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 389",
+      "lines": [[53907, 53273, 51362, 51437, 49641, 48273, 47310], [48273, 49029]],
+      "common_name": {"english": "民部*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 390",
+      "lines": [[44961, 45526, 46982, 48437]],
+      "common_name": {"english": "织部*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 391",
+      "lines": [[46651, 45448]],
+      "common_name": {"english": "斋宫*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 392",
+      "lines": [[56647, 56127, 55084]],
+      "common_name": {"english": "阴阳寮*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 393",
+      "lines": [[61740, 61318, 61296, 61910, 62985, 61740]],
+      "common_name": {"english": "刑部*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 394",
+      "lines": [[63738, 64166, 64803]],
+      "common_name": {"english": "右卫门*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 395",
+      "lines": [[58188, 58587, 58574]],
+      "common_name": {"english": "雅乐*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 396",
+      "lines": [[79822, 79822]],
+      "common_name": {"english": "东宫傅*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 397",
+      "lines": [[74793, 74793]],
+      "common_name": {"english": "御息所*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 398",
+      "lines": [[59504, 51502, 47193, 39538, 33694]],
+      "common_name": {"english": "中务*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 399",
+      "lines": [[85805, 86201, 94648]],
+      "common_name": {"english": "内膳*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 400",
+      "lines": [[106032, 107119, 109400, 108535, 111532, 114222, 116727]],
+      "common_name": {"english": "大膳*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 401",
+      "lines": [[29919, 30060, 32438, 33449, 35146, 37609]],
+      "common_name": {"english": "治部*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 402",
+      "lines": [[47654, 46977, 44390, 42080, 42527, 45075], [42527, 41704]],
+      "common_name": {"english": "式部*"}
+    },
+    {
+      "id": "CON japanese_tenmon_seizou 403",
+      "lines": [[60998, 62423, 63076, 65728, 66738], [65728, 63503, 60978, 60212]],
+      "common_name": {"english": "神祗*"}
+    }
+  ],
+  "edges_type": "own",
+  "edges": [
+    "___:___ __ 12:07:36 +88:16:33 13:25:12 -11:09:41 001 016",
+    "___:___ __ 13:25:12 -11:09:41 00:07:36 -88:16:33 001 016",
+    "___:___ __ 12:07:36 +88:16:33 14:12:54 -10:16:22 016 023",
+    "___:___ __ 14:12:54 -10:16:22 00:07:36 -88:16:33 016 023",
+    "___:___ __ 12:07:36 +88:16:33 14:50:52 -16:02:32 023 034",
+    "___:___ __ 14:50:52 -16:02:32 00:07:36 -88:16:33 023 034",
+    "___:___ __ 12:07:36 +88:16:33 15:58:51 -26:06:51 034 042",
+    "___:___ __ 15:58:51 -26:06:51 00:07:36 -88:16:33 034 042",
+    "___:___ __ 12:07:36 +88:16:33 16:21:11 -25:35:34 042 044",
+    "___:___ __ 16:21:11 -25:35:34 00:07:36 -88:16:33 042 044",
+    "___:___ __ 12:07:36 +88:16:33 16:51:52 -38:02:51 044 050",
+    "___:___ __ 16:51:52 -38:02:51 00:07:36 -88:16:33 044 050",
+    "___:___ __ 12:07:36 +88:16:33 18:05:48 -30:25:31 050 053",
+    "___:___ __ 18:05:48 -30:25:31 00:07:36 -88:16:33 050 053",
+    "___:___ __ 12:07:36 +88:16:33 18:45:40 -26:59:27 053 063",
+    "___:___ __ 18:45:40 -26:59:27 00:07:36 -88:16:33 053 063",
+    "___:___ __ 12:07:36 +88:16:33 20:21:01 -14:46:53 063 074",
+    "___:___ __ 20:21:01 -14:46:53 00:07:36 -88:16:33 063 074",
+    "___:___ __ 12:07:36 +88:16:33 20:47:41 -09:29:46 074 082",
+    "___:___ __ 20:47:41 -09:29:46 00:07:36 -88:16:33 074 082",
+    "___:___ __ 12:07:36 +88:16:33 21:31:34 -05:34:16 082 092",
+    "___:___ __ 21:31:34 -05:34:16 00:07:36 -88:16:33 082 092",
+    "___:___ __ 12:07:36 +88:16:33 22:05:47 -00:19:12 092 103",
+    "___:___ __ 22:05:47 -00:19:12 00:07:36 -88:16:33 092 103",
+    "___:___ __ 12:07:36 +88:16:33 23:04:46 +15:12:19 103 116",
+    "___:___ __ 23:04:46 +15:12:19 00:07:36 -88:16:33 103 116",
+    "___:___ __ 12:07:36 +88:16:33 00:13:14 +15:11:01 116 122",
+    "___:___ __ 00:13:14 +15:11:01 00:07:36 -88:16:33 116 122",
+    "___:___ __ 12:07:36 +88:16:33 00:47:20 +24:16:01 122 132",
+    "___:___ __ 00:47:20 +24:16:01 00:07:36 -88:16:33 122 132",
+    "___:___ __ 12:07:36 +88:16:33 01:54:39 +20:48:28 132 138",
+    "___:___ __ 01:54:39 +20:48:28 00:07:36 -88:16:33 132 138",
+    "___:___ __ 12:07:36 +88:16:33 02:43:27 +27:42:26 138 145",
+    "___:___ __ 02:43:27 +27:42:26 00:07:36 -88:16:33 138 145",
+    "___:___ __ 12:07:36 +88:16:33 03:44:52 +24:06:48 145 154",
+    "___:___ __ 03:44:52 +24:06:48 00:07:36 -88:16:33 145 154",
+    "___:___ __ 12:07:36 +88:16:33 04:28:37 +19:10:49 154 172",
+    "___:___ __ 04:28:37 +19:10:49 00:07:36 -88:16:33 154 172",
+    "___:___ __ 12:07:36 +88:16:33 05:34:49 +09:29:22 172 175",
+    "___:___ __ 05:34:49 +09:29:22 00:07:36 -88:16:33 172 175",
+    "___:___ __ 12:07:36 +88:16:33 05:32:00 -00:17:57 175 282",
+    "___:___ __ 05:32:00 -00:17:57 00:07:36 -88:16:33 175 282",
+    "___:___ __ 12:07:36 +88:16:33 06:22:58 +22:30:48 282 202",
+    "___:___ __ 06:22:58 +22:30:48 00:07:36 -88:16:33 282 202",
+    "___:___ __ 12:07:36 +88:16:33 08:31:36 +18:05:39 202 209",
+    "___:___ __ 08:31:36 +18:05:39 00:07:36 -88:16:33 202 209",
+    "___:___ __ 12:07:36 +88:16:33 08:37:39 +05:42:14 209 211",
+    "___:___ __ 08:37:39 +05:42:14 00:07:36 -88:16:33 209 211",
+    "___:___ __ 12:07:36 +88:16:33 09:27:35 -08:39:30 211 217",
+    "___:___ __ 09:27:35 -08:39:30 00:07:36 -88:16:33 211 217",
+    "___:___ __ 12:07:36 +88:16:33 09:51:29 -14:50:48 217 219",
+    "___:___ __ 09:51:29 -14:50:48 00:07:36 -88:16:33 217 219",
+    "___:___ __ 12:07:36 +88:16:33 10:59:46 -18:17:52 219 221",
+    "___:___ __ 10:59:46 -18:17:52 00:07:36 -88:16:33 219 221",
+    "___:___ __ 12:07:36 +88:16:33 12:15:48 -17:32:31 221 001",
+    "___:___ __ 12:15:48 -17:32:31 00:07:36 -88:16:33 221 001"
+  ],
+  "common_names": {
+    "HIP 11767": [{"english": "枢"}],
+    "HIP 62561": [{"english": "后"}],
+    "HIP 62572": [{"english": "后"}],
+    "HIP 69112": [{"english": "庶子"}],
+    "HIP 70692": [{"english": "庶子"}],
+    "HIP 72607": [{"english": "帝"}],
+    "HIP 75097": [{"english": "太子"}],
+    "NGC 2632": [{"english": "积尸气(鬼宿）"}],
+    "NGC 6475": [{"english": "鱼"}]
+  }
+}

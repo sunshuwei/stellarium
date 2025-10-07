@@ -43,7 +43,7 @@ public:
 	static const QString CUSTOMOBJECT_TYPE;
 
 	//!
-	CustomObject(const QString& codesignation, const Vec3d& coordJ2000, const bool isaMarker);
+	CustomObject(const QString& codesignation, const Vec3d& coordJ2000, const bool isaMarker, const QString& icon = "cross"); // Modified by Kwantsin
 	~CustomObject() override;
 
 	//! Get the type of object
@@ -91,18 +91,18 @@ private:
 	bool initialized;
 
 	Vec3d XYZ;                         // holds J2000 position
-
-	StelTextureSP markerTexture;
-	static Vec3f markerColor;
-	static float markerSize;
 	static float selectPriority;
-
-	void draw(StelCore* core, StelPainter *painter);
-
 	QString designation;
-	bool isMarker;	
 
+protected:
+	// Modified by Kwantsin
+	static Vec3f markerColor;
+	StelTextureSP markerTexture;
+	bool isMarker;
+	static float markerSize;
 	LinearFader labelsFader;
+	virtual void draw(StelCore* core, StelPainter* painter);
+	void _draw(StelCore* core, StelPainter* painter, Vec3f customColor, bool showName, float customSize);
 };
 
 #endif // CUSTOMOBJECT_HPP
