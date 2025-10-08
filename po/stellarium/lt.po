@@ -10245,7 +10245,7 @@ msgstr "32-bit"
 #: src/translations.h:644
 msgctxt "sky culture classification"
 msgid "none"
-msgstr ""
+msgstr "nieko"
 
 #. TRANSLATORS: Same text as in the Configuration window!
 #: src/translations.h:648 src/ui_helpDialogGui.h:249
@@ -25969,7 +25969,7 @@ msgid ""
 "Shama is an Urdu literary term meaning a small lamp or flame, symbolic of "
 "the light of the star."
 msgstr ""
-"Shama yra Urdu  terminas, reiškiantis mažą žibintuvėlį ar liepsną, "
+"Šama yra Urdu  terminas, reiškiantis mažą žibintuvėlį ar liepsną, "
 "simbolizuojantį žvaigždės šviesą."
 
 #: plugins/Exoplanets/src/gui/ExoplanetsDialog.cpp:545
@@ -29357,6 +29357,8 @@ msgid ""
 "The sky culture description is not complete. Please fill in all required "
 "fields correctly."
 msgstr ""
+"Dangaus kultūros aprašymas nėra pilnas. Prašome teisingai užpildyti visus "
+"privalomus laukelius."
 
 #: plugins/SkyCultureMaker/src/gui/ScmSkyCultureExportDialog.cpp:98
 msgid "No sky culture is set."

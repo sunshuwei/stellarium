@@ -2364,7 +2364,7 @@ msgstr "Raha"
 #. Arabic (Al-Sufi) asterism, native: بنات نعش الصغرى, pronounce: Banāt Na'sh
 #. al-Sughrā
 msgid "The smaller daughters of Na'sh"
-msgstr "拾棺幼女"
+msgstr "拾棺小女儿们"
 
 #. Pronounce entry for Arabic (Al-Sufi) asterism, native: بنات نعش الصغرى,
 #. English: The smaller daughters of Na'sh
@@ -2380,7 +2380,7 @@ msgstr "BNaS"
 #. Arabic (Al-Sufi) asterism, native: بنات نعش, pronounce: Banāt Na'sh
 #. Na'sh is a proper name meaning bier
 msgid "Daughters of Na'sh"
-msgstr "拾棺女"
+msgstr "拾棺的女儿们"
 
 #. Pronounce entry for Arabic (Al-Sufi) asterism, native: بنات نعش, English:
 #. Daughters of Na'sh
@@ -2403,7 +2403,7 @@ msgstr "BNaK"
 #. Na'sh
 #. Na'sh is a proper name meaning bier
 msgid "The couch of daughters of Na'sh"
-msgstr "拾棺女的卧榻"
+msgstr "拾棺女儿们的卧榻"
 
 #. Pronounce entry for Arabic (Al-Sufi) asterism, native: سرير بنات نعش,
 #. English: The couch of daughters of Na'sh
@@ -3275,7 +3275,7 @@ msgstr "Mkhr"
 
 #. Arabic (Al-Sufi) asterism, native: الكرب, pronounce: al-Karab
 msgid "The bucket rope knot"
-msgstr "水桶绳结"
+msgstr "桶绳结"
 
 #. Pronounce entry for Arabic (Al-Sufi) asterism, native: الكرب, English: The
 #. bucket rope knot
@@ -4304,7 +4304,7 @@ msgstr "SSud"
 
 #. Arabic (Al-Sufi) asterism, native: سعد بلع, pronounce: Sa'd Bula'
 msgid "The lucky star of the swallower"
-msgstr "贪食者的幸运星"
+msgstr "吞咽者的幸运星"
 
 #. Pronounce entry for Arabic (Al-Sufi) asterism, native: سعد بلع, English:
 #. The lucky star of the swallower
@@ -5515,7 +5515,7 @@ msgstr "Sa'd al-Dhabih"
 #. culture, native: سعد بلع, pronounce: Sa'd Bula'
 msgctxt "arabian lunar stations"
 msgid "The Lucky Star Of The Swallower"
-msgstr "贪食者的幸运星"
+msgstr "吞咽者的幸运星"
 
 #. Pronounce entry for a zodiac sign or a lunar mansion in Arabic (Al-Sufi)
 #. sky culture, native: سعد بلع, English: The Lucky Star Of The Swallower
@@ -14965,7 +14965,7 @@ msgstr "Hjzn"
 #. Arabic (Arabian Peninsula) constellation, native: الدخيلين, pronounce: al-
 #. Dikhīlain
 msgid "The Two Refugees"
-msgstr "两个难民"
+msgstr "两个逃亡者"
 
 #. Pronounce entry for Arabic (Arabian Peninsula) constellation, native:
 #. الدخيلين, English: The Two Refugees
@@ -15038,7 +15038,7 @@ msgstr "Siba"
 #. Arabic (Indigenous) constellation, native: بنات نعش, pronounce: Banāt Na'sh
 #. Na'sh is a proper name meaning bier
 msgid "Daughters Of Na'sh"
-msgstr "Na'sh的女儿"
+msgstr "拾棺的女儿们"
 
 #. Abbreviation of constellation in Arabic (Arabian Peninsula) sky culture,
 #. name: Daughters Of Na'sh
@@ -15416,7 +15416,7 @@ msgstr "Sa'd al-Dhābih"
 #. Arabic (Indigenous) constellation, native: سعد بلع, pronounce: Sa'd Bula'
 #. Arabic (Indigenous) asterism, native: سعد بلع, pronounce: Sa'd Bula'
 msgid "The Lucky Star Of The Swallower"
-msgstr "贪食者的幸运星"
+msgstr "吞咽者的幸运星"
 
 #. Arabic (Arabian Peninsula) constellation, native: سعد السعود, pronounce:
 #. Sa'd al-Su'ūd
@@ -16102,7 +16102,7 @@ msgstr "al-Huwaijzain 1"
 
 #. Arabic (Arabian Peninsula) name for HIP 72607, native: الدخيلين 1
 msgid "The Two Refugees 1"
-msgstr "两个难民1"
+msgstr "两个逃亡者1"
 
 #. Pronounce entry for Arabic (Arabian Peninsula) name for HIP 72607
 #. Arabic (Arabian Peninsula) name for HIP 72607, native: الدخيلين 1
@@ -16129,7 +16129,7 @@ msgstr "al-Huwaijzain 2"
 
 #. Arabic (Arabian Peninsula) name for HIP 75097, native: الدخيلين 2
 msgid "The Two Refugees 2"
-msgstr "两个难民2"
+msgstr "两个逃亡者2"
 
 #. Pronounce entry for Arabic (Arabian Peninsula) name for HIP 75097
 #. Arabic (Arabian Peninsula) name for HIP 75097, native: الدخيلين 2
@@ -53639,7 +53639,7 @@ msgstr "IWA"
 
 #. Hawaiian Starlines constellation, native: Hanaiakamalama
 msgid "Cared for by Moon"
-msgstr "月亮的缱绻"
+msgstr "月之呵护"
 
 #. Abbreviation of constellation in Hawaiian Starlines sky culture, name:
 #. Cared for by Moon
@@ -55292,7 +55292,7 @@ msgstr "两束阳光"
 
 #. Inuit constellation, native: Akkuttujuuk
 msgid "Two Placed Far Apart"
-msgstr "隔离"
+msgstr "二者相距遥远"
 
 #. Inuit constellation, native: Qimmiitt
 msgid "Dogs"
