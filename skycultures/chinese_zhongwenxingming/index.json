@@ -371,7 +371,7 @@
     },
     {
       "id": "CON chinese_qing_dynasty 074",
-      "lines": [[6960, 7547, 8121, 9347, 9061]],
+      "lines": [[6960, 7838, 8121, 9347, 9061]],
       "common_name": {"english": "𫓧锧", "native": "Fu Zhi"}
     },
     {
@@ -1880,7 +1880,7 @@
     "HIP 7650": [{"english": "华盖二", "references": [1]}],
     "HIP 7710": [{"english": "右更五"}],
     "HIP 7719": [{"english": "天大将军五"}],
-    "HIP 7547": [{"english": "𫓧锧二*"}],
+    "HIP 7838": [{"english": "𫓧锧二*"}],
     "HIP 7818": [{"english": "天大将军七/天大将军增四▅"}],
     "HIP 7884": [{"english": "外屏五"}],
     "HIP 7948": [{"english": "奎宿增十二"}],

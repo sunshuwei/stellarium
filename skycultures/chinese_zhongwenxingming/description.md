@@ -1,5 +1,5 @@
 
-## Chinese_zhongwenxingming 中文星名拓展包（已过时）
+## chinese_zhongwenxingming 中文星名拓展包（已过时）
 
 Chinese astronomy was developed independently and Chinese had its own system to connect the stars. Chinese Traditional Sky Culture has far-reaching implications in East Asia.In ancient China, constellations and planets were associated with astrolog.
 
