@@ -2,7 +2,8 @@
 	{
 		"id": "《灵台仪象志》黄道星表",
 		"show": true,
-		"epoch": 1672,
+		"epoch": "J1672.5",
+        "use_epoch": true,
 		"json_author": {"name": "Kwantsin", "url": "https://www.zhihu.com/people/zhan-shi-ying-lu-78"},
 		"update_search_lists": false,
 		"show_names": true,
@@ -1382,7 +1383,8 @@
 	{
 		"id": "《灵台仪象志》增定附各曜小星黄道星表",
 		"show": true,
-		"epoch": 1672,
+		"epoch": "J1672.5",
+        "use_epoch": true,
 		"json_author": {"name": "Kwantsin", "url": "https://www.zhihu.com/people/zhan-shi-ying-lu-78"},
 		"update_search_lists": false,
 		"show_names": true,
@@ -1904,7 +1906,8 @@
 		{
 		"id": "《灵台仪象志》修正黄道座标",
 		"show": true,
-		"epoch": 1672,
+		"epoch": "J1672.5",
+        "use_epoch": true,
 		"json_author": {"name": "Kwantsin", "url": "https://www.zhihu.com/people/zhan-shi-ying-lu-78"},
 		"update_search_lists": false,
 		"show_names": true,

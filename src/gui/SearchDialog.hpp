@@ -262,6 +262,9 @@ private slots:
 	void selectCoordinateDir();
 	void browseForCoordinateDir();
 
+	//! Load epoch
+	double loadEpoch(QString epoch);
+
 	//! Read coordinate data file, process and visualize
 	void on_importCoordinate_clicked();
 	Vec3f hexColorToVec3f(const QString& hexColor, bool* success);

@@ -2,7 +2,8 @@
 	{
 		"id": "《崇祯历书》黄道星表",
 		"show": true,
-		"epoch": 1630,
+		"epoch": "J1628.5",
+        "use_epoch": true,
 		"source": {"author": "竹迫 忍", "website_name": "古天文の部屋", "url": "https://www.kotenmon.com/star/catalog/gisyou_1.html"},
 		"json_author": {"name": "观津邀月_Kwantsin", "url": "https://www.zhihu.com/people/zhan-shi-ying-lu-78"},
 		"update_search_lists": false,
@@ -1377,7 +1378,8 @@
 	{
 		"id": "《崇祯历书》赤道星表",
 		"show": true,
-		"epoch": 1630,
+		"epoch": "J1628.5",
+        "use_epoch": true,
 		"json_author": {"name": "Kwantsin", "url": "https://www.zhihu.com/people/zhan-shi-ying-lu-78"},
 		"update_search_lists": false,
 		"show_names": true,

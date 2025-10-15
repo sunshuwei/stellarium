@@ -2,6 +2,8 @@
 	{
 		"id": "《增广考异》星表（包含崇宁星表）",
 		"observation_year": "1104-1106, 北宋崇宁年间",
+		"epoch": "J1106.0",
+		"use_epoch": true,
 		"observation_place": "Kaifeng, 开封",
 		"color_description": [
             {"19ff19": "绿色，默认标识颜色，可能是崇宁星表或承传自皇祐星表的数据（依据杨伯顺等的论文）"},

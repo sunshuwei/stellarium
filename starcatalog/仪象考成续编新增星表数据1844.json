@@ -2,7 +2,9 @@
 	{
 		"id": "《仪象考成》续编新增星赤道星表",
 		"show": true,
-		"epoch": 1844,
+		"epoch": "J1844.975189",
+		"epoch_note": "1844/12/22 00:19:02 UTC+8",
+		"use_epoch": true,
 		"json_author": {"name": "观津邀月_Kwantsin", "url": "https://www.zhihu.com/people/zhan-shi-ying-lu-78"},
 		"update_search_lists": false,
 		"show_names": true,
@@ -178,7 +180,6 @@
 	{
 		"id": "《仪象考成》续编新增星赤道座标修正",
 		"show": true,
-		"epoch": 1844,
 		"json_author": {"name": "观津邀月_Kwantsin", "url": "https://www.zhihu.com/people/zhan-shi-ying-lu-78"},
 		"update_search_lists": false,
 		"show_names": true,
@@ -192,7 +193,6 @@
 	{
 		"id": "《仪象考成》续编新增星黄道座标修正",
 		"show": true,
-		"epoch": 1844,
 		"json_author": {"name": "观津邀月_Kwantsin", "url": "https://www.zhihu.com/people/zhan-shi-ying-lu-78"},
 		"update_search_lists": false,
 		"show_names": true,

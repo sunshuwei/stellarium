@@ -2,7 +2,9 @@
 	{
 		"id": "《仪象考成》黄道星表",
 		"show": true,
-		"epoch": 1744,
+		"epoch": "J1744.977184",
+		"epoch_note": "1744/12/21 17:48:38 UTC+8",
+		"use_epoch": true,
 		"source": {"author": "竹迫 忍", "website_name": "古天文の部屋", "url": "https://www.kotenmon.com/star/catalog/gisyou_1.html"},
 		"json_author": {"name": "观津邀月_Kwantsin", "url": "https://www.zhihu.com/people/zhan-shi-ying-lu-78"},
 		"update_search_lists": false,
@@ -3101,7 +3103,6 @@
 	{
 		"id": "《仪象考成》黄道座标修正",
 		"show": true,
-		"epoch": 1744,
 		"json_author": {"name": "观津邀月_Kwantsin", "url": "https://www.zhihu.com/people/zhan-shi-ying-lu-78"},
 		"update_search_lists": false,
 		"show_names": true,
@@ -3145,7 +3146,6 @@
 	{
 		"id": "《仪象考成》赤道座标修正",
 		"show": true,
-		"epoch": 1744,
 		"json_author": {"name": "观津邀月_Kwantsin", "url": "https://www.zhihu.com/people/zhan-shi-ying-lu-78"},
 		"update_search_lists": false,
 		"show_names": true,
@@ -3198,7 +3198,6 @@
 	{
 		"id": "《仪象考成》黄道座标修正_观津",
 		"show": true,
-		"epoch": 1744,
 		"json_author": {"name": "观津邀月_Kwantsin", "url": "https://www.zhihu.com/people/zhan-shi-ying-lu-78"},
 		"update_search_lists": false,
 		"show_names": true,
@@ -3224,7 +3223,6 @@
 	{
 		"id": "《仪象考成》赤道座标修正_观津",
 		"show": true,
-		"epoch": 1744,
 		"json_author": {"name": "观津邀月_Kwantsin", "url": "https://www.zhihu.com/people/zhan-shi-ying-lu-78"},
 		"update_search_lists": false,
 		"show_names": true,

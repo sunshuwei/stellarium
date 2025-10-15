@@ -2,6 +2,8 @@
 	{
 		"id": "《七政推步》黄道星表",
 		"observation_year": "明初洪武年间",
+		"epoch": "J1359.5",
+        "use_epoch": true,
 		"json_author": {"name": "Kwantsin", "url": "https://www.zhihu.com/people/zhan-shi-ying-lu-78"},
 		"update_search_lists": false,
 		"show_names": true,

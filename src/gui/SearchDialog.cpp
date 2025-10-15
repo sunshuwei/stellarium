@@ -65,9 +65,9 @@
 #include "SimbadSearcher.hpp"
 
 // Added by Kwantsin
+#include "StarMgr.hpp"
 #include "StelMainView.hpp"
 #include "qjsondocument.h"
-#include "StarMgr.hpp"
 #include "qvalidator.h"
 
 // Start of members for class CompletionListModel
@@ -1676,6 +1676,40 @@ void SearchDialog::browseForCoordinateDir()
 	selectCoordinateDir();
 }
 
+double SearchDialog::loadEpoch(QString epoch) {
+	// Allow "Bxxxx.x", "Jxxxx.x", "JDjjjjjjjj.jjj" and pure doubles as JD
+	bool ok = false;
+	double res = StelUtils::J2000;
+
+	if (epoch.startsWith("JD", Qt::CaseInsensitive))
+	{
+		QString epochStrV = epoch.right(epoch.length() - 2);
+		res = epochStrV.toDouble(&ok); // pureJD
+	}
+	else if (epoch.startsWith("B", Qt::CaseInsensitive))
+	{
+		QString epochStrV = epoch.right(epoch.length() - 1);
+		double epochY = epochStrV.toDouble(&ok);
+		if (ok)
+		{
+			res = StelUtils::getJDFromBesselianEpoch(epochY);
+		}
+	}
+	else if (epoch.startsWith("J", Qt::CaseInsensitive))
+	{
+		QString epochStrV = epoch.right(epoch.length() - 1);
+		double epochY = epochStrV.toDouble(&ok);
+		if (ok)
+		{
+			res = StelUtils::getJDFromJulianEpoch(epochY);
+		}
+	}
+	else
+		res = epoch.toDouble(&ok); // pureJD
+
+	return res;
+}
+
 void SearchDialog::on_importCoordinate_clicked()
 {
 	QString coordinatePath = ui->coordinateDir->text();
@@ -1714,6 +1748,16 @@ void SearchDialog::on_importCoordinate_clicked()
 
 		const QJsonObject catalogObj = catalogValue.toObject();
 
+		// Change epoch, allow "Bxxxx.x", "Jxxxx.x", "JDjjjjjjjj.jjj" and pure doubles as JD
+		bool useEpoch = catalogObj.value("use_epoch").toBool(false);
+		if (useEpoch && catalogObj.contains("epoch")) {
+			QString epochStr = catalogObj.value("epoch").toString("J2000.0");
+			double epoch = loadEpoch(epochStr);
+			StelCore* core = StelApp::getInstance().getCore();
+			core->setJD(epoch);
+			core->update(0); // Force update of core state (parameter is time increment, 0 means immediate refresh)
+		}
+
 		// Whether the star catalog needs to be visualized
 		bool show = catalogObj.value("show").toBool(true);
 
@@ -1736,7 +1780,7 @@ void SearchDialog::on_importCoordinate_clicked()
 		QString defaultIcon = "cross";
 		if (catalogObj.contains("default_icon")) {
 			QString newIcon = catalogObj.value("default_icon").toString();
-			if (newIcon == "cross" || newIcon == "circle") {
+			if (newIcon == "cross" || newIcon == "circle" || newIcon == "dot") {
 				defaultIcon = newIcon;
 			}
 			else {
@@ -1985,7 +2029,7 @@ void SearchDialog::on_importCoordinate_clicked()
 				QString icon = defaultIcon;
 				if (starObj.contains("icon")) {
 					QString new_icon = starObj.value("icon").toString();
-					if (new_icon == "cross" || new_icon == "circle") {
+					if (new_icon == "cross" || new_icon == "circle" || new_icon == "dot") {
 						icon = new_icon;
 					}
 					else {
@@ -2003,14 +2047,19 @@ void SearchDialog::on_importCoordinate_clicked()
 					}
 				}
 				float fSize;
+				QString combinedIcon;
 				if (icon == "circle") {
 					fSize = sizeMapCircle[size];
+					combinedIcon = icon + QString::number(size);
+				}
+				else if(icon == "cross") {
+					fSize = sizeMapCross[size];
+					combinedIcon = icon + QString::number(size);
 				}
 				else {
-					fSize = sizeMapCross[size];
+					fSize = 2.f;
+					combinedIcon = icon;
 				}
-
-				QString combinedIcon = icon + QString::number(size);
 
 				// Get the default color field (RGB)
 				Vec3f color = defaultColor;
@@ -2115,7 +2164,7 @@ void SearchDialog::on_importCoordinate_clicked()
 				QString icon = defaultIcon;
 				if (starObj.contains("icon")) {
 					QString new_icon = starObj.value("icon").toString();
-					if (new_icon == "cross" || new_icon == "circle") {
+					if (new_icon == "cross" || new_icon == "circle" || new_icon == "dot") {
 						icon = new_icon;
 					}
 					else {
@@ -2133,13 +2182,19 @@ void SearchDialog::on_importCoordinate_clicked()
 					}
 				}
 				float fSize;
+				QString combinedIcon;
 				if (icon == "circle") {
 					fSize = sizeMapCircle[size];
+					combinedIcon = icon + QString::number(size);
+				}
+				else if (icon == "cross") {
+					fSize = sizeMapCross[size];
+					combinedIcon = icon + QString::number(size);
 				}
 				else {
-					fSize = sizeMapCross[size];
+					fSize = 2.f;
+					combinedIcon = icon;
 				}
-				QString combinedIcon = icon + QString::number(size);
 
 				// Get the default color field (RGB)
 				Vec3f color = defaultColor;

@@ -3,6 +3,8 @@
 		"id": "《大统通占》星表",
 		"observation_year": "1368-1399, 1378+-20.85, 明洪武年间",
 		"observation_place": "Nanjing, 南京",
+		"epoch": "J1378.5",
+        "use_epoch": true,
 		"json_author": {"name": "Kwantsin", "url": "https://www.zhihu.com/people/zhan-shi-ying-lu-78"},
 		"update_search_lists": false,
 		"show_names": true,

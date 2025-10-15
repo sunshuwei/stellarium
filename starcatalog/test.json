@@ -2,8 +2,6 @@
     {
         "id": "《天文汇钞》星表",
         "observation_year": "元末明初",
-        "epoch": "J1355.5",
-        "use_epoch": true,
         "data_notes": [
             {"1": "部分坐标缺失数据，这里的坐标由制作者增补，并在星名前加“?”，星名后加“+”缺失赤经，加“-”缺失赤纬，标识为红色。"},
             {"2": "星名前加“#”的是《中国恒星观测史》修正的坐标，标识为黄色；加“^”的是杨伯顺等修正的坐标，标识为粉红色。；加“*”的是数据制作者修正的坐标，标识为青色。"}
@@ -18,10 +16,11 @@
         "json_author": {"name": "Kwantsin", "url": "https://www.zhihu.com/people/zhan-shi-ying-lu-78"},
         "latest_update": "3C8.26, 2025-8-26",
         "update_search_lists": false,
-        "show_names": true,
+        "show_names": false,
         "coordinate_system": "equatorial_cn",
         "degrees_per_circle_x": 365.25,
         "degrees_per_circle_y": 365.2,
+        "default_icon": "dot",
         "data_description": "name为星名；mansion为所在宿；x为入宿度；y为去极度；id_star为证认星；HIP是证认星的HIP编号。",
         "data": [
             {"name": "右枢", "mansion": "亢", "x": 3.3, "y": 22.8, "id_star": "α_Dra", "HIP": [68756]},
