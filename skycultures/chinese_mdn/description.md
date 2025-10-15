@@ -1,30 +1,18 @@
 ## chinese_mdn 中国现代
 
-## Introduction
+## 介绍
 
-Chinese astronomy was developed independently and Chinese had its own system to connect the stars, known as "Xingguan" (Chinese: 星官; pinyin: xīngguān, meaning: Star officials). Chinese Traditional Sky Culture has far-reaching implications in East Asia. In ancient China, Xingguans and planets were associated with astrology. After thousands of years of evolution, the current Xingguans and star names was finalized in the 17th to 19th centuries.
+观津邀月理想中的现代中国星官格局，以元明时期未受西方观测数据影响的传统星象格局为基础制作。
 
-## Description
+## 描述
 
-Stellarium currently provides 300 Chinese Xingguans and more than 3000 Chinese star names from *Complete Studies of Astronomical* (Chinese: 仪象考成; pinyin: Yíxiàng kǎochéng) and *The Continuation of Complete Studies of Astronomical* (Chinese: 仪象考成续编; pinyin: Yíxiàngkǎochéng xùbiān). *Complete Studies of Astronomical* is an imperial record of astronomy finished in 1756. In 1844, the Imperial Astronomical Observatory made a revision to it and published *The Continuation of Complete Studies of Astronomical*, which is the major reference to the traditional Chinese Xingguans and star names used today. Yi Shitong has conducted textual research and summary of these records in his book*Chinese and Western Contrast Star Chart and Catalogue 1950.0* (Chinese: 中西对照恒星图表1950.0; pinyin: Zhōngxī Duìzhào Héngxīng Túbiǎo).
+中国传统三垣二十八宿1464星格局自晋代陈卓定纪以后，沿袭一千多年。虽由于星图绘制不准确等原因，星官位置和形状历朝历代都会有变化，但观测和星图绘制等工作都是由中国人独立完成的。
 
-Chinese Traditional Sky Culture is Based on the information inside *Chinese and Western Contrast Star Chart and Catalogue 1950.0* and *Complete Studies of Astronomical*.
+明末传教士引入当时西方更精确的星表后，《崇祯历书》《灵台仪象志》《仪象考成》等星表都是由西方传教士参与，恒星证认完全依赖西方星表，数据也仅仅将西方星表黄道座标换算岁差，几乎完全没有实测。这些星表严重脱离实际中国星空，在西方星表的基础上没有仔细考证中西星名的异同，完全忽视西方星表中没有的部分中国星。因此这些星表称不上是中国传统星表，只能算作“中西星名对照表”。
 
-In addition, some stars have been added according to *The History of Stellar Observation in China* (Chinese: 中国恒星观测史; pinyin: Zhōngguó Héngxīng Guāncèshǐ) by Pan Nai, if these stars are not certified in *Chinese and Western Contrast Star Chart and Catalogue1950.0(Star Catalogue)*.
+本星空文化旨在以明代星空为基础，恢复传统中国星象，并在此基础上进行星名增补。
 
-If the star name is followed by a "*", it is a star added according to *The History of Stellar Observation in China*.
-
-If the star name is followed by a "?", it is a star added according to *The History of Stellar Observation in China*, but cannot be fully certified.
-
-### Sun, Moon and Planets
-
-The Western countries named the planets in mythical characters. The ancient Chinese understanding of five planets is based on five-element concepts. Therefore, Mercury is named Water Star, Venus is named Metal Star, Mars is named Fire Star, Jupiter is named Wood Star, Saturn is named Earth Star.
-
-In Chinese, the sun and the moon are named after Yin and Yang (with prefix "great" (Chinese:太; pinyin: tài)), respectively Taiyang (Sun, Chinese: 太阳; pinyin: Tàiyáng) and Taiyin (Moon, Chinese:太阴; pinyin: Tàiyīn). Their other name belongs to pictographic characters. Ri (Sun, Chinese: 日) And Yue (Moon, Chinese: 月). But the more commonly used name for the moon is Yueliang (Chinese: 月亮; pinyin: Yuèliàng).
-
-The sun, the moon and the five planets form Seven Luminaries (Chinese: 七曜; pinyin: qīyào), which correspond to the Five Elements and Yin and Yang.
-
-### Xingguans
+### 星官
 
 Traditional Chinese astronomy has a system of dividing the celestial sphere into asterisms or constellations, known as "Xingguan". Modern constellations refer to specific areas of the celestial sphere. Xingguans refer only to the way stars are distributed, with no specific boundaries between Xingguans.
 
