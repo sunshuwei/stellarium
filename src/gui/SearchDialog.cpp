@@ -1713,11 +1713,16 @@ double SearchDialog::loadEpoch(QString epoch) {
 void SearchDialog::on_importCoordinate_clicked()
 {
 	QString coordinatePath = ui->coordinateDir->text();
+	importCoordinate(coordinatePath);
+}
 
+void SearchDialog::importCoordinate(const QString& filepath)
+{
 	// Open and read JSON file
-	QFile jsonFile(coordinatePath);
+	QFile jsonFile(filepath);
+	
 	if (!jsonFile.open(QIODevice::ReadOnly)) {
-		qWarning() << "Failed to open file:" << coordinatePath;
+		qWarning() << "Failed to open file:" << filepath;
 		return;
 	}
 

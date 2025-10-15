@@ -13,7 +13,7 @@
 		"mansions": [
 			{"name": "柳", "defining_star": 42402, "defining_star_name": "σ_Hya"}
 		],
-		"export_data": true,
+		"export_data": false,
 		"data_description": "name为星名；mansion为所在宿；x为入宿度；y为去极度；io_degree表示赤道内外度，正为内，负为外；id_star为证认星；HIP是证认星的HIP编号。",
 		"data": [
 			{"name": "紫微垣东蕃左枢第一星", "mansion": "氐", "x": 12.7, "y": 29.3, "io_degree": 62.01, "id_star": "ι_Dra", "HIP": [75458]},
