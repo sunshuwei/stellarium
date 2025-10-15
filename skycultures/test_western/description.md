@@ -1,4 +1,4 @@
-## Test_Western 西方星表测试
+## test_western 西方星表测试
 
 ## Introduction
 

@@ -1,5 +1,5 @@
 
-## Chinese_yixiang 中国清代
+## chinese_yixiang 中国清代
 
 Chinese astronomy was developed independently and Chinese had its own system to connect the stars. Chinese Traditional Sky Culture has far-reaching implications in East Asia. In ancient China, constellations and planets were associated with astrology.
 

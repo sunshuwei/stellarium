@@ -65,9 +65,9 @@
 #include "SimbadSearcher.hpp"
 
 // Added by Kwantsin
+#include "StarMgr.hpp"
 #include "StelMainView.hpp"
 #include "qjsondocument.h"
-#include "StarMgr.hpp"
 #include "qvalidator.h"
 
 // Start of members for class CompletionListModel
@@ -282,10 +282,18 @@ void SearchDialog::populateCoordinateSystemsList()
 	csys->blockSignals(false);
 }
 
+void SearchDialog::populateCoordinateData()
+{
+	setCenterOfScreenCoordinates();
+	populateCoordinateAxis();
+}
+
 void SearchDialog::populateCoordinateAxis()
 {
 	bool withDecimalDegree = StelApp::getInstance().getFlagShowDecimalDegrees();
+	bool usePolarDistance = StelApp::getInstance().getFlagPolarDistanceUsage();
 	bool xnormal = true;
+	QPair<double, double> minMaxLimits = usePolarDistance ? qMakePair(0., 180.) : qMakePair(-90., 90.);
 
 	ui->AxisXSpinBox->setDecimals(2);
 	ui->AxisYSpinBox->setDecimals(2);
@@ -294,8 +302,8 @@ void SearchDialog::populateCoordinateAxis()
 	ui->AxisXSpinBox->setMinimum(  0., true);
 	ui->AxisXSpinBox->setMaximum(360., true);
 	ui->AxisXSpinBox->setWrapping(true);
-	ui->AxisYSpinBox->setMinimum(-90., true);
-	ui->AxisYSpinBox->setMaximum( 90., true);
+	ui->AxisYSpinBox->setMinimum(minMaxLimits.first, true);
+	ui->AxisYSpinBox->setMaximum(minMaxLimits.second, true);
 	ui->AxisYSpinBox->setWrapping(false);
 
 	switch (getCurrentCoordinateSystem()) {		
@@ -305,7 +313,7 @@ void SearchDialog::populateCoordinateAxis()
 			ui->AxisXLabel->setText(q_("Right ascension"));
 			ui->AxisXSpinBox->setDisplayFormat(AngleSpinBox::HMSLetters);
 			ui->AxisXSpinBox->setPrefixType(AngleSpinBox::Normal);
-			ui->AxisYLabel->setText(q_("Declination"));
+			ui->AxisYLabel->setText(usePolarDistance ? q_("Polar distance") : q_("Declination"));
 			ui->AxisYSpinBox->setDisplayFormat(AngleSpinBox::DMSSymbols);
 			ui->AxisYSpinBox->setPrefixType(AngleSpinBox::NormalPlus);
 			xnormal = true;
@@ -370,6 +378,7 @@ void SearchDialog::createDialogContent()
 	ui->setupUi(dialog);
 	connect(&StelApp::getInstance(), SIGNAL(languageChanged()), this, SLOT(retranslate()));
 	connect(&StelApp::getInstance(), SIGNAL(flagShowDecimalDegreesChanged(bool)), this, SLOT(populateCoordinateAxis()));
+	connect(&StelApp::getInstance(), SIGNAL(flagUsePolarDistanceChanged(bool)), this, SLOT(populateCoordinateData()));
 	connect(ui->titleBar, &TitleBar::closeClicked, this, &StelDialog::close);
 	connect(ui->titleBar, SIGNAL(movedTo(QPoint)), this, SLOT(handleMovedTo(QPoint)));
 	connect(ui->lineEditSearchSkyObject, SIGNAL(textChanged(const QString&)), this, SLOT(onSearchTextChanged(const QString&)));
@@ -707,7 +716,8 @@ void SearchDialog::setSimpleStyle()
 void SearchDialog::setCenterOfScreenCoordinates()
 {
 	StelCore *core = StelApp::getInstance().getCore();
-	const auto projector = core->getProjection(StelCore::FrameJ2000, StelCore::RefractionMode::RefractionOff);	
+	bool usePolarDistance = StelApp::getInstance().getFlagPolarDistanceUsage();
+        const auto projector = core->getProjection(StelCore::FrameJ2000, StelCore::RefractionMode::RefractionOff);
 	Vector2<qreal> cpos = projector->getViewportCenter();
 	Vec3d centerPos;
 	projector->unProject(cpos[0], cpos[1], centerPos);
@@ -717,11 +727,19 @@ void SearchDialog::setCenterOfScreenCoordinates()
 	switch (getCurrentCoordinateSystem())
 	{
 		case equatorialJ2000:
+		{
 			StelUtils::rectToSphe(&spinLong, &spinLat, centerPos);
+			if (usePolarDistance)
+				spinLat = M_PI_2 - spinLat;
 			break;
+		}
 		case equatorial:
+		{
 			StelUtils::rectToSphe(&spinLong, &spinLat, core->j2000ToEquinoxEqu(centerPos, StelCore::RefractionOff));
+			if (usePolarDistance)
+				spinLat = M_PI_2 - spinLat;
 			break;
+		}
 		case galactic:
 			StelUtils::rectToSphe(&spinLong, &spinLat, core->j2000ToGalactic(centerPos));
 			break;
@@ -772,6 +790,7 @@ void SearchDialog::manualPositionChanged()
 {
 	searchListModel->clearValues();
 	StelCore* core = StelApp::getInstance().getCore();
+	bool usePolarDistance = StelApp::getInstance().getFlagPolarDistanceUsage();
 	StelMovementMgr* mvmgr = GETSTELMODULE(StelMovementMgr);	
 	Vec3d pos;	
 	double spinLong=ui->AxisXSpinBox->valueRadians();
@@ -788,6 +807,8 @@ void SearchDialog::manualPositionChanged()
 	{
 		case equatorialJ2000:
 		{
+			if (usePolarDistance)
+				spinLat = M_PI_2 - spinLat;
 			StelUtils::spheToRect(spinLong, spinLat, pos);
 			if ( (mountMode==StelMovementMgr::MountEquinoxEquatorial) && (fabs(spinLat)> (0.9*M_PI_2)) )
 			{
@@ -800,6 +821,8 @@ void SearchDialog::manualPositionChanged()
 		}
 		case equatorial:
 		{
+			if (usePolarDistance)
+				spinLat = M_PI_2 - spinLat;
 			StelUtils::spheToRect(spinLong, spinLat, pos);
 			pos = core->equinoxEquToJ2000(pos, StelCore::RefractionOff);
 
@@ -1653,6 +1676,40 @@ void SearchDialog::browseForCoordinateDir()
 	selectCoordinateDir();
 }
 
+double SearchDialog::loadEpoch(QString epoch) {
+	// Allow "Bxxxx.x", "Jxxxx.x", "JDjjjjjjjj.jjj" and pure doubles as JD
+	bool ok = false;
+	double res = StelUtils::J2000;
+
+	if (epoch.startsWith("JD", Qt::CaseInsensitive))
+	{
+		QString epochStrV = epoch.right(epoch.length() - 2);
+		res = epochStrV.toDouble(&ok); // pureJD
+	}
+	else if (epoch.startsWith("B", Qt::CaseInsensitive))
+	{
+		QString epochStrV = epoch.right(epoch.length() - 1);
+		double epochY = epochStrV.toDouble(&ok);
+		if (ok)
+		{
+			res = StelUtils::getJDFromBesselianEpoch(epochY);
+		}
+	}
+	else if (epoch.startsWith("J", Qt::CaseInsensitive))
+	{
+		QString epochStrV = epoch.right(epoch.length() - 1);
+		double epochY = epochStrV.toDouble(&ok);
+		if (ok)
+		{
+			res = StelUtils::getJDFromJulianEpoch(epochY);
+		}
+	}
+	else
+		res = epoch.toDouble(&ok); // pureJD
+
+	return res;
+}
+
 void SearchDialog::on_importCoordinate_clicked()
 {
 	QString coordinatePath = ui->coordinateDir->text();
@@ -1691,6 +1748,16 @@ void SearchDialog::on_importCoordinate_clicked()
 
 		const QJsonObject catalogObj = catalogValue.toObject();
 
+		// Change epoch, allow "Bxxxx.x", "Jxxxx.x", "JDjjjjjjjj.jjj" and pure doubles as JD
+		bool useEpoch = catalogObj.value("use_epoch").toBool(false);
+		if (useEpoch && catalogObj.contains("epoch")) {
+			QString epochStr = catalogObj.value("epoch").toString("J2000.0");
+			double epoch = loadEpoch(epochStr);
+			StelCore* core = StelApp::getInstance().getCore();
+			core->setJD(epoch);
+			core->update(0); // Force update of core state (parameter is time increment, 0 means immediate refresh)
+		}
+
 		// Whether the star catalog needs to be visualized
 		bool show = catalogObj.value("show").toBool(true);
 
@@ -1713,7 +1780,7 @@ void SearchDialog::on_importCoordinate_clicked()
 		QString defaultIcon = "cross";
 		if (catalogObj.contains("default_icon")) {
 			QString newIcon = catalogObj.value("default_icon").toString();
-			if (newIcon == "cross" || newIcon == "circle") {
+			if (newIcon == "cross" || newIcon == "circle" || newIcon == "dot") {
 				defaultIcon = newIcon;
 			}
 			else {
@@ -1962,7 +2029,7 @@ void SearchDialog::on_importCoordinate_clicked()
 				QString icon = defaultIcon;
 				if (starObj.contains("icon")) {
 					QString new_icon = starObj.value("icon").toString();
-					if (new_icon == "cross" || new_icon == "circle") {
+					if (new_icon == "cross" || new_icon == "circle" || new_icon == "dot") {
 						icon = new_icon;
 					}
 					else {
@@ -1980,14 +2047,19 @@ void SearchDialog::on_importCoordinate_clicked()
 					}
 				}
 				float fSize;
+				QString combinedIcon;
 				if (icon == "circle") {
 					fSize = sizeMapCircle[size];
+					combinedIcon = icon + QString::number(size);
+				}
+				else if(icon == "cross") {
+					fSize = sizeMapCross[size];
+					combinedIcon = icon + QString::number(size);
 				}
 				else {
-					fSize = sizeMapCross[size];
+					fSize = 2.f;
+					combinedIcon = icon;
 				}
-
-				QString combinedIcon = icon + QString::number(size);
 
 				// Get the default color field (RGB)
 				Vec3f color = defaultColor;
@@ -2092,7 +2164,7 @@ void SearchDialog::on_importCoordinate_clicked()
 				QString icon = defaultIcon;
 				if (starObj.contains("icon")) {
 					QString new_icon = starObj.value("icon").toString();
-					if (new_icon == "cross" || new_icon == "circle") {
+					if (new_icon == "cross" || new_icon == "circle" || new_icon == "dot") {
 						icon = new_icon;
 					}
 					else {
@@ -2110,13 +2182,19 @@ void SearchDialog::on_importCoordinate_clicked()
 					}
 				}
 				float fSize;
+				QString combinedIcon;
 				if (icon == "circle") {
 					fSize = sizeMapCircle[size];
+					combinedIcon = icon + QString::number(size);
+				}
+				else if (icon == "cross") {
+					fSize = sizeMapCross[size];
+					combinedIcon = icon + QString::number(size);
 				}
 				else {
-					fSize = sizeMapCross[size];
+					fSize = 2.f;
+					combinedIcon = icon;
 				}
-				QString combinedIcon = icon + QString::number(size);
 
 				// Get the default color field (RGB)
 				Vec3f color = defaultColor;

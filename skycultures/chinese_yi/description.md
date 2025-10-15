@@ -1,5 +1,5 @@
 
-## Chinese_Yi 中国彝族
+## chinese_yi 中国彝族
 
 ### 星表
 

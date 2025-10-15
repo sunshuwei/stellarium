@@ -161,7 +161,8 @@ public slots:
 
 	void setCoordinateSystem(int csID);
 	void populateCoordinateSystemsList();
-	void populateCoordinateAxis();
+	void populateCoordinateAxis(); // Called when axises data is changed
+	void populateCoordinateData(); // Called when axises data and values are changed
 	void populateRecentSearch();
 
 public:
@@ -260,6 +261,9 @@ private slots:
 	//! Select the local coordinate data JSON file
 	void selectCoordinateDir();
 	void browseForCoordinateDir();
+
+	//! Load epoch
+	double loadEpoch(QString epoch);
 
 	//! Read coordinate data file, process and visualize
 	void on_importCoordinate_clicked();

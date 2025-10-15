@@ -1,5 +1,5 @@
 
-## Japanese_tenmon_seizou 日本天文成象
+## japanese_tenmon_seizou 日本天文成象
 
 待补充…
 
