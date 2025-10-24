@@ -513,6 +513,8 @@ void SearchDialog::createDialogContent()
 	// Load data files and visualize them
 	connect(ui->importCoordinate, SIGNAL(clicked()), this, SLOT(on_importCoordinate_clicked()));
 	connect(ui->coordinateBrowseButton, SIGNAL(clicked()), this, SLOT(browseForCoordinateDir()));
+	connect(ui->loadSelectedClearButton, SIGNAL(clicked()), this, SLOT(on_loadSelectedClearButton_clicked()));
+	connect(ui->loadSelectedButton, SIGNAL(clicked()), this, SLOT(on_loadSelectedButton_clicked()));
 
 	ui->labelCoordData->setFixedWidth(80);
 	ui->coordinateDir->setText(StelFileMgr::getCoordinateDir());
@@ -1711,6 +1713,19 @@ double SearchDialog::loadEpoch(QString epoch) {
 }
 
 void SearchDialog::on_importCoordinate_clicked()
+{
+	QString coordinatePath = ui->coordinateDir->text();
+	importCoordinate(coordinatePath);
+}
+
+void SearchDialog::on_loadSelectedClearButton_clicked()
+{
+	GETSTELMODULE(CustomObjectMgr)->removeCustomObjects();
+	QString coordinatePath = ui->coordinateDir->text();
+	importCoordinate(coordinatePath);
+}
+
+void SearchDialog::on_loadSelectedButton_clicked()
 {
 	QString coordinatePath = ui->coordinateDir->text();
 	importCoordinate(coordinatePath);

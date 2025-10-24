@@ -825,7 +825,25 @@
 										<item row="5" column="0" colspan="3">
 											<widget class="QListView" name="starCatalogListView"/>
 										</item>
-										<item row="6" column="0" colspan="2">
+										<item row="6" column="0" colspan="3">
+											<layout class="QHBoxLayout" name="jsonButtonLayout">
+												<item>
+													<widget class="QPushButton" name="loadSelectedClearButton">
+														<property name="text">
+															<string>清屏并加载选中文件</string>
+														</property>
+													</widget>
+												</item>
+												<item>
+													<widget class="QPushButton" name="loadSelectedButton">
+														<property name="text">
+															<string>加载选中文件</string>
+														</property>
+													</widget>
+												</item>
+											</layout>
+										</item>
+										<item row="7" column="0" colspan="2">
 											<spacer name="verticalSpacer_2">
 												<property name="orientation">
 													<enum>Qt::Vertical</enum>

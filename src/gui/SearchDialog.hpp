@@ -267,6 +267,8 @@ private slots:
 
 	//! Read coordinate data file, process and visualize
 	void on_importCoordinate_clicked();
+	void on_loadSelectedClearButton_clicked();
+	void on_loadSelectedButton_clicked();
 	void importCoordinate(const QString& filepath);
 	Vec3f hexColorToVec3f(const QString& hexColor, bool* success);
 	double stringToDouble(QString input, QValidator::State* state);
