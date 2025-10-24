@@ -2550,5 +2550,3 @@ QStringList StarMgr::getCultureLabels(StarId hip, StelObject::CulturalDisplaySty
 	labels.removeAll(QString());
 	return labels;
 }
-
-
