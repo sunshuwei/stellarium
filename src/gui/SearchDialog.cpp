@@ -1820,27 +1820,29 @@ void SearchDialog::importCoordinate(const QString& filepath)
 			}
 		}
 
-		QMap<int, float> sizeMapCross = {
-			{0, 12.5f},
-			{1, 11.25f},
-			{2, 10.f},
-			{3, 8.75f},
-			{4, 7.5f},
-			{5, 6.25f},
-			{6, 5.f},
-			{7, 3.75f}
-		};
+		//QMap<int, float> sizeMapCross = {
+		//	{0, 12.5f},
+		//	{1, 11.25f},
+		//	{2, 10.f},
+		//	{3, 8.75f},
+		//	{4, 7.5f},
+		//	{5, 6.25f},
+		//	{6, 5.f},
+		//	{7, 3.75f},
+		//	{8, 2.5f}
+		//};
 
-		QMap<int, float> sizeMapCircle = {
-			{0, 12.65625f},
-			{1, 10.3125f},
-			{2, 8.28125f},
-			{3, 6.5625f},
-			{4, 5.15625f},
-			{5, 4.0625f},
-			{6, 3.28125f},
-			{7, 2.8125f}
-		};
+		//QMap<int, float> sizeMapCircle = {
+		//	{0, 12.65625f},
+		//	{1, 10.3125f},
+		//	{2, 8.28125f},
+		//	{3, 6.5625f},
+		//	{4, 5.15625f},
+		//	{5, 4.0625f},
+		//	{6, 3.28125f},
+		//	{7, 2.8125f},
+		//	{8, 2.8125f},
+		//};
 
 		// Get the default color (RGB)
 		bool success;
@@ -2056,25 +2058,35 @@ void SearchDialog::importCoordinate(const QString& filepath)
 						qWarning() << "Invalid Icon for" << name;
 					}
 				}
-				int size = defaultSize;
+				float size = (float)defaultSize;
 				if (starObj.contains("size")) {
-					int new_size = starObj.value("size").toInt();
-					if (new_size >= 0 && new_size <= 7) {
+					float new_size = starObj.value("size").toDouble();
+					if (new_size >= 0.f && new_size <= 9.f) {
 						size = new_size;
 					}
 					else {
 						qWarning() << "Invalid Size for" << name;
 					}
 				}
+
+				if (icon == "cross" && size >= 7.5f) {
+					icon = "dot";
+				}
+				if (size >= 8.5f) {
+					icon = "dot";
+				}
+
 				float fSize;
 				QString combinedIcon;
 				if (icon == "circle") {
-					fSize = sizeMapCircle[size];
-					combinedIcon = icon + QString::number(size);
+					fSize = (5 * size * size - 80 * size + 405) / 32;
+					int fNumber = round(size);
+					if (fNumber == 8) fNumber = 7;
+					combinedIcon = icon + QString::number(fNumber);
 				}
 				else if(icon == "cross") {
-					fSize = sizeMapCross[size];
-					combinedIcon = icon + QString::number(size);
+					fSize = 12.5 - 1.25 * size;
+					combinedIcon = icon + QString::number(round(size));
 				}
 				else {
 					fSize = 2.f;
@@ -2172,11 +2184,15 @@ void SearchDialog::importCoordinate(const QString& filepath)
 				QValidator::State state;
 				double x, y;
 				x = stringToDouble(xCoord, &state);
-				if (state != QValidator::Acceptable)
+				if (state != QValidator::Acceptable) {
+					qWarning() << "Skipping star with wrong coordinates:" << name;
 					continue;
+				}
 				y = stringToDouble(yCoord, &state);
-				if (state != QValidator::Acceptable)
+				if (state != QValidator::Acceptable) {
+					qWarning() << "Skipping star with wrong coordinates:" << name;
 					continue;
+				}
 
 				Vec3d v = SearchDialog::manualPositionChangedForData(x, y, coordinateSystem);
 
@@ -2191,25 +2207,32 @@ void SearchDialog::importCoordinate(const QString& filepath)
 						qWarning() << "Invalid Icon for" << name;
 					}
 				}
-				int size = defaultSize;
+				float size = (float)defaultSize;
 				if (starObj.contains("size")) {
-					int new_size = starObj.value("size").toInt();
-					if (new_size >= 0 && new_size <= 7) {
+					float new_size = starObj.value("size").toDouble();
+					if (new_size >= 0.f && new_size <= 9.f) {
 						size = new_size;
 					}
 					else {
 						qWarning() << "Invalid Size for" << name;
 					}
 				}
+
+				if (size >= 8.5f) {
+					icon = "dot";
+				}
+
 				float fSize;
 				QString combinedIcon;
 				if (icon == "circle") {
-					fSize = sizeMapCircle[size];
-					combinedIcon = icon + QString::number(size);
+					fSize = (5 * size * size - 80 * size + 405) / 32;
+					int fNumber = round(size);
+					if (fNumber == 8) fNumber = 7;
+					combinedIcon = icon + QString::number(fNumber);
 				}
 				else if (icon == "cross") {
-					fSize = sizeMapCross[size];
-					combinedIcon = icon + QString::number(size);
+					fSize = 12.5 - 1.25 * size;
+					combinedIcon = icon + QString::number(round(size));
 				}
 				else {
 					fSize = 2.f;
