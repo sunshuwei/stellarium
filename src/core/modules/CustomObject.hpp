@@ -55,11 +55,15 @@ public:
 	//! Get the type of object
 	QString getObjectType(void) const override
 	{
-		return (isMarker ? N_("custom marker") : N_("custom object"));
+		return objectType;
 	}
 	QString getObjectTypeI18n(void) const override
 	{
-		return q_(getObjectType());
+		QString ot = getObjectType();
+		if (ot.contains("SIMBAD", Qt::CaseSensitive))
+			return qc_(ot.replace("SIMBAD; ", ""), "SIMBAD object type"); // a special case for "outer objects"
+		else
+			return q_(ot); // for backward compatibility
 	}
 
 	QString getID(void) const override
@@ -93,6 +97,7 @@ private:
 	Vec3d XYZ;                         // holds J2000 position
 	static float selectPriority;
 	QString designation;
+	QString objectType;
 
 protected:
 	// Modified by Kwantsin
