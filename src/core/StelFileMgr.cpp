@@ -33,14 +33,14 @@
 #ifdef Q_OS_WIN
 #include <Windows.h>
 #ifndef _SHOBJ_H
-#include <ShlObj.h>
-#include <QLibrary>
+	#include <ShlObj.h>
+	#include <QLibrary>
 #endif
 #endif
 
 #include "StelFileMgr.hpp"
 
- // Initialize static members.
+// Initialize static members.
 QStringList StelFileMgr::fileLocations;
 QString StelFileMgr::userDir;
 QString StelFileMgr::screenshotDir;
@@ -69,13 +69,13 @@ void StelFileMgr::init()
 #if QT_VERSION >= 0x050A00
 	if (qEnvironmentVariableIsSet("STEL_USERDIR"))
 	{
-		userDir = qEnvironmentVariable("STEL_USERDIR");
+		userDir=qEnvironmentVariable("STEL_USERDIR");
 	}
 #else
-	QByteArray userDirCand = qgetenv("STEL_USERDIR");
+	QByteArray userDirCand=qgetenv("STEL_USERDIR");
 	if (!userDirCand.isEmpty())
 	{
-		userDir = QString::fromLocal8Bit(userDirCand);
+		userDir=QString::fromLocal8Bit(userDirCand);
 	}
 #endif
 
@@ -87,7 +87,7 @@ void StelFileMgr::init()
 	{
 		makeSureDirExistsAndIsWritable(userDir);
 	}
-	catch (std::runtime_error& e)
+	catch (std::runtime_error &e)
 	{
 		qFatal("Error: cannot create user config directory: %s", e.what());
 	}
@@ -97,13 +97,13 @@ void StelFileMgr::init()
 	if (fi.isRelative() && fi.isDir())
 	{
 		qDebug() << userDir << "looks like a relative path";
-		userDir = fi.absoluteFilePath();
-		qDebug() << "userDir now " << userDir;
+		userDir=fi.absoluteFilePath();
+		qDebug() << "userDir now " << userDir ;
 	}
 
 	// OK, now we have the userDir set, add it to the search path
 	fileLocations.append(userDir);
-
+	
 	// Determine install data directory location
 	QProcessEnvironment env = QProcessEnvironment::systemEnvironment();
 	QString envRoot = env.value("STELLARIUM_DATA_ROOT", ".");
@@ -111,10 +111,10 @@ void StelFileMgr::init()
 	if (QFileInfo::exists(envRoot + QDir::separator() + QString(CHECK_FILE)))
 	{
 		installDir = envRoot;
-	}
+	}	
 	else
 	{
-#if defined(Q_OS_MACOS)
+	#if defined(Q_OS_MACOS)
 		QString relativePath = "/../Resources";
 		if (QCoreApplication::applicationDirPath().contains("src")) {
 			relativePath = "/../..";
@@ -131,24 +131,24 @@ void StelFileMgr::init()
 		}
 		QFileInfo installLocation(ResourcesDir.absolutePath());
 		QFileInfo checkFile(installLocation.filePath() + QDir::separator() + QString(CHECK_FILE));
-#elif defined(Q_OS_WIN)		
+	#elif defined(Q_OS_WIN)		
 		QFileInfo installLocation(QCoreApplication::applicationDirPath());
 		QFileInfo checkFile(installLocation.filePath() + QDir::separator() + QString(CHECK_FILE));
-#else
+	#else
 		// Linux, BSD, Solaris etc.
 		// We use the value from the config.h filesystem
 		QFileInfo installLocation(QFile::decodeName(INSTALL_DATADIR));
 		QFileInfo checkFile(QFile::decodeName(INSTALL_DATADIR "/" CHECK_FILE));
-#endif
+	#endif
 
-#ifndef NDEBUG
+	#ifndef NDEBUG
 		if (!checkFile.exists())
 		{	// for DEBUG use sources location 
 			QString debugDataPath = INSTALL_DATADIR_FOR_DEBUG;
 			checkFile = QFileInfo(debugDataPath + QDir::separator() + CHECK_FILE);
 			installLocation = QFileInfo(debugDataPath);
 		}
-#endif
+	#endif
 
 		if (checkFile.exists())
 		{
@@ -157,13 +157,13 @@ void StelFileMgr::init()
 		else
 		{
 			qWarning().noquote() << "Could not find install location:"
-				<< QDir::toNativeSeparators(installLocation.filePath())
-				<< " (we checked for "
-				<< QDir::toNativeSeparators(checkFile.filePath()) << ").";
+					     << QDir::toNativeSeparators(installLocation.filePath())
+					     << " (we checked for "
+					     << QDir::toNativeSeparators(checkFile.filePath()) << ").";
 
 			qWarning() << "Maybe this is AppImage or something similar? Let's check relative path...";
 			// This hook has been added after reverse-engineering an AppImage application
-			QString relativePath = QCoreApplication::applicationDirPath() + QString("/../share/stellarium");
+			QString relativePath =  QCoreApplication::applicationDirPath() + QString("/../share/stellarium");
 			checkFile = QFileInfo(relativePath + QDir::separator() + CHECK_FILE);
 			if (checkFile.exists())
 			{
@@ -172,9 +172,9 @@ void StelFileMgr::init()
 			else
 			{
 				qWarning().noquote() << "Could not find install location:"
-					<< QDir::toNativeSeparators(relativePath)
-					<< " (we checked for "
-					<< QDir::toNativeSeparators(checkFile.filePath()) << ").";
+						     << QDir::toNativeSeparators(relativePath)
+						     << " (we checked for "
+						     << QDir::toNativeSeparators(checkFile.filePath()) << ").";
 
 				qWarning() << "Maybe this is development environment? Let's check source directory path...";
 
@@ -187,14 +187,14 @@ void StelFileMgr::init()
 				else
 				{
 					qWarning().noquote() << "Could not find install location:"
-						<< QDir::toNativeSeparators(sourceDirPath)
-						<< " (we checked for "
-						<< QDir::toNativeSeparators(checkFile.filePath()) << ").";
+							     << QDir::toNativeSeparators(sourceDirPath)
+							     << " (we checked for "
+							     << QDir::toNativeSeparators(checkFile.filePath()) << ").";
 
-#ifndef UNIT_TEST
+					#ifndef UNIT_TEST
 					// NOTE: Hook for buildbots (using within testEphemeris)
 					qFatal("Couldn't find install directory location.");
-#endif
+					#endif
 				}
 			}
 		}
@@ -213,7 +213,7 @@ QString StelFileMgr::findFile(const QString& path, Flags flags)
 		return "";
 	}
 
-
+	
 	// Qt resource files
 	if (path.startsWith(":/"))
 		return path;
@@ -241,7 +241,7 @@ QString StelFileMgr::findFile(const QString& path, Flags flags)
 			return "";
 		}
 	}
-
+	
 	for (const auto& i : std::as_const(fileLocations))
 	{
 		const QFileInfo finfo(i + "/" + path);
@@ -254,10 +254,10 @@ QString StelFileMgr::findFile(const QString& path, Flags flags)
 	return "";
 }
 
-QStringList StelFileMgr::findFileInAllPaths(const QString& path, const Flags& flags)
+QStringList StelFileMgr::findFileInAllPaths(const QString &path, const Flags &flags)
 {
 	QStringList filePaths;
-
+	
 	if (path.isEmpty())
 		return filePaths;
 
@@ -277,7 +277,7 @@ QStringList StelFileMgr::findFileInAllPaths(const QString& path, const Flags& fl
 	}
 
 	// explicitly specified absolute paths
-	if (isAbsolute(path))
+	if ( isAbsolute(path) )
 	{
 		if (fileFlagsCheck(QFileInfo(path), flags))
 			filePaths.append(path);
@@ -345,7 +345,7 @@ void StelFileMgr::setSearchPaths(const QStringList& paths)
 
 bool StelFileMgr::exists(const QString& path)
 {
-	return QFileInfo::exists(path);
+    return QFileInfo::exists(path);
 }
 
 bool StelFileMgr::isAbsolute(const QString& path)
@@ -391,7 +391,7 @@ QString StelFileMgr::baseName(const QString& path)
 bool StelFileMgr::fileFlagsCheck(const QFileInfo& thePath, const Flags& flags)
 {
 	const bool exists = thePath.exists();
-
+	
 	if (flags & New)
 	{
 		// if the file already exists, it is not a new file
@@ -408,9 +408,9 @@ bool StelFileMgr::fileFlagsCheck(const QFileInfo& thePath, const Flags& flags)
 	}
 	else if (exists)
 	{
-		if (flags == 0)
+		if (flags==0)
 			return true;
-
+		
 		if ((flags & Writable) && !thePath.isWritable())
 			return false;
 
@@ -423,7 +423,7 @@ bool StelFileMgr::fileFlagsCheck(const QFileInfo& thePath, const Flags& flags)
 	else
 	{
 		// doesn't exist and New flag wasn't requested
-		return false;
+		return false ;
 	}
 
 	return true;
@@ -437,7 +437,7 @@ QString StelFileMgr::getDesktopDir()
 	QString result = QStandardPaths::standardLocations(QStandardPaths::DesktopLocation).constFirst();
 	if (!QFileInfo(result).isDir())
 		return "";
-
+	
 	return result;
 }
 
@@ -509,6 +509,8 @@ void StelFileMgr::setObsListDir(const QString& newDir)
 QString StelFileMgr::getLocaleDir()
 {
 #ifdef ENABLE_NLS
+	// (SS) 2025-10-19: allow Vsual Studio builds to find the translations path directory
+	// while keeping the original logic for other platforms/build systems.
 	QFileInfo localePath = QFileInfo(getInstallationDir() + "/translations");
 	if (localePath.exists())
 	{
@@ -536,6 +538,19 @@ QString StelFileMgr::getLocaleDir()
 			}
 		}
 	}
+
+	if (localePath.exists()) return localePath.filePath();
+
+	// Try ../translations (Qt Creator layout)
+	localePath = QFileInfo(QCoreApplication::applicationDirPath() + QString("/../translations"));
+	if (localePath.exists()) return localePath.filePath();
+
+	// Try ../../translations (Visual Studio layout)
+	localePath = QFileInfo(QCoreApplication::applicationDirPath() + QString("/../../translations"));
+	if (localePath.exists()) return localePath.filePath();
+
+	qWarning() << "Could not determine locale directory";
+	return "";
 #else
 	return QString();
 #endif
@@ -558,19 +573,19 @@ void StelFileMgr::makeSureDirExistsAndIsWritable(const QString& dirFullPath)
 		qDebug() << "Creating directory " << QDir::toNativeSeparators(uDir.filePath());
 		if (!QDir("/").mkpath(uDir.absoluteFilePath()))
 		{
-			throw std::runtime_error(QString("Could not create directory: " + uDir.filePath()).toStdString());
+			throw std::runtime_error(QString("Could not create directory: " +uDir.filePath()).toStdString());
 		}
 		QFileInfo uDir2(dirFullPath);
 		if (!uDir2.isWritable())
 		{
-			throw std::runtime_error(QString("Directory is not writable: " + uDir2.filePath()).toStdString());
+			throw std::runtime_error(QString("Directory is not writable: " +uDir2.filePath()).toStdString());
 		}
 	}
 	else if (!uDir.isDir())
-		throw std::runtime_error(QString("File given instead of directory name: " + uDir.filePath()).toStdString());
+		throw std::runtime_error(QString("File given instead of directory name: " +uDir.filePath()).toStdString());
 	else if (!uDir.isWritable())
 	{
-		throw std::runtime_error(QString("Directory is not writable: " + uDir.filePath()).toStdString());
+		throw std::runtime_error(QString("Directory is not writable: " +uDir.filePath()).toStdString());
 	}
 }
 
@@ -583,7 +598,7 @@ QString StelFileMgr::getWin32SpecialDirPath(int csidlId)
 	// Stellarium works only on wide-character versions of Windows anyway,
 	// therefore it's using only the wide-char version of the code. --BM
 	QLibrary library(QLatin1String("shell32"));
-	typedef BOOL(WINAPI* GetSpecialFolderPath)(HWND, LPTSTR, int, BOOL);
+	typedef BOOL (WINAPI*GetSpecialFolderPath)(HWND, LPTSTR, int, BOOL);
 	GetSpecialFolderPath SHGetSpecialFolderPath = reinterpret_cast<GetSpecialFolderPath>(library.resolve("SHGetSpecialFolderPathW"));
 	if (SHGetSpecialFolderPath)
 	{

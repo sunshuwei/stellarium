@@ -1,3 +1,46 @@
+# Expansion of East Asian Skycultures and Explanation of Coordinate Visualization Function 东亚星空文化拓展+座标可视化功能说明
+
+This is a customized version of [Stellurium](https://github.com/Stellarium/stellarium), mainly modified in [Chinese skyculture enhancement](https://github.com/Guanjin0562/stellarium/tree/chinese-skyculture-enhancement) Branch.
+
+这是 [Stellurium](https://github.com/Stellarium/stellarium) 的一个定制版本，主要修改位于 [chinese-skyculture-enhancement](https://github.com/Guanjin0562/stellarium/tree/chinese-skyculture-enhancement) 分支。
+
+## Main Functions 主要功能
+- Expansion of skycultures: More East Asian skycultures, including China, Korea, and Japan. Chinese skycultures include the skycultures of ethnic minorities (Manchu, Yi).
+- 星空文化拓展: 更多的东亚星空文化，包括中国、朝鲜、日本。中国星空文化包括少数民族（满族、彝族）星空文化。
+- Coordinate visualization: By loading a JSON coordinate data file, the coordinates can be visualized in Stellurium, and the icons, colors, and sizes of the labels can be customized in the JSON file. Mainly used for studying ancient star observation data from both the East and the West, supporting all coordinate systems with Stellurium coordinate search function, as well as the traditional equatorial coordinate system in ancient China.
+- 座标可视化: 通过加载JSON座标数据文件，将座标在 Stellurium 中可视化，可在JSON文件中自定义标识的图标、颜色、大小。主要用于研究中西方古代恒星观测数据，支持 Stellurium 座标搜索功能的所有座标系，以及中国传统赤道座标系。
+- Star catalog data: The folder [starcatalog](https://github.com/Guanjin0562/stellarium/tree/chinese-skyculture-enhancement/starcatalog) contains JSON data for both Eastern and Western star catalogs, which can be directly visualized using coordinate visualization function.
+- 星表数据：[starcatalog](https://github.com/Guanjin0562/stellarium/tree/chinese-skyculture-enhancement/starcatalog) 文件夹内置中西方星表json数据，可以直接使用座标可视化功能进行可视化。
+
+## Effect Showcase 效果展示
+
+<img width="2550" height="1322" alt="Image" src="https://github.com/user-attachments/assets/ed75c0f3-504d-4720-899e-324f9d0be419" />
+
+## Quick Start 快速开始
+```
+$ git clone -b chinese-skyculture-enhancement https://github.com/Guanjin0562/stellarium.git
+```
+
+## Branches 分支结构
+- `master`: A pure branch synchronized with the official / 与官方同步的纯净分支
+- `chinese-skyculture-enhancement`: **Main custom branch** (recommended) / **主要自定义分支**（推荐使用）
+- Other branches... / 其他分支...
+
+## Chinese Community and Discussion 中文社区与讨论
+- **Zhihu Column** 📖 [观星邀月](https://www.zhihu.com/column/c_1644824280952295424) - Contains articles related to ancient Chinese astronomy.
+- **知乎专栏** 📖 [观星邀月](https://www.zhihu.com/column/c_1644824280952295424) - 包含中国古天文相关文章。
+
+## Maintainer 维护者
+[Kwantsin] - [GitHub](https://github.com/Guanjin0562) | [Zhihu](https://www.zhihu.com/people/zhan-shi-ying-lu-78)
+[观津邀月] - [GitHub](https://github.com/Guanjin0562) | [知乎](https://www.zhihu.com/people/zhan-shi-ying-lu-78)
+
+---
+*This branch is developed based on Stellarium/Stellarium and follows the GPL-2.0 protocol*
+*此分支基于 Stellarium/stellarium 开发，遵循GPL-2.0协议*
+
+**(Below this line is the original README content)**
+**（此行以下是原README说明）**
+
 # Stellarium
 [![GitHub release](https://img.shields.io/github/release/Stellarium/stellarium.svg)](https://github.com/Stellarium/stellarium/releases/latest)
 [![GitHub Release Date](https://img.shields.io/github/release-date/Stellarium/stellarium.svg)](https://github.com/Stellarium/stellarium/releases/latest)

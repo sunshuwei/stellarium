@@ -712,72 +712,6 @@
 												</item>
 											</layout>
 										</item>
-										<item row="5" column="0" colspan="2">
-											<spacer name="verticalSpacer_2">
-												<property name="orientation">
-													<enum>Qt::Vertical</enum>
-												</property>
-												<property name="sizeHint" stdset="0">
-													<size>
-														<width>20</width>
-														<height>40</height>
-													</size>
-												</property>
-											</spacer>
-										</item>
-										<item row="3" column="0">
-											<layout class="QHBoxLayout" name="horizontalLayout_5">
-												<item>
-													<widget class="QLabel" name="labelCoordData">
-														<property name="text">
-															<string>座标数据文件</string>
-														</property>
-													</widget>
-												</item>
-												<item>
-													<widget class="QLineEdit" name="coordinateDir"/>
-												</item>
-												<item>
-													<widget class="QPushButton" name="coordinateBrowseButton">
-														<property name="sizePolicy">
-															<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-																<horstretch>0</horstretch>
-																<verstretch>0</verstretch>
-															</sizepolicy>
-														</property>
-														<property name="text">
-															<string/>
-														</property>
-														<property name="icon">
-															<iconset resource="../../data/gui/guiRes.qrc">
-																<normaloff>:/graphicGui/uibtFolder.png</normaloff>
-																<disabledoff>:/graphicGui/uibtFolder-disabled.png</disabledoff>:/graphicGui/uibtFolder.png
-															</iconset>
-														</property>
-													</widget>
-												</item>
-											</layout>
-										</item>
-										<item row="4" column="0">
-											<widget class="QPushButton" name="importCoordinate">
-												<property name="text">
-													<string>加载座标数据</string>
-												</property>
-											</widget>
-										</item>
-										<item row="2" column="0" colspan="2">
-											<widget class="QLabel" name="label">
-												<property name="text">
-													<string>Note: this tool doesn't apply the refraction correction for coordinates.</string>
-												</property>
-												<property name="alignment">
-													<set>Qt::AlignCenter</set>
-												</property>
-												<property name="wordWrap">
-													<bool>true</bool>
-												</property>
-											</widget>
-										</item>
 										<item row="1" column="0" colspan="2">
 											<layout class="QGridLayout" name="coordinates">
 												<property name="topMargin">
@@ -834,6 +768,93 @@
 													</widget>
 												</item>
 											</layout>
+										</item>
+										<item row="2" column="0" colspan="2">
+											<widget class="QLabel" name="label">
+												<property name="text">
+													<string>Note: this tool doesn't apply the refraction correction for coordinates.</string>
+												</property>
+												<property name="alignment">
+													<set>Qt::AlignCenter</set>
+												</property>
+												<property name="wordWrap">
+													<bool>true</bool>
+												</property>
+											</widget>
+										</item>
+										<item row="3" column="0">
+											<layout class="QHBoxLayout" name="horizontalLayout_5">
+												<item>
+													<widget class="QLabel" name="labelCoordData">
+														<property name="text">
+															<string>座标数据文件</string>
+														</property>
+													</widget>
+												</item>
+												<item>
+													<widget class="QLineEdit" name="coordinateDir"/>
+												</item>
+												<item>
+													<widget class="QPushButton" name="coordinateBrowseButton">
+														<property name="sizePolicy">
+															<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+																<horstretch>0</horstretch>
+																<verstretch>0</verstretch>
+															</sizepolicy>
+														</property>
+														<property name="text">
+															<string/>
+														</property>
+														<property name="icon">
+															<iconset resource="../../data/gui/guiRes.qrc">
+																<normaloff>:/graphicGui/uibtFolder.png</normaloff>
+																<disabledoff>:/graphicGui/uibtFolder-disabled.png</disabledoff>:/graphicGui/uibtFolder.png
+															</iconset>
+														</property>
+													</widget>
+												</item>
+											</layout>
+										</item>
+										<item row="4" column="0">
+											<widget class="QPushButton" name="importCoordinate">
+												<property name="text">
+													<string>加载座标数据</string>
+												</property>
+											</widget>
+										</item>
+										<item row="5" column="0" colspan="3">
+											<widget class="QListView" name="starCatalogListView"/>
+										</item>
+										<item row="6" column="0" colspan="3">
+											<layout class="QHBoxLayout" name="jsonButtonLayout">
+												<item>
+													<widget class="QPushButton" name="loadSelectedClearButton">
+														<property name="text">
+															<string>清屏并加载选中文件</string>
+														</property>
+													</widget>
+												</item>
+												<item>
+													<widget class="QPushButton" name="loadSelectedButton">
+														<property name="text">
+															<string>加载选中文件</string>
+														</property>
+													</widget>
+												</item>
+											</layout>
+										</item>
+										<item row="7" column="0" colspan="2">
+											<spacer name="verticalSpacer_2">
+												<property name="orientation">
+													<enum>Qt::Vertical</enum>
+												</property>
+												<property name="sizeHint" stdset="0">
+													<size>
+														<width>20</width>
+														<height>40</height>
+													</size>
+												</property>
+											</spacer>
 										</item>
 									</layout>
 								</widget>

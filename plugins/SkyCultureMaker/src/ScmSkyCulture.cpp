@@ -67,7 +67,7 @@ std::vector<scm::ScmConstellation> *scm::ScmSkyCulture::getConstellations()
 	return &constellations;
 }
 
-QJsonObject scm::ScmSkyCulture::toJson() const
+QJsonObject scm::ScmSkyCulture::toJson(const bool mergeLines) const
 {
 	QJsonObject scJsonObj;
 	scJsonObj["id"] = id;
@@ -79,7 +79,7 @@ QJsonObject scm::ScmSkyCulture::toJson() const
 	QJsonArray constellationsArray;
 	for (const auto &constellation : constellations)
 	{
-		constellationsArray.append(constellation.toJson(id));
+		constellationsArray.append(constellation.toJson(id, mergeLines));
 	}
 	scJsonObj["constellations"] = constellationsArray;
 
@@ -108,7 +108,6 @@ bool scm::ScmSkyCulture::saveDescriptionAsMarkdown(QFile &file)
 		// the sky heading is not only needed for the sky description, but also for the subsections
 		const bool hasSkyHeading = !desc.sky.trimmed().isEmpty() || !desc.moonAndSun.trimmed().isEmpty() || !desc.planets.trimmed().isEmpty() ||
 		                           !desc.zodiac.trimmed().isEmpty() ||
-		                           !desc.constellations.trimmed().isEmpty() ||
 		                           !desc.milkyWay.trimmed().isEmpty() || !desc.otherObjects.trimmed().isEmpty();
 
 		QTextStream out(&file);

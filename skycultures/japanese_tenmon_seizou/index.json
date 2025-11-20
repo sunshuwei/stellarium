@@ -1772,7 +1772,7 @@
     },
     {
       "id": "CON japanese_tenmon_seizou 347",
-      "lines": [[76243, 76219, 75352]],
+      "lines": [[76243, 76219, 75379]],
       "common_name": {"english": "内侍*"}
     },
     {
@@ -1798,7 +1798,7 @@
     {
       "id": "CON japanese_tenmon_seizou 352",
       "lines": [[90139, 92161, 93244]],
-      "common_name": {"english": "军鉴*"}
+      "common_name": {"english": "军监*"}
     },
     {
       "id": "CON japanese_tenmon_seizou 353",
@@ -1817,12 +1817,12 @@
     },
     {
       "id": "CON japanese_tenmon_seizou 356",
-      "lines": [[102388, 103200, 102453, 101076, 99874, 99824, 100435, 101867]],
+      "lines": [[102388, 103200, 102453, 101076, 99874, 99824, 99853, 101867]],
       "common_name": {"english": "右京*"}
     },
     {
       "id": "CON japanese_tenmon_seizou 357",
-      "lines": [[106140, 107472, 108060, 107788, 107348, 106064, 105502, 106062]],
+      "lines": [[106140, 107472, 108060, 107788, 107348, 106064, 105502, 106787]],
       "common_name": {"english": "左京*"}
     },
     {

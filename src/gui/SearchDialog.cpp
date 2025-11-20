@@ -94,6 +94,14 @@ void CompletionListModel::setValues(const QStringList& v, const QStringList& rv)
 	updateText();
 }
 
+void CompletionListModel::setValuesWithModules(const QStringList& v, const QStringList& rv, const QMap<QString, QString>& modules)
+{
+	values=v;
+	recentValues=rv;
+	objectModules=modules;
+	updateText();
+}
+
 void CompletionListModel::appendRecentValues(const QStringList& v)
 {
 	recentValues+=v;
@@ -105,11 +113,23 @@ void CompletionListModel::appendValues(const QStringList& v)
 	updateText();
 }
 
+void CompletionListModel::appendValuesWithModules(const QStringList& v, const QMap<QString, QString>& modules)
+{
+	// Append the module information as object types to object names
+	values+=v;
+	for (auto it = modules.constBegin(); it != modules.constEnd(); ++it)
+	{
+		objectModules[it.key()] = it.value();
+	}
+	updateText();
+}
+
 void CompletionListModel::clearValues()
 {
 	// Default: Show recent values
 	values.clear();
 	values = recentValues;
+	objectModules.clear();
 	selectedIdx=0;
 	updateText();
 }
@@ -153,17 +173,58 @@ QVariant CompletionListModel::data(const QModelIndex &index, int role) const
 	if (!index.isValid())
 	    return QVariant();
 
+	QString objectName = values.value(index.row());
+
+	// Return the original object name for UserRole (used by gotoObject)
+	if(role == Qt::UserRole)
+	{
+		return objectName;
+	}
+
 	// Bold recent objects
 	if(role == Qt::FontRole)
 	{
 	    QFont font;
-	    bool toBold = recentValues.contains(index.data(Qt::DisplayRole).toString()) ?
-				    true : false;
+	    bool toBold = recentValues.contains(objectName);
 	    font.setBold(toBold);
 	    return font;
 	}
 
-	return QStringListModel::data(index, role);
+	// Display object name with module type (lazy-loaded for non-SIMBAD objects)
+	if(role == Qt::DisplayRole)
+	{
+		// Check if we already have module info cached
+		if (objectModules.contains(objectName))
+		{
+			QString moduleType = objectModules[objectName];
+			return QString("%1 (%2)").arg(objectName, moduleType);
+		}
+		
+		// For non-cached, non-recent objects, do a lazy lookup and cache it
+		if (objectMgr && !recentValues.contains(objectName))
+		{
+			StelObjectP obj = objectMgr->searchByNameI18n(objectName);
+			if (!obj)
+				obj = objectMgr->searchByName(objectName);
+			if (obj)
+			{
+				QString moduleType = obj->getObjectTypeI18n();
+				objectModules[objectName] = moduleType;
+				return QString("%1 (%2)").arg(objectName, moduleType);
+			}
+		}
+		
+		// Fallback: just return the name
+		return objectName;
+	}
+
+	// For EditRole, return the original name too
+	if(role == Qt::EditRole)
+	{
+		return objectName;
+	}
+
+	return QVariant();
 }
 
 // Start of members for class SearchDialog
@@ -208,6 +269,7 @@ SearchDialog::SearchDialog(QObject* parent)
 
 	// Init CompletionListModel
 	searchListModel = new CompletionListModel();
+	searchListModel->setObjectMgr(objectMgr);
 
 	// Find recent object search data file
 	recentObjectSearchesJsonPath = StelFileMgr::findFile("data", static_cast<StelFileMgr::Flags>(StelFileMgr::Directory | StelFileMgr::Writable)) + "/recentObjectSearches.json";
@@ -513,6 +575,8 @@ void SearchDialog::createDialogContent()
 	// Load data files and visualize them
 	connect(ui->importCoordinate, SIGNAL(clicked()), this, SLOT(on_importCoordinate_clicked()));
 	connect(ui->coordinateBrowseButton, SIGNAL(clicked()), this, SLOT(browseForCoordinateDir()));
+	connect(ui->loadSelectedClearButton, SIGNAL(clicked()), this, SLOT(on_loadSelectedClearButton_clicked()));
+	connect(ui->loadSelectedButton, SIGNAL(clicked()), this, SLOT(on_loadSelectedButton_clicked()));
 
 	ui->labelCoordData->setFixedWidth(80);
 	ui->coordinateDir->setText(StelFileMgr::getCoordinateDir());
@@ -982,7 +1046,7 @@ void SearchDialog::onSearchTextChanged(const QString& text)
 		// Clean up matches
 		adjustMatchesResult(allMatches, recentMatches, matches, maxNbItem);
 
-		// Updates values
+		// Updates values - module info will be fetched on-demand
 		resetSearchResultDisplay(allMatches, recentMatches);
 
 		// Update push button enabled state
@@ -998,6 +1062,26 @@ void SearchDialog::updateRecentSearchList(const QString &nameI18n)
 {
 	if(nameI18n.isEmpty())
 		return;
+
+	// Capture object type for this search
+	StelObjectP obj = objectMgr->searchByNameI18n(nameI18n);
+	if (!obj)
+		obj = objectMgr->searchByName(nameI18n);
+
+	if (obj)
+	{
+		QString objectType = obj->getObjectTypeI18n();
+		recentObjectSearchesData.objectTypes[nameI18n] = objectType;
+	}
+	else if (simbadObjectTypes.contains(nameI18n))
+	{
+		// For SIMBAD objects, use the type from SIMBAD
+		QString objType = simbadObjectTypes.value(nameI18n, "");
+		if (!objType.isEmpty())
+		recentObjectSearchesData.objectTypes[nameI18n] = QString("SIMBAD; %1").arg(qc_(objType, "SIMBAD object type"));
+		else
+		recentObjectSearchesData.objectTypes[nameI18n] = QString("SIMBAD");
+	}
 
 	// Prepend & remove duplicates
 	recentObjectSearchesData.recentList.prepend(nameI18n);
@@ -1044,10 +1128,12 @@ void SearchDialog::adjustMatchesResult(QStringList &allMatches, QStringList& rec
 	// Adjust recent matches to preferred max size
 	recentMatches = recentMatches.mid(0, recentObjectSearchesData.maxSize);
 
-	// Find total size of both matches
-	tempMatches << recentMatches << matches; // unsorted
-	tempMatches.removeDuplicates();
-	tempSize = tempMatches.size();
+	// Remove duplicates within recent matches only
+	recentMatches.removeDuplicates();
+
+	// Find total size - but DON'T remove duplicates between recent and matches
+	// This allows objects to appear in both local and SIMBAD results
+	tempSize = recentMatches.size() + matches.size();
 
 	// Adjust match size to be within range
 	if(tempSize>maxNbItem)
@@ -1058,9 +1144,6 @@ void SearchDialog::adjustMatchesResult(QStringList &allMatches, QStringList& rec
 
 	// Combine list: ordered by recent searches then relevance
 	allMatches << recentMatches << matches;
-
-	// Remove possible duplicates from both lists
-	allMatches.removeDuplicates();
 }
 
 
@@ -1070,6 +1153,18 @@ void SearchDialog::resetSearchResultDisplay(QStringList allMatches,
 	// Updates values
 	searchListModel->appendValues(allMatches);
 	searchListModel->appendRecentValues(recentMatches);
+
+	// Pass saved object types for recent objects to the model
+	QMap<QString, QString> recentObjectTypes; 
+	for (const QString& objName: recentMatches)
+	{
+		if (recentObjectSearchesData.objectTypes.contains(objName))
+		{
+			recentObjectTypes[objName] = recentObjectSearchesData.objectTypes[objName];
+		}
+	}
+	// Update display with object types
+	searchListModel->setValuesWithModules(allMatches, recentMatches, recentObjectTypes);
 
 	// Update display
 	searchListModel->setValues(allMatches, recentMatches);
@@ -1126,6 +1221,14 @@ void SearchDialog::loadRecentSearches()
 
 			// Get user's recentList data (if possible)
 			recentObjectSearchesData.recentList = recentSearchData.value("recentList").toStringList();
+		
+			// Load object types if available
+			QVariantMap objectTypesMap = recentSearchData.value("objectTypes").toMap();
+			recentObjectSearchesData.objectTypes.clear();
+			for (auto it = objectTypesMap.constBegin(); it != objectTypesMap.constEnd(); ++it)
+			{
+				recentObjectSearchesData.objectTypes[it.key()] = it.value().toString();
+			}
 		}
 		catch (std::runtime_error &e)
 		{
@@ -1156,6 +1259,15 @@ void SearchDialog::saveRecentSearches()
 	rslDataList.insert("maxSize", recentObjectSearchesData.maxSize);
 	rslDataList.insert("recentList", recentObjectSearchesData.recentList);
 	
+	// Save object types as a QVariantMap
+	QVariantMap objectTypesMap;
+	for (auto it = recentObjectSearchesData.objectTypes.constBegin();
+		it != recentObjectSearchesData.objectTypes.constEnd(); ++it)
+	{
+		objectTypesMap.insert(it.key(), it.value());
+	}
+	rslDataList.insert("objectTypes", objectTypesMap);
+
 	QVariantMap rsList;
 	rsList.insert("recentObjectSearches", rslDataList);
 
@@ -1243,7 +1355,22 @@ void SearchDialog::onSimbadStatusChanged()
 	if (simbadReply->getCurrentStatus()==SimbadLookupReply::SimbadLookupFinished)
 	{
 		simbadResults = simbadReply->getResults();
-		searchListModel->appendValues(simbadResults.keys());
+		simbadObjectTypes = simbadReply->getObjectTypes();
+		
+		QStringList SimbadNames;
+		QMap<QString, QString> moduleInfo;
+		
+		for (const QString& objName : simbadResults.keys())
+		{
+			SimbadNames.append(objName);
+			QString objType = simbadObjectTypes.value(objName, "");
+			if (!objType.isEmpty())
+				moduleInfo[objName] = QString("SIMBAD; %1").arg(qc_(objType, "SIMBAD object type"));
+			else
+				moduleInfo[objName] = "SIMBAD";
+		}
+		
+		searchListModel->appendValuesWithModules(SimbadNames, moduleInfo);
 		// Update push button enabled state
 		setPushButtonGotoSearch();
 	}
@@ -1324,7 +1451,8 @@ void SearchDialog::gotoObject(const QString &nameI18n)
 		{
                         if (useAutoClosing)
                                 close();
-			GETSTELMODULE(CustomObjectMgr)->addPersistentObject(nameI18n, simbadResults[nameI18n]);
+			QString objType = simbadObjectTypes.value(nameI18n, "");
+			GETSTELMODULE(CustomObjectMgr)->addPersistentObject(nameI18n, simbadResults[nameI18n], QString("SIMBAD; %1").arg(qc_(objType, "SIMBAD object type")));
 			ui->lineEditSearchSkyObject->clear();
 			searchListModel->clearValues();
 			if (objectMgr->findAndSelect(nameI18n))
@@ -1392,7 +1520,14 @@ void SearchDialog::gotoObject(const QString &nameI18n, const QString &objType)
 
 void SearchDialog::gotoObject(const QModelIndex &modelIndex)
 {
-	gotoObject(modelIndex.model()->data(modelIndex, Qt::DisplayRole).toString());
+	// Use UserRole to get the original object name (without module type suffix)
+	QString objectName = modelIndex.model()->data(modelIndex, Qt::UserRole).toString();
+	if (objectName.isEmpty())
+	{
+		// Fallback to DisplayRole if UserRole is not available
+		objectName = modelIndex.model()->data(modelIndex, Qt::DisplayRole).toString();
+	}
+	gotoObject(objectName);
 }
 
 void SearchDialog::gotoObjectWithType(const QModelIndex &modelIndex)
@@ -1713,11 +1848,29 @@ double SearchDialog::loadEpoch(QString epoch) {
 void SearchDialog::on_importCoordinate_clicked()
 {
 	QString coordinatePath = ui->coordinateDir->text();
+	importCoordinate(coordinatePath);
+}
 
+void SearchDialog::on_loadSelectedClearButton_clicked()
+{
+	GETSTELMODULE(CustomObjectMgr)->removeCustomObjects();
+	QString coordinatePath = ui->coordinateDir->text();
+	importCoordinate(coordinatePath);
+}
+
+void SearchDialog::on_loadSelectedButton_clicked()
+{
+	QString coordinatePath = ui->coordinateDir->text();
+	importCoordinate(coordinatePath);
+}
+
+void SearchDialog::importCoordinate(const QString& filepath)
+{
 	// Open and read JSON file
-	QFile jsonFile(coordinatePath);
+	QFile jsonFile(filepath);
+	
 	if (!jsonFile.open(QIODevice::ReadOnly)) {
-		qWarning() << "Failed to open file:" << coordinatePath;
+		qWarning() << "Failed to open file:" << filepath;
 		return;
 	}
 
@@ -1800,27 +1953,29 @@ void SearchDialog::on_importCoordinate_clicked()
 			}
 		}
 
-		QMap<int, float> sizeMapCross = {
-			{0, 12.5f},
-			{1, 11.25f},
-			{2, 10.f},
-			{3, 8.75f},
-			{4, 7.5f},
-			{5, 6.25f},
-			{6, 5.f},
-			{7, 3.75f}
-		};
+		//QMap<int, float> sizeMapCross = {
+		//	{0, 12.5f},
+		//	{1, 11.25f},
+		//	{2, 10.f},
+		//	{3, 8.75f},
+		//	{4, 7.5f},
+		//	{5, 6.25f},
+		//	{6, 5.f},
+		//	{7, 3.75f},
+		//	{8, 2.5f}
+		//};
 
-		QMap<int, float> sizeMapCircle = {
-			{0, 12.65625f},
-			{1, 10.3125f},
-			{2, 8.28125f},
-			{3, 6.5625f},
-			{4, 5.15625f},
-			{5, 4.0625f},
-			{6, 3.28125f},
-			{7, 2.8125f}
-		};
+		//QMap<int, float> sizeMapCircle = {
+		//	{0, 12.65625f},
+		//	{1, 10.3125f},
+		//	{2, 8.28125f},
+		//	{3, 6.5625f},
+		//	{4, 5.15625f},
+		//	{5, 4.0625f},
+		//	{6, 3.28125f},
+		//	{7, 2.8125f},
+		//	{8, 2.8125f},
+		//};
 
 		// Get the default color (RGB)
 		bool success;
@@ -2036,25 +2191,35 @@ void SearchDialog::on_importCoordinate_clicked()
 						qWarning() << "Invalid Icon for" << name;
 					}
 				}
-				int size = defaultSize;
+				float size = (float)defaultSize;
 				if (starObj.contains("size")) {
-					int new_size = starObj.value("size").toInt();
-					if (new_size >= 0 && new_size <= 7) {
+					float new_size = starObj.value("size").toDouble();
+					if (new_size >= 0.f && new_size <= 9.f) {
 						size = new_size;
 					}
 					else {
 						qWarning() << "Invalid Size for" << name;
 					}
 				}
+
+				if (icon == "cross" && size >= 7.5f) {
+					icon = "dot";
+				}
+				if (size >= 8.5f) {
+					icon = "dot";
+				}
+
 				float fSize;
 				QString combinedIcon;
 				if (icon == "circle") {
-					fSize = sizeMapCircle[size];
-					combinedIcon = icon + QString::number(size);
+					fSize = (5 * size * size - 80 * size + 405) / 32;
+					int fNumber = round(size);
+					if (fNumber == 8) fNumber = 7;
+					combinedIcon = icon + QString::number(fNumber);
 				}
 				else if(icon == "cross") {
-					fSize = sizeMapCross[size];
-					combinedIcon = icon + QString::number(size);
+					fSize = 12.5 - 1.25 * size;
+					combinedIcon = icon + QString::number(round(size));
 				}
 				else {
 					fSize = 2.f;
@@ -2152,11 +2317,15 @@ void SearchDialog::on_importCoordinate_clicked()
 				QValidator::State state;
 				double x, y;
 				x = stringToDouble(xCoord, &state);
-				if (state != QValidator::Acceptable)
+				if (state != QValidator::Acceptable) {
+					qWarning() << "Skipping star with wrong coordinates:" << name;
 					continue;
+				}
 				y = stringToDouble(yCoord, &state);
-				if (state != QValidator::Acceptable)
+				if (state != QValidator::Acceptable) {
+					qWarning() << "Skipping star with wrong coordinates:" << name;
 					continue;
+				}
 
 				Vec3d v = SearchDialog::manualPositionChangedForData(x, y, coordinateSystem);
 
@@ -2171,25 +2340,32 @@ void SearchDialog::on_importCoordinate_clicked()
 						qWarning() << "Invalid Icon for" << name;
 					}
 				}
-				int size = defaultSize;
+				float size = (float)defaultSize;
 				if (starObj.contains("size")) {
-					int new_size = starObj.value("size").toInt();
-					if (new_size >= 0 && new_size <= 7) {
+					float new_size = starObj.value("size").toDouble();
+					if (new_size >= 0.f && new_size <= 9.f) {
 						size = new_size;
 					}
 					else {
 						qWarning() << "Invalid Size for" << name;
 					}
 				}
+
+				if (size >= 8.5f) {
+					icon = "dot";
+				}
+
 				float fSize;
 				QString combinedIcon;
 				if (icon == "circle") {
-					fSize = sizeMapCircle[size];
-					combinedIcon = icon + QString::number(size);
+					fSize = (5 * size * size - 80 * size + 405) / 32;
+					int fNumber = round(size);
+					if (fNumber == 8) fNumber = 7;
+					combinedIcon = icon + QString::number(fNumber);
 				}
 				else if (icon == "cross") {
-					fSize = sizeMapCross[size];
-					combinedIcon = icon + QString::number(size);
+					fSize = 12.5 - 1.25 * size;
+					combinedIcon = icon + QString::number(round(size));
 				}
 				else {
 					fSize = 2.f;
