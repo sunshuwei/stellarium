@@ -5,12 +5,13 @@
 # Khalid AlAjaji, 2025
 # cardinot <mcardinot@gmail.com>, 2025
 # Alexander V. Wolf <alex.v.wolf@gmail.com>, 2025
+# Ruslan Kabatsaev, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: stellarium@googlegroups.com\n"
-"Last-Translator: Alexander V. Wolf <alex.v.wolf@gmail.com>, 2025\n"
+"Last-Translator: Ruslan Kabatsaev, 2025\n"
 "Language-Team: Arabic (https://app.transifex.com/stellarium/teams/80998/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -58790,7 +58791,7 @@ msgstr "الميزان"
 #. Modern (IAU) constellation, native: Cetus, English: Sea Monster
 msgctxt "IAU constellation name"
 msgid "Whale"
-msgstr ""
+msgstr "‎‎قيطس‎‎"
 
 #. Byname for Modern constellation, native: Cetus, English: Whale
 #. Modern (IAU) constellation, native: Cetus, byname: Whale
@@ -59359,7 +59360,7 @@ msgstr "الأسد"
 #. Modern (IAU) constellation, native: Lupus
 msgctxt "IAU constellation name"
 msgid "Wolf"
-msgstr ""
+msgstr "‎‎الذئب‎‎"
 
 #. Modern constellation, native: Lynx
 #. Modern (IAU) constellation, native: Lynx
@@ -59496,7 +59497,7 @@ msgstr "الصياد"
 #. Modern (IAU) constellation, native: Pavo
 msgctxt "IAU constellation name"
 msgid "Peacock"
-msgstr ""
+msgstr "‎‎الطاووس‎‎"
 
 #. Abbreviation of constellation in Modern sky culture, name: Peacock
 #. Abbreviation of constellation in Modern (Chinese) sky culture, name: Pavo
@@ -59713,8 +59714,10 @@ msgid "Scorpion"
 msgstr "العقرب"
 
 #. Modern constellation, native: Serpens
+#. Modern (IAU) constellation, native: Serpens
+msgctxt "IAU constellation name"
 msgid "Serpent"
-msgstr ""
+msgstr "الحية"
 
 #. Modern constellation, native: Sextans
 #. Modern (IAU) constellation, native: Sextans
@@ -59742,7 +59745,7 @@ msgstr "Sex"
 #. Modern (IAU) constellation, native: Mensa
 msgctxt "IAU constellation name"
 msgid "Table Mountain"
-msgstr ""
+msgstr "‎‎المائدة‎‎"
 
 #. Modern constellation, native: Taurus
 #. Modern (IAU) constellation, native: Taurus
@@ -59835,8 +59838,10 @@ msgid "Maiden"
 msgstr "البكر"
 
 #. Modern constellation, native: Vela
+#. Modern (IAU) constellation, native: Vela
+msgctxt "IAU constellation name"
 msgid "Sails"
-msgstr ""
+msgstr "الأشرعة"
 
 #. Abbreviation of constellation in Modern sky culture, name: Sails
 #. Abbreviation of constellation in Modern (Chinese) sky culture, name: Vela
@@ -64262,16 +64267,6 @@ msgstr "حية الماء"
 msgctxt "IAU constellation name"
 msgid "Male Water Snake"
 msgstr "ثعبان الماء"
-
-#. Modern (IAU) constellation, native: Serpens
-msgctxt "IAU constellation name"
-msgid "Serpent"
-msgstr "الحية"
-
-#. Modern (IAU) constellation, native: Vela
-msgctxt "IAU constellation name"
-msgid "Sails"
-msgstr "الأشرعة"
 
 #. Modern (IAU) name for B142, native: The Triple Cave Nebula
 #. Modern (IAU) name for B143, native: The Triple Cave Nebula

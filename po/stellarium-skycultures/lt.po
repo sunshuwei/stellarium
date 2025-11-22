@@ -4965,7 +4965,7 @@ msgstr "al-Tavaman"
 #. Cancer
 msgctxt "western zodiac sign"
 msgid "Crab"
-msgstr "Krabas"
+msgstr "Vėžys"
 
 #. Pronounce entry for a zodiac sign or a lunar mansion in Arabic (Al-Sufi)
 #. sky culture, native: السرطان, English: Crab
@@ -24320,7 +24320,7 @@ msgctxt "abbreviation"
 msgid "117"
 msgstr "117"
 
-#. Chinese constellation, native: 九斿, pronounce: Jiǔ Liú
+#. Chinese constellation, native: 九斿, pronounce: Jiǔ Yóu
 #. Pinyin transliteration
 #. Pinyin transliteration
 #. Pinyin transliteration
@@ -24338,7 +24338,7 @@ msgstr "117"
 #. Pinyin transliteration
 #. Chinese Chenzhuo Sky (3rd Century) constellation, native: 九斿, pronounce:
 #. Jiu Liu
-#. Chinese Song Dynasty Sky constellation, native: 九斿, pronounce: Jiǔ Liú
+#. Chinese Song Dynasty Sky constellation, native: 九斿, pronounce: Jiǔ Yóu
 #. Modern (Chinese) asterism
 msgid "Imperial Military Flag"
 msgstr "Imperinės kariuomenės vėliava"
@@ -24347,8 +24347,8 @@ msgstr "Imperinės kariuomenės vėliava"
 #. Military Flag
 #. Chinese Song Dynasty Sky constellation, native: 九斿, English: Imperial
 #. Military Flag
-msgid "Jiǔ Liú"
-msgstr "Džiǔ Liú"
+msgid "Jiǔ Yóu"
+msgstr "Jiǔ Yóu"
 
 #. Abbreviation of constellation in Chinese sky culture, name: Imperial
 #. Military Flag
@@ -29398,7 +29398,7 @@ msgid "279"
 msgstr "279"
 
 #. Chinese constellation, native: 钺(附井宿), pronounce: Yuè
-#. Chinese Song Dynasty Sky constellation, native: 钺(井宿), pronounce: Yuè
+#. Chinese Song Dynasty Sky constellation, native: 钺(附井宿), pronounce: Yuè
 #. Modern (Chinese) asterism
 msgid "Battle Axe (Vassal of Well)"
 msgstr "Kovinis kirvis (Šulinio vasalas)"
@@ -29416,7 +29416,7 @@ msgstr "Kovinis kirvis (Šulinio vasalas)"
 #. Pronounce entry for Chinese name for NAME Moon
 #. Chinese name for NAME Moon, native: 月
 #. Chinese Song Dynasty Sky constellation, native: 月, English: Lunar Star
-#. Chinese Song Dynasty Sky constellation, native: 钺(井宿), English: Battle Axe
+#. Chinese Song Dynasty Sky constellation, native: 钺(附井宿), English: Battle Axe
 #. (Vassal of Well)
 #. Pronounce entry for Chinese Song Dynasty Sky name for HIP 19038
 #. Chinese Song Dynasty Sky name for HIP 19038, native: 月
@@ -48353,8 +48353,8 @@ msgstr "Mautjū"
 
 #. Pronounce entry for Chinese Song Dynasty Sky name for NAME Jupiter
 #. Chinese Song Dynasty Sky name for NAME Jupiter, native: 岁星
-msgid "Sùixīng"
-msgstr "Suiksin"
+msgid "Suìxīng"
+msgstr "Suìxīng"
 
 #. Pronounce entry for Chinese Song Dynasty Sky name for NAME Mars
 #. Chinese Song Dynasty Sky name for NAME Mars, native: 荧惑
@@ -59878,6 +59878,8 @@ msgid "Scorpion"
 msgstr "Skorpionas"
 
 #. Modern constellation, native: Serpens
+#. Modern (IAU) constellation, native: Serpens
+msgctxt "IAU constellation name"
 msgid "Serpent"
 msgstr "Gyvatė"
 
@@ -60000,6 +60002,8 @@ msgid "Maiden"
 msgstr "Mergelė"
 
 #. Modern constellation, native: Vela
+#. Modern (IAU) constellation, native: Vela
+msgctxt "IAU constellation name"
 msgid "Sails"
 msgstr "Burės"
 
@@ -63991,7 +63995,7 @@ msgstr "Slibinas"
 #. Modern (H.A. Rey) constellation, native: SQUARE
 #. Modern (Sternenkarten) constellation, native: Norma
 msgid "Norma"
-msgstr "Kampainis"
+msgstr "Matuoklė"
 
 #. Modern (Chinese) constellation, native: Eridanus
 #. Modern (O. Hlad) constellation, native: Eridanus
@@ -64427,16 +64431,6 @@ msgstr "Vandens gyvatės patelė"
 msgctxt "IAU constellation name"
 msgid "Male Water Snake"
 msgstr "Vandens gyvatės patinas"
-
-#. Modern (IAU) constellation, native: Serpens
-msgctxt "IAU constellation name"
-msgid "Serpent"
-msgstr "Gyvatė"
-
-#. Modern (IAU) constellation, native: Vela
-msgctxt "IAU constellation name"
-msgid "Sails"
-msgstr "Burės"
 
 #. Modern (IAU) name for B142, native: The Triple Cave Nebula
 #. Modern (IAU) name for B143, native: The Triple Cave Nebula
@@ -65649,7 +65643,7 @@ msgstr "cuh-ROE-nuh bor-ee-AL-iss"
 #. ancient
 msgctxt "S&T constellation name"
 msgid "Cup"
-msgstr "Puodelis"
+msgstr "Taurė"
 
 #. Pronounce entry for Modern (Sky & Telescope) constellation, native: Crater,
 #. English: Cup
