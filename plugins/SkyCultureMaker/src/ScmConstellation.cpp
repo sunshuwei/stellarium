@@ -22,22 +22,33 @@
  */
 
 #include "ScmConstellation.hpp"
+#include "ConstellationMgr.hpp"
 #include <QDir>
 #include <QFileInfo>
 
-scm::ScmConstellation::ScmConstellation(const QString &id, const std::vector<CoordinateLine> &coordinates,
-                                        const std::vector<StarLine> &stars, const bool isDarkConstellation)
+scm::ScmConstellation::ScmConstellation(const QString &id, const std::vector<ConstellationLine> &lines,
+                                        const bool isDarkConstellation)
 	: id(id)
-	, coordinates(coordinates)
-	, stars(stars)
+	, lines(lines)
 	, isDarkConstellation(isDarkConstellation)
 {
-	QSettings *conf = StelApp::getInstance().getSettings();
-	constellationNameFont.setPixelSize(conf->value("viewing/constellation_font_size", 15).toInt());
+	ConstellationMgr *constMgr = GETSTELMODULE(ConstellationMgr);
 
-	QString defaultColor          = conf->value("color/default_color", "0.5,0.5,0.7").toString();
-	defaultConstellationLineColor = Vec3f(conf->value("color/const_lines_color", defaultColor).toString());
-	defaultConstellationNameColor = Vec3f(conf->value("color/const_names_color", defaultColor).toString());
+	// Initial values
+	constellationLineThickness = constMgr->getConstellationLineThickness();
+	constellationNameFont.setPixelSize(constMgr->getFontSize());
+	defaultConstellationLineColor = constMgr->getLinesColor();
+	defaultConstellationNameColor = constMgr->getLabelsColor();
+
+	// Connections
+	QObject::connect(constMgr, &ConstellationMgr::constellationLineThicknessChanged,
+	                 [this](int v) { constellationLineThickness = v; });
+	QObject::connect(constMgr, &ConstellationMgr::fontSizeChanged,
+	                 [this](int v) { constellationNameFont.setPixelSize(v); });
+	QObject::connect(constMgr, &ConstellationMgr::linesColorChanged,
+	                 [this](const Vec3f &c) { defaultConstellationLineColor = c; });
+	QObject::connect(constMgr, &ConstellationMgr::namesColorChanged,
+	                 [this](const Vec3f &c) { defaultConstellationNameColor = c; });
 
 	updateTextPosition();
 }
@@ -97,64 +108,54 @@ const scm::ScmConstellationArtwork &scm::ScmConstellation::getArtwork() const
 	return artwork;
 }
 
-void scm::ScmConstellation::setConstellation(const std::vector<CoordinateLine> &coordinates,
-                                             const std::vector<StarLine> &stars)
+void scm::ScmConstellation::setLines(const std::vector<ConstellationLine> &lines)
 {
-	scm::ScmConstellation::coordinates = coordinates;
-	scm::ScmConstellation::stars       = stars;
-
+	scm::ScmConstellation::lines = lines;
 	updateTextPosition();
 }
 
-const std::vector<scm::CoordinateLine> &scm::ScmConstellation::getCoordinates() const
+const std::vector<scm::ConstellationLine> &scm::ScmConstellation::getLines() const
 {
-	return coordinates;
+	return lines;
 }
 
-const std::vector<scm::StarLine> &scm::ScmConstellation::getStars() const
+void scm::ScmConstellation::draw(StelCore *core) const
 {
-	return stars;
-}
-
-void scm::ScmConstellation::drawConstellation(StelCore *core, const Vec3f &lineColor, const Vec3f &nameColor) const
-{
-	if (isHidden)
-	{
-		return;
-	}
 	StelPainter painter(core->getProjection(drawFrame));
-	painter.setBlending(true);
-	painter.setLineSmooth(true);
-	painter.setFont(constellationNameFont);
-
-	painter.setColor(lineColor, 1.0f);
-
-	for (CoordinateLine p : coordinates)
-	{
-		painter.drawGreatCircleArc(p.start, p.end);
-	}
-
-	drawNames(core, painter, nameColor);
-
-	artwork.draw(core, painter);
+	drawArtwork(core, painter);
+	drawLines(painter, defaultConstellationLineColor);
+	drawName(core, painter, defaultConstellationNameColor);
 }
 
-void scm::ScmConstellation::drawConstellation(StelCore *core) const
+void scm::ScmConstellation::drawLines(StelPainter &sPainter, const Vec3f &lineColor) const
 {
-	if (isHidden)
+	// set up painter
+	sPainter.setBlending(true);
+	sPainter.setLineSmooth(true);
+	sPainter.setFont(constellationNameFont);
+	sPainter.setColor(lineColor, 1.0f);
+	const float scale = sPainter.getProjector()->getScreenScale();
+	if (constellationLineThickness > 1 || scale > 1.f)
 	{
-		return;
+		sPainter.setLineWidth(constellationLineThickness * scale);
 	}
-	drawConstellation(core, defaultConstellationLineColor, defaultConstellationNameColor);
+
+	// draw lines
+	for (const ConstellationLine &line : lines)
+	{
+		sPainter.drawGreatCircleArc(line.start.coordinate, line.end.coordinate);
+	}
+
+	// restore line properties
+	if (constellationLineThickness > 1 || scale > 1.f)
+	{
+		sPainter.setLineWidth(1); // restore thickness
+	}
+	sPainter.setLineSmooth(false);
 }
 
-void scm::ScmConstellation::drawNames(StelCore *core, StelPainter &sPainter, const Vec3f &nameColor) const
+void scm::ScmConstellation::drawName(StelCore *core, StelPainter &sPainter, const Vec3f &nameColor) const
 {
-	if (isHidden)
-	{
-		return;
-	}
-
 	sPainter.setBlending(true);
 
 	Vec3d velocityObserver(0.);
@@ -178,14 +179,9 @@ void scm::ScmConstellation::drawNames(StelCore *core, StelPainter &sPainter, con
 	                  -sPainter.getFontMetrics().boundingRect(englishName).width() / 2, 0, false);
 }
 
-void scm::ScmConstellation::drawNames(StelCore *core, StelPainter &sPainter) const
+void scm::ScmConstellation::drawArtwork(StelCore *core, StelPainter &sPainter) const
 {
-	if (isHidden)
-	{
-		return;
-	}
-
-	drawNames(core, sPainter, defaultConstellationNameColor);
+	artwork.draw(core, sPainter);
 }
 
 QJsonObject scm::ScmConstellation::toJson(const QString &skyCultureId, const bool mergeLines) const
@@ -198,17 +194,17 @@ QJsonObject scm::ScmConstellation::toJson(const QString &skyCultureId, const boo
 	if (!isDarkConstellation)
 	{
 		// not a dark constellation, so we can add stars
-		for (const auto &star : stars)
+		for (const auto &line : lines)
 		{
-			linesArray.append(star.toJson());
+			linesArray.append(line.starsToJson());
 		}
 	}
 	else
 	{
 		// dark constellation, so only add coordinates
-		for (const auto &coord : coordinates)
+		for (const auto &line : lines)
 		{
-			linesArray.append(coord.toJson());
+			linesArray.append(line.coordinatesToJson());
 		}
 	}
 
@@ -272,22 +268,12 @@ bool scm::ScmConstellation::saveArtwork(const QString &directory)
 void scm::ScmConstellation::updateTextPosition()
 {
 	XYZname.set(0., 0., 0.);
-	for (CoordinateLine p : coordinates)
+	for (const ConstellationLine &line : lines)
 	{
-		XYZname += p.end;
-		XYZname += p.start;
+		XYZname += line.end.coordinate;
+		XYZname += line.start.coordinate;
 	}
 	XYZname.normalize();
-}
-
-void scm::ScmConstellation::hide()
-{
-	isHidden = true;
-}
-
-void scm::ScmConstellation::show()
-{
-	isHidden = false;
 }
 
 void scm::ScmConstellation::mergeLinesIntoPolylines(QJsonArray &lines) const
