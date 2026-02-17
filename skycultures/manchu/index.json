@@ -1608,47 +1608,128 @@
     {
       "id": "CON manchu 001",
       "lines": [[17608, 17573, 17531, 17489, 17499, 17608, 17702, 17847]],
+      "image": {
+        "file": "illustrations/01Narhv.png",
+        "size": [279, 138],
+        "anchors": [
+          {"pos": [39, 81], "hip": 17847},
+          {"pos": [211, 24], "hip": 17531},
+          {"pos": [200, 91], "hip": 17499}
+        ]
+      },
       "common_name": {"english": "Seven Maidens", "byname": "那丹那拉呼（七女星）", "native": "ᠨᠠᡩᠠᠨ ᠨᠠᡳᡥᡡ", "pronounce": "Nadan Narhū"}
     },
     {
       "id": "CON manchu 002",
       "lines": [[100453, 97165, 99675, 102098, 103413, 104887, 105138, 104732, 102488, 101474, 100453]],
+      "image": {
+        "file": "illustrations/02Sengge.png",
+        "size": [304, 141],
+        "anchors": [
+          {"pos": [19, 64], "hip": 104732},
+          {"pos": [238, 25], "hip": 102098},
+          {"pos": [279, 101], "hip": 97165}
+        ]
+      },
       "common_name": {"english": "God of Hedgehogs", "byname": "恩都力僧固（房架星/刺猬星）", "native": "ᡝᠨᡩᡠᡵᡳ ᠰᡝᠨᡤᡤᡠ", "pronounce": "Enduri Senggu"}
     },
     {
       "id": "CON manchu 003",
       "lines": [[746, 3179, 4427, 6686, 8886]],
-      "common_name": {"english": "", "byname": "塔其妈妈（蛇星/罗锅星/斛星）", "native": "ᡨᠠᠴᡳ ᠮᠠᠮᠠ", "pronounce": "Taci Mama"}
+      "image": {
+        "file": "illustrations/03Taci.png",
+        "size": [143, 128],
+        "anchors": [
+          {"pos": [13, 21], "hip": 8886},
+          {"pos": [110, 104], "hip": 3179},
+          {"pos": [132, 61], "hip": 746}
+        ]
+      },
+      "common_name": {"english": "Taci (Goddess)", "byname": "塔其妈妈（蛇星/罗锅星/斛星）", "native": "ᡨᠠᠴᡳ ᠮᠠᠮᠠ", "pronounce": "Taci Mama"}
     },
     {
       "id": "CON manchu 004",
-      "lines": [[13268, 14328, 15863, 17529, 18532], [14328, 14668, 14576, 14354], [14576, 13254]],
-      "lines1": [[14328, 15863, 17358, 17529, 18532], [15863, 14668, 14576, 14354], [14576, 13254]],
+      "lines": [[14328, 15863, 17358, 17529, 18532], [15863, 14668, 14576, 14354], [14576, 13254]],
+      "lines1": [[13268, 14328, 15863, 17529, 18532], [14328, 14668, 14576, 14354], [14576, 13254]],
+      "image": {
+        "file": "illustrations/04Tobo.png",
+        "size": [229, 203],
+        "anchors": [
+          {"pos": [10, 183], "hip": 18532},
+          {"pos": [189, 10], "hip": 14328},
+          {"pos": [170, 160], "hip": 14576}
+        ]
+      },
       "common_name": {"english": "Hut", "byname": "托包乌西哈（窝铺星）", "native": "ᡨᠣᠪᠣ ᡠᠰᡳᡥᠠ", "pronounce": "Tobo usiha"}
     },
     {
       "id": "CON manchu 005",
-      "lines": [[677, 113881, 113963, 1067, 677], [112158, 113881, 112051], [113963, 112029, 107315], [4436, 3092, 677, 2912, 3881], [1067, 1845]],
+      "image": {
+        "file": "illustrations/05Tehe.png",
+        "size": [314, 188],
+        "anchors": [
+          {"pos": [123, 59], "hip": 677},
+          {"pos": [221, 59], "hip": 113881},
+          {"pos": [215, 139], "hip": 113963}
+        ]
+      },
+      "lines": [[677, 113881, 113963, 1067, 677], [112158, 113881, 112051], [113963, 112029, 107315], [5447, 3092, 677, 2912, 4436], [1067, 1845]],
       "common_name": {"english": "God of the Stand", "byname": "恩都力特克（台星）", "native": "ᡝᠨᡩᡠᡵᡳ ᡨᡝᡥᡝ", "pronounce": "Enduri Tehe"}
     },
     {
       "id": "CON manchu 006",
       "lines": [[26727, 26311, 25930]],
+      "image": {
+        "file": "illustrations/06Ilan.png",
+        "size": [197, 134],
+        "anchors": [
+          {"pos": [0, 0], "hip": 26893},
+          {"pos": [20, 111], "hip": 26727},
+          {"pos": [176, 23], "hip": 25930}
+        ]
+      },
       "common_name": {"english": "Three Stars", "byname": "依兰乌西哈（三星）", "native": "ᡳᠯᠠᠨ ᡠᠰᡳᡥᠠ", "pronounce": "Ilan usiha"}
     },
     {
       "id": "CON manchu 007",
       "lines": [[59774, 54061, 53910, 58001, 59774, 62956, 65378, 67301]],
+      "image": {
+        "file": "illustrations/07Nadan.png",
+        "size": [345, 182],
+        "anchors": [
+          {"pos": [18, 140], "hip": 67301},
+          {"pos": [323, 95], "hip": 53910},
+          {"pos": [320, 20], "hip": 54061}
+        ]
+      },
       "common_name": {"english": "Seven Stars", "byname": "那丹乌西哈（七星）", "native": "ᠨᠠᡩᠠᠨ ᡠᠰᡳᡥᠠ", "pronounce": "Nadan usiha"}
     },
     {
       "id": "CON manchu 008",
+      "image": {
+        "file": "illustrations/08Gasha2.png",
+        "size": [323, 345],
+        "anchors": [
+          {"pos": [30, 116], "hip": 37826},
+          {"pos": [191, 55], "hip": 24608},
+          {"pos": [261, 300], "hip": 19587}
+        ]
+      },
       "lines": [[25930, 25336, 27989, 26727, 27366, 26241, 24436, 25281, 25930], [25281, 24127, 23875, 21444, 19587, 16653], [25336, 21421, 18724, 17771, 18581, 18805, 19860, 20356, 21304, 21295, 22449, 25336], [21421, 17847], [27989, 30343, 32246, 32194, 33595, 34861, 34367, 35152, 36046, 36962, 37826, 36850, 31789, 28823, 29633, 29884, 29388, 28530, 27196, 23828, 23020, 22545, 22413, 22650, 23416, 21476, 18614, 16713, 17448, 18246, 19397, 18687, 19205, 20250, 20711, 21881, 21421], [30343, 29655, 28734, 28360, 24608, 25428, 24822, 23497]],
       "common_name": {"english": "Divine Eagle", "byname": "嘎思哈（达拉呆敏鹰神）", "native": "ᡤᠠᠰᡥᠠ", "pronounce": "Gasha"}
     },
     {
       "id": "CON manchu 009",
       "lines": [[54470, 54483, 54573, 54879, 57632, 54872, 50583, 49583, 49395, 49348, 49669, 52689, 51585, 51690, 51388, 51299], [49583, 48883, 49637, 51624]],
+      "image": {
+        "file": "illustrations/09Singgeri.png",
+        "size": [328, 189],
+        "anchors": [
+          {"pos": [10, 80], "hip": 57632},
+          {"pos": [255, 25], "hip": 50583},
+          {"pos": [273, 140], "hip": 49669}
+        ]
+      },
       "common_name": {"english": "Rat", "byname": "兴恶里乌西哈（鼠星）", "native": "ᠰᡳᠩᡤᡝᡵᡳ ᡠᠰᡳᡥᠠ", "pronounce": "Singgeri usiha"}
     },
     {
@@ -1659,27 +1740,72 @@
     {
       "id": "CON manchu 011",
       "lines": [[59316, 61359, 60965, 59803, 59316, 59199]],
+      "image": {
+        "file": "illustrations/11Wadan.png",
+        "size": [205, 310],
+        "anchors": [
+          {"pos": [141, 30], "hip": 60965},
+          {"pos": [24, 138], "hip": 61359},
+          {"pos": [110, 280], "hip": 59199}
+        ]
+      },
       "common_name": {"english": "Wadan (The Celestial Altar)", "byname": "瓦丹星", "native": "ᠸᠠᡩᠠᠨ", "pronounce": "Wadan"}
     },
     {
       "id": "CON manchu 012",
-      "lines": [[8796, 9884, 8903, 8832, 6193, 5586, 5447, 7513, 9640, 10064, 10280, 9884, 8832], [8903, 8796], [5586, 8796, 5447], [10064, 8796, 10280], [7513, 10064]],
+      "lines": [[8796, 9884, 8903, 8832, 6193, 6512, 7513, 9640, 10064, 10280, 9884, 8832], [8903, 8796], [6193, 8796, 6512], [10064, 8796, 10280], [7513, 10064]],
+      "image": {
+        "file": "illustrations/12Imcin.png",
+        "size": [167, 205],
+        "anchors": [
+          {"pos": [30, 80], "hip": 10064},
+          {"pos": [75, 103], "hip": 8796},
+          {"pos": [83, 182], "hip": 8832}
+        ]
+      },
       "common_name": {"english": "Drum", "byname": "鼓星", "native": "ᡳᠮᠴᡳᠨ", "pronounce": "Imcin"}
     },
     {
       "id": "CON manchu 013",
       "lines": [[7097, 5571, 4463, 3693]],
+      "image": {
+        "file": "illustrations/13Gisun.png",
+        "size": [190, 113],
+        "anchors": [
+          {"pos": [100, 0], "hip": 5742},
+          {"pos": [10, 96], "hip": 7097},
+          {"pos": [165, 13], "hip": 3693}
+        ]
+      },
       "common_name": {"english": "Drumstick", "byname": "鼓鞭星", "native": "ᡤᡳᠰᡠᠨ", "pronounce": "Gisun"}
     },
     {
       "id": "CON manchu 014",
       "lines": [[20517, 22783, 23522, 23040, 25346, 28358, 32261, 34912, 33908, 36145, 41075, 45860, 45290, 44127, 37406, 37609, 37111, 36634], [37111, 36434, 33449, 29490, 20517], [44248, 44248], [39847, 39847], [30060, 30060], [29919, 29919]],
+      "image": {
+        "file": "illustrations/14Siri.png",
+        "size": [341, 128],
+        "anchors": [
+          {"pos": [15, 97], "hip": 45860},
+          {"pos": [319, 30], "hip": 22783},
+          {"pos": [326, 120], "hip": 23040}
+        ]
+      },
       "common_name": {"english": "Goddess of Carp", "byname": "西离妈妈（鲤鱼拐子星）", "native": "ᠰᡳᡵᡳ ᠮᠠᠮᠠ", "pronounce": "Siri Mama"}
     },
     {
       "id": "CON manchu 015",
       "lines": [[57757, 60129, 61941, 63090, 63608, 64823, 65721, 62356], [65721, 64241, 62886], [61941, 65474], [63090, 66249]],
       "lines1": [[57757, 60129, 61941, 63090, 62267, 62325, 63608, 61960], [63608, 62933, 62541], [61941, 65474], [63090, 66249]],
+      "image": {
+        "file": "illustrations/15Terkin.png",
+        "size": [341, 364],
+        "anchors": [
+          {"pos": [200, 10], "hip": 62886},
+          {"pos": [14, 343], "hip": 65474},
+          {"pos": [300, 234], "hip": 57757}
+        ]
+      },
       "common_name": {"english": "Goddess of the Staircase Stars", "byname": "妥亲乌西妈妈（阶梯星）", "native": "ᡨᡝᡵᡴᡳᠨ ᡠᠰᡳᡥᠠ ᠮᠠᠮᠠ", "pronounce": "Terkin Usiha Mama"}
     },
     {
@@ -1687,21 +1813,57 @@
       "lines": [[71053, 71075, 73555, 74666, 75695, 73745, 72105], [74666, 72105, 69673, 67927, 72798, 71795, 69673, 71053, 67665, 64844, 61317, 59856, 60742, 63075, 62763, 63462, 64394]],
       "lines1": [[71053, 71075, 73555, 74666, 75695, 73745, 72105], [74666, 72105, 69673, 67927, 72798, 71795, 69673, 71053, 67665, 63125, 60646, 59856, 60742, 63075, 62763, 63462, 64394]],
       "lines2": [[71053, 71075, 73555, 74666, 75695, 73745, 72105], [74666, 72105, 69673, 67927, 72798, 71795, 69673, 71053, 67665, 63125, 59856, 59847, 60202, 62852, 62356, 62886, 64241]],
+      "image": {
+        "file": "illustrations/16Buruhun2.png",
+        "size": [356, 221],
+        "anchors": [
+          {"pos": [85, 10], "hip": 73555},
+          {"pos": [110, 160], "hip": 69673},
+          {"pos": [310, 90], "hip": 59856}
+        ]
+      },
       "common_name": {"english": "Star of Buruhun (The Dawn Beast)", "byname": "乌西哈布鲁古（灵兽）", "native": "ᡠᠰᡳᡥᠠ ᠪᡠᡵᡠᡥᡠᠨ", "pronounce": "Usiha Buruhun"}
     },
     {
       "id": "CON manchu 017",
       "lines": [[43109, 43234, 42799, 43142, 42028, 42402, 42313, 43109, 43813, 44659, 45336, 46509], [43813, 44066, 45410], [44659, 47508, 49029]],
+      "image": {
+        "file": "illustrations/17Fodoho.png",
+        "size": [354, 258],
+        "anchors": [
+          {"pos": [120, 170], "hip": 45336},
+          {"pos": [330, 154], "hip": 42313},
+          {"pos": [331, 191], "hip": 42402}
+        ]
+      },
       "common_name": {"english": "Willow", "byname": "佛朵乌西哈（柳星）", "native": "ᡶᠣᡩᠣᡥᠣ ᡠᠰᡳᡥᠠ", "pronounce": "Fodoho usiha"}
     },
     {
       "id": "CON manchu 018",
       "lines": [[80170, 80816, 84345, 84379, 80816, 81693, 84379, 84380, 87808], [84380, 81833, 79992], [81693, 81833, 84379], [84345, 86032]],
+      "image": {
+        "file": "illustrations/18Asu.png",
+        "size": [354, 266],
+        "anchors": [
+          {"pos": [200, 40], "hip": 84380},
+          {"pos": [266, 60], "hip": 81833},
+          {"pos": [198, 215], "hip": 80816}
+        ]
+      },
       "common_name": {"english": "Net", "byname": "阿苏乌西哈（纲星）", "native": "ᠠᠰᡠ ᡠᠰᡳᡥᠠ", "pronounce": "Asu usiha"}
     },
     {
       "id": "CON manchu 019",
       "lines": [[78820, 78401, 78265, 78104], [78401, 80112, 80763, 81266, 82396, 82514, 82729, 84143, 86228, 87073, 86670, 85927], [86670, 85696]],
+      "image": {
+        "file": "illustrations/19Nimaha2.png",
+        "size": [296, 196],
+        "anchors": [
+          {"pos": [50, 80], "hip": 85696},
+          {"pos": [63, 176], "hip": 82729},
+          {"pos": [280, 71], "hip": 78401}
+        ]
+      },
       "common_name": {"english": "Fishhook", "byname": "尼玛哈乌西哈（鱼钩星）", "native": "ᠨᡳᠮᠠᡥᠠ ᡠᠰᡳᡥᠠ", "pronounce": "Nimaha usiha"}
     },
     {
@@ -1732,7 +1894,7 @@
     {
       "id": "CON manchu 025",
       "lines": [[77048, 76127, 75695, 76267, 76952, 77512, 78159, 78493, 78459]],
-      "common_name": {"english": "", "byname": "贯索星", "native": "ᠪᠣᡵᠪᠣᡥᠣ ᡠᠰᡳᡥᠠ", "pronounce": "Borboho usiha"}
+      "common_name": {"english": "Coiled Thong", "byname": "贯索星", "native": "ᠪᠣᡵᠪᠣᡥᠣ ᡠᠰᡳᡥᠠ", "pronounce": "Borboho usiha"}
     }
   ],
   "lunar_system": {
@@ -1772,24 +1934,24 @@
                               { "symbol": "27", "native": "翼", "pronounce": "Yì", "english": "Wings"},
                               { "symbol": "28", "native": "轸 ", "pronounce": "Zhěn", "english": "Chariot"}]},
   "common_names": {
-    "HIP 11767": [{"english": "Nail Star", "chinese": "北辰（樁星）", "native": "ᡥᠠᡩᠠᡥᠠ ᡠᠰᡳᡥᠠ", "pronounce": "Hadaha usiha"}],
-    "HIP 72607": [{"english": "Emporor", "chinese": "帝星", "native": "ᡥᠠᠨ ᡠᠰᡳᡥᠠ", "pronounce": "Han usiha"}],
-    "HIP 97649": [{"english": "", "chinese": "牵牛星", "native": "ᡳᡤᡝᡵᡳ ᡠᠰᡳᡥᠠ", "pronounce": "Igeri usiha"}],
-    "HIP 91262": [{"english": "", "chinese": "织女星", "native": "ᠵᠣᡩᠣᡵᡤᠠᠨ ᡠᠰᡳᡥᠠ", "pronounce": "Jodorgan usiha"}],
-    "HIP 54061": [{"english": "The Celestial Pivot", "chinese": "天枢", "native": "ᠠᠪᡴᠠᡳ ᡥᠣᡵᡤᡳᡴᡡ ᡠᠰᡳᡥᠠ", "pronounce": "Abkai Horgikū usiha"}],
-    "HIP 53910": [{"english": "The Celestial Rotating Jade", "chinese": "天璇", "native": "ᠠᠪᡴᠠᡳ ᠨᡳᠴᡠᡥᡝ ᡠᠰᡳᡥᠠ", "pronounce": "Abkai Nicuhe usiha"}],
-    "HIP 58001": [{"english": "The Celestial Shining Pearl", "chinese": "天玑", "native": "ᠠᠪᡴᠠᡳ ᡧᡠᡵᡩᡝᡥᡝᠨ ᡠᠰᡳᡥᠠ", "pronounce": "Abkai Šurdehen usiha"}],
-    "HIP 59774": [{"english": "The Celestial Balance", "chinese": "天权", "native": "ᠠᠪᡴᠠᡳ ᡨᠣᡠᠰᡝ ᡠᠰᡳᡥᠠ", "pronounce": "Abkai Toose usiha"}],
-    "HIP 62956": [{"english": "The Jade Sighting-Tube", "chinese": "玉衡", "native": "ᡤᡠ᠎ᡳ ᠴᡳᠨᠴᡳᠯᠠᠨ ᡠᠰᡳᡥᠠ", "pronounce": "Gu i Cincilan usiha"}],
-    "HIP 65378": [{"english": "The Opener of Heat", "chinese": "开阳", "native": "ᡶᠣᠰᠣᡵᡳ ᡠᠰᡳᡥᠠ", "pronounce": "Fosori usiha"}],
-    "HIP 67301": [{"english": "The Twinkling Brilliance", "chinese": "摇光", "native": "ᡝᠯᡩᡝᡵᡳ ᡠᠰᡳᡥᠠ", "pronounce": "Elderi usiha"}],
-    "HIP 32349": [{"english": "Horse Star", "chinese": "野马星", "native": "ᠮᠣᡵᡳᠨ ᡠᠰᡳᡥᠠ", "pronounce": "Morin usiha"}],
-    "NAME Jupiter": [{"english": "Wood Star", "chinese": "木星", "native": "ᠮᠣᡠ ᡠᠰᡳᡥᠠ", "pronounce": "Moo usiha"}],
-    "NAME Mars": [{"english": "Fire Star", "chinese": "火星", "native": "ᡨᡠᠸᠠ ᡠᠰᡳᡥᠠ", "pronounce": "Tuwa usiha"}],
-    "NAME Mercury": [{"english": "Water Star", "chinese": "水星", "native": "ᠮᡠᡴᡝ ᡠᠰᡳᡥᠠ", "pronounce": "Muke usiha"}],
-    "NAME Moon": [{"english": "Biya", "chinese": "月", "native": "ᠪᡳᠶᠠ", "pronounce": "Biya"}],
-    "NAME Saturn": [{"english": "Earth Star", "chinese": "土星", "native": "ᠪᠣᡳᡥᠣᠨ ᡠᠰᡳᡥᠠ", "pronounce": "Boihon usiha"}],
-    "NAME Sun": [{"english": "Šun", "chinese": "日", "native": "ᡧᡠᠨ", "pronounce": "Šun"}],
-    "NAME Venus": [{"english": "Metal Star", "chinese": "金星", "native": "ᠠᡳᠰᡳᠨ ᡠᠰᡳᡥᠠ", "pronounce": "Aisin usiha"}]
+    "HIP 11767": [{"english": "Nail Star", "byname": "北辰（樁星）", "native": "ᡥᠠᡩᠠᡥᠠ ᡠᠰᡳᡥᠠ", "pronounce": "Hadaha usiha"}],
+    "HIP 72607": [{"english": "Emporor", "byname": "帝星", "native": "ᡥᠠᠨ ᡠᠰᡳᡥᠠ", "pronounce": "Han usiha"}],
+    "HIP 97649": [{"english": "Igeri Star", "byname": "牵牛星", "native": "ᡳᡤᡝᡵᡳ ᡠᠰᡳᡥᠠ", "pronounce": "Igeri usiha"}],
+    "HIP 91262": [{"english": "Jodorgan Star", "byname": "织女星", "native": "ᠵᠣᡩᠣᡵᡤᠠᠨ ᡠᠰᡳᡥᠠ", "pronounce": "Jodorgan usiha"}],
+    "HIP 54061": [{"english": "The Celestial Pivot", "byname": "天枢", "native": "ᠠᠪᡴᠠᡳ ᡥᠣᡵᡤᡳᡴᡡ ᡠᠰᡳᡥᠠ", "pronounce": "Abkai Horgikū usiha"}],
+    "HIP 53910": [{"english": "The Celestial Rotating Jade", "byname": "天璇", "native": "ᠠᠪᡴᠠᡳ ᠨᡳᠴᡠᡥᡝ ᡠᠰᡳᡥᠠ", "pronounce": "Abkai Nicuhe usiha"}],
+    "HIP 58001": [{"english": "The Celestial Shining Pearl", "byname": "天玑", "native": "ᠠᠪᡴᠠᡳ ᡧᡠᡵᡩᡝᡥᡝᠨ ᡠᠰᡳᡥᠠ", "pronounce": "Abkai Šurdehen usiha"}],
+    "HIP 59774": [{"english": "The Celestial Balance", "byname": "天权", "native": "ᠠᠪᡴᠠᡳ ᡨᠣᡠᠰᡝ ᡠᠰᡳᡥᠠ", "pronounce": "Abkai Toose usiha"}],
+    "HIP 62956": [{"english": "The Jade Sighting-Tube", "byname": "玉衡", "native": "ᡤᡠ᠎ᡳ ᠴᡳᠨᠴᡳᠯᠠᠨ ᡠᠰᡳᡥᠠ", "pronounce": "Gu i Cincilan usiha"}],
+    "HIP 65378": [{"english": "The Opener of Heat", "byname": "开阳", "native": "ᡶᠣᠰᠣᡵᡳ ᡠᠰᡳᡥᠠ", "pronounce": "Fosori usiha"}],
+    "HIP 67301": [{"english": "The Twinkling Brilliance", "byname": "摇光", "native": "ᡝᠯᡩᡝᡵᡳ ᡠᠰᡳᡥᠠ", "pronounce": "Elderi usiha"}],
+    "HIP 32349": [{"english": "Horse Star", "byname": "野马星", "native": "ᠮᠣᡵᡳᠨ ᡠᠰᡳᡥᠠ", "pronounce": "Morin usiha"}],
+    "NAME Jupiter": [{"english": "Wood Star", "byname": "木星", "native": "ᠮᠣᡠ ᡠᠰᡳᡥᠠ", "pronounce": "Moo usiha"}],
+    "NAME Mars": [{"english": "Fire Star", "byname": "火星", "native": "ᡨᡠᠸᠠ ᡠᠰᡳᡥᠠ", "pronounce": "Tuwa usiha"}],
+    "NAME Mercury": [{"english": "Water Star", "byname": "水星", "native": "ᠮᡠᡴᡝ ᡠᠰᡳᡥᠠ", "pronounce": "Muke usiha"}],
+    "NAME Moon": [{"english": "Biya", "byname": "月", "native": "ᠪᡳᠶᠠ", "pronounce": "Biya"}],
+    "NAME Saturn": [{"english": "Earth Star", "byname": "土星", "native": "ᠪᠣᡳᡥᠣᠨ ᡠᠰᡳᡥᠠ", "pronounce": "Boihon usiha"}],
+    "NAME Sun": [{"english": "Šun", "byname": "日", "native": "ᡧᡠᠨ", "pronounce": "Šun"}],
+    "NAME Venus": [{"english": "Metal Star", "byname": "金星", "native": "ᠠᡳᠰᡳᠨ ᡠᠰᡳᡥᠠ", "pronounce": "Aisin usiha"}]
   }
 }
