@@ -28,8 +28,8 @@ Crucially, the chart introduces a significant innovation within this traditional
 
 ## References
 
- - [#1]: Pan Nai. Atlas of Ancient Chinese Astronomy
- - [#2]: Pan Nai. The History of Stellar Observation in China
+ - [#1]: Pan Nai. (2009). Atlas of Ancient Chinese Astronomy. Shanghai: Shanghai Scientific & Technological Education Publishing House. ISBN 9787542849137.
+ - [#2]: Pan Nai. (2009). The History of Stellar Observation in China. Shanghai:  Academia Press. ISBN 9787807306948.
 
 ## Authors
 

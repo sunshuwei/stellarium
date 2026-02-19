@@ -1480,6 +1480,11 @@
       "common_name": {"english": "Judge for Estimating the Age of Animals", "native": "天记", "pronounce": "Tian Ji"}
     },
     {
+      "id": "CON chinese_xianglin 23G",
+      "lines": [[31685, 32537, 34065, 36377, 38414, 39953]],
+      "common_name": {"english": "Celestial Earth God's Temple", "native": "天社", "pronounce": "Tian She"}
+    },
+    {
       "id": "CON chinese_xianglin 24A",
       "lines": [[42799, 42402, 42313, 43109, 43234, 43813, 44659, 45336]],
       "common_name": {"english": "Willow", "native": "柳宿", "pronounce": "Liu Xiu"}
