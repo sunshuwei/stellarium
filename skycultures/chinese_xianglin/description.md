@@ -33,7 +33,7 @@ Crucially, the chart introduces a significant innovation within this traditional
 
 ## Authors
 
-This sky culture was contributed by Kwantsin. [Kwantsin@outlook.com](mailto:Kwantsin@outlook.com)
+This sky culture was contributed by Lyu Haocheng. [lvhc2016@126.com](mailto:lvhc2016@126.com)
 
 ## License
 
