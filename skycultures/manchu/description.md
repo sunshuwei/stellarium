@@ -74,12 +74,20 @@ Traditional Manchu constellations mostly name prominent star groups in the north
 <td>Its shape (W-shaped) resembles a knot or a winnowing basket, imagined as a snake or a dipper. It is an important timekeeping star; changes in its position and angle in the night sky were used to estimate the hour of the night. Perennially visible at high northern latitudes, it served as a crucial navigational and chronological reference.</td>
 </tr>
 <tr>
-<td>ᠨᠠᡩᠠᠨ ᡠᠰᡳᡥᠠ<br>
-那丹乌西哈</td>
-<td>Seven Stars</td>
-<td><img src="illustrations/07Nadan.png" width="200"></td>
-<td>Ursa Major</td>
-<td>The Big Dipper asterism, the most important star group for nighttime timekeeping and identifying the northern direction. The pointing of its "dipper handle" indicates the seasons and holds protective symbolism.</td>
+<td>ᡨᠣᠪᠣ ᡠᠰᡳᡥᠠ<br>
+托包乌西哈</td>
+<td>Hut</td>
+<td><img src="illustrations/04Tobo.png" width="200"></td>
+<td>Perseus</td>
+<td>Imagined as a resting place (hut) for the shaman's soul during its ascent to heaven.</td>
+</tr>
+<tr>
+<td>ᡝᠨᡩᡠᡵᡳ ᡨᡝᡥᡝ<br>
+恩都力特克</td>
+<td>God of the Stand</td>
+<td><img src="illustrations/05Tehe.png" width="200"></td>
+<td>Pegasus</td>
+<td>Located in the southern sky, moving westward, this asterism was used by shamans to observe signs of wind and snow. The Great Square of Pegasus is very prominent in the autumn night sky.</td>
 </tr>
 <tr>
 <td>ᡳᠯᠠᠨ ᡠᠰᡳᡥᠠ<br>
@@ -90,12 +98,12 @@ Traditional Manchu constellations mostly name prominent star groups in the north
 <td>Three bright stars aligned in a row, one of the most distinctive markers of the winter night sky. As brilliant seasonal and timekeeping stars, their rising in the east at dusk signals the heart of winter; their movement can be used to estimate the time in the latter half of the night.</td>
 </tr>
 <tr>
-<td>ᡨᠣᠪᠣ ᡠᠰᡳᡥᠠ<br>
-托包乌西哈</td>
-<td>Hut</td>
-<td><img src="illustrations/04Tobo.png" width="200"></td>
-<td>Perseus</td>
-<td>Imagined as a resting place (hut) for the shaman's soul during its ascent to heaven.</td>
+<td>ᠨᠠᡩᠠᠨ ᡠᠰᡳᡥᠠ<br>
+那丹乌西哈</td>
+<td>Seven Stars</td>
+<td><img src="illustrations/07Nadan.png" width="200"></td>
+<td>Ursa Major</td>
+<td>The Big Dipper asterism, the most important star group for nighttime timekeeping and identifying the northern direction. The pointing of its "dipper handle" indicates the seasons and holds protective symbolism.</td>
 </tr>
 <tr>
 <td>ᠰᡳᠩᡤᡝᡵᡳ ᡠᠰᡳᡥᠠ<br>
@@ -114,14 +122,6 @@ Traditional Manchu constellations mostly name prominent star groups in the north
 <td>A seasonal timekeeping star that rises in the east and sets in the west. It is not a single star, but a collective name for four bright stars: the bright star α Aur visible in the eastern sky at dusk after winter begins, α CMa rising in the east during the Xu hour (7-9 PM), and α Boo and α Vir rising at dawn.</td>
 </tr>
 <tr>
-<td>ᡝᠨᡩᡠᡵᡳ ᡨᡝᡥᡝ<br>
-恩都力特克</td>
-<td>God of the Stand</td>
-<td><img src="illustrations/05Tehe.png" width="200"></td>
-<td>Pegasus</td>
-<td>Located in the southern sky, moving westward, this asterism was used by shamans to observe signs of wind and snow. The Great Square of Pegasus is very prominent in the autumn night sky.</td>
-</tr>
-<tr>
 <td>ᠸᠠᡩᠠᠨ<br>
 瓦丹星</td>
 <td>Wadan (The Celestial Altar)</td>
@@ -133,7 +133,7 @@ Traditional Manchu constellations mostly name prominent star groups in the north
 <td>ᡳᠮᠴᡳᠨ<br>
 尼玛沁星</td>
 <td>Drum</td>
-<td><img src="illustrations/12Imcin.png" width="200"></td>
+<td><img src="illustrations/12Imcin-Gisun.png" width="200"></td>
 <td>Aries<br>Triangulum<br>Andromeda</td>
 <td>Along with the "Drumstick Star," considered the shaman's ritual instrument stars. It is the divine drum used by the Star-Spreading Goddess.</td>
 </tr>
