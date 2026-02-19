@@ -41,9 +41,9 @@ ENDIF()
 # -- YD (PATCH) - 0 for releases and the day of the current year for snapshots
 # Example: first release in year 2023 has version 23.1.0 and short (public) version 23.1, series 23.0
 # Note: Use integer versions instead of strings for easier handling if required
-SET(STELLARIUM_MAJOR 25)
+SET(STELLARIUM_MAJOR 26)
 # Number of the release (0 is used before first release)
-SET(STELLARIUM_MINOR 3)
+SET(STELLARIUM_MINOR 0)
 IF(STELLARIUM_RELEASE_BUILD)
     ADD_DEFINITIONS(-DSTELLARIUM_RELEASE_BUILD)
     SET(CMAKE_BUILD_TYPE Release)
@@ -415,6 +415,9 @@ SET(ENABLE_PODIR 1 CACHE BOOL "Define whether processing of translation files sh
 # Activate media support
 SET(ENABLE_MEDIA 1 CACHE BOOL "Define whether media support should be activated.")
 
+# Activate media support
+SET(ENABLE_SPEECH 1 CACHE BOOL "Define whether speech output should be activated. Requires Qt6.4+ and ENABLE_MEDIA.")
+
 # Activate QtWebEngine support
 SET(ENABLE_QTWEBENGINE 1 CACHE BOOL "Define whether QtWebEngine module should be supported if it installed.")
 
@@ -446,7 +449,11 @@ ENDIF()
 # SPOUT allows relaying the Stellarium OpenGL framebuffer as DirectX texture in other programs.
 # It exists on Windows only. Syphon is a similar system for MacOS, this might be added by a Mac developer.
 IF(WIN32)
-     SET(STELLARIUM_BUILD_ARM64 0 CACHE BOOL "Build for Windows on ARM")
+     # On AMD64 systems it should be enough to just not set this variable.
+     # To cross-compile, call with cmake -DSTELLARIUM_BUILD_ARM64
+     IF(${CMAKE_SYSTEM_PROCESSOR} MATCHES "ARM64") # for Surface etc.
+          SET(STELLARIUM_BUILD_ARM64 1 CACHE BOOL "Build for Windows on ARM")
+     ENDIF()
 
      IF(${CMAKE_SYSTEM_VERSION} LESS 6.1 ) # Need Windows 7 or later to enable support of Spout
           SET(ENABLE_SPOUT 0)
@@ -699,8 +706,8 @@ SET(CMAKE_INCLUDE_CURRENT_DIR ON)
 IF(ENABLE_SHOWMYSKY)
     ADD_DEFINITIONS(-DENABLE_SHOWMYSKY)
     CPMFindPackage(NAME ShowMySky-Qt${QT_VERSION_MAJOR}
-        URL https://github.com/10110111/CalcMySky/archive/refs/tags/v0.3.5.tar.gz
-        URL_HASH SHA256=d49eab6bc70a2c82bf294dd8ace9ef2fc6df0afbb72ba493bb6d3f1f8cd8829d
+        URL https://github.com/10110111/CalcMySky/archive/refs/tags/v0.4.0.tar.gz
+        URL_HASH SHA256=1096f3c6067e05dd8c4df601b745cca5e88b843ad1328938e5dba69c1fcfb84f
         EXCLUDE_FROM_ALL yes
         OPTIONS "QT_VERSION ${QT_VERSION_MAJOR}")
     IF(ShowMySky-Qt${QT_VERSION_MAJOR}_ADDED)
@@ -834,8 +841,9 @@ IF(ENABLE_XLSX)
           MESSAGE(STATUS "Using system-provided QXlsx ${QXlsx_VERSION}")
      ELSE()
           CPMAddPackage(NAME QXlsxQt${QT_VERSION_MAJOR}
-               URL https://github.com/QtExcel/QXlsx/archive/refs/tags/v1.5.0.tar.gz
-               URL_HASH SHA256=4461bb0fc9b88b6a970520e8b32eb7d2fc391a1a5c326b139a0af836278cdb09
+#               URL https://github.com/QtExcel/QXlsx/archive/refs/tags/v1.5.0.tar.gz
+#               URL_HASH SHA256=4461bb0fc9b88b6a970520e8b32eb7d2fc391a1a5c326b139a0af836278cdb09
+                URL https://github.com/QtExcel/QXlsx/archive/refs/heads/master.zip
                EXCLUDE_FROM_ALL ON
                SOURCE_SUBDIR QXlsx)
      ENDIF()
