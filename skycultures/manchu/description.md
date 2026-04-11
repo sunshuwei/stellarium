@@ -1,6 +1,10 @@
-# Manchu
+# Manchu old
 
 ## Introduction
+
+该星空文化为提交给官方前保存的存档，保留了星座图绘（官方版已删除），但没有提交官方后进行的一些优化（例如星座名简写）。
+
+This sky culture is an archive saved before submission to the official version, retaining the constellation illustrations (which have been removed in the official version), but lacking some optimizations made after submission to the official version (such as abbreviated constellation names).
 
 Fishing and hunting peoples represented by the Manchus have held traditions of stellar veneration since ancient times. The oldest and most primitive form of worship in Shamanism is the sacred reverence for celestial phenomena such as the cosmic dome, the sun, moon, and stars, often referred to as "worship of Heaven." Under the specific geographical and climatic conditions of northern China, the Manchu ancestors, through sustained and meticulous observation of the night sky over long-term production and life practices, developed a unique system of astronomical cognition and veneration.
 
