@@ -992,62 +992,53 @@
     },
     {
       "id": "CON chinese_xianglin 13B",
-      "lines": [[112051, 112158]],
+      "lines": [[112051, 112158], [112748, 112440], [115250, 115623]],
+      "label_positions": [[22.70, 29.5], [22.80, 24.1], [23.40, 23.6]],
       "common_name": {"english": "Resting Palace (Vassal of Encampment)", "native": "离宫(附室宿)", "pronounce": "Lí Gōng", "IPA": "li˧˥.kʊŋ˥"}
     },
     {
       "id": "CON chinese_xianglin 13C",
-      "lines": [[112748, 112440]],
-      "common_name": {"english": "Resting Palace (Vassal of Encampment)", "native": "离宫(附室宿)", "pronounce": "Lí Gōng", "IPA": "li˧˥.kʊŋ˥"}
-    },
-    {
-      "id": "CON chinese_xianglin 13D",
-      "lines": [[115250, 115623]],
-      "common_name": {"english": "Resting Palace (Vassal of Encampment)", "native": "离宫(附室宿)", "pronounce": "Lí Gōng", "IPA": "li˧˥.kʊŋ˥"}
-    },
-    {
-      "id": "CON chinese_xianglin 13E",
       "lines": [[112935, 113503, 114144, 114520, 115444, 115919]],
       "common_name": {"english": "Thunder and Lightning", "native": "雷电", "pronounce": "Léi Diàn", "IPA": "leɪ˧˥.tjɛn˥˩"}
     },
     {
-      "id": "CON chinese_xianglin 13F",
+      "id": "CON chinese_xianglin 13D",
       "lines": [[112447, 112029]],
       "common_name": {"english": "Official for Materials Supply", "native": "土公吏", "pronounce": "Tǔ Gōng Lì", "IPA": "tʰu˨˩˩.kʊŋ˥.li˥˩"}
     },
     {
-      "id": "CON chinese_xianglin 13G",
+      "id": "CON chinese_xianglin 13E",
       "lines": [[118209, 154, 443, 145, 118209, 114724, 112961, 111123, 109139, 107556, 106985, 106723, 107188, 107556]],
       "label_positions": [[22.8, -9.0]],
       "common_name": {"english": "Line of Ramparts", "native": "垒壁阵", "pronounce": "Lěi Bì Zhèn", "IPA": "leɪ˨˩˩.pi˥˩.t͡ʂən˥˩"}
     },
     {
-      "id": "CON chinese_xianglin 13H",
+      "id": "CON chinese_xianglin 13F",
       "lines": [[115102, 114366, 113562]],
       "common_name": {"english": "Axe", "native": "𫓧钺", "pronounce": "Fū Yuè", "IPA": "fʋ̩˥.ɥɛ˥˩"}
     },
     {
-      "id": "CON chinese_xianglin 13I",
+      "id": "CON chinese_xianglin 13G",
       "lines": [[113368, 113368]],
       "common_name": {"english": "North Gate of the Military Camp", "native": "北落师门", "pronounce": "Běi Luò Shī Mén", "IPA": "peɪ˨˩˩.lwo˥˩.ʂɻ̍˥.mən˧˥"}
     },
     {
-      "id": "CON chinese_xianglin 13J",
+      "id": "CON chinese_xianglin 13H",
       "lines": [[108085, 108085]],
       "common_name": {"english": "Materials for Making Tents", "native": "天纲", "pronounce": "Tiān Gāng", "IPA": "tʰjɛn˥.kɑŋ˥"}
     },
     {
-      "id": "CON chinese_xianglin 13K",
+      "id": "CON chinese_xianglin 13I",
       "lines": [[114104, 112864, 114227, 115590, 114104, 113561, 112731, 111925, 111674, 111169, 113288, 113919, 114570, 115022, 115152, 116584, 116805, 116631], [111169, 110538], [111169, 109521], [111169, 110609], [111169, 111022], [111169, 113327]],
       "common_name": {"english": "Flying Serpent", "native": "螣蛇", "pronounce": "Téng Shé", "IPA": "tʰɤŋ˧˥.ʂɤ˧˥"}
     },
     {
-      "id": "CON chinese_xianglin 13L",
+      "id": "CON chinese_xianglin 13J",
       "lines": [[3456, 2240, 2081, 2072, 765], [3245, 3521, 2081]],
       "common_name": {"english": "Net for Catching Birds", "native": "八魁", "pronounce": "Bā Kuí", "IPA": "pa˥.kʰweɪ˧˥"}
     },
     {
-      "id": "CON chinese_xianglin 13M",
+      "id": "CON chinese_xianglin 13K",
       "lines": [[109624, 110000, 110602], [111449, 112211, 112529], [111045, 111515, 111954], [114341, 114375, 114119], [113998, 113136, 113080], [112716, 113031, 113531], [114855, 115033, 115115], [117420, 117756, 117541], [115438, 115669, 116247], [116758, 116971, 116957], [116901, 117218, 117629], [301, 983, 1170], [910, 343, 117567], [117314, 355, 873], [671, 1158, 1562]],
       "common_name": {"english": "Palace Guard", "native": "羽林军", "pronounce": "Yǔ Lín Jūn", "IPA": "y˨˩˩.lin˧˥.t͡ɕyn˥"}
     },
@@ -1278,7 +1269,7 @@
     },
     {
       "id": "CON chinese_xianglin 19I",
-      "lines": [[26536, 25984, 26712]],
+      "lines": [[23767, 23416, 23453, 23767]],
       "common_name": {"english": "Pillars (In Net Mansion)", "native": "柱(毕宿)", "pronounce": "Zhù(Bì Xiù)", "IPA": "t͡ʂu˥˩(pi˥˩.ɕjoʊ˥˩)"}
     },
     {
@@ -1288,7 +1279,7 @@
     },
     {
       "id": "CON chinese_xianglin 19K",
-      "lines": [[23767, 23416, 23453, 23767]],
+      "lines": [[26536, 25984, 26712]],
       "common_name": {"english": "Pillars (In Net Mansion)", "native": "柱(毕宿)", "pronounce": "Zhù(Bì Xiù)", "IPA": "t͡ʂu˥˩(pi˥˩.ɕjoʊ˥˩)"}
     },
     {
