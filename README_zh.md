@@ -1,6 +1,6 @@
 # 东亚星空文化拓展+座标可视化功能说明
 
-[English](README.md) | 中文
+[Bilingual 双语](README.md) | [English](README_en.md) | 中文
 
 这是 [Stellurium](https://github.com/Stellarium/stellarium) 的一个定制版本，主要修改位于 [chinese-skyculture-enhancement](https://github.com/Guanjin0562/stellarium/tree/chinese-skyculture-enhancement) 分支。
 
