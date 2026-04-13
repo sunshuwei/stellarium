@@ -553,12 +553,24 @@ void SearchDialog::createDialogContent()
 	connect(ui->coordinateBrowseButton, SIGNAL(clicked()), this, SLOT(browseForCoordinateDir()));
 	connect(ui->loadSelectedClearButton, SIGNAL(clicked()), this, SLOT(on_loadSelectedClearButton_clicked()));
 	connect(ui->loadSelectedButton, SIGNAL(clicked()), this, SLOT(on_loadSelectedButton_clicked()));
+	connect(ui->selectAllButton, SIGNAL(clicked()), this, SLOT(selectAllFiles()));
+	connect(ui->deselectAllButton, SIGNAL(clicked()), this, SLOT(deselectAllFiles()));
+	connect(ui->clearCoordinateButton, SIGNAL(clicked()), this, SLOT(on_clearCoordinateButton_clicked()));
 
 	ui->labelCoordData->setFixedWidth(80);
 	ui->coordinateDir->setText(StelFileMgr::getCoordinateDir());
 	ui->coordinateDir->setMinimumWidth(200);
 	ui->coordinateDir->setMaximumWidth(500);
 	connect(ui->coordinateDir, SIGNAL(editingFinished()), this, SLOT(selectCoordinateDir()));
+
+	// Initialize star catalog list model
+	starCatalogModel = new QStringListModel(this);
+	ui->starCatalogListView->setModel(starCatalogModel);
+	ui->starCatalogListView->setSelectionMode(QAbstractItemView::ExtendedSelection);
+	ui->starCatalogListView->setSelectionBehavior(QAbstractItemView::SelectItems);
+
+	// Automatically load JSON files from starcatalog directory on startup
+	loadStarCatalogFiles();
 }
 
 void SearchDialog::populateRecentSearch()
@@ -1817,23 +1829,116 @@ double SearchDialog::loadEpoch(QString epoch) {
 	return res;
 }
 
+void SearchDialog::on_clearCoordinateButton_clicked()
+{
+	// 清屏，移除所有自定义对象
+	GETSTELMODULE(CustomObjectMgr)->removeCustomObjects();
+}
+
+void SearchDialog::loadStarCatalogFiles()
+{
+	// 从starcatalog路径读取JSON文件
+	QStringList jsonFiles;
+
+	// 获取应用程序路径
+	QString appPath = QCoreApplication::applicationDirPath();
+
+	// 尝试不同的starcatalog路径
+	QStringList starCatalogPaths;
+	// 正式发行版：exe与starcatalog在同一目录
+	starCatalogPaths << appPath + "/starcatalog";
+	// 调试版路径
+	starCatalogPaths << appPath + "/../../../../starcatalog";
+
+	// 遍历所有可能的路径
+	for (const QString& path : starCatalogPaths) {
+		QDir dir(path);
+		if (dir.exists()) {
+			// 查找所有JSON文件
+			QStringList filters;  
+			filters << "*.json";
+			dir.setNameFilters(filters);
+			QFileInfoList fileInfoList = dir.entryInfoList(QDir::Files, QDir::Name);
+
+			for (const QFileInfo& fileInfo : fileInfoList) {
+				// 使用相对路径
+				QString relativePath = "starcatalog/" + fileInfo.fileName();
+				jsonFiles << relativePath;
+			}
+		}
+	}
+
+	// 更新文件列表
+	starCatalogModel->setStringList(jsonFiles);
+
+	// 清空之前的选择
+	ui->starCatalogListView->clearSelection();
+}
+
 void SearchDialog::on_importCoordinate_clicked()
 {
+	// 加载用户指定目录的坐标数据
 	QString coordinatePath = ui->coordinateDir->text();
 	importCoordinate(coordinatePath);
+
+	// 重新加载star catalog文件列表
+	loadStarCatalogFiles();
 }
 
 void SearchDialog::on_loadSelectedClearButton_clicked()
 {
 	GETSTELMODULE(CustomObjectMgr)->removeCustomObjects();
-	QString coordinatePath = ui->coordinateDir->text();
-	importCoordinate(coordinatePath);
+	// 按选择顺序加载文件
+	loadSelectedFiles();
 }
 
 void SearchDialog::on_loadSelectedButton_clicked()
 {
-	QString coordinatePath = ui->coordinateDir->text();
-	importCoordinate(coordinatePath);
+	// 按选择顺序加载文件
+	loadSelectedFiles();
+}
+
+void SearchDialog::loadSelectedFiles()
+{
+	// 获取选择的文件
+	QModelIndexList selectedIndexes = ui->starCatalogListView->selectionModel()->selectedIndexes();
+
+	// 按选择顺序加载文件
+	for (const QModelIndex& index : selectedIndexes) {
+		QString relativePath = index.data().toString();
+		// 尝试不同的路径
+		QString appPath = QCoreApplication::applicationDirPath();
+		QStringList possiblePaths;
+		possiblePaths << appPath + "/" + relativePath;
+		possiblePaths << appPath + "/../../../../" + relativePath;
+
+		// 找到存在的文件路径
+		QString filePath;
+		for (const QString& path : possiblePaths) {
+			if (QFile::exists(path)) {
+				filePath = path;
+				break;
+			}
+		}
+
+		if (!filePath.isEmpty()) {
+			importCoordinate(filePath);
+		} else {
+			qWarning() << "File not found:" << relativePath;
+		}
+	}
+}
+
+void SearchDialog::selectAllFiles()
+{
+	// 全选所有文件
+	ui->starCatalogListView->selectAll();
+}
+
+void SearchDialog::deselectAllFiles()
+{
+	// 取消全选所有文件
+	ui->starCatalogListView->clearSelection();
 }
 
 void SearchDialog::importCoordinate(const QString& filepath)

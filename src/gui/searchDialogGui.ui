@@ -816,17 +816,55 @@
 											</layout>
 										</item>
 										<item row="4" column="0">
-											<widget class="QPushButton" name="importCoordinate">
-												<property name="text">
-													<string>加载座标数据</string>
-												</property>
-											</widget>
+											<layout class="QHBoxLayout" name="clearImportLayout">
+												<item>
+													<widget class="QPushButton" name="clearCoordinateButton">
+														<property name="text">
+															<string>清屏</string>
+														</property>
+													</widget>
+												</item>
+												<item>
+													<widget class="QPushButton" name="importCoordinate">
+														<property name="text">
+															<string>加载座标数据</string>
+														</property>
+													</widget>
+												</item>
+											</layout>
 										</item>
 										<item row="5" column="0" colspan="3">
 											<widget class="QListView" name="starCatalogListView"/>
 										</item>
 										<item row="6" column="0" colspan="3">
 											<layout class="QHBoxLayout" name="jsonButtonLayout">
+												<item>
+													<widget class="QPushButton" name="selectAllButton">
+														<property name="text">
+															<string>全选</string>
+														</property>
+													</widget>
+												</item>
+												<item>
+													<widget class="QPushButton" name="deselectAllButton">
+														<property name="text">
+															<string>取消全选</string>
+														</property>
+													</widget>
+												</item>
+												<item>
+													<spacer name="horizontalSpacer_2">
+														<property name="orientation">
+															<enum>Qt::Horizontal</enum>
+														</property>
+														<property name="sizeHint" stdset="0">
+															<size>
+																<width>40</width>
+																<height>20</height>
+															</size>
+														</property>
+													</spacer>
+												</item>
 												<item>
 													<widget class="QPushButton" name="loadSelectedClearButton">
 														<property name="text">
@@ -843,7 +881,7 @@
 												</item>
 											</layout>
 										</item>
-										<item row="7" column="0" colspan="2">
+										<item row="7" column="0" colspan="3">
 											<spacer name="verticalSpacer_2">
 												<property name="orientation">
 													<enum>Qt::Vertical</enum>
@@ -851,10 +889,20 @@
 												<property name="sizeHint" stdset="0">
 													<size>
 														<width>20</width>
-														<height>40</height>
+														<height>10</height>
 													</size>
 												</property>
 											</spacer>
+										</item>
+										<item row="8" column="0" colspan="3">
+											<widget class="QLabel" name="selectionHintLabel">
+												<property name="text">
+													<string>按住ctrl选择多个文件</string>
+												</property>
+												<property name="alignment">
+													<set>Qt::AlignCenter</set>
+												</property>
+											</widget>
 										</item>
 									</layout>
 								</widget>

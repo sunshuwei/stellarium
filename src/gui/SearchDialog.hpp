@@ -305,8 +305,13 @@ private slots:
 
 	//! Read coordinate data file, process and visualize
 	void on_importCoordinate_clicked();
+	void on_clearCoordinateButton_clicked();  // Added by Kwantsin
 	void on_loadSelectedClearButton_clicked();
 	void on_loadSelectedButton_clicked();
+	void loadStarCatalogFiles();  // Added by Kwantsin
+	void selectAllFiles();  // Added by Kwantsin
+	void deselectAllFiles();  // Added by Kwantsin
+	void loadSelectedFiles();  // Added by Kwantsin
 	void importCoordinate(const QString& filepath);
 	Vec3f hexColorToVec3f(const QString& hexColor, bool* success);
 	double stringToDouble(QString input, QValidator::State* state);
@@ -369,6 +374,7 @@ private:
 	class QSettings* conf;
 	QStringListModel* listModel;
 	QSortFilterProxyModel *proxyModel;
+	QStringListModel* starCatalogModel;  // Added by Kwantsin
 
 	//! Used when substituting text with a Greek letter.
 	bool flagHasSelectedText;
