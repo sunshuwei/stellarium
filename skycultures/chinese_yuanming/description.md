@@ -23,6 +23,10 @@
 
 ### 外部链接
 
+<li><a href="https://baike.baidu.com/item/%E9%83%AD%E5%AE%88%E6%95%AC/53453?fr=aladdin">百度百科-郭守敬</a></li>
+<li><a href="https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFD8589&filename=KXTW198800001&uniplatform=NZKPT&v=tpoO0TS2JGe5JziRlfVqMFkfd-1oS12iF2UhL3RdOe9hjef3y4xB6zfy-vqY4WXx">知网-潘鼐. 郭守敬《新测二十八宿杂坐诸星入宿去极》考证</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/468169230">知乎-观津邀月. 郭守敬星表stellarium可视化</a></li>
+
 ### 关于三垣列舍入宿去极集
 
 #### 郭守敬著作钞本的发现与考定
@@ -59,6 +63,8 @@
 
 《续修四库全书》第1031册收录《三垣列舍入宿去极集》一卷
 
+[网盘链接](https://pan.baidu.com/s/1Kcb4C8n3XfbT9EojmCxZIw)
+
 提取码: 3n8t
 
 ### 参考文献
@@ -73,4 +79,6 @@
 
 ### 作者
 
-[观津邀月](https://www.zhihu.com/people/zhan-shi-ying-lu-78)
+[bilibili@观津邀月](https://space.bilibili.com/636566595)
+
+[知乎@观津邀月](https://www.zhihu.com/people/zhan-shi-ying-lu-78)
