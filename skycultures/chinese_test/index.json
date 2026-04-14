@@ -7,6 +7,16 @@
   ],
   "constellations": [
     {
+      "id": "CON chinese_test 001",
+      "lines": [[746, 2920], [746, 3179], [746, 3821], [746, 4427]],
+      "common_name": {"english": "Wang Liang", "native": "王良", "pronounce": ""}
+    },
+    {
+      "id": "CON chinese_jin_dynasty C22",
+      "lines": [[110991, 109857], [110991, 109492], [110991, 109556], [110991, 109592]],
+      "common_name": {"english": "Zaofu", "native": "造父", "pronounce": ""}
+    },
+    {
       "id": "CON chinese_test 19A",
       "lines": [[20889, 20648, 20455, 20205], [21683, 21421, 20894, 20713, 20205, 18724]],
       "common_name": {"native": "Bixiu"}
