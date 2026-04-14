@@ -3,1669 +3,2623 @@
   "region": "Eastern Asia",
   "classification": ["traditional"],
   "fallback_to_international_names": false,
+  "asterisms": [
+    {
+      "id": "AST chinese_zhongwenxingming 001",
+      "lines": [[72307, 70692, 68956, 73808]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 002",
+      "lines": [[51502, 47193]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 003",
+      "lines": [[112519, 113116, 115746, 8846, 37391, 84535, 85699, 76008, 79280, 79822, 79420]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 004",
+      "lines": [[94083, 99255, 101082, 100965, 88136, 87234]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 005",
+      "lines": [[94648, 97391]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 006",
+      "lines": [[87728, 86614]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 007",
+      "lines": [[89908, 89594, 89448]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 008",
+      "lines": [[85805, 86201], [82860, 82898]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 009",
+      "lines": [[72181, 73440, 74793]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 010",
+      "lines": [[60494, 60044]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 011",
+      "lines": [[51808, 51808]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 012",
+      "lines": [[25110, 24254]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 013",
+      "lines": [[9727, 5626, 5947]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 014",
+      "lines": [[14862, 12273]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 015",
+      "lines": [[61281, 61384], [61281, 60998], [56211, 56583, 57111], [46977, 47654], [33104, 29490], [33104, 29997], [33104, 32864], [22783, 20266], [15520, 17884], [15520, 17587], [15520, 18505]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 016",
+      "lines": [[101260, 107230, 107119, 106032], [114222, 116727, 111056, 111532, 109434, 109400, 108535, 107995], [3721, 3572]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 017",
+      "lines": [[63076, 63432], [63076, 61936]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 018",
+      "lines": [[54061, 52353, 51401, 50448], [53910, 53261, 53043, 52650, 52478, 52685, 53064, 51814, 51459], [59774, 60795, 60212, 60978], [65378, 65477, 66634]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 018",
+      "lines": [[66198, 66738, 67231, 67848]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 019",
+      "lines": [[69483, 69068, 70791, 72524, 73695]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 020",
+      "lines": [[69732, 71618, 72487]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 021",
+      "lines": [[60485, 59708], [60485, 60122], [60485, 62516]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 022",
+      "lines": [[55148, 56035]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 023",
+      "lines": [[57399, 56789]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 024",
+      "lines": [[56148, 56770, 55266]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 025",
+      "lines": [[51685, 51914, 52139, 51420, 51233, 51047, 50857, 50860, 50935, 51056, 52032, 52098, 53377, 53426, 52882, 52959]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 026",
+      "lines": [[48034, 47911, 47965, 46239, 47006, 45836, 45974, 48682, 48954]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 027",
+      "lines": [[35785, 35146, 37609, 40875, 40646, 44006, 42527, 42080, 42438, 45075]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 028",
+      "lines": [[44857, 45038]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 029",
+      "lines": [[22287, 22994, 22854, 23783, 28385, 27949, 27592, 27283, 26942, 25973, 25197, 24836, 23743, 23522, 26408, 26700, 27046, 27731, 29246, 29730, 29919, 30278, 31676, 31763, 30272, 30060, 30679, 31039, 33048, 33449, 32489, 31665, 31526, 30247]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 030",
+      "lines": [[2474, 2707, 18488, 19968, 19018]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 032",
+      "lines": [[95081, 94140], [98583, 98658]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 033",
+      "lines": [[85819, 85829, 87212, 87280, 86182, 85977, 84835, 85379, 83608, 86036]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 034",
+      "lines": [[56473, 56080, 56242, 57320, 57632]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 035",
+      "lines": [[63948, 63950, 62886, 63533, 61571, 61418, 60202, 59352]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 036",
+      "lines": [[62541, 62478, 62394, 61937, 62325, 61561, 61579, 61246, 60943]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 037",
+      "lines": [[56779, 57328, 57562, 58110, 59608, 59309, 58510]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 038",
+      "lines": [[54879, 54899], [54879, 55765], [54879, 55016], [54872, 53954], [54872, 56146]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 039",
+      "lines": [[60129, 60030], [63090, 62757], [63608, 62933], [63608, 63063], [63608, 64792], [64241, 65721, 65790, 66610, 66640]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 040",
+      "lines": [[62763, 62576], [62763, 62857]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 041",
+      "lines": [[60742, 60123, 60098, 59468]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 042",
+      "lines": [[60467, 64355, 64844, 64244, 64217, 64246, 64212, 63125]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 043",
+      "lines": [[44127, 39847, 38639, 38623, 41075, 43531, 45290, 46471], [48991, 48833, 50687, 50485, 50372], [55219, 56997, 57029]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 044",
+      "lines": [[52240, 52422, 53355, 53492, 54196, 54347, 54487, 54388, 53439]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 045",
+      "lines": [[51585, 52120, 51802, 51592, 50684, 51451, 52401, 52452, 52660, 52763]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 046",
+      "lines": [[53824, 53449, 52584, 53423, 53460, 53907, 54515, 54049, 54336]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 047",
+      "lines": [[56445, 55791, 55650, 55137, 54849, 55084, 56127]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 048",
+      "lines": [[60172, 59285], [60172, 60353]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 049",
+      "lines": [[85129, 84921, 85979, 86041, 86032, 85998], [84921, 84807]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 050",
+      "lines": [[82802, 82526, 83478, 83504, 84671]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 051",
+      "lines": [[80463, 79704, 79047, 79007, 79072, 79608, 79488, 80380, 80351, 81007]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 052",
+      "lines": [[82073, 81991, 82216, 81717, 81641, 81634], [82216, 82449]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 053",
+      "lines": [[82480, 82037, 81734, 80883], [81734, 81300]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 054",
+      "lines": [[82369, 82730, 83262]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 055",
+      "lines": [[84880, 84895]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 056",
+      "lines": [[87108, 86831, 85355, 84514]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 057",
+      "lines": [[88601, 88964, 89918], [88964, 88765, 88771]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 058",
+      "lines": [[88267, 88331, 88899, 88128]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 059",
+      "lines": [[88346, 89773, 89861, 90139]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 060",
+      "lines": [[80170, 79666], [78481, 79102], [79332, 79102], [79043, 79045, 79102], [75530, 76423, 76424, 76810, 76337, 76878, 76852, 77450, 77111, 77218, 77249, 77233, 77336, 77412, 77801, 76866], [76276, 76319], [76276, 76425], [77070, 77257], [77070, 74649], [77070, 77163], [77622, 77052], [77622, 77578, 77660], [77622, 78442, 78685]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 061",
+      "lines": [[82504, 82780, 82987, 83830, 83876, 84379, 84887, 85157], [85790, 85693, 86254, 86731], [86974, 87194], [88794, 87933, 87998, 88745, 89172, 89925, 89935, 88817], [92614, 92818, 93975, 94382, 94620, 94703, 94827, 95771, 95785, 95744, 95492, 95260, 96081], [93747, 93244, 93179, 93203, 93867, 94834, 94982, 95447], [92946, 91975], [92946, 92872], [92946, 94068], [92946, 93051], [88175, 89962, 90642, 90844, 90441], [84012, 83331]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 062",
+      "lines": [[81833, 80460, 80197, 80247, 80648, 81066, 81729, 82000, 82422, 82324, 82587, 82415, 84862, 87563, 85181]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 063",
+      "lines": [[74596, 75049, 75312, 76127], [77048, 77655, 78012, 79119, 79607, 79757, 79889, 79724, 79349, 78554, 77661]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 064",
+      "lines": [[81292, 81290, 80809, 78592, 73555, 73369, 76669, 76307, 75973, 76041, 76534, 77986, 77907, 79248, 80704, 81126, 82321]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 065",
+      "lines": [[65323, 65420, 65892, 66006, 66320, 66465, 67355, 67172, 66098, 65581, 65074, 64834, 64625, 64438, 64224, 64078]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 066",
+      "lines": [[64852, 65241, 66936, 67828, 68092, 67929, 68520]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 067",
+      "lines": [[62875, 63414, 63494, 63750, 62985], [61969, 61740, 61558]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 068",
+      "lines": [[64725, 64577, 64520, 64924, 65301, 65639, 66091, 67057, 67139, 67494, 67288, 66015]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 069",
+      "lines": [[64166, 64962, 68269, 68390]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 070",
+      "lines": [[71683, 69754], [71683, 71908]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 071",
+      "lines": [[68888, 68940, 69127, 69427, 69403, 70794, 70680, 71957, 72631, 72154, 72220, 70220, 70012]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 072",
+      "lines": [[67480, 66763, 66727, 67275, 67787], [66763, 66992]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 073",
+      "lines": [[72125, 72659, 71837, 71832], [72659, 72848]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 074",
+      "lines": [[69415, 69682, 70306, 72197, 72323, 72357, 73189], [72357, 72378]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 075",
+      "lines": [[75177, 75304]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 076",
+      "lines": [[73473, 73310, 73133, 72934, 72489, 72194, 72603, 72622, 72702, 73953, 73945, 74493, 74600, 75110, 76126, 75944, 75730, 75118, 75294, 76219, 75379, 76133, 76427, 75761, 74975, 75119, 74689, 73620, 73536, 73165, 73249]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 077",
+      "lines": [[68103, 67239]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 078",
+      "lines": [[73745, 74087, 73996, 73568, 71995, 72105]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 079",
+      "lines": [[77227, 77660, 77516, 77464]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 080",
+      "lines": [[76470, 76259]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 081",
+      "lines": [[72571, 73284]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 082",
+      "lines": [[78820, 77811, 76742, 77635, 77840, 77984]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 083",
+      "lines": [[79672, 79387, 79375, 79540]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 084",
+      "lines": [[78436, 78633, 78727]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 085",
+      "lines": [[80975, 81724]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 086",
+      "lines": [[76880, 76628]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 087",
+      "lines": [[76945, 76705]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 088",
+      "lines": [[79399, 79404, 80112, 80079, 80473, 80815, 82007]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 089",
+      "lines": [[78918, 78970]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 090",
+      "lines": [[82960, 82545, 82514], [82545, 86170, 87472]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 091",
+      "lines": [[85084, 84605, 84478, 84970, 84947, 85242, 84625, 84626, 84893, 83684, 83196, 83508, 83566]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 092",
+      "lines": [[85423, 85442]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 093",
+      "lines": [[85792, 88714]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 094",
+      "lines": [[88231, 89439, 90289, 91689], [89439, 89341]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 095",
+      "lines": [[85703, 85755, 88116, 88142, 88380]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 096",
+      "lines": [[92117, 92118, 92501, 93429, 94385, 95066], [94385, 92488]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 097",
+      "lines": [[92390, 93057, 92747, 92602, 92480, 92761, 92845, 94820, 94859, 95188, 94823]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 098",
+      "lines": [[96950, 96808, 97783, 98258]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 099",
+      "lines": [[96465, 96406, 96729, 95564, 95503, 95486, 94643]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 100",
+      "lines": [[98688, 98842, 98421, 99461]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 101",
+      "lines": [[95294, 98032, 98412, 98761]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 102",
+      "lines": [[98633, 98953, 98910, 99529, 99918, 100027, 100064, 100310, 100325, 100195, 100062, 99937], [101027, 101040]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 103",
+      "lines": [[99171, 99473, 99631]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 104",
+      "lines": [[97139, 96931, 96957, 97473, 97675, 98103, 98823, 97938, 97229]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 105",
+      "lines": [[94727, 94477, 95073, 95793, 96807, 96684, 95937, 95909, 95817, 96327, 97650, 97928, 97966]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 106",
+      "lines": [[96516, 95435, 95398, 95498, 95560, 95818, 96275, 97077, 97313, 98543, 99738, 99874, 99404, 99518, 99531, 98636, 98609, 97886, 97679, 98375, 99080, 99951, 100435, 99853, 99913, 99352, 98920, 98819, 98234, 98085, 97796]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 107",
+      "lines": [[91971, 91973], [91919, 91926, 90191, 89826]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 108",
+      "lines": [[92791, 92728, 93474, 93917, 93279, 92405, 92398], [93917, 94484]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 109",
+      "lines": [[92862, 93408, 94481, 96387, 97118, 98110, 96683, 95947, 95951, 95372, 96052]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 110",
+      "lines": [[101923, 101751]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 111",
+      "lines": [[102945, 103005, 103682, 103681, 103981, 103401]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 112",
+      "lines": [[101101, 100977]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 113",
+      "lines": [[101421, 101160, 102819, 102633]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 114",
+      "lines": [[102080, 102805, 103298, 103294, 101867, 101909, 101958], [102532, 102531]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 115",
+      "lines": [[97165, 96693, 97630, 98068, 98425, 99031, 99303, 99770, 100108, 100044, 100907, 101214, 101067, 101474, 100122, 100587, 101076, 101765, 102066, 102453, 101716, 101641, 101868, 102388, 103004, 103200, 105811, 105942, 105102, 104214, 102589, 102843, 103089, 102724, 101243, 101138, 100859, 99848, 99675], [102488, 102571]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 116",
+      "lines": [[94779, 95656, 97635, 98571, 99655, 98073, 97870]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 117",
+      "lines": [[90156, 89348, 90344, 94490, 94302]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 118",
+      "lines": [[106568, 106559, 107128]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 119",
+      "lines": [[103813, 104101, 104031, 103569, 103571, 105164, 105412, 105767, 105729, 106278]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 120",
+      "lines": [[104538, 104521, 103527]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 121",
+      "lines": [[107095, 107232, 107302, 108036, 109460]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 122",
+      "lines": [[108868, 109369, 110003]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 123",
+      "lines": [[103738, 104174, 105140, 106340]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 124",
+      "lines": [[104161, 104459]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 125",
+      "lines": [[108085, 111188]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 126",
+      "lines": [[106783, 106856, 107151, 108691, 109074, 110298, 109068, 108612, 108699, 108875, 108693, 108339, 108127], [108339, 108766]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 127",
+      "lines": [[110785, 110882, 111062, 111394, 110960]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 128",
+      "lines": [[108952, 108661, 108571, 106654, 106703]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 129",
+      "lines": [[103511, 104637, 106140, 106787, 107788]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 130",
+      "lines": [[109352, 109410, 111068]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 131",
+      "lines": [[107310, 107763, 107975, 108022, 109240, 109458, 109276, 109779, 109846]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 132",
+      "lines": [[102177, 103732, 104194, 106093, 106999, 107162, 107097, 106551, 111104, 111546, 111544, 111841, 112031, 112242, 112778, 113281, 113726, 113788, 114430, 111022, 110351]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 133",
+      "lines": [[108772, 109190, 108925, 107586, 107418]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 134",
+      "lines": [[98962, 99500, 100221, 101093, 105268, 105972, 106801, 109017, 109005, 110103, 111797]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 135",
+      "lines": [[113963, 113357, 114155, 114526, 114844, 115271, 115355, 115591]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 136",
+      "lines": [[112440, 110548, 111278, 111810, 111884, 112358, 115407, 116264, 115806]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 137",
+      "lines": [[102431, 111169, 114210, 115152, 115171, 114200, 115755, 115191, 115065, 115280, 116076, 116354, 841, 116709, 114104, 115590], [114104, 114365], [118243, 118077]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 138",
+      "lines": [[112447, 113503, 113186, 114347, 114520, 114389, 115481, 116611, 116972]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 139",
+      "lines": [[111123, 110786, 112179, 113127, 117375, 117761, 635, 664], [106723, 106768]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 140",
+      "lines": [[116901, 117089, 117218]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 141",
+      "lines": [[677, 116355, 116310, 117073, 117500, 171, 118131, 117735, 117710, 117718, 476, 1340, 1772, 1948, 2415, 2224, 1595, 1427, 729, 1168, 2219, 2213, 2568]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 142",
+      "lines": [[1366, 1086]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 143",
+      "lines": [[194, 186, 813, 1196, 1319, 1645, 2548, 2006, 2100, 2343, 2787, 2994]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 144",
+      "lines": [[113610, 113521, 114273, 114573, 115227, 117020, 117730, 117628, 117927, 118268]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 145",
+      "lines": [[115945, 116323, 116146, 115768, 115738, 116422, 116495, 117245, 117683, 117774]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 146",
+      "lines": [[3092, 2355, 3138, 3093, 3685, 3810, 4267, 5454, 5310, 4288, 4366, 4510, 7948, 5544, 5319, 4889, 5550, 6514, 5493, 5317, 4903]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 147",
+      "lines": [[117447, 531, 330, 1960, 4422], [117447, 116687, 116962, 117472, 43, 124, 1354, 1982, 2854, 3179, 4151]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 148",
+      "lines": [[3414, 3504, 3300, 6242, 7294, 8046]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 149",
+      "lines": [[5081, 5204, 5824, 5346, 5144, 5074, 4832, 3786, 3760, 3697, 4979, 5315, 5510, 5646, 6061, 9353]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 150",
+      "lines": [[2353, 2762, 4147, 4914, 4587, 3909, 4257]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 151",
+      "lines": [[8832, 9110, 8271, 7981, 8137, 9153, 8796, 9621, 9859, 10053, 10540, 9836, 10306, 10732, 10155, 10328]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 152",
+      "lines": [[6411, 6813, 7951, 9570, 10280, 10559, 11784, 9977, 10176, 10180, 8814, 9640, 10340, 10819, 10830, 9222, 8714]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 153",
+      "lines": [[6706, 6732, 7436, 8588, 7364, 6451]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 154",
+      "lines": [[12332, 11678, 13108, 13579, 13702, 13654, 13834, 13914], [13579, 13448]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 155",
+      "lines": [[6429, 6226, 5833, 5594, 5985, 5951, 6539, 6048, 5799, 5666, 5485, 5296, 5164, 5121, 6670, 6748, 7450, 7345], [7450, 8497, 7999], [1562, 1499]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 156",
+      "lines": [[9888, 12246, 12463, 12762]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 157",
+      "lines": [[10793, 11486, 13775, 14376, 12489, 12719]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 158",
+      "lines": [[10729, 10718, 10227, 8704, 9505, 10366, 10944, 11220, 11313, 11465, 13531, 13238, 12777, 12768, 13490, 13328, 14066, 14817, 15648, 15338]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 159",
+      "lines": [[15404, 15444, 15863, 16244, 16335, 16499, 20354, 21727, 21730, 21148, 20070]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 160",
+      "lines": [[19167, 18453]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 161",
+      "lines": [[16322, 16511, 17563]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 162",
+      "lines": [[10033, 9165, 9631, 9589, 11021, 10212, 11249, 12153, 12647, 14143, 14135, 15457, 17103, 17506, 17457, 16852, 16846, 15383, 14954, 14040, 13951, 12530]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 163",
+      "lines": [[18471, 17497, 16859, 16664, 17181, 17527, 17531, 17489, 17499], [17851, 17832, 17900]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 164",
+      "lines": [[19038, 19076]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 165",
+      "lines": [[16713, 17448, 20579, 20252, 19302, 19335, 19811]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 166",
+      "lines": [[14586, 14838, 14727, 15861, 17309, 17408]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 167",
+      "lines": [[11345, 10215, 10826, 12048, 12247, 12107]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 168",
+      "lines": [[16803, 15382, 14879, 13835, 13782, 11287, 12843, 11783, 14060, 14168, 14293, 15244, 16341, 17027, 17167, 16677]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 169",
+      "lines": [[17771, 18089, 18907, 18957, 19554, 19719, 19860, 19740, 19877, 20261, 20484, 20542, 20885, 20894, 21029, 21053, 21137, 21257]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 170",
+      "lines": [[21683, 21673], [21683, 21588]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 171",
+      "lines": [[19388, 20641, 20635, 20711, 20789]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 172",
+      "lines": [[23835, 23871, 23497, 23883, 25539]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 173",
+      "lines": [[21961, 23088, 26248, 27468, 27830]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 174",
+      "lines": [[21928, 21242, 21238, 21476, 23268, 23261, 23179, 22453, 22678, 23015], [28380, 28946, 28677, 28823, 29949, 29884, 29388, 28499, 28404, 27196]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 175",
+      "lines": [[24879, 24740, 24727]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 176",
+      "lines": [[25410, 26777, 27106, 27265, 27338, 26925, 26451]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 177",
+      "lines": [[18788, 18255, 18122, 18141, 19483, 19849, 21296, 21278, 21444, 21547]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 178",
+      "lines": [[22441, 23043, 23214, 23607, 24010, 24555, 23983, 23852, 23879, 22730, 22797]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 179",
+      "lines": [[21515, 20884, 21139, 22958, 21594, 21685, 22325, 23554]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 180",
+      "lines": [[12486, 14022, 15510, 16870, 17874, 18213, 19747]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 181",
+      "lines": [[28237, 28455, 28561, 27965, 28691, 29433, 29650]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 182",
+      "lines": [[32562, 30520, 30972, 33064, 33133, 33614, 34752, 35341, 35907, 36145, 36439, 35731]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 183",
+      "lines": [[26727, 26549, 25737, 25281, 25282, 25044, 25299, 25302, 24817, 24331, 25142, 25473, 25861, 25813, 26126, 26594, 26885, 27386, 28614, 28812, 28814, 28271, 27750, 28413, 30700, 30772, 30867, 30073, 29651, 29885, 29118, 28574, 28325, 28321, 27658, 26563, 25923, 25247, 24674, 25028]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 184",
+      "lines": [[26237, 26268], [26235, 26221]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 185",
+      "lines": [[23941, 23794, 23802, 23875]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 186",
+      "lines": [[25202, 24244, 24169]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 187",
+      "lines": [[25606, 25853, 26865, 29048, 28816, 28910, 28103, 27288]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 188",
+      "lines": [[29696, 30827, 31737, 32311, 31852, 31434, 32104, 31525, 31404, 32249, 32362, 32404, 32814, 33202, 33715, 34440, 34858, 34909]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 189",
+      "lines": [[29655, 29840]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 190",
+      "lines": [[27364, 27316, 27581, 27743, 29736, 29800, 29850], [29736, 29426]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 191",
+      "lines": [[33277, 33650, 34722, 35025, 34819, 34182, 35699, 36156, 36238]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 192",
+      "lines": [[35941, 36046, 36393, 36429, 37201, 37407], [34693, 34693]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 193",
+      "lines": [[37204, 37265, 38016, 37629, 37826]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 194",
+      "lines": [[37704, 37740, 38106, 38495]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 195",
+      "lines": [[36631, 36425, 35987, 36760, 37300, 37908, 38722, 39780, 39177, 39236, 38848, 38468, 39874]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 196",
+      "lines": [[36041, 36284, 36265, 36812, 36723, 36641, 38373, 38962, 39311, 39211, 39079]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 197",
+      "lines": [[31978, 32463, 31159, 31149, 30473, 30717, 30720], [31149, 31385]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 198",
+      "lines": [[35080, 34904, 34769, 34724], [34769, 33971, 34622, 37088, 37447]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 199",
+      "lines": [[31564, 31416, 32504, 33302, 33977]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 200",
+      "lines": [[32349, 32492, 33160, 33345, 34045, 33347]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 201",
+      "lines": [[27628, 28199]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 202",
+      "lines": [[30122, 30788, 30277, 29807]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 203",
+      "lines": [[32768, 31685, 28328, 27321, 30438]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 204",
+      "lines": [[32292, 33856, 35037, 34981, 34798, 35415, 35412, 37843, 37891, 38048, 38427, 38211, 39906, 39524, 38835, 39023, 38170, 37590, 37677, 37297, 38455, 39429, 38414, 36377], [34360, 34579, 34798], [36848, 36934, 37229], [38048, 37951], [37915, 37819], [38170, 39757]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 205",
+      "lines": [[42133, 41117, 41319, 41578, 41400, 42795, 43121, 43454, 43463, 43970, 44001, 44336, 44637, 44918, 45699, 45597, 44838, 44723]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 206",
+      "lines": [[42516, 42523, 42578, 42556]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 207",
+      "lines": [[39263, 39191, 39424, 39888, 40007, 40843, 41377, 41404, 41389, 41574, 41816]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 208",
+      "lines": [[39863, 41211, 41307, 42146, 42835, 43496, 43822, 42509, 43067, 42662, 40604, 40710, 40259, 40035, 40084, 41067]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 209",
+      "lines": [[44816, 46651, 50191]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 210",
+      "lines": [[38827, 43023, 44511, 42829, 44098]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 211",
+      "lines": [[42931, 44798, 44066, 43851, 42917, 42353, 42265, 41904, 41163, 40526, 40617]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 212",
+      "lines": [[47189, 47096, 47266, 46774, 46457]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 213",
+      "lines": [[46365, 45526, 44961, 44883, 45184, 45527, 46221, 46982, 48341, 48087, 48286, 48437, 47427, 47442, 47249]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 214",
+      "lines": [[49812, 49865, 50140, 50100, 50885, 51135, 51362, 51343, 50887, 51117, 51437, 52316, 52913]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 215",
+      "lines": [[46735, 46652, 45412, 44307, 44154, 43932, 43584, 42090, 42503, 42472, 42954, 43721, 44031, 44818, 44892, 44512, 44342, 43834, 43587, 43575, 43103, 44405, 44946, 46058, 47247, 47550, 48390, 48218, 50319, 50335, 50384, 49966, 50564, 49850, 50755, 50333, 49929, 49029, 48876, 48734, 48911, 48883, 48324, 47959, 47205, 47310, 48414, 48273, 48552, 48990, 49329, 49530, 50027, 50851, 51008, 51213], [44946, 45033]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 216",
+      "lines": [[48428, 48256, 47570, 47300, 46904, 46952, 47080, 47436, 49081, 50303, 50316]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 217",
+      "lines": [[49809, 49402, 51614, 51905, 51718]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 218",
+      "lines": [[53975, 52980, 52884, 52737, 53037, 53252, 53963, 54477]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 219",
+      "lines": [[61318, 60088, 58587, 59394, 60425]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 220",
+      "lines": [[57047, 56657, 56623]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 221",
+      "lines": [[51986, 52727, 51232]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 222",
+      "lines": [[79664, 76440, 76013, 76750]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 223",
+      "lines": [[92024, 90098, 93163, 103227]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 224",
+      "lines": [[118121, 118322]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 224",
+      "lines": [[111043, 110997, 109973]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 224",
+      "lines": [[27100, 32607]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 225",
+      "lines": [[45080, 43783, 45101]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 226",
+      "lines": [[50954, 50099]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming 227",
+      "lines": [[40702, 40888]]
+    },
+    {
+      "id1": "AST chinese_zhongwenxingming A01",
+      "lines": [[[16.9918, -12.8909], 84012]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming A02",
+      "lines": [[62985, "3626803636103730048", 61969]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming A03",
+      "lines": [[63945, "DSO:C80"]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming A04",
+      "lines": [[69673, "1233902704963092608", 70602]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming A05",
+      "lines": [[82007, "6046821272776093184", 82140]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming A06",
+      "lines": [[4903, "DSO:M31", 3231]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming A07",
+      "lines": [[17499, "66715105696289024", 17851]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming A08",
+      "lines": [[27196, "211805079552264832", 21928]]
+    },
+    {
+      "id": "AST chinese_zhongwenxingming A09",
+      "lines": [[37279, "3138519829402291328"]]
+    }
+  ],
   "constellations": [
     {
-      "id": "CON chinese_qing_dynasty 001",
+      "id": "CON chinese_zhongwenxingming 001",
       "lines": [[20889, 20648, 20455, 20205], [21421, 20885, 20713, 20205, 18724]],
       "common_name": {"english": "【毕宿】", "native": "Bi Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 002",
+      "id": "CON chinese_zhongwenxingming 002",
       "lines": [[1067, 677]],
       "common_name": {"english": "【壁宿】", "native": "Bi Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 003",
+      "id": "CON chinese_zhongwenxingming 003",
       "lines": [[27989, 26727, 26311, 25930, 24436], [25930, 25336], [26727, 27366]],
       "common_name": {"english": "【参宿】", "native": "Shen Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 004",
+      "id": "CON chinese_zhongwenxingming 004",
       "lines": [[72622, 74392, 76333, 74785]],
       "common_name": {"english": "【氐宿】", "native": "Di Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 005",
+      "id": "CON chinese_zhongwenxingming 005",
       "lines": [[89341, 90496, 92041, 92855, 93864, 93506]],
       "common_name": {"english": "【斗宿】", "native": "Dou Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 006",
+      "id": "CON chinese_zhongwenxingming 006",
       "lines": [[78820, 78401, 78265, 78104]],
       "common_name": {"english": "【房宿】", "native": "Fang Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 007",
+      "id": "CON chinese_zhongwenxingming 007",
       "lines": [[41822, 41909, 42806, 42911]],
       "common_name": {"english": "【鬼宿】", "native": "Gui Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 008",
+      "id": "CON chinese_zhongwenxingming 008",
       "lines": [[88635, 89931, 90185, 89642]],
       "common_name": {"english": "【箕宿】", "native": "Ji Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 009",
+      "id": "CON chinese_zhongwenxingming 009",
       "lines": [[65474, 66249]],
       "common_name": {"english": "【角宿】", "native": "Jiao Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 010",
+      "id": "CON chinese_zhongwenxingming 010",
       "lines": [[35350, 34088, 32921, 32246], [32921, 30883, 30343], [30883, 31681, 34088], [31681, 32362]],
       "common_name": {"english": "【井宿】", "native": "Jing Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 011",
+      "id": "CON chinese_zhongwenxingming 011",
       "lines": [[69427, 69701, 70755], [69427, 69974]],
       "common_name": {"english": "【亢宿】", "native": "Kang Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 012",
+      "id": "CON chinese_zhongwenxingming 012",
       "lines": [[4463, 3693, 3885, 3031, 3092, 2912, 3881, 4436, 5447, 5175, 5586, 6315, 6193, 5742, 5571, 5131, 4463]],
       "common_name": {"english": "【奎宿】", "native": "Kui Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 013",
+      "id": "CON chinese_zhongwenxingming 013",
       "lines": [[43234, 42799, 42402, 42313, 43109, 43813, 44659, 45336]],
       "common_name": {"english": "【柳宿】", "native": "Liu Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 014",
+      "id": "CON chinese_zhongwenxingming 014",
       "lines": [[9884, 8903, 8832]],
       "common_name": {"english": "【娄宿】", "native": "Lou Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 015",
+      "id": "CON chinese_zhongwenxingming 015",
       "lines": [[17499, 17531, 17579, 17573], [17499, 17608, 17702, 17847]],
       "common_name": {"english": "【昴宿】", "native": "Mao Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 016",
+      "id": "CON chinese_zhongwenxingming 016",
       "lines": [[100345, 100064], [100345, 99572], [100345, 100881, 101123, 101027, 100345]],
       "common_name": {"english": "【牛宿】", "native": "Niu Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 017",
+      "id": "CON chinese_zhongwenxingming 017",
       "lines": [[102618, 103045, 102945, 102624]],
       "common_name": {"english": "【女宿】", "native": "Nü Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 018",
+      "id": "CON chinese_zhongwenxingming 018",
       "lines": [[113963, 113881]],
       "common_name": {"english": "【室宿】", "native": "Shi Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 019",
+      "id": "CON chinese_zhongwenxingming 019",
       "lines": [[57757, 55434, 55642, 54879, 54872]],
       "common_name": {"english": "太微右垣", "native": "Tai Wei You Yuan"}
     },
     {
-      "id": "CON chinese_qing_dynasty 020",
+      "id": "CON chinese_zhongwenxingming 020",
       "lines": [[60129, 61941, 63090, 63608, 64241]],
       "common_name": {"english": "太微左垣", "native": "Tai Wei Zuo Yuan"}
     },
     {
-      "id": "CON chinese_qing_dynasty 021",
+      "id": "CON chinese_zhongwenxingming 021",
       "lines": [[80816, 80170, 79043, 78072, 77233, 76276, 77070, 77622, 79593, 79882, 81377]],
       "common_name": {"english": "天市右垣", "native": "Tian Shi You Yuan"}
     },
     {
-      "id": "CON chinese_qing_dynasty 022",
+      "id": "CON chinese_zhongwenxingming 022",
       "lines": [[84379, 85693, 86974, 88794, 92614, 93747, 92946, 89962, 88048, 86263, 84012]],
       "common_name": {"english": "天市左垣", "native": "Tian Shi Zuo Yuan"}
     },
     {
-      "id": "CON chinese_qing_dynasty 023",
+      "id": "CON chinese_zhongwenxingming 023",
       "lines": [[109074, 109427, 107315]],
       "common_name": {"english": "【危宿】", "native": "Wei Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 024",
+      "id": "CON chinese_zhongwenxingming 024",
       "lines": [[82396, 82514, 82671, 84143, 86228, 87073, 86670, 85927], [86670, 85696]],
       "common_name": {"english": "【尾宿】", "native": "Wei Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 025",
+      "id": "CON chinese_zhongwenxingming 025",
       "lines": [[12719, 13061, 13209]],
       "common_name": {"english": "【胃宿】", "native": "Wei Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 026",
+      "id": "CON chinese_zhongwenxingming 026",
       "lines": [[80112, 80763, 81266]],
       "common_name": {"english": "【心宿】", "native": "Xin Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 027",
+      "id": "CON chinese_zhongwenxingming 027",
       "lines": [[46390, 46509, 46776, 47431], [46390, 45811, 45751, 46744], [46390, 46744]],
       "common_name": {"english": "【星宿】", "native": "Xing Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 028",
+      "id": "CON chinese_zhongwenxingming 028",
       "lines": [[106278, 104987]],
       "common_name": {"english": "【虚宿】", "native": "Xu Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 029",
+      "id": "CON chinese_zhongwenxingming 029",
       "lines": [[53740, 55705], [53740, 55598], [53740, 52943], [55705, 57283, 55598], [57283, 58188], [55705, 55282, 56802, 55874, 55687, 54523, 53975], [55687, 56633, 57587], [55598, 56179, 54682, 56161, 55788, 55221, 54204], [55788, 57072, 57822]],
       "common_name": {"english": "【翼宿】", "native": "Yi Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 030",
+      "id": "CON chinese_zhongwenxingming 030",
       "lines": [[48356, 49841, 51069, 49321], [48356, 49321], [48356, 47452], [51069, 52085]],
       "common_name": {"english": "【张宿】", "native": "Zhang Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 031",
+      "id": "CON chinese_zhongwenxingming 031",
       "lines": [[61359, 60965, 59803, 59316]],
       "common_name": {"english": "【轸宿】", "native": "Zhen Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 032",
+      "id": "CON chinese_zhongwenxingming 032",
       "lines": [[68756, 61281, 56211, 46977, 33104, 22783, 15520]],
       "common_name": {"english": "紫微右垣", "native": "Zi Wei You Yuan"}
     },
     {
-      "id": "CON chinese_qing_dynasty 033",
+      "id": "CON chinese_zhongwenxingming 033",
       "lines": [[75458, 78527, 80331, 83895, 92782, 101260, 114222, 3721]],
       "common_name": {"english": "紫微左垣", "native": "Zi Wei Zuo Yuan"}
     },
     {
-      "id": "CON chinese_qing_dynasty 034",
+      "id": "CON chinese_zhongwenxingming 034",
       "lines": [[26207, 26176], [26207, 26366]],
       "common_name": {"english": "【觜宿】", "native": "Zi Xiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 035",
+      "id": "CON chinese_zhongwenxingming 035",
       "lines": [[28358, 27949, 27249, 24348], [27249, 23040], [23913, 23734, 27971]],
       "common_name": {"english": "八谷", "native": "Ba Gu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 036",
+      "id": "CON chinese_zhongwenxingming 036",
       "lines": [[910, 301, 118178], [910, 355], [910, 1803], [910, 1170]],
       "common_name": {"english": "八魁", "native": "Ba Kui"}
     },
     {
-      "id": "CON chinese_qing_dynasty 037",
+      "id": "CON chinese_zhongwenxingming 037",
       "lines": [[101800, 101421, 101483, 101882, 101800, 101916]],
       "common_name": {"english": "败瓜", "native": "Bai Gua"}
     },
     {
-      "id": "CON chinese_qing_dynasty 038",
+      "id": "CON chinese_zhongwenxingming 038",
       "lines": [[108085, 109111, 112948, 112102]],
       "common_name": {"english": "败臼", "native": "Bai Jiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 039",
+      "id": "CON chinese_zhongwenxingming 039",
       "lines": [[54061, 53910, 58001, 59774, 62956, 65378, 67301]],
       "common_name": {"english": "北斗", "native": "Bei Dou"}
     },
     {
-      "id": "CON chinese_qing_dynasty 040",
+      "id": "CON chinese_zhongwenxingming 040",
       "lines": [[37826, 36850, 36366]],
       "common_name": {"english": "北河", "native": "Bei He"}
     },
     {
-      "id": "CON chinese_qing_dynasty 041",
+      "id": "CON chinese_zhongwenxingming 041",
       "lines": [[75097, 72607, 70692, 69112, 62572]],
       "common_name": {"english": "北极", "native": "Bei Ji"}
     },
     {
-      "id": "CON chinese_qing_dynasty 042",
+      "id": "CON chinese_zhongwenxingming 042",
       "lines": [[113368, 113368]],
       "common_name": {"english": "北落师门", "native": "Bei Luo Shi Men"}
     },
     {
-      "id": "CON chinese_qing_dynasty 043",
+      "id": "CON chinese_zhongwenxingming 043",
       "lines": [[90422, 92308, 93542, 94005, 94160, 94114, 93825, 93174, 92989, 90968, 90982, 90422]],
       "common_name": {"english": "鳖", "native": "Bie"}
     },
     {
-      "id": "CON chinese_qing_dynasty 044",
+      "id": "CON chinese_zhongwenxingming 044",
       "lines": [[97894, 101772, 104282, 106065, 107463, 108482, 108626, 103340, 101975, 102757, 103048]],
       "common_name": {"english": "波斯", "native": "Bo Si"}
     },
     {
-      "id": "CON chinese_qing_dynasty 045",
+      "id": "CON chinese_zhongwenxingming 045",
       "lines": [[88267, 88886]],
       "common_name": {"english": "帛度", "native": "Bo Du"}
     },
     {
-      "id": "CON chinese_qing_dynasty 046",
+      "id": "CON chinese_zhongwenxingming 046",
       "lines": [[22667, 22957, 22833, 22845, 22509, 22449, 22549, 22797, 23123]],
       "common_name": {"english": "参旗", "native": "Can Qi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 047",
+      "id": "CON chinese_zhongwenxingming 047",
       "lines": [[25985, 25606, 27072, 27654]],
       "common_name": {"english": "厕", "native": "Ce"}
     },
     {
-      "id": "CON chinese_qing_dynasty 048",
+      "id": "CON chinese_zhongwenxingming 048",
       "lines": [[4427, 4427]],
       "common_name": {"english": "策", "native": "Ce"}
     },
     {
-      "id": "CON chinese_qing_dynasty 049",
+      "id": "CON chinese_zhongwenxingming 049",
       "lines": [[63125, 62207, 61692, 61317, 60646, 59831, 58684]],
       "common_name": {"english": "常陈", "native": "Chang Chen"}
     },
     {
-      "id": "CON chinese_qing_dynasty 050",
+      "id": "CON chinese_zhongwenxingming 050",
       "lines": [[112917, 111944, 110351, 106481, 103632, 104060, 106711]],
       "common_name": {"english": "车府", "native": "Che Fu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 051",
+      "id": "CON chinese_zhongwenxingming 051",
       "lines": [[74395, 71536, 71121]],
       "common_name": {"english": "车骑", "native": "Che Qi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 052",
+      "id": "CON chinese_zhongwenxingming 052",
       "lines": [[80628, 82369]],
       "common_name": {"english": "车肆", "native": "Che Si"}
     },
     {
-      "id": "CON chinese_qing_dynasty 053",
+      "id": "CON chinese_zhongwenxingming 053",
       "lines": [[11345, 12002, 10642], [11261, 11029, 12390]],
       "common_name": {"english": "刍藁", "native": "Chu Hao"}
     },
     {
-      "id": "CON chinese_qing_dynasty 054",
+      "id": "CON chinese_zhongwenxingming 054",
       "lines": [[86092, 85792, 85258]],
       "common_name": {"english": "杵(箕宿)", "native": "Chu(Ji Xiu)"}
     },
     {
-      "id": "CON chinese_qing_dynasty 055",
+      "id": "CON chinese_zhongwenxingming 055",
       "lines": [[109937, 109410, 109056]],
       "common_name": {"english": "杵(危宿)", "native": "Chu(Wei Xiu)"}
     },
     {
-      "id": "CON chinese_qing_dynasty 056",
+      "id": "CON chinese_zhongwenxingming 056",
       "lines": [[60189, 60189]],
       "common_name": {"english": "长沙(附轸宿)", "native": "Chang Sha"}
     },
     {
-      "id": "CON chinese_qing_dynasty 057",
+      "id": "CON chinese_zhongwenxingming 057",
       "lines": [[117371, 2707, 4904, 5589, 10438, 13665, 16228, 16281, 16292]],
       "common_name": {"english": "传舍", "native": "Chuan She"}
     },
     {
-      "id": "CON chinese_qing_dynasty 058",
+      "id": "CON chinese_zhongwenxingming 058",
       "lines": [[77634, 76945]],
       "common_name": {"english": "从官(房宿)", "native": "Cong Guan(Fang Xiu)"}
     },
     {
-      "id": "CON chinese_qing_dynasty 059",
+      "id": "CON chinese_zhongwenxingming 059",
       "lines": [[56975, 56975]],
       "common_name": {"english": "从官(太微垣)", "native": "Cong Guan(Tai Wei Yuan)"}
     },
     {
-      "id": "CON chinese_qing_dynasty 060",
+      "id": "CON chinese_zhongwenxingming 060",
       "lines": [[69673, 69673]],
       "common_name": {"english": "大角", "native": "Da Jiao"}
     },
     {
-      "id": "CON chinese_qing_dynasty 061",
+      "id": "CON chinese_zhongwenxingming 061",
       "lines": [[59504, 58952]],
       "common_name": {"english": "大理", "native": "Da Li"}
     },
     {
-      "id": "CON chinese_qing_dynasty 062",
+      "id": "CON chinese_zhongwenxingming 062",
       "lines": [[11060, 13531, 14632, 14668, 14576, 14354, 13254, 12623]],
       "common_name": {"english": "大陵", "native": "Da Ling"}
     },
     {
-      "id": "CON chinese_qing_dynasty 063",
+      "id": "CON chinese_zhongwenxingming 063",
       "lines": [],
       "common_name": {"english": "天庙", "native": "Tian Miao"}
     },
     {
-      "id": "CON chinese_qing_dynasty 064",
+      "id": "CON chinese_zhongwenxingming 064",
       "lines": [[69226, 68478, 68103]],
       "common_name": {"english": "帝席", "native": "Di Xi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 065",
+      "id": "CON chinese_zhongwenxingming 065",
       "lines": [[84345, 84345]],
       "common_name": {"english": "帝座", "native": "Di Zuo"}
     },
     {
-      "id": "CON chinese_qing_dynasty 066",
+      "id": "CON chinese_zhongwenxingming 066",
       "lines": [[80894, 80569, 80343, 80975]],
       "common_name": {"english": "东咸", "native": "Dong Xian"}
     },
     {
-      "id": "CON chinese_qing_dynasty 067",
+      "id": "CON chinese_zhongwenxingming 067",
       "lines": [[80463, 79492, 79634, 81008, 81354]],
       "common_name": {"english": "斗", "native": "Dou"}
     },
     {
-      "id": "CON chinese_qing_dynasty 068",
+      "id": "CON chinese_zhongwenxingming 068",
       "lines": [[74604, 75177]],
       "common_name": {"english": "顿顽", "native": "Dun Wan"}
     },
     {
-      "id": "CON chinese_qing_dynasty 069",
+      "id": "CON chinese_zhongwenxingming 069",
       "lines": [[26237, 26235, 26241]],
       "common_name": {"english": "伐(附参宿)", "native": "Fa"}
     },
     {
-      "id": "CON chinese_qing_dynasty 070",
+      "id": "CON chinese_zhongwenxingming 070",
       "lines": [[79672, 79005, 78400]],
       "common_name": {"english": "罚", "native": "Fa"}
     },
     {
-      "id": "CON chinese_qing_dynasty 071",
+      "id": "CON chinese_zhongwenxingming 071",
       "lines": [[44382, 34481], [44382, 41312], [44382, 40817], [44382, 35228], [44382, 37504]],
       "common_name": {"english": "飞鱼", "native": "Fei Yu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 072",
+      "id": "CON chinese_zhongwenxingming 072",
       "lines": [[110960, 110395], [110960, 111497], [110960, 110672]],
       "common_name": {"english": "坟墓(附危宿)", "native": "Fen Mu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 073",
+      "id": "CON chinese_zhongwenxingming 073",
       "lines": [[116889, 117089, 117629]],
       "common_name": {"english": "𫓧钺", "native": "Fu Yue"}
     },
     {
-      "id": "CON chinese_qing_dynasty 074",
+      "id": "CON chinese_zhongwenxingming 074",
       "lines": [[6960, 7838, 8121, 9347, 9061]],
       "common_name": {"english": "𫓧锧", "native": "Fu Zhi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 075",
+      "id": "CON chinese_zhongwenxingming 075",
       "lines": [[91755, 90905, 90156, 92512, 92997, 93340, 93713]],
       "common_name": {"english": "扶筐", "native": "Fu Kuang"}
     },
     {
-      "id": "CON chinese_qing_dynasty 076",
+      "id": "CON chinese_zhongwenxingming 076",
       "lines": [[17678, 13244]],
       "common_name": {"english": "附白", "native": "Fu Bai"}
     },
     {
-      "id": "CON chinese_qing_dynasty 077",
+      "id": "CON chinese_zhongwenxingming 077",
       "lines": [[2920, 2920]],
       "common_name": {"english": "附路", "native": "Fu Lu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 078",
+      "id": "CON chinese_zhongwenxingming 078",
       "lines": [[87261, 87261]],
       "common_name": {"english": "傅说", "native": "Fu Yue"}
     },
     {
-      "id": "CON chinese_qing_dynasty 079",
+      "id": "CON chinese_zhongwenxingming 079",
       "lines": [[108874, 108991]],
       "common_name": {"english": "盖屋", "native": "Gai Wu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 080",
+      "id": "CON chinese_zhongwenxingming 080",
       "lines": [[17959, 14862, 9763, 9802, 9598, 10031, 9480, 8016, 7078]],
       "common_name": {"english": "杠(附华盖)", "native": "Gang"}
     },
     {
-      "id": "CON chinese_qing_dynasty 081",
+      "id": "CON chinese_zhongwenxingming 081",
       "lines": [[11569, 8886, 6686, 5542, 3801, 3504]],
       "common_name": {"english": "阁道", "native": "Ge Dao"}
     },
     {
-      "id": "CON chinese_qing_dynasty 082",
+      "id": "CON chinese_zhongwenxingming 082",
       "lines": [[72105, 71284, 71053]],
       "common_name": {"english": "梗河", "native": "Geng He"}
     },
     {
-      "id": "CON chinese_qing_dynasty 083",
+      "id": "CON chinese_zhongwenxingming 083",
       "lines": [[113116, 5372, 11767, 85822, 82080, 77055]],
       "common_name": {"english": "勾陈", "native": "Gou Chen"}
     },
     {
-      "id": "CON chinese_qing_dynasty 084",
+      "id": "CON chinese_zhongwenxingming 084",
       "lines": [[78933, 78990]],
       "common_name": {"english": "钩钤(附房宿)", "native": "Gou Qian"}
     },
     {
-      "id": "CON chinese_qing_dynasty 085",
+      "id": "CON chinese_zhongwenxingming 085",
       "lines": [[96465, 95477]],
       "common_name": {"english": "狗", "native": "Gou"}
     },
     {
-      "id": "CON chinese_qing_dynasty 086",
+      "id": "CON chinese_zhongwenxingming 086",
       "lines": [[98066, 98353, 98688, 98162, 98066]],
       "common_name": {"english": "狗国", "native": "Gou Guo"}
     },
     {
-      "id": "CON chinese_qing_dynasty 087",
+      "id": "CON chinese_zhongwenxingming 087",
       "lines": [[77048, 76127, 75695, 76267, 76952, 77512, 78159, 78493, 78459]],
       "common_name": {"english": "贯索", "native": "Guan Suo"}
     },
     {
-      "id": "CON chinese_qing_dynasty 088",
+      "id": "CON chinese_zhongwenxingming 088",
       "lines": [[40023, 40881, 41377, 40240]],
       "common_name": {"english": "爟", "native": "Guan"}
     },
     {
-      "id": "CON chinese_qing_dynasty 089",
+      "id": "CON chinese_zhongwenxingming 089",
       "lines": [[83153, 85267, 85727, 82363, 83081]],
       "common_name": {"english": "龟", "native": "Gui"}
     },
     {
-      "id": "CON chinese_qing_dynasty 090",
+      "id": "CON chinese_zhongwenxingming 090",
       "lines": [[51232, 52558, 54147, 56519, 56561, 57363]],
       "common_name": {"english": "海山", "native": "Hai Shan"}
     },
     {
-      "id": "CON chinese_qing_dynasty 091",
+      "id": "CON chinese_zhongwenxingming 091",
       "lines": [[41037, 45556, 46974, 47854, 48002]],
       "common_name": {"english": "海石", "native": "Hai Shi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 092",
+      "id": "CON chinese_zhongwenxingming 092",
       "lines": [],
       "common_name": {"english": "军门", "native": "Jun Men"}
     },
     {
-      "id": "CON chinese_qing_dynasty 093",
+      "id": "CON chinese_zhongwenxingming 093",
       "lines": [[98036, 97649, 97278]],
       "common_name": {"english": "河鼓", "native": "He Gu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 094",
+      "id": "CON chinese_zhongwenxingming 094",
       "lines": [[109268, 112122, 112623, 112374, 114996, 113638, 112122, 114421], [112122, 114131], [112122, 112203, 110936], [112122, 111043, 109908]],
       "common_name": {"english": "鹤", "native": "He"}
     },
     {
-      "id": "CON chinese_qing_dynasty 095",
+      "id": "CON chinese_zhongwenxingming 095",
       "lines": [[67464, 67472, 68245, 68862]],
       "common_name": {"english": "衡", "native": "Heng"}
     },
     {
-      "id": "CON chinese_qing_dynasty 096",
+      "id": "CON chinese_zhongwenxingming 096",
       "lines": [[86032, 86032]],
       "common_name": {"english": "候", "native": "Hou"}
     },
     {
-      "id": "CON chinese_qing_dynasty 097",
+      "id": "CON chinese_zhongwenxingming 097",
       "lines": [[34444, 35904, 37819, 38901, 38070, 37229, 35904, 33579, 32759, 35264, 37819]],
       "common_name": {"english": "弧矢", "native": "Hu Shi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 098",
+      "id": "CON chinese_zhongwenxingming 098",
       "lines": [[82673, 83000, 82402, 82073]],
       "common_name": {"english": "斛", "native": "Hu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 099",
+      "id": "CON chinese_zhongwenxingming 099",
       "lines": [[54951, 54951]],
       "common_name": {"english": "虎贲", "native": "Hu Ben"}
     },
     {
-      "id": "CON chinese_qing_dynasty 100",
+      "id": "CON chinese_zhongwenxingming 100",
       "lines": [[102532, 101958, 101769, 102281, 102532], [101769, 101589]],
       "common_name": {"english": "瓠瓜", "native": "Hu Gua"}
     },
     {
-      "id": "CON chinese_qing_dynasty 101",
+      "id": "CON chinese_zhongwenxingming 101",
       "lines": [[7629, 7650, 5926, 5518, 6692, 7965, 9009]],
       "common_name": {"english": "华盖", "native": "Hua Gai"}
     },
     {
-      "id": "CON chinese_qing_dynasty 102",
+      "id": "CON chinese_zhongwenxingming 102",
       "lines": [[83430, 83478, 83613, 84177]],
       "common_name": {"english": "宦者", "native": "Huan Zhe"}
     },
     {
-      "id": "CON chinese_qing_dynasty 103",
+      "id": "CON chinese_zhongwenxingming 103",
       "lines": [[116231, 116389, 116602, 765, 2072, 2081, 3245, 2472, 5165, 6867]],
       "common_name": {"english": "火鸟", "native": "Huo Niao"}
     },
     {
-      "id": "CON chinese_qing_dynasty 104",
+      "id": "CON chinese_zhongwenxingming 104",
       "lines": [[42549, 42549]],
       "common_name": {"english": "积尸(鬼宿)", "native": "Ji Shi(Gui Xiu)"}
     },
     {
-      "id": "CON chinese_qing_dynasty 105",
+      "id": "CON chinese_zhongwenxingming 105",
       "lines": [[13879, 13879]],
       "common_name": {"english": "积尸(胃宿)", "native": "Ji Shi(Wei Xiu)"}
     },
     {
-      "id": "CON chinese_qing_dynasty 106",
+      "id": "CON chinese_zhongwenxingming 106",
       "lines": [[19167, 19167]],
       "common_name": {"english": "积水(胃宿)", "native": "Ji Shui(Wei Xiu)"}
     },
     {
-      "id": "CON chinese_qing_dynasty 107",
+      "id": "CON chinese_zhongwenxingming 107",
       "lines": [[37740, 37740]],
       "common_name": {"english": "积薪", "native": "Ji Xin"}
     },
     {
-      "id": "CON chinese_qing_dynasty 108",
+      "id": "CON chinese_zhongwenxingming 108",
       "lines": [[78918, 78384]],
       "common_name": {"english": "积卒", "native": "Ji Zu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 109",
+      "id": "CON chinese_zhongwenxingming 109",
       "lines": [[24372, 19780]],
       "common_name": {"english": "夹白", "native": "Jia Bai"}
     },
     {
-      "id": "CON chinese_qing_dynasty 110",
+      "id": "CON chinese_zhongwenxingming 110",
       "lines": [[93085, 93683, 94141, 94820, 95168, 95176]],
       "common_name": {"english": "建", "native": "Jian"}
     },
     {
-      "id": "CON chinese_qing_dynasty 111",
+      "id": "CON chinese_zhongwenxingming 111",
       "lines": [[92791, 92420, 93194, 93903]],
       "common_name": {"english": "渐台", "native": "Jian Tai"}
     },
     {
-      "id": "CON chinese_qing_dynasty 112",
+      "id": "CON chinese_zhongwenxingming 112",
       "lines": [[79374, 79374]],
       "common_name": {"english": "键闭", "native": "Jian Bi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 113",
+      "id": "CON chinese_zhongwenxingming 113",
       "lines": [[19893, 21281, 26069, 27100, 29134]],
       "common_name": {"english": "金鱼", "native": "Jin Yu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 114",
+      "id": "CON chinese_zhongwenxingming 114",
       "lines": [[63414, 63414]],
       "common_name": {"english": "进贤", "native": "Jin Xian"}
     },
     {
-      "id": "CON chinese_qing_dynasty 115",
+      "id": "CON chinese_zhongwenxingming 115",
       "lines": [[35710, 35710]],
       "common_name": {"english": "积水(井宿)", "native": "Ji Shui(Jin Xiu)"}
     },
     {
-      "id": "CON chinese_qing_dynasty 116",
+      "id": "CON chinese_zhongwenxingming 116",
       "lines": [[104712, 105553, 104555, 103440]],
       "common_name": {"english": "九坎", "native": "Jiu Kan"}
     },
     {
-      "id": "CON chinese_qing_dynasty 117",
+      "id": "CON chinese_zhongwenxingming 117",
       "lines": [[61960, 62267, 61579]],
       "common_name": {"english": "九卿", "native": "Jiu Qing"}
     },
     {
-      "id": "CON chinese_qing_dynasty 118",
+      "id": "CON chinese_zhongwenxingming 118",
       "lines": [[21515, 22109, 22701, 23221, 23231, 22479, 22263, 21763, 23474]],
       "common_name": {"english": "九斿", "native": "Jiu Liu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 119",
+      "id": "CON chinese_zhongwenxingming 119",
       "lines": [[19777, 19587, 20507, 21444, 22024, 21986]],
       "common_name": {"english": "九州殊口", "native": "Jiu Zhou Shu Kou"}
     },
     {
-      "id": "CON chinese_qing_dynasty 120",
+      "id": "CON chinese_zhongwenxingming 120",
       "lines": [[47723, 46771, 46454]],
       "common_name": {"english": "酒旗", "native": "Jiu Qi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 121",
+      "id": "CON chinese_zhongwenxingming 121",
       "lines": [[110371, 109176, 107354, 107310]],
       "common_name": {"english": "臼", "native": "Jiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 122",
+      "id": "CON chinese_zhongwenxingming 122",
       "lines": [[17529, 18532, 18614, 18246, 17448, 17313]],
       "common_name": {"english": "卷舌", "native": "Juan She"}
     },
     {
-      "id": "CON chinese_qing_dynasty 123",
+      "id": "CON chinese_zhongwenxingming 123",
       "lines": [[24244, 24327, 24845, 24873]],
       "common_name": {"english": "军井", "native": "Jun Jing"}
     },
     {
-      "id": "CON chinese_qing_dynasty 124",
+      "id": "CON chinese_zhongwenxingming 124",
       "lines": [[5434, 5434]],
       "common_name": {"english": "军南门", "native": "Jun Nan Men"}
     },
     {
-      "id": "CON chinese_qing_dynasty 125",
+      "id": "CON chinese_zhongwenxingming 125",
       "lines": [[30324, 31700, 33092, 33248, 33152, 31125, 30324]],
       "common_name": {"english": "军市", "native": "Jun Shi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 126",
+      "id": "CON chinese_zhongwenxingming 126",
       "lines": [[85423, 85423]],
       "common_name": {"english": "糠", "native": "Kang"}
     },
     {
-      "id": "CON chinese_qing_dynasty 127",
+      "id": "CON chinese_zhongwenxingming 127",
       "lines": [[70027, 69260, 69536, 69989]],
       "common_name": {"english": "亢池", "native": "Kang Chi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 128",
+      "id": "CON chinese_zhongwenxingming 128",
       "lines": [[86929, 88866, 90797, 92609, 93015, 99240, 102395], [86929, 91792, 98495, 105858, 100751]],
       "common_name": {"english": "孔雀", "native": "Kong Que"}
     },
     {
-      "id": "CON chinese_qing_dynasty 129",
+      "id": "CON chinese_zhongwenxingming 129",
       "lines": [[108036, 109472]],
       "common_name": {"english": "哭", "native": "Ku"}
     },
     {
-      "id": "CON chinese_qing_dynasty 130",
+      "id": "CON chinese_zhongwenxingming 130",
       "lines": [[68002, 71352, 68933, 67457, 65936, 63945, 61932, 61622, 60517, 60823]],
       "common_name": {"english": "库楼", "native": "Ku Lou"}
     },
     {
-      "id": "CON chinese_qing_dynasty 131",
+      "id": "CON chinese_zhongwenxingming 131",
       "lines": [[62763, 62763]],
       "common_name": {"english": "郎将", "native": "Lang Jiang"}
     },
     {
-      "id": "CON chinese_qing_dynasty 132",
+      "id": "CON chinese_zhongwenxingming 132",
       "lines": [[60742, 61118, 60697, 60746, 60904, 60514, 60351, 61071, 60941, 59847, 61394, 61724, 60957, 59501, 58858]],
       "common_name": {"english": "郎位", "native": "Lang Wei"}
     },
     {
-      "id": "CON chinese_qing_dynasty 133",
+      "id": "CON chinese_zhongwenxingming 133",
       "lines": [[30438, 30438]],
       "common_name": {"english": "老人", "native": "Lao Ren"}
     },
     {
-      "id": "CON chinese_qing_dynasty 134",
+      "id": "CON chinese_zhongwenxingming 134",
       "lines": [[115919, 115444, 114144, 112935, 112447, 112029]],
       "common_name": {"english": "雷电", "native": "Lei Dian"}
     },
     {
-      "id": "CON chinese_qing_dynasty 135",
+      "id": "CON chinese_zhongwenxingming 135",
       "lines": [[145, 118209, 154, 443, 145], [118209, 114724, 112961, 111123, 109139, 107556, 106985, 106723, 107188, 107556]],
       "common_name": {"english": "垒壁阵", "native": "Lei Bi Zhen"}
     },
     {
-      "id": "CON chinese_qing_dynasty 136",
+      "id": "CON chinese_zhongwenxingming 136",
       "lines": [[112440, 112748], [112051, 112158], [115250, 115623], [113881, 112748], [113881, 112158], [113881, 115250]],
       "common_name": {"english": "离宫(附室宿)", "native": "Li Gong"}
     },
     {
-      "id": "CON chinese_qing_dynasty 137",
+      "id": "CON chinese_zhongwenxingming 137",
       "lines": [[104746, 105140, 106067]],
       "common_name": {"english": "离瑜", "native": "Li Yu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 138",
+      "id": "CON chinese_zhongwenxingming 138",
       "lines": [[101936, 101847, 101692, 101101]],
       "common_name": {"english": "离珠", "native": "Li Zhu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 139",
+      "id": "CON chinese_zhongwenxingming 139",
       "lines": [[19205, 19513, 20430, 20250]],
       "common_name": {"english": "砺石", "native": "Li Shi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 140",
+      "id": "CON chinese_zhongwenxingming 140",
       "lines": [[80179, 80883]],
       "common_name": {"english": "列肆", "native": "Lie Si"}
     },
     {
-      "id": "CON chinese_qing_dynasty 141",
+      "id": "CON chinese_zhongwenxingming 141",
       "lines": [[54182, 53824, 53807]],
       "common_name": {"english": "灵台", "native": "Ling Tai"}
     },
     {
-      "id": "CON chinese_qing_dynasty 142",
+      "id": "CON chinese_zhongwenxingming 142",
       "lines": [[32439, 33694, 39538, 36547, 23265, 25110]],
       "common_name": {"english": "六甲", "native": "Liu Jia"}
     },
     {
-      "id": "CON chinese_qing_dynasty 143",
+      "id": "CON chinese_zhongwenxingming 143",
       "lines": [[101923, 101984, 102487]],
       "common_name": {"english": "罗堰", "native": "Luo Yan"}
     },
     {
-      "id": "CON chinese_qing_dynasty 144",
+      "id": "CON chinese_zhongwenxingming 144",
       "lines": [[68702, 65314, 64067]],
       "common_name": {"english": "马腹", "native": "Ma Fu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 145",
+      "id": "CON chinese_zhongwenxingming 145",
       "lines": [[60710, 59449, 59196]],
       "common_name": {"english": "马尾", "native": "Ma Wei"}
     },
     {
-      "id": "CON chinese_qing_dynasty 146",
+      "id": "CON chinese_zhongwenxingming 146",
       "lines": [[62322, 61199], [62322, 61585], [62322, 63613]],
       "common_name": {"english": "蜜蜂", "native": "Mi Feng"}
     },
     {
-      "id": "CON chinese_qing_dynasty 147",
+      "id": "CON chinese_zhongwenxingming 147",
       "lines": [[55945, 56647, 56127]],
       "common_name": {"english": "明堂", "native": "Ming Tang"}
     },
     {
-      "id": "CON chinese_qing_dynasty 148",
+      "id": "CON chinese_zhongwenxingming 148",
       "lines": [[50371, 51576, 52419, 50099, 45238]],
       "common_name": {"english": "南船", "native": "Nan Chuan"}
     },
     {
-      "id": "CON chinese_qing_dynasty 149",
+      "id": "CON chinese_zhongwenxingming 149",
       "lines": [[36041, 36188, 37279]],
       "common_name": {"english": "南河", "native": "Nan He"}
     },
     {
-      "id": "CON chinese_qing_dynasty 150",
+      "id": "CON chinese_zhongwenxingming 150",
       "lines": [],
       "common_name": {"english": "东瓯", "native": "Dong Ou"}
     },
     {
-      "id": "CON chinese_qing_dynasty 151",
+      "id": "CON chinese_zhongwenxingming 151",
       "lines": [[66657, 71683]],
       "common_name": {"english": "南门", "native": "Nan Men"}
     },
     {
-      "id": "CON chinese_qing_dynasty 152",
+      "id": "CON chinese_zhongwenxingming 152",
       "lines": [[62423, 63076]],
       "common_name": {"english": "内厨", "native": "Nei Chu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 153",
+      "id": "CON chinese_zhongwenxingming 153",
       "lines": [[41704, 45333, 43903], [46733, 43644, 45455]],
       "common_name": {"english": "内阶", "native": "Nei Jie"}
     },
     {
-      "id": "CON chinese_qing_dynasty 154",
+      "id": "CON chinese_zhongwenxingming 154",
       "lines": [[50218, 49593, 47631, 48742]],
       "common_name": {"english": "内平", "native": "Nei Ping"}
     },
     {
-      "id": "CON chinese_qing_dynasty 155",
+      "id": "CON chinese_zhongwenxingming 155",
       "lines": [[57328, 57380, 58590, 58948]],
       "common_name": {"english": "内屏", "native": "Nei Ping"}
     },
     {
-      "id": "CON chinese_qing_dynasty 156",
+      "id": "CON chinese_zhongwenxingming 156",
       "lines": [[92862, 94481, 94713, 95556, 97295]],
       "common_name": {"english": "辇道", "native": "Nian Dao"}
     },
     {
-      "id": "CON chinese_qing_dynasty 157",
+      "id": "CON chinese_zhongwenxingming 157",
       "lines": [[110130, 110838, 118092, 2484, 3330, 1599, 118322]],
       "common_name": {"english": "鸟喙", "native": "Niao Hui"}
     },
     {
-      "id": "CON chinese_qing_dynasty 158",
+      "id": "CON chinese_zhongwenxingming 158",
       "lines": [[91918, 91918]],
       "common_name": {"english": "农丈人", "native": "Nong Zhang Ren"}
     },
     {
-      "id": "CON chinese_qing_dynasty 159",
+      "id": "CON chinese_zhongwenxingming 159",
       "lines": [[84380, 84606, 85112]],
       "common_name": {"english": "女床", "native": "Nü Chuang"}
     },
     {
-      "id": "CON chinese_qing_dynasty 160",
+      "id": "CON chinese_zhongwenxingming 160",
       "lines": [[87728, 87728]],
       "common_name": {"english": "女史", "native": "Nü Shi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 161",
+      "id": "CON chinese_zhongwenxingming 161",
       "lines": [[113889, 114971, 115830, 116771, 118268]],
       "common_name": {"english": "霹雳", "native": "Pi Li"}
     },
     {
-      "id": "CON chinese_qing_dynasty 162",
+      "id": "CON chinese_zhongwenxingming 162",
       "lines": [[64962, 68895]],
       "common_name": {"english": "平", "native": "Ping"}
     },
     {
-      "id": "CON chinese_qing_dynasty 163",
+      "id": "CON chinese_zhongwenxingming 163",
       "lines": [[64238, 66803]],
       "common_name": {"english": "平道", "native": "Ping Dao"}
     },
     {
-      "id": "CON chinese_qing_dynasty 164",
+      "id": "CON chinese_zhongwenxingming 164",
       "lines": [[24305, 23685]],
       "common_name": {"english": "屏", "native": "Ping"}
     },
     {
-      "id": "CON chinese_qing_dynasty 165",
+      "id": "CON chinese_zhongwenxingming 165",
       "lines": [[81497, 79992, 79101, 77760, 75973, 75411, 74666]],
       "common_name": {"english": "七公", "native": "Qi Gong"}
     },
     {
-      "id": "CON chinese_qing_dynasty 166",
+      "id": "CON chinese_zhongwenxingming 166",
       "lines": [],
       "common_name": {"english": "器府", "native": "Qi Fu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 167",
+      "id": "CON chinese_zhongwenxingming 167",
       "lines": [[76297, 75141, 73334, 73273, 74117, 75264, 74911, 73807, 72683, 71860]],
       "common_name": {"english": "骑官", "native": "Qi Guan"}
     },
     {
-      "id": "CON chinese_qing_dynasty 168",
+      "id": "CON chinese_zhongwenxingming 168",
       "lines": [[74376, 74376]],
       "common_name": {"english": "骑阵将军", "native": "Qi Zhen Jiang Jun"}
     },
     {
-      "id": "CON chinese_qing_dynasty 169",
+      "id": "CON chinese_zhongwenxingming 169",
       "lines": [[110273, 110003]],
       "common_name": {"english": "泣", "native": "Qi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 170",
+      "id": "CON chinese_zhongwenxingming 170",
       "lines": [],
       "common_name": {"english": "天稷", "native": "Tian Ji"}
     },
     {
-      "id": "CON chinese_qing_dynasty 171",
+      "id": "CON chinese_zhongwenxingming 171",
       "lines": [[57936, 58158, 56280, 56332, 56343, 56452, 56922]],
       "common_name": {"english": "青丘", "native": "Qing Qiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 172",
+      "id": "CON chinese_zhongwenxingming 172",
       "lines": [[34724, 32578]],
       "common_name": {"english": "阙丘", "native": "Que Qiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 173",
+      "id": "CON chinese_zhongwenxingming 173",
       "lines": [[106140, 105502, 107348, 107472]],
       "common_name": {"english": "人", "native": "Ren"}
     },
     {
-      "id": "CON chinese_qing_dynasty 174",
+      "id": "CON chinese_zhongwenxingming 174",
       "lines": [[76880, 76880]],
       "common_name": {"english": "日", "native": "Ri"}
     },
     {
-      "id": "CON chinese_qing_dynasty 175",
+      "id": "CON chinese_zhongwenxingming 175",
       "lines": [[61624, 61968, 62443]],
       "common_name": {"english": "三公(太微垣)", "native": "San Gong(Tai Wei Yuan)"}
     },
     {
-      "id": "CON chinese_qing_dynasty 176",
+      "id": "CON chinese_zhongwenxingming 176",
       "lines": [[66315, 66234, 64906]],
       "common_name": {"english": "三公(紫微垣)", "native": "San gong(Zi Wei Yuan)"}
     },
     {
-      "id": "CON chinese_qing_dynasty 177",
+      "id": "CON chinese_zhongwenxingming 177",
       "lines": [[74946, 77952, 82273, 74946]],
       "common_name": {"english": "三角形", "native": "San Jiao Xing"}
     },
     {
-      "id": "CON chinese_qing_dynasty 178",
+      "id": "CON chinese_zhongwenxingming 178",
       "lines": [[44390, 49193, 44857]],
       "common_name": {"english": "三师", "native": "San Shi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 179",
+      "id": "CON chinese_zhongwenxingming 179",
       "lines": [[44471, 50372], [50801, 55219]],
       "common_name": {"english": "三台", "native": "San Tai"}
     },
     {
-      "id": "CON chinese_qing_dynasty 180",
+      "id": "CON chinese_zhongwenxingming 180",
       "lines": [[85805, 80650], [85805, 81660], [85805, 80161], [85805, 82860]],
       "common_name": {"english": "尚书", "native": "Shang Shu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 181",
+      "id": "CON chinese_zhongwenxingming 181",
       "lines": [[54347, 53417, 52457, 52686]],
       "common_name": {"english": "少微", "native": "Shao Wei"}
     },
     {
-      "id": "CON chinese_qing_dynasty 182",
+      "id": "CON chinese_zhongwenxingming 182",
       "lines": [[12876, 12394, 11001, 8928]],
       "common_name": {"english": "蛇腹", "native": "She Fu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 183",
+      "id": "CON chinese_zhongwenxingming 183",
       "lines": [[9236, 17440]],
       "common_name": {"english": "蛇首", "native": "She Shou"}
     },
     {
-      "id": "CON chinese_qing_dynasty 184",
+      "id": "CON chinese_zhongwenxingming 184",
       "lines": [[2021, 110078, 107089, 104043]],
       "common_name": {"english": "蛇尾", "native": "She Wei"}
     },
     {
-      "id": "CON chinese_qing_dynasty 185",
+      "id": "CON chinese_zhongwenxingming 185",
       "lines": [[82691, 82691]],
       "common_name": {"english": "神宫(附尾宿)", "native": "Shen Gong"}
     },
     {
-      "id": "CON chinese_qing_dynasty 186",
+      "id": "CON chinese_zhongwenxingming 186",
       "lines": [[104019, 103703], [104139, 105143], [105515, 106568], [104429, 104452]],
       "common_name": {"english": "十二国", "native": "Shi Er Guo"}
     },
     {
-      "id": "CON chinese_qing_dynasty 187",
+      "id": "CON chinese_zhongwenxingming 187",
       "lines": [[61084, 60718], [62434, 59747]],
       "common_name": {"english": "十字架", "native": "Shi Zi Jia"}
     },
     {
-      "id": "CON chinese_qing_dynasty 188",
+      "id": "CON chinese_zhongwenxingming 188",
       "lines": [[27204, 27204]],
       "common_name": {"english": "屎", "native": "Shi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 189",
+      "id": "CON chinese_zhongwenxingming 189",
       "lines": [[86284, 86565], [88404, 84880], [85397, 86768]],
       "common_name": {"english": "市楼", "native": "Shi Lou"}
     },
     {
-      "id": "CON chinese_qing_dynasty 190",
+      "id": "CON chinese_zhongwenxingming 190",
       "lines": [[51685, 51556, 52638, 53229]],
       "common_name": {"english": "势", "native": "Shi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 191",
+      "id": "CON chinese_zhongwenxingming 191",
       "lines": [[29038, 29426, 29704, 29434]],
       "common_name": {"english": "水府", "native": "Shui Fu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 192",
+      "id": "CON chinese_zhongwenxingming 192",
       "lines": [[7588, 5348, 3405]],
       "common_name": {"english": "水委", "native": "Shui Wei"}
     },
     {
-      "id": "CON chinese_qing_dynasty 193",
+      "id": "CON chinese_zhongwenxingming 193",
       "lines": [[36425, 37921, 39567, 40167]],
       "common_name": {"english": "水位", "native": "Shui Wei"}
     },
     {
-      "id": "CON chinese_qing_dynasty 194",
+      "id": "CON chinese_zhongwenxingming 194",
       "lines": [[104521, 104858]],
       "common_name": {"english": "司非", "native": "Si Fei"}
     },
     {
-      "id": "CON chinese_qing_dynasty 195",
+      "id": "CON chinese_zhongwenxingming 195",
       "lines": [[28237, 28734, 28716, 27913]],
       "common_name": {"english": "司怪", "native": "Si Guai"}
     },
     {
-      "id": "CON chinese_qing_dynasty 196",
+      "id": "CON chinese_zhongwenxingming 196",
       "lines": [[107575, 106944]],
       "common_name": {"english": "司禄", "native": "Si Lu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 197",
+      "id": "CON chinese_zhongwenxingming 197",
       "lines": [[106942, 107144]],
       "common_name": {"english": "司命", "native": "Si Ming"}
     },
     {
-      "id": "CON chinese_qing_dynasty 198",
+      "id": "CON chinese_zhongwenxingming 198",
       "lines": [[105570, 105413]],
       "common_name": {"english": "司危", "native": "Si wei"}
     },
     {
-      "id": "CON chinese_qing_dynasty 199",
+      "id": "CON chinese_zhongwenxingming 199",
       "lines": [[34033, 32533, 31216, 30419]],
       "common_name": {"english": "四渎", "native": "Si Du"}
     },
     {
-      "id": "CON chinese_qing_dynasty 200",
+      "id": "CON chinese_zhongwenxingming 200",
       "lines": [[50482, 51384, 51502, 58868]],
       "common_name": {"english": "四辅", "native": "Si Fu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 201",
+      "id": "CON chinese_zhongwenxingming 201",
       "lines": [[29807, 29034]],
       "common_name": {"english": "孙", "native": "Sun"}
     },
     {
-      "id": "CON chinese_qing_dynasty 202",
+      "id": "CON chinese_zhongwenxingming 202",
       "lines": [[57399, 57399]],
       "common_name": {"english": "太阳守", "native": "Tai Yang Shou"}
     },
     {
-      "id": "CON chinese_qing_dynasty 203",
+      "id": "CON chinese_zhongwenxingming 203",
       "lines": [[65435, 65435]],
       "common_name": {"english": "太乙", "native": "Tai Yi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 204",
+      "id": "CON chinese_zhongwenxingming 204",
       "lines": [[57565, 57565]],
       "common_name": {"english": "太子", "native": "Tai Zi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 205",
+      "id": "CON chinese_zhongwenxingming 205",
       "lines": [[54539, 54539]],
       "common_name": {"english": "太尊", "native": "Tai Zun"}
     },
     {
-      "id": "CON chinese_qing_dynasty 206",
+      "id": "CON chinese_zhongwenxingming 206",
       "lines": [[111169, 110609, 107533, 107136, 105777, 105064, 106886, 108165, 109857, 110538, 118243, 117863, 117301, 115990, 111674, 113919, 114570, 115022, 116584, 117221, 116805, 116631]],
       "common_name": {"english": "螣蛇", "native": "Teng She"}
     },
     {
-      "id": "CON chinese_qing_dynasty 207",
+      "id": "CON chinese_zhongwenxingming 207",
       "lines": [[15696, 15696]],
       "common_name": {"english": "天阿", "native": "Tian E"}
     },
     {
-      "id": "CON chinese_qing_dynasty 208",
+      "id": "CON chinese_zhongwenxingming 208",
       "lines": [[87585, 85829, 85670, 87833, 86414]],
       "common_name": {"english": "天棓", "native": "Tian Bang"}
     },
     {
-      "id": "CON chinese_qing_dynasty 209",
+      "id": "CON chinese_zhongwenxingming 209",
       "lines": [[91117, 91726, 91845, 92175, 93026, 93429, 93805, 93717, 93526]],
       "common_name": {"english": "天弁", "native": "Tian Bian"}
     },
     {
-      "id": "CON chinese_qing_dynasty 210",
+      "id": "CON chinese_zhongwenxingming 210",
       "lines": [[1562, 5364, 6537, 8645, 8102, 9326]],
       "common_name": {"english": "天仓", "native": "Tian Cang"}
     },
     {
-      "id": "CON chinese_qing_dynasty 211",
+      "id": "CON chinese_zhongwenxingming 211",
       "lines": [[17886, 17886]],
       "common_name": {"english": "天谗", "native": "Tian Chan"}
     },
     {
-      "id": "CON chinese_qing_dynasty 212",
+      "id": "CON chinese_zhongwenxingming 212",
       "lines": [[94376, 96100, 97433, 98702, 98583, 95081]],
       "common_name": {"english": "天厨", "native": "Tian Chu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 213",
+      "id": "CON chinese_zhongwenxingming 213",
       "lines": [[13268, 14328, 15863, 16826, 17358, 19343, 19812, 20156, 19949]],
       "common_name": {"english": "天船", "native": "Tian Chuan"}
     },
     {
-      "id": "CON chinese_qing_dynasty 214",
+      "id": "CON chinese_zhongwenxingming 214",
       "lines": [[69373, 74605, 77277], [79600, 73199, 72181]],
       "common_name": {"english": "天床", "native": "Tian Chuang"}
     },
     {
-      "id": "CON chinese_qing_dynasty 215",
+      "id": "CON chinese_zhongwenxingming 215",
       "lines": [[9640, 8068, 7607, 6999, 7719, 7513, 7818, 9021, 10064, 10670, 10644, 9640]],
       "common_name": {"english": "天大将军", "native": "Tian Da Jiang Jun"}
     },
     {
-      "id": "CON chinese_qing_dynasty 216",
+      "id": "CON chinese_zhongwenxingming 216",
       "lines": [[99473, 98844, 97980, 97804]],
       "common_name": {"english": "天桴", "native": "Tian Fu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 217",
+      "id": "CON chinese_zhongwenxingming 217",
       "lines": [[76470, 76600]],
       "common_name": {"english": "天辐", "native": "Tian Fu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 218",
+      "id": "CON chinese_zhongwenxingming 218",
       "lines": [[113246, 113246]],
       "common_name": {"english": "天纲", "native": "Tian Gang"}
     },
     {
-      "id": "CON chinese_qing_dynasty 219",
+      "id": "CON chinese_zhongwenxingming 219",
       "lines": [[23497, 22565, 23949, 24822, 23497]],
       "common_name": {"english": "天高", "native": "Tian Gao"}
     },
     {
-      "id": "CON chinese_qing_dynasty 220",
+      "id": "CON chinese_zhongwenxingming 220",
       "lines": [[102253, 99731, 101093, 102422, 105199, 108917, 110817, 112724, 115088]],
       "common_name": {"english": "天钩", "native": "Tian Gou"}
     },
     {
-      "id": "CON chinese_qing_dynasty 221",
+      "id": "CON chinese_zhongwenxingming 221",
       "lines": [[42312, 42884, 43603, 42515, 42828, 43409, 43825]],
       "common_name": {"english": "天狗", "native": "Tian Gou"}
     },
     {
-      "id": "CON chinese_qing_dynasty 222",
+      "id": "CON chinese_zhongwenxingming 222",
       "lines": [[26451, 26451]],
       "common_name": {"english": "天关", "native": "Tian Guan"}
     },
     {
-      "id": "CON chinese_qing_dynasty 223",
+      "id": "CON chinese_zhongwenxingming 223",
       "lines": [[109693, 109693]],
       "common_name": {"english": "天皇大帝", "native": "Tian Huang Da Di"}
     },
     {
-      "id": "CON chinese_qing_dynasty 224",
+      "id": "CON chinese_zhongwenxingming 224",
       "lines": [[24879, 25541], [24879, 25292], [24879, 24340], [24879, 24504]],
       "common_name": {"english": "天潢", "native": "Tian Huang"}
     },
     {
-      "id": "CON chinese_qing_dynasty 225",
+      "id": "CON chinese_zhongwenxingming 225",
       "lines": [[4257, 4371, 3559, 3455]],
       "common_name": {"english": "天溷", "native": "Tian Hun"}
     },
     {
-      "id": "CON chinese_qing_dynasty 226",
+      "id": "CON chinese_zhongwenxingming 226",
       "lines": [[96950, 97290]],
       "common_name": {"english": "天鸡", "native": "Tian Ji"}
     },
     {
-      "id": "CON chinese_qing_dynasty 227",
+      "id": "CON chinese_zhongwenxingming 227",
       "lines": [[44816, 44816]],
       "common_name": {"english": "天记", "native": "Tian Ji"}
     },
     {
-      "id": "CON chinese_qing_dynasty 228",
+      "id": "CON chinese_zhongwenxingming 228",
       "lines": [[80181, 81693, 83207, 83313, 83462, 84573, 86178, 87270, 87808]],
       "common_name": {"english": "天纪", "native": "Tian Ji"}
     },
     {
-      "id": "CON chinese_qing_dynasty 229",
+      "id": "CON chinese_zhongwenxingming 229",
       "lines": [[84314, 84405, 84970, 85340]],
       "common_name": {"english": "天江", "native": "Tian Jiang"}
     },
     {
-      "id": "CON chinese_qing_dynasty 230",
+      "id": "CON chinese_zhongwenxingming 230",
       "lines": [[20641, 19990]],
       "common_name": {"english": "天街", "native": "Tian Jie"}
     },
     {
-      "id": "CON chinese_qing_dynasty 231",
+      "id": "CON chinese_zhongwenxingming 231",
       "lines": [[20732, 21273], [20732, 20219, 20901, 21589, 21735, 21402, 20522]],
       "common_name": {"english": "天节", "native": "Tian Jie"}
     },
     {
-      "id": "CON chinese_qing_dynasty 232",
+      "id": "CON chinese_zhongwenxingming 232",
       "lines": [[104732, 105138, 104887, 103413, 102098, 99639, 97165, 100453, 102488, 104732]],
       "common_name": {"english": "天津", "native": "Tian Jin"}
     },
     {
-      "id": "CON chinese_qing_dynasty 233",
+      "id": "CON chinese_zhongwenxingming 233",
       "lines": [[1366, 1686, 1473]],
       "common_name": {"english": "天厩", "native": "Tian Jiu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 234",
+      "id": "CON chinese_zhongwenxingming 234",
       "lines": [[32349, 32349]],
       "common_name": {"english": "天狼", "native": "Tian Lang"}
     },
     {
-      "id": "CON chinese_qing_dynasty 235",
+      "id": "CON chinese_zhongwenxingming 235",
       "lines": [[53295, 56034], [53721, 56148], [53838, 55560]],
       "common_name": {"english": "天牢", "native": "Tian Lao"}
     },
     {
-      "id": "CON chinese_qing_dynasty 236",
+      "id": "CON chinese_zhongwenxingming 236",
       "lines": [[106786, 107382, 107487, 107517, 107527, 105668, 104974, 103728, 103640, 104459, 105019, 105574, 105761]],
       "common_name": {"english": "天垒城", "native": "Tian Lei Cheng"}
     },
     {
-      "id": "CON chinese_qing_dynasty 237",
+      "id": "CON chinese_zhongwenxingming 237",
       "lines": [[55148, 55797, 58181, 58259, 55148]],
       "common_name": {"english": "天理", "native": "Tian Li"}
     },
     {
-      "id": "CON chinese_qing_dynasty 238",
+      "id": "CON chinese_zhongwenxingming 238",
       "lines": [[16369, 16322, 16083, 15900]],
       "common_name": {"english": "天廪", "native": "Tian Lin"}
     },
     {
-      "id": "CON chinese_qing_dynasty 239",
+      "id": "CON chinese_zhongwenxingming 239",
       "lines": [[64407, 65639]],
       "common_name": {"english": "天门", "native": "Tian Men"}
     },
     {
-      "id": "CON chinese_qing_dynasty 240",
+      "id": "CON chinese_zhongwenxingming 240",
       "lines": [[108952, 107608, 107380, 109285, 109422, 108952]],
       "common_name": {"english": "天钱", "native": "Tian Qian"}
     },
     {
-      "id": "CON chinese_qing_dynasty 241",
+      "id": "CON chinese_zhongwenxingming 241",
       "lines": [[69481, 69713, 70497]],
       "common_name": {"english": "天枪", "native": "Tian Qiang"}
     },
     {
-      "id": "CON chinese_qing_dynasty 242",
+      "id": "CON chinese_zhongwenxingming 242",
       "lines": [[14135, 15619, 13954, 12828, 10324, 11484, 12093, 12706, 12387, 11791, 11046, 10234, 10305]],
       "common_name": {"english": "天囷", "native": "Tian Qun"}
     },
     {
-      "id": "CON chinese_qing_dynasty 243",
+      "id": "CON chinese_zhongwenxingming 243",
       "lines": [[77516, 77516]],
       "common_name": {"english": "天乳", "native": "Tian Ru"}
     },
     {
-      "id": "CON chinese_qing_dynasty 244",
+      "id": "CON chinese_zhongwenxingming 244",
       "lines": [[39953, 42570, 42913, 44098, 45941, 46701]],
       "common_name": {"english": "天社", "native": "Tian She"}
     },
     {
-      "id": "CON chinese_qing_dynasty 245",
+      "id": "CON chinese_zhongwenxingming 245",
       "lines": [[68520, 66200]],
       "common_name": {"english": "天田(角宿)", "native": "Tian Tian(Jiao Xiu)"}
     },
     {
-      "id": "CON chinese_qing_dynasty 246",
+      "id": "CON chinese_zhongwenxingming 246",
       "lines": [[104750, 102978], [104750, 104234], [102978, 102485]],
       "common_name": {"english": "天田(牛宿)", "native": "Tian Tian(Niu Xiu)"}
     },
     {
-      "id": "CON chinese_qing_dynasty 247",
+      "id": "CON chinese_zhongwenxingming 247",
       "lines": [[49812, 49900, 50414]],
       "common_name": {"english": "天相", "native": "Tian Xiang"}
     },
     {
-      "id": "CON chinese_qing_dynasty 248",
+      "id": "CON chinese_zhongwenxingming 248",
       "lines": [[67627, 67627]],
       "common_name": {"english": "天乙", "native": "Tian Yi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 249",
+      "id": "CON chinese_zhongwenxingming 249",
       "lines": [[16707, 15110], [16707, 15737], [16707, 14838], [16707, 16181]],
       "common_name": {"english": "天阴", "native": "Tian Yin"}
     },
     {
-      "id": "CON chinese_qing_dynasty 250",
+      "id": "CON chinese_zhongwenxingming 250",
       "lines": [[10320, 11918, 13147]],
       "common_name": {"english": "天庾", "native": "Tian Yu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 251",
+      "id": "CON chinese_zhongwenxingming 251",
       "lines": [[95294, 95241, 95347]],
       "common_name": {"english": "天渊", "native": "Tian Yuan"}
     },
     {
-      "id": "CON chinese_qing_dynasty 252",
+      "id": "CON chinese_zhongwenxingming 252",
       "lines": [[7083, 9007, 10602, 11407, 12413, 13847, 17351, 17797, 17874, 20042, 20535, 21393, 21248]],
       "common_name": {"english": "天园", "native": "Tian Yuan"}
     },
     {
-      "id": "CON chinese_qing_dynasty 253",
+      "id": "CON chinese_zhongwenxingming 253",
       "lines": [[18543, 17593, 17378, 16537, 15197, 13701, 12770, 12843, 13288, 14146, 15474, 16611, 17651, 17717, 18216, 18673]],
       "common_name": {"english": "天苑", "native": "Tian Yuan"}
     },
     {
-      "id": "CON chinese_qing_dynasty 254",
+      "id": "CON chinese_zhongwenxingming 254",
       "lines": [[87706, 87099, 86736, 86352, 86060, 85755, 85783, 87072]],
       "common_name": {"english": "天籥", "native": "Tian Yue"}
     },
     {
-      "id": "CON chinese_qing_dynasty 255",
+      "id": "CON chinese_zhongwenxingming 255",
       "lines": [[102208, 104105, 98401, 94083, 88127]],
       "common_name": {"english": "天柱", "native": "Tian Zhu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 256",
+      "id": "CON chinese_zhongwenxingming 256",
       "lines": [[35846, 35550, 33927]],
       "common_name": {"english": "天樽", "native": "Tian Zun"}
     },
     {
-      "id": "CON chinese_qing_dynasty 257",
+      "id": "CON chinese_zhongwenxingming 257",
       "lines": [[90139, 88657]],
       "common_name": {"english": "屠肆", "native": "Tu Si"}
     },
     {
-      "id": "CON chinese_qing_dynasty 258",
+      "id": "CON chinese_zhongwenxingming 258",
       "lines": [[194, 2025]],
       "common_name": {"english": "土公", "native": "Tu Gong"}
     },
     {
-      "id": "CON chinese_qing_dynasty 259",
+      "id": "CON chinese_zhongwenxingming 259",
       "lines": [[110386, 110986]],
       "common_name": {"english": "土公吏", "native": "Tu Gong Li"}
     },
     {
-      "id": "CON chinese_qing_dynasty 260",
+      "id": "CON chinese_zhongwenxingming 260",
       "lines": [[3419, 3419]],
       "common_name": {"english": "土司空", "native": "Tu Si Kong"}
     },
     {
-      "id": "CON chinese_qing_dynasty 261",
+      "id": "CON chinese_zhongwenxingming 261",
       "lines": [[41375, 42835, 43305, 43488, 42811, 42119]],
       "common_name": {"english": "外厨", "native": "Wai Chu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 262",
+      "id": "CON chinese_zhongwenxingming 262",
       "lines": [[9487, 8833, 7884, 7007, 5737, 4906, 3786]],
       "common_name": {"english": "外屏", "native": "Wai Ping"}
     },
     {
-      "id": "CON chinese_qing_dynasty 263",
+      "id": "CON chinese_zhongwenxingming 263",
       "lines": [[746, 2599, 3821, 3179, 2505]],
       "common_name": {"english": "王良", "native": "Wang Liang"}
     },
     {
-      "id": "CON chinese_qing_dynasty 264",
+      "id": "CON chinese_zhongwenxingming 264",
       "lines": [],
       "common_name": {"english": "土司空(奎宿)", "native": "Tu Si Kong"}
     },
     {
-      "id": "CON chinese_qing_dynasty 265",
+      "id": "CON chinese_zhongwenxingming 265",
       "lines": [[48034, 48319, 48402, 46853, 44901, 45493]],
       "common_name": {"english": "文昌", "native": "Wen Chang"}
     },
     {
-      "id": "CON chinese_qing_dynasty 266",
+      "id": "CON chinese_zhongwenxingming 266",
       "lines": [[23015, 24608, 28360, 28380, 25428]],
       "common_name": {"english": "五车", "native": "Wu Che"}
     },
     {
-      "id": "CON chinese_qing_dynasty 267",
+      "id": "CON chinese_zhongwenxingming 267",
       "lines": [[14417, 9727], [14417, 13055], [14417, 15547], [14417, 19461]],
       "common_name": {"english": "五帝内座", "native": "Wu Di Nei Zuo"}
     },
     {
-      "id": "CON chinese_qing_dynasty 268",
+      "id": "CON chinese_zhongwenxingming 268",
       "lines": [[57632, 57646], [57632, 57007], [57632, 58159], [57632, 57779]],
       "common_name": {"english": "五帝座", "native": "Wu Di Zuo"}
     },
     {
-      "id": "CON chinese_qing_dynasty 269",
+      "id": "CON chinese_zhongwenxingming 269",
       "lines": [[33018, 34693, 36046, 36962, 38538]],
       "common_name": {"english": "五诸侯(井宿)", "native": "Wu Zhu Hou(Jing Xiu)"}
     },
     {
-      "id": "CON chinese_qing_dynasty 270",
+      "id": "CON chinese_zhongwenxingming 270",
       "lines": [[63948, 63355, 62356, 60918, 59819]],
       "common_name": {"english": "五诸侯(太微垣)", "native": "Wu Zhu Hou(Tai Wei Yuan)"}
     },
     {
-      "id": "CON chinese_qing_dynasty 271",
+      "id": "CON chinese_zhongwenxingming 271",
       "lines": [[78727, 78207, 77853, 77060]],
       "common_name": {"english": "西咸", "native": "Xi Xian"}
     },
     {
-      "id": "CON chinese_qing_dynasty 272",
+      "id": "CON chinese_zhongwenxingming 272",
       "lines": [[94779, 95853, 96441, 96895]],
       "common_name": {"english": "奚仲", "native": "Xi Zhong"}
     },
     {
-      "id": "CON chinese_qing_dynasty 273",
+      "id": "CON chinese_zhongwenxingming 273",
       "lines": [[25048, 25810, 24813]],
       "common_name": {"english": "咸池", "native": "Xian Chi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 274",
+      "id": "CON chinese_zhongwenxingming 274",
       "lines": [[60485, 60485]],
       "common_name": {"english": "相", "native": "Xiang"}
     },
     {
-      "id": "CON chinese_qing_dynasty 275",
+      "id": "CON chinese_zhongwenxingming 275",
       "lines": [[60000, 58484, 51839, 52633, 46928, 46107, 43012, 40888, 36982]],
       "common_name": {"english": "小斗", "native": "Xiao Dou"}
     },
     {
-      "id": "CON chinese_qing_dynasty 276",
+      "id": "CON chinese_zhongwenxingming 276",
       "lines": [[58519, 58519]],
       "common_name": {"english": "幸臣", "native": "Xing Chen"}
     },
     {
-      "id": "CON chinese_qing_dynasty 277",
+      "id": "CON chinese_zhongwenxingming 277",
       "lines": [[110023, 110578, 111710, 113345]],
       "common_name": {"english": "虚梁", "native": "Xu Liang"}
     },
     {
-      "id": "CON chinese_qing_dynasty 278",
+      "id": "CON chinese_zhongwenxingming 278",
       "lines": [[44248, 44700, 45688, 45860, 47617, 47701, 46146, 46750, 47908, 48455, 50335, 50583, 49583, 49669, 47508], [49669, 51624], [49669, 49637]],
       "common_name": {"english": "轩辕", "native": "Xuan Yuan"}
     },
     {
-      "id": "CON chinese_qing_dynasty 279",
+      "id": "CON chinese_zhongwenxingming 279",
       "lines": [[69732, 69732]],
       "common_name": {"english": "玄戈", "native": "Xuan Ge"}
     },
     {
-      "id": "CON chinese_qing_dynasty 280",
+      "id": "CON chinese_zhongwenxingming 280",
       "lines": [[29655, 29655]],
       "common_name": {"english": "钺(附井宿)", "native": "Yue"}
     },
     {
-      "id": "CON chinese_qing_dynasty 281",
+      "id": "CON chinese_zhongwenxingming 281",
       "lines": [[71865, 72010]],
       "common_name": {"english": "阳门", "native": "Yang Men"}
     },
     {
-      "id": "CON chinese_qing_dynasty 282",
+      "id": "CON chinese_zhongwenxingming 282",
       "lines": [[31592, 31592]],
       "common_name": {"english": "野鸡", "native": "Ye Ji"}
     },
     {
-      "id": "CON chinese_qing_dynasty 283",
+      "id": "CON chinese_zhongwenxingming 283",
       "lines": [[60172, 60172]],
       "common_name": {"english": "谒者", "native": "Ye Zhe"}
     },
     {
-      "id": "CON chinese_qing_dynasty 284",
+      "id": "CON chinese_zhongwenxingming 284",
       "lines": [[84969, 84979, 81852, 81065, 70638], [81852, 80047, 69896], [81852, 72370, 70248]],
       "common_name": {"english": "异雀", "native": "Yi Que"}
     },
     {
-      "id": "CON chinese_qing_dynasty 285",
+      "id": "CON chinese_zhongwenxingming 285",
       "lines": [[51734, 51808]],
       "common_name": {"english": "阴德", "native": "Yin De"}
     },
     {
-      "id": "CON chinese_qing_dynasty 286",
+      "id": "CON chinese_zhongwenxingming 286",
       "lines": [[6706, 7097, 7535, 8198, 7710]],
       "common_name": {"english": "右更", "native": "You Geng"}
     },
     {
-      "id": "CON chinese_qing_dynasty 287",
+      "id": "CON chinese_zhongwenxingming 287",
       "lines": [[96229, 96665, 95501, 95585, 96468, 96392, 96556, 96483, 97928]],
       "common_name": {"english": "右旗", "native": "You Qi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 288",
+      "id": "CON chinese_zhongwenxingming 288",
       "lines": [[67927, 67275, 67459]],
       "common_name": {"english": "右摄提", "native": "You She Ti"}
     },
     {
-      "id": "CON chinese_qing_dynasty 289",
+      "id": "CON chinese_zhongwenxingming 289",
       "lines": [[87616, 87616]],
       "common_name": {"english": "鱼", "native": "Yu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 290",
+      "id": "CON chinese_zhongwenxingming 290",
       "lines": [[108797, 109332, 109786], [110391, 110529, 109789], [110641, 111954, 112862], [112362, 111449, 112529], [112211, 111539, 110778], [111086, 110602, 110179], [111200, 111843, 112161], [112615, 113031, 112716], [112542, 113136, 113148], [114341, 114375, 114119], [116247, 116118, 115669], [115438, 115404, 115125], [115115, 115033, 114855], [114164, 114054, 113996], [114939, 116758, 116971]],
       "common_name": {"english": "羽林军", "native": "Yu Lin Jun"}
     },
     {
-      "id": "CON chinese_qing_dynasty 291",
+      "id": "CON chinese_zhongwenxingming 291",
       "lines": [[23972, 23364, 23875, 24674]],
       "common_name": {"english": "玉井", "native": "Yu Jing"}
     },
     {
-      "id": "CON chinese_qing_dynasty 292",
+      "id": "CON chinese_zhongwenxingming 292",
       "lines": [[94648, 92112, 85852], [94648, 89937]],
       "common_name": {"english": "御女", "native": "Yu Nü"}
     },
     {
-      "id": "CON chinese_qing_dynasty 293",
+      "id": "CON chinese_zhongwenxingming 293",
       "lines": [[19038, 19038]],
       "common_name": {"english": "月", "native": "Yue"}
     },
     {
-      "id": "CON chinese_qing_dynasty 294",
+      "id": "CON chinese_zhongwenxingming 294",
       "lines": [[21683, 21683]],
       "common_name": {"english": "附耳(附毕宿)", "native": "Fu Er"}
     },
     {
-      "id": "CON chinese_qing_dynasty 295",
+      "id": "CON chinese_zhongwenxingming 295",
       "lines": [[115738, 115951, 117491, 116928]],
       "common_name": {"english": "云雨", "native": "Yun Yu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 296",
+      "id": "CON chinese_zhongwenxingming 296",
       "lines": [[110991, 109492, 109556, 107259, 107418]],
       "common_name": {"english": "造父", "native": "Zao Fu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 297",
+      "id": "CON chinese_zhongwenxingming 297",
       "lines": [[51585, 52689, 52911, 51775]],
       "common_name": {"english": "长垣", "native": "Chang Yuan"}
     },
     {
-      "id": "CON chinese_qing_dynasty 298",
+      "id": "CON chinese_zhongwenxingming 298",
       "lines": [[26634, 25859]],
       "common_name": {"english": "丈人", "native": "Zhang Ren"}
     },
     {
-      "id": "CON chinese_qing_dynasty 299",
+      "id": "CON chinese_zhongwenxingming 299",
       "lines": [[71075, 71075]],
       "common_name": {"english": "招摇", "native": "Zhao Yao"}
     },
     {
-      "id": "CON chinese_qing_dynasty 300",
+      "id": "CON chinese_zhongwenxingming 300",
       "lines": [[66198, 66198]],
       "common_name": {"english": "辅(附北斗)", "native": "Fu"}
     },
     {
-      "id": "CON chinese_qing_dynasty 301",
+      "id": "CON chinese_zhongwenxingming 301",
       "lines": [[69682, 71304, 71652, 71974, 72929, 73714]],
       "common_name": {"english": "折威", "native": "Zhe Wei"}
     },
     {
-      "id": "CON chinese_qing_dynasty 302",
+      "id": "CON chinese_zhongwenxingming 302",
       "lines": [[72571, 73566, 74857]],
       "common_name": {"english": "阵车", "native": "Zhen Che"}
     },
     {
-      "id": "CON chinese_qing_dynasty 303",
+      "id": "CON chinese_zhongwenxingming 303",
       "lines": [[59199, 59199]],
       "common_name": {"english": "右辖(附轸宿)", "native": "You Xia"}
     },
     {
-      "id": "CON chinese_qing_dynasty 304",
+      "id": "CON chinese_zhongwenxingming 304",
       "lines": [[91919, 91262, 91971]],
       "common_name": {"english": "织女", "native": "Zhi Nü"}
     },
     {
-      "id": "CON chinese_qing_dynasty 305",
+      "id": "CON chinese_zhongwenxingming 305",
       "lines": [[61174, 61174]],
       "common_name": {"english": "左辖(附轸宿)", "native": "Zuo Xia"}
     },
     {
-      "id": "CON chinese_qing_dynasty 306",
+      "id": "CON chinese_zhongwenxingming 306",
       "lines": [[64394, 63462, 64022]],
       "common_name": {"english": "周鼎", "native": "Zhou Ding"}
     },
     {
-      "id": "CON chinese_qing_dynasty 307",
+      "id": "CON chinese_zhongwenxingming 307",
       "lines": [[27830, 26640, 25695, 23900, 23068, 21881]],
       "common_name": {"english": "诸王", "native": "Zhu Wang"}
     },
     {
-      "id": "CON chinese_qing_dynasty 308",
+      "id": "CON chinese_zhongwenxingming 308",
       "lines": [[23416, 23453], [23416, 23767], [27639, 27673, 27483], [25984, 26536, 26658]],
       "common_name": {"english": "柱(毕宿)", "native": "Zhu(Bi Xiu)"}
     },
     {
-      "id": "CON chinese_qing_dynasty 309",
+      "id": "CON chinese_zhongwenxingming 309",
       "lines": [[70300, 70090], [68523, 68282], [69996, 70574], [67786, 67669, 67153], [65032, 65109]],
       "common_name": {"english": "柱(角宿)", "native": "Zhu(Jiao Xiu)"}
     },
     {
-      "id": "CON chinese_qing_dynasty 310",
+      "id": "CON chinese_zhongwenxingming 310",
       "lines": [[89908, 89908]],
       "common_name": {"english": "柱史", "native": "Zhu Shi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 311",
+      "id": "CON chinese_zhongwenxingming 311",
       "lines": [[27810, 27628]],
       "common_name": {"english": "子", "native": "Zi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 312",
+      "id": "CON chinese_zhongwenxingming 312",
       "lines": [[92043, 92161]],
       "common_name": {"english": "宗", "native": "Zong"}
     },
     {
-      "id": "CON chinese_qing_dynasty 313",
+      "id": "CON chinese_zhongwenxingming 313",
       "lines": [[88149, 88192, 88290, 88601]],
       "common_name": {"english": "宗人", "native": "Zong Ren"}
     },
     {
-      "id": "CON chinese_qing_dynasty 314",
+      "id": "CON chinese_zhongwenxingming 314",
       "lines": [[86742, 87108]],
       "common_name": {"english": "宗正", "native": "Zong Zheng"}
     },
     {
-      "id": "CON chinese_qing_dynasty 315",
+      "id": "CON chinese_zhongwenxingming 315",
       "lines": [[12332, 12640, 12803, 13327, 13165]],
       "common_name": {"english": "左更", "native": "Zuo Geng"}
     },
     {
-      "id": "CON chinese_qing_dynasty 316",
+      "id": "CON chinese_zhongwenxingming 316",
       "lines": [[96757, 96837, 97365, 97496, 98337, 98438, 98234, 98754, 99742]],
       "common_name": {"english": "左旗", "native": "Zuo Qi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 317",
+      "id": "CON chinese_zhongwenxingming 317",
       "lines": [[72125, 71762, 71795]],
       "common_name": {"english": "左摄提", "native": "Zuo She Ti"}
     },
     {
-      "id": "CON chinese_qing_dynasty 318",
+      "id": "CON chinese_zhongwenxingming 318",
       "lines": [[32562, 33485, 32173, 32480, 31832, 32844, 31789, 31771, 33041]],
       "common_name": {"english": "座旗", "native": "Zuo Qi"}
     },
     {
-      "id": "CON chinese_qing_dynasty 319",
+      "id": "CON chinese_zhongwenxingming 319",
       "lines": [[63608, 63608], [54879, 54879]],
       "common_name": {"english": "【太微垣】", "native": "Tai Wei Yuan"}
     },
     {
-      "id": "CON chinese_qing_dynasty 320",
+      "id": "CON chinese_zhongwenxingming 320",
       "lines": [[77070, 77070], [92946, 92946]],
       "common_name": {"english": "【天市垣】", "native": "Tian Shi Yuan"}
     },
     {
-      "id": "CON chinese_qing_dynasty 321",
+      "id": "CON chinese_zhongwenxingming 321",
       "lines": [[75458, 75458], [15520, 15520]],
       "common_name": {"english": "【紫微垣】", "native": "Zi Wei Yuan"}
     },
     {
-      "id": "CON chinese_qing_dynasty 322",
+      "id": "CON chinese_zhongwenxingming 322",
       "lines": [[57757, 57757], [60129, 60129]],
       "common_name": {"english": "端门", "native": "Duan Men"}
     },
     {
-      "id": "CON chinese_qing_dynasty 323",
+      "id": "CON chinese_zhongwenxingming 323",
       "lines": [[44127, 44471]],
       "common_name": {"english": "上台", "native": "Shang Tai"}
     },
     {
-      "id": "CON chinese_qing_dynasty 324",
+      "id": "CON chinese_zhongwenxingming 324",
       "lines": [[55219, 55203]],
       "common_name": {"english": "下台", "native": "Xia Tai"}
     },
     {
-      "id": "CON chinese_qing_dynasty 325",
+      "id": "CON chinese_zhongwenxingming 325",
       "lines": [[50372, 50801]],
       "common_name": {"english": "中台", "native": "Zhong Tai"}
     },
     {
-      "id": "CON chinese_qing_dynasty 326",
+      "id": "CON chinese_zhongwenxingming 326",
       "lines": [[78933, 78820]],
       "common_name": {"english": ""}
     },
     {
-      "id": "CON chinese_qing_dynasty 327",
+      "id": "CON chinese_zhongwenxingming 327",
       "lines": [[110672, 109427]],
       "common_name": {"english": ""}
     },
     {
-      "id": "CON chinese_qing_dynasty 328",
+      "id": "CON chinese_zhongwenxingming 328",
       "lines": [[21421, 21683]],
       "common_name": {"english": ""}
     },
     {
-      "id": "CON chinese_qing_dynasty 329",
+      "id": "CON chinese_zhongwenxingming 329",
       "lines": [[26237, 26311]],
       "common_name": {"english": ""}
     },
     {
-      "id": "CON chinese_qing_dynasty 330",
+      "id": "CON chinese_zhongwenxingming 330",
       "lines": [[30343, 29655]],
       "common_name": {"english": ""}
     },
     {
-      "id": "CON chinese_qing_dynasty 331",
+      "id": "CON chinese_zhongwenxingming 331",
       "lines": [[59316, 59199]],
       "common_name": {"english": ""}
     },
     {
-      "id": "CON chinese_qing_dynasty 332",
+      "id": "CON chinese_zhongwenxingming 332",
       "lines": [[59803, 60189]],
       "common_name": {"english": ""}
     },
     {
-      "id": "CON chinese_qing_dynasty 333",
+      "id": "CON chinese_zhongwenxingming 333",
       "lines": [[60965, 61174]],
       "common_name": {"english": ""}
     }
@@ -4888,6 +5842,14 @@
     "HIP 118243": [{"english": "螣蛇十一"}],
     "HIP 118268": [{"english": "霹雳五"}],
     "HIP 118322": [{"english": "鸟喙七"}],
+    "Gaia DR3 66715105696289024": [{"english": "昴宿增十"}],
+    "Gaia DR3 211805079552264832": [{"english": "五车增十八"}],
+    "Gaia DR3 1233902704963092608": [{"english": "大角增二"}],
+    "Gaia DR3 3138519829402291328": [{"english": "南河增十一"}],
+    "Gaia DR3 3138519833701553152": [{"english": "南河增十一"}],
+    "Gaia DR3 3626803636103730048": [{"english": "进贤增六"}],
+    "Gaia DR3 5350358584482202880": [{"english": "海山二"}],
+    "Gaia DR3 6046821272776093184": [{"english": "心宿增七"}],
     "NGC 224": [{"english": "奎宿增廿一"}],
     "NGC 2632": [{"english": "积尸(鬼宿)"}],
     "NGC 3372": [{"english": "海山二"}],
