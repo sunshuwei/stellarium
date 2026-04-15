@@ -211,7 +211,7 @@
     },
     {
       "id": "CON chinese_cn 042",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "北落师门"}
     },
     {
@@ -241,7 +241,7 @@
     },
     {
       "id": "CON chinese_cn 048",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "策"}
     },
     {
@@ -281,7 +281,7 @@
     },
     {
       "id": "CON chinese_cn 056",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "楚"}
     },
     {
@@ -296,12 +296,12 @@
     },
     {
       "id": "CON chinese_cn 059",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "从官"}
     },
     {
       "id": "CON chinese_cn 060",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "大角"}
     },
     {
@@ -316,7 +316,7 @@
     },
     {
       "id": "CON chinese_cn 063",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "代"}
     },
     {
@@ -326,7 +326,7 @@
     },
     {
       "id": "CON chinese_cn 065",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "帝座"}
     },
     {
@@ -386,12 +386,12 @@
     },
     {
       "id": "CON chinese_cn 077",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "附路"}
     },
     {
       "id": "CON chinese_cn 078",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "傅说"}
     },
     {
@@ -461,7 +461,7 @@
     },
     {
       "id": "CON chinese_cn 092",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "韩"}
     },
     {
@@ -481,7 +481,7 @@
     },
     {
       "id": "CON chinese_cn 096",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "候"}
     },
     {
@@ -496,7 +496,7 @@
     },
     {
       "id": "CON chinese_cn 099",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "虎贲"}
     },
     {
@@ -526,17 +526,17 @@
     },
     {
       "id": "CON chinese_cn 105",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "积尸(胃宿)"}
     },
     {
       "id": "CON chinese_cn 106",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "积水"}
     },
     {
       "id": "CON chinese_cn 107",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "积薪"}
     },
     {
@@ -561,7 +561,7 @@
     },
     {
       "id": "CON chinese_cn 112",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "键闭"}
     },
     {
@@ -571,12 +571,12 @@
     },
     {
       "id": "CON chinese_cn 114",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "进贤"}
     },
     {
       "id": "CON chinese_cn 115",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "晋"}
     },
     {
@@ -621,7 +621,7 @@
     },
     {
       "id": "CON chinese_cn 124",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "军南门"}
     },
     {
@@ -631,7 +631,7 @@
     },
     {
       "id": "CON chinese_cn 126",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "糠"}
     },
     {
@@ -656,7 +656,7 @@
     },
     {
       "id": "CON chinese_cn 131",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "郎将"}
     },
     {
@@ -666,7 +666,7 @@
     },
     {
       "id": "CON chinese_cn 133",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "老人"}
     },
     {
@@ -751,7 +751,7 @@
     },
     {
       "id": "CON chinese_cn 150",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "南极"}
     },
     {
@@ -791,7 +791,7 @@
     },
     {
       "id": "CON chinese_cn 158",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "农丈人"}
     },
     {
@@ -801,7 +801,7 @@
     },
     {
       "id": "CON chinese_cn 160",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "女史"}
     },
     {
@@ -831,7 +831,7 @@
     },
     {
       "id": "CON chinese_cn 166",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "齐"}
     },
     {
@@ -841,7 +841,7 @@
     },
     {
       "id": "CON chinese_cn 168",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "骑阵将军"}
     },
     {
@@ -851,7 +851,7 @@
     },
     {
       "id": "CON chinese_cn 170",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "秦"}
     },
     {
@@ -871,7 +871,7 @@
     },
     {
       "id": "CON chinese_cn 174",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "日"}
     },
     {
@@ -941,7 +941,7 @@
     },
     {
       "id": "CON chinese_cn 188",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "屎"}
     },
     {
@@ -1011,22 +1011,22 @@
     },
     {
       "id": "CON chinese_cn 202",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "太阳守"}
     },
     {
       "id": "CON chinese_cn 203",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "太乙"}
     },
     {
       "id": "CON chinese_cn 204",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "太子"}
     },
     {
       "id": "CON chinese_cn 205",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "太尊"}
     },
     {
@@ -1036,7 +1036,7 @@
     },
     {
       "id": "CON chinese_cn 207",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "天阿"}
     },
     {
@@ -1056,7 +1056,7 @@
     },
     {
       "id": "CON chinese_cn 211",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "天谗"}
     },
     {
@@ -1091,7 +1091,7 @@
     },
     {
       "id": "CON chinese_cn 218",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "天纲"}
     },
     {
@@ -1111,12 +1111,12 @@
     },
     {
       "id": "CON chinese_cn 222",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "天关"}
     },
     {
       "id": "CON chinese_cn 223",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "天皇大帝"}
     },
     {
@@ -1136,7 +1136,7 @@
     },
     {
       "id": "CON chinese_cn 227",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "天记"}
     },
     {
@@ -1171,7 +1171,7 @@
     },
     {
       "id": "CON chinese_cn 234",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "天狼"}
     },
     {
@@ -1216,7 +1216,7 @@
     },
     {
       "id": "CON chinese_cn 243",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "天乳"}
     },
     {
@@ -1241,7 +1241,7 @@
     },
     {
       "id": "CON chinese_cn 248",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "天乙"}
     },
     {
@@ -1301,7 +1301,7 @@
     },
     {
       "id": "CON chinese_cn 260",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "土司空"}
     },
     {
@@ -1321,7 +1321,7 @@
     },
     {
       "id": "CON chinese_cn 264",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "魏"}
     },
     {
@@ -1371,7 +1371,7 @@
     },
     {
       "id": "CON chinese_cn 274",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "相"}
     },
     {
@@ -1381,7 +1381,7 @@
     },
     {
       "id": "CON chinese_cn 276",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "幸臣"}
     },
     {
@@ -1396,12 +1396,12 @@
     },
     {
       "id": "CON chinese_cn 279",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "玄戈"}
     },
     {
       "id": "CON chinese_cn 280",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "燕"}
     },
     {
@@ -1411,12 +1411,12 @@
     },
     {
       "id": "CON chinese_cn 282",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "野鸡"}
     },
     {
       "id": "CON chinese_cn 283",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "谒者"}
     },
     {
@@ -1466,12 +1466,12 @@
     },
     {
       "id": "CON chinese_cn 293",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "月"}
     },
     {
       "id": "CON chinese_cn 294",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "越"}
     },
     {
@@ -1496,12 +1496,12 @@
     },
     {
       "id": "CON chinese_cn 299",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "招摇"}
     },
     {
       "id": "CON chinese_cn 300",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "赵"}
     },
     {
@@ -1516,7 +1516,7 @@
     },
     {
       "id": "CON chinese_cn 303",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "郑"}
     },
     {
@@ -1526,7 +1526,7 @@
     },
     {
       "id": "CON chinese_cn 305",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "周"}
     },
     {
@@ -1581,7 +1581,7 @@
     },
     {
       "id": "CON chinese_cn 316",
-      "lines": [],
+      "lines": [[]],
       "common_name": {"english": "柱史"}
     },
     {
