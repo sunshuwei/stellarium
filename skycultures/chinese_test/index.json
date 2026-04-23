@@ -7,6 +7,17 @@
   ],
   "constellations": [
     {
+      "id": "CON chinese_xianglin H16",
+      "lines1": [[76127, 75695, 76267, 76952, 77512, 78159, 78493, 78459, 77048]],
+      "lines": [[77048, 76127, 75695, 76267, 76952, 77512, 78159, 78493, 78459]],
+      "common_name": {"english": "Coiled Thong", "native": "贯索", "pronounce": "Guàn Suǒ", "IPA": "kwan˥˩.swo˨˩˦"}
+    },
+    {
+      "id": "CON chinese_xianglin H17",
+      "lines": [[81833, 80460, 79119, 77655, 76669, 75411, 74666]],
+      "common_name": {"english": "Seven Excellencies", "native": "七公", "pronounce": "Qī Gōng", "IPA": "t͡ɕʰi˥.kʊŋ˥"}
+    },
+    {
       "id": "CON chinese_test 001",
       "lines": [[746, 2920], [746, 3179], [746, 3821], [746, 4427]],
       "common_name": {"english": "Wang Liang", "native": "王良", "pronounce": ""}
