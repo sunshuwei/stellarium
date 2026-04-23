@@ -124,7 +124,7 @@
     {
       "id": "CON japanese_moon_stations P24",
       "lines": [[86414, 87833, 85670, 85829, 87585]],
-      "common_name": {"english": "Celestial Flail", "native": "天棓(てんぼう)", "pronounce": "Tenbō", "IPA": "te̞mbo̞ː"}
+      "common_name": {"english": "Celestial Flail", "native": "天棓(てんぽう)", "pronounce": "Tenpō", "IPA": "te̞mpo̞ː"}
     },
     {
       "id": "CON japanese_moon_stations P25",
