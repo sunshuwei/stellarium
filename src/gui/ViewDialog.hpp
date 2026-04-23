@@ -124,6 +124,7 @@ private slots:
 	void populateNomenclatureControls(bool flag);
 
 	void setDisplayFormatForSpins(bool flagDecimalDegrees);
+	void onSkyCultureAnchorClicked(const QUrl& url);
 
 private:
 	void connectGroupBox(class QGroupBox* groupBox, const QString& actionId);

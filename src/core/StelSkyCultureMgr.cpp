@@ -98,6 +98,12 @@ void StelSkyCultureMgr::applyStyleToMarkdown(QString& string)
 
 QString StelSkyCultureMgr::markdownToHTML(QString input)
 {
+	// Pre-process constellation links: [星座名称](constellation:星座英文名)
+	// Convert to a format that QTextBrowser can handle without trying to open external applications
+	// Use a fragment identifier format that will trigger anchorClicked signal
+	static const QRegularExpression constellationLinkRe(R"(\[([^\]]+)\]\(constellation:([^\)]+)\))");
+	input.replace(constellationLinkRe, R"(<a href="#constellation:\2" class="constellation-link">\1</a>)");
+
 	const auto inputUTF8 = input.toStdString();
 
 	std::string outputUTF8;

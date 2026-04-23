@@ -6,6 +6,40 @@ This sky culture is based on the *Xianglin* (象林, "Forest of Constellations")
 
 ## Description
 
+### Constellation Link Test Section
+
+This section demonstrates various ways to link to constellations using the `constellation:` link format.
+
+#### Link Format Examples
+
+Below are test links for **Purple Forbidden Enclosure** (ID: CON chinese_xianglin P00):
+
+| Link Type | Format | Example |
+|-----------|--------|---------|
+| English Name | `[Name](constellation:English Name)` | [Purple Forbidden Enclosure](constellation:Purple Forbidden Enclosure) |
+| ID Suffix Only | `[ID](constellation:P00)` | [P00](constellation:P00) |
+| Native Name | `[Native](constellation:紫微垣)` | [紫微垣](constellation:紫微垣) |
+| Pinyin | `[Pinyin](constellation:Zǐ Wēi Yuán)` | [Zǐ Wēi Yuán](constellation:Zǐ Wēi Yuán) |
+
+Below are test links for **Northern Pole** (ID: CON chinese_xianglin P01):
+
+| Link Type | Format | Example |
+|-----------|--------|---------|
+| English Name | `[Name](constellation:English Name)` | [Northern Pole](constellation:Northern Pole) |
+| ID Suffix Only | `[ID](constellation:P01)` | [P01](constellation:P01) |
+| Native Name | `[Native](constellation:北极)` | [北极](constellation:北极) |
+
+Below are test links for **Four Advisors** (ID: CON chinese_xianglin P02):
+
+| Link Type | Format | Example |
+|-----------|--------|---------|
+| English Name | `[Name](constellation:English Name)` | [Four Advisors](constellation:Four Advisors) |
+| ID Suffix Only | `[ID](constellation:P02)` | [P02](constellation:P02) |
+
+More quick links:
+- Using ID suffix: [P03](constellation:P03) | [P04](constellation:P04) | [P05](constellation:P05)
+- Using English name: [Hidden Virtue](constellation:Hidden Virtue) | [Royal Secretary](constellation:Royal Secretary)
+
 ### Author and Sources
 
 Chen Jinmo, a scholar from Xiushui (modern Jiaxing, Zhejiang), was a student of the renowned intellectual Huang Daozhou. His work *Xianglin* was intended as a commentary and refinement of Huang's esoteric text *Sanyi Dongji* (三易洞玑). For his star chart, Chen meticulously consulted and cross-referenced classical Chinese astronomical texts, primarily relying on the Southern Song dynasty "**Zhongxing Astronomical Records**" (*Zhongxing Tianwen Zhi*). He critically examined stellar positions, magnitudes, and asterism names, noting discrepancies and advocating for verification through actual observation where possible.
@@ -93,11 +127,11 @@ In the following `Constellations` chapter, all 283 Chinese traditional constella
 
 ##### Purple Forbidden Enclosure
 
-*Purple Forbidden Enclosure* (Chinese: 紫微垣, Pinyin: Zǐ Wēi Yuán) is the place where the Heavenly Emperor resides and discusses affairs with close ministers.
+*[Purple Forbidden Enclosure](constellation:Purple Forbidden Enclosure)* (Chinese: 紫微垣, Pinyin: Zǐ Wēi Yuán) is the place where the Heavenly Emperor resides and discusses affairs with close ministers.
 
 ##### Northern Pole
 
-*Northern Pole* (Chinese: 北极, Pinyin: Běi Jí) consists of 5 stars in the central part of the *Purple Forbidden Enclosure*. It is one of the most important constellations in Chinese star culture. The five stars are *Crown Prince* (γ UMi), *Emperor* (β UMi), *Bastard* (4 UMi), *Harem* (3 UMi), and *Northern Pole* star (HIP 62572, also known as *Celestial Pivot* or *Ancient Star*).
+*[Northern Pole](constellation:Northern Pole)* (Chinese: 北极, Pinyin: Běi Jí) consists of 5 stars in the central part of the *Purple Forbidden Enclosure*. It is one of the most important constellations in Chinese star culture. The five stars are *Crown Prince* (γ UMi), *Emperor* (β UMi), *Bastard* (4 UMi), *Harem* (3 UMi), and *Northern Pole* star (HIP 62572, also known as *Celestial Pivot* or *Ancient Star*).
 
 Due to precession, the Emperor Star (β UMi) was the brightest star closest to the north celestial pole for a long period before the Common Era, making it the North Star at that time. This period was crucial for the formation of the star official system, so this star held a lofty status and was regarded as the Celestial Emperor. The three stars around the Emperor Star (γ UMi, 4 UMi, 3 UMi) were seen as the *Three Excellencies* assisting the Celestial Emperor, which were the three highest-ranking officials in ancient times.
 
@@ -109,7 +143,7 @@ In the Ming Dynasty, the north celestial pole moved away from HIP 62572 and appr
 
 ##### Four Advisors
 
-*Four Advisors* (Chinese: 四辅, Pinyin: Sì Fǔ) consists of 4 stars surrounding the *Northern Pole* star (HIP 62572). They represent four auxiliary ministers assisting the *Northern Pole*.
+*[Four Advisors](constellation:Four Advisors)* (Chinese: 四辅, Pinyin: Sì Fǔ) consists of 4 stars surrounding the *Northern Pole* star (HIP 62572). They represent four auxiliary ministers assisting the *Northern Pole*.
 
 Because the *Northern Pole* star has undergone positional changes from HIP 65595 to HIP 62572, the *Four Advisors* had to change accordingly, making the identification of these four stars on star charts often very difficult, and there can be significant differences between different star charts.
 
@@ -129,7 +163,7 @@ Initially, the *Great Emperor of Heaven* corresponded to 2 UMi. However, with ch
 
 ##### Six Jia
 
-*Six Jia* (Chinese: 六甲, Pinyin: Liù Jiǎ) consists of 6 stars in the *Purple Forbidden Enclosure*, beside the *Canopy of the Emperor* and *Canopy Support*. *Six Jia* refers to the six Heavenly Stems paired with "Jia", including Jiazi, Jiaxu, Jiashen, Jiawu, Jiachen, and Jiayin. Heavenly Stems and Earthly Branches are important timekeeping units in China, also commonly used for counting, naming, and divination. This constellation is used to determine the seasons in the celestial world, manage yin and yang, and announce time to people, promulgating decrees and promoting moral education.
+*[Six Jia](constellation:Six Jia)* (Chinese: 六甲, Pinyin: Liù Jiǎ) consists of 6 stars in the *Purple Forbidden Enclosure*, beside the *Canopy of the Emperor* and *Canopy Support*. *Six Jia* refers to the six Heavenly Stems paired with "Jia", including Jiazi, Jiaxu, Jiashen, Jiawu, Jiachen, and Jiayin. Heavenly Stems and Earthly Branches are important timekeeping units in China, also commonly used for counting, naming, and divination. This constellation is used to determine the seasons in the celestial world, manage yin and yang, and announce time to people, promulgating decrees and promoting moral education.
 
 ##### Interior Seats of the Five Emperors
 

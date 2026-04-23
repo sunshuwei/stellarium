@@ -62,6 +62,10 @@
 #include <QDialog>
 #include <QStringList>
 #include <QJsonArray>
+#include <QUrl>
+#include <QScrollBar>
+#include "modules/ConstellationMgr.hpp"
+#include <QDesktopServices>
 
 struct Page
 {
@@ -191,6 +195,10 @@ void ViewDialog::createDialogContent()
 	Q_ASSERT(ui->stackedWidget->count() == Page::COUNT);
 	dialog->installEventFilter(this);
 
+	// Set up anchor clicked signal handler for sky culture text browser
+	ui->skyCultureTextBrowser->setOpenExternalLinks(false);
+	connect(ui->skyCultureTextBrowser, &QTextBrowser::anchorClicked, this, &ViewDialog::onSkyCultureAnchorClicked);
+
 	StelApp *app = &StelApp::getInstance();
 	connect(app, SIGNAL(languageChanged()), this, SLOT(retranslate()));
 	// Set the Sky tab activated by default
@@ -226,6 +234,10 @@ void ViewDialog::createDialogContent()
 	connect(ui->culturesListWidget, SIGNAL(currentTextChanged(const QString&)), &StelApp::getInstance().getSkyCultureMgr(), SLOT(setCurrentSkyCultureNameI18(QString)));
 	connect(ui->skyCultureMapGraphicsView, &SkyCultureMapGraphicsView::cultureSelected, &StelApp::getInstance().getSkyCultureMgr(), &StelSkyCultureMgr::setCurrentSkyCultureNameI18);
 	connect(&StelApp::getInstance().getSkyCultureMgr(), &StelSkyCultureMgr::currentSkyCultureIDChanged, this, &ViewDialog::skyCultureChanged);
+
+	// Connect sky culture text browser anchor clicked signal
+	ui->skyCultureTextBrowser->setOpenExternalLinks(false);
+	connect(ui->skyCultureTextBrowser, &QTextBrowser::anchorClicked, this, &ViewDialog::onSkyCultureAnchorClicked);
 
 	// skyCulture list search bar
 	connect(ui->culturesListSearchLineEdit, &QLineEdit::textChanged, this, &ViewDialog::filterSkyCultures);
@@ -1709,7 +1721,7 @@ void ViewDialog::updateSkyCultureText()
 	StelGui* gui = dynamic_cast<StelGui*>(app.getGui());
 	if (gui)
 		ui->skyCultureTextBrowser->document()->setDefaultStyleSheet(QString(gui->getStelStyle().htmlStyleSheet));
-	ui->skyCultureTextBrowser->setHtml(html);	
+	ui->skyCultureTextBrowser->setHtml(html);
 }
 
 void ViewDialog::changeProjection(const QString& projectionNameI18n)
@@ -2174,4 +2186,77 @@ void ViewDialog::updateGridSpacingComboBox()
 	ui->gridSpacingComboBox->blockSignals(true);
 	ui->gridSpacingComboBox->setCurrentIndex(index);
 	ui->gridSpacingComboBox->blockSignals(false);
+}
+
+void ViewDialog::onSkyCultureAnchorClicked(const QUrl& url)
+{
+	qDebug() << "Anchor clicked:" << url.toString();
+	QString fragment = url.fragment();
+	qDebug() << "Fragment:" << fragment;
+	if (fragment.startsWith("constellation:")) {
+		// Save current scroll position
+		int scrollBarValue = ui->skyCultureTextBrowser->verticalScrollBar()->value();
+		
+		// Get the constellation name from the fragment
+		QString constellationName = fragment.mid(14); // Remove "constellation:"
+		qDebug() << "Constellation name:" << constellationName;
+		
+		// Search for the constellation
+		StelApp& app = StelApp::getInstance();
+		StelObjectMgr& objMgr = app.getStelObjectMgr();
+		
+		// Try to find and select the constellation
+		bool found = false;
+		
+		// First try direct search by name
+		if (objMgr.findAndSelect(constellationName)) {
+			found = true;
+		} else {
+			// If not found, try to search by ID
+			StelModule* cMgr = app.getModule("ConstellationMgr");
+			if (cMgr) {
+				// Try direct ID search
+				StelObjectP obj = static_cast<ConstellationMgr*>(cMgr)->searchByID(constellationName);
+				if (obj) {
+					objMgr.setSelectedObject(obj);
+					found = true;
+				} else {
+					// Try searching by ID suffix (e.g., "001" for "CON maya 001")
+					// Get current sky culture ID
+					QString skyCultureID = app.getSkyCultureMgr().getCurrentSkyCultureID();
+					// Construct full ID format: "CON skycultureid suffix"
+					QString fullID = QString("CON %1 %2").arg(skyCultureID).arg(constellationName);
+					obj = static_cast<ConstellationMgr*>(cMgr)->searchByID(fullID);
+					if (obj) {
+						objMgr.setSelectedObject(obj);
+						found = true;
+					}
+				}
+			}
+		}
+		
+		if (found) {
+			const QList<StelObjectP> newSelected = objMgr.getSelectedObject();
+			if (!newSelected.empty()) {
+				// Can't point to home planet (though constellations aren't planets, but just in case)
+				if (newSelected[0]->getEnglishName() != app.getCore()->getCurrentLocation().planetName) {
+					// Use StelMovementMgr to smoothly move to the constellation
+					StelMovementMgr* movementMgr = app.getCore()->getMovementMgr();
+					movementMgr->moveToObject(newSelected[0], movementMgr->getAutoMoveDuration());
+					movementMgr->setFlagTracking(true);
+					qDebug() << "Moved to constellation:" << constellationName;
+				}
+			}
+		} else {
+			qDebug() << "Could not find constellation:" << constellationName;
+		}
+		
+		// Restore scroll position to prevent QTextBrowser from scrolling to the fragment
+		QTimer::singleShot(0, [this, scrollBarValue]() {
+			ui->skyCultureTextBrowser->verticalScrollBar()->setValue(scrollBarValue);
+		});
+	} else {
+		// Handle other URLs normally
+		QDesktopServices::openUrl(url);
+	}
 }
