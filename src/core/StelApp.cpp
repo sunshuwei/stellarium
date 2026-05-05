@@ -88,7 +88,6 @@
 #include <QOpenGLShaderProgram>
 #include <QOpenGLVertexArrayObject>
 #include <QOpenGLFramebufferObject>
-#include <QOpenGLFunctions_3_3_Core>
 #include <QString>
 #include <QStringList>
 #include <QSysInfo>
@@ -102,6 +101,9 @@
 #include <QRegularExpression>
 #include <QRandomGenerator>
 #include <QFontDatabase>
+#if !QT_CONFIG(opengles2)
+# include <QOpenGLFunctions_3_3_Core>
+#endif
 #if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
 #include <QImageReader>
 #endif
@@ -725,7 +727,10 @@ void StelApp::init(QSettings* conf)
 	// Animation
 	animationScale = confSettings->value("gui/pointer_animation_speed", 1.).toDouble();
 
-	ditherPatternTex = StelApp::getInstance().getTextureManager().getDitheringTexture(0);
+	if (StelMainView::getInstance().getGLInformation().isHighGraphicsMode)
+	{
+		ditherPatternTex = StelApp::getInstance().getTextureManager().getDitheringTexture(0);
+	}
 	setupPostProcessor();
 	
 #ifdef ENABLE_SPOUT
