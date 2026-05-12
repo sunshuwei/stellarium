@@ -7,167 +7,152 @@
     {
       "id": "AST chinese_huichao P11",
       "lines": [[88136, 84769, 87234, 90647, 88136]],
-      "common_name": {"english": "Maids-in-waiting*", "native": "御女*", "pronounce": "Yù Nǚ*", "IPA": "y˥˩.ny˨˩˦*"}
+      "common_name": {"english": "Maids-in-waiting", "native": "御女", "pronounce": "Yù Nǚ", "IPA": "y˥˩.ny˨˩˦"}
     },
     {
       "id": "AST chinese_huichao P17",
       "lines": [[113116, 118027, 3132], [112519, 118027, 4283]],
-      "common_name": {"english": "Interior Seats of the Five Emperors*", "native": "五帝内座*", "pronounce": "Wǔ Dì Nèi Zuò*", "IPA": "wu˨˩˩.ti˥˩.neɪ˥˩.t͡swo˥˩*"}
+      "common_name": {"english": "Interior Seats of the Five Emperors", "native": "五帝内座", "pronounce": "Wǔ Dì Nèi Zuò", "IPA": "wu˨˩˩.ti˥˩.neɪ˥˩.t͡swo˥˩"}
     },
     {
       "id": "AST chinese_huichao P24",
       "lines": [[87585, 85819, 85670, 87833, 86414]],
-      "common_name": {"english": "Celestial Flail*", "native": "天棓*", "pronounce": "Tiān Bàng*", "IPA": "tʰjɛn˥.pɑŋ˥˩*"}
+      "common_name": {"english": "Celestial Flail", "native": "天棓", "pronounce": "Tiān Bàng", "IPA": "tʰjɛn˥.pɑŋ˥˩"}
     },
     {
       "id": "AST chinese_huichao P28",
       "lines": [[50933, 52353, 51448]],
-      "common_name": {"english": "Three Top Instructors*", "native": "三师*", "pronounce": "Sān Shī*", "IPA": "san˥.ʂɻ̍˥*"}
+      "common_name": {"english": "Three Top Instructors", "native": "三师", "pronounce": "Sān Shī", "IPA": "san˥.ʂɻ̍˥"}
     },
     {
       "id": "AST chinese_huichao S08",
       "lines": [[57632, 57646], [57632, 57606], [57632, 58159], [57632, 57779]],
-      "common_name": {"english": "Seats of the Five Emperors*", "native": "五帝座*", "pronounce": "Wǔ Dì Zuò*", "IPA": "wu˨˩˩.ti˥˩.t͡swo˥˩*"}
+      "common_name": {"english": "Seats of the Five Emperors", "native": "五帝座", "pronounce": "Wǔ Dì Zuò", "IPA": "wu˨˩˩.ti˥˩.t͡swo˥˩"}
     },
     {
       "id": "AST chinese_huichao S15",
       "lines": [[60742, 60197, 60170, 60066, 59847], [61071, 60904, 60746, 60697, 60742], [60697, 60514, 60197], [60746, 60525, 60514, 60351, 60170], [60904, 60941, 60525, 60599, 60351, 60327, 60066]],
-      "common_name": {"english": "Officers of the Imperial Guard*", "native": "郎位*", "pronounce": "Láng Wèi*", "IPA": "lɑŋ˧˥.weɪ˥˩*"}
+      "common_name": {"english": "Officers of the Imperial Guard", "native": "郎位", "pronounce": "Láng Wèi", "IPA": "lɑŋ˧˥.weɪ˥˩"}
     },
     {
       "id": "AST chinese_huichao H12",
       "lines": [[83478, 83613, 84177, 84671]],
-      "common_name": {"english": "Eunuch Official*", "native": "宦者*", "pronounce": "Huàn Zhě*", "IPA": "xwan˥˩.t͡ʂɤ˨˩˦*"}
+      "common_name": {"english": "Eunuch Official", "native": "宦者", "pronounce": "Huàn Zhě", "IPA": "xwan˥˩.t͡ʂɤ˨˩˦"}
     },
     {
       "id": "AST chinese_huichao H18",
-      "lines": [[81693, 82587, 83207, 84573, 84862, 85382, 85810, 87808, 89826]],
-      "common_name": {"english": "Celestial Discipline*", "native": "天纪*", "pronounce": "Tiān Jì*", "IPA": "tʰjɛn˥.t͡ɕi˥˩*"}
+      "lines": [[81693, 82587, 83207, 84573, 84862, 85382, 87808, 88836, 89826]],
+      "common_name": {"english": "Celestial Discipline", "native": "天纪", "pronounce": "Tiān Jì", "IPA": "tʰjɛn˥.t͡ɕi˥˩"}
     },
     {
       "id": "AST chinese_huichao 03E",
       "lines": [[71571, 72659, 73166]],
-      "common_name": {"english": "Mattress of the Emperor*", "native": "帝席*", "pronounce": "Dì Xí*", "IPA": "ti˥˩.ɕi˧˥*"}
+      "common_name": {"english": "Mattress of the Emperor", "native": "帝席", "pronounce": "Dì Xí", "IPA": "ti˥˩.ɕi˧˥"}
     },
     {
       "id": "AST chinese_huichao 08C",
       "lines": [[93805, 93429, 93026, 92391, 92175, 92202, 91845, 91726, 91117]],
-      "common_name": {"english": "Market Officer*", "native": "天弁*", "pronounce": "Tiān Biàn*", "IPA": "tʰjɛn˥.pjɛn˥˩*"}
+      "common_name": {"english": "Market Officer", "native": "天弁", "pronounce": "Tiān Biàn", "IPA": "tʰjɛn˥.pjɛn˥˩"}
     },
     {
       "id": "AST chinese_huichao 08H",
       "lines": [[98066, 98353, 98688, 98162, 98066]],
-      "common_name": {"english": "Territory of Dog*", "native": "狗国*", "pronounce": "Gǒu Guó*", "IPA": "koʊ˨˩˩.kwo˧˥*"}
+      "common_name": {"english": "Territory of Dog", "native": "狗国", "pronounce": "Gǒu Guó", "IPA": "koʊ˨˩˩.kwo˧˥"}
     },
     {
       "id": "AST chinese_huichao 09H",
       "lines": [[99473, 98844, 97980, 97804]],
-      "common_name": {"english": "Celestial Drumstick*", "native": "天桴*", "pronounce": "Tiān Fú*", "IPA": "tʰjɛn˥.fʋ̩˧˥*"}
-    },
-    {
-      "id": "AST chinese_huichao 10J",
-      "lines": [[102487, 103226]],
-      "common_name": {"english": "Zhou State*", "native": "周*", "pronounce": "Zhōu*", "IPA": "t͡ʂoʊ˥*"}
-    },
-    {
-      "id": "AST chinese_huichao 10Q",
-      "lines": [[104963, 105515]],
-      "common_name": {"english": "Dai State*", "native": "代*", "pronounce": "Dài*", "IPA": "taɪ˥˩*"}
+      "common_name": {"english": "Celestial Drumstick", "native": "天桴", "pronounce": "Tiān Fú", "IPA": "tʰjɛn˥.fʋ̩˧˥"}
     },
     {
       "id": "AST chinese_huichao 11B",
       "lines": [[107575, 106944]],
-      "common_name": {"english": "Deified Judge of Life*", "native": "司命*", "pronounce": "Sī Mìng*", "IPA": "sɹ̩˥.miŋ˥˩*"}
+      "common_name": {"english": "Deified Judge of Life", "native": "司命", "pronounce": "Sī Mìng", "IPA": "sɹ̩˥.miŋ˥˩"}
     },
     {
       "id": "AST chinese_huichao 11C",
       "lines": [[107151, 106856]],
-      "common_name": {"english": "Deified Judge of Rank*", "native": "司禄*", "pronounce": "Sī Lù*", "IPA": "sɹ̩˥.lu˥˩*"}
+      "common_name": {"english": "Deified Judge of Rank", "native": "司禄", "pronounce": "Sī Lù", "IPA": "sɹ̩˥.lu˥˩"}
     },
     {
       "id": "AST chinese_huichao 11D",
       "lines": [[105570, 105413]],
-      "common_name": {"english": "Deified Judge of Disaster and Good Fortune*", "native": "司危*", "pronounce": "Sī Wēi*", "IPA": "sɹ̩˥.weɪ˥*"}
+      "common_name": {"english": "Deified Judge of Disaster and Good Fortune", "native": "司危", "pronounce": "Sī Wēi", "IPA": "sɹ̩˥.weɪ˥"}
     },
     {
       "id": "AST chinese_huichao 12G",
-      "lines": [[115088, 112724, 110817, 108917, 108317, 105199, 103772, 102422, 101093]],
-      "common_name": {"english": "Celestial Hook*", "native": "天钩*", "pronounce": "Tiān Gōu*", "IPA": "tʰjɛn˥.koʊ˥*"}
+      "lines": [[115088, 113864, 112724, 110817, 108917, 108317, 105199, 102422, 101093]],
+      "common_name": {"english": "Celestial Hook", "native": "天钩", "pronounce": "Tiān Gōu", "IPA": "tʰjɛn˥.koʊ˥"}
     },
     {
       "id": "AST chinese_huichao 13I",
       "lines": [[117299, 115990, 117301, 117863, 117299, 114924, 114162, 113501, 112761, 111169], [112761, 113288, 113919, 114570, 115022, 116584, 116805, 116631], [111169, 111674], [111169, 110538], [111169, 109521], [111169, 110609], [111169, 111022], [111169, 113327]],
-      "common_name": {"english": "Flying Serpent*", "native": "螣蛇*", "pronounce": "Téng Shé*", "IPA": "tʰɤŋ˧˥.ʂɤ˧˥*"}
-    },
-    {
-      "id": "AST chinese_huichao 13K",
-      "lines": [[109624, 110000, 110602], [111449, 112211, 112529], [111045, 111515, 111954], [114341, 114375, 114119], [113998, 113136, 113080], [112716, 113031, 113531], [114855, 115033, 115115], [114371, 115126, 115404], [115438, 115669, 116247], [116758, 116971, 116957], [116901, 117089, 117218], [117629, 301, 1170], [910, 118178, 117567], [117314, 355, 873], [117420, 154, 1562]],
-      "common_name": {"english": "Palace Guard*", "native": "羽林军*", "pronounce": "Yǔ Lín Jūn*", "IPA": "y˨˩˩.lin˧˥.t͡ɕyn˥*"}
+      "common_name": {"english": "Flying Serpent", "native": "螣蛇", "pronounce": "Téng Shé", "IPA": "tʰɤŋ˧˥.ʂɤ˧˥"}
     },
     {
       "id": "AST chinese_huichao 14C",
       "lines": [[116928, 117491, 117683, 117245, 116928]],
-      "common_name": {"english": "Cloud and Rain*", "native": "云雨*", "pronounce": "Yún Yǔ*", "IPA": "yn˧˥.y˨˩˦*"}
+      "common_name": {"english": "Cloud and Rain", "native": "云雨", "pronounce": "Yún Yǔ", "IPA": "yn˧˥.y˨˩˦"}
     },
     {
       "id": "AST chinese_huichao 15F",
       "lines": [[5434, 5542, 7294, 8886, 9573, 11569]],
-      "common_name": {"english": "Flying Corridor*", "native": "阁道*", "pronounce": "Gé Dào*", "IPA": "kɤ˧˥.tɑʊ˥˩*"}
+      "common_name": {"english": "Flying Corridor", "native": "阁道", "pronounce": "Gé Dào", "IPA": "kɤ˧˥.tɑʊ˥˩"}
     },
     {
       "id": "AST chinese_huichao 17B",
       "lines": [[14135, 13954, 12828, 11249, 10324, 11484, 12093, 12706, 12387, 12530, 11791, 11046, 10826]],
-      "common_name": {"english": "Circular Celestial Granary*", "native": "天囷*", "pronounce": "Tiān Qūn*", "IPA": "tʰjɛn˥.t͡ɕʰyn˥*"}
+      "common_name": {"english": "Circular Celestial Granary", "native": "天囷", "pronounce": "Tiān Qūn", "IPA": "tʰjɛn˥.t͡ɕʰyn˥"}
     },
     {
       "id": "AST chinese_huichao 17E",
-      "lines": [[14382, 14328, 15219, 15863, 17358, 18396, 19343, 19812, 20070]],
-      "common_name": {"english": "Celestial Boat*", "native": "天船*", "pronounce": "Tiān Chuán*", "IPA": "tʰjɛn˥.t͡ʂʰwan˧˥*"}
+      "lines": [[14382, 14328, 15863, 16244, 17358, 18396, 19343, 19812, 20070]],
+      "common_name": {"english": "Celestial Boat", "native": "天船", "pronounce": "Tiān Chuán", "IPA": "tʰjɛn˥.t͡ʂʰwan˧˥"}
     },
     {
       "id": "AST chinese_huichao 18A",
       "lines": [[17531, 17499, 17573, 17608, 17702, 17847, 17851]],
-      "common_name": {"english": "Hairy Head*", "native": "昴宿*", "pronounce": "Mǎo Xiù*", "IPA": "mɑʊ˨˩˩.ɕjoʊ˥˩*"}
+      "common_name": {"english": "Hairy Head", "native": "昴宿", "pronounce": "Mǎo Xiù", "IPA": "mɑʊ˨˩˩.ɕjoʊ˥˩"}
     },
     {
       "id": "AST chinese_huichao 18D",
       "lines": [[15737, 14838], [15737, 15110], [15737, 15627], [15737, 15870]],
-      "common_name": {"english": "Celestial Yin Force*", "native": "天阴*", "pronounce": "Tiān Yīn*", "IPA": "tʰjɛn˥.in˥*"}
+      "common_name": {"english": "Celestial Yin Force", "native": "天阴", "pronounce": "Tiān Yīn", "IPA": "tʰjɛn˥.in˥"}
     },
     {
       "id": "AST chinese_huichao 18I",
       "lines": [[18543, 17593, 17378, 16537, 15197, 13701, 12770, 12843, 13288, 14146, 15474, 16611, 17651, 17717, 18216, 18673]],
-      "common_name": {"english": "Celestial Meadows*", "native": "天苑*", "pronounce": "Tiān Yuàn*", "IPA": "tʰjɛn˥.ɥæn˥˩*"}
+      "common_name": {"english": "Celestial Meadows", "native": "天苑", "pronounce": "Tiān Yuàn", "IPA": "tʰjɛn˥.ɥæn˥˩"}
     },
     {
       "id": "AST chinese_huichao 19E",
       "lines": [[21881, 23497, 23883, 24512, 24822, 25539]],
-      "common_name": {"english": "Feudal Kings*", "native": "诸王*", "pronounce": "Zhū Wáng*", "IPA": "t͡ʂu˥.wɑŋ˧˥*"}
+      "common_name": {"english": "Feudal Kings", "native": "诸王", "pronounce": "Zhū Wáng", "IPA": "t͡ʂu˥.wɑŋ˧˥"}
     },
     {
       "id": "AST chinese_huichao 19F",
       "lines": [[22176, 22565, 23043, 22441, 22176]],
-      "common_name": {"english": "Celestial High Terrace*", "native": "天高*", "pronounce": "Tiān Gāo*", "IPA": "tʰjɛn˥.kɑʊ˥*"}
+      "common_name": {"english": "Celestial High Terrace", "native": "天高", "pronounce": "Tiān Gāo", "IPA": "tʰjɛn˥.kɑʊ˥"}
     },
     {
       "id": "AST chinese_huichao 20B",
       "lines": [[27830, 28237, 28734, 28716]],
-      "common_name": {"english": "Deity in Charge of Monsters*", "native": "司怪*", "pronounce": "Sī Guài*", "IPA": "sɹ̩˥.kwaɪ˥˩*"}
+      "common_name": {"english": "Deity in Charge of Monsters", "native": "司怪", "pronounce": "Sī Guài", "IPA": "sɹ̩˥.kwaɪ˥˩"}
     },
     {
       "id": "AST chinese_huichao 24B",
       "lines": [[47723, 46771, 46774]],
-      "common_name": {"english": "Banner of Wine Shop*", "native": "酒旗*", "pronounce": "Jiǔ Qí*", "IPA": "t͡ɕjoʊ˨˩˩.t͡ɕʰi˧˥*"}
+      "common_name": {"english": "Banner of Wine Shop", "native": "酒旗", "pronounce": "Jiǔ Qí", "IPA": "t͡ɕjoʊ˨˩˩.t͡ɕʰi˧˥"}
     },
     {
       "id": "AST chinese_huichao 25B",
       "lines": [[44248, 44700, 45688, 45860, 47544, 47701, 46146, 46750, 47908, 48455, 50335, 50583, 49583, 49669, 47508], [49669, 51624], [49669, 49637]],
-      "common_name": {"english": "Xuanyuan*", "native": "轩辕*", "pronounce": "Xuān Yuán*", "IPA": "ɕɥæn˥.ɥæn˧˥*"}
+      "common_name": {"english": "Xuanyuan", "native": "轩辕", "pronounce": "Xuān Yuán", "IPA": "ɕɥæn˥.ɥæn˧˥"}
     },
     {
       "id": "AST chinese_huichao 27A",
-      "lines": [[52943, 53740, 55282, 55705, 57283], [55705, 54682, 53740], [55282, 56802, 55687, 56633, 55106, 56318, 57791], [55106, 52980, 51046], [54682, 54204, 54477, 54561, 53699], [55756, 55588, 53699, 51172, 50456]],
-      "common_name": {"english": "Wings*", "native": "翼宿*", "pronounce": "Yì Xiù*", "IPA": "i˥˩.ɕjoʊ˥˩*"}
+      "lines": [[52943, 53740, 55282, 55705, 57283], [55705, 54682, 53740], [55282, 56802, 55687, 56633, 55106, 56318, 57791], [55106, 52980, 51046], [54682, 54204, 54477, 54430, 53818], [58158, 56332, 53818, 51172, 50456]],
+      "common_name": {"english": "Wings", "native": "翼宿", "pronounce": "Yì Xiù", "IPA": "i˥˩.ɕjoʊ˥˩"}
     }
   ],
   "constellations": [
@@ -195,7 +180,7 @@
     {
       "id": "CON chinese_huichao P11",
       "lines": [[88136, 87234]],
-      "common_name": {"english": "Maids-in-waiting*", "native": "御女*", "pronounce": "Yù Nǚ*", "IPA": "y˥˩.ny˨˩˦*"}
+      "common_name": {"english": "Maids-in-waiting", "native": "御女", "pronounce": "Yù Nǚ", "IPA": "y˥˩.ny˨˩˦"}
     },
     {
       "id": "CON chinese_huichao P13",
@@ -210,7 +195,7 @@
     {
       "id": "CON chinese_huichao P17",
       "lines": [[112519, 113116, 4283]],
-      "common_name": {"english": "Interior Seats of the Five Emperors*", "native": "五帝内座*", "pronounce": "Wǔ Dì Nèi Zuò*", "IPA": "wu˨˩˩.ti˥˩.neɪ˥˩.t͡swo˥˩*"}
+      "common_name": {"english": "Interior Seats of the Five Emperors", "native": "五帝内座", "pronounce": "Wǔ Dì Nèi Zuò", "IPA": "wu˨˩˩.ti˥˩.neɪ˥˩.t͡swo˥˩"}
     },
     {
       "id": "CON chinese_huichao P22",
@@ -220,7 +205,7 @@
     {
       "id": "CON chinese_huichao P24",
       "lines": [[87585, 85819, 85670, 87833]],
-      "common_name": {"english": "Celestial Flail*", "native": "天棓*", "pronounce": "Tiān Bàng*", "IPA": "tʰjɛn˥.pɑŋ˥˩*"}
+      "common_name": {"english": "Celestial Flail", "native": "天棓", "pronounce": "Tiān Bàng", "IPA": "tʰjɛn˥.pɑŋ˥˩"}
     },
     {
       "id": "CON chinese_huichao P26",
@@ -235,7 +220,7 @@
     {
       "id": "CON chinese_huichao P28",
       "lines": [[50933, 51448]],
-      "common_name": {"english": "Three Top Instructors*", "native": "三师*", "pronounce": "Sān Shī*", "IPA": "san˥.ʂɻ̍˥*"}
+      "common_name": {"english": "Three Top Instructors", "native": "三师", "pronounce": "Sān Shī", "IPA": "san˥.ʂɻ̍˥"}
     },
     {
       "id": "CON chinese_huichao P29",
@@ -286,7 +271,7 @@
     {
       "id": "CON chinese_huichao S08",
       "lines": [[57632, 57632]],
-      "common_name": {"english": "Seats of the Five Emperors*", "native": "五帝座*", "pronounce": "Wǔ Dì Zuò*", "IPA": "wu˨˩˩.ti˥˩.t͡swo˥˩*"}
+      "common_name": {"english": "Seats of the Five Emperors", "native": "五帝座", "pronounce": "Wǔ Dì Zuò", "IPA": "wu˨˩˩.ti˥˩.t͡swo˥˩"}
     },
     {
       "id": "CON chinese_huichao S10",
@@ -311,7 +296,7 @@
     {
       "id": "CON chinese_huichao S15",
       "lines": [[60742, 60742]],
-      "common_name": {"english": "Officers of the Imperial Guard*", "native": "郎位*", "pronounce": "Láng Wèi*", "IPA": "lɑŋ˧˥.weɪ˥˩*"}
+      "common_name": {"english": "Officers of the Imperial Guard", "native": "郎位", "pronounce": "Láng Wèi", "IPA": "lɑŋ˧˥.weɪ˥˩"}
     },
     {
       "id": "CON chinese_huichao S16",
@@ -320,7 +305,7 @@
     },
     {
       "id": "CON chinese_huichao S17",
-      "lines": [[54182, 53824, 53807]],
+      "lines": [[54182, 53449, 53807]],
       "common_name": {"english": "Astronomical Observatory", "native": "灵台", "pronounce": "Líng Tái", "IPA": "liŋ˧˥.tʰaɪ˧˥"}
     },
     {
@@ -375,7 +360,7 @@
       "common_name": {"english": "Patriarchal Clan Stars", "native": "宗星", "pronounce": "Zōng Xīng", "IPA": "t͡sʊŋ˥.ɕiŋ˥"}
     },
     {
-      "id": "CON chinese_huichao H08",
+      "id1": "CON chinese_huichao H08",
       "lines": [[88267, 88899]],
       "label_positions": [[18.09, 20.4]],
       "common_name": {"english": "Textile Ruler", "native": "帛度", "pronounce": "Bó Dù", "IPA": "pwo˧˥.tu˥˩"}
@@ -383,7 +368,7 @@
     {
       "id": "CON chinese_huichao H09",
       "lines": [[88267, 88899]],
-      "label_positions": [[18.09, 21.2]],
+      "label_positions1": [[18.09, 21.2]],
       "common_name": {"english": "Butcher's Shops", "native": "屠肆", "pronounce": "Tú Sì", "IPA": "tʰu˧˥.sɹ̩˥˩"}
     },
     {
@@ -399,7 +384,7 @@
     {
       "id": "CON chinese_huichao H12",
       "lines": [[83478, 83613]],
-      "common_name": {"english": "Eunuch Official*", "native": "宦者*", "pronounce": "Huàn Zhě*", "IPA": "xwan˥˩.t͡ʂɤ˨˩˦*"}
+      "common_name": {"english": "Eunuch Official", "native": "宦者", "pronounce": "Huàn Zhě", "IPA": "xwan˥˩.t͡ʂɤ˨˩˦"}
     },
     {
       "id": "CON chinese_huichao H13",
@@ -424,7 +409,7 @@
     {
       "id": "CON chinese_huichao H18",
       "lines": [[81693, 82587, 83207, 84573, 87808, 89826]],
-      "common_name": {"english": "Celestial Discipline*", "native": "天纪*", "pronounce": "Tiān Jì*", "IPA": "tʰjɛn˥.t͡ɕi˥˩*"}
+      "common_name": {"english": "Celestial Discipline", "native": "天纪", "pronounce": "Tiān Jì", "IPA": "tʰjɛn˥.t͡ɕi˥˩"}
     },
     {
       "id": "CON chinese_huichao H19",
@@ -510,7 +495,7 @@
     {
       "id": "CON chinese_huichao 03E",
       "lines": [[72659, 72659]],
-      "common_name": {"english": "Mattress of the Emperor*", "native": "帝席*", "pronounce": "Dì Xí*", "IPA": "ti˥˩.ɕi˧˥*"}
+      "common_name": {"english": "Mattress of the Emperor", "native": "帝席", "pronounce": "Dì Xí", "IPA": "ti˥˩.ɕi˧˥"}
     },
     {
       "id": "CON chinese_huichao 03I",
@@ -605,7 +590,7 @@
     {
       "id": "CON chinese_huichao 08C",
       "lines": [[93805, 93429, 93026, 92175, 91845, 91726, 91117]],
-      "common_name": {"english": "Market Officer*", "native": "天弁*", "pronounce": "Tiān Biàn*", "IPA": "tʰjɛn˥.pjɛn˥˩*"}
+      "common_name": {"english": "Market Officer", "native": "天弁", "pronounce": "Tiān Biàn", "IPA": "tʰjɛn˥.pjɛn˥˩"}
     },
     {
       "id": "CON chinese_huichao 08E",
@@ -620,7 +605,7 @@
     {
       "id": "CON chinese_huichao 08H",
       "lines": [[98066, 98066]],
-      "common_name": {"english": "Territory of Dog*", "native": "狗国*", "pronounce": "Gǒu Guó*", "IPA": "koʊ˨˩˩.kwo˧˥*"}
+      "common_name": {"english": "Territory of Dog", "native": "狗国", "pronounce": "Gǒu Guó", "IPA": "koʊ˨˩˩.kwo˧˥"}
     },
     {
       "id": "CON chinese_huichao 09A",
@@ -650,7 +635,7 @@
     {
       "id": "CON chinese_huichao 09H",
       "lines": [[99473, 97804]],
-      "common_name": {"english": "Celestial Drumstick*", "native": "天桴*", "pronounce": "Tiān Fú*", "IPA": "tʰjɛn˥.fʋ̩˧˥*"}
+      "common_name": {"english": "Celestial Drumstick", "native": "天桴", "pronounce": "Tiān Fú", "IPA": "tʰjɛn˥.fʋ̩˧˥"}
     },
     {
       "id": "CON chinese_huichao 09I",
@@ -675,7 +660,7 @@
     {
       "id": "CON chinese_huichao 10B",
       "lines": [[101101, 101692, 101847, 101936, 100664]],
-      "common_name": {"english": "Pearls on Ladies' Wear*", "native": "离珠*", "pronounce": "Lí Zhū*", "IPA": "li˧˥.t͡ʂu˥*"}
+      "common_name": {"english": "Pearls on Ladies' Wear", "native": "离珠", "pronounce": "Lí Zhū", "IPA": "li˧˥.t͡ʂu˥"}
     },
     {
       "id": "CON chinese_huichao 10C",
@@ -693,71 +678,6 @@
       "common_name": {"english": "Celestial Ford", "native": "天津", "pronounce": "Tiān Jīn", "IPA": "tʰjɛn˥.t͡ɕin˥"}
     },
     {
-      "id": "CON chinese_huichao 10H",
-      "lines": [[102978, 102485]],
-      "common_name": {"english": "Zhao State", "native": "赵", "pronounce": "Zhào", "IPA": "t͡ʂɑʊ˥˩"}
-    },
-    {
-      "id": "CON chinese_huichao 10I",
-      "lines": [[102014, 102014]],
-      "common_name": {"english": "Yue State", "native": "越", "pronounce": "Yuè", "IPA": "ɥɛ˥˩"}
-    },
-    {
-      "id": "CON chinese_huichao 10J",
-      "lines": [[102487, 102487]],
-      "common_name": {"english": "Zhou State*", "native": "周*", "pronounce": "Zhōu*", "IPA": "t͡ʂoʊ˥*"}
-    },
-    {
-      "id": "CON chinese_huichao 10K",
-      "lines": [[102831, 102831]],
-      "common_name": {"english": "Qi State", "native": "齐", "pronounce": "Qí", "IPA": "t͡ɕʰi˧˥"}
-    },
-    {
-      "id": "CON chinese_huichao 10L",
-      "lines": [[103738, 103738]],
-      "common_name": {"english": "Zheng State", "native": "郑", "pronounce": "Zhèng", "IPA": "t͡ʂɤŋ˥˩"}
-    },
-    {
-      "id": "CON chinese_huichao 10M",
-      "lines": [[103777, 103777]],
-      "common_name": {"english": "Chu State", "native": "楚", "pronounce": "Chǔ", "IPA": "t͡ʂʰu˨˩˦"}
-    },
-    {
-      "id": "CON chinese_huichao 10N",
-      "lines": [[104139, 104019]],
-      "common_name": {"english": "Qin State", "native": "秦", "pronounce": "Qín", "IPA": "t͡ɕʰin˧˥"}
-    },
-    {
-      "id": "CON chinese_huichao 10O",
-      "lines": [[104174, 104174]],
-      "common_name": {"english": "Yan State", "native": "燕", "pronounce": "Yān", "IPA": "jan˥"}
-    },
-    {
-      "id": "CON chinese_huichao 10P",
-      "lines": [[104234, 104234]],
-      "common_name": {"english": "Wei State", "native": "魏", "pronounce": "Wèi", "IPA": "weɪ˥˩"}
-    },
-    {
-      "id": "CON chinese_huichao 10Q",
-      "lines": [[105515, 105515]],
-      "common_name": {"english": "Dai State*", "native": "代*", "pronounce": "Dài*", "IPA": "taɪ˥˩*"}
-    },
-    {
-      "id": "CON chinese_huichao 10R",
-      "lines": [[105140, 105140]],
-      "common_name": {"english": "Jin State", "native": "晋", "pronounce": "Jìn", "IPA": "t͡ɕin˥˩"}
-    },
-    {
-      "id": "CON chinese_huichao 10S",
-      "lines": [[104750, 104750]],
-      "common_name": {"english": "Han State", "native": "韩", "pronounce": "Hán", "IPA": "xan˧˥"}
-    },
-    {
-      "id": "CON chinese_huichao 10T",
-      "lines": [[104234, 104234], [103738, 103738]],
-      "common_name": {"english": "Twelve States", "native": "十二国", "pronounce": "Shí Èr Guó", "IPA": "ʂɻ̍˧˥.ɚ˥˩.kwo˧˥"}
-    },
-    {
       "id": "CON chinese_huichao 11A",
       "lines": [[106278, 104987]],
       "common_name": {"english": "Emptiness", "native": "虚宿", "pronounce": "Xū Xiù", "IPA": "ɕy˥.ɕjoʊ˥˩"}
@@ -765,17 +685,17 @@
     {
       "id": "CON chinese_huichao 11B",
       "lines": [[107575, 107575]],
-      "common_name": {"english": "Deified Judge of Life*", "native": "司命*", "pronounce": "Sī Mìng*", "IPA": "sɹ̩˥.miŋ˥˩*"}
+      "common_name": {"english": "Deified Judge of Life", "native": "司命", "pronounce": "Sī Mìng", "IPA": "sɹ̩˥.miŋ˥˩"}
     },
     {
       "id": "CON chinese_huichao 11C",
       "lines": [[107151, 107151]],
-      "common_name": {"english": "Deified Judge of Rank*", "native": "司禄*", "pronounce": "Sī Lù*", "IPA": "sɹ̩˥.lu˥˩*"}
+      "common_name": {"english": "Deified Judge of Rank", "native": "司禄", "pronounce": "Sī Lù", "IPA": "sɹ̩˥.lu˥˩"}
     },
     {
       "id": "CON chinese_huichao 11D",
       "lines": [[105570, 105570]],
-      "common_name": {"english": "Deified Judge of Disaster and Good Fortune*", "native": "司危*", "pronounce": "Sī Wēi*", "IPA": "sɹ̩˥.weɪ˥*"}
+      "common_name": {"english": "Deified Judge of Disaster and Good Fortune", "native": "司危", "pronounce": "Sī Wēi", "IPA": "sɹ̩˥.weɪ˥"}
     },
     {
       "id": "CON chinese_huichao 11E",
@@ -800,7 +720,7 @@
     {
       "id": "CON chinese_huichao 12G",
       "lines": [[115088, 112724, 108917, 105199, 102422, 101093]],
-      "common_name": {"english": "Celestial Hook*", "native": "天钩*", "pronounce": "Tiān Gōu*", "IPA": "tʰjɛn˥.koʊ˥*"}
+      "common_name": {"english": "Celestial Hook", "native": "天钩", "pronounce": "Tiān Gōu", "IPA": "tʰjɛn˥.koʊ˥"}
     },
     {
       "id": "CON chinese_huichao 13A",
@@ -813,11 +733,6 @@
       "lines": [[112051, 112158], [112748, 112440], [115250, 115623]],
       "label_positions": [[22.70, 29.5], [22.80, 24.1], [23.40, 23.6]],
       "common_name": {"english": "Resting Palace (Vassal of Encampment)", "native": "离宫(附室宿)", "pronounce": "Lí Gōng", "IPA": "li˧˥.kʊŋ˥"}
-    },
-    {
-      "id": "CON chinese_huichao 13C",
-      "lines": [[112935, 113503, 114144, 114520, 115444, 115919]],
-      "common_name": {"english": "Thunder and Lightning", "native": "雷电", "pronounce": "Léi Diàn", "IPA": "leɪ˧˥.tjɛn˥˩"}
     },
     {
       "id": "CON chinese_huichao 13D",
@@ -843,7 +758,7 @@
     {
       "id": "CON chinese_huichao 13I",
       "lines": [[111022, 111022]],
-      "common_name": {"english": "Flying Serpent*", "native": "螣蛇*", "pronounce": "Téng Shé*", "IPA": "tʰɤŋ˧˥.ʂɤ˧˥*"}
+      "common_name": {"english": "Flying Serpent", "native": "螣蛇", "pronounce": "Téng Shé", "IPA": "tʰɤŋ˧˥.ʂɤ˧˥"}
     },
     {
       "id": "CON chinese_huichao 14A",
@@ -858,7 +773,7 @@
     {
       "id": "CON chinese_huichao 14C",
       "lines": [[116928, 117491, 117683]],
-      "common_name": {"english": "Cloud and Rain*", "native": "云雨*", "pronounce": "Yún Yǔ*", "IPA": "yn˧˥.y˨˩˦*"}
+      "common_name": {"english": "Cloud and Rain", "native": "云雨", "pronounce": "Yún Yǔ", "IPA": "yn˧˥.y˨˩˦"}
     },
     {
       "id": "CON chinese_huichao 15A",
@@ -883,7 +798,7 @@
     {
       "id": "CON chinese_huichao 15F",
       "lines": [[5434, 5542, 7294, 8886]],
-      "common_name": {"english": "Flying Corridor*", "native": "阁道*", "pronounce": "Gé Dào*", "IPA": "kɤ˧˥.tɑʊ˥˩*"}
+      "common_name": {"english": "Flying Corridor", "native": "阁道", "pronounce": "Gé Dào", "IPA": "kɤ˧˥.tɑʊ˥˩"}
     },
     {
       "id": "CON chinese_huichao 15G",
@@ -913,7 +828,7 @@
     {
       "id": "CON chinese_huichao 17B",
       "lines": [[14135, 13954, 12828, 11249, 10324, 11484, 12093, 12706, 12387]],
-      "common_name": {"english": "Circular Celestial Granary*", "native": "天囷*", "pronounce": "Tiān Qūn*", "IPA": "tʰjɛn˥.t͡ɕʰyn˥*"}
+      "common_name": {"english": "Circular Celestial Granary", "native": "天囷", "pronounce": "Tiān Qūn", "IPA": "tʰjɛn˥.t͡ɕʰyn˥"}
     },
     {
       "id": "CON chinese_huichao 17C",
@@ -927,8 +842,8 @@
     },
     {
       "id": "CON chinese_huichao 17E",
-      "lines": [[14382, 14328, 15863, 17358, 19343, 19812, 20070]],
-      "common_name": {"english": "Celestial Boat*", "native": "天船*", "pronounce": "Tiān Chuán*", "IPA": "tʰjɛn˥.t͡ʂʰwan˧˥*"}
+      "lines": [[14382, 14328, 16244, 17358, 19343, 19812, 20070]],
+      "common_name": {"english": "Celestial Boat", "native": "天船", "pronounce": "Tiān Chuán", "IPA": "tʰjɛn˥.t͡ʂʰwan˧˥"}
     },
     {
       "id": "CON chinese_huichao 17F",
@@ -943,7 +858,7 @@
     {
       "id": "CON chinese_huichao 18A",
       "lines": [[17531, 17499, 17573, 17608, 17702, 17851]],
-      "common_name": {"english": "Hairy Head*", "native": "昴宿*", "pronounce": "Mǎo Xiù*", "IPA": "mɑʊ˨˩˩.ɕjoʊ˥˩*"}
+      "common_name": {"english": "Hairy Head", "native": "昴宿", "pronounce": "Mǎo Xiù", "IPA": "mɑʊ˨˩˩.ɕjoʊ˥˩"}
     },
     {
       "id": "CON chinese_huichao 18C",
@@ -953,7 +868,7 @@
     {
       "id": "CON chinese_huichao 18D",
       "lines": [[14838, 15110]],
-      "common_name": {"english": "Celestial Yin Force*", "native": "天阴*", "pronounce": "Tiān Yīn*", "IPA": "tʰjɛn˥.in˥*"}
+      "common_name": {"english": "Celestial Yin Force", "native": "天阴", "pronounce": "Tiān Yīn", "IPA": "tʰjɛn˥.in˥"}
     },
     {
       "id": "CON chinese_huichao 18E",
@@ -968,7 +883,7 @@
     {
       "id": "CON chinese_huichao 18I",
       "lines": [[18543, 17593, 17378, 16537, 15197, 13701, 12770, 12843, 14146, 15474, 16611, 17651, 17717, 18216, 18673]],
-      "common_name": {"english": "Celestial Meadows*", "native": "天苑*", "pronounce": "Tiān Yuàn*", "IPA": "tʰjɛn˥.ɥæn˥˩*"}
+      "common_name": {"english": "Celestial Meadows", "native": "天苑", "pronounce": "Tiān Yuàn", "IPA": "tʰjɛn˥.ɥæn˥˩"}
     },
     {
       "id": "CON chinese_huichao 19A",
@@ -988,12 +903,12 @@
     {
       "id": "CON chinese_huichao 19E",
       "lines": [[21881, 21881]],
-      "common_name": {"english": "Feudal Kings*", "native": "诸王*", "pronounce": "Zhū Wáng*", "IPA": "t͡ʂu˥.wɑŋ˧˥*"}
+      "common_name": {"english": "Feudal Kings", "native": "诸王", "pronounce": "Zhū Wáng", "IPA": "t͡ʂu˥.wɑŋ˧˥"}
     },
     {
       "id": "CON chinese_huichao 19F",
       "lines": [[22176, 22565]],
-      "common_name": {"english": "Celestial High Terrace*", "native": "天高*", "pronounce": "Tiān Gāo*", "IPA": "tʰjɛn˥.kɑʊ˥*"}
+      "common_name": {"english": "Celestial High Terrace", "native": "天高", "pronounce": "Tiān Gāo", "IPA": "tʰjɛn˥.kɑʊ˥"}
     },
     {
       "id": "CON chinese_huichao 19H",
@@ -1018,7 +933,7 @@
     {
       "id": "CON chinese_huichao 20B",
       "lines": [[27830, 28237, 28734]],
-      "common_name": {"english": "Deity in Charge of Monsters*", "native": "司怪*", "pronounce": "Sī Guài*", "IPA": "sɹ̩˥.kwaɪ˥˩*"}
+      "common_name": {"english": "Deity in Charge of Monsters", "native": "司怪", "pronounce": "Sī Guài", "IPA": "sɹ̩˥.kwaɪ˥˩"}
     },
     {
       "id": "CON chinese_huichao 21A",
@@ -1143,7 +1058,7 @@
     {
       "id": "CON chinese_huichao 24B",
       "lines": [[46771, 46774]],
-      "common_name": {"english": "Banner of Wine Shop*", "native": "酒旗*", "pronounce": "Jiǔ Qí*", "IPA": "t͡ɕjoʊ˨˩˩.t͡ɕʰi˧˥*"}
+      "common_name": {"english": "Banner of Wine Shop", "native": "酒旗", "pronounce": "Jiǔ Qí", "IPA": "t͡ɕjoʊ˨˩˩.t͡ɕʰi˧˥"}
     },
     {
       "id": "CON chinese_huichao 25A",
@@ -1153,7 +1068,7 @@
     {
       "id": "CON chinese_huichao 25B",
       "lines": [[44248, 44700, 45688, 45860, 46146, 46750, 47908, 48455, 50335, 50583, 49583, 49669, 47508], [49669, 51624], [49669, 49637]],
-      "common_name": {"english": "Xuanyuan*", "native": "轩辕*", "pronounce": "Xuān Yuán*", "IPA": "ɕɥæn˥.ɥæn˧˥*"}
+      "common_name": {"english": "Xuanyuan", "native": "轩辕", "pronounce": "Xuān Yuán", "IPA": "ɕɥæn˥.ɥæn˧˥"}
     },
     {
       "id": "CON chinese_huichao 26A",
@@ -1163,7 +1078,7 @@
     {
       "id": "CON chinese_huichao 27A",
       "lines": [[52943, 53740, 55282, 55705, 57283], [55705, 54682, 53740], [55282, 55687, 56633, 55106]],
-      "common_name": {"english": "Wings*", "native": "翼宿*", "pronounce": "Yì Xiù*", "IPA": "i˥˩.ɕjoʊ˥˩*"}
+      "common_name": {"english": "Wings", "native": "翼宿", "pronounce": "Yì Xiù", "IPA": "i˥˩.ɕjoʊ˥˩"}
     },
     {
       "id": "CON chinese_huichao 28A",
