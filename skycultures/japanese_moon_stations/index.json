@@ -539,13 +539,13 @@
     },
     {
       "id": "CON japanese_moon_stations 03G",
-      "lines": [[73714, 72929, 72571]],
-      "common_name": {"english": "Battle Chariots", "native": "陣車(じんしゃ)", "pronounce": "Jinsha", "IPA": "d͡ʑĩɰ̃ɕa̠"}
+      "lines": [[72010, 71865, 73334, 73273, 72683], [73334, 75141, 76297], [75141, 75501, 75304, 75177], [75501, 76939, 77358]],
+      "common_name": {"english": "Imperial Guards", "native": "騎官(きかん)", "pronounce": "Kikan", "IPA": "kʲi̥ka̠ɴ"}
     },
     {
       "id": "CON japanese_moon_stations 03H",
-      "lines": [[72010, 71865, 73334, 73273, 72683], [73334, 75141, 76297], [75141, 75501, 75304, 75177], [75501, 76939, 77358]],
-      "common_name": {"english": "Imperial Guards", "native": "騎官(きかん)", "pronounce": "Kikan", "IPA": "kʲi̥ka̠ɴ"}
+      "lines": [[73714, 72929, 72571]],
+      "common_name": {"english": "Battle Chariots", "native": "陣車(じんしゃ)", "pronounce": "Jinsha", "IPA": "d͡ʑĩɰ̃ɕa̠"}
     },
     {
       "id": "CON japanese_moon_stations 03I",
@@ -1057,7 +1057,7 @@
     },
     {
       "id": "CON japanese_moon_stations 15A",
-      "lines": [[3693, 4463, 5131, 5571, 5742, 6193, 5586, 5544, 5447, 4436, 3881, 3293, 3231, 2912, 3092, 3031, 3693]],
+      "lines": [[3693, 4463, 5131, 5571, 5742, 6193, 5586, 5544, 5447, 4436, 3881, "DSO:M31", 3231, 2912, 3092, 3031, 3693]],
       "common_name": {"english": "Legs", "native": "奎宿(けいしゅく・とかきぼし)", "pronounce": "Keishuku/TokakiBoshi", "IPA": "ke̞ːɕɯ̟ᵝkɯ̟ᵝ/to̞ka̠kʲibo̞ɕi̥"}
     },
     {
@@ -1138,12 +1138,12 @@
     {
       "id": "CON japanese_moon_stations 17B",
       "lines": [[15900, 16083, 16322, 16369]],
-      "common_name": {"english": "Circular Celestial Granary", "native": "天囷(てんきん)", "pronounce": "Tenkin", "IPA": "te̞ŋʲkʲĩɴ"}
+      "common_name": {"english": "Celestial Foodstuff", "native": "天廩(てんりん)", "pronounce": "Tenrin", "IPA": "te̞ɴɾʲĩɴ"}
     },
     {
       "id": "CON japanese_moon_stations 17C",
       "lines": [[14135, 15457, 14915, 13954, 12828, 10324, 11484, 12093, 12706, 12387, 11687, 11046, 10826], [14135, 12706]],
-      "common_name": {"english": "Celestial Foodstuff", "native": "天廩(てんりん)", "pronounce": "Tenrin", "IPA": "te̞ɴɾʲĩɴ"}
+      "common_name": {"english": "Circular Celestial Granary", "native": "天囷(てんきん)", "pronounce": "Tenkin", "IPA": "te̞ŋʲkʲĩɴ"}
     },
     {
       "id": "CON japanese_moon_stations 17D",
@@ -1473,12 +1473,12 @@
     {
       "id": "CON japanese_moon_stations 23F",
       "lines": [[38414, 39429], [37819, 39429, 40706, 42515], [40706, 42828]],
-      "common_name": {"english": "Judge for Estimating the Age of Animals", "native": "天記(てんき)", "pronounce": "Tenki", "IPA": "te̞ŋʲkʲi̥"}
+      "common_name": {"english": "Celestial Earth God's Temple", "native": "天社(てんしゃ)", "pronounce": "Tensha", "IPA": "te̞ɰ̃ɕa̠"}
     },
     {
       "id": "CON japanese_moon_stations 23G",
       "lines": [[43067, 43067]],
-      "common_name": {"english": "Celestial Earth God's Temple", "native": "天社(てんしゃ)", "pronounce": "Tensha", "IPA": "te̞ɰ̃ɕa̠"}
+      "common_name": {"english": "Judge for Estimating the Age of Animals", "native": "天記(てんき)", "pronounce": "Tenki", "IPA": "te̞ŋʲkʲi̥"}
     },
     {
       "id": "CON japanese_moon_stations 24A",
@@ -1542,17 +1542,17 @@
     },
     {
       "id": "CON japanese_moon_stations 28B",
-      "lines": [[61174, 61174]],
+      "lines": [[60189, 60189]],
       "common_name": {"english": "Changsha (Vassal of Chariot)", "native": "長沙(附軫宿) (ちょうさ)", "pronounce": "Chōsa", "IPA": "t͡ɕo̞ːsa̠"}
     },
     {
       "id": "CON japanese_moon_stations 28C",
-      "lines": [[59199, 59199]],
+      "lines": [[61174, 61174]],
       "common_name": {"english": "Left linchpin (Vassal of Chariot)", "native": "左轄(附軫宿) (さかつ)", "pronounce": "Sakatsu", "IPA": "sa̠ka̠t͡sɯ̟ᵝ"}
     },
     {
       "id": "CON japanese_moon_stations 28D",
-      "lines": [[60189, 60189]],
+      "lines": [[59199, 59199]],
       "common_name": {"english": "Right linchpin (Vassal of Chariot)", "native": "右轄(附軫宿) (うかつ)", "pronounce": "Ukatsu", "IPA": "ɯ̟ᵝka̠t͡sɯ̟ᵝ"}
     },
     {
