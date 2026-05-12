@@ -48,6 +48,7 @@
 #include "StelGuiBase.hpp"
 #include "StelGui.hpp"
 #include "HipsMgr.hpp"
+#include "StarMgr.hpp"
 #include "StelActionMgr.hpp"
 #include "StelPropertyMgr.hpp"
 #include "StelHips.hpp"
@@ -197,6 +198,7 @@ void ViewDialog::createDialogContent()
 
 	// Set up anchor clicked signal handler for sky culture text browser
 	ui->skyCultureTextBrowser->setOpenExternalLinks(false);
+	ui->skyCultureTextBrowser->setOpenLinks(false); // Disable all link navigation
 	connect(ui->skyCultureTextBrowser, &QTextBrowser::anchorClicked, this, &ViewDialog::onSkyCultureAnchorClicked);
 
 	StelApp *app = &StelApp::getInstance();
@@ -234,10 +236,6 @@ void ViewDialog::createDialogContent()
 	connect(ui->culturesListWidget, SIGNAL(currentTextChanged(const QString&)), &StelApp::getInstance().getSkyCultureMgr(), SLOT(setCurrentSkyCultureNameI18(QString)));
 	connect(ui->skyCultureMapGraphicsView, &SkyCultureMapGraphicsView::cultureSelected, &StelApp::getInstance().getSkyCultureMgr(), &StelSkyCultureMgr::setCurrentSkyCultureNameI18);
 	connect(&StelApp::getInstance().getSkyCultureMgr(), &StelSkyCultureMgr::currentSkyCultureIDChanged, this, &ViewDialog::skyCultureChanged);
-
-	// Connect sky culture text browser anchor clicked signal
-	ui->skyCultureTextBrowser->setOpenExternalLinks(false);
-	connect(ui->skyCultureTextBrowser, &QTextBrowser::anchorClicked, this, &ViewDialog::onSkyCultureAnchorClicked);
 
 	// skyCulture list search bar
 	connect(ui->culturesListSearchLineEdit, &QLineEdit::textChanged, this, &ViewDialog::filterSkyCultures);
@@ -2192,70 +2190,150 @@ void ViewDialog::updateGridSpacingComboBox()
 void ViewDialog::onSkyCultureAnchorClicked(const QUrl& url)
 {
 	qDebug() << "Anchor clicked:" << url.toString();
-	QString fragment = url.fragment();
-	qDebug() << "Fragment:" << fragment;
-	if (fragment.startsWith("constellation:")) {
-		// Save current scroll position
-		int scrollBarValue = ui->skyCultureTextBrowser->verticalScrollBar()->value();
-		
-		// Get the constellation name from the fragment
-		QString constellationName = fragment.mid(14); // Remove "constellation:"
-		qDebug() << "Constellation name:" << constellationName;
-		
-		// Search for the constellation
+	
+	// Check for custom stellarium:// protocol
+	if (url.scheme() == "stellarium") {
 		StelApp& app = StelApp::getInstance();
 		StelObjectMgr& objMgr = app.getStelObjectMgr();
 		
-		// Try to find and select the constellation
-		bool found = false;
-		
-		// First try direct search by name
-		if (objMgr.findAndSelect(constellationName)) {
-			found = true;
-		} else {
-			// If not found, try to search by ID
-			StelModule* cMgr = app.getModule("ConstellationMgr");
-			if (cMgr) {
-				// Try direct ID search
-				StelObjectP obj = static_cast<ConstellationMgr*>(cMgr)->searchByID(constellationName);
-				if (obj) {
-					objMgr.setSelectedObject(obj);
-					found = true;
-				} else {
-					// Try searching by ID suffix (e.g., "001" for "CON maya 001")
-					// Get current sky culture ID
-					QString skyCultureID = app.getSkyCultureMgr().getCurrentSkyCultureID();
-					// Construct full ID format: "CON skycultureid suffix"
-					QString fullID = QString("CON %1 %2").arg(skyCultureID).arg(constellationName);
-					obj = static_cast<ConstellationMgr*>(cMgr)->searchByID(fullID);
+		if (url.host() == "constellation") {
+			// Handle constellation links: stellarium://constellation/xxx
+			QString constellationName = url.path().mid(1); // Remove leading '/'
+			qDebug() << "Constellation name:" << constellationName;
+			
+			// Try to find and select the constellation
+			bool found = false;
+			
+			// First try direct search by name
+			if (objMgr.findAndSelect(constellationName)) {
+				found = true;
+			} else {
+				// If not found, try to search by ID
+				StelModule* cMgr = app.getModule("ConstellationMgr");
+				if (cMgr) {
+					// Try direct ID search
+					StelObjectP obj = static_cast<ConstellationMgr*>(cMgr)->searchByID(constellationName);
 					if (obj) {
 						objMgr.setSelectedObject(obj);
 						found = true;
+					} else {
+						// Try searching by ID suffix (e.g., "001" for "CON maya 001")
+						QString skyCultureID = app.getSkyCultureMgr().getCurrentSkyCultureID();
+						QString fullID = QString("CON %1 %2").arg(skyCultureID).arg(constellationName);
+						obj = static_cast<ConstellationMgr*>(cMgr)->searchByID(fullID);
+						if (obj) {
+							objMgr.setSelectedObject(obj);
+							found = true;
+						}
 					}
 				}
 			}
-		}
-		
-		if (found) {
-			const QList<StelObjectP> newSelected = objMgr.getSelectedObject();
-			if (!newSelected.empty()) {
-				// Can't point to home planet (though constellations aren't planets, but just in case)
-				if (newSelected[0]->getEnglishName() != app.getCore()->getCurrentLocation().planetName) {
-					// Use StelMovementMgr to smoothly move to the constellation
-					StelMovementMgr* movementMgr = app.getCore()->getMovementMgr();
-					movementMgr->moveToObject(newSelected[0], movementMgr->getAutoMoveDuration());
-					movementMgr->setFlagTracking(true);
-					qDebug() << "Moved to constellation:" << constellationName;
+			
+			if (found) {
+				const QList<StelObjectP> newSelected = objMgr.getSelectedObject();
+				if (!newSelected.empty()) {
+					if (newSelected[0]->getEnglishName() != app.getCore()->getCurrentLocation().planetName) {
+						StelMovementMgr* movementMgr = app.getCore()->getMovementMgr();
+						movementMgr->moveToObject(newSelected[0], movementMgr->getAutoMoveDuration());
+						movementMgr->setFlagTracking(true);
+						qDebug() << "Moved to constellation:" << constellationName;
+					}
+				}
+			} else {
+				qDebug() << "Could not find constellation:" << constellationName;
+			}
+		} else if (url.host() == "star") {
+			// Handle star links: stellarium://star/HIP12345 or stellarium://star/中文名
+			QString starIdentifier = url.path().mid(1); // Remove leading '/'
+			qDebug() << "Star identifier:" << starIdentifier;
+			
+			// Try to find and select the star
+			bool found = false;
+			
+			// First try searching by HIP number
+			bool isHIP = starIdentifier.startsWith("HIP", Qt::CaseInsensitive);
+			if (isHIP) {
+				bool ok;
+				int hipNumber = starIdentifier.mid(3).toInt(&ok);
+				if (ok) {
+					StarMgr* starMgr = dynamic_cast<StarMgr*>(app.getModule("StarMgr"));
+					if (starMgr) {
+						StelObjectP obj = starMgr->searchHP(hipNumber);
+						if (obj) {
+							objMgr.setSelectedObject(obj);
+							found = true;
+						}
+					}
 				}
 			}
-		} else {
-			qDebug() << "Could not find constellation:" << constellationName;
+			
+			// If not found by HIP, try searching by name
+			if (!found) {
+				if (objMgr.findAndSelect(starIdentifier)) {
+					found = true;
+				}
+			}
+			
+			if (found) {
+				const QList<StelObjectP> newSelected = objMgr.getSelectedObject();
+				if (!newSelected.empty()) {
+					if (newSelected[0]->getEnglishName() != app.getCore()->getCurrentLocation().planetName) {
+						StelMovementMgr* movementMgr = app.getCore()->getMovementMgr();
+						movementMgr->moveToObject(newSelected[0], movementMgr->getAutoMoveDuration());
+						movementMgr->setFlagTracking(true);
+						qDebug() << "Moved to star:" << starIdentifier;
+					}
+				}
+			} else {
+				qDebug() << "Could not find star:" << starIdentifier;
+			}
+		} else if (url.host() == "asterism") {
+			// Handle asterism links: stellarium://asterism/AST chinese_mdn C01
+			QString asterismIdentifier = url.path().mid(1); // Remove leading '/'
+			qDebug() << "Asterism identifier:" << asterismIdentifier;
+			
+			// Try to find and select the asterism
+			bool found = false;
+			
+			// First try direct search by name
+			if (objMgr.findAndSelect(asterismIdentifier)) {
+				found = true;
+			} else {
+				// If not found, try to search by ID
+				StelModule* aMgr = app.getModule("AsterismMgr");
+				if (aMgr) {
+					StelObjectP obj = static_cast<AsterismMgr*>(aMgr)->searchByID(asterismIdentifier);
+					if (obj) {
+						objMgr.setSelectedObject(obj);
+						found = true;
+					} else {
+						// Try searching by ID suffix (e.g., "C01" for "AST chinese_mdn C01")
+						QString skyCultureID = app.getSkyCultureMgr().getCurrentSkyCultureID();
+						QString fullID = QString("AST %1 %2").arg(skyCultureID).arg(asterismIdentifier);
+						obj = static_cast<AsterismMgr*>(aMgr)->searchByID(fullID);
+						if (obj) {
+							objMgr.setSelectedObject(obj);
+							found = true;
+						}
+					}
+				}
+			}
+			
+			if (found) {
+				const QList<StelObjectP> newSelected = objMgr.getSelectedObject();
+				if (!newSelected.empty()) {
+					if (newSelected[0]->getEnglishName() != app.getCore()->getCurrentLocation().planetName) {
+						StelMovementMgr* movementMgr = app.getCore()->getMovementMgr();
+						movementMgr->moveToObject(newSelected[0], movementMgr->getAutoMoveDuration());
+						movementMgr->setFlagTracking(true);
+						qDebug() << "Moved to asterism:" << asterismIdentifier;
+					}
+				}
+			} else {
+				qDebug() << "Could not find asterism:" << asterismIdentifier;
+			}
 		}
-		
-		// Restore scroll position to prevent QTextBrowser from scrolling to the fragment
-		QTimer::singleShot(0, [this, scrollBarValue]() {
-			ui->skyCultureTextBrowser->verticalScrollBar()->setValue(scrollBarValue);
-		});
+		// No need to restore scroll position - custom protocol doesn't trigger auto-scroll
 	} else {
 		// Handle other URLs normally
 		QDesktopServices::openUrl(url);
