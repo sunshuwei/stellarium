@@ -309,12 +309,6 @@
     }
   ],
   "common_names": {
-    "NAME Jupiter": [{"english": "木星", "native": "ᠮᠣᡠ ᡠᠰᡳᡥᠠ", "pronounce": "Moo usiha"}],
-    "NAME Mars": [{"english": "火星", "native": "ᡨᡠᠸᠠ ᡠᠰᡳᡥᠠ", "pronounce": "Tuwa usiha"}],
-    "NAME Mercury": [{"english": "水星", "native": "ᠮᡠᡴᡝ ᡠᠰᡳᡥᠠ", "pronounce": "Muke usiha"}],
-    "NAME Moon": [{"english": "月", "native": "ᠪᡳᠶᠠ", "pronounce": "Biya"}],
-    "NAME Saturn": [{"english": "土星", "native": "ᠪᠣᡳᡥᠣᠨ ᡠᠰᡳᡥᠠ", "pronounce": "Boihon usiha"}],
-    "NAME Sun": [{"english": "日", "native": "ꈧꌺ", "pronounce": "ggex sse"}],
-    "NAME Venus": [{"english": "金星", "native": "ᠠᡳᠰᡳᠨ ᡠᠰᡳᡥᠠ", "pronounce": "Aisin usiha"}]
+    "NAME Sun": [{"english": "Sun", "native": "ꈧꌺ", "pronounce": "ggex sse"}],
   }
 }
