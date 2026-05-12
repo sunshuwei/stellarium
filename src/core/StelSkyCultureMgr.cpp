@@ -27,6 +27,8 @@
 #include "StelLocaleMgr.hpp"
 #include "ConstellationMgr.hpp"
 #include "Constellation.hpp"
+#include "AsterismMgr.hpp"
+#include "Asterism.hpp"
 #include "StelApp.hpp"
 
 #include <md4c-html.h>
@@ -96,13 +98,37 @@ void StelSkyCultureMgr::applyStyleToMarkdown(QString& string)
 	} while(replaced);
 }
 
-QString StelSkyCultureMgr::markdownToHTML(QString input)
+QString StelSkyCultureMgr::markdownToHTML(QString input, bool preserveConstellationLinks)
 {
-	// Pre-process constellation links: [星座名称](constellation:星座英文名)
-	// Convert to a format that QTextBrowser can handle without trying to open external applications
-	// Use a fragment identifier format that will trigger anchorClicked signal
-	static const QRegularExpression constellationLinkRe(R"(\[([^\]]+)\]\(constellation:([^\)]+)\))");
-	input.replace(constellationLinkRe, R"(<a href="#constellation:\2" class="constellation-link">\1</a>)");
+	if (preserveConstellationLinks)
+	{
+		// Pre-process constellation links: [星座名称](constellation:星座英文名)
+		// Use custom protocol format to prevent QTextBrowser from auto-scrolling
+		static const QRegularExpression constellationLinkRe(R"(\[([^\]]+)\]\(constellation:([^\)]+)\))");
+		input.replace(constellationLinkRe, R"(<a href="stellarium://constellation/\2" class="constellation-link">\1</a>)");
+		
+		// Pre-process star links: [星名](star:HIP12345) or [星名](star:中文名)
+		static const QRegularExpression starLinkRe(R"(\[([^\]]+)\]\(star:([^\)]+)\))");
+		input.replace(starLinkRe, R"(<a href="stellarium://star/\2" class="star-link">\1</a>)");
+		
+		// Pre-process asterism links: [星群名称](asterism:星群ID)
+		static const QRegularExpression asterismLinkRe(R"(\[([^\]]+)\]\(asterism:([^\)]+)\))");
+		input.replace(asterismLinkRe, R"(<a href="stellarium://asterism/\2" class="asterism-link">\1</a>)");
+	}
+	else
+	{
+		// Convert to plain text to avoid display issues with the link format
+		static const QRegularExpression constellationLinkRe(R"(\[([^\]]+)\]\(constellation:[^\)]+\))");
+		input.replace(constellationLinkRe, R"(\1)");
+		
+		// Also convert star links to plain text
+		static const QRegularExpression starLinkRe(R"(\[([^\]]+)\]\(star:[^\)]+\))");
+		input.replace(starLinkRe, R"(\1)");
+		
+		// Also convert asterism links to plain text
+		static const QRegularExpression asterismLinkRe(R"(\[([^\]]+)\]\(asterism:[^\)]+\))");
+		input.replace(asterismLinkRe, R"(\1)");
+	}
 
 	const auto inputUTF8 = input.toStdString();
 
@@ -736,6 +762,45 @@ std::vector<std::pair<QString, QString>> StelSkyCultureMgr::getConstellationsDes
 	return descrMap;
 }
 
+std::vector<std::pair<QString, QString>> StelSkyCultureMgr::getAsterismsDescriptions(QString asterSection) const
+{
+	static const QRegularExpression startWithL5Section("^#####[^#]");
+	asterSection = asterSection.trimmed();
+	if (!asterSection.contains(startWithL5Section))
+	{
+		qDebug() << "StelSkyCultureMgr::getAsterismsDescriptions: bad format:" << asterSection;
+		return {};
+	}
+
+	static const QRegularExpression l5SectionNamePat("^[ \t]*#####[ \t]*([^#\n][^\n]*)$",
+	                                          QRegularExpression::MultilineOption);
+	std::vector<std::pair<QString/*asterism*/, QString/*description*/>> descrMap;
+	QString prevSectionName;
+	qsizetype prevBodyStartPos = -1;
+	for (auto it = l5SectionNamePat.globalMatch(asterSection); it.hasNext(); )
+	{
+		const auto match = it.next();
+		const auto sectionName = match.captured(1).trimmed();
+		const auto nameStartPos = match.capturedStart(0);
+		const auto bodyStartPos = match.capturedEnd(0);
+		if (!prevSectionName.isEmpty())
+		{
+			const auto sectionText = asterSection.mid(prevBodyStartPos, nameStartPos - prevBodyStartPos);
+			if (!sectionText.isEmpty())
+				descrMap.push_back({prevSectionName, sectionText});
+		}
+		prevBodyStartPos = bodyStartPos;
+		prevSectionName = sectionName;
+	}
+	if (prevBodyStartPos >= 0)
+	{
+		const auto sectionText = asterSection.mid(prevBodyStartPos);
+		if (!sectionText.isEmpty())
+			descrMap.push_back({prevSectionName, sectionText});
+	}
+	return descrMap;
+}
+
 QString StelSkyCultureMgr::convertMarkdownLevel2Section(const QString& markdown, const QString& sectionName,
                                                         const qsizetype bodyStartPos, const qsizetype bodyEndPos,
                                                         const StelTranslator& trans)
@@ -766,6 +831,27 @@ QString StelSkyCultureMgr::convertMarkdownLevel2Section(const QString& markdown,
 				reinterpret_cast<Constellation *>(cons.data())->setNarration(trans.qtranslate(entry.second.trimmed()));
 			else
 				qDebug() << "convertMarkdownLevel2Section: cons not found: " << consName;
+		}
+		return textTr;
+	}
+
+	if (textTr.isEmpty() && sectionName == "Asterisms")
+	{
+		const auto map = getAsterismsDescriptions(textEng);
+		if (map.empty()) return markdownToHTML(textEng);
+		const auto aMgr = GETSTELMODULE(AsterismMgr);
+		for (const auto& entry : map)
+		{
+			const auto asterEngName = entry.first;
+			const auto aster = aMgr->searchByNameI18n(asterEngName);
+			const auto asterName = aster ? aster->getNameI18n().trimmed() : asterEngName;
+			textTr += "<h4>" + asterName + "</h4>\n";
+			textTr += markdownToHTML(trans.qtranslate(entry.second.trimmed()));
+
+			if (aster)
+				reinterpret_cast<Asterism *>(aster.data())->setNarration(trans.qtranslate(entry.second.trimmed()));
+			else
+				qDebug() << "convertMarkdownLevel2Section: asterism not found: " << asterName;
 		}
 		return textTr;
 	}

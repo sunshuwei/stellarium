@@ -381,6 +381,7 @@ private:
 	QString descriptionMarkdownToNarration(const QString& markdown, const QString& descrPath);
 	// We don't use QHash/QMap because we want to preserve order of constellations as listed in the description file
 	std::vector<std::pair<QString/*constellation*/, QString/*description*/>> getConstellationsDescriptions(QString consSection) const;
+	std::vector<std::pair<QString/*asterism*/, QString/*description*/>> getAsterismsDescriptions(QString asterSection) const;
 	QString convertMarkdownLevel2Section(const QString& markdown, const QString& sectionName,
 	                                     qsizetype bodyStartPos, qsizetype bodyEndPos, const StelTranslator& trans);
 	QString convertMarkdownLevel2SectionNarration(const QString& markdown, const QString& sectionName,
@@ -402,7 +403,9 @@ private:
 
 public:
 	//! Convert input in Markdown style to formatted HTML
-	static QString markdownToHTML(QString input);
+	//! @param input the Markdown text to convert
+	//! @param preserveConstellationLinks if true, constellation links will be preserved; if false, only the text will be shown
+	static QString markdownToHTML(QString input, bool preserveConstellationLinks = true);
 private:
 	//! Restyle a few style annotations
 	static void applyStyleToMarkdown(QString& string);
