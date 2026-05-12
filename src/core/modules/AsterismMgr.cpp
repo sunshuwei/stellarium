@@ -768,8 +768,13 @@ void AsterismMgr::selectedObjectChange(StelModule::StelModuleSelectAction action
 	StelObjectMgr* omgr = GETSTELMODULE(StelObjectMgr);
 	Q_ASSERT(omgr);
 	const QList<StelObjectP> newSelected = omgr->getSelectedObject();
+	
+	// If nothing is selected, restore all asterisms
 	if (newSelected.empty())
+	{
+		setSelectedAsterism(nullptr);
 		return;
+	}
 
 	const QList<StelObjectP> newSelectedAsterisms = omgr->getSelectedObject("Asterism");
 	if (!newSelectedAsterisms.empty())

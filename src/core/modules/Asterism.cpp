@@ -26,10 +26,11 @@
 #include "StelPainter.hpp"
 #include "StelApp.hpp"
 #include "StelCore.hpp"
+#include "StelLocaleMgr.hpp"
 #include "StelUtils.hpp"
+#include "StelSkyCultureMgr.hpp"
 #include "ZoneArray.hpp"
 #include "StelModuleMgr.hpp"
-#include "StelSkyCultureMgr.hpp"
 #include <QMessageBox>
 
 #include <QString>
@@ -153,21 +154,8 @@ bool Asterism::read(const QJsonObject& data, StarMgr *starMgr, const QSet<int> &
 
 	if (!polylines[0].toArray().isEmpty() && polylines[0].toArray()[0].isArray())
 	{
-		qWarning().nospace() << "Coordinate array detected for asterism" << id << ". This is obsolete. Reformulate with Gaia stars. Skipping.";
-		//if (polylines[0].toArray()[0].toArray().size() != 2)
-		//{
-		//	qWarning().nospace() << "Bad asterism point entry for asterism " << id
-		//			     << " (" << culturalName.native << "): expected size 2, got " << polylines[0].toArray()[0].toArray().size();
-		//	return false;
-		//}
-		//if (typeOfAsterism == Type::RayHelper)
-		//{
-		//	qWarning() << "Mismatch between asterism type and line data: got a ray helper, "
-		//	              "but the line points contain two entries instead of one";
-		//	return false;
-		//}
-		// The entry contains RA and dec instead of HIP catalog number
-		typeOfAsterism = Type::TelescopicAsterism;
+		qWarning().nospace() << "Coordinate array detected for asterism" << id << ". Treating as dark asterism.";
+		typeOfAsterism = Type::DarkAsterism;
 	}
 
 	StelCore *core = StelApp::getInstance().getCore();
@@ -234,20 +222,18 @@ bool Asterism::read(const QJsonObject& data, StarMgr *starMgr, const QSet<int> &
 				}
 				break;
 			}
-			case Type::TelescopicAsterism:
+			case Type::DarkAsterism:
 			{
-				qWarning() << "Asterisms with coord list no longer supported. Skipping " << id;
-				/*
 				if (!point.isArray())
 				{
-					qWarning().nospace() << "Error in asterism " << id << ": bad point at line #"
+					qWarning().nospace() << "Error in dark asterism " << id << ": bad point at line #"
 					                     << lineIndex << ": isn't an array of two numbers (RA and dec)";
 					return false;
 				}
 				const QJsonArray arr = point.toArray();
 				if (arr.size() != 2 || !arr[0].isDouble() || !arr[1].isDouble())
 				{
-					qWarning().nospace() << "Error in asterism " << id << ": bad point at line #"
+					qWarning().nospace() << "Error in dark asterism " << id << ": bad point at line #"
 					                     << lineIndex << ": isn't an array of two numbers (RA and dec)";
 					return false;
 				}
@@ -257,31 +243,15 @@ bool Asterism::read(const QJsonObject& data, StarMgr *starMgr, const QSet<int> &
 
 				Vec3d coords;
 				StelUtils::spheToRect(RA*M_PI/12., DE*M_PI/180., coords);
-				const QList<StelObjectP> stars = starMgr->searchAround(coords, 0.25, core);
-				// Find star closest to coordinates
-				StelObjectP s = nullptr;
-				double d = 10.;
-				for (const auto& p : stars)
-				{
-					double a = coords.angle(p->getJ2000EquatorialPos(core));
-					if (a<d)
-					{
-						d = a;
-						s = p;
-					}
-				}
-				asterism.push_back(s);
-				if (!asterism.back())
-				{
-					qWarning() << "Error in asterism" << id << "- can't find star with coordinates" << RA << "/" << DE;
-					return false;
-				}
-				*/
+				darkAsterismCoordinates.push_back(coords);
+				// Expand the polyline into a sequence of segments for dark asterism
+				if (pointIndex != 0 && pointIndex != polyline.size() - 1)
+					darkAsterismCoordinates.push_back(coords);
 				break;
 			}
 			}
-			// Expand the polyline into a sequence of segments
-			if (pointIndex != 0 && pointIndex != polyline.size() - 1)
+			// Expand the polyline into a sequence of segments (only for non-dark asterisms)
+			if (typeOfAsterism != Type::DarkAsterism && pointIndex != 0 && pointIndex != polyline.size() - 1)
 				asterism.push_back(asterism.back());
 		}
 	}
@@ -295,8 +265,16 @@ bool Asterism::read(const QJsonObject& data, StarMgr *starMgr, const QSet<int> &
 	if (typeOfAsterism != Type::RayHelper)
 	{
 		Vec3d XYZname1(0.);
-		for(const auto& point : asterism)
-			XYZname1 += point->getJ2000EquatorialPos(core);
+		if (typeOfAsterism == Type::DarkAsterism)
+		{
+			for(const auto& coord : darkAsterismCoordinates)
+				XYZname1 += coord;
+		}
+		else
+		{
+			for(const auto& point : asterism)
+				XYZname1 += point->getJ2000EquatorialPos(core);
+		}
 		XYZname1.normalize();
 		XYZname.append(XYZname1);
 
@@ -373,22 +351,43 @@ void Asterism::drawOptim(StelPainter& sPainter, const StelCore* core, const Sphe
 		sPainter.setColor(rayHelperColor, rayHelperFader.getInterstate());
 	}
 
-	Vec3d star1;
-	Vec3d star2;
-	for (unsigned int i = 0; i < asterism.size() / 2; ++i)
+	if (typeOfAsterism == Type::DarkAsterism)
 	{
-		star1=asterism[2*i]->getJ2000EquatorialPos(core);
-		star2=asterism[2*i+1]->getJ2000EquatorialPos(core);
-		star1.normalize();
-		star2.normalize();
-		if (star1.fuzzyEquals(star2))
+		Vec3d coord1;
+		Vec3d coord2;
+		for (unsigned int i = 0; i < darkAsterismCoordinates.size() / 2; ++i)
 		{
-			// draw single-star segment as circle
-			SphericalCap saCircle(star1, singleStarAsterismRadius);
-			sPainter.drawSphericalRegion(&saCircle, StelPainter::SphericalPolygonDrawModeBoundary);
+			coord1 = darkAsterismCoordinates[2*i];
+			coord2 = darkAsterismCoordinates[2*i+1];
+			coord1.normalize();
+			coord2.normalize();
+			if (coord1.fuzzyEquals(coord2))
+			{
+				SphericalCap saCircle(coord1, singleStarAsterismRadius);
+				sPainter.drawSphericalRegion(&saCircle, StelPainter::SphericalPolygonDrawModeBoundary);
+			}
+			else
+				sPainter.drawGreatCircleArc(coord1, coord2, &viewportHalfspace);
 		}
-		else
-			sPainter.drawGreatCircleArc(star1, star2, &viewportHalfspace);
+	}
+	else
+	{
+		Vec3d star1;
+		Vec3d star2;
+		for (unsigned int i = 0; i < asterism.size() / 2; ++i)
+		{
+			star1=asterism[2*i]->getJ2000EquatorialPos(core);
+			star2=asterism[2*i+1]->getJ2000EquatorialPos(core);
+			star1.normalize();
+			star2.normalize();
+			if (star1.fuzzyEquals(star2))
+			{
+				SphericalCap saCircle(star1, singleStarAsterismRadius);
+				sPainter.drawSphericalRegion(&saCircle, StelPainter::SphericalPolygonDrawModeBoundary);
+			}
+			else
+				sPainter.drawGreatCircleArc(star1, star2, &viewportHalfspace);
+		}
 	}
 }
 
@@ -416,9 +415,6 @@ void Asterism::drawName(const Vec3d &xyName, StelPainter& sPainter) const
 	if ((nameFader.getInterstate()==0.0f) || !flagAsterism)
 		return;
 
-	if (typeOfAsterism==Type::TelescopicAsterism && sPainter.getProjector()->getFov()>60.f)
-		return;
-
 	QString name = getScreenLabel();
 	sPainter.setColor(labelColor, nameFader.getInterstate());
 	sPainter.drawText(static_cast<float>(xyName[0]), static_cast<float>(xyName[1]), name, 0., -sPainter.getFontMetrics().boundingRect(name).width()/2, 0, false);
@@ -431,11 +427,37 @@ void Asterism::update(int deltaTime)
 	nameFader.update(deltaTime);
 }
 
+void Asterism::setNarration(const QString &narration)
+{
+	this->narration = narration;
+}
+
+QString Asterism::getNarration(const StelCore *core, const InfoStringGroup &flags) const
+{
+	Q_UNUSED(core)
+	Q_UNUSED(flags)
+	const StelTranslator& trans = StelApp::getInstance().getLocaleMgr().getSkyCultureDescriptionsTranslator();
+
+	QString toBeSpoken = trans.qtranslate(narration);
+	static const QRegularExpression br("<br/?>");
+	static const QRegularExpression img("<img .*>");
+	static const QRegularExpression latin("_([^_]{0,50})_");
+	static const QRegularExpression mdStar("\\*([^*]{0,50})\\*");
+
+	toBeSpoken.replace(br, " ");
+	toBeSpoken.replace(img, " ");
+	toBeSpoken.replace(latin, "\\1");
+	toBeSpoken.replace(mdStar, "\\1");
+
+	return toBeSpoken;
+}
+
 QString Asterism::getInfoString(const StelCore *core, const InfoStringGroup &flags) const
 {
 	Q_UNUSED(core)
 	QString str;
 	QTextStream oss(&str);
+	static const QRegularExpression img("<img .*>");
 
 	if (flags&Name)
 		oss << "<h2>" << getInfoLabel() << "</h2>";
@@ -444,6 +466,10 @@ QString Asterism::getInfoString(const StelCore *core, const InfoStringGroup &fla
 		oss << QString("%1: <b>%2</b>").arg(q_("Type"), getObjectTypeI18n()) << "<br />";
 
 	oss << getSolarLunarInfoString(core, flags);
+
+	if (flags&Extra && !narration.isEmpty())
+		oss << QString("%1: ").arg(qc_("Legend", "constellation origin")) << StelUtils::wrapText(StelSkyCultureMgr::markdownToHTML(narration, false).remove(img));
+
 	postProcessInfoString(str, flags);
 
 	return str;
