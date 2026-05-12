@@ -497,6 +497,9 @@ private slots:
 	//! decrease artificial cutoff magnitude slightly (can be linked to an action/hotkey)
 	void reduceStarsMagnitudeLimit();
 
+	//! Copy the HIP number of the currently selected star to clipboard
+	void copyStarHipToClipboard();
+
 signals:
 	void starLabelsDisplayedChanged(const bool displayed);
 	void starsDisplayedChanged(const bool displayed);

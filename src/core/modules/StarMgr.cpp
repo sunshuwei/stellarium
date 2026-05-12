@@ -48,6 +48,8 @@
 #include "StelObject.hpp"
 
 #include <QGlobalStatic>
+#include <QApplication>
+#include <QClipboard>
 #include <QTextStream>
 #include <QFile>
 #include <QBuffer>
@@ -415,6 +417,9 @@ void StarMgr::init()
 	// Details: https://github.com/Stellarium/stellarium/issues/174
 	addAction("actionShow_Stars_MagnitudeLimitIncrease", displayGroup, N_("Increase the magnitude limit for stars"), "increaseStarsMagnitudeLimit()");
 	addAction("actionShow_Stars_MagnitudeLimitReduce", displayGroup, N_("Reduce the magnitude limit for stars"), "reduceStarsMagnitudeLimit()");
+	
+	QString selectionGroup = N_("Selection");
+	addAction("actionCopyStarHIP", selectionGroup, N_("Copy star HIP number"), "copyStarHipToClipboard()", "Ctrl+Alt+C");
 }
 
 
@@ -2395,6 +2400,35 @@ void StarMgr::reduceStarsMagnitudeLimit()
 {
 	static StelCore* core = StelApp::getInstance().getCore();
 	core->getSkyDrawer()->setCustomStarMagnitudeLimit(core->getSkyDrawer()->getCustomStarMagnitudeLimit() - 0.1);
+}
+
+void StarMgr::copyStarHipToClipboard()
+{
+	StelApp& app = StelApp::getInstance();
+	StelObjectMgr& objMgr = app.getStelObjectMgr();
+	const QList<StelObjectP> selectedObjects = objMgr.getSelectedObject();
+	
+	if (!selectedObjects.isEmpty())
+	{
+		StelObjectP obj = selectedObjects.first();
+		if (obj->getType() == "Star")
+		{
+			// Get HIP number from object's ID
+			QString id = obj->getID();
+			// The ID format is typically "HIP XXXXX"
+			if (id.startsWith("HIP "))
+			{
+				QString hipStr = id.mid(4); // Get number after "HIP "
+				bool ok;
+				int hip = hipStr.toInt(&ok);
+				if (ok && hip > 0)
+				{
+					QClipboard* clipboard = QApplication::clipboard();
+					clipboard->setText(QString::number(hip));
+				}
+			}
+		}
+	}
 }
 
 void StarMgr::populateStarsDesignations()
