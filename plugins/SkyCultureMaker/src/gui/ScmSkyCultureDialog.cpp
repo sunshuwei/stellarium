@@ -126,18 +126,13 @@ void ScmSkyCultureDialog::createDialogContent()
 	        [this]()
 	        {
 			name = ui->skyCultureNameLE->text();
-			if (name.isEmpty())
-			{
-				ui->ExportSkyCultureBtn->setEnabled(false);
-			}
-			else
-			{
-				ui->ExportSkyCultureBtn->setEnabled(true);
-			}
+			// Removed the restriction that disables export button when name is empty
+			// Default values will be auto-filled in saveSkyCulture()
 			setIdFromName(name);
 		});
 
-	ui->ExportSkyCultureBtn->setEnabled(false);
+	// Export button is always enabled - default values will be auto-filled if needed
+	ui->ExportSkyCultureBtn->setEnabled(true);
 	ui->RemoveConstellationBtn->setEnabled(false);
 	ui->EditConstellationBtn->setEnabled(false);
 
@@ -294,32 +289,63 @@ void ScmSkyCultureDialog::saveSkyCulture()
 {
 	scm::Description desc = getDescriptionFromTextEdit();
 
-	// check if license is set
+	// Auto-fill default values for optional fields if not provided
+	if (desc.name.isEmpty())
+	{
+		desc.name = "My Sky Culture";
+		ui->skyCultureNameLE->setText(desc.name);
+		setIdFromName(desc.name);
+	}
 	if (desc.license == scm::LicenseType::NONE)
 	{
-		maker->showUserWarningMessage(dialog, ui->titleBar->title(), q_("Please select a license for the sky culture."));
-		return;
+		// Set default license to CC BY 4.0 if not specified
+		desc.license = scm::LicenseType::CC_BY;
+		for (int i = 0; i < ui->licenseCB->count(); ++i)
+		{
+			if (ui->licenseCB->itemData(i).value<scm::LicenseType>() == scm::LicenseType::CC_BY)
+			{
+				ui->licenseCB->setCurrentIndex(i);
+				break;
+			}
+		}
 	}
-	// check if description is complete
-	const auto incompFieldsList = desc.getIncompleteFieldsList();
-	if (!incompFieldsList.isEmpty())
+	if (desc.classification == scm::ClassificationType::NONE)
 	{
-		auto msg = q_("The sky culture description is not complete. The following fields are not filled correctly:\n");
-		for (const auto& field : incompFieldsList)
-			msg += u8" \u2022 " + field + "\n";
-		maker->showUserWarningMessage(dialog, ui->titleBar->title(), msg);
-		return;
+		// Set default classification to Ethnographic
+		desc.classification = scm::ClassificationType::ETHNOGRAPHIC;
+		for (int i = 0; i < ui->classificationCB->count(); ++i)
+		{
+			if (ui->classificationCB->itemData(i).value<scm::ClassificationType>() == scm::ClassificationType::ETHNOGRAPHIC)
+			{
+				ui->classificationCB->setCurrentIndex(i);
+				break;
+			}
+		}
+	}
+	if (desc.region == scm::RegionType::NONE)
+	{
+		// Set default region to World
+		desc.region = scm::RegionType::WORLD;
+		for (int i = 0; i < ui->regionCB->count(); ++i)
+		{
+			if (ui->regionCB->itemData(i).value<scm::RegionType>() == scm::RegionType::WORLD)
+			{
+				ui->regionCB->setCurrentIndex(i);
+				break;
+			}
+		}
 	}
 
 	// If valid, set the sky culture description
 	maker->setSkyCultureDescription(desc);
 
+	// Skip polygon check - allow export without geographical location for quick constellation creation
 	// check wether at least 1 polygon was digitized
-	if (ui->polygonInfoTreeWidget->topLevelItemCount() < 1)
+	/*if (ui->polygonInfoTreeWidget->topLevelItemCount() < 1)
 	{
 		maker->showUserWarningMessage(dialog, ui->titleBar->title(), q_("The sky culture territory is not complete. Please digitize at least one polygon in geographical location tab."));
 		return;
-	}
+	}*/
 
 	// open export dialog
 	maker->setDialogVisibility(scm::DialogID::SkyCultureExportDialog, true);

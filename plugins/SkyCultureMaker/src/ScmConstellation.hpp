@@ -152,9 +152,10 @@ public:
 	  * 
 	  * @param skyCultureId The ID of the sky culture to which this constellation belongs.
 	  * @param mergeLines Whether to merge lines into polylines where possible.
+	  * @param coordinateDecimals Number of decimal places for coordinates (default: 6).
 	  * @return QJsonObject 
 	  */
-	QJsonObject toJson(const QString &skyCultureId, const bool mergeLines) const;
+	QJsonObject toJson(const QString &skyCultureId, const bool mergeLines, int coordinateDecimals = 6) const;
 
 	/**
 	 * @brief Saves the artwork of this constellation, if art is attached, to the give filepath.

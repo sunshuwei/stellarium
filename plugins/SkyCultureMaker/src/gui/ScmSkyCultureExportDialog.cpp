@@ -26,9 +26,15 @@
 #include "ScmSkyCulture.hpp"
 #include "StelFileMgr.hpp"
 #include "ui_scmSkyCultureExportDialog.h"
+#include <QApplication>
+#include <QClipboard>
+#include <QDialogButtonBox>
 #include <QFileDialog>
 #include <QJsonDocument>
 #include <QJsonObject>
+#include <QHBoxLayout>
+#include <QVBoxLayout>
+#include <QTextEdit>
 
 ScmSkyCultureExportDialog::ScmSkyCultureExportDialog(SkyCultureMaker* maker)
 	: StelDialogSeparate("ScmSkyCultureExportDialog")
@@ -75,9 +81,19 @@ void ScmSkyCultureExportDialog::createDialogContent()
 	connect(ui->mergeLinesCB, &QCheckBox::toggled, this, [](bool checked)
 	        { StelApp::getInstance().getSettings()->setValue("SkyCultureMaker/mergeLinesOnExport", checked); });
 
+	ui->coordinateDecimalsSB->setValue(
+		StelApp::getInstance().getSettings()->value("SkyCultureMaker/coordinateDecimals", 6).toInt());
+	connect(ui->coordinateDecimalsSB, QOverload<int>::of(&QSpinBox::valueChanged), this, [](int value)
+	        { StelApp::getInstance().getSettings()->setValue("SkyCultureMaker/coordinateDecimals", value); });
+
 	connect(ui->exportBtn, &QPushButton::clicked, this, &ScmSkyCultureExportDialog::exportSkyCulture);
 	connect(ui->exportAndExitBtn, &QPushButton::clicked, this, &ScmSkyCultureExportDialog::exportAndExitSkyCulture);
 	connect(ui->cancelBtn, &QPushButton::clicked, this, &ScmSkyCultureExportDialog::close);
+	
+	// Add view JSON button
+	QPushButton* viewJsonBtn = new QPushButton(q_("View JSON"), dialog);
+	ui->btnLayout->insertWidget(1, viewJsonBtn);
+	connect(viewJsonBtn, &QPushButton::clicked, this, &ScmSkyCultureExportDialog::viewJson);
 }
 
 void ScmSkyCultureExportDialog::handleFontChanged()
@@ -154,8 +170,10 @@ bool ScmSkyCultureExportDialog::exportSkyCulture()
 	// Export the sky culture to the index.json file
 	bool mergeLinesOnExport =
 		StelApp::getInstance().getSettings()->value("SkyCultureMaker/mergeLinesOnExport", true).toBool();
-	qDebug() << "SkyCultureMaker: Exporting sky culture. Merge lines on export:" << mergeLinesOnExport;
-	QJsonObject scIndexJsonObject = currentSkyCulture->toJson(mergeLinesOnExport);
+	int coordinateDecimals = StelApp::getInstance().getSettings()->value("SkyCultureMaker/coordinateDecimals", 6).toInt();
+	qDebug() << "SkyCultureMaker: Exporting sky culture. Merge lines on export:" << mergeLinesOnExport
+	         << "Coordinate decimals:" << coordinateDecimals;
+	QJsonObject scIndexJsonObject = currentSkyCulture->toJson(mergeLinesOnExport, coordinateDecimals);
 	QJsonDocument scIndexJsonDoc(scIndexJsonObject);
 	if (scIndexJsonDoc.isNull() || scIndexJsonDoc.isEmpty())
 	{
@@ -264,6 +282,60 @@ void ScmSkyCultureExportDialog::exportAndExitSkyCulture()
 	{
 		maker->stopScm();
 	}
+}
+
+void ScmSkyCultureExportDialog::viewJson()
+{
+	if (maker == nullptr)
+	{
+		qWarning() << "SkyCultureMaker: maker is nullptr. Cannot view JSON.";
+		return;
+	}
+
+	scm::ScmSkyCulture* currentSkyCulture = maker->getCurrentSkyCulture();
+	if (currentSkyCulture == nullptr)
+	{
+		qWarning() << "SkyCultureMaker: current sky culture is nullptr. Cannot view JSON.";
+		maker->showUserErrorMessage(this->dialog, ui->titleBar->title(), q_("No sky culture is set."));
+		return;
+	}
+
+	bool mergeLines = StelApp::getInstance().getSettings()->value("SkyCultureMaker/mergeLinesOnExport", true).toBool();
+	int coordinateDecimals = StelApp::getInstance().getSettings()->value("SkyCultureMaker/coordinateDecimals", 6).toInt();
+	QJsonObject json = currentSkyCulture->toJson(mergeLines, coordinateDecimals);
+	QJsonDocument doc(json);
+	QString jsonStr = doc.toJson(QJsonDocument::Indented);
+
+	// Create a modal dialog to display the JSON
+	QDialog jsonDialog(dialog);
+	jsonDialog.setWindowTitle(q_("Sky Culture JSON"));
+	QVBoxLayout* layout = new QVBoxLayout(&jsonDialog);
+
+	QTextEdit* textEdit = new QTextEdit(&jsonDialog);
+	textEdit->setReadOnly(true);
+	textEdit->setText(jsonStr);
+	textEdit->setFont(QFont("Courier New", 10));
+	layout->addWidget(textEdit);
+
+	// Create button box with Close button
+	QDialogButtonBox* btnBox = new QDialogButtonBox(QDialogButtonBox::Close, &jsonDialog);
+	connect(btnBox, &QDialogButtonBox::rejected, &jsonDialog, &QDialog::close);
+	
+	// Create a separate Copy button
+	QPushButton* copyBtn = new QPushButton(q_("Copy"), &jsonDialog);
+	connect(copyBtn, &QPushButton::clicked, [textEdit]() {
+		QApplication::clipboard()->setText(textEdit->toPlainText());
+	});
+	
+	// Create horizontal layout for buttons
+	QHBoxLayout* btnLayout = new QHBoxLayout();
+	btnLayout->addWidget(copyBtn);
+	btnLayout->addWidget(btnBox);
+	layout->addLayout(btnLayout);
+
+	jsonDialog.resize(800, 600);
+	jsonDialog.exec();
+	// After closing, the export dialog remains open for further editing
 }
 
 bool ScmSkyCultureExportDialog::saveSkyCultureCMakeListsFile(const QDir& directory)

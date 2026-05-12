@@ -78,6 +78,12 @@ private:
 	 * @return true if the file was saved successfully, false otherwise.
 	 */
 	bool saveSkyCultureCMakeListsFile(const QDir &directory);
+
+	/**
+	 * @brief Displays the JSON representation of the sky culture in a dialog.
+	 * Allows user to view and copy the JSON without exporting.
+	 */
+	void viewJson();
 };
 
 #endif // SCM_SKY_CULTURE_EXPORT_DIALOG_HPP

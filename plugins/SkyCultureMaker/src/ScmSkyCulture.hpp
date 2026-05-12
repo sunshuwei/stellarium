@@ -88,8 +88,9 @@ public:
 	* @brief Returns the sky culture as a JSON object
 	*
 	* @param mergeLines Whether to merge the lines of the constellations into polylines where possible.
+	* @param coordinateDecimals Number of decimal places for coordinates (default: 6).
 	*/
-	QJsonObject toJson(const bool mergeLines) const;
+	QJsonObject toJson(const bool mergeLines, int coordinateDecimals = 6) const;
 
 	/**
 	* @brief Returns the territory of the sky culture as a (Geo)JSON object
