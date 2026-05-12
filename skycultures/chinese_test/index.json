@@ -28,6 +28,21 @@
       "common_name": {"english": "Zaofu", "native": "造父", "pronounce": ""}
     },
     {
+      "id": "CON chinese_mdn 10E",
+      "lines": [[100453, 97165, 99675, 102098, 103413, 104887, 105138, 104732, 102488, 100453]],
+      "common_name": {"english": "Celestial Ford (bridge of magpies)", "native": "天津", "pronounce": "Tiān Jīn", "IPA": "tʰjɛn˥.t͡ɕin˥"}
+    },
+    {
+      "id": "CON chinese_mdn 001",
+      "lines": [[91262, 91262]],
+      "common_name": {"english": "Weaving Girl", "native": "织女", "pronounce": "Tiān Jīn", "IPA": "tʰjɛn˥.t͡ɕin˥"}
+    },
+    {
+      "id": "CON chinese_mdn 002",
+      "lines": [[97278, 97649, 98036]],
+      "common_name": {"english": "Cowherd", "native": "牛郎", "pronounce": "Tiān Jīn", "IPA": "tʰjɛn˥.t͡ɕin˥"}
+    },
+    {
       "id": "CON chinese_test 19A",
       "lines": [[20889, 20648, 20455, 20205], [21683, 21421, 20894, 20713, 20205, 18724]],
       "common_name": {"native": "Bixiu"}
