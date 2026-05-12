@@ -110,7 +110,7 @@
     },
     {
       "id": "AST chinese_yixiang 028",
-      "lines": [[44857, 45038]]
+      "lines": [[44857, 45038, 46977]]
     },
     {
       "id": "AST chinese_yixiang 029",
@@ -570,7 +570,7 @@
     },
     {
       "id": "AST chinese_yixiang 146",
-      "lines": [[2355, 3138, 3093, 3685, 3810, 4267, 5454, 5310, 4288, 4366, 4510, 7948, 5544, 5319, 4889, 5550, 6514, 5493, 5317, 4903, "381266587637831296", 3231]]
+      "lines": [[2355, 3138, 3093, 3685, 3810, 4267, 5454, 5310, 4288, 4366, 4510, 7948, 5544, 5319, 4889, 5550, 6514, 5493, 5317, 4903, "DSO:M31", 3231]]
     },
     {
       "id": "AST chinese_yixiang 147",
@@ -818,7 +818,7 @@
     },
     {
       "id": "AST chinese_yixiang 208",
-      "lines": [[39863, 41211, 41307, 42146, 42835, 43496, 43822, 42509, 43067, 42662, 40604, 40259, 39943, 40035, 40084, 41067]]
+      "lines": [[39863, 41211, 41307, 42146, 42835, 43496, 43822, 42509, 43067, 42662, 40604, 40259, 39943, 40035, 40084, 41067], [40604, 39757]]
     },
     {
       "id": "AST chinese_yixiang 209",
@@ -842,7 +842,7 @@
     },
     {
       "id": "AST chinese_yixiang 214",
-      "lines": [[49812, 49865, 50140, 50100, 50885, 51135, 51362, 50887, 51117, 51437, 52316, 52913]]
+      "lines": [[49812, 49841], [49812, 49865, 50140, 50100, 50885, 51135, 51362, 50887, 51117, 51437, 52316, 52913]]
     },
     {
       "id": "AST chinese_yixiang 215",
@@ -906,7 +906,7 @@
     },
     {
       "id": "AST chinese_yixiang 230",
-      "lines": [[63945, 65519]]
+      "lines": [[63945, "DSO:NGC5139"]]
     },
     {
       "id": "AST chinese_yixiang 231",
@@ -1845,7 +1845,7 @@
     },
     {
       "id": "CON chinese_yixiang 185",
-      "lines": [[82676, 82676]],
+      "lines": [["DSO:NGC6231", "DSO:NGC6231"]],
       "common_name": {"english": "Changing Room (Vassal of Tail)", "native": "神宫(附尾宿)", "pronounce": "Shen Gong"}
     },
     {
@@ -2025,7 +2025,7 @@
     },
     {
       "id": "CON chinese_yixiang 221",
-      "lines": [[42312, 42884, 43603, 42515, 42828, 43409, 43825]],
+      "lines": [[42312, 42884, 44191, 42515, 42828, 43409, 43825]],
       "common_name": {"english": "Celestial Dog", "native": "天狗", "pronounce": "Tian Gou"}
     },
     {
@@ -2365,7 +2365,7 @@
     },
     {
       "id": "CON chinese_yixiang 289",
-      "lines": [[87616, 87616]],
+      "lines": [["DSO:M7", "DSO:M7"]],
       "common_name": {"english": "Fish", "native": "鱼", "pronounce": "Yu"}
     },
     {
@@ -2514,8 +2514,8 @@
       "common_name": {"english": "Seat Flags", "native": "座旗", "pronounce": "Zuo Qi"}
     }
   ],
-  "edges_type": "own",
-  "edges": [
+  "edges_type1": "own",
+  "edges1": [
     "___:___ __ 00:00:00 +90:00:00 13:25:12 -11:09:41 009 011",
     "___:___ __ 13:25:12 -11:09:41 00:00:00 -90:00:00 009 011",
     "___:___ __ 00:00:00 +90:00:00 14:12:54 -10:16:22 011 004",
@@ -2978,7 +2978,8 @@
     "HIP 13244": [{"english": "White Patched Nearby II", "native": "附白二", "pronounce": "Fùbái II", "references": [1], "translators_comments": "Pinyin transliteration"}],
     "HIP 13254": [{"english": "Mausoleum VII", "native": "大陵七", "pronounce": "Dàlíng VII", "references": [1], "translators_comments": "Pinyin transliteration"}],
     "HIP 13265": [{"english": "Celestial Orchard Added II#", "native": "天园增二#", "pronounce": "Tiānyuán zēng II#", "references": [3], "translators_comments": "Pinyin transliteration"}],
-    "HIP 13268": [{"english": "Celestial Boat I", "native": "天船一", "pronounce": "Tiānchuán I", "references": [1], "translators_comments": "Pinyin transliteration"}],
+    "HIP 13268": [{"english": "Celestial Boat I", "native": "天船一", "pronounce": "Tiānchuán I", "references": [1], "translators_comments": "Pinyin transliteration"},
+                  {"english": "Mausoleum Added XII#", "native": "大陵增十二#", "pronounce": "Dàlíng zēng XII#", "references": [3], "translators_comments": "Pinyin transliteration"}],
     "HIP 13288": [{"english": "Celestial Meadows IX", "native": "天苑九", "pronounce": "Tiānyuàn IX", "references": [1], "translators_comments": "Pinyin transliteration"}],
     "HIP 13327": [{"english": "Official in Charge of the Forest IV", "native": "左更四", "pronounce": "Zuǒgēng IV", "references": [1], "translators_comments": "Pinyin transliteration"}],
     "HIP 13328": [{"english": "Mausoleum Added XVI", "native": "大陵增十六", "pronounce": "Dàlíng zēng XVI", "references": [1], "translators_comments": "Pinyin transliteration"}],
@@ -3332,8 +3333,8 @@
     "HIP 25281": [{"english": "Three Stars Added III", "native": "参宿增三", "pronounce": "Shēnxiù zēng III", "references": [1], "translators_comments": "Pinyin transliteration"}],
     "HIP 25282": [{"english": "Three Stars Added IV", "native": "参宿增四", "pronounce": "Shēnxiù zēng IV", "references": [1], "translators_comments": "Pinyin transliteration"}],
     "HIP 25292": [{"english": "Celestial Pier IV", "native": "天潢四", "pronounce": "Tiānhuáng IV", "references": [1], "translators_comments": "Pinyin transliteration"}],
-    "HIP 25302": [{"english": "Three Stars Added VI", "native": "参宿增六", "pronounce": "Shēnxiù zēng VI", "references": [1], "translators_comments": "Pinyin transliteration"},
-                  {"english": "Three Stars Added VII", "native": "参宿增七", "pronounce": "Shēnxiù zēng VII", "references": [1], "translators_comments": "Pinyin transliteration"}],
+    "HIP 25302": [{"english": "Three Stars Added VII", "native": "参宿增七", "pronounce": "Shēnxiù zēng VII", "references": [1], "translators_comments": "Pinyin transliteration"},
+                  {"english": "Three Stars Added VI", "native": "参宿增六", "pronounce": "Shēnxiù zēng VI", "references": [1], "translators_comments": "Pinyin transliteration"}],
     "HIP 25336": [{"english": "Three Stars V", "native": "参宿五", "pronounce": "Shēnxiù V", "references": [1], "translators_comments": "Pinyin transliteration"}],
     "HIP 25410": [{"english": "Celestial Pass Added I", "native": "天关增一", "pronounce": "Tiānguān zēng I", "references": [1], "translators_comments": "Pinyin transliteration"}],
     "HIP 25428": [{"english": "Five Chariots V", "native": "五车五", "pronounce": "Wǔchē V", "references": [1], "translators_comments": "Pinyin transliteration"}],
@@ -3712,7 +3713,8 @@
     "HIP 39524": [{"english": "Bow and Arrow Added XIV", "native": "弧矢增十四", "pronounce": "Húshǐ zēng XIV", "references": [1], "translators_comments": "Pinyin transliteration"}],
     "HIP 39538": [{"english": "Six Jia III", "native": "六甲三", "pronounce": "Liùjiǎ III", "references": [1], "translators_comments": "Pinyin transliteration"}],
     "HIP 39567": [{"english": "Water Level III", "native": "水位三", "pronounce": "Shuǐwèi III", "references": [1], "translators_comments": "Pinyin transliteration"}],
-    "HIP 39757": [{"english": "Bow and Arrow Added XXXII", "native": "弧矢增三十二", "pronounce": "Húshǐ zēng XXXII", "references": [1], "translators_comments": "Pinyin transliteration"}],
+    "HIP 39757": [{"english": "Bow and Arrow Added XXXII", "native": "弧矢增三十二", "pronounce": "Húshǐ zēng XXXII", "references": [1], "translators_comments": "Pinyin transliteration"},
+                  {"english": "Outer Kitchen Added XII#", "native": "外厨增十二#", "pronounce": "Wàichú zēng XII#", "references": [3], "translators_comments": "Pinyin transliteration"}],
     "HIP 39780": [{"english": "Water Level Added VI", "native": "水位增六", "pronounce": "Shuǐwèi zēng VI", "references": [1], "translators_comments": "Pinyin transliteration"}],
     "HIP 39847": [{"english": "Upper Steps Added I", "native": "上台增一", "pronounce": "Shàngtái zēng I", "references": [1], "translators_comments": "Pinyin transliteration"}],
     "HIP 39863": [{"english": "Outer Kitchen Added I", "native": "外厨增一", "pronounce": "Wàichú zēng I", "references": [1], "translators_comments": "Pinyin transliteration"}],
@@ -3813,7 +3815,7 @@
     "HIP 43584": [{"english": "Xuanyuan Added VII", "native": "轩辕增七", "pronounce": "Xuānyuán zēng VII", "references": [1], "translators_comments": "Pinyin transliteration"}],
     "HIP 43587": [{"english": "Xuanyuan Added XX", "native": "轩辕增二十", "pronounce": "Xuānyuán zēng XX", "references": [1], "translators_comments": "Pinyin transliteration"},
                   {"english": "Xuanyuan Added XIX", "native": "轩辕增十九", "pronounce": "Xuānyuán zēng XIX", "references": [1], "translators_comments": "Pinyin transliteration"}],
-    "HIP 43603": [{"english": "Celestial Dog III*", "native": "天狗三*", "pronounce": "Tiāngǒu III*", "references": [2], "translators_comments": "Pinyin transliteration"}],
+    "HIP 44191": [{"english": "Celestial Dog III#", "native": "天狗三#", "pronounce": "Tiāngǒu III#", "references": [3], "translators_comments": "Pinyin transliteration"}],
     "HIP 43644": [{"english": "Inner Steps V", "native": "内阶五", "pronounce": "Nèijiē V", "references": [1], "translators_comments": "Pinyin transliteration"}],
     "HIP 43721": [{"english": "Xuanyuan Added XII", "native": "轩辕增十二", "pronounce": "Xuānyuán zēng XII", "references": [1], "translators_comments": "Pinyin transliteration"}],
     "HIP 43783": [{"english": "Sea Rock Added II", "native": "海石增二", "pronounce": "Hǎishí zēng II", "references": [1], "translators_comments": "Pinyin transliteration"}],
