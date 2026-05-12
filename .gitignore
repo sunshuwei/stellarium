@@ -45,6 +45,7 @@ guide/pictures/GZ_*.png
 guide/pictures/gz_*.png
 guide/pictures/P_BSC*.png
 guide/html/*
+temp/*
 ui_*.h
 qrc_*.cpp
 *_autogen
