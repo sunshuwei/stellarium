@@ -40143,6 +40143,7 @@ msgstr "Zhènchē zēng"
 #. Chinese name for HIP 72607, native: 帝
 #. Pinyin transliteration
 #. Chinese Chenzhuo Sky (3rd Century) name for HIP 72607, native: 帝
+#. Chinese Manchu name for HIP 72607, native: ᡥᠠᠨ ᡠᠰᡳᡥᠠ
 #. Chinese Song Dynasty Sky name for HIP 72607, native: 帝
 #. Chinese Xianglin Star Chart name for HIP 72607, native: 帝
 #. Modern (Chinese) name for HIP 72607
@@ -48598,6 +48599,7 @@ msgstr "22M"
 
 #. Pronounce entry for Chinese Chenzhuo Sky (3rd Century) constellation,
 #. native: 孙, English: Grandson
+#. Chinese Manchu name for NAME Sun, native: Šun
 #. Korean constellation, native: iil
 #. Maori name for NAME Sun, native: Te Ra
 #. Mongolian name for NAME Sun, native: Nar
@@ -50778,7 +50780,7 @@ msgstr "Juru"
 
 #. Chinese Manchu constellation, native: ᡳᡴᡳᡵᡳ ᡠᠰᡳᡥᠠ, pronounce: Ikiri usiha
 msgid "Lined-up Stars"
-msgstr ""
+msgstr "牵牛"
 
 #. Pronounce entry for Chinese Manchu constellation, native: ᡳᡴᡳᡵᡳ ᡠᠰᡳᡥᠠ,
 #. English: Lined-up Stars
@@ -50794,7 +50796,7 @@ msgstr "Ikiri"
 #. Chinese Manchu constellation, native: ᡳᠯᠮᠠᡥᡡ/ᡳᠯᠮᠣᡥᠣ ᡠᠰᡳᡥᠠ, pronounce:
 #. Ilmahū/Ilmoho usiha
 msgid "Prop-Stick Stars"
-msgstr ""
+msgstr "撑棍星"
 
 #. Pronounce entry for Chinese Manchu constellation, native: ᡳᠯᠮᠠᡥᡡ/ᡳᠯᠮᠣᡥᠣ
 #. ᡠᠰᡳᡥᠠ, English: Prop-Stick Stars
@@ -50836,7 +50838,7 @@ msgstr "Kù Lóu / Namun"
 #. Pronounce entry for Chinese Manchu asterism, native: 水委, English: Crooked
 #. Running Water
 msgid "Shuǐ Weǐ"
-msgstr ""
+msgstr "Shuǐ Weǐ"
 
 #. Pronounce entry for Chinese Manchu asterism, native: 造父/Jafan, English:
 #. Zaofu
@@ -50887,10 +50889,6 @@ msgstr "Bì / Bingha"
 msgid "Nail Star"
 msgstr "桩星"
 
-#. Chinese Manchu name for HIP 72607, native: ᡥᠠᠨ ᡠᠰᡳᡥᠠ
-msgid "Emporor"
-msgstr "汗星（帝星）"
-
 #. Pronounce entry for Chinese Manchu name for HIP 72607
 #. Chinese Manchu name for HIP 72607, native: ᡥᠠᠨ ᡠᠰᡳᡥᠠ
 msgid "Han usiha"
@@ -50898,7 +50896,7 @@ msgstr "Han usiha"
 
 #. Chinese Manchu name for HIP 97649, native: ᡳᡤᡝᡵᡳ ᡠᠰᡳᡥᠠ
 msgid "Igeri Star"
-msgstr ""
+msgstr "牵牛星"
 
 #. Pronounce entry for Chinese Manchu name for HIP 97649
 #. Chinese Manchu name for HIP 97649, native: ᡳᡤᡝᡵᡳ ᡠᠰᡳᡥᠠ
@@ -50907,7 +50905,7 @@ msgstr "Igeri usiha"
 
 #. Chinese Manchu name for HIP 91262, native: ᠵᠣᡩᠣᡵᡤᠠᠨ ᡠᠰᡳᡥᠠ
 msgid "Jodorgan Star"
-msgstr ""
+msgstr "织女星"
 
 #. Pronounce entry for Chinese Manchu name for HIP 91262
 #. Chinese Manchu name for HIP 91262, native: ᠵᠣᡩᠣᡵᡤᠠᠨ ᡠᠰᡳᡥᠠ
@@ -50979,14 +50977,10 @@ msgstr "毕牙（月）"
 msgid "Boihon usiha"
 msgstr "Boihon usiha"
 
+#. Pronounce entry for Chinese Manchu name for NAME Sun
 #. Chinese Manchu name for NAME Sun, native: Šun
 msgid "Šun"
 msgstr "舜（日）"
-
-#. Pronounce entry for Chinese Manchu name for NAME Sun
-#. Chinese Manchu name for NAME Sun, native: Šun
-msgid "ᡧᡠᠨ"
-msgstr "ᡧᡠᠨ"
 
 #. Pronounce entry for Chinese Manchu name for NAME Venus
 #. Chinese Manchu name for NAME Venus, native: ᠠᡳᠰᡳᠨ ᡠᠰᡳᡥᠠ

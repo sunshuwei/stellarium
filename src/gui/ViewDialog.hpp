@@ -127,6 +127,7 @@ private slots:
 	void onSkyCultureAnchorClicked(const QUrl& url);
 
 private:
+	void updateSurveyFilteredState(QTreeWidgetItem& item, const QString& filterPattern) const;
 	void connectGroupBox(class QGroupBox* groupBox, const QString& actionId);
 	void updateSkyCultureText();
 	void initSkyCultureTime();
