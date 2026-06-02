@@ -103,7 +103,7 @@
     },
     {
       "id": "CON japanese_moon_stations P20",
-      "lines": [[22783, 20266, 17884, 15520, 12239, 7593, 6312, 5566, 3951]],
+      "lines": [[22783, 20266, 17884, 15520, 12239, 7050, 6312, 5589, 3951]],
       "common_name": {"english": "Guest House", "native": "伝舎(でんしゃ)", "pronounce": "Densha", "IPA": "de̞ɰ̃ɕa̠"}
     },
     {
@@ -113,12 +113,12 @@
     },
     {
       "id": "CON japanese_moon_stations P22",
-      "lines": [[94376, 95081, 98702, 100261, 97433, 96100, 94376]],
+      "lines": [[94376, 95081, 98702, 102370, 101134, 97433, 94376]],
       "common_name": {"english": "Celestial Kitchen", "native": "天厨(てんちゅう)", "pronounce": "Tenchū", "IPA": "te̞ɲ̟t͡ɕɯ̟ᵝː"}
     },
     {
       "id": "CON japanese_moon_stations P23",
-      "lines": [[23522, 25197, 21727], [23783, 22287, 27971], [25197, 27949, 28358]],
+      "lines": [[24914, 25197, 21727], [23783, 23522, 27971], [25197, 27949, 28358]],
       "common_name": {"english": "Eight Kinds of Crops", "native": "八谷(はちこく)", "pronounce": "Hachikoku", "IPA": "ha̠t͡ɕiko̞kɯ̟ᵝ"}
     },
     {
@@ -143,7 +143,7 @@
     },
     {
       "id": "CON japanese_moon_stations P28",
-      "lines": [[51448, 52353, 52929]],
+      "lines": [[50933, 52353, 51448]],
       "common_name": {"english": "Three Top Instructors", "native": "三師(さんし)", "pronounce": "Sanshi", "IPA": "sa̠ɰ̃ɕi̥"}
     },
     {
@@ -163,7 +163,7 @@
     },
     {
       "id": "CON japanese_moon_stations P32",
-      "lines": [[56120, 55044, 55086, 56731, 56120]],
+      "lines": [[56731, 55044, 55086, 56170, 56731]],
       "common_name": {"english": "Eunuch", "native": "勢(せい)", "pronounce": "Sei", "IPA": "se̞ː"}
     },
     {
@@ -219,7 +219,7 @@
     },
     {
       "id": "CON japanese_moon_stations S04",
-      "lines": [[61658, 61637, 61428]],
+      "lines": [[61658, 61658]],
       "common_name": {"english": "Three Excellencies (In Supreme Palace Enclosure)", "native": "三公(太微垣) (さんこう)", "pronounce": "San Kō", "IPA": "sa̠ɴko̞ː"}
     },
     {
@@ -239,7 +239,7 @@
     },
     {
       "id": "CON japanese_moon_stations S08",
-      "lines": [[57632, 58159], [57632, 57646], [57632, 57320], [57632, 57779]],
+      "lines": [[57632, 57632]],
       "common_name": {"english": "Seats of the Five Emperors (In Supreme Palace Enclosure)", "native": "五帝座(太微垣) (ごていざ)", "pronounce": "Goteiza", "IPA": "ɡo̞te̞ːza̠"}
     },
     {
@@ -274,7 +274,7 @@
     },
     {
       "id": "CON japanese_moon_stations S15",
-      "lines": [[60742, 60697, 60746, 60904, 61071, 60941, 60525, 60351, 60514, 60170, 60742], [60697, 60514, 60168], [60746, 60351, 60327, 59847], [60327, 60087], [60327, 60599, 60525, 60904]],
+      "lines": [[60742, 60742]],
       "common_name": {"english": "Officers of the Imperial Guard", "native": "郎位(ろうい)", "pronounce": "Rōi", "IPA": "ɾo̞ːi"}
     },
     {
@@ -649,7 +649,7 @@
     },
     {
       "id": "CON japanese_moon_stations 07B",
-      "lines": [[90568, 90422]],
+      "lines": [[90422, 90422]],
       "common_name": {"english": "Pestle (In Winnowing Basket Mansion)", "native": "杵(箕宿) (きね)", "pronounce": "Kine", "IPA": "kʲi̥ne̞"}
     },
     {
@@ -674,7 +674,7 @@
     },
     {
       "id": "CON japanese_moon_stations 08D",
-      "lines": [[94114, 93825, 93174, 92989, 91918, 91901, 91875, 91989, 92226, 93542, 94005, 94160, 94114]],
+      "lines": [[94114, 93825, 93174, 92989, 91918, 91901, 91875, 91989, 92226, 92608, 93074, 93542, 94005, 94160, 94114]],
       "common_name": {"english": "River Turtle", "native": "鼈(べつ)", "pronounce": "Betsu", "IPA": "be̞t͡sɯ̟ᵝ"}
     },
     {
@@ -945,7 +945,7 @@
     },
     {
       "id": "CON japanese_moon_stations 12G",
-      "lines": [[110991, 109556, 107418], [110991, 109492, 107259]],
+      "lines": [[110991, 107418], [110991, 107259], [110991, 109492], [110991, 109857]],
       "common_name": {"english": "Zaofu", "native": "造父(ぞうほ)", "pronounce": "Zōho", "IPA": "zo̞ːho̞"}
     },
     {
@@ -992,7 +992,7 @@
     },
     {
       "id": "CON japanese_moon_stations 13E",
-      "lines": [[110602, 111086, 110778], [111086, 112716, 113136, 112211, 112529], [112211, 111449], [113136, 113998, 114341, 114375, 114119], [113998, 115404, 115125, 114750], [115125, 115115, 115033, 114855], [115404, 116957, 116971, 116758], [115404, 115438, 115669, 116247, 114366, 114453, 114842], [116247, 116901, 117089, 117629, 117107, 117452, 183], [117629, 301, 983, 1170], [301, 873, 355, 671], [1170, 636, 1096, 761], [636, 1728, 2381, 2159]],
+      "lines": [[110602, 111086, 110778], [111086, 112716, 113136, 112211, 112529], [112211, 111449], [113136, 113998, 114341, 114375, 114119], [113998, 115404, 115125], [115125, 115115, 115033, 114855], [115404, 116957, 116971, 116758], [115404, 115438, 115669, 116247], [116247, 116901, 117089, 117629, 117107, 117452, 183], [117629, 301, 983, 1170], [301, 873, 355, 671], [1170, 636, 1096, 761], [636, 1728, 2381, 2159]],
       "common_name": {"english": "Palace Guard", "native": "羽林軍(うりんぐん)", "pronounce": "Uringun", "IPA": "ɯ̟ᵝɾĩŋɡɯ̟ᵝɴ"}
     },
     {
@@ -1022,7 +1022,7 @@
     },
     {
       "id": "CON japanese_moon_stations 13K",
-      "lines": [[116631, 116805, 116584, 115022, 114570, 113919, 113288, 112761, 111169], [113327, 111169], [111022, 111169], [110609, 111169], [109521, 111169], [110538, 111169], [111674, 111169], [112761, 112300, 112641, 112731, 113561, 114104, 115990, 114622, 113561]],
+      "lines": [[116631, 116805, 116584, 115022, 114570, 113919, 113288, 112761, 111169], [113327, 111169], [111022, 111169], [110609, 111169], [109521, 111169], [110538, 111169], [111674, 111169], [112761, 112300, 112641, 112731, 113561, 114104, 115395, 114622, 113561]],
       "common_name": {"english": "Flying Serpent", "native": "騰蛇(とうだ)", "pronounce": "Tōda", "IPA": "to̞ːda̠"}
     },
     {
@@ -1042,7 +1042,7 @@
     },
     {
       "id": "CON japanese_moon_stations 14D",
-      "lines": [[841, 1501, 2225, 2900, 3504, 3300, 2497, 1982, 118188, 106, 841]],
+      "lines": [[841, 1501, 2225, 2900, 3504, 3300, 2497, 1921, 1415, 967, 841]],
       "common_name": {"english": "Celestial Stable", "native": "天厩(てんきゅう)", "pronounce": "Tenkyū", "IPA": "te̞ŋkʲɯ̟ᵝː"}
     },
     {
@@ -1112,7 +1112,7 @@
     },
     {
       "id": "CON japanese_moon_stations 16C",
-      "lines": [[6706, 7097, 7535, 8198, 8588, 7097]],
+      "lines": [[6706, 7097, 7535, 8198]],
       "common_name": {"english": "Official in Charge of Pasturing", "native": "右更(うこう)", "pronounce": "Ukō", "IPA": "ɯ̟ᵝko̞ː"}
     },
     {
@@ -1127,7 +1127,7 @@
     },
     {
       "id": "CON japanese_moon_stations 16F",
-      "lines": [[10064, 10670, 9640, 8068, 7607, 6999, 6813, 7719, 7513, 9001, 9977, 10064]],
+      "lines": [[10064, 10670, 9640, 8068, 7607, 6999, 6813, 7918, 7513, 9001, 9977, 10064]],
       "common_name": {"english": "General of Heaven", "native": "天将軍(てんしょうぐん)", "pronounce": "Tenshōgun", "IPA": "te̞ɰ̃ɕo̞ːɡɯ̟ᵝɴ"}
     },
     {
@@ -1182,12 +1182,12 @@
     },
     {
       "id": "CON japanese_moon_stations 18D",
-      "lines": [[14838, 15737, 15870], [15737, 15627], [15737, 15110]],
+      "lines": [[14838, 15737, 16181], [15737, 15627], [15737, 15110]],
       "common_name": {"english": "Celestial Yin Force", "native": "天陰(てんいん)", "pronounce": "Ten'in", "IPA": "te̞ɰ̃ĩɴ"}
     },
     {
       "id": "CON japanese_moon_stations 18E",
-      "lines": [[11345, 12390, 11348, 11783, 12562, 11029]],
+      "lines": [[10642, 12390, 11783, 11345, 12444, 11029]],
       "common_name": {"english": "Hay", "native": "蒭藁(すうこう)", "pronounce": "Sūkō", "IPA": "sɯ̟ᵝːko̞ː"}
     },
     {
@@ -1287,7 +1287,7 @@
     },
     {
       "id": "CON japanese_moon_stations 19P",
-      "lines": [[23362, 21763, 22479, 23231, 23221, 22701, 22109, 21444]],
+      "lines": [[23362, 21763, 22479, 23231, 23221, 23364, 22701, 22109, 21444]],
       "common_name": {"english": "Imperial Military Flag", "native": "九斿(きゅうりゅう)", "pronounce": "Kyūryū", "IPA": "kʲɯ̟ᵝːɾʲɯ̟ᵝː"}
     },
     {
@@ -1402,7 +1402,7 @@
     },
     {
       "id": "CON japanese_moon_stations 22L",
-      "lines": [[28910, 28816, 29048, 29150, 29843, 31125, 31416, 31592, 31700, 31827, 31084, 30457, 29735, 28910]],
+      "lines": [[28910, 28816, 29048, 29150, 29843, 31125, 31416, 31592, 31700, 31827, 31084, 30468, 29735, 28910]],
       "common_name": {"english": "Market for Soldiers", "native": "軍市(ぐんし)", "pronounce": "Gunshi", "IPA": "ɡɯ̟ᵝɰ̃ɕi̥"}
     },
     {
@@ -1522,17 +1522,18 @@
     },
     {
       "id": "CON japanese_moon_stations 26B",
-      "lines": [[46371, 45902, 46026, 45001, 44824, 45037, 46511, 46880, 47522, 47758, 47199, 46810, 46578, 46897]],
+      "lines": [[46371, 45902, 46026, 45335, 45001, 44824, 46511, 46880, 47522, 47758, 47199, 46810, 46578, 46897]],
+      "lines1": [[46371, 45902, 46026, 46657, 46810, 46578, 46897, 47522, 47187, 47758, 48748, 48776, 48559, 46880, 46371]],
       "common_name": {"english": "Celestial Temple", "native": "天廟(てんびょう)", "pronounce": "Tenbyō", "IPA": "te̞ɰ̃bʲo̞ː"}
     },
     {
       "id": "CON japanese_moon_stations 27A",
-      "lines": [[52943, 53740, 55282, 55705, 57283], [55705, 55598, 54960, 53740], [54960, 54682, 56078, 54204, 54477, 51172, 50456], [54477, 56332, 56300], [55282, 56802, 55874, 55687, 54029, 52980], [55687, 56633, 57214]],
+      "lines": [[52943, 53740, 55282, 55705, 57283], [55705, 55598, 54742, 53740], [54742, 53252, 54682, 54204, 54477, 51979, 51475], [54477, 56332, 56280], [55282, 55687, 54029, 54214, 52948, 52980], [54214, 56633, 57214]],
       "common_name": {"english": "Wings", "native": "翼宿(よくしゅく・たすきぼし)", "pronounce": "Yokushuku/TasukiBoshi", "IPA": "jo̞kɯ̟ᵝɕɯ̟ᵝkɯ̟ᵝ/ta̠sɯ̟ᵝkʲibo̞ɕi̥"}
     },
     {
       "id": "CON japanese_moon_stations 27B",
-      "lines": [[50122, 50191, 50241, 51077, 50799, 50191]],
+      "lines": [[50103, 50191, 50241, 51077, 50799, 50191]],
       "common_name": {"english": "Dongou", "native": "東甌(とうおう)", "pronounce": "Tōō", "IPA": "to̞ːo̞ː"}
     },
     {
@@ -1557,7 +1558,7 @@
     },
     {
       "id": "CON japanese_moon_stations 28E",
-      "lines": [[57936, 56922]],
+      "lines": [[57936, 58272]],
       "common_name": {"english": "Military Gate", "native": "軍門(ぐんもん)", "pronounce": "Gunmon", "IPA": "ɡɯ̟ᵝɰ̃mõ̞ɴ"}
     },
     {
@@ -1567,7 +1568,7 @@
     },
     {
       "id": "CON japanese_moon_stations 28G",
-      "lines": [[62500, 62131, 61720, 62360, 62683]],
+      "lines": [[61720, 61720]],
       "common_name": {"english": "Green Hill", "native": "青丘(せいきゅう)", "pronounce": "Seikyū", "IPA": "se̞ːkʲɯ̟ᵝː"}
     },
     {
@@ -1578,307 +1579,307 @@
     {
       "id": "CON japanese_moon_stations J01",
       "lines": [[59504, 51502, 47193, 39538, 33694]],
-      "common_name": {"english": "Ministry of Central Affairs*", "native": "中務(なかつかさ)*", "pronounce": "Nakatsukasa*", "IPA": "na̠ka̠t͡sɯ̟ᵝka̠sa̠*"}
+      "common_name": {"english": "Ministry of Central Affairs", "native": "中務(なかつかさ)", "pronounce": "Nakatsukasa", "IPA": "na̠ka̠t͡sɯ̟ᵝka̠sa̠"}
     },
     {
       "id": "CON japanese_moon_stations J02",
       "lines": [[47654, 46977, 44390, 42080, 42527, 45075], [42527, 41704]],
-      "common_name": {"english": "Ministry of Ceremonies*", "native": "式部(しきぶ)*", "pronounce": "Shikibu*", "IPA": "ɕi̥kʲibɯ̟ᵝ*"}
+      "common_name": {"english": "Ministry of Ceremonies", "native": "式部(しきぶ)", "pronounce": "Shikibu", "IPA": "ɕi̥kʲibɯ̟ᵝ"}
     },
     {
       "id": "CON japanese_moon_stations J03",
       "lines": [[29919, 30060, 32438, 33449, 35146, 37609]],
-      "common_name": {"english": "Ministry of Civil Administration*", "native": "治部(じぶ)*", "pronounce": "Jibu*", "IPA": "d͡ʑibɯ̟ᵝ*"}
+      "common_name": {"english": "Ministry of Civil Administration", "native": "治部(じぶ)", "pronounce": "Jibu", "IPA": "d͡ʑibɯ̟ᵝ"}
     },
     {
       "id": "CON japanese_moon_stations J04",
       "lines": [[53907, 53273, 51362, 51437, 49641, 48273, 47310], [48273, 49029]],
-      "common_name": {"english": "Ministry of Popular Affairs*", "native": "民部(みんぶ)*", "pronounce": "Minbu*", "IPA": "mʲimbɯ̟ᵝ*"}
+      "common_name": {"english": "Ministry of Popular Affairs", "native": "民部(みんぶ)", "pronounce": "Minbu", "IPA": "mʲimbɯ̟ᵝ"}
     },
     {
       "id": "CON japanese_moon_stations J05",
       "lines": [[86414, 86182, 85670, 85829, 87833], [85829, 83608]],
-      "common_name": {"english": "Ministry of Military Affairs*", "native": "兵部(ひょうぶ)*", "pronounce": "Hyōbu*", "IPA": "ço̞ːbɯ̟ᵝ*"}
+      "common_name": {"english": "Ministry of Military Affairs", "native": "兵部(ひょうぶ)", "pronounce": "Hyōbu", "IPA": "ço̞ːbɯ̟ᵝ"}
     },
     {
       "id": "CON japanese_moon_stations J06",
       "lines": [[61740, 61318, 61296, 61910, 62985, 61740]],
-      "common_name": {"english": "Ministry of Justice*", "native": "刑部(ぎょうぶ)*", "pronounce": "Gyōbu*", "IPA": "ɡʲo̞ːbɯ̟ᵝ*"}
+      "common_name": {"english": "Ministry of Justice", "native": "刑部(ぎょうぶ)", "pronounce": "Gyōbu", "IPA": "ɡʲo̞ːbɯ̟ᵝ"}
     },
     {
       "id": "CON japanese_moon_stations J07",
       "lines": [[13914, 13702, 13165, 12640], [13165, 12803, 12832, 13327, 13165]],
-      "common_name": {"english": "Ministry of Finance*", "native": "大蔵(おおくら)*", "pronounce": "Ōkura*", "IPA": "o̞ːkɯ̟ᵝɾa̠*"}
+      "common_name": {"english": "Ministry of Finance", "native": "大蔵(おおくら)", "pronounce": "Ōkura", "IPA": "o̞ːkɯ̟ᵝɾa̠"}
     },
     {
       "id": "CON japanese_moon_stations J08",
       "lines": [[54487, 52638, 52098, 53229, 53426], [52098, 51056, 49593], [51056, 51233, 51658]],
-      "common_name": {"english": "Ministry of the Imperial Household*", "native": "宮内(くない)*", "pronounce": "Kunai*", "IPA": "kɯ̟ᵝna̠i*"}
+      "common_name": {"english": "Ministry of the Imperial Household", "native": "宮内(くない)", "pronounce": "Kunai", "IPA": "kɯ̟ᵝna̠i"}
     },
     {
       "id": "CON japanese_moon_stations J09",
       "lines": [[79822, 79822]],
-      "common_name": {"english": "Tutor to the Crown Prince*", "native": "東宮傅(とうぐうのふ)*", "pronounce": "Tōgū no fu*", "IPA": "to̞ːɡɯ̟ᵝː no̞ ɸɯ̟ᵝ*"}
+      "common_name": {"english": "Tutor to the Crown Prince", "native": "東宮傅(とうぐうのふ)", "pronounce": "Tōgū no fu", "IPA": "to̞ːɡɯ̟ᵝː no̞ ɸɯ̟ᵝ"}
     },
     {
       "id": "CON japanese_moon_stations J10",
       "lines": [[74793, 74793]],
-      "common_name": {"english": "Lady of the Bedchamber*", "native": "御息所(みやすどころ)*", "pronounce": "Miyasudokoro*", "IPA": "mʲija̠sɯ̟ᵝdo̞ko̞ɾo̞*"}
+      "common_name": {"english": "Lady of the Bedchamber", "native": "御息所(みやすどころ)", "pronounce": "Miyasudokoro", "IPA": "mʲija̠sɯ̟ᵝdo̞ko̞ɾo̞"}
     },
     {
       "id": "CON japanese_moon_stations J11",
       "lines": [[106032, 107119, 109400, 108535, 111532, 114222, 116727]],
-      "common_name": {"english": "Palace Table Office*", "native": "大膳(だいぜん)*", "pronounce": "Daizen*", "IPA": "da̠ize̞ɴ*"}
+      "common_name": {"english": "Palace Table Office", "native": "大膳(だいぜん)", "pronounce": "Daizen", "IPA": "da̠ize̞ɴ"}
     },
     {
       "id": "CON japanese_moon_stations J12",
       "lines": [[85805, 86201, 94648]],
-      "common_name": {"english": "Inner Palace Table Office*", "native": "内膳(ないぜん)*", "pronounce": "Naizen*", "IPA": "na̠ize̞ɴ*"}
+      "common_name": {"english": "Inner Palace Table Office", "native": "内膳(ないぜん)", "pronounce": "Naizen", "IPA": "na̠ize̞ɴ"}
     },
     {
       "id": "CON japanese_moon_stations J13",
       "lines": [[60998, 62423, 63076, 65728, 66738], [65728, 63503, 60978, 60212]],
-      "common_name": {"english": "Department of Divinities*", "native": "神祇(じんぎ)*", "pronounce": "Jingi*", "IPA": "d͡ʑĩŋɡʲi̥*"}
+      "common_name": {"english": "Department of Divinities", "native": "神祇(じんぎ)", "pronounce": "Jingi", "IPA": "d͡ʑĩŋɡʲi̥"}
     },
     {
       "id": "CON japanese_moon_stations J14",
       "lines": [[16292, 16281, 16228, 17587, 18505, 19968, 20376, 19018, 17707]],
-      "common_name": {"english": "Celestial Sail*", "native": "天帆(てんぱん)*", "pronounce": "Tenpan*", "IPA": "te̞mpã̠ɴ*"}
+      "common_name": {"english": "Celestial Sail", "native": "天帆(てんぱん)", "pronounce": "Tenpan", "IPA": "te̞mpã̠ɴ"}
     },
     {
       "id": "CON japanese_moon_stations J15",
       "lines": [[61317, 58684]],
-      "common_name": {"english": "Major Captain*", "native": "大将(たいしょう)*", "pronounce": "Taishō*", "IPA": "ta̠iɕo̞ː*"}
+      "common_name": {"english": "Major Captain", "native": "大将(たいしょう)", "pronounce": "Taishō", "IPA": "ta̠iɕo̞ː"}
     },
     {
       "id": "CON japanese_moon_stations J16",
       "lines": [[66257, 64844, 64540, 64246, 63901, 64022, 64394], [64022, 62763]],
-      "common_name": {"english": "Middle Captain*", "native": "中将(ちゅうじょう)*", "pronounce": "Chūjō*", "IPA": "t͡ɕɯ̟ᵝːd͡ʑo̞ː*"}
+      "common_name": {"english": "Middle Captain", "native": "中将(ちゅうじょう)", "pronounce": "Chūjō", "IPA": "t͡ɕɯ̟ᵝːd͡ʑo̞ː"}
     },
     {
       "id": "CON japanese_moon_stations J17",
       "lines": [[55086, 53781, 52469], [53781, 53295, 53721, 53838, 54136, 55266]],
-      "common_name": {"english": "Minor Captain*", "native": "少将(しょうしょう)*", "pronounce": "Shōshō*", "IPA": "ɕo̞ːɕo̞ː*"}
+      "common_name": {"english": "Minor Captain", "native": "少将(しょうしょう)", "pronounce": "Shōshō", "IPA": "ɕo̞ːɕo̞ː"}
     },
     {
       "id": "CON japanese_moon_stations J18",
       "lines": [[56647, 56127, 55084]],
-      "common_name": {"english": "Bureau of Onmyō*", "native": "陰陽寮(おんみょうりょう)*", "pronounce": "Onmyō-ryō*", "IPA": "õ̞mːʲo̞ːɾʲo̞ː*"}
+      "common_name": {"english": "Bureau of Onmyō", "native": "陰陽寮(おんみょうりょう)", "pronounce": "Onmyō-ryō", "IPA": "õ̞mːʲo̞ːɾʲo̞ː"}
     },
     {
       "id": "CON japanese_moon_stations J19",
       "lines": [[81126, 82321, 81497, 79992, 79101, 77760, 76041, 73555], [79101, 78592]],
-      "common_name": {"english": "Councilor*", "native": "宰相(さいしょう)*", "pronounce": "Saishō*", "IPA": "sa̠iɕo̞ː*"}
+      "common_name": {"english": "Councilor", "native": "宰相(さいしょう)", "pronounce": "Saishō", "IPA": "sa̠iɕo̞ː"}
     },
     {
       "id": "CON japanese_moon_stations J20",
       "lines": [[87933, 87998]],
-      "common_name": {"english": "Pacification Command Headquarters*", "native": "鎮守府(ちんじゅふ)*", "pronounce": "Chinju-fu*", "IPA": "t͡ɕĩɲ̟d͡ʑɯ̟ᵝɸɯ̟ᵝ*"}
+      "common_name": {"english": "Pacification Command Headquarters", "native": "鎮守府(ちんじゅふ)", "pronounce": "Chinju-fu", "IPA": "t͡ɕĩɲ̟d͡ʑɯ̟ᵝɸɯ̟ᵝ"}
     },
     {
       "id": "CON japanese_moon_stations J21",
       "lines": [[78554, 77661, 76852, 77450, 78481, 80463, 81008]],
-      "common_name": {"english": "Director of Market*", "native": "市正(いちのかみ)*", "pronounce": "Ichi no kami*", "IPA": "i̥t͡ɕi no̞ ka̠mi̥*"}
+      "common_name": {"english": "Director of Market", "native": "市正(いちのかみ)", "pronounce": "Ichi no kami", "IPA": "i̥t͡ɕi no̞ ka̠mi̥"}
     },
     {
       "id": "CON japanese_moon_stations J22",
       "lines": [[90139, 92161, 93244]],
-      "common_name": {"english": "Military Inspector*", "native": "軍監(ぐんかん)*", "pronounce": "Gunkan*", "IPA": "ɡɯ̟ᵝŋkã̠ɴ*"}
+      "common_name": {"english": "Military Inspector", "native": "軍監(ぐんかん)", "pronounce": "Gunkan", "IPA": "ɡɯ̟ᵝŋkã̠ɴ"}
     },
     {
       "id": "CON japanese_moon_stations J23",
       "lines": [[64407, 64924, 65639]],
-      "common_name": {"english": "Left Division of Outer Palace Guards*", "native": "左衛門(さえもん)*", "pronounce": "Saemon*", "IPA": "sa̠e̞mõ̞ɴ*"}
+      "common_name": {"english": "Left Division of Outer Palace Guards", "native": "左衛門(さえもん)", "pronounce": "Saemon", "IPA": "sa̠e̞mõ̞ɴ"}
     },
     {
       "id": "CON japanese_moon_stations J24",
       "lines": [[64407, 64924, 65639]],
-      "common_name": {"english": "Celestial Lake*", "native": "天湖(てんこ)*", "pronounce": "Tenko*", "IPA": "te̞ŋko̞*"}
+      "common_name": {"english": "Celestial Lake", "native": "天湖(てんこ)", "pronounce": "Tenko", "IPA": "te̞ŋko̞"}
     },
     {
       "id": "CON japanese_moon_stations J25",
       "lines": [[72220, 73620, 74975, 75761]],
-      "common_name": {"english": "Imperial Bath Matron*", "native": "湯母(ゆも)*", "pronounce": "Yumo*", "IPA": "jɯ̟ᵝmo̞*"}
+      "common_name": {"english": "Imperial Bath Matron", "native": "湯母(ゆも)", "pronounce": "Yumo", "IPA": "jɯ̟ᵝmo̞"}
     },
     {
       "id": "CON japanese_moon_stations J26",
       "lines": [[71957, 73165]],
-      "common_name": {"english": "Imperial Bath Attendant*", "native": "湯座(ゆざ)*", "pronounce": "Yuza*", "IPA": "jɯ̟ᵝza̠*"}
+      "common_name": {"english": "Imperial Bath Attendant", "native": "湯座(ゆざ)", "pronounce": "Yuza", "IPA": "jɯ̟ᵝza̠"}
     },
     {
       "id": "CON japanese_moon_stations J27",
       "lines": [[76243, 76219, 75379]],
-      "common_name": {"english": "Mistress of Staff*", "native": "内侍(ないし)*", "pronounce": "Naishi*", "IPA": "na̠iɕi̥*"}
+      "common_name": {"english": "Mistress of Staff", "native": "内侍(ないし)", "pronounce": "Naishi", "IPA": "na̠iɕi̥"}
     },
     {
       "id": "CON japanese_moon_stations J28",
       "lines": [[85423, 87072]],
-      "common_name": {"english": "Court Lady*", "native": "采女(うねめ)*", "pronounce": "Uneme*", "IPA": "ɯ̟ᵝne̞me̞*"}
+      "common_name": {"english": "Court Lady", "native": "采女(うねめ)", "pronounce": "Uneme", "IPA": "ɯ̟ᵝne̞me̞"}
     },
     {
       "id": "CON japanese_moon_stations J29",
       "lines": [[86011, 87220]],
-      "common_name": {"english": "Trout*", "native": "腹赤(はらあか)*", "pronounce": "Haraaka*", "IPA": "ha̠ɾa̠a̠ka̠*"}
+      "common_name": {"english": "Trout", "native": "腹赤(はらあか)", "pronounce": "Haraaka", "IPA": "ha̠ɾa̠a̠ka̠"}
     },
     {
       "id": "CON japanese_moon_stations J30",
       "lines": [[93408, 93299, 92549, 92133, 91013, 89981]],
-      "common_name": {"english": "Celestial Silkworm*", "native": "天蚕(てんさん)*", "pronounce": "Tensan*", "IPA": "te̞ɰ̃sã̠ɴ*"}
+      "common_name": {"english": "Celestial Silkworm", "native": "天蚕(てんさん)", "pronounce": "Tensan", "IPA": "te̞ɰ̃sã̠ɴ"}
     },
     {
       "id": "CON japanese_moon_stations J31",
       "lines": [[102388, 103200, 102453, 101076, 99874, 99824, 99853, 101867]],
-      "common_name": {"english": "Right Capital*", "native": "右京(うきょう)*", "pronounce": "Ukyō*", "IPA": "ɯ̟ᵝkʲo̞ː*"}
+      "common_name": {"english": "Right Capital", "native": "右京(うきょう)", "pronounce": "Ukyō", "IPA": "ɯ̟ᵝkʲo̞ː"}
     },
     {
       "id": "CON japanese_moon_stations J32",
       "lines": [[106140, 107472, 108060, 107788, 107348, 106064, 105502, 106787]],
-      "common_name": {"english": "Left Capital*", "native": "左京(さきょう)*", "pronounce": "Sakyō*", "IPA": "sa̠kʲo̞ː*"}
+      "common_name": {"english": "Left Capital", "native": "左京(さきょう)", "pronounce": "Sakyō", "IPA": "sa̠kʲo̞ː"}
     },
     {
       "id": "CON japanese_moon_stations J33",
       "lines": [[108991, 109068, 110785, 110882, 111062]],
-      "common_name": {"english": "Office of Imperial Tombs*", "native": "諸陵(しょりょう)*", "pronounce": "Shoryō*", "IPA": "ɕo̞ɾʲo̞ː*"}
+      "common_name": {"english": "Office of Imperial Tombs", "native": "諸陵(しょりょう)", "pronounce": "Shoryō", "IPA": "ɕo̞ɾʲo̞ː"}
     },
     {
       "id": "CON japanese_moon_stations J34",
       "lines": [[111104, 111944, 112917], [112242, 112917, 113726, 113281, 112241, 111841]],
-      "common_name": {"english": "Right Division of Bureau of Horses*", "native": "右馬寮(うまのつかさ)*", "pronounce": "Uma no tsukasa*", "IPA": "ɯ̟ᵝma̠ no̞ t͡sɯ̟ᵝka̠sa̠*"}
+      "common_name": {"english": "Right Division of Bureau of Horses", "native": "右馬寮(うまのつかさ)", "pronounce": "Uma no tsukasa", "IPA": "ɯ̟ᵝma̠ no̞ t͡sɯ̟ᵝka̠sa̠"}
     },
     {
       "id": "CON japanese_moon_stations J35",
       "lines": [[113246, 112948, 111188, 110997]],
-      "common_name": {"english": "Outer Palace Guard*", "native": "外衛(げえ)*", "pronounce": "Gee*", "IPA": "ɡe̞ː*"}
+      "common_name": {"english": "Outer Palace Guard", "native": "外衛(げえ)", "pronounce": "Gee", "IPA": "ɡe̞ː"}
     },
     {
       "id": "CON japanese_moon_stations J36",
       "lines": [[1366, 1686, 1473]],
-      "common_name": {"english": "Left Division of Bureau of Horses*", "native": "左馬寮(さまのつかさ)*", "pronounce": "Sama no tsukasa*", "IPA": "sa̠ma̠ no̞ t͡sɯ̟ᵝka̠sa̠*"}
+      "common_name": {"english": "Left Division of Bureau of Horses", "native": "左馬寮(さまのつかさ)", "pronounce": "Sama no tsukasa", "IPA": "sa̠ma̠ no̞ t͡sɯ̟ᵝka̠sa̠"}
     },
     {
       "id": "CON japanese_moon_stations J37",
       "lines": [[5165, 6867]],
-      "common_name": {"english": "Bureau of Accounting*", "native": "主計(しゅけい)*", "pronounce": "Shukei*", "IPA": "ɕɯ̟ᵝke̞i*"}
+      "common_name": {"english": "Bureau of Accounting", "native": "主計(しゅけい)", "pronounce": "Shukei", "IPA": "ɕɯ̟ᵝke̞i"}
     },
     {
       "id": "CON japanese_moon_stations J38",
       "lines": [[5434, 5434]],
-      "common_name": {"english": "Bureau of Military Stores*", "native": "兵庫(ひょうご)*", "pronounce": "Hyōgo*", "IPA": "ço̞ːɡo̞*"}
+      "common_name": {"english": "Bureau of Military Stores", "native": "兵庫(ひょうご)", "pronounce": "Hyōgo", "IPA": "ço̞ːɡo̞"}
     },
     {
       "id": "CON japanese_moon_stations J39",
-      "lines": [[3455, 3909, 3436, 3849], [3909, 4371, 4587, 5169, 5164], [5169, 6670, 6748], [6670, 7450, 7916], [7450, 7679, 8209], [7679, 9061]],
-      "common_name": {"english": "Celestial Rice Bale*", "native": "天俵(てんぴょう)*", "pronounce": "Tenpyō*", "IPA": "te̞mpʲo̞ː*"}
+      "lines": [[3455, 3909, 3436, 3849], [3909, 4371, 4587, 5169, 5164], [5169, 6670, 6748], [6670, 7450, 8497], [7450, 7679, 8209], [7679, 9061]],
+      "common_name": {"english": "Celestial Rice Bale", "native": "天俵(てんぴょう)", "pronounce": "Tenpyō", "IPA": "te̞mpʲo̞ː"}
     },
     {
       "id": "CON japanese_moon_stations J40",
       "lines": [[13782, 13202, 11918, 10798, 11072]],
-      "common_name": {"english": "Bureau of Taxation*", "native": "主税(しゅぜい)*", "pronounce": "Shuzei*", "IPA": "ɕɯ̟ᵝze̞i*"}
+      "common_name": {"english": "Bureau of Taxation", "native": "主税(しゅぜい)", "pronounce": "Shuzei", "IPA": "ɕɯ̟ᵝze̞i"}
     },
     {
       "id": "CON japanese_moon_stations J41",
       "lines": [[16341, 17167, 18141, 18255, 16852, 14954, 13717], [16852, 18907, 17771]],
-      "common_name": {"english": "Bureau of Palace Storehouses*", "native": "大炊(おおい)*", "pronounce": "Ōi*", "IPA": "o̞ːi*"}
+      "common_name": {"english": "Bureau of Palace Storehouses", "native": "大炊(おおい)", "pronounce": "Ōi", "IPA": "o̞ːi"}
     },
     {
       "id": "CON japanese_moon_stations J42",
       "lines": [[17304, 14879, 13147, 11477], [13147, 13265]],
-      "common_name": {"english": "Pine and Bamboo*", "native": "松竹(しょうちく)*", "pronounce": "Shōchiku*", "IPA": "ɕo̞ːt͡ɕikɯ̟ᵝ*"}
+      "common_name": {"english": "Pine and Bamboo", "native": "松竹(しょうちく)", "pronounce": "Shōchiku", "IPA": "ɕo̞ːt͡ɕikɯ̟ᵝ"}
     },
     {
       "id": "CON japanese_moon_stations J43",
       "lines": [[17214, 17057, 16780, 16803, 15411], [16803, 18173, 19037, 19571]],
-      "common_name": {"english": "Wild Geese*", "native": "鴻雁(こうがん)*", "pronounce": "Kōgan*", "IPA": "ko̞ːɡã̠ɴ*"}
+      "common_name": {"english": "Wild Geese", "native": "鴻雁(こうがん)", "pronounce": "Kōgan", "IPA": "ko̞ːɡã̠ɴ"}
     },
     {
       "id": "CON japanese_moon_stations J44",
       "lines": [[24659, 23595, 21861, 21770, 19747]],
-      "common_name": {"english": "Miscanthus × Giganteus*", "native": "荻薄(オギススキ)*", "pronounce": "Ogisusuki*", "IPA": "o̞ɡʲisɯ̟ᵝsɯ̟ᵝkʲi*"}
+      "common_name": {"english": "Miscanthus × Giganteus", "native": "荻薄(オギススキ)", "pronounce": "Ogisusuki", "IPA": "o̞ɡʲisɯ̟ᵝsɯ̟ᵝkʲi"}
     },
     {
       "id": "CON japanese_moon_stations J45",
       "lines": [[23179, 22678, 22453, 21476, 19811, 20252, 20591, 20250]],
-      "common_name": {"english": "Celestial Shaft*", "native": "天轅(てんえん)*", "pronounce": "Ten'en*", "IPA": "te̞ɰ̃ẽ̞ɴ*"}
+      "common_name": {"english": "Celestial Shaft", "native": "天轅(てんえん)", "pronounce": "Ten'en", "IPA": "te̞ɰ̃ẽ̞ɴ"}
     },
     {
       "id": "CON japanese_moon_stations J46",
       "lines": [[26549, 26563, 25923, 25247, 25281]],
-      "common_name": {"english": "Dazaifu*", "native": "太宰府(だざいふ)*", "pronounce": "Dazaifu*", "IPA": "da̠za̠iɸɯ̟ᵝ*"}
+      "common_name": {"english": "Dazaifu", "native": "太宰府(だざいふ)", "pronounce": "Dazaifu", "IPA": "da̠za̠iɸɯ̟ᵝ"}
     },
     {
       "id": "CON japanese_moon_stations J47",
       "lines": [[30867, 29651]],
-      "common_name": {"english": "Senior Assistant*", "native": "大貳(だいに)*", "pronounce": "Daini*", "IPA": "da̠iɲ̟i̥*"}
+      "common_name": {"english": "Senior Assistant", "native": "大貳(だいに)", "pronounce": "Daini", "IPA": "da̠iɲ̟i̥"}
     },
     {
       "id": "CON japanese_moon_stations J48",
       "lines": [[28103, 27288]],
-      "common_name": {"english": "Junior Assistant*", "native": "小貳(しょうに)*", "pronounce": "Shōni*", "IPA": "ɕo̞ːɲ̟i̥*"}
+      "common_name": {"english": "Junior Assistant", "native": "小貳(しょうに)", "pronounce": "Shōni", "IPA": "ɕo̞ːɲ̟i̥"}
     },
     {
       "id": "CON japanese_moon_stations J49",
       "lines": [[27913, 28716, 28734, 28237, 27830]],
-      "common_name": {"english": "Bureau of Foreign Affairs and Buddhism*", "native": "玄蕃(げんば)*", "pronounce": "Genba*", "IPA": "ɡe̞mba̠*"}
+      "common_name": {"english": "Bureau of Foreign Affairs and Buddhism", "native": "玄蕃(げんば)", "pronounce": "Genba", "IPA": "ɡe̞mba̠"}
     },
     {
       "id": "CON japanese_moon_stations J50",
       "lines": [[30122, 30788]],
-      "common_name": {"english": "Great-grandson*", "native": "曾孫(そうそん)*", "pronounce": "Sōson*", "IPA": "so̞ːsõ̞ɴ*"}
+      "common_name": {"english": "Great-grandson", "native": "曾孫(そうそん)", "pronounce": "Sōson", "IPA": "so̞ːsõ̞ɴ"}
     },
     {
       "id": "CON japanese_moon_stations J51",
       "lines": [[31685, 28328]],
-      "common_name": {"english": "Great-great-grandson*", "native": "玄孫(げんそん)*", "pronounce": "Genson*", "IPA": "ɡe̞ɰ̃sõ̞ɴ*"}
+      "common_name": {"english": "Great-great-grandson", "native": "玄孫(げんそん)", "pronounce": "Genson", "IPA": "ɡe̞ɰ̃sõ̞ɴ"}
     },
     {
       "id": "CON japanese_moon_stations J52",
       "lines": [[37229, 35037], [37229, 36514], [37229, 37677], [37229, 38170]],
-      "common_name": {"english": "Open Quiver*", "native": "箙(えびら)*", "pronounce": "Ebira*", "IPA": "e̞bʲi̥ɾa̠*"}
+      "common_name": {"english": "Open Quiver", "native": "箙(えびら)", "pronounce": "Ebira", "IPA": "e̞bʲi̥ɾa̠"}
     },
     {
       "id": "CON japanese_moon_stations J53",
       "lines": [[35363, 35264], [35226, 35264, 36377, 37823, 38872]],
-      "common_name": {"english": "Closed Quiver*", "native": "胡籙(やなぐい)*", "pronounce": "Yanagui*", "IPA": "ja̠na̠ɡɯ̟ᵝi*"}
+      "common_name": {"english": "Closed Quiver", "native": "胡籙(やなぐい)", "pronounce": "Yanagui", "IPA": "ja̠na̠ɡɯ̟ᵝi"}
     },
     {
       "id": "CON japanese_moon_stations J54",
       "lines": [[33160, 34045, 33347, 33302]],
-      "common_name": {"english": "Hayato (Southern Barbarian Guard)*", "native": "隼人(はやと)*", "pronounce": "Hayato*", "IPA": "ha̠ja̠to̞*"}
+      "common_name": {"english": "Hayato (Southern Barbarian Guard)", "native": "隼人(はやと)", "pronounce": "Hayato", "IPA": "ha̠ja̠to̞"}
     },
     {
       "id": "CON japanese_moon_stations J55",
       "lines": [[41075, 42372, 41152, 39847, 37701, 36145]],
-      "common_name": {"english": "Bureau of Higher Education*", "native": "大学寮(だいがくりょう)*", "pronounce": "Daigaku-ryō*", "IPA": "da̠iɡa̠kɯ̟ᵝɾʲo̞ː*"}
+      "common_name": {"english": "Bureau of Higher Education", "native": "大学寮(だいがくりょう)", "pronounce": "Daigaku-ryō", "IPA": "da̠iɡa̠kɯ̟ᵝɾʲo̞ː"}
     },
     {
       "id": "CON japanese_moon_stations J56",
       "lines": [[40526, 41325], [40526, 40167], [40526, 39863]],
-      "common_name": {"english": "Bureau of Water Supply*", "native": "主水(もんど)*", "pronounce": "Mondo*", "IPA": "mõ̞ndo̞*"}
+      "common_name": {"english": "Bureau of Water Supply", "native": "主水(もんど)", "pronounce": "Mondo", "IPA": "mõ̞ndo̞"}
     },
     {
       "id": "CON japanese_moon_stations J57",
       "lines": [[44961, 45526, 46404, 48437]],
-      "common_name": {"english": "Bureau of Textiles*", "native": "織部(おりべ)*", "pronounce": "Oribe*", "IPA": "o̞ɾʲibe̞*"}
+      "common_name": {"english": "Bureau of Textiles", "native": "織部(おりべ)", "pronounce": "Oribe", "IPA": "o̞ɾʲibe̞"}
     },
     {
       "id": "CON japanese_moon_stations J58",
       "lines": [[44154, 43103, 43834, 44946, 43970, 44066, 44798]],
-      "common_name": {"english": "Bureau of Sake Brewing*", "native": "造酒司(みきのつかさ)*", "pronounce": "Miki no tsukasa*", "IPA": "mʲikʲi no̞ t͡sɯ̟ᵝka̠sa̠*"}
+      "common_name": {"english": "Bureau of Sake Brewing", "native": "造酒司(みきのつかさ)", "pronounce": "Miki no tsukasa", "IPA": "mʲikʲi no̞ t͡sɯ̟ᵝka̠sa̠"}
     },
     {
       "id": "CON japanese_moon_stations J59",
       "lines": [[46651, 45448]],
-      "common_name": {"english": "Saiku (The Palace of the Saio)*", "native": "斎宮(さいぐう)*", "pronounce": "Saigū*", "IPA": "sa̠iɡɯ̟ᵝː*"}
+      "common_name": {"english": "Saiku (The Palace of the Saio)", "native": "斎宮(さいぐう)", "pronounce": "Saigū", "IPA": "sa̠iɡɯ̟ᵝː"}
     },
     {
       "id": "CON japanese_moon_stations J60",
       "lines": [[58188, 58587, 58574]],
-      "common_name": {"english": "Bureau of Court Music*", "native": "雅楽(ががく)*", "pronounce": "Gagaku*", "IPA": "ɡa̠ɡa̠kɯ̟ᵝ*"}
+      "common_name": {"english": "Bureau of Court Music", "native": "雅楽(ががく)", "pronounce": "Gagaku", "IPA": "ɡa̠ɡa̠kɯ̟ᵝ"}
     },
     {
       "id": "CON japanese_moon_stations J61",
       "lines": [[63738, 64166, 64803]],
-      "common_name": {"english": "Right Division of Outer Palace Guards*", "native": "右衛門(うえもん)*", "pronounce": "Uemon*", "IPA": "ɯ̟ᵝe̞mõ̞ɴ*"}
+      "common_name": {"english": "Right Division of Outer Palace Guards", "native": "右衛門(うえもん)", "pronounce": "Uemon", "IPA": "ɯ̟ᵝe̞mõ̞ɴ"}
     }
   ],
   "edges_type": "none",
@@ -1990,6 +1991,13 @@
     "HIP 74975": [{"english": "Imperial Bath Matron", "pronounce": "Yumo", "native": "乳母(ゆも)", "IPA": "jɯ̟ᵝmo̞"}],
     "HIP 75761": [{"english": "Imperial Bath Matron", "pronounce": "Yumo", "native": "乳母(ゆも)", "IPA": "jɯ̟ᵝmo̞"}],
     "HIP 71957": [{"english": "Weaning Attendant", "pronounce": "Ijaku", "native": "飯嚼(いじゃく)", "IPA": "i̥d͡ʑa̠kɯ̟ᵝ"}],
-    "HIP 73165": [{"english": "Imperial Bath Attendant", "pronounce": "Yuza", "native": "湯座(ゆざ)", "IPA": "jɯ̟ᵝza̠"}]
+    "HIP 73165": [{"english": "Imperial Bath Attendant", "pronounce": "Yuza", "native": "湯座(ゆざ)", "IPA": "jɯ̟ᵝza̠"}],
+    "NAME Sun": [{"english": "Sun", "pronounce": "Taiyou", "native": "太陽", "IPA": "ta̠ijo̞ː"}],
+    "NAME Moon": [{"english": "Moon", "pronounce": "Tsuki", "native": "月", "IPA": "t͡sɨᵝkʲi̥"}],
+    "NAME Mercury": [{"english": "Water Star", "pronounce": "Suisei", "native": "水星", "IPA": "sɯ̟ᵝise̞ː"}],
+    "NAME Venus": [{"english": "Metal Star", "pronounce": "Kinsei", "native": "金星", "IPA": "kʲĩɰ̃se̞ː"}],
+    "NAME Mars": [{"english": "Fire Star", "pronounce": "Kasei", "native": "火星", "IPA": "ka̠se̞ː"}],
+    "NAME Jupiter": [{"english": "Wood Star", "pronounce": "Mokusei", "native": "木星", "IPA": "mo̞kɯ̟ᵝse̞ː"}],
+    "NAME Saturn": [{"english": "Earth Star", "pronounce": "Dosei", "native": "土星", "IPA": "do̞se̞ː"}]
   }
 }
