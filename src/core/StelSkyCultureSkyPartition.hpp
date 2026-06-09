@@ -41,6 +41,8 @@ class QJsonObject;
 //! "context": "western zodiac sign", // optional, improvements for localization support
 //! "partitions": [ 12, 30, 60],
 //! "extent": 8,
+//! "start_offset": 0, // optional, direct longitude offset (degrees) from 0 point
+//! "label_latitude": -10, // optional, custom latitude for label display (degrees)
 //! "names": [ { "symbol": "\u2648", "native": "Aries",       "english": "Ram"},
 //! 	       { "symbol": "\u2649", "native": "Taurus",      "english": "Bull"},
 //! 	       { "symbol": "\u264A", "native": "Gemini",      "english": "Twins"},
@@ -176,7 +178,9 @@ private:
 	double offset;                         //!< the longitude (degrees) in the respective culturalpartition which is defined by linkStar
 	double eclObl;                         //!< Ecliptical obliquity (computed in update(), also consumed in getLongitudeCoordinate())
 	double offsetFromAries;                //!< (degrees) resulting deviation between ecliptical longitude (or RA) of date and "cultural longitude" (or RA) of date.
-	QString context;				//!< A context data for localization support
+	QString context;                       //!< A context data for localization support
+	double labelLatitude;                  //!< (degrees) Custom latitude for labels. If NaN, use default calculation.
+	double customOffset;                   //!< (degrees) Custom offset from Aries (direct longitude offset)
 };
 //! @typedef StelSkyCultureSkyPartitionP
 //! Shared pointer on a StelSkyCultureSkyPartition with smart pointers
