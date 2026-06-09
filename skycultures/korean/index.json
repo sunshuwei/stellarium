@@ -11,7 +11,7 @@
     },
     {
       "id": "CON korean P02",
-      "lines": [[]],
+      "lines": [[72573, 59767, 51384, 56253]],
       "common_name": {"english": "Four Advisors", "native": "사보(四輔)", "pronounce": "Sabo", "IPA": "sʰabo"}
     },
     {
@@ -56,17 +56,17 @@
     },
     {
       "id": "CON korean P11",
-      "lines": [[]],
+      "lines": [[87234, 84769, 90182, 92040, 87234]],
       "common_name": {"english": "Palace of the Maids-in-waiting", "native": "여어궁(女御宮)", "pronounce": "Yeoeogung", "IPA": "jʌʌɡuŋ"}
     },
     {
       "id": "CON korean P12",
-      "lines": [[]],
+      "lines": [[79414, 80682, 80650, 80161, 78893]],
       "common_name": {"english": "Celestial Pillar", "native": "천주(天柱)", "pronounce": "Cheonju", "IPA": "t͡ɕʰʌnd͡ʑu"}
     },
     {
       "id": "CON korean P13",
-      "lines": [[]],
+      "lines": [[69373, 67589]],
       "common_name": {"english": "Chief Judge", "native": "대리(大理)", "pronounce": "Daeri", "IPA": "tɛɾi"}
     },
     {
@@ -101,7 +101,7 @@
     },
     {
       "id": "CON korean P20",
-      "lines": [[]],
+      "lines": [[102422, 105199, 108917, 110817, 112724, 113864, 115088, 9598, 14862]],
       "common_name": {"english": "Guest House", "native": "전사(傳舍)", "pronounce": "Jeonsa", "IPA": "t͡ɕʌnsʰa"}
     },
     {
@@ -126,12 +126,12 @@
     },
     {
       "id": "CON korean P25",
-      "lines": [[]],
+      "lines": [[63076, 62402, 63584, 63952, 67485, 71111]],
       "common_name": {"english": "Celestial Bed", "native": "천상(天床)", "pronounce": "Cheonsang", "IPA": "t͡ɕʰʌnsʰaŋ"}
     },
     {
       "id": "CON korean P26",
-      "lines": [[]],
+      "lines": [[57111, 55564]],
       "common_name": {"english": "Inner Kitchen", "native": "내주(內厨)", "pronounce": "Naeju", "IPA": "nɛd͡ʑu"}
     },
     {
@@ -141,12 +141,12 @@
     },
     {
       "id": "CON korean P28",
-      "lines": [[]],
+      "lines": [[50933, 52353, 51448, 50933]],
       "common_name": {"english": "Three Excellencies (Wuxian)", "native": "삼공(三公)", "pronounce": "Samgong", "IPA": "sʰamɡoŋ"}
     },
     {
       "id": "CON korean P29",
-      "lines": [[]],
+      "lines": [[50546, 50546]],
       "common_name": {"english": "Royals", "native": "태존(太尊)", "pronounce": "Taejon", "IPA": "tʰɛd͡ʑon"}
     },
     {
@@ -161,7 +161,7 @@
     },
     {
       "id": "CON korean P32",
-      "lines": [[]],
+      "lines": [[56731, 55086, 53781, 56170, 56731]],
       "common_name": {"english": "Eunuch", "native": "세(勢)", "pronounce": "Se", "IPA": "sʰe"}
     },
     {
@@ -171,17 +171,17 @@
     },
     {
       "id": "CON korean P34",
-      "lines": [[]],
+      "lines": [[64906, 65550, 66234, 64906]],
       "common_name": {"english": "Three Excellencies (Gan School)", "native": "삼공(三公)", "pronounce": "Samgong", "IPA": "sʰamɡoŋ"}
     },
     {
       "id": "CON korean P35",
-      "lines": [[]],
+      "lines": [[69732, 69732]],
       "common_name": {"english": "Sombre Lance", "native": "현과(玄戈)", "pronounce": "Hyeongwa", "IPA": "ɕjʌnɡwa"}
     },
     {
       "id": "CON korean P36",
-      "lines": [[]],
+      "lines": [[57477, 58181, 56035, 55148, 57477]],
       "common_name": {"english": "Judge for Nobility", "native": "천리(天理)", "pronounce": "Cheonlli", "IPA": "t͡ɕʰʌɭɭi"}
     },
     {
@@ -216,12 +216,12 @@
     },
     {
       "id": "CON korean S04",
-      "lines": [[]],
+      "lines": [[61960, 62325, 62267, 61960]],
       "common_name": {"english": "Inner Seats of Three Excellencies", "native": "삼공내좌(三公內坐)", "pronounce": "Samgongnaejwa", "IPA": "sʰamɡoŋnɛd͡ʑwa"}
     },
     {
       "id": "CON korean S05",
-      "lines": [[]],
+      "lines": [[62356, 62807, 63355]],
       "common_name": {"english": "Nine Senior Officers", "native": "구경(九卿)", "pronounce": "Gugyeong", "IPA": "kuɡjʌŋ"}
     },
     {
@@ -266,12 +266,12 @@
     },
     {
       "id": "CON korean S14",
-      "lines": [[]],
+      "lines": [[56997, 58654, 59831, 61317], [59856, 60646, 61317, 62223]],
       "common_name": {"english": "Royal Guards", "native": "상진(常陳)", "pronounce": "Sangjin", "IPA": "sʰaŋd͡ʑin"}
     },
     {
       "id": "CON korean S15",
-      "lines": [[]],
+      "lines": [[60742, 60746, 60904, 61071, 61295, 60941, 60599, 60087, 59847, 60168, 60170, 60697, 60742], [60904, 60514, 60170], [61071, 60525, 60351, 60168], [60746, 60514, 60351, 60599, 60525, 60941], [60087, 60168, 60599], [60525, 60514, 61071], [60697, 60514]],
       "common_name": {"english": "Officers of the Imperial Guard", "native": "낭위(郎位)", "pronounce": "Nangwi", "IPA": "naŋɥi"}
     },
     {
@@ -281,17 +281,17 @@
     },
     {
       "id": "CON korean S17",
-      "lines": [[]],
+      "lines": [[53807, 53824, 54182]],
       "common_name": {"english": "Astronomical Observatory", "native": "영대(靈臺)", "pronounce": "Yeongdae", "IPA": "jʌŋdɛ"}
     },
     {
       "id": "CON korean S18",
-      "lines": [[]],
+      "lines": [[53954, 53417, 52098, 51233]],
       "common_name": {"english": "Junior Officers", "native": "소미(少微)", "pronounce": "Somi", "IPA": "sʰomi"}
     },
     {
       "id": "CON korean S19",
-      "lines": [[]],
+      "lines": [[52911, 52689, 52686, 52457]],
       "common_name": {"english": "Long Wall", "native": "장원(長垣)", "pronounce": "Jangwon", "IPA": "t͡ɕaŋwʌn"}
     },
     {
@@ -331,7 +331,7 @@
     },
     {
       "id": "CON korean H04",
-      "lines": [[]],
+      "lines": [[85365, 85355]],
       "common_name": {"english": "Commodity Market", "native": "거사(車肆)", "pronounce": "Geosa", "IPA": "kʌsʰa"}
     },
     {
@@ -351,12 +351,12 @@
     },
     {
       "id": "CON korean H08",
-      "lines": [[]],
+      "lines": [[88267, 88886]],
       "common_name": {"english": "Textile Ruler", "native": "백도(帛度)", "pronounce": "Baekdo", "IPA": "pɛk̚t͈o"}
     },
     {
       "id": "CON korean H09",
-      "lines": [[]],
+      "lines": [[89861, 90139]],
       "common_name": {"english": "Butcher's Shops", "native": "도사(屠肆)", "pronounce": "Dosa", "IPA": "tosʰa"}
     },
     {
@@ -376,7 +376,7 @@
     },
     {
       "id": "CON korean H13",
-      "lines": [[80463, 79488]],
+      "lines": [[80463, 80351]],
       "common_name": {"english": "Jewel Market", "native": "열사(列肆)", "pronounce": "Yeolsa", "IPA": "jʌlsʰa"}
     },
     {
@@ -386,12 +386,12 @@
     },
     {
       "id": "CON korean H15",
-      "lines": [[]],
+      "lines": [[80883, 81300, 83262, 84514]],
       "common_name": {"english": "Dipper for Solids", "native": "곡(斛)", "pronounce": "Gok", "IPA": "kʰok"}
     },
     {
       "id": "CON korean H16",
-      "lines": [[76127, 75695, 76267, 76952, 77512, 78159, 78493, 78459, 77048]],
+      "lines": [[76127, 75695, 76267, 76952, 77512, 78159, 78493, 78459, 77655]],
       "common_name": {"english": "Coiled Thong", "native": "관색(貫索)", "pronounce": "Gwan Saek", "IPA": "kwan sʰɛk"}
     },
     {
@@ -401,12 +401,12 @@
     },
     {
       "id": "CON korean H18",
-      "lines": [[]],
+      "lines": [[80181, 80197, 81693, 83207, 83313, 84573, 87808, 89826, 90191]],
       "common_name": {"english": "Celestial Discipline", "native": "천기(天紀)", "pronounce": "Cheongi", "IPA": "t͡ɕʰʌnɡi"}
     },
     {
       "id": "CON korean H19",
-      "lines": [[84380, 84606, 84606]],
+      "lines": [[84380, 84606, 85112]],
       "common_name": {"english": "Woman's Bed", "native": "여상(女牀)", "pronounce": "Yeosang", "IPA": "jʌsʰaŋ"}
     },
     {
@@ -417,6 +417,7 @@
     {
       "id": "CON korean 01A",
       "lines": [[65474, 66249]],
+      "label_positions": [[13.47, -8.0]],
       "common_name": {"english": "Horn", "native": "각(角)", "pronounce": "Gak", "IPA": "kak"}
     },
     {
@@ -426,7 +427,7 @@
     },
     {
       "id": "CON korean 01C",
-      "lines": [[]],
+      "lines": [[64852, 66200]],
       "common_name": {"english": "Celestial Farmland (In Horn Mansion)", "native": "천전(天田)", "pronounce": "Cheonjeon", "IPA": "t͡ɕʰʌnd͡ʑʌn"}
     },
     {
@@ -436,27 +437,27 @@
     },
     {
       "id": "CON korean 01E",
-      "lines": [[]],
+      "lines": [[66727, 66763, 68103]],
       "common_name": {"english": "Tripod of the Zhou", "native": "주정(周鼎)", "pronounce": "Jujeong", "IPA": "t͡ɕud͡ʑʌŋ"}
     },
     {
       "id": "CON korean 01F",
-      "lines": [[]],
+      "lines": [[64407, 67494]],
       "common_name": {"english": "Celestial Gate", "native": "천문(天門)", "pronounce": "Cheonmun", "IPA": "t͡ɕʰʌnmun"}
     },
     {
       "id": "CON korean 01G",
-      "lines": [[]],
+      "lines": [[64962, 68269]],
       "common_name": {"english": "Judging", "native": "평(平)", "pronounce": "Pyeong", "IPA": "pʰjʌŋ"}
     },
     {
       "id": "CON korean 01H",
-      "lines": [[68002, 71860, 71352, 68933, 65109]],
+      "lines": [[68002, 71860, 71352, 68933, 65109, 64348, 61932, 61622, 60823, 60710, 61932]],
       "common_name": {"english": "Arsenal", "native": "고루(庫樓)", "pronounce": "Goru", "IPA": "koɾu"}
     },
     {
       "id": "CON korean 01I",
-      "lines": [[]],
+      "lines": [[68523, 68079, 68282], [69996, 70576, 70104], [69598, 70580, 70300], [67669, 67457, 67153], [65936, 66656, 65535]],
       "common_name": {"english": "Pillars (In Horn Mansion)", "native": "주(柱)", "pronounce": "Ju", "IPA": "t͡ɕu"}
     },
     {
@@ -466,7 +467,7 @@
     },
     {
       "id": "CON korean 01K",
-      "lines": [[]],
+      "lines": [[64004, 66657]],
       "common_name": {"english": "Southern Gate", "native": "남문(南門)", "pronounce": "Nammun", "IPA": "nammun"}
     },
     {
@@ -481,7 +482,7 @@
     },
     {
       "id": "CON korean 02C",
-      "lines": [[]],
+      "lines": [[68940, 69269, 69658, 69792, 69929, 70518, 70469]],
       "common_name": {"english": "Executions", "native": "절위(折威)", "pronounce": "Jeolwi", "IPA": "t͡ɕʌɾɥi"}
     },
     {
@@ -496,12 +497,12 @@
     },
     {
       "id": "CON korean 02F",
-      "lines": [[]],
+      "lines": [[70306, 70753]],
       "common_name": {"english": "Trials", "native": "돈완(頓頑)", "pronounce": "Donwan", "IPA": "tonwan"}
     },
     {
       "id": "CON korean 02G",
-      "lines": [[]],
+      "lines": [[68895, 69415]],
       "common_name": {"english": "Gate of Yang", "native": "양문(陽門)", "pronounce": "Yangmun", "IPA": "jaŋmun"}
     },
     {
@@ -526,7 +527,7 @@
     },
     {
       "id": "CON korean 03E",
-      "lines": [[]],
+      "lines": [[67480, 69226, 71115]],
       "common_name": {"english": "Mattress of the Emperor", "native": "제석(帝席)", "pronounce": "Jeseok", "IPA": "d͡ʑesʰʌk"}
     },
     {
@@ -536,12 +537,12 @@
     },
     {
       "id": "CON korean 03G",
-      "lines": [[74857, 74604, 73624, 73049, 72010, 72800, 71865, 73334, 73273, 72683, 74117, 74376], [73111, 74117, 73807, 74395], [73334, 75141, 76297, 76552, 75264], [76552, 78914], [75141, 75501, 75304, 75177, 73624, 73937]],
+      "lines": [[74857, 74604, 73624, 73049, 72010, 72800, 71865, 73334, 73273, 72683, 74117, 74911], [73111, 74117, 73807, 74376], [73334, 75141, 76297, 76552, 75264], [76552, 78914], [75141, 75501, 75304, 75177, 73624, 73937], [76297, 76939, 76705, 76945]],
       "common_name": {"english": "Imperial Guards", "native": "기관(騎官)", "pronounce": "Gigwan", "IPA": "kiɡwan"}
     },
     {
       "id": "CON korean 03H",
-      "lines": [[]],
+      "lines": [[73714, 74857, 72571]],
       "common_name": {"english": "Battle Chariots", "native": "진거(陣車)", "pronounce": "Jingeo", "IPA": "t͡ɕinɡʌ"}
     },
     {
@@ -581,17 +582,17 @@
     },
     {
       "id": "CON korean 04E",
-      "lines": [[]],
+      "lines": [[81724, 81754, 80975, 80815]],
       "common_name": {"english": "Eastern Door", "native": "동함(東咸)", "pronounce": "Dongham", "IPA": "toŋham"}
     },
     {
       "id": "CON korean 04F",
-      "lines": [[]],
+      "lines": [[79375, 78727, 77853, 77811]],
       "common_name": {"english": "Western Door", "native": "서함(西咸)", "pronounce": "Seoham", "IPA": "sʌham"}
     },
     {
       "id": "CON korean 04G",
-      "lines": [[]],
+      "lines": [[76742, 76742]],
       "common_name": {"english": "Solar Star", "native": "일(日)", "pronounce": "Il", "IPA": "iɭ"}
     },
     {
@@ -606,7 +607,8 @@
     },
     {
       "id": "CON korean 05B",
-      "lines": [[]],
+      "lines": [[78384, 79320, 79653, 80000], [78323, 79320, 80390, 81304], [78639, 79653, 81122, 81972], [81847, 81122, 80390, 80911]],
+      "lines1": [[78384, 79320, 80337, 81304], [79653, 80212, 80945, 81972], [78918, 79320, 80212, 80582], [80911, 80337, 80945, 81305]],
       "common_name": {"english": "Group of Soldiers", "native": "적졸(積卒)", "pronounce": "Jeokjol", "IPA": "t͡ɕʌkt͡ɕoɭ"}
     },
     {
@@ -646,12 +648,12 @@
     },
     {
       "id": "CON korean 07B",
-      "lines": [[]],
+      "lines": [[90568, 90422, 90982]],
       "common_name": {"english": "Outer Pestle", "native": "외저(外杵)", "pronounce": "Oejeo", "IPA": "wɛd͡ʑʌ"}
     },
     {
       "id": "CON korean 07C",
-      "lines": [[]],
+      "lines": [[89290, 89290]],
       "common_name": {"english": "Chaff", "native": "강(糠)", "pronounce": "Gang", "IPA": "kaŋ"}
     },
     {
@@ -671,7 +673,7 @@
     },
     {
       "id": "CON korean 08D",
-      "lines": [[]],
+      "lines": [[92989, 93174, 93825, 94114, 94160, 94005, 93542, 92953, 92608, 92226, 91989, 91875, 91901, 91918, 92989]],
       "common_name": {"english": "River Turtle", "native": "별(鱉)", "pronounce": "Byeol", "IPA": "pjʌl"}
     },
     {
@@ -681,27 +683,27 @@
     },
     {
       "id": "CON korean 08F",
-      "lines": [[]],
+      "lines": [[88116, 87706, 87836, 88012, 88839, 89678, 89980, 89153, 88116]],
       "common_name": {"english": "Celestial Keyhole", "native": "천약(天鑰)", "pronounce": "Cheonyak", "IPA": "t͡ɕʰʌnjak"}
     },
     {
       "id": "CON korean 08G",
-      "lines": [[]],
+      "lines": [[95077, 95477, 96465, 97290]],
       "common_name": {"english": "Territory of Dog", "native": "구국(狗國)", "pronounce": "Guguk", "IPA": "kʰukuk"}
     },
     {
       "id": "CON korean 08H",
-      "lines": [[]],
+      "lines": [[95347, 95241, 96178, 96721, 97131, 96234, 95347], [94986, 95347], [94712, 95241], [97598, 96721], [97131, 98461]],
       "common_name": {"english": "Celestial Spring", "native": "천연(天淵)", "pronounce": "Cheonyeon", "IPA": "t͡ɕʰʌnjʌn"}
     },
     {
       "id": "CON korean 08I",
-      "lines": [[]],
+      "lines": [[93134, 93667]],
       "common_name": {"english": "Dog", "native": "구(狗)", "pronounce": "Gu", "IPA": "ku"}
     },
     {
       "id": "CON korean 08J",
-      "lines": [[]],
+      "lines": [[91014, 91014]],
       "common_name": {"english": "Peasant", "native": "농장인(農丈人)", "pronounce": "Nongjangin", "IPA": "noŋd͡ʑaŋin"}
     },
     {
@@ -711,12 +713,12 @@
     },
     {
       "id": "CON korean 09B",
-      "lines": [[]],
+      "lines": [[98162, 98066, 98575, 100062, 101090, 101384, 100738, 98688, 98162], [98066, 98353, 101384], [98688, 98353, 100062]],
       "common_name": {"english": "Celestial Farmland (In Ox Mansion)", "native": "천전(天田)", "pronounce": "Cheonjeon", "IPA": "t͡ɕʰʌnd͡ʑʌn"}
     },
     {
       "id": "CON korean 09C",
-      "lines": [[]],
+      "lines": [[98032, 98761, 98412], [99461, 100852, 100469], [102014, 102916, 102693], [98761, 100852, 102916]],
       "common_name": {"english": "Nine Water Wells", "native": "구감(九坎)", "pronounce": "Gugam", "IPA": "kukam"}
     },
     {
@@ -736,17 +738,17 @@
     },
     {
       "id": "CON korean 09G",
-      "lines": [[]],
+      "lines": [[96229, 95501], [96665, 95501, 95585, 96468, 97804, 99473, 101101, 101345]],
       "common_name": {"english": "Right Flag", "native": "우기(右旗)", "pronounce": "Ugi", "IPA": "uɡi"}
     },
     {
       "id": "CON korean 09H",
-      "lines": [[]],
+      "lines": [[100541, 98823, 98526, 98103]],
       "common_name": {"english": "Celestial Drumstick", "native": "천부(天桴)", "pronounce": "Cheonbu", "IPA": "t͡ɕʰʌnbu"}
     },
     {
       "id": "CON korean 09I",
-      "lines": [[]],
+      "lines": [[101984, 102026, 101923]],
       "common_name": {"english": "Network of Dykes", "native": "나언(羅堰)", "pronounce": "Naeon", "IPA": "naʌn"}
     },
     {
@@ -756,77 +758,78 @@
     },
     {
       "id": "CON korean 09K",
-      "lines": [[]],
+      "lines": [[92862, 94481, 94713, 95556, 96052, 97295]],
       "common_name": {"english": "Imperial Passageway", "native": "연도(輦道)", "pronounce": "Yeondo", "IPA": "jʌndo"}
     },
     {
       "id": "CON korean 10A",
       "lines": [[102618, 103045, 103005, 102624]],
-      "common_name": {"english": "Labor Women", "native": "수녀(須女)", "pronounce": "Sunyeo", "IPA": "sʰunjʌ"}
+      "common_name": {"english": "Labor Woman", "native": "수녀(須女)", "pronounce": "Sunyeo", "IPA": "sʰunjʌ"}
     },
     {
       "id": "CON korean 10B",
       "lines": [[]],
+      "label_positions": [[21, -26]],
       "common_name": {"english": "Twelve States", "native": "십이국(十二國)", "pronounce": "Sibiguk", "IPA": "ɕibiɡuk"}
     },
     {
       "id": "CON korean 10C",
-      "lines": [[]],
+      "lines": [[103226, 103226]],
       "common_name": {"english": "Yue State", "native": "월(越)", "pronounce": "Wol", "IPA": "wʌl"}
     },
     {
       "id": "CON korean 10D",
-      "lines": [[]],
+      "lines": [[104019, 104139]],
       "common_name": {"english": "Zhou State", "native": "주(周)", "pronounce": "Ju", "IPA": "t͡ɕu"}
     },
     {
       "id": "CON korean 10E",
-      "lines": [[]],
+      "lines": [[104963, 105515]],
       "common_name": {"english": "Qin State", "native": "진(秦)", "pronounce": "Jin", "IPA": "t͡ɕin"}
     },
     {
       "id": "CON korean 10F",
-      "lines": [[]],
+      "lines": [[105140, 104174]],
       "common_name": {"english": "Dai State", "native": "대(代)", "pronounce": "Dae", "IPA": "tɛ"}
     },
     {
       "id": "CON korean 10G",
-      "lines": [[]],
+      "lines": [[103882, 103882]],
       "common_name": {"english": "Jin State", "native": "진(晉)", "pronounce": "Jin", "IPA": "t͡ɕin"}
     },
     {
       "id": "CON korean 10H",
-      "lines": [[]],
+      "lines": [[103738, 103738]],
       "common_name": {"english": "Han State", "native": "한(韓)", "pronounce": "Han", "IPA": "han"}
     },
     {
       "id": "CON korean 10I",
-      "lines": [[]],
+      "lines": [[104750, 104750]],
       "common_name": {"english": "Wei State", "native": "위(魏)", "pronounce": "Wi", "IPA": "ɥi"}
     },
     {
       "id": "CON korean 10J",
-      "lines": [[]],
+      "lines": [[104234, 104234]],
       "common_name": {"english": "Chu State", "native": "초(楚)", "pronounce": "Cho", "IPA": "t͡ɕʰo"}
     },
     {
       "id": "CON korean 10K",
-      "lines": [[]],
+      "lines": [[102831, 102831]],
       "common_name": {"english": "Yan State", "native": "연(燕)", "pronounce": "Yeon", "IPA": "jʌn"}
     },
     {
       "id": "CON korean 10L",
-      "lines": [[]],
+      "lines": [[102092, 102092]],
       "common_name": {"english": "Qi State", "native": "제(齊)", "pronounce": "Je", "IPA": "t͡ɕe"}
     },
     {
       "id": "CON korean 10M",
-      "lines": [[]],
+      "lines": [[102485, 102978]],
       "common_name": {"english": "Zhao State", "native": "조(趙)", "pronounce": "Jo", "IPA": "t͡ɕo"}
     },
     {
       "id": "CON korean 10N",
-      "lines": [[]],
+      "lines": [[102487, 102487]],
       "common_name": {"english": "Zheng State", "native": "정(鄭)", "pronounce": "Jeong", "IPA": "t͡ɕʌŋ"}
     },
     {
@@ -851,7 +854,7 @@
     },
     {
       "id": "CON korean 10S",
-      "lines": [[]],
+      "lines": [[94779, 95853, 96441, 96014]],
       "common_name": {"english": "Xi Zhong", "native": "해중(奚仲)", "pronounce": "Haejung", "IPA": "hɛd͡ʑuŋ"}
     },
     {
@@ -866,47 +869,47 @@
     },
     {
       "id": "CON korean 11B",
-      "lines": [[]],
+      "lines": [[104521, 104858]],
       "common_name": {"english": "Deified Judge of Life", "native": "사명(司命)", "pronounce": "Samyeong", "IPA": "samjʌŋ"}
     },
     {
       "id": "CON korean 11C",
-      "lines": [[]],
+      "lines": [[105502, 105860]],
       "common_name": {"english": "Deified Judge of Rank", "native": "사록(司祿)", "pronounce": "Sarok", "IPA": "sʰaɾok"}
     },
     {
       "id": "CON korean 11D",
-      "lines": [[]],
+      "lines": [[105652, 106140]],
       "common_name": {"english": "Deified Judge of Disaster and Good Fortune", "native": "사위(司危)", "pronounce": "Sawi", "IPA": "sʰaɥi"}
     },
     {
       "id": "CON korean 11E",
-      "lines": [[]],
+      "lines": [[106003, 106661]],
       "common_name": {"english": "Deified Judge of Right and Wrong", "native": "사비(司非)", "pronounce": "Sabi", "IPA": "sʰabi"}
     },
     {
       "id": "CON korean 11F",
-      "lines": [[]],
+      "lines": [[104459, 106786]],
       "common_name": {"english": "Crying", "native": "곡(哭)", "pronounce": "Gok", "IPA": "kʰok"}
     },
     {
       "id": "CON korean 11G",
-      "lines": [[]],
+      "lines": [[107382, 108102]],
       "common_name": {"english": "Weeping", "native": "읍(泣)", "pronounce": "Eup", "IPA": "ɯp"}
     },
     {
       "id": "CON korean 11H",
-      "lines": [[]],
+      "lines": [[105881, 106039, 106723, 106985, 107556, 108784, 109332, 109786, 110018, 109737, 109667, 108661, 106654, 105881]],
       "common_name": {"english": "Celestial Ramparts", "native": "천루성(天壘城)", "pronounce": "Cheonlluseong", "IPA": "t͡ɕʰʌɭɭusʰʌŋ"}
     },
     {
       "id": "CON korean 11I",
-      "lines": [[]],
+      "lines": [[107608, 107380, 109289, 109285]],
       "common_name": {"english": "Decayed Mortar", "native": "패구(敗臼)", "pronounce": "Paegu", "IPA": "pʰɛɡu"}
     },
     {
       "id": "CON korean 11J",
-      "lines": [[]],
+      "lines": [[106340, 105228, 105665]],
       "common_name": {"english": "Jade Ornament on Ladies' Wear", "native": "이유(離瑜)", "pronounce": "Iyu", "IPA": "iju"}
     },
     {
@@ -931,12 +934,12 @@
     },
     {
       "id": "CON korean 12E",
-      "lines": [[]],
+      "lines": [[106551, 107253, 107129, 105942, 106551, 109102, 110351, 111022]],
       "common_name": {"english": "Big Yard for Chariots", "native": "차부(車府)", "pronounce": "Chabu", "IPA": "t͡ɕʰabu"}
     },
     {
       "id": "CON korean 12F",
-      "lines": [[]],
+      "lines": [[102724, 103089, 104060, 105186, 106481, 107533, 107136, 107259, 107418]],
       "common_name": {"english": "Hook", "native": "구(鈎)", "pronounce": "Gu", "IPA": "ku"}
     },
     {
@@ -951,17 +954,17 @@
     },
     {
       "id": "CON korean 12I",
-      "lines": [[]],
+      "lines": [[109472, 110003, 110578, 111710]],
       "common_name": {"english": "Temple", "native": "허량(虛梁)", "pronounce": "Heoryang", "IPA": "hʌɾjaŋ"}
     },
     {
       "id": "CON korean 12J",
-      "lines": [[]],
+      "lines": [[111188, 111600, 111934, 112102, 111954, 111515, 110746, 110529, 109990, 109789, 111188]],
       "common_name": {"english": "Celestial Money", "native": "천전(天錢)", "pronounce": "Cheonjeon", "IPA": "t͡ɕʰʌnd͡ʑʌn"}
     },
     {
       "id": "CON korean 12K",
-      "lines": [[]],
+      "lines": [[108868, 108874]],
       "common_name": {"english": "Roofing", "native": "개옥(蓋屋)", "pronounce": "Gaeok", "IPA": "kɛok"}
     },
     {
@@ -977,19 +980,19 @@
     },
     {
       "id": "CON korean 13C",
-      "lines": [[112935, 113445, 113186], [114389, 114144, 114520]],
+      "lines": [[112935, 113445, 113186], [114389, 114144, 114520], [113445, 114144]],
       "common_name": {"english": "Thunder and Lightning", "native": "뇌전(雷電)", "pronounce": "Noejeon", "IPA": "nwɛd͡ʑʌn"}
     },
     {
       "id": "CON korean 13D",
-      "lines1": [[111123, 110602, 109624, 110000, 111123, 112961, 113686, 115953, 117375, 417, 1421, 2787, 1939, 417]],
-      "lines": [[111123, 110602, 109624, 110000, 111123, 112961, 113686, 114822, 117375, 417, 1421, 2787, 1939, 417]],
+      "lines": [[111123, 110602, 109624, 110000, 111123, 112961, 113686, 115953, 117375, 417, 2006, 2787, 1939, 417]],
+      "lines1": [[111123, 110602, 109624, 110000, 111123, 112961, 113686, 114822, 117375, 417, 2006, 2787, 1939, 417]],
       "common_name": {"english": "Line of Ramparts", "native": "누벽진(壘壁陣)", "pronounce": "Nubyeokjin", "IPA": "nubjʌkt͡ɕin"}
     },
     {
       "id": "CON korean 13E",
-      "lines1": [[114119, 114375, 114341, 113136, 112716, 113031, 115126], [116247, 115669, 115438, 115404, 115126, 115115, 115033, 114855, 114939, 114724, 113996], [114724, 116060], [115115, 116591, 116853, 117314, 117756], [116591, 116758, 116971, 116957, 116901, 117218, 117629], [116971, 117567, 355, 873, 910, 301, 983, 1170], [1191, 355, 671, 1158, 1562], [118209, 145, 664], [154, 443, 840], [145, 443, 671]],
-      "lines": [[114119, 114375, 114341, 113136, 112716, 113031, 115126], [116247, 115669, 115438, 115404, 115126, 115115, 115033, 114855, 114939, 114724, 113996], [114724, 115142], [115115, 116591, 116853, 117314, 117756], [116591, 116758, 116971, 116957, 116901, 117218, 117629], [116971, 117567, 355, 873, 910, 301, 983, 1170], [1191, 355, 671, 1158, 1562], [118209, 145, 664], [154, 443, 840], [145, 443, 671]],
+      "lines": [[114119, 114375, 114341, 113136, 112716, 113031, 115126], [116247, 115669, 115438, 115404, 115126, 115115, 115033, 114855, 114939, 114724, 113996], [114724, 116060], [115115, 116591, 116853, 117314, 117756], [116591, 116758, 116971, 116957, 116901, 117218, 117629], [116971, 117567, 355, 873, 910, 301, 983, 1170], [1191, 355, 671, 1158, 1562], [118209, 145, 664], [154, 443, 840], [145, 443, 671]],
+      "lines1": [[114119, 114375, 114341, 113136, 112716, 113031, 115126], [116247, 115669, 115438, 115404, 115126, 115115, 115033, 114855, 114939, 114724, 113996], [114724, 115142], [115115, 116591, 116853, 117314, 117756], [116591, 116758, 116971, 116957, 116901, 117218, 117629], [116971, 117567, 355, 873, 910, 301, 983, 1170], [1191, 355, 671, 1158, 1562], [118209, 145, 664], [154, 443, 840], [145, 443, 671]],
       "common_name": {"english": "Palace Guard", "native": "우림군(羽林軍)", "pronounce": "Urimgun", "IPA": "uɾimɡun"}
     },
     {
@@ -1004,7 +1007,7 @@
     },
     {
       "id": "CON korean 13I",
-      "lines": [[]],
+      "lines": [[112948, 112948]],
       "common_name": {"english": "Materials for Making Tents", "native": "천강(天綱)", "pronounce": "Cheongang", "IPA": "t͡ɕʰʌnɡaŋ"}
     },
     {
@@ -1039,12 +1042,12 @@
     },
     {
       "id": "CON korean 14E",
-      "lines": [[]],
+      "lines": [[2381, 2661, 1708, 1288, 2210]],
       "common_name": {"english": "Sickle", "native": "부질(鈇鑕)", "pronounce": "Bujil", "IPA": "pud͡ʑil"}
     },
     {
       "id": "CON korean 14F",
-      "lines": [[]],
+      "lines": [[2219, 2903]],
       "common_name": {"english": "Official for Earthworks and Buildings", "native": "토공(土公)", "pronounce": "Togong", "IPA": "tʰoɡoŋ"}
     },
     {
@@ -1079,7 +1082,7 @@
     },
     {
       "id": "CON korean 15G",
-      "lines": [[]],
+      "lines": [[5434, 5434]],
       "common_name": {"english": "Auxiliary Road", "native": "부로(附路)", "pronounce": "Buro", "IPA": "puro"}
     },
     {
@@ -1145,7 +1148,7 @@
     },
     {
       "id": "CON korean 17E",
-      "lines": [[]],
+      "lines": [[14328, 15863, 16826, 17358, 19343, 19812, 20070, 19949, 19018]],
       "common_name": {"english": "Celestial Boat", "native": "천선(天船)", "pronounce": "Cheonseon", "IPA": "t͡ɕʰʌnsʰʌn"}
     },
     {
@@ -1165,17 +1168,17 @@
     },
     {
       "id": "CON korean 18B",
-      "lines": [[]],
+      "lines": [[21881, 21881]],
       "common_name": {"english": "Celestial Concave", "native": "천아(天阿)", "pronounce": "Cheona", "IPA": "t͡ɕʰʌna"}
     },
     {
       "id": "CON korean 18C",
-      "lines": [[]],
+      "lines": [[19038, 19038]],
       "common_name": {"english": "Lunar Star", "native": "월(月)", "pronounce": "Wol", "IPA": "wʌl"}
     },
     {
       "id": "CON korean 18D",
-      "lines": [[]],
+      "lines": [[17771, 18907, 18255], [17563, 18907, 17103]],
       "common_name": {"english": "Celestial Yin Force", "native": "천음(天陰)", "pronounce": "Cheoneum", "IPA": "t͡ɕʰʌnɯm"}
     },
     {
@@ -1190,7 +1193,7 @@
     },
     {
       "id": "CON korean 18G",
-      "lines": [[]],
+      "lines": [[16499, 17529, 18532, 18614, 18246, 17448]],
       "common_name": {"english": "Rolled Tongue", "native": "권설(卷舌)", "pronounce": "Gwonseol", "IPA": "kwʌnsʰʌl"}
     },
     {
@@ -1215,27 +1218,27 @@
     },
     {
       "id": "CON korean 19C",
-      "lines": [[]],
+      "lines": [[20635, 20711]],
       "common_name": {"english": "Celestial Street", "native": "천가(天街)", "pronounce": "Cheonga", "IPA": "t͡ɕʰʌnɡa"}
     },
     {
       "id": "CON korean 19D",
-      "lines": [[21589, 21273, 20732], [21273, 21036]],
+      "lines": [[21589, 21273, 20732], [21273, 21036, 20901, 20804, 20522, 20715]],
       "common_name": {"english": "Celestial Tally", "native": "천절(天節)", "pronounce": "Cheonjeol", "IPA": "t͡ɕʰʌnd͡ʑʌl"}
     },
     {
       "id": "CON korean 19E",
-      "lines": [[]],
+      "lines": [[19009, 19513, 20250, 21689, 23088, 23900]],
       "common_name": {"english": "Feudal Kings", "native": "제왕(諸王)", "pronounce": "Jewang", "IPA": "d͡ʑewaŋ"}
     },
     {
       "id": "CON korean 19F",
-      "lines": [[]],
+      "lines": [[22565, 23497, 24822, 23835, 22565]],
       "common_name": {"english": "Celestial High Terrace", "native": "천고(天高)", "pronounce": "Cheongo", "IPA": "t͡ɕʰʌnɡo"}
     },
     {
       "id": "CON korean 19G",
-      "lines": [[19587, 19849, 20507, 21444]],
+      "lines": [[19587, 19849, 20507, 21444, 22024, 21644, 20922, 19777, 19511, 19587]],
       "common_name": {"english": "Interpreters of Nine Dialects", "native": "구주수구(九州殊口)", "pronounce": "Gujusugu", "IPA": "kud͡ʑusʰuɡu"}
     },
     {
@@ -1255,7 +1258,7 @@
     },
     {
       "id": "CON korean 19K",
-      "lines": [[25984, 26536, 25492]],
+      "lines": [[25984, 26536, 25291]],
       "common_name": {"english": "Pillars (In Net Mansion)", "native": "주(柱)", "pronounce": "Ju", "IPA": "t͡ɕu"}
     },
     {
@@ -1275,62 +1278,62 @@
     },
     {
       "id": "CON korean 19O",
-      "lines": [[]],
+      "lines": [[23123, 22797, 22549, 22449, 22509, 22845, 22833, 22957, 23607]],
       "common_name": {"english": "Banner of Three Stars", "native": "삼기(參旗)", "pronounce": "Samgi", "IPA": "sʰamɡi"}
     },
     {
       "id": "CON korean 19P",
-      "lines": [[]],
+      "lines": [[21743, 22086, 21763, 22479, 23231, 23221, 23364, 22701, 22109]],
       "common_name": {"english": "Imperial Military Flag", "native": "구유(九斿)", "pronounce": "Guyu", "IPA": "kuju"}
     },
     {
       "id": "CON korean 19Q",
-      "lines": [[]],
+      "lines": [[21248, 21393, 20535, 20042, 17874, 17797, 17351, 16870, 16285, 15510, 13847, 12486, 12413, 11407]],
       "common_name": {"english": "Celestial Orchard", "native": "천원(天園)", "pronounce": "Cheonwon", "IPA": "t͡ɕʰʌnwʌn"}
     },
     {
       "id": "CON korean 20A",
-      "lines": [[]],
+      "lines": [[26176, 26207, 26366, 26176]],
       "common_name": {"english": "Turtle Beak", "native": "자(觜)", "pronounce": "Ja", "IPA": "t͡ɕa"}
     },
     {
       "id": "CON korean 20B",
-      "lines": [[]],
+      "lines": [[25539, 27468, 27830, 29696, 31579, 32844, 32173, 33485, 34912]],
       "common_name": {"english": "Seat Flags", "native": "좌기(坐旗)", "pronounce": "Jwagi", "IPA": "t͡ɕwaɡi"}
     },
     {
       "id": "CON korean 20C",
-      "lines": [[]],
+      "lines": [[27747, 27913, 28716, 29650]],
       "common_name": {"english": "Deity in Charge of Monsters", "native": "사괴(司恠)", "pronounce": "Sagwae", "IPA": "sʰaɡwɛ"}
     },
     {
       "id": "CON korean 21A",
-      "lines": [[]],
+      "lines": [[25930, 26311, 26727, 27989], [25336, 25930, 24436], [26727, 27366], [26311, 26237]],
       "common_name": {"english": "Three Stars", "native": "삼(參)", "pronounce": "Sam", "IPA": "sʰam"}
     },
     {
       "id": "CON korean 21B",
-      "lines": [[]],
+      "lines": [[26237, 26221, 26241]],
       "common_name": {"english": "Send Armed Forces To Suppress (Vassal of Three Stars)", "native": "벌(伐)", "pronounce": "Beol", "IPA": "pʌl"}
     },
     {
       "id": "CON korean 21C",
-      "lines": [[]],
+      "lines": [[23972, 23364, 23875, 24674]],
       "common_name": {"english": "Jade Well", "native": "옥정(玉井)", "pronounce": "Okjeong", "IPA": "ok̚t͡ɕ͈ʌŋ"}
     },
     {
       "id": "CON korean 21D",
-      "lines": [[]],
+      "lines": [[23685, 24305]],
       "common_name": {"english": "Screen", "native": "병(屏)", "pronounce": "Byeong", "IPA": "pjʌŋ"}
     },
     {
       "id": "CON korean 21E",
-      "lines": [[]],
+      "lines": [[24244, 24327, 24845, 24873]],
       "common_name": {"english": "Military Well", "native": "군정(軍井)", "pronounce": "Gunjeong", "IPA": "kund͡ʑʌŋ"}
     },
     {
       "id": "CON korean 21F",
-      "lines": [[]],
+      "lines": [[25985, 25606, 27072, 27654]],
       "common_name": {"english": "Toilet", "native": "측(廁)", "pronounce": "Cheuk", "IPA": "t͡ɕʰɯk"}
     },
     {
@@ -1340,77 +1343,77 @@
     },
     {
       "id": "CON korean 22A",
-      "lines": [[]],
+      "lines": [[30343, 30883, 31681, 32362], [32246, 32921, 34088, 35350], [30883, 32921], [30343, 29655]],
       "common_name": {"english": "East Well", "native": "동정(東井)", "pronounce": "Dongjeong", "IPA": "toŋd͡ʑʌŋ"}
     },
     {
       "id": "CON korean 22B",
-      "lines": [[]],
+      "lines": [[29655, 29655]],
       "common_name": {"english": "Battle Axe (Vassal of Well)", "native": "월(鉞)", "pronounce": "Wol", "IPA": "wʌl"}
     },
     {
       "id": "CON korean 22C",
-      "lines": [[]],
+      "lines": [[37279, 36188, 36284]],
       "common_name": {"english": "South River", "native": "남하(南河)", "pronounce": "Namha", "IPA": "namha"}
     },
     {
       "id": "CON korean 22D",
-      "lines": [[]],
+      "lines": [[37826, 36850, 36366]],
       "common_name": {"english": "North River", "native": "북하(北河)", "pronounce": "Bukha", "IPA": "pukʰa"}
     },
     {
       "id": "CON korean 22E",
-      "lines": [[]],
+      "lines": [[35550, 35699, 36238, 35550]],
       "common_name": {"english": "Celestial Wine Cup", "native": "천준(天樽)", "pronounce": "Cheonjun", "IPA": "t͡ɕʰʌnd͡ʑun"}
     },
     {
       "id": "CON korean 22F",
-      "lines": [[]],
+      "lines": [[33018, 34693, 36046, 36962, 37740]],
       "common_name": {"english": "Five Feudal Kings (In Well Mansion)", "native": "오제후(五諸侯)", "pronounce": "Ojehu", "IPA": "od͡ʑehu"}
     },
     {
       "id": "CON korean 22G",
-      "lines": [[]],
+      "lines": [[36145, 36145]],
       "common_name": {"english": "Accumulated Water (In Well Mansion)", "native": "적수(積水)", "pronounce": "Jeoksu", "IPA": "t͡ɕʌks͈u"}
     },
     {
       "id": "CON korean 22H",
-      "lines": [[]],
+      "lines": [[37265, 37265]],
       "common_name": {"english": "Pile of Firewood", "native": "적신(積薪)", "pronounce": "Jeoksin", "IPA": "t͡ɕʌkɕin"}
     },
     {
       "id": "CON korean 22I",
-      "lines": [[]],
+      "lines": [[29038, 29426, 29704, 29434, 29038]],
       "common_name": {"english": "Official for Irrigation", "native": "수부(水府)", "pronounce": "Subu", "IPA": "sʰubu"}
     },
     {
       "id": "CON korean 22J",
-      "lines": [[]],
+      "lines": [[36425, 36760, 37300, 37908]],
       "common_name": {"english": "Water Level", "native": "수위(水位)", "pronounce": "Suwi", "IPA": "sʰuɥi"}
     },
     {
       "id": "CON korean 22K",
-      "lines": [[]],
+      "lines": [[30419, 31216, 31978, 33202]],
       "common_name": {"english": "Four Channels", "native": "사독(四瀆)", "pronounce": "Sadok", "IPA": "sʰadok"}
     },
     {
       "id": "CON korean 22L",
-      "lines": [[]],
+      "lines": [[28816, 28910, 29735, 30214, 30457, 31084, 31827, 31700, 31592, 31416, 31125, 29150, 29048, 28816]],
       "common_name": {"english": "Market for Soldiers", "native": "군시(軍市)", "pronounce": "Gunsi", "IPA": "kunɕi"}
     },
     {
       "id": "CON korean 22M",
-      "lines": [[]],
+      "lines": [[30324, 30324]],
       "common_name": {"english": "Wild Cockerel", "native": "야계(野雞)", "pronounce": "Yagye", "IPA": "jaɡje"}
     },
     {
       "id": "CON korean 22N",
-      "lines": [[]],
+      "lines": [[29807, 30277]],
       "common_name": {"english": "Grandson", "native": "손(孫)", "pronounce": "Son", "IPA": "son"}
     },
     {
       "id": "CON korean 22O",
-      "lines": [[]],
+      "lines": [[27628, 28199]],
       "common_name": {"english": "Son", "native": "자(子)", "pronounce": "Ja", "IPA": "t͡ɕa"}
     },
     {
@@ -1420,150 +1423,187 @@
     },
     {
       "id": "CON korean 22Q",
-      "lines": [[]],
+      "lines": [[34769, 39311]],
       "common_name": {"english": "Palace Gate", "native": "궐구(闕丘)", "pronounce": "Gwolgu", "IPA": "kwʌlɡu"}
     },
     {
       "id": "CON korean 22R",
-      "lines": [[]],
+      "lines": [[32349, 32349]],
       "common_name": {"english": "Wolf Star", "native": "낭성(狼星)", "pronounce": "Nangseong", "IPA": "naŋsʰʌŋ"}
     },
     {
       "id": "CON korean 22S",
-      "lines": [[]],
+      "lines": [[33579, 35904, 37229, 38170, 39095, 36817, 35415, 34444, 33579], [35904, 33977, 37229]],
       "common_name": {"english": "Bow", "native": "호(弧)", "pronounce": "Ho", "IPA": "ho"}
     },
     {
       "id": "CON korean 22T",
-      "lines": [[]],
+      "lines": [[30438, 30438]],
       "common_name": {"english": "Old Man", "native": "노인(老人)", "pronounce": "Noin", "IPA": "noin"}
     },
     {
       "id": "CON korean 23A",
-      "lines": [[]],
+      "lines": [[41822, 41909, 42806, 42911, 41822]],
       "common_name": {"english": "Ghosts", "native": "귀(鬼)", "pronounce": "Gwi", "IPA": "kɥi"}
     },
     {
       "id": "CON korean 23B",
-      "lines": [[]],
-      "common_name": {"english": "Cumulative Corpse Gas (In Ghosts Mansion)", "native": "적시(積尸)", "pronounce": "Jeoksi", "IPA": "t͡ɕʌkɕ͈i"}
+      "lines": [["DSO:M44", "DSO:M44"]],
+      "common_name": {"englishd": "Cumulative Corpse Gas (In Ghosts Mansion)", "native": "적시(積尸)", "pronounce": "Jeoksi", "IPA": "t͡ɕʌkɕ͈i"}
     },
     {
       "id": "CON korean 23C",
-      "lines": [[]],
+      "lines": [[43103, 43834, 44818, 44154, 43103]],
       "common_name": {"english": "Beacon Fire", "native": "관(爟)", "pronounce": "Gwan", "IPA": "kwan"}
     },
     {
       "id": "CON korean 23D",
-      "lines": [[]],
+      "lines": [[28413, 29651, 30867, 31121, 32064, 32558], [30093, 29651]],
       "common_name": {"english": "Celestial Dog", "native": "천구(天狗)", "pronounce": "Cheongu", "IPA": "t͡ɕʰʌnɡu"}
     },
     {
       "id": "CON korean 23E",
-      "lines": [[]],
+      "lines": [[43142, 42028, 41307, 40107, 40084, 40259]],
       "common_name": {"english": "Outer Kitchen", "native": "외주(外厨)", "pronounce": "Oeju", "IPA": "wɛd͡ʑu"}
     },
     {
       "id": "CON korean 23F",
-      "lines": [[]],
+      "lines": [[32768, 34922, 31685], [34922, 36377], [39429, 36377, 39953]],
       "common_name": {"english": "Celestial Earth God's Temple", "native": "천사(天社)", "pronounce": "Cheonsa", "IPA": "t͡ɕʰʌnsʰa"}
     },
     {
       "id": "CON korean 24A",
-      "lines": [[]],
+      "lines": [[43234, 42799, 42402, 42313, 43109, 43813, 44659, 45336]],
       "common_name": {"english": "Willow", "native": "유(柳)", "pronounce": "Yu", "IPA": "ju"}
     },
     {
       "id": "CON korean 24B",
-      "lines": [[]],
+      "lines": [[46771, 46774, 46454, 46771]],
       "common_name": {"english": "Banner of Wine Shop", "native": "주기(酒旗)", "pronounce": "Jugi", "IPA": "t͡ɕuɡi"}
     },
     {
       "id": "CON korean 25A",
-      "lines": [[]],
+      "lines": [[47431, 46776, 46509, 46404, 46390, 45811, 45751]],
       "common_name": {"english": "Star", "native": "성(星)", "pronounce": "Seong", "IPA": "sʰʌŋ"}
     },
     {
       "id": "CON korean 25B",
-      "lines": [[]],
+      "lines": [[41075, 43531, 44248, 44700, 45688, 45860, 46146, 46750, 47908, 48455, 50335, 50583, 49583, 49669, 47508], [49669, 51624], [49669, 49637]],
       "common_name": {"english": "Xuanyuan", "native": "헌원(軒轅)", "pronounce": "Heonwon", "IPA": "hʌnwʌn"}
     },
     {
       "id": "CON korean 25C",
-      "lines": [[]],
+      "lines": [[46952, 47029, 48833], [47029, 49593]],
       "common_name": {"english": "High Judge", "native": "내평(內平)", "pronounce": "Naepyeong", "IPA": "nɛpʰjʌŋ"}
     },
     {
       "id": "CON korean 25D",
-      "lines": [[]],
+      "lines": [[46982, 46893, 46869]],
       "common_name": {"english": "Celestial Premier", "native": "천상(天相)", "pronounce": "Cheonsang", "IPA": "t͡ɕʰʌnsʰaŋ"}
     },
     {
       "id": "CON korean 25E",
-      "lines": [[]],
+      "lines": [[42536, 42913, 45941, 45556, 41037,42913]],
       "common_name": {"english": "Cereals", "native": "직(稷)", "pronounce": "Jik", "IPA": "t͡ɕik"}
     },
     {
       "id": "CON korean 26A",
-      "lines": [[]],
+      "lines": [[48356, 49841, 51069, 49321, 48356, 47452], [51069, 52085]],
       "common_name": {"english": "Extended Net", "native": "장(張)", "pronounce": "Jang", "IPA": "t͡ɕaŋ"}
     },
     {
       "id": "CON korean 26B",
-      "lines": [[]],
+      "lines": [[42828, 43325, 46515, 46657, 46026, 46810, 47199, 47224, 49769, 50456, 47758, 47522, 44824, 45001, 42828]],
       "common_name": {"english": "Celestial Temple", "native": "천묘(天廟)", "pronounce": "Cheonmyo", "IPA": "t͡ɕʰʌnmjo"}
     },
     {
       "id": "CON korean 27A",
-      "lines": [[]],
+      "lines": [[53740, 55282, 55705, 54682, 53740, 52943], [55705, 57283], [55282, 54029, 52948, 51933], [56802, 55687, 54029], [55687, 56633, 58576], [54682, 54204, 54477, 56280], [54204, 52407, 53502, 55588, 56922, 57936], [52407, 51172]],
       "common_name": {"english": "Wings", "native": "익(翼)", "pronounce": "Ik", "IPA": "ik"}
     },
     {
       "id": "CON korean 27B",
-      "lines": [[]],
+      "lines": [[50191, 51561, 51635, 51986, 52727]],
       "common_name": {"english": "Dongou", "native": "동구(東區)", "pronounce": "Donggu", "IPA": "toŋɡu"}
     },
     {
       "id": "CON korean 28A",
-      "lines": [[]],
+      "lines": [[59199, 59316, 59803, 60965, 61359, 59316, 60189], [60965, 61174]],
       "common_name": {"english": "Chariot", "native": "진(軫)", "pronounce": "Jin", "IPA": "t͡ɕin"}
     },
     {
       "id": "CON korean 28B",
-      "lines": [[]],
+      "lines": [[60189, 60189]],
       "common_name": {"english": "Changsha (Vassal of Chariot)", "native": "장사(長沙)", "pronounce": "Jangsa", "IPA": "t͡ɕaŋsʰa"}
     },
     {
       "id": "CON korean 28C",
-      "lines": [[]],
+      "lines": [[61174, 61174]],
       "common_name": {"english": "Left linchpin (Vassal of Chariot)", "native": "좌할(左轄)", "pronounce": "Jwahal", "IPA": "t͡ɕwahal"}
     },
     {
       "id": "CON korean 28D",
-      "lines": [[]],
+      "lines": [[59199, 59199]],
       "common_name": {"english": "Right linchpin (Vassal of Chariot)", "native": "우할(右轄)", "pronounce": "Uhal", "IPA": "uhal"}
     },
     {
       "id": "CON korean 28E",
-      "lines": [[]],
+      "lines": [[61621, 60603]],
       "common_name": {"english": "Military Gate", "native": "군문(軍門)", "pronounce": "Gunmun", "IPA": "kunmun"}
     },
     {
       "id": "CON korean 28F",
-      "lines": [[]],
+      "lines": [[60735, 60449, 60855, 61789]],
       "common_name": {"english": "Master of Constructions (In Chariot Mansion)", "native": "토사공(土司空)", "pronounce": "Tosagong", "IPA": "tʰosʰaɡoŋ"}
     },
     {
       "id": "CON korean 28G",
-      "lines": [[]],
+      "lines": [[64803, 63530, 62683, 61720, 62131, 62500, 64375, 64803]],
       "common_name": {"english": "Green Hill", "native": "청구(青丘)", "pronounce": "Cheonggu", "IPA": "t͡ɕʰʌŋɡu"}
     },
     {
       "id": "CON korean 28H",
-      "lines": [[]],
+      "lines": [[53773, 54360, 55667, 56000, 57013, 58803], [53762, 54811, 55528, 57371, 57803, 59229], [54137, 54718, 56573, 56700, 58242, 59184], [54185, 54746, 56497, 57322, 58453, 59196], [54840, 55425, 56480, 56970, 59449], [53773, 53762, 54137, 54185, 54840, 54746, 54718, 54811, 54360], [55667, 55528, 56573, 56497, 56480, 57322, 56700, 57371, 56000], [57013, 57803, 58242, 58453, 59449, 59196, 59184, 59229, 58803], [54746, 55425, 56497], [57322, 56970, 58453]],
       "common_name": {"english": "House for Musical Instruments", "native": "기부(器府)", "pronounce": "Gibu", "IPA": "kibu"}
     }
   ],
+  "lunar_system": {
+    "context": "chinese lunar mansion",
+    "name": { "native": "이십팔수(二十八宿)", "pronounce": "Isipalsu", "english": "Lunar Mansion", "IPA": "iɕip̚pʰaɭsʰu" },
+    "defining_stars": [65474, 69427, 72622, 78265, 80112, 82514, 88635, 92041, 100345, 102618, 106278, 109074, 113963, 1067, 3693, 8903, 12719, 17499, 20889, 26176, 25930, 30343, 41822, 42313, 46390, 48356, 53740, 59803],
+    "coordsys": "equatorial",
+    "extent": 90,
+    "names": [
+      { "symbol": "1", "native": "각(角)", "pronounce": "Gak", "english": "Horn"},
+      { "symbol": "2", "native": "항(亢)", "pronounce": "Hang", "english": "Neck"},
+      { "symbol": "3", "native": "저(氐)", "pronounce": "Jeo", "english": "Root"},
+      { "symbol": "4", "native": "방(房)", "pronounce": "Bang", "english": "Room"},
+      { "symbol": "5", "native": "심(心)", "pronounce": "Sim", "english": "Heart"},
+      { "symbol": "6", "native": "미(尾)", "pronounce": "Mi", "english": "Tail"},
+      { "symbol": "7", "native": "기(箕)", "pronounce": "Gi", "english": "Winnowing Basket"},
+      { "symbol": "8", "native": "두(斗)", "pronounce": "Du", "english": "Dipper"},
+      { "symbol": "9", "native": "우(牛)", "pronounce": "U", "english": "Ox"},
+      { "symbol": "10", "native": "여(女)", "pronounce": "Yeo", "english": "Girl"},
+      { "symbol": "11", "native": "허(虛)", "pronounce": "Heo", "english": "Emptiness"},
+      { "symbol": "12", "native": "위(危)", "pronounce": "Wi", "english": "Rooftop"},
+      { "symbol": "13", "native": "실(室)", "pronounce": "Sil", "english": "Encampment"},
+      { "symbol": "14", "native": "벽(壁)", "pronounce": "Byeok", "english": "Wall"},
+      { "symbol": "15", "native": "규(奎)", "pronounce": "Gyu", "english": "Legs"},
+      { "symbol": "16", "native": "루(婁)", "pronounce": "Ru", "english": "Bond"},
+      { "symbol": "17", "native": "위(胃)", "pronounce": "Wi", "english": "Stomach"},
+      { "symbol": "18", "native": "묘(昴)", "pronounce": "Myo", "english": "Hairy Head"},
+      { "symbol": "19", "native": "필(畢)", "pronounce": "Pil", "english": "Net"},
+      { "symbol": "20", "native": "자(觜)", "pronounce": "Ja", "english": "Turtle Beak"},
+      { "symbol": "21", "native": "삼(參)", "pronounce": "Sam", "english": "Three Stars"},
+      { "symbol": "22", "native": "정(井)", "pronounce": "Jeong", "english": "Well"},
+      { "symbol": "23", "native": "귀(鬼)", "pronounce": "Gwi", "english": "Ghost"},
+      { "symbol": "24", "native": "류(柳)", "pronounce": "Ryu", "english": "Willow"},
+      { "symbol": "25", "native": "성(星)", "pronounce": "Seong", "english": "Star"},
+      { "symbol": "26", "native": "장(張)", "pronounce": "Jang", "english": "Extended Net"},
+      { "symbol": "27", "native": "익(翼)", "pronounce": "Ik", "english": "Wings"},
+      { "symbol": "28", "native": "진(軫)", "pronounce": "Jin", "english": "Chariot"}
+    ]
+  },
   "common_names": {
     "HIP 75097": [{"english": "Crown Prince", "native": "태자(太子)", "pronounce": "Taeja", "IPA": "tʰɛd͡ʑa"}],
     "HIP 72607": [{"english": "Emperor", "native": "제(帝)", "pronounce": "Je", "IPA": "t͡ɕe"}],

@@ -1596,6 +1596,29 @@
     }
 ],
   "edges_type": "none",
+  "zodiac": {
+    "name": {"native": "十二星次", "pronounce": "Xīng Cì", "english": "Chinese Jupiter Station"},
+    "partitions": [12, 2],
+    "context": "Chinese Earthly Branches (Dizhi)",
+    "coordsys": "equatorial",
+    "extent": 90,
+    "start_offset": 270,
+    "label_latitude": 9,
+    "names": [ 
+      {"symbol": "丑", "native": "星纪", "pronounce": "Xīng Jì", "english": "Star Record"},
+      {"symbol": "子", "native": "玄枵", "pronounce": "Xuán Xiāo", "english": "Xuanxiao"},
+      {"symbol": "亥", "native": "娵訾", "pronounce": "Jū Zī", "english": "Juzi"},
+      {"symbol": "戌", "native": "降娄", "pronounce": "Jiàng Lóu", "english": "Jianglou"},
+      {"symbol": "酉", "native": "大梁", "pronounce": "Dà Liáng", "english": "Daliang"},
+      {"symbol": "申", "native": "实沈", "pronounce": "Shí Shěn", "english": "Shishen"},
+      {"symbol": "未", "native": "鹑首", "pronounce": "Chún Shǒu", "english": "Quail Head"},
+      {"symbol": "午", "native": "鹑火", "pronounce": "Chún Huǒ", "english": "Quail Fire"},
+      {"symbol": "巳", "native": "鹑尾", "pronounce": "Chún Wěi", "english": "Quail Tail"},
+      {"symbol": "辰", "native": "寿星", "pronounce": "Shòu Xīng", "english": "Longevity Star"},
+      {"symbol": "卯", "native": "大火", "pronounce": "Dà Huǒ", "english": "Great Fire"},
+      {"symbol": "寅", "native": "析木", "pronounce": "Xī Mù", "english": "Ximu"}
+    ]
+  },
   "lunar_system": {
                    "comment": "Needs confirmation, then remove edges (edges_type=none)",
                    "context": "chinese lunar mansion",

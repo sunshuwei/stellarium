@@ -2165,6 +2165,26 @@
     "___:___ __ 0:0:0 +90:0:0 12:16:07 -17:33:07 027 028",
     "___:___ __ 12:16:07 -17:33:07 0:0:0 -90:0:0 027 028"
   ],
+  "zodiac": {
+    "name": {"native": "Zodiacus", "english": "Zodiac"},
+    "partitions": [ 12, 3, 2, 5],
+    "context": "Mangbo month names",
+    "extent": 9,
+    "names": [
+      { "symbol": "并肩", "native": "Imcin",      "english": "依玛沁"},
+      { "symbol": "星见", "native": "Narhū",      "english": "那拉呼"},
+      { "symbol": "神鹰", "native": "Gasha",      "english": "嘎思哈"},
+      { "symbol": "兄长", "native": "Ilan",       "english": "依兰"},
+      { "symbol": "幼弟", "native": "Fodoho",     "english": "佛朵"},
+      { "symbol": "鼠", "native": "Singgeri",   "english": "兴格里"},
+      { "symbol": "阶梯", "native": "Terkin",     "english": "特尔钦"},
+      { "symbol": "迎日", "native": "Buruhun",    "english": "布鲁浑"},
+      { "symbol": "狩猎", "native": "Asubanda",  "english": "阿苏班达"},
+      { "symbol": "耕织", "native": "Jodorgan",   "english": "卓朵尔甘"},
+      { "symbol": "刺猬", "native": "Sengge",     "english": "僧格"},
+      { "symbol": "营室", "native": "Tehe",       "english": "特赫"}
+    ]
+  },
   "lunar_system": {
     "comment": "Needs confirmation, then remove edges (edges_type=none)",
     "context": "chinese lunar mansion",

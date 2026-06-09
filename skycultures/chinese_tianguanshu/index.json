@@ -387,7 +387,7 @@
     {
       "id": "CON chinese_tianguanshu 077",
       "lines": [[91919, 91262, 91971]],
-      "common_name": {"english": "织女", "native": "Zhinv"}
+      "common_name": {"english": "织女", "native": "Zhinü"}
     },
     {
       "id": "CON chinese_tianguanshu A01",
@@ -521,7 +521,7 @@
     },
     {
       "id": "CON chinese_tianguanshu A27",
-      "lines": [[53740, 55282, 55705, 54682, 53740, 52943], [55705, 57283], [52009, 54029, 55687, 56633, 57587, 58576], [55900, 55687, 56802], [51718, 54204, 56078], [50066, 51979, 54477, 56280, 57613]],
+      "lines": [[53740, 55282, 55705, 54682, 53740, 52943], [55705, 57283], [55282, 54029, 52948, 51933], [56802, 55687, 54029], [55687, 56633, 58576], [54682, 54204, 54477, 56280], [54204, 52407, 53502, 55588, 56922, 57936], [52407, 51172]],
       "common_name": {"english": "翼（羽翮）", "native": "Yi"}
     },
     {
@@ -571,6 +571,66 @@
       "common_name": {"english": "关梁", "native": "Guanliang"}
     }
   ],
+  "zodiac": {
+    "name": {"native": "十二星次", "pronounce": "Xīng Cì", "english": "Chinese Jupiter Station"},
+    "partitions": [12, 2],
+    "context": "Chinese Earthly Branches (Dizhi)",
+    "coordsys": "equatorial",
+    "extent": 90,
+    "start_offset": 255,
+    "label_latitude": 9,
+    "names": [ 
+      {"symbol": "丑", "native": "星纪", "pronounce": "Xīng Jì", "english": "Star Record"},
+      {"symbol": "子", "native": "玄枵", "pronounce": "Xuán Xiāo", "english": "Xuanxiao"},
+      {"symbol": "亥", "native": "娵訾", "pronounce": "Jū Zī", "english": "Juzi"},
+      {"symbol": "戌", "native": "降娄", "pronounce": "Jiàng Lóu", "english": "Jianglou"},
+      {"symbol": "酉", "native": "大梁", "pronounce": "Dà Liáng", "english": "Daliang"},
+      {"symbol": "申", "native": "实沈", "pronounce": "Shí Shěn", "english": "Shishen"},
+      {"symbol": "未", "native": "鹑首", "pronounce": "Chún Shǒu", "english": "Quail Head"},
+      {"symbol": "午", "native": "鹑火", "pronounce": "Chún Huǒ", "english": "Quail Fire"},
+      {"symbol": "巳", "native": "鹑尾", "pronounce": "Chún Wěi", "english": "Quail Tail"},
+      {"symbol": "辰", "native": "寿星", "pronounce": "Shòu Xīng", "english": "Longevity Star"},
+      {"symbol": "卯", "native": "大火", "pronounce": "Dà Huǒ", "english": "Great Fire"},
+      {"symbol": "寅", "native": "析木", "pronounce": "Xī Mù", "english": "Ximu"}
+    ]
+  },
+  "lunar_system": {
+                   "context": "chinese lunar mansion",
+                   "name": { "native": "二十八宿", "pronounce": "Xiù", "english": "Lunar Mansion"},
+                   "defining_stars": [65474, 69427, 72622, 78265, 80112, 82514, 88635, 92041, 100345, 102618, 106278, 109074, 113963, 1067,
+                    3693, 8903, 12719, 17499, 20889, 26176, 26727, 30343, 41822, 42313, 46390, 48356, 53740, 59803],
+                   "coordsys": "equatorial",
+                   "extent": 90,
+                   "names": [ { "symbol":  "1", "native": "角", "pronounce": "Jiǎo", "english": "Horn"},
+                              { "symbol":  "2", "native": "亢", "pronounce": "Kàng", "english": "Neck"},
+                              { "symbol":  "3", "native": "氐", "pronounce": "Dī", "english": "Root"},
+                              { "symbol":  "4", "native": "房", "pronounce": "Fáng", "english": "Room"},
+                              { "symbol":  "5", "native": "心", "pronounce": "Xīn", "english": "Heart"},
+                              { "symbol":  "6", "native": "尾", "pronounce": "Wěi", "english": "Tail"},
+                              { "symbol":  "7", "native": "箕", "pronounce": "Jī", "english": "Winnowing Basket"},
+                              { "symbol":  "8", "native": "斗", "pronounce": "Dǒu", "english": "Dipper"},
+                              { "symbol":  "9", "native": "牛", "pronounce": "Niú", "english": "Ox"},
+                              { "symbol": "10", "native": "女", "pronounce": "Nǚ", "english": "Girl"},
+                              { "symbol": "11", "native": "虚", "pronounce": "Xū", "english": "Emptiness"},
+                              { "symbol": "12", "native": "危", "pronounce": "Wēi", "english": "Rooftop"},
+                              { "symbol": "13", "native": "室", "pronounce": "Shì", "english": "Encampment"},
+                              { "symbol": "14", "native": "壁", "pronounce": "Bì", "english": "Wall"},
+                              { "symbol": "15", "native": "奎", "pronounce": "Kuí", "english": "Legs"},
+                              { "symbol": "16", "native": "娄", "pronounce": "Lóu", "english": "Bond"},
+                              { "symbol": "17", "native": "胃", "pronounce": "Wèi", "english": "Stomach"},
+                              { "symbol": "18", "native": "昴", "pronounce": "Mǎo", "english": "Hairy Head"},
+                              { "symbol": "19", "native": "毕", "pronounce": "Bì", "english": "Net"},
+                              { "symbol": "20", "native": "觜", "pronounce": "Zī", "english": "Turtle Beak"},
+                              { "symbol": "21", "native": "参", "pronounce": "Shēn", "english": "Three Stars"},
+                              { "symbol": "22", "native": "井", "pronounce": "Jǐng", "english": "Well"},
+                              { "symbol": "23", "native": "鬼", "pronounce": "Guǐ", "english": "Ghost"},
+                              { "symbol": "24", "native": "柳", "pronounce": "Liǔ", "english": "Willow"},
+                              { "symbol": "25", "native": "星", "pronounce": "Xīng", "english": "Star"},
+                              { "symbol": "26", "native": "张", "pronounce": "Zhāng", "english": "Extended Net"},
+                              { "symbol": "27", "native": "翼", "pronounce": "Yì", "english": "Wings"},
+                              { "symbol": "28", "native": "轸", "pronounce": "Zhěn", "english": "Chariot"}
+                            ]
+                 },
   "common_names": {
     "HIP 746": [{"english": "王良"}],
     "HIP 11767": [{"english": "正妃"}],

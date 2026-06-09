@@ -266,7 +266,7 @@
     },
     {
       "id": "CON japanese_koushi S14",
-      "lines": [[58369, 58460, 58512, 58654, 58208, 57670, 56997]],
+      "lines": [[59856, 58460, 58512, 58654, 58208, 57670, 56997]],
       "common_name": {"english": "常陈"}
     },
     {
@@ -1136,7 +1136,7 @@
     },
     {
       "id": "CON japanese_koushi 16F",
-      "lines": [[8068, 7607, 6999, 6813, 7513, 9640, 7818, 9021, 10064, 10670, 12086]],
+      "lines": [[8068, 7607, 6813, 7513, 7818, 9640, 9021, 10064, 10644, 10670, 12086]],
       "common_name": {"english": "天大将军"}
     },
     {
@@ -1161,7 +1161,7 @@
     },
     {
       "id": "CON japanese_koushi 17E",
-      "lines": [[14328, 15219, 15863, 16826, 17358, 18396, 19343, 19812, 20070]],
+      "lines": [[14328, 15219, 15863, 16826, 17358, 19343, 19812, 20070, 19949]],
       "common_name": {"english": "天船"}
     },
     {
@@ -1476,12 +1476,12 @@
     },
     {
       "id": "CON japanese_koushi 23E",
-      "lines": [[42835, 43305, 43142, 42028, 41307, 41080]],
+      "lines": [[42835, 43305, 43142, 42028, 41307, 42146]],
       "common_name": {"english": "外厨"}
     },
     {
       "id": "CON japanese_koushi 23F",
-      "lines": [[43067, 43067]],
+      "lines": [[43409, 43409]],
       "common_name": {"english": "天记"}
     },
     {
@@ -1521,7 +1521,7 @@
     },
     {
       "id": "CON japanese_koushi 25E",
-      "lines": [[42536, 42913, 44511, 47175, 45941]],
+      "lines": [[42536, 42913, 45941, 46701, 45556]],
       "common_name": {"english": "天稷"}
     },
     {
@@ -1590,6 +1590,29 @@
       "common_name": {"english": "器府"}
     }
   ],
+  "zodiac": {
+    "name": {"native": "十二星次", "pronounce": "Xīng Cì", "english": "Chinese Jupiter Station"},
+    "partitions": [12, 2],
+    "context": "Chinese Earthly Branches (Dizhi)",
+    "coordsys": "equatorial",
+    "extent": 90,
+    "start_offset": 270,
+    "label_latitude": 9,
+    "names": [ 
+      {"symbol": "丑", "native": "星纪", "pronounce": "Xīng Jì", "english": "Star Record"},
+      {"symbol": "子", "native": "玄枵", "pronounce": "Xuán Xiāo", "english": "Xuanxiao"},
+      {"symbol": "亥", "native": "娵訾", "pronounce": "Jū Zī", "english": "Juzi"},
+      {"symbol": "戌", "native": "降娄", "pronounce": "Jiàng Lóu", "english": "Jianglou"},
+      {"symbol": "酉", "native": "大梁", "pronounce": "Dà Liáng", "english": "Daliang"},
+      {"symbol": "申", "native": "实沈", "pronounce": "Shí Shěn", "english": "Shishen"},
+      {"symbol": "未", "native": "鹑首", "pronounce": "Chún Shǒu", "english": "Quail Head"},
+      {"symbol": "午", "native": "鹑火", "pronounce": "Chún Huǒ", "english": "Quail Fire"},
+      {"symbol": "巳", "native": "鹑尾", "pronounce": "Chún Wěi", "english": "Quail Tail"},
+      {"symbol": "辰", "native": "寿星", "pronounce": "Shòu Xīng", "english": "Longevity Star"},
+      {"symbol": "卯", "native": "大火", "pronounce": "Dà Huǒ", "english": "Great Fire"},
+      {"symbol": "寅", "native": "析木", "pronounce": "Xī Mù", "english": "Ximu"}
+    ]
+  },
   "edges_type": "own",
   "edges": [
     "___:___ __ 12:34:31 +82:29:43 13:25:14 -11:09:06 28A 01A",
