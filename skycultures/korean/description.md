@@ -2,13 +2,65 @@
 
 ## Introduction
 
-The Chinese, Korean, and Japanese constellations have the same origin and look very similar in shape. They are represented respectively in the Dun Huang starmap from the 8th century, the Cheon-Sang-Yeol-Cha-Bun-Ya-Ji-Do map and in the Kitora skymap painted in A.D.7C ~ 8C. Their positions and their names are similar in the Chinese alphabet. The name of the constellations first appear in the Records of the Grand Historian(史記) in Han dynasty describing Xia dynasty in about 2000 B.C.
+《天象列次分野之图》是韩国现存的、历史最悠久且最具代表性的古代星图之一。它最初刻于公元1396年（李朝太祖三年），但其底本可追溯至高句丽或统一新罗时期，甚至与中国唐代（或更早）的星图有着直接的传承关系。如今，它不仅是研究东亚古代天文学的重要实物资料，也反映了东亚各国在天文、历法、占星等领域的长期交流与融合。
 
 ## Description
 
-### Origin
+中国、朝鲜、日本的星官同源，形状看起来也很相似。星官名称最早出现于西汉《史记》中记录的约公元前100年的百余个星官。公元3世纪，星官被标准化，最终确立283个星官，1464颗星。隋唐时期，中国的天文著作传到朝鲜、日本，这一时期的代表作品是中国的*敦煌星图*、朝鲜的*天象列次分野之图*以及日本的*格子月进图*。自中国唐代以后，三国的星象开始各自独立发展，*天象列次分野之图*成为朝鲜星座的代表作。
 
-The 272 constellations displayed in this Stellarium sky culture are based on the Cheon-Sang-Yeol-Cha-Bun-Ya-Zi-Do, the Korean Constellation map, which was carved on the stone on 1395 but has its origin from another sky map which existed about 2,000 years ago. This map represents 1467 stars in about 190 constellations whose shapes are slightly different from the chinese ones. The interpretation of the map is not easy: the map is so old that only about 300 stars are found to match with the real stars. All the stars of the map were drawn on a circle, so the equator seems smaller than the southern limit. Because the density of constellation does not change with respect to the position, the position and the size of the constellations were somewhat altered in a way unknown by the author. It is assumed that there should be no bright stars which do not belong to any constellations. The work of the author is subject to interpretation, and could be changed at a later time. It will however roughly show what the Korean Constellation are like.
+The Chinese, Korean, and Japanese constellations have the same origin and look very similar in shape. The names of the constellations first appeared in the Records of the Grand Historian (史記) of the Western Han dynasty, which recorded more than 100 constellations appeared before 100 BC. In the 3rd century AD, the constellations were standardized, eventually establishing 283 constellations with 1464 stars. During the Sui and Tang dynasties (7th-8th c. AD), Chinese astronomical works spread to Korea and Japan. Representative works from this period include the *Dunhuang* Star Chart (敦煌星图) from China, the *Cheon-Sang-Yeol-Cha-Bun-Ya-Ji-Do* (천상열차분야지도, 天象列次分野之圖) from Korea, and the Moon's path chart (格子月進図) from Japan. After the Tang dynasty, the star patterns of the three countries began to develop independently, and the *Cheonsang Yeolcha Bunyajido* (以下简称天象图) became the representative star map of Korean constellations.
+
+### 历史沿革
+
+据石碑最下部的跋文记载，平壤城原有一方天文图石碑，后因战乱沉入大同江，拓本也逐渐失传。李朝太祖李成桂登基之初，有人进献一本拓本，太祖视为重宝，下令书云观（负责天文观测的机构）依此本重新刻石。书云观认为原图星度已因岁差而产生偏差，建议重新测定不同季节黎明和黄昏时的南天中星，制作新图。太祖同意后，1395年年中书云观进上《中星记》一编，随后依照旧图和新测中星在石碑上镌刻成新图。石碑落款为“洪武二十八年十二月”，即公元1396年1月。
+
+这块石碑两面都有内容相同但上下颠倒的星图和碑文。一面（A面）星图在上，标题和铭文在下，整体偏向一侧且上下错开；另一面（B面）则是典型的标题、星图、铭文布局，但图文几乎磨损殆尽。关于双面刻石的原因有多种猜测：或因石料稀缺不得不重新利用；或B面为世宗或世祖时期所刻；甚至有人认为A面更像草稿。
+
+到了肃宗时期（1674–1720），原碑磨损严重（另一说为日本侵朝时期宫室被毁，石碑埋于废墟）。肃宗十三年（1687年）取拓本重新镌刻了一块新碑，置于昌德宫外的观象监并建屋保护。原碑被称为“初刻碑”，新碑被称为“再刻碑”。英祖46年（1770年）初刻碑在景福宫被发现，英祖命人将其移至观象监与再刻碑一同保存，并将藏碑之所命名为“钦敬阁”，御笔亲书匾额。
+
+1910年李朝灭亡后，钦敬阁被毁，两碑被堆放在昌庆苑（后改名为昌庆苑）明政殿后屋檐下。1936年，美国人鲁弗斯（W.C. Rufus）在其著作《韩国天文学》中盛赞此图“集中体现东方星象细腻和准确”，天象碑才为世人所知。此后历经战争与动荡，直到20世纪60年代才重回公众视野，70年代被博物馆收藏。1985年初刻碑被指定为韩国国宝第228号，再刻碑被指定为宝物第837号，现均收藏于景福宫旁的国立古宫博物馆。
+
+### 星图内容与特征
+
+《天象图》共绘制 1467 颗星，与中国传统的 1464 星相比，有少量增减：天市垣多Jongdaebu“宗大夫”1 座（4 星），Munchang文昌多 1 星，Yeondo辇道多 1 星，Cheonwon天园多 1 星，Gibu器府少 3 星，漏刻Cheongi天记 1 星。图中部分星名与常见写法有异，如Cheonchang“天枪”作“天仓”、Donggu“东瓯”作“东区”、Gyeongha“梗河”作“更河”、Jwa/U Gyeong“左更/右更”作“左梗/右梗”等，应为错刻。在本星空文化（sky culture）中，以上错刻均已修正。
+
+与苏州石刻天文图及绝大多数中国古代星图相比，《天象图》有三个显著特点：
+
+1. 星点大小有差异：天狼星（Wolf, Sirius）、老人星（Old Man, Canopus）、大角星（Great Horn, Arturus）等亮星明显大于其他星点。
+2. 星名标注有特色：很多星座名后标注了该星座的星数，但北斗七星、三垣垣墙诸星等重要恒星名称反而没有标注。
+3. 星座连线与位置不同：部分星座的连线形式和相对位置与中国宋代以后的星图传统存在明显差异，这更多是由于中国在宋代及以后频繁进行天文观测，星座多次大规模变化。
+
+### 天文结构
+
+《天象图》属于典型的“盖图”（盖天说的星图表达方式）。图中绘有三个以北天极为圆心的同心圆：
+
+内规（恒显圈）：最小的圆，圈内的恒星在观测地点一年四季永不落下。
+
+天赤道：中间的圆。
+
+外规（恒隐圈）：最大的圆，圈外的恒星终年无法看到。
+
+此外，还有一个与赤道斜交成 24 度 的圆，代表太阳视运动轨迹——黄道。从内规向外辐射出 28 条间距不等的放射线，对应二十八宿的宿度线，其宿度值刻在外规外围，与下方所列的石氏宿度一致。
+
+星图外规之外的一圈文字内容为 十二辰、十二国分野及黄道十二宫。星图正上方环绕“天”字书写的是二十四节气昏晓中星（即跋文所称书云观新修《中星记》所测内容）。顶部左右两侧是日宿与月宿，解释了太阳运行与寒暑变化、月行九道以及黄赤交点。八个小的补丁内写有四方各七宿的星数、宿度及星象。星图下方一栏右边为《论天》（主要摘自《晋书·天文志》，介绍浑天说及盖天说等），左边为石氏二十八宿宿度与去极度。最下方的跋文记载了碑刻由来、对太祖李成桂的赞辞，以及参与观测与制作的人员名单和立碑时间。
+
+### 底本年代争议
+
+《天象图》所依据的底本——平壤城原碑——究竟绘制于何时，一直是天文学史研究的重点和难点。
+
+鲁弗斯（W.C. Rufus） 认为该图为高句丽时期的古图，源自中国唐代咸亨三年（672 年）的一幅星图。这一观点曾得到大多数学者认可。
+
+中国天文史学家潘鼐 从春/秋分点位置、重要恒星相对位置、黄赤道附近恒星等角度论证，认为此图必定在新罗统一朝鲜（675 年）之前传入，其底本为初唐或更早所作。他指出：“论天”及十二次分野均引自《晋书·天文志》《隋书·天文志》（李淳风完成于贞观中后期，7世纪后期），因此星图的底本当不早于此时；二十八宿宿度及去极度采用的是石氏宿度（约观测于公元前100年），而非一行在开元年间（8世纪初）所测新值，因此应该不晚于一行的观测。据此推断，此图绘制于唐贞观至开元初年之间（约 627–713 年）。
+
+此外，星图上“建星”（Establishment Stars）在初刻碑 A 面刻为“立星”（B 面磨损无法考证），再刻碑则改回“建星”。这种避讳现象被认为是避高丽首位国王 王建 之讳（朝鲜国王死后仍要避讳）。这表明底本应来自 高丽时期（918–1392 年） 而非高句丽。因为李朝初期天文官员多沿袭前朝，若原图没有避讳，刻石时不可能出于前朝忌讳而刻意修改；但若原图已有避讳，刻石时习惯性沿用则非常自然。
+
+综合上述证据，一个合理的推测是：李成桂所获得的天文图并非拓本，而是一幅高丽时期的摹本。摹绘时出于避讳将原图上的“建星”改为“立星”，太祖刻碑时书云观依摹本刻为“立星”，直到再刻碑时才改回“建星”。尽管如此，星图的星象内容和宿度数据仍保留了初唐至开元初年的特征，因此其原始底本的年代很可能在 8 世纪早期或之前。
+
+### 
+
+### 星图的证认
+
+
 
 ## References
 

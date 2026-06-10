@@ -271,7 +271,7 @@
     },
     {
       "id": "CON korean S15",
-      "lines": [[60742, 60746, 60904, 61071, 61295, 60941, 60599, 60087, 59847, 60168, 60170, 60697, 60742], [60904, 60514, 60170], [61071, 60525, 60351, 60168], [60746, 60514, 60351, 60599, 60525, 60941], [60087, 60168, 60599], [60525, 60514, 61071], [60697, 60514]],
+      "lines": [[60742, 60697, 60746, 60904, 61071, 60941, 60599, 60087, 59847, 60066, 60170, 60197, 60742], [60746, 60514, 60170], [60904, 60525, 60351, 60066], [60697, 60514, 60351, 60599, 60066, 60087], [60197, 60514, 60904], [60514, 60525, 60941], [60525, 60599]],
       "common_name": {"english": "Officers of the Imperial Guard", "native": "낭위(郎位)", "pronounce": "Nangwi", "IPA": "naŋɥi"}
     },
     {
@@ -924,7 +924,7 @@
     },
     {
       "id": "CON korean 12C",
-      "lines": [[]],
+      "lines": [[109410, 109654, 109937]],
       "common_name": {"english": "Inner Pestle", "native": "내저(內杵)", "pronounce": "Naejeo", "IPA": "nɛd͡ʑʌ"}
     },
     {
@@ -1004,6 +1004,11 @@
       "id": "CON korean 13G",
       "lines": [[113368, 113368]],
       "common_name": {"english": "North Gate of the Military Camp", "native": "북락사문(北落師門)", "pronounce": "Bungnaksamun", "IPA": "puŋnaks͈amun"}
+    },
+    {
+      "id": "CON korean 13H",
+      "lines": [[115054, 114131, 114421], [114131, 116389, 116602, 765], [116602, 2081, 2072, 3245]],
+      "common_name": {"english": "Net for Catching Birds", "native": "팔괴(八魁)", "pronounce": "Palgwae", "IPA": "pʰaɭɡwɛ"}
     },
     {
       "id": "CON korean 13I",
@@ -1338,7 +1343,7 @@
     },
     {
       "id": "CON korean 21G",
-      "lines": [[]],
+      "lines": [[26460, 26460]],
       "common_name": {"english": "Celestial Excrement", "native": "천시(天矢)", "pronounce": "Cheonsi", "IPA": "t͡ɕʰʌnɕi"}
     },
     {
@@ -1418,7 +1423,7 @@
     },
     {
       "id": "CON korean 22P",
-      "lines": [[]],
+      "lines": [[25859, 26634]],
       "common_name": {"english": "Grandfather", "native": "장인(丈人)", "pronounce": "Jangin", "IPA": "t͡ɕaŋin"}
     },
     {
@@ -1514,6 +1519,7 @@
     {
       "id": "CON korean 26B",
       "lines": [[42828, 43325, 46515, 46657, 46026, 46810, 47199, 47224, 49769, 50456, 47758, 47522, 44824, 45001, 42828]],
+      "lines1": [[44511, 47175, 48374, 46651, 46515, 42828, 42515, 40706, 40096, 42570, 43023, 42884, 44191, 44816, 44511]],
       "common_name": {"english": "Celestial Temple", "native": "천묘(天廟)", "pronounce": "Cheonmyo", "IPA": "t͡ɕʰʌnmjo"}
     },
     {
@@ -1524,7 +1530,7 @@
     {
       "id": "CON korean 27B",
       "lines": [[50191, 51561, 51635, 51986, 52727]],
-      "common_name": {"english": "Dongou", "native": "동구(東區)", "pronounce": "Donggu", "IPA": "toŋɡu"}
+      "common_name": {"english": "Dongou", "native": "동구(東甌)", "pronounce": "Donggu", "IPA": "toŋɡu"}
     },
     {
       "id": "CON korean 28A",
@@ -1667,6 +1673,10 @@
     "HIP 82729": [{"english": "Highest-ranking Imperial Consort", "native": "부인(夫人)", "pronounce": "Bu-in", "IPA": "puin"}],
     "HIP 84143": [{"english": "Highest-ranking Imperial Consort", "native": "부인(夫人)", "pronounce": "Bu-in", "IPA": "puin"}],
     "HIP 86228": [{"english": "Imperial Concubine", "native": "빈(嬪)", "pronounce": "Bin", "IPA": "pin"}],
+    "HIP 87073": [{"english": "Imperial Concubine", "native": "빈(嬪)", "pronounce": "Bin", "IPA": "pin"}],
+    "HIP 86670": [{"english": "Imperial Concubine", "native": "빈(嬪)", "pronounce": "Bin", "IPA": "pin"}],
+    "HIP 85927": [{"english": "Concubine", "native": "첩 (妾)", "pronounce": "Cheop", "IPA": "tɕʰʌp̚"}],
+    "HIP 85696": [{"english": "Concubine", "native": "첩 (妾)", "pronounce": "Cheop", "IPA": "tɕʰʌp̚"}],
     "HIP 97278": [{"english": "Right General", "native": "우장군(右將軍)", "pronounce": "Ujanggun", "IPA": "ud͡ʑaŋɡun"}],
     "HIP 97649": [{"english": "Grand General", "native": "대장군(大將軍)", "pronounce": "Daejanggun", "IPA": "tɛd͡ʑaŋɡun"}],
     "HIP 98036": [{"english": "Left General", "native": "좌장군(左將軍)", "pronounce": "Jwajanggun", "IPA": "t͡ɕwad͡ʑaŋɡun"}],
@@ -1679,10 +1689,10 @@
     "HIP  9640": [{"english": "Grand General", "native": "대장(大將)", "pronounce": "Daejang", "IPA": "tɛd͡ʑaŋ"}],
     "HIP 21421": [{"english": "Celestial High Terrace", "native": "천고(天高)", "pronounce": "Cheon-go", "IPA": "t͡ɕʰʌnɡo"}],
     "HIP 23015": [{"english": "Minister", "native": "경(卿)", "pronounce": "Gyeong", "IPA": "kjʌŋ"}],
-    "HIP 24608": [{"english": "Celestial High Terrace", "native": "천고(天高)", "pronounce": "Cheon-go", "IPA": "t͡ɕʰʌnɡo"}],
-    "HIP 28360": [{"english": "Minister of Works", "native": "사공(司空)", "pronounce": "Sagong", "IPA": "sʰaɡoŋ"}],
-    "HIP 28380": [{"english": "Prison", "native": "천옥(天獄)", "pronounce": "Cheonok", "IPA": "t͡ɕʰʌnok̚"}],
-    "HIP 25428": [{"english": "Celestial Barn", "native": "천창(天倉)", "pronounce": "Cheonchang", "IPA": "t͡ɕʰʌnt͡ɕʰaŋ"}],
+    "HIP 24608": [{"english": "Celestial Arsenal", "native": "천고(天庫)", "pronounce": "Cheon-go", "IPA": "t͡ɕʰʌnɡo"}],
+    "HIP 28360": [{"english": "Prison", "native": "천옥(天獄)", "pronounce": "Cheonok", "IPA": "t͡ɕʰʌnok̚"}],
+    "HIP 28380": [{"english": "Celestial Barn", "native": "천창(天倉)", "pronounce": "Cheonchang", "IPA": "t͡ɕʰʌnt͡ɕʰaŋ"}],
+    "HIP 25428": [{"english": "Minister of Works", "native": "사공(司空)", "pronounce": "Sagong", "IPA": "sʰaɡoŋ"}],
     "HIP 25930": [{"english": "Three Generals", "native": "삼장군(三將軍)", "pronounce": "Samjanggun", "IPA": "sʰamd͡ʑaŋɡun"}],
     "HIP 26311": [{"english": "Three Generals", "native": "삼장군(三將軍)", "pronounce": "Samjanggun", "IPA": "sʰamd͡ʑaŋɡun"}],
     "HIP 26727": [{"english": "Three Generals", "native": "삼장군(三將軍)", "pronounce": "Samjanggun", "IPA": "sʰamd͡ʑaŋɡun"}],
@@ -1701,6 +1711,13 @@
     "HIP 49637": [{"english": "Maids-in-waiting", "native": "여어(女御)", "pronounce": "Yeoeo", "IPA": "jʌʌ"}],
     "HIP 49583": [{"english": "Highest-ranking Imperial Consort", "native": "부인(夫人)", "pronounce": "Bu-in", "IPA": "puin"}],
     "HIP 50583": [{"english": "Imperial Consort", "native": "왕비(王妃)", "pronounce": "Wangbi", "IPA": "waŋbi"}],
-    "HIP 50335": [{"english": "Harem", "native": "후궁(後宮)", "pronounce": "Hugung", "IPA": "huɡuŋ"}]
+    "HIP 50335": [{"english": "Harem", "native": "후궁(後宮)", "pronounce": "Hugung", "IPA": "huɡuŋ"}],
+    "NAME Sun": [{"english": "Sun", "pronounce": "Taeyang", "native": "태양(太陽)", "IPA": "tʰɛjaŋ"}],
+    "NAME Moon": [{"english": "Moon", "pronounce": "Dal", "native": "달(月)", "IPA": "tal"}],
+    "NAME Mercury": [{"english": "Water Star", "pronounce": "Suseong", "native": "수성(水星)", "IPA": "sʰusʰʌŋ"}],
+    "NAME Venus": [{"english": "Metal Star", "pronounce": "Geumseong", "native": "금성(金星)", "IPA": "kɯmsʰʌŋ"}],
+    "NAME Mars": [{"english": "Fire Star", "pronounce": "Hwaseong", "native": "화성(火星)", "IPA": "hwasʰʌŋ"}],
+    "NAME Jupiter": [{"english": "Wood Star", "pronounce": "Mokseong", "native": "목성(木星)", "IPA": "mok̚s͈ʌŋ"}],
+    "NAME Saturn": [{"english": "Earth Star", "pronounce": "Toseong", "native": "토성(土星)", "IPA": "tʰosʰʌŋ"}]
   }
 }

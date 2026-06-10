@@ -1221,17 +1221,17 @@
     {
       "id": "CON chinese_mdn 19I",
       "lines": [[23453, 23416, 23767]],
-      "common_name": {"english": "Northwestern Pillar", "native": "西北柱", "pronounce": "Xī Běi Zhù", "IPA": "ɕi˥.peɪ˨˩˩.t͡ʂu˥˩"}
+      "common_name": {"english": "Northwestern Pillar", "native": "西北柱", "pronounce": "Xī Běi Zhù", "IPA": "ɕi˥.peɪ˨˩˩.t͡ʂu˥˩", "byname": "Three Springs"}
     },
     {
       "id": "CON chinese_mdn 19J",
       "lines": [[27483, 27639, 27673]],
-      "common_name": {"english": "Northeastern Pillar", "native": "东北柱", "pronounce": "Dōng Běi Zhù", "IPA": "tʊŋ˥.peɪ˨˩˩.t͡ʂu˥˩"}
+      "common_name": {"english": "Northeastern Pillar", "native": "东北柱", "pronounce": "Dōng Běi Zhù", "IPA": "tʊŋ˥.peɪ˨˩˩.t͡ʂu˥˩", "byname": "Three Springs"}
     },
     {
       "id": "CON chinese_mdn 19K",
       "lines": [[26712, 25984, 26536]],
-      "common_name": {"english": "Southeasterb Pillar", "native": "东南柱", "pronounce": "Dōng Nán Zhù", "IPA": "tʊŋ˥.nan˧˥.t͡ʂu˥˩"}
+      "common_name": {"english": "Southeasterb Pillar", "native": "东南柱", "pronounce": "Dōng Nán Zhù", "IPA": "tʊŋ˥.nan˧˥.t͡ʂu˥˩", "byname": "Three Springs"}
     },
     {
       "id": "CON chinese_mdn 19L",
