@@ -17,7 +17,7 @@
     {
       "id": "CON korean P03",
       "lines": [[61281, 61281]],
-      "common_name": {"english": "Celestial One", "native": "천일(天一)", "pronounce": "Cheonil", "IPA": "t͡ɕʰʌnil"}
+      "common_name": {"english": "Celestial One", "native": "천일(天一)", "pronounce": "Cheon-il", "IPA": "t͡ɕʰʌnil"}
     },
     {
       "id": "CON korean P04",
@@ -152,7 +152,7 @@
     {
       "id": "CON korean P30",
       "lines": [[51459, 51814, 52478, 53043, 53261, 52136, 51459]],
-      "common_name": {"english": "Celestial Prison", "native": "천뢰(天牢)", "pronounce": "Cheonnoe", "IPA": "t͡ɕʰʌnnwɛ"}
+      "common_name": {"english": "Celestial Prison", "native": "천뢰(天牢)", "pronounce": "Cheolloe", "IPA": "t͡ɕʰʌɭɭwɛ"}
     },
     {
       "id": "CON korean P31",
@@ -182,7 +182,7 @@
     {
       "id": "CON korean P36",
       "lines": [[57477, 58181, 56035, 55148, 57477]],
-      "common_name": {"english": "Judge for Nobility", "native": "천리(天理)", "pronounce": "Cheonlli", "IPA": "t͡ɕʰʌɭɭi"}
+      "common_name": {"english": "Judge for Nobility", "native": "천리(天理)", "pronounce": "Cheolli", "IPA": "t͡ɕʰʌɭɭi"}
     },
     {
       "id": "CON korean P37",
@@ -392,7 +392,7 @@
     {
       "id": "CON korean H16",
       "lines": [[76127, 75695, 76267, 76952, 77512, 78159, 78493, 78459, 77655]],
-      "common_name": {"english": "Coiled Thong", "native": "관색(貫索)", "pronounce": "Gwan Saek", "IPA": "kwan sʰɛk"}
+      "common_name": {"english": "Coiled Thong", "native": "관색(貫索)", "pronounce": "Gwansaek", "IPA": "kwan sʰɛk"}
     },
     {
       "id": "CON korean H17",
@@ -900,7 +900,7 @@
     {
       "id": "CON korean 11H",
       "lines": [[105881, 106039, 106723, 106985, 107556, 108784, 109332, 109786, 110018, 109737, 109667, 108661, 106654, 105881]],
-      "common_name": {"english": "Celestial Ramparts", "native": "천루성(天壘城)", "pronounce": "Cheonlluseong", "IPA": "t͡ɕʰʌɭɭusʰʌŋ"}
+      "common_name": {"english": "Celestial Ramparts", "native": "천루성(天壘城)", "pronounce": "Cheolluseong", "IPA": "t͡ɕʰʌɭɭusʰʌŋ"}
     },
     {
       "id": "CON korean 11I",
@@ -1139,7 +1139,7 @@
     {
       "id": "CON korean 17B",
       "lines": [[15900, 16083, 16322, 16369]],
-      "common_name": {"english": "Celestial Foodstuff", "native": "천름(天廩)", "pronounce": "Cheonneum", "IPA": "t͡ɕʰʌnɯm"}
+      "common_name": {"english": "Celestial Foodstuff", "native": "천름(天廩)", "pronounce": "Cheolleum", "IPA": "t͡ɕʰʌɭɭɯm"}
     },
     {
       "id": "CON korean 17C",
@@ -1174,7 +1174,7 @@
     {
       "id": "CON korean 18B",
       "lines": [[21881, 21881]],
-      "common_name": {"english": "Celestial Concave", "native": "천아(天阿)", "pronounce": "Cheona", "IPA": "t͡ɕʰʌna"}
+      "common_name": {"english": "Celestial Concave", "native": "천아(天阿)", "pronounce": "Cheon-a", "IPA": "t͡ɕʰʌna"}
     },
     {
       "id": "CON korean 18C",
@@ -1184,7 +1184,7 @@
     {
       "id": "CON korean 18D",
       "lines": [[17771, 18907, 18255], [17563, 18907, 17103]],
-      "common_name": {"english": "Celestial Yin Force", "native": "천음(天陰)", "pronounce": "Cheoneum", "IPA": "t͡ɕʰʌnɯm"}
+      "common_name": {"english": "Celestial Yin Force", "native": "천음(天陰)", "pronounce": "Cheon-eum", "IPA": "t͡ɕʰʌnɯm"}
     },
     {
       "id": "CON korean 18E",
@@ -1193,8 +1193,8 @@
     },
     {
       "id": "CON korean 18F",
-      "lines": [[19398, 18543, 17593, 17378, 16537, 15197, 14293, 13701, 12770, 12843, 13288, 14146, 15474, 16611, 17651, 18216, 18673]],
-      "common_name": {"english": "Celestial Meadows", "native": "천원(天苑)", "pronounce": "Cheonwon", "IPA": "t͡ɕʰʌnwʌn"}
+      "lines": [[19398, 18543, 17593, 17378, 16537, 15197, 14293, 13701, 12770, 12843, 13288, 14146, 15474, 16611, 17651, 18673]],
+      "common_name": {"english": "Celestial Meadows", "native": "천원(天苑)", "pronounce": "Cheon-won", "IPA": "t͡ɕʰʌnwʌn"}
     },
     {
       "id": "CON korean 18G",
@@ -1294,7 +1294,7 @@
     {
       "id": "CON korean 19Q",
       "lines": [[21248, 21393, 20535, 20042, 17874, 17797, 17351, 16870, 16285, 15510, 13847, 12486, 12413, 11407]],
-      "common_name": {"english": "Celestial Orchard", "native": "천원(天園)", "pronounce": "Cheonwon", "IPA": "t͡ɕʰʌnwʌn"}
+      "common_name": {"english": "Celestial Orchard", "native": "천원(天園)", "pronounce": "Cheon-won", "IPA": "t͡ɕʰʌnwʌn"}
     },
     {
       "id": "CON korean 20A",
@@ -1494,7 +1494,7 @@
     {
       "id": "CON korean 25B",
       "lines": [[41075, 43531, 44248, 44700, 45688, 45860, 46146, 46750, 47908, 48455, 50335, 50583, 49583, 49669, 47508], [49669, 51624], [49669, 49637]],
-      "common_name": {"english": "Xuanyuan", "native": "헌원(軒轅)", "pronounce": "Heonwon", "IPA": "hʌnwʌn"}
+      "common_name": {"english": "Xuanyuan", "native": "헌원(軒轅)", "pronounce": "Heon-won", "IPA": "hʌnwʌn"}
     },
     {
       "id": "CON korean 25C",
@@ -1622,14 +1622,14 @@
     "HIP 53910": [{"english": "The Celestial Rotating Jade", "native": "천선(天璇)", "pronounce": "Cheonseon", "IPA": "t͡ɕʰʌnsʰʌn"},
                   {"english": "Giant Gate", "native": "거문(巨門)", "pronounce": "Geomun", "IPA": "kʰʌmun"},
                   {"english": "Law", "native": "법(法)", "pronounce": "Beop", "IPA": "pʰʌp̚"}],
-    "HIP 58001": [{"english": "The Celestial Shining Pearl", "native": "천기(天璣)", "pronounce": "CheonGi", "IPA": "t͡ɕʰʌnki"},
+    "HIP 58001": [{"english": "The Celestial Shining Pearl", "native": "천기(天璣)", "pronounce": "Cheongi", "IPA": "t͡ɕʰʌnki"},
                   {"english": "Good Fortune Star", "native": "녹존(祿存)", "pronounce": "Nokjon", "IPA": "nok̚t͡ɕon"},
                   {"english": "Command", "native": "령(令)", "pronounce": "Ryeong", "IPA": "ɾjʌŋ"}],
-    "HIP 59774": [{"english": "The Celestial Balance", "native": "천권(天權)", "pronounce": "CheonGwon", "IPA": "t͡ɕʰʌnɡwʌn"},
+    "HIP 59774": [{"english": "The Celestial Balance", "native": "천권(天權)", "pronounce": "Cheongwon", "IPA": "t͡ɕʰʌnɡwʌn"},
                   {"english": "Literary Star", "native": "문곡(文曲)", "pronounce": "MunGok", "IPA": "munɡok̚"},
                   {"english": "Crusade", "native": "벌(伐)", "pronounce": "Beol", "IPA": "pʰʌl"}],
-    "HIP 62956": [{"english": "The Jade Sighting-tube", "native": "옥형(玉衡)", "pronounce": "OkHyeong", "IPA": "ok̚çjʌŋ"},
-                  {"english": "Clean and Chaste", "native": "염정(廉貞)", "pronounce": "YeomJeong", "IPA": "jʌmd͡ʑʌŋ"},
+    "HIP 62956": [{"english": "The Jade Sighting-tube", "native": "옥형(玉衡)", "pronounce": "Okhyeong", "IPA": "ok̚çjʌŋ"},
+                  {"english": "Clean and Chaste", "native": "염정(廉貞)", "pronounce": "Yeomjeong", "IPA": "jʌmd͡ʑʌŋ"},
                   {"english": "Killing", "native": "살(殺)", "pronounce": "Sal", "IPA": "sʰal"}],
     "HIP 65378": [{"english": "The Opener of Heat", "native": "개양(開陽)", "pronounce": "Gaeyang", "IPA": "kɛjaŋ"},
                   {"english": "Military Star", "native": "무곡(武曲)", "pronounce": "Mugok", "IPA": "muɡok̚"},
@@ -1687,10 +1687,10 @@
     "HIP  4427": [{"english": "Heavenly Quadriga", "native": "천사(天駟)", "pronounce": "Cheonsa", "IPA": "t͡ɕʰʌnsʰa"}],
     "HIP  5447": [{"english": "Grand General", "native": "대장(大將)", "pronounce": "Daejang", "IPA": "tɛd͡ʑaŋ"}],
     "HIP  9640": [{"english": "Grand General", "native": "대장(大將)", "pronounce": "Daejang", "IPA": "tɛd͡ʑaŋ"}],
-    "HIP 21421": [{"english": "Celestial High Terrace", "native": "천고(天高)", "pronounce": "Cheon-go", "IPA": "t͡ɕʰʌnɡo"}],
+    "HIP 21421": [{"english": "Celestial High Terrace", "native": "천고(天高)", "pronounce": "Cheongo", "IPA": "t͡ɕʰʌnɡo"}],
     "HIP 23015": [{"english": "Minister", "native": "경(卿)", "pronounce": "Gyeong", "IPA": "kjʌŋ"}],
-    "HIP 24608": [{"english": "Celestial Arsenal", "native": "천고(天庫)", "pronounce": "Cheon-go", "IPA": "t͡ɕʰʌnɡo"}],
-    "HIP 28360": [{"english": "Prison", "native": "천옥(天獄)", "pronounce": "Cheonok", "IPA": "t͡ɕʰʌnok̚"}],
+    "HIP 24608": [{"english": "Celestial Arsenal", "native": "천고(天庫)", "pronounce": "Cheongo", "IPA": "t͡ɕʰʌnɡo"}],
+    "HIP 28360": [{"english": "Prison", "native": "천옥(天獄)", "pronounce": "Cheon-ok", "IPA": "t͡ɕʰʌnok̚"}],
     "HIP 28380": [{"english": "Celestial Barn", "native": "천창(天倉)", "pronounce": "Cheonchang", "IPA": "t͡ɕʰʌnt͡ɕʰaŋ"}],
     "HIP 25428": [{"english": "Minister of Works", "native": "사공(司空)", "pronounce": "Sagong", "IPA": "sʰaɡoŋ"}],
     "HIP 25930": [{"english": "Three Generals", "native": "삼장군(三將軍)", "pronounce": "Samjanggun", "IPA": "sʰamd͡ʑaŋɡun"}],
