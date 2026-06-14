@@ -359,6 +359,7 @@
       "id1": "CON chinese_yuan_dynasty H08",
       "lines": [[88267, 88899]],
       "label_positions": [[18.09, 20.4]],
+      "comment": "Bodu and Tusi completely overlap. In the Stellarium implementation, only Tusi is displayed, while *Bodu* (Textile Ruler) is not shown.",
       "common_name": {"english": "Textile Ruler", "native": "帛度", "pronounce": "Bó Dù", "IPA": "pwo˧˥.tu˥˩"}
     },
     {
@@ -600,12 +601,12 @@
     },
     {
       "id": "CON chinese_yuan_dynasty 08I",
-      "lines": [[96496, 97290]],
+      "lines": [[95477, 96465]],
       "common_name": {"english": "Dog Stars", "native": "狗星", "pronounce": "Gǒu Xīng", "IPA": "koʊ˨˩˩.ɕiŋ˥"}
     },
     {
       "id": "CON chinese_yuan_dynasty 09A",
-      "lines": [[100345, 100881], [101123, 101027, 100345, 100310], [100345, 100064]],
+      "lines": [[100345, 100881, 101123, 101027, 100345, 100310], [100345, 100064]],
       "common_name": {"english": "Ox", "native": "牛宿", "pronounce": "Niú Xiù", "IPA": "njoʊ˧˥.ɕjoʊ˥˩"}
     },
     {
