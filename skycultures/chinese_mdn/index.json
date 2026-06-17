@@ -1256,7 +1256,7 @@
     {
       "id": "CON chinese_mdn 19P",
       "lines": [[21139, 22109, 22701, 23221, 23231, 22479, 22263, 22028, 23362]],
-      "common_name": {"english": "Imperial Military Flag", "native": "九斿", "pronounce": "Jiǔ Yóu", "IPA": "t͡ɕjoʊ˨˩˩.joʊ˧˥"}
+      "common_name": {"english": "Imperial Military Flag", "native": "九斿", "pronounce": "Jiǔ Yóu", "IPA": "t͡ɕjoʊ˨˩˩.joʊ˧˥", "byname": "Celestial Banner, Flag of Meadows, Director of Curvature"}
     },
     {
       "id": "CON chinese_mdn 19Q",
@@ -1487,7 +1487,7 @@
     {
       "id": "CON chinese_mdn 26A",
       "lines": [[48356, 49841, 51069, 49321, 48356, 47452], [51069, 52085]],
-      "common_name": {"english": "Extended Net", "native": "【张】", "pronounce": "Zhāng", "IPA": "t͡ʂɑŋ˥", "byname": "Bird's Crop"}
+      "common_name": {"english": "Extended Net", "native": "【张】", "pronounce": "Zhāng", "IPA": "t͡ʂɑŋ˥", "byname": "Bird's Crop, Heavenly Treasury, Kitchen"}
     },
     {
       "id": "CON chinese_mdn 26B",
@@ -1501,7 +1501,7 @@
       "lines3": [[52943, 53740, 55282, 55705, 57283], [55705, 54682, 53740], [55282, 56802, 55687, 56633, 56318], [57791, 57214, 56318, 55106, 52980], [54682, 54204, 56078, 56293, 56280], [58158, 57001, 56280, 52407, 51172]],
       "lines4": [[52943, 53740, 55282, 55705, 57283], [55705, 54682, 53740], [55282, 56802, 55687, 56633, 56318], [57791, 57214, 56318, 55106, 52980], [54682, 54204, 56280, 54561, 53699], [56922, 55588, 53699, 51172, 50456]],
       "lines": [[52943, 53740, 55282, 55705, 57283], [55705, 54682, 53740], [55282, 56802, 55687, 56633, 56318], [57791, 57214, 56318, 55106, 52980], [54682, 54703, 54204, 54477, 52841], [56343, 54561, 52841, 51172, 50456]],
-      "common_name": {"english": "Wings", "native": "【翼】", "pronounce": "Yì", "IPA": "i˥˩", "byname": "Bird's Wings"}
+      "common_name": {"english": "Wings", "native": "【翼】", "pronounce": "Yì", "IPA": "i˥˩", "byname": "Bird's Wings, Music Bureau"}
     },
     {
       "id": "CON chinese_mdn 27B",
@@ -1526,7 +1526,7 @@
     {
       "id": "CON chinese_mdn 28D",
       "lines": [[59199, 59199]],
-      "common_name": {"english": "Right linchpin (Vassal of Chariot)", "native": "右辖(附轸宿)", "pronounce": "Yòu Xiá", "IPA": "joʊ˥˩.ɕja˧˥"}
+      "common_name": {"english": "Right linchpin (Vassal of Chariot)", "native": "右辖(附轸宿)", "pronounce": "Yòu Xiá", "IPA": "joʊ˥˩.ɕja˧˥", "byname": "Celestial Linchpin Oil"}
     },
     {
       "id": "CON chinese_mdn 28E",
@@ -1688,7 +1688,7 @@
     },
     {
       "id": "CON chinese_mdn D08",
-      "lines": [[52727, 51986, "5408306970432999808", 48374, 47175, 46651, 48374]],
+      "lines": [[52727, 51986, "5408306970432999808", 48374, 47175], [48374, 46651]],
       "common_name": {"english": "Cereal Path","native": "粢道","pronounce": "Zī Dào","ipa": "t͡sz̩˥.tɑʊ˥˩"}
     },
     {
@@ -1853,7 +1853,7 @@
     },
     {
       "id": "CON chinese_mdn D41",
-      "lines": [[81852, 80047, 72370, 70248, 69896, 70638, 81065, 81852]],
+      "lines": [[81852, 80047, 72370, 70248], [80047, 69896], [81852, 81065, 76996, 74296], [81065, 70638]],
       "common_name": {"english": "Cuttlefish","native": "鲗","pronounce": "Zéi","ipa": "t͡seɪ˧˥"}
     },
     {
@@ -8643,8 +8643,10 @@
     "HIP  41909": [{"native": "积金玉 鬼宿二", "references": [2,3]},
                    {"native": "鬼西北星", "references": [5,7]}],
     "HIP  42806": [{"native": "积马 鬼宿三", "references": [2,3]},
+                   {"native": "积铢钱", "references": [9]},
                    {"native": "鬼东北星", "references": [5,7]}],
     "HIP  42911": [{"native": "积兵 鬼宿四", "references": [2,3]},
+                   {"native": "积马", "references": [9]},
                    {"native": "鬼东南星", "references": [5,7]}],
     "HIP  42133": [{"native": "鬼宿增一", "references": [2,7]}],
     "HIP  41117": [{"native": "鬼宿增二", "references": [2,7]}],
@@ -9460,13 +9462,15 @@
     "HIP  42637": [{"native": "绝南十"}],
     "HIP  46107": [{"native": "绝南十一"}],
     "HIP  46928": [{"native": "绝南十二"}],
-    "HIP  81065": [{"native": "鲗一"}],
-    "HIP  81852": [{"native": "鲗二"}],
+    "HIP  81852": [{"native": "鲗一"}],
+    "HIP  81065": [{"native": "鲗二"}],
     "HIP  80057": [{"native": "鲗三"}],
     "HIP  72370": [{"native": "鲗四"}],
     "HIP  70248": [{"native": "鲗五"}],
     "HIP  69896": [{"native": "鲗六"}],
     "HIP  70638": [{"native": "鲗七"}],
+    "HIP  76996": [{"native": "鲗八"}],
+    "HIP  74296": [{"native": "鲗九"}],
     "HIP 112781": [{"native": "溟渊一"}],
     "HIP 110256": [{"native": "溟渊二"}],
     "HIP 112405": [{"native": "溟渊三"}],

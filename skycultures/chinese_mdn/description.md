@@ -442,7 +442,9 @@
 
 ##### Judging
 
-*Judging* (Chinese: 平星, Pinyin: Píng Xīng) consists of 2 stars north of the *Arsenal*.
+[**平**](constellation:01G)2星，在[**库楼**](constellation:01H)北，为石氏外官，属[**角宿**](constellation:01A)。<br>
+**平星**是天上执掌司法刑狱的星官，相当于人间的廷尉。<br>
+它的职能是评判天下的法律和诉讼案件，确保刑罚公正、法度严明。
 
 ##### Arsenal
 
@@ -902,7 +904,7 @@ Basket for Mulberry Leaves (Chinese: 扶筐, Pinyin: Fú Kuāng) consists of 7 s
 
 ##### Outer Fence
 
-[**外屏**](constellation:15B)7星在[**奎**](constellation:15A)南。为石氏外官，属[**奎宿**](constellation:15A)。<br>
+[**外屏**](constellation:15B)7星在[**奎**](constellation:15A)南。为石氏外官，属[**奎宿**](constellation:15A)。
 
 **外屏**是用于遮挡**天溷**(constellation:15C)（厕所兼猪圈）的屏障。
 
@@ -914,7 +916,6 @@ Basket for Mulberry Leaves (Chinese: 扶筐, Pinyin: Fú Kuāng) consists of 7 s
 
 ##### Master of Constructions
 
-*Master of Constructions* (Chinese: 土司空, Pinyin: Tǔ Sī Kōng) is 1 star south of the *Legs*.
 [**土司空**](constellation:15B)1星在[**奎**](constellation:15A)南。为石氏外官，属[**奎宿**](constellation:15A)。<br>
 **土司空**是司职土地与农事的官员。<br>
 因其与农业有关，该星官被用于占卜谷物的丰盈与国民的富足。
@@ -1004,7 +1005,7 @@ Basket for Mulberry Leaves (Chinese: 扶筐, Pinyin: Fú Kuāng) consists of 7 s
 
 *Celestial Yin Force* (Chinese: 天阴, Pinyin: Tiān Yīn) consists of 5 stars west of the *Net*'s handle.
 
-##### Hay
+##### Hay and Straw
 
 [**刍藁**](constellation:18H)6星在[**天苑**](constellation:18I)西，为甘氏外官，属[**昴宿**](constellation:18A)。<br>
 生草为“刍”，稻稗为“藁”，**刍藁**指饲养家畜的草料。
@@ -1039,7 +1040,7 @@ Basket for Mulberry Leaves (Chinese: 扶筐, Pinyin: Fú Kuāng) consists of 7 s
 **天高**为甘氏中官，属[**毕宿**](constellation:19A)。<br>**天高**为高处的台榭，九层望楼，象征天子所居的御亭。<br>
 主管登高远望，又主宾客、军事瞭望。
 
-此外，靠近**天高**星官的[**毕宿**](constellation:19A)最亮星[α Tau](star:HIP21421)也被称作“天高”。
+此外，靠近**天高**星官的[**毕宿**](constellation:19A)最亮星[α Tau](star:α Tau)也被称作“天高”。
 
 ##### Five Chariots
 
@@ -1091,7 +1092,7 @@ Basket for Mulberry Leaves (Chinese: 扶筐, Pinyin: Fú Kuāng) consists of 7 s
 [**九斿**](constellation:19P)9星在[**玉井**](constellation:21C)西南，为甘氏外官之一，属[**毕宿**](constellation:19A)，处于西方战场中。<br>
 **九斿**指悬挂九条垂饰的旌旗，象征天子之旗。<br>
 旗面绘有龙纹，是天子直属军队用以指挥进退的军旗。<br>
-**九斿**星象征天子之兵旗，用于占卜兵事。
+**九斿**星象征天子之兵旗，用于占卜兵事，统领九州别邦。
 
 该星官在西汉的唐都星官体系中已经出现，《史记·天官书》载：<br>
 “（[**参宿**](constellation:21A)）其西有句曲九星，三处罗：一曰[**天旗**](constellation:19O)，二曰[**天苑**](constellation:18I)，三曰[**九游**](constellation:19P)。”
@@ -1104,7 +1105,7 @@ Basket for Mulberry Leaves (Chinese: 扶筐, Pinyin: Fú Kuāng) consists of 7 s
 
 **天园**中几个勾曲的暗星为“枥槽”，用于占卜马、牛、羊是否安好。
 
-##### Turtle Beak
+##### Beak
 
 *Turtle Beak* (Chinese: 觜宿, Pinyin: Zī Xiù) consists of 3 stars.
 
@@ -1116,7 +1117,8 @@ Basket for Mulberry Leaves (Chinese: 扶筐, Pinyin: Fú Kuāng) consists of 7 s
 
 [**座旗**](constellation:20C)9星，原在[**司怪**](constellation:20B)西北，唐代变为[**司怪**](constellation:20B)东北。<br>
 为甘氏中官，属[**觜宿**](constellation:20A)。<br>
-中国星官中，弯曲排列的几星相连往往被称作“旗”。<br>
+中国星官中，弯曲排列的几星相连往往被称作“旗”。
+
 **座旗**是为了标示身份尊卑、官位高低而设置的座位标志。<br>
 唐宋《步天歌》：“[**觜**](constellation:20A)上[**座旗**](constellation:20C)直指天，尊卑之位九相连。”
 
@@ -1133,144 +1135,304 @@ Basket for Mulberry Leaves (Chinese: 扶筐, Pinyin: Fú Kuāng) consists of 7 s
 
 **玉井** (Chinese: 玉井, Pinyin: Yù Jǐng) consists of 4 stars under the left foot of the *Three Stars* (β Ori).
 
-##### Military Well
-
-[**军井**](constellation:21D)4星在[**玉井**](constellation:21C)东南，为甘氏外官，属[**参宿**](constellation:21A)。<br>
-**军井**在西方战场是军营中的水井，供行军之用。
-
 ##### Screen
 
 [**屏**](constellation:21D)2星在[**玉井**](constellation:21C)下，为石氏外官，属[**参宿**](constellation:21A)。<br>
 **屏星**在[**厕星**](constellation:21F)前，为遮挡厕所的屏障。<br>
-在星占上与[**厕星**](constellation:21F)相同。
+在星占上与[**厕星**](constellation:21F)相同，用于占卜天下人的疾病。
 
-##### Toilet
+##### Military Well
 
-[**厕**](constellation:21E)4星在[**屏**](constellation:21D)东，为石氏外官，属[**参宿**](constellation:21A)，又名天厕。
+[**军井**](constellation:21E)4星在[**玉井**](constellation:21C)东南，为甘氏外官，属[**参宿**](constellation:21A)。<br>
+**军井**在西方战场是军营中的水井，供行军之用。
 
-##### Excrement
+##### Celestial Toilet
 
-*Excrement* (Chinese: 屎, Pinyin: Tiān) is 1 star south of the *Toilet*.
+[**厕**](constellation:21F)4星在[**屏**](constellation:21D)东，为石氏外官，属[**参宿**](constellation:21A)，又名**天厕**。<br>
+**厕**星用于占卜天下人的疾病与天下的疫情，
+
+##### Celestial Excrement
+
+[**屎**](constellation:21G)1星在[**厕**](constellation:21F)南，为石氏外官，属[**参宿**](constellation:21A)，又名**天矢**（**天屎**）。<br>
+在星占上与[**厕星**](constellation:21F)相同，用于占卜天下人的疾病。
 
 ##### Well
 
-*Well* (Chinese: 井宿, Pinyin: Jǐng Xiù) or *Eastern Well*, consists of 8 stars.
+[**井宿**](constellation:22A)，又名**东井**，是南方朱雀的第一宿，由8颗星构成。<br>
+中国古人将其形状想象为水井，同时又因其在银河边，所以赋予了它各种与水相关的含义，<br>
+即：**井宿**是水源的象征，掌管“水衡”事宜，主宰着世间的水利、江河与雨水。<br>
+**井宿**周围的各星官也以“水”为主题设立，多为负责水事的官员。
+
+**井宿**位于黄道，其周边的[**北河**](constellation:22G)、[**南河**](constellation:22C)星官非常像黄道边的两个门阙。<br>
+因此，**井宿**又被视为天上的门阙，被赋予了极重的政治职能，是“法令之府”。<br>
+古人认为它的星光明亮而不乱，人间法度就清明，司法公正，法令得到遵守。
 
 ##### Battle Axe (Vassal of Well)
 
-*Battle Axe* (Chinese: 钺, Pinyin: Yuè) is 1 star attached to the front of the *Well Mansion*.
+[**钺**](constellation:22B)1星，附[**井宿**](constellation:22A)，在[**井**](constellation:22A)前。<br>
+**钺**星是一把悬挂在法令之府（[**井宿**](constellation:22A)）前的“利斧”，专门用于斩杀骄奢淫逸之人。
 
 ##### Celestial Wine Cup
 
-*Celestial Wine Cup* (Chinese: 天樽, Pinyin: Tiān Zūn) consists of 3 stars north of the *Well*, south of the *Five Feudal Kings*.
+[**天樽**](constellation:22E)3星，原在[**东井**](constellation:22A)北，后改为[**东井**](constellation:22A)东北，[**五诸侯**](constellation:22F)南。为甘氏中官，属[**井宿**](constellation:22A)。<br>
+“樽”为古代的盛酒盛粥的器皿，**天樽**在天上的主要职能是盛放粥食，接济贫困饥饿之人。
 
 ##### Five Feudal Kings
 
-*Five Feudal Kings* (Chinese: 五诸侯, Pinyin: Wǔ Zhū Hóu) consists of 5 stars north of the *Eastern Well*, near the *North River*.
+[**五诸侯**](constellation:22F)5星，在[**东井**](constellation:22A)北，靠近[**北河**](constellation:22F)，为石氏中官，属[**井宿**](constellation:22A)。<br>
+这5颗星被赋予了五个不同的官职：西第一星为[**帝师**](star:θ Gem)，二为[**帝友**](star:τ Gem)，三为[**三公**](star:ι Gem)，四为[**博士**](star:υ Gem)，五为[**太史**](star:κ Gem)。<br>
+**五诸侯**并非治理一方土地的诸侯，而是负责为天子定疑议、破解疑难，相当于朝廷上最高级别的顾问。<br>
+这些“诸侯”还肩负着暗访官员过失、刺举奸邪、监察阴私、考察阴阳、巡视天下得失的职责，<br>
+一旦发现异常就随时举报，起到纠察与警戒的作用。<br>
+5颗星明亮整齐大小相等，象征着五位重臣同心同德，皇帝昌盛，天下太平，臣下忠贞；<br>
+5颗星若亮度不一、位置混乱或隐没不见，就意味着辅臣不忠，君王有忧，内乱将从中而起。
 
 ##### North River
 
-*North River* (Chinese: 北河, Pinyin: Běi Hé) consists of 3 stars.
+[**南河**](constellation:22C)、[**北河**](constellation:22D)各含3星，统称为**南北河戍**，夹在[**井宿**](constellation:22A)的南北两侧。<br>
+二者为石氏中官，属[**井宿**](constellation:22A)。<br>
+两星官相当明亮，而日月五星运行的黄道就位于两河之间，<br>
+再加上座落于银河之畔，古人将**南北河**想象为黄道两侧的阙门，<br>
+两河之间就是日、月、五星通过的“天之关门”或“天街”“天道”。
+
+南北河统称“河戍”，是银河畔“天门”的守卫，二者职责并不相同：<br>
+[**南河**](constellation:22C)又称南纪、阳门、南宫、越门、权星，主管南方蛮夷，代表火性；<br>
+[**北河**](constellation:22D)又称北横、阴门、北宫、胡门、衡星，主管北方戎狄，代表水性。
+
+此外，在[**南河**](constellation:22C)的下面还有[**阙丘**](constellation:22Q)星官，<br>
+它就像宫门外竖立的两座高台，是天子宫殿的影壁，用来标识皇权的威严，也叫象魏。<br>
+因为[**天狼**](constellation:22R)这颗主杀伐的灾星就在[**南河**](constellation:22C)南边，<br>
+所以[**阙丘**](constellation:22Q)立在[**天狼**](constellation:22R)之前，也有一层阻止凶星犯阙的守卫意味。
 
 ##### South River
 
-*South River* (Chinese: 南河, Pinyin: Nán Hé) consists of 3 stars northeast of the *Three Stars*.
+[**南河**](constellation:22C)、[**北河**](constellation:22D)各含3星，统称为**南北河戍**，夹在[**井宿**](constellation:22A)的南北两侧。<br>
+二者为石氏中官，属[**井宿**](constellation:22A)。<br>
+两星官相当明亮，而日月五星运行的黄道就位于两河之间，<br>
+再加上座落于银河之畔，古人将**南北河**想象为黄道两侧的阙门，<br>
+两河之间就是日、月、五星通过的“天之关门”或“天街”“天道”。
+
+南北河统称“河戍”，是银河畔“天门”的守卫，二者职责并不相同：<br>
+[**南河**](constellation:22C)又称南纪、阳门、南宫、越门、权星，主管南方蛮夷，代表火性；<br>
+[**北河**](constellation:22D)又称北横、阴门、北宫、胡门、衡星，主管北方戎狄，代表水性。
+
+此外，在[**南河**](constellation:22C)的下面还有[**阙丘**](constellation:22Q)星官，<br>
+它就像宫门外竖立的两座高台，是天子宫殿的影壁，用来标识皇权的威严，也叫象魏。<br>
+因为[**天狼**](constellation:22R)这颗主杀伐的灾星就在[**南河**](constellation:22C)南边，<br>
+所以[**阙丘**](constellation:22Q)立在[**天狼**](constellation:22R)之前，也有一层阻止凶星犯阙的守卫意味。
 
 ##### Accumulated Water
 
-*Accumulated water* (Chinese: 积水, Pinyin: Jī Shuǐ) is 1 star northwest of the *North River*.
+[**积水**](constellation:22G)1星，在[**北河**](constellation:22D)西北，为石氏中官，属[**井宿**](constellation:22A)。<br>
+它是一处天上的甘泉，专门积蓄最好的泉水，用来供给酒官和酿酒之用。<br>
+**积水**保障天子的宴会和祭祀有足够的美酒，<br>
+若星光明亮，天下安定，宴享之礼正常进行；<br>
+星光暗淡，就说明人主不安，五谷歉收，宴享之礼废弛，徭役频仍百姓忧愁。
 
 ##### Pile of Firewood
 
-*Pile of Firewood* (Chinese: 积薪, Pinyin: Jī Xīn) is 1 star southeast of the *Accumulated Water*.
+[**积薪**](constellation:22H)1星，在[**积水**](constellation:22G)东南，为石氏中官，属[**井宿**](constellation:22A)。<br>
+**积薪**就是堆积柴草，用来供给厨房，在祭祀和宴会上烧火煮饭、烹制牺牲。
 
 ##### Water Level
 
-*Water Level* (Chinese: 水位, Pinyin: Shuǐ Wèi) consists of 4 stars, lined north-south east of the *Eastern Well*.
+[**水位**](constellation:22J)4星，在[**井宿**](constellation:22A)东，为石氏中官，属[**井宿**](constellation:22A)。<br>
+**水位**主“水衡”，掌管水系平衡、监测水位高低，负责疏通河道、排泄洪水。
 
 ##### Four Channels
 
-*Four Channels* (Chinese: 四渎, Pinyin: Sì Dú) consists of 4 stars east of the southern lined four stars of the *Eastern Well*.
+[**四渎**](constellation:22K)4星，在[**东井**](constellation:22A)南辕东南，为甘氏外官，属[**井宿**](constellation:22A)。<br>
+这四颗星分别对应人间的四条大河：长江、黄河、淮河、济河，统称为“四渎”。<br>
+这四条河吸纳百川之水，东流入海。
 
 ##### Official for Irrigation
 
-*Official for Irrigation* (Chinese: 水府, Pinyin: Shuǐ Fǔ) consists of 4 stars southwest of the *Eastern Well*.
+[**水府**](constellation:22I)4星，[**井宿**](constellation:22A)西南，为甘氏外官，属[**井宿**](constellation:22A)。<br>
+**水府**主要掌管堤防、沟渠、陂塘和道路桥涵的修筑与维护，是负责水利建设的星官。
 
 ##### Palace Gate
 
-*Palace Gate* (Chinese: 阙丘, Pinyin: Quē Qiū) consists of 2 stars south of the *South River*.
+[**阙丘**](constellation:22Q)2星在[**南河**](constellation:22C)南，为甘氏外官，属[**井宿**](constellation:22A)。<br>
+**阙丘**又称“象魏”，“阙”是宫门外的望楼台观，“丘”是高台的意思。<br>
+天子宫殿前有两座对峙的高台，中间空缺出一条道路通往宫门，<br>
+就叫做“双阙”，诸侯的宫殿前则只能建“两观”。<br>
+**阙丘**就像宫门外竖立的两座高台，是天子宫殿的影壁，用来标识皇权的威严。<br>
+它还是一个“灭除之官”，负责清除那些危害国家、违背礼法的奸邪之人。
+
+该星官的设立显然与[**南河**](constellation:22C)、[**北河**](constellation:22D)“天之门阙”的含义相关。<br>
+因为[**天狼**](constellation:22R)这颗主杀伐的灾星就在[**南河**](constellation:22C)南边，<br>
+所以[**阙丘**](constellation:22Q)立在[**天狼**](constellation:22R)之前，也有一层阻止凶星犯阙的守卫意味。
 
 ##### Market for Soldiers
 
-*Market for Soldiers* (Chinese: 军市, Pinyin: Jūn Shì) consists of 13 stars southeast of the *Three Stars*.
+[**军市**](constellation:22L)13星，在[**参**](constellation:21A)东南，为石氏外官，属[**井宿**](constellation:22A)。<br>
+西方战场中，**军市**是为军队服务的市场，用于占卜军粮是否充足以及是否会发生军饥。
+
+**军市**属于[**井宿**](constellation:22A)，因此又是水官。
+
+在[**天狼**](constellation:22R)旁，**军市**又是抓捕[**天狼**](constellation:22R)的陷阱。<br>
+其内有[**野鸡**](constellation:22M)一星，是陷阱中引诱[**天狼**](constellation:22R)的诱饵。
 
 ##### Wild Cockerel
 
-*Wild Cockerel* (Chinese: 野鸡, Pinyin: Yě Jī) is 1 star in the *Market for Soldiers*.
+[**野鸡**](constellation:22M)1星，在[**军市**](constellation:22L)中，为石氏外官，属[**井宿**](constellation:22A)。<br>
+**野鸡**是[**军市**](constellation:22L)中的大将，负责军营的号令警备；又为边将，负责野邦。<br>
+当[**军市**](constellation:22L)作为陷阱时，**野鸡**是陷阱中引诱[**天狼**](constellation:22R)的诱饵。
 
 ##### Celestial Wolf
 
-*Celestial Wolf* (Chinese: 狼, Pinyin: Láng) or *Celestial Wolf* is 1 star southeast of the *Three Stars*.
+[**天狼**](constellation:22R)1星，在[**参**](constellation:21A)东南，为石氏外官，属[**井宿**](constellation:22A)。<br>
+尽管**天狼**是全天第一亮星，光芒四射，但在古人眼里却是一颗灾星。<br>
+**天狼**是“野将”，主侵略、盗贼、侵掠，象征着边疆的胡敌和横行不法之徒。<br>
+古人把**天狼**的贪婪、凶残与狼的形象叠合在一起，将它看作时刻威胁中原安宁的恶星。
+
+**天狼**虽凶，却并非没有制衡。在它的周围，古人布置了一整套围猎的阵势：<br>
+**天狼**的西方向设有[**军市**](constellation:22L)，这是捕狼用的的陷阱；<br>
+军市之中又有[**野鸡**](constellation:22M)星，作为引诱**天狼**上钩的诱饵。<br>
+东北的[**天狗**](constellation:23D)负责驱赶天狼，东南的[**弧矢**](constellation:22S)则是一把早已张满的天弓，<br>
+九颗星排成弯弓之形，箭矢直指天狼。
+
+北宋苏轼在《江城子·密州出猎》中所写“会挽雕弓如满月，西北望，射**天狼**”，<br>
+便取材于天象，用**天狼**暗喻北方的少数民族政权辽、西夏，表达豪情壮志和报国之心。
 
 ##### Bow and Arrow
 
-*Bow and Arrow* (Chinese: 弧矢, Pinyin: Hú Shǐ) consists of 9 stars southeast of the *Wolf*.
+[**弧矢**](constellation:22S)9星又称**天弓**，在[**天狼**](constellation:22R)东南，为石氏外官，属[**井宿**](constellation:22A)。<br>
+九颗星排列成一把拉满了弦的弓的形状，箭矢直直地指向西北方向的[**天狼**星](star:α CMa)。<br>
+北宋苏轼在《江城子·密州出猎》中所写“会挽**雕弓**如满月，西北望，射**天狼**”，<br>
+便取材于天象，用[**天狼**](constellation:22R)暗喻北方的少数民族政权辽、西夏，表达豪情壮志和报国之心。
+
+**弧矢**的作用是“主备盗贼”——[**天狼**](constellation:22R)是贼寇，**弧矢**就是张弓以待的守护者。<br>
+只有当**弧矢**的箭端稳稳指向[**天狼**](constellation:22R)时，[**天狼**](constellation:22R)才不敢妄动，天下安宁无战事；<br>
+一旦**弧矢**松垮、弓不张、矢不直，[**天狼**](constellation:22R)便会趁机作乱，胡兵四起，边疆不宁。<br>
+在唐代还有“**天弓**张，北兵起”的说法，将**天弓**的开合与北方战事紧密联系起来。
 
 ##### Grandfather
 
-*Grandfather* (Chinese: 丈人, Pinyin: Zhàng Rén) consists of 2 stars southwest of the *Market for Soldiers*.
+[**丈人**](constellation:22P)2星，在[**军市**](constellation:22L)西南，为甘氏外官，属[**井宿**](constellation:22A)。<br>
+[**丈人**](constellation:22P)、[**子**](constellation:22O)、[**孙**](constellation:22N)三者相依排列，象征着长辈与晚辈之间的扶持关系。
 
 ##### Son
 
-*Son* (Chinese: 子, Pinyin: Zǐ) consists of 2 stars east of the *Grandfather*.
+[**子**](constellation:22O)2星，在[**丈人**](constellation:22P)东，为甘氏外官，属[**井宿**](constellation:22A)。<br>
+[**丈人**](constellation:22P)、[**子**](constellation:22O)、[**孙**](constellation:22N)三者相依排列，象征着长辈与晚辈之间的扶持关系。
 
 ##### Grandson
 
-*Grandson* (Chinese: 孙, Pinyin: Sūn) consists of 2 stars east of the *Son*.
+[**孙**](constellation:22N)2星，在[**子**](constellation:22O)东，为甘氏外官，属[**井宿**](constellation:22A)。<br>
+**孙星**侍立于[**祖父**](constellation:22P)、[**子**](constellation:22O)身侧，以示孝慈。<br>
+三者相依排列，象征着长辈与晚辈之间的扶持关系。
 
 ##### Old Man
 
-*Old Man* (Chinese: 老人, Pinyin: Lǎo Rén) is 1 star south of the *Bow and Arrow*.
+[**老人**](constellation:22T)1星，在[**弧矢**](constellation:22S)南，为石氏外官，属[**井宿**](constellation:22A)。<br>
+[**老人**星](star:α Car)为全天第二亮星，又被称作**南极**或**南极老人星**。<br>
+它在天球上的位置极靠南，中国只有在南方才能在低空看到。<br>
+到了中原地区，它只在每年冬季傍晚短暂地出现在南方地平线上。
+
+**老人**星被看作是长寿之神、寿星的化身，<br>
+专管天下老人的健康和帝王寿命的长短，同时象征国家的长治久安。<br>
+古人认为它显现时国运昌隆、老者康健，隐没时则君危国忧、兵革四起。<br>
+因此，历代帝王常常在秋分时节派遣官员前往南郊祭祀这颗星，以祈求国泰民安、寿祚绵长。<br>
+**老人**不仅仅是一颗恒星，更是古人寄托“王者承天、天下祥和”政治理想的天上坐标。
 
 ##### Ghosts
 
-*Ghosts* (Chinese: 鬼宿, Pinyin: Guǐ Xiù) consists of 4 stars.
+[**鬼宿**](constellation:23A)，又名**舆鬼**，是南方朱雀的第二宿，由4颗星构成。<br>
+**鬼**四星四四方方，外形像车或木柜，其内有一团白雾状的[M44](star:M44)星团，被称为[**积尸气**](constellation:23B)或**天尸**。<br>
+汉代星图以“两人抬鬼”或“四星围鬼”的形象描绘**舆鬼**和[**积尸气**](constellation:23B)。
+
+因**鬼宿**位居朱雀头顶的双眼位置，像一只眼睛，所以也叫“天目”。<br>
+它不仅目光锐利能洞察奸邪，还连接着“天庙”主祀事，掌管祭祀礼仪。
+
+总之，**鬼宿**主管鬼神祭祀、观察奸邪，以及死丧之事。<br>
+其四星分别掌管布帛、金玉、钱币和马匹（或兵），它们的变化对应各自所主的物资丰歉。
 
 ##### Cumulative Corpse Gas
 
-*Cumulative Corpse Gas* (Chinese: 积尸气, Pinyin: Jī Shī Qì) is 1 star in the center of the *Ghosts Mansion*.
+[**积尸气**](constellation:23B)（[M44](star:M44)），附[**鬼宿**](constellation:23A)。<br>
+它是[**鬼宿**](constellation:23A)中央的一团白雾状的星团，被视为天尸，传说这里便是天上魂魄归处和祖先受祭的地方。<br>
+古人认为其不宜太过明亮，否则人间就可能有较大的疾病伤亡或大丧发生。
 
 ##### Beacon Fire
 
-*Beacon Fire* (Chinese: 爟, Pinyin: Guàn) consists of 4 stars west of the tail of *Xuanyuan*, northwest of the *Ghosts*.
+[**爟**](constellation:23C)4星，在[**轩辕**](constellation:25B)尾西，为甘氏中官，属[**鬼宿**](constellation:23A)。<br>
+“爟”即烽火之意，是古代边疆报警的信号系统。<br>
+**爟**星在天上主掌烽火信号，负责传递紧急警报，是边防警戒的天象代表。
+
+该星官的位置出现过变化，最初在[**轩辕**](constellation:25B)尾西，即[ι Cnc](star:ι Cnc)附近。<br>
+唐代时，由于[**轩辕**](constellation:25B)的位置变化，**爟**移动到[**柳**](constellation:24A)北，[α Cnc](star:α Cnc)附近。<br>
+随后又变动到[**鬼**](constellation:23A)西北，[χ Cnc](star:χ Cnc)附近，直至今日。
 
 ##### Outer Kitchen
 
-*Outer Kitchen* (Chinese: 外厨, Pinyin: Wài Chú) consists of 6 stars south of the *Willow*.
+[**外厨**](constellation:23F)6星，在[**柳**](constellation:24A)南，为甘氏外官，属[**鬼宿**](constellation:23A)。<br>
+外厨专门用来烹煮祭祀和宴享所需的牺牲，包括鸡、羊、狗、猪等各类家畜。<br>
+这一星官的设立显然来源于[**柳宿**](constellation:24A)“卿相大臣的厨房”的含义。<br>
+其南门外设立[**天记**](constellation:23F)星官，负责记录牲畜的年龄。
 
 ##### Judge for Estimating the Age of Animals
 
-*Judge for Estimating the Age of Animals* (Chinese: 天记, Pinyin: Tiān Jì) is 1 star south of the *Outer Kitchen*.
+[**天记**](constellation:23F)1星，在[**外厨**](constellation:23E)南，为甘氏外官，属[**鬼宿**](constellation:23A)。<br>
+**天记**负责记录禽兽的年龄，确保在烹宰时不杀害幼崽、不捕杀怀孕的母兽，<br>
+从而让禽兽得以繁衍生息，因此这颗星被安置在[**外厨**](constellation:23E)的门户位置。
+
+它的设立与[**柳宿**](constellation:24A)的厨房意象直接相关：<br>
+柳宿作为天上卿相大臣的厨房，主管上食、调和滋味，<br>
+而天记星则专门负责管理厨房中所需禽兽的宰杀与养护。
 
 ##### Celestial Dog
 
-*Celestial Dog* (Chinese: 天狗, Pinyin: Tiān Gǒu) consists of 7 stars northeast of the *Wolf*.
+[**天狗**](constellation:23D)7星，在[**天狼**](constellation:22R)东北，为甘氏外官，属[**鬼宿**](constellation:23A)。<br>
+**天狗**的设立可能与[**阙丘**](constellation:22Q)有关，因**天狗**在[**阙丘**](constellation:22Q)门外，其职责是“守财”与“守贼”，<br>
+形象如守护财产的猛犬，每当外敌或盗贼出现时便发出吠叫以示警告。
+
+它与[**天狼**](constellation:22R)、[**弧矢**](constellation:22S)等星官共同构成了一幅有趣的星象图景：<br>
+[**天狼**](constellation:22R)来犯，人们设下[**军市**](constellation:22L)（陷阱）并以[**野鸡**](constellation:22M)为诱饵，<br>
+[**天狗**](constellation:23D)负责驱赶天狼，一旁的猎手则手持[**弧矢**](constellation:22S)严阵以待。
 
 ##### Celestial Earth God's Temple
 
-*Celestial Earth God's Temple* (Chinese: 天社, Pinyin: Tiān Shè) consists of 6 stars south of the *Bow and Arrow*.
+[**天社**](constellation:23G)6星，在[**弧矢**](constellation:22S)南，为甘氏外官，属[**鬼宿**](constellation:23A)。<br>
+**天社**是天上的祭祀土地神的土地庙。相传共工之子句龙，因能平治水土，成为天上的星官后被奉为社星而受祀。<br>
+**天社**和[**老人**](constellation:22T)都主管着人间祈祷祭祀之事。
 
 ##### Willow
 
-*Willow* (Chinese: 柳宿, Pinyin: Liǔ Xiù) consists of 8 stars.
+[**柳宿**](constellation:24A)是南方朱雀的第三宿，由8颗星构成，<br>
+整体横列弯曲，像一条摆动的柳枝，也极像鸟嘴。<br>
+因为柳宿正处于朱雀的口喙位置，被称为“鸟咮”。
+
+既然位于嘴部，**柳宿**的职责自然与“食”息息相关。<br>
+历代星占家称它为“天之厨宰”，主管天子的饮食、滋味和酒食仓库。<br>
+它也被认为是卿相大臣的厨房，负责供奉宗庙祭祀和宴请宾客。<br>
+**柳宿**正常明润，就意味着宫中厨房丰裕，宴飨正常，朝堂饮食无忧；<br>
+反之，星暗芒角，则代表可能存在臣下逆乱或饥荒。
+
+此外，**柳宿**还掌管雷雨、草木生长和工匠之事。<br>
+如果星直列而不弯曲，则主天下谋反；星聚集则兵祸连连。
 
 ##### Banner of Wine Shop
 
-*Banner of Wine Shop* (Chinese: 酒旗, Pinyin: Jiǔ Qí) consists of 3 stars south of the right tip of *Xuanyuan*.
+[**酒旗**](constellation:24B)3星，在[**轩辕**右角](star:ο Leo)南，为甘氏中官，属[**柳宿**](constellation:24A)。<br>
+**酒旗**是天上酒官之旗，主管宴享饮食。<br>
+其星光明亮往往被视作宴饮丰足、饮食备办的象征。
 
 ##### Star
 
-*Star* (Chinese: 星宿, Pinyin: Xīng Xiù) consists of 7 stars.
+[**星宿**](constellation:25A)是南方朱雀的第四宿，由7颗星构成，是“**七星**”的简称。<br>
+它的位置在朱雀的颈部与喉咙，是食物从鸟嘴进入身体的第一道关口，相当于咽喉要道。
+
+咽喉之地的特点是“吞吐皆速、无可阻挡”，<br>
+因此《史记·天官书》里明确指出：“**七星**，颈，为员官，主急事。”<br>
+**星宿**对应的职能是掌管急事，也就是所有关乎国运、必须迅速处理的突发事件，也代表来自远方的紧急军事求援或文书。
+
+另有一说，天上的“员官”是天上的衣裳之官，又有代表文书、文印的含义。<br>
+**星宿**明亮，预示着天上与人间能快速协调处置危机；<br>
+它暗淡或乱动，则代表政令堵塞，奸臣当道，内乱丛生。
+
+《黄帝占》称：“**七星**主衣裳，鸟之翅也，以覆鸟身。”<br>
+既负责礼仪服饰，也代表了文治教化。
 
 ##### Xuanyuan
 
@@ -1278,63 +1440,305 @@ Basket for Mulberry Leaves (Chinese: 扶筐, Pinyin: Fú Kuāng) consists of 7 s
 
 ##### High Judge
 
-*High Judge* (Chinese: 内平, Pinyin: Nèi Píng) consists of 4 stars south of the *Middle Step*.
+[**内平**](constellation:25C)4星，在[**中台**](constellation:S21)南，为甘氏中官，属[**星宿**](constellation:25A)。<br>
+它的职能是执掌刑罚、评判罪责，因此被称为“平罪之官”或“执法平罪之官”。
 
 ##### Celestial Premier
 
-*Celestial Premier* (Chinese: 天相, Pinyin: Tiān Xiàng) consists of 3 stars east of the *Star mansion*, south of the *Banner of Wine Shop*.
+[**天相**](constellation:25D)3星，在[**七星**大星](star:α Hya)北，[**酒旗**](constellation:24B)南，为巫咸氏中官，属[**星宿**](constellation:25A)。<br>
+**天相**是天上的丞相之象，取人间丞相辅助君王之意。
+
+该星官的设立可能与[**星宿**](constellation:25A)的“员官”含义有关。
 
 ##### Celestial Cereals
 
-*Celestial Cereals* (Chinese: 天稷, Pinyin: Tiān Jì) consists of 5 stars south of the *Star mansion*.
+[**天稷**](constellation:25E)5星，在[**七星**](constellation:25A)南，为石氏外官，属[**星宿**](constellation:25A)。<br>
+“稷”就是粟米（谷子），取意它为百谷之长，所以天稷星对应农正（古代掌管农事的官名），主管五谷丰收或歉收。
+
+**天稷**的设立与[**柳宿**](constellation:24A)相关，因为[**柳宿**](constellation:24A)是卿相大臣的厨房，<br>
+因此设置**天稷**用来掌管五谷粮食、准备祭祀。
 
 ##### Extended Net
 
-*Extended Net* (Chinese: 张宿, Pinyin: Zhāng Xiù) consists of 6 stars.
+[**张宿**](constellation:26A)是南方朱雀的第五宿，6星横列。<br>
+**张宿**位于朱雀的嗉囊（食袋），有“餐饮赏赐”与“珍宝储存”等含义。<br>
+如果说[**柳宿**](constellation:24A)是厨房主厨，那张宿就是摆满美酒佳肴、用来宴请宾客的酒席正主。<br>
+吃下去的美食存在嗉囊里，**张宿**也因此主管珍宝和宗庙祭祀时的衣物等物品。
+
+**张宿**象征着天子珍爱人才，赐赏臣下，大宴宾客。<br>
+君王开阔心胸赏赐贤德，便对应此宿光明。
+
+此外，**张宿**也主管天地间万物生长的繁荣之象，有利于生养和安宁。<br>
+星光明亮不失位，则国泰民安，四方归顺；<br>
+**张宿**暗淡且移位，则天子会丢却礼教，赏罚不明，国家秩序大乱。<br>
+它主吉祥，多与昌盛、喜悦、慷慨有关。
 
 ##### Celestial Temple
 
-*Celestial Temple* (Chinese: 天庙, Pinyin: Tiān Miào) consists of 14 stars south of the *Extended Net*.
+[**天庙**](constellation:26B)14星，在[**张**](constellation:26A)南，为甘氏外官，属[**张宿**](constellation:26A)。<br>
+**天庙**是天上天子之祖庙的象征，对应人间帝王祭祀祖先的宗庙。
+
+该星官的设立可能与[**张宿**](constellation:26A)有关，**张宿**是天府，<br>
+主管帝王的珠玉、宝物以及宗庙祭祀所用的器物，<br>
+而**天庙**则是实际举行祭祖仪式的庙宇。
 
 ##### Wings
 
-*Wings* (Chinese: 翼宿, Pinyin: Yì Xiù) consists of 22 stars.
+[**翼宿**](constellation:27A)是南方朱雀的第六宿，由22颗星组成。<br>
+星群分散而形似张开的鸟翅与尾羽，又处于南方朱雀羽翼的位置，因此得名“翼”。
 
-##### Dongou
+因为朱雀振翅高飞有轻盈欢娱之象，**翼宿**在天上的职责便特殊起来。<br>
+古人称之为“天之乐府”，主和五音、调六律、掌管俳优戏乐，<br>
+也负责教化与礼乐制度，以及三公化道文籍，甚至是蛮夷来宾的款待。<br>
+**翼宿**明亮有序，代表朝廷礼乐兴盛，典章制度和音乐舞蹈完善，天下歌升平；<br>
+**翼宿**乱动暗淡，则代表天朝礼崩乐坏，朝纲大权旁落、甚至诸侯或外夷作乱。
 
-*Dong'ou* (Chinese: 东瓯, Pinyin: Dōng Ōu) consists of 5 stars south of the Wings.
+因其象征着腾飞之力，也包含着“远方来客”的文化含义，所以也掌管外交与远客，<br>
+**翼宿**明亮是国家强盛、吸引八方朝贡的吉兆，多主文明、文艺和外交的兴旺。
+
+##### Dong'ou
+
+[**东瓯**](constellation:27B)5星，在[**翼**](constellation:27A)南，为甘氏外官，属[**翼宿**](constellation:27A)。<br>
+**东瓯**象征古代东南方的蛮夷之国，位于今浙江省南部。
+
+**东瓯**与[**青丘**](constellation:28G)同为南方蛮夷，但**东瓯**更具体地指向东南沿海的东越民族，<br>
+而[**青丘**](constellation:28G)则是一个更广义的南方蛮夷统称。<br>
+二星官共同用于占卜南方边疆的安危。
 
 ##### Chariot
 
-*Chariot* (Chinese: 轸宿, Pinyin: Zhěn Xiù) consists of 4 stars.
+[**轸宿**](constellation:28A)是南方朱雀的最后一宿，位于鸟尾的位置，由4颗星组成。<br>
+“轸”指古代战车的后方横木，因此**轸宿**除了和“战车”相关，还有车辆与载重运输的象征。
 
-##### Left linchpin (Vassal of Chariot)
+在政治军事功能上，**轸宿**多与“冢宰辅臣”和“军旅出入”直接相关。<br>
+《晋书·天文志》言：“**轸**四星，主冢宰，辅臣也；<br>
+主车骑，主载任。有军出入，皆占于**轸**。又主风，主死丧。”<br>
+这表明它涉及宰相辅佐帝王、国家军事调动的吉凶。<br>
+如果在田间车战和长途行军占卜时，常常将目光聚焦在**轸宿**的变动上。
 
-*Left linchpin* (Chinese: 左辖, Pinyin: Zuǒ Xiá) consists of 1 star.
-
-##### Right linchpin (Vassal of Chariot)
-
-*Right linchpin* (Chinese: 右辖, Pinyin: Yòu Xiá) consists of 1 star.
+**轸宿**又主管死丧凶灾，主候王者寿命，其中央的[**长沙**](constellation:28B)星便有这样的星占含义。
 
 ##### Changsha (Vassal of Chariot)
 
-*Changsha* (Chinese: 长沙, Pinyin: Cháng Shā) is 1 star in the *Chariot Mansion*.
+[**长沙**](constellation:28B)1星，附[**轸宿**](constellation:28A)，位于[**轸**](constellation:28A)的中央。<br>
+**长沙**是掌管寿命的长生星，若该星稳定明亮，便代表人主寿命绵长、国祚昌盛。
+
+##### Left linchpin (Vassal of Chariot)
+
+[**左辖**](constellation:28C)1星，[**右辖**](constellation:28D)1星，附[**轸宿**](constellation:28A)，在[**轸**](constellation:28A)两旁。<br>
+[**左辖**](constellation:28C)为“辖”，[**右辖**](constellation:28D)为“天膏”。<br>
+“辖”为车轮轴之键，“膏”即在轴上施润滑油。
+
+[**左辖**](constellation:28C)主管同姓诸侯，[**右辖**](constellation:28D)则主管异姓诸侯。<br>
+两**辖**星若明亮靠近车驾（**轸**），则君臣和顺，战车阵稳固；<br>
+如果**辖**星跑远或异常，则车毁国破、将帅失位之难，这也象征天下动荡。
+
+##### Right linchpin (Vassal of Chariot)
+
+[**左辖**](constellation:28C)1星，[**右辖**](constellation:28D)1星，附[**轸宿**](constellation:28A)，在[**轸**](constellation:28A)两旁。<br>
+[**左辖**](constellation:28C)为“辖”，[**右辖**](constellation:28D)为“天膏”。<br>
+“辖”为车轮轴之键，“膏”即在轴上施润滑油。
+
+[**左辖**](constellation:28C)主管同姓诸侯，[**右辖**](constellation:28D)则主管异姓诸侯。<br>
+两**辖**星若明亮靠近车驾（**轸**），则君臣和顺，战车阵稳固；<br>
+如果**辖**星跑远或异常，则车毁国破、将帅失位之难，这也象征天下动荡。
 
 ##### Military Gate
 
-*Military Gate* (Chinese: 军门, Pinyin: Jūn Mén) consists of 2 stars west of the *Green Hill*, north of the *Master of Constructions*.
+[**军门**](constellation:28E)2星，在[**青丘**](constellation:28G)西，[**土司空**](constellation:28F)北，为巫咸氏外官，属[**轸宿**](constellation:28A)。<br>
+**军门**是天子六军之门，主管军营哨候，设有豹尾旗和威旗作为标志。<br>
+作为天子军队在天上的门户，**军门**星官象征着帝王对军队的统率与出征的天象依据。<br>
+它与[**青丘**](constellation:28G)（代表南方蛮夷之国）、[**土司空**](constellation:28F)等星官相邻，共同构成了一组与边疆事务相关的星群。
 
 ##### Master of Constructions (South)
 
-*Master of Constructions* (Chinese: 土司空, Pinyin: Tǔ Sī Kōng) consists of 4 stars south of the *Military Gate*, west of the *Green Hill*.
+[**土司空**](constellation:28F)4星，在[**青丘**](constellation:28G)西，[**军门**](constellation:28E)南，为巫咸氏外官，属[**轸宿**](constellation:28A)。<br>
+**土司空**为天上掌管土木工程之官，主管疆界土地，<br>
+又称司徒，主管九土之界域及各地风土民情。
 
 ##### Green Hill
 
-*Green Hill* (Chinese: 青丘, Pinyin: Qīng Qiū) consists of 7 stars southeast of the *Chariot*.
+[**青丘**](constellation:28G)7星，在[**轸**](constellation:28A)东南，为甘氏外官，属[**轸宿**](constellation:28A)。<br>
+**青丘**本为古代传说中的地名，见于《山海经》，位于东方，是东夷部落的一支。<br>
+作为星官，**青丘**是南方蛮夷之国的名号，代表中原王朝对南方远族的统称。
+
+**青丘**与[**东瓯**](constellation:27B)同为南方蛮夷，共同用于占卜南方边疆的安危。
 
 ##### House for Musical Instruments
 
-*House for Musical Instruments* (Chinese: 器府, Pinyin: Qì Fǔ) consists of 32 stars south of the *Chariot*.
+[**器府**](constellation:28H)32星，在[**轸**](constellation:28A)南，为甘氏外官，属[**轸宿**](constellation:28A)。<br>
+**器府**是天上收藏乐器的府库，主掌钟磬、管弦、丝竹等所有乐器的保管与使用。
+
+该星官的设立与[**翼宿**](constellation:27A)相关，二者同为天上的乐府，为奏乐的机构<br>
+[**翼宿**](constellation:27A)负责音乐表演与宴享娱乐，而**器府**则是专门收藏乐器的乐器库，掌管关于乐器的旧制与礼仪。
+
+##### Water Gate
+
+[**水门**](constellation:D01)2星，在[**南门**](constellation:01J)南，观津氏近南极星。<br>
+
+##### Gate Drum
+
+[**门鼓**](constellation:D02)6星，在[**水门**](constellation:D01)东，观津氏近南极星。<br>
+
+##### Gate Banner
+
+[**门旗**](constellation:D03)9星，观津氏近南极星。<br>
+
+##### Southern Hanging Lantern
+
+[**南挂**](constellation:D04)4星，观津氏近南极星。<br>
+
+##### Ship Bureau
+
+[**舶司**](constellation:D05)8星，会舞合节氏近南极星。<br>
+
+##### Meeting Market of Souls
+
+[**会市**](constellation:D06)11星，会舞合节氏近南极星。<br>
+
+##### Tranquil Pond
+
+[**晏池**](constellation:D07)1星，会舞合节氏近南极星。<br>
+
+##### Cereal Path
+
+[**粢道**](constellation:D08)6星，会舞合节氏近南极星。<br>
+
+##### Full Bridge
+
+[**盈桥**](constellation:D09)8星，会舞合节氏近南极星。<br>
+
+##### Ferry Assistant
+
+[**济丞**](constellation:D10)1星，观津氏近南极星。<br>
+
+##### Mooring Stone
+
+[**定舟**](constellation:D11)1星，观津氏近南极星。<br>
+
+##### Sea Cape
+
+[**海岐**](constellation:D12)4星，会舞合节氏近南极星。<br>
+
+##### Transformation Ferry
+
+[**化津**](constellation:D13)6星，观津氏近南极星。<br>
+
+##### Ocean Source
+
+[**海宗**](constellation:D14)1星，会舞合节氏近南极星。<br>
+
+##### Reception Hall
+
+[**承堂**](constellation:D15)9星，会舞合节氏近南极星。<br>
+
+##### Received Whiteness
+
+[**承白**](constellation:D16)1星，会舞合节氏近南极星。<br>
+
+##### Seat of Spirits
+
+[**灵座**](constellation:D17)1星，会舞合节氏近南极星。<br>
+
+##### Cloud Ruins
+
+[**云墟**](constellation:D18)2星，观津氏近南极星。<br>
+
+##### Straw Dog
+
+[**刍狗**](constellation:D19)6星，观津氏近南极星。<br>
+
+##### Dark Palace
+
+[**幽宫**](constellation:D20)5星，会舞合节氏近南极星。<br>
+
+##### Minister of Spirit Affairs
+
+[**司令大夫**](constellation:D21)4星，会舞合节氏近南极星。<br>
+
+##### Altar Platform
+
+[**祝台**](constellation:D22)10星，会舞合节氏近南极星。<br>
+
+##### Piled Pearls
+
+[**积珠**](constellation:D23)7星，会舞合节氏近南极星。<br>
+
+##### Accumulated Whiteness
+
+[**积白**](constellation:D24)1星，会舞合节氏近南极星。<br>
+
+##### Fishing Rock
+
+[**钓矶**](constellation:D25)1星，观津氏近南极星。<br>
+
+##### Crooked Running Water
+
+[**水委**](constellation:D26)3星，近南极星。<br>
+
+##### Jade Shore
+
+[**瑶浦**](constellation:D27)8星，会舞合节氏近南极星。<br>
+
+##### Gatherer
+
+[**采人**](constellation:D28)1星，会舞合节氏近南极星。<br>
+
+##### Bright Gem
+
+[**珞明**](constellation:D29)1星，会舞合节氏近南极星。<br>
+
+##### Sinking River
+
+[**沉河**](constellation:D30)10星，会舞合节氏近南极星。<br>
+
+##### Stone Reef
+
+[**石塘**](constellation:D31)7星，观津氏近南极星。<br>
+
+##### Serpentine Path
+
+[**委蛇**](constellation:D32)8星，会舞合节氏近南极星。<br>
+
+##### Celestial Balance
+
+[**天衡**](constellation:D33)10星，观津氏近南极星。<br>
+
+##### Gazing Homeward Terrace
+
+[**望乡**](constellation:D34)1星，观津氏近南极星。<br>
+
+##### Ferry Boat
+
+[**渡舟**](constellation:D35)6星，观津氏近南极星。<br>
+
+##### Returning Swallow
+
+[**归燕**](constellation:D36)7星，观津氏近南极星。<br>
+
+##### Wind Banner
+
+[**风旌**](constellation:D37)9星，观津氏近南极星。<br>
+
+##### Mirror of Tranquil Seas
+
+[**海镜**](constellation:D38)6星，观津氏近南极星。<br>
+
+##### Fishing Light
+
+[**渔火**](constellation:D39)1星，观津氏近南极星。<br>
+
+##### Southernmost Verge
+
+[**绝南**](constellation:D40)12星，会舞合节氏近南极星。<br>
+
+##### Cuttlefish
+
+[**鲗**](constellation:D41)9星，会舞合节氏近南极星。<br>
+
+##### Abyssal Deep
+
+[**溟渊**](constellation:D42)13星，观津氏近南极星。<br>
 
 ## References
 
