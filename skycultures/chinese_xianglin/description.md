@@ -1,4 +1,4 @@
-# Chinese Xianglin Star Chart (17th Century)
+# Chinese Xianglin Star Chart
 
 ## Introduction
 

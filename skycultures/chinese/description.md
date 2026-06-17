@@ -1,4 +1,4 @@
-# Chinese (18th Century)
+# Chinese
 
 ## Introduction
 
