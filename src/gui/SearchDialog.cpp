@@ -73,6 +73,12 @@ enum ModelRole
 };
 }
 
+// Added by Kwantsin
+#include "StarMgr.hpp"
+#include "StelMainView.hpp"
+#include "qjsondocument.h"
+#include "qvalidator.h"
+
 // Start of members for class CompletionListModel
 CompletionListModel::CompletionListModel(QObject* parent):
 	QStringListModel(parent),
@@ -540,6 +546,31 @@ void SearchDialog::createDialogContent()
 	// Clear data from recent search object
 	connect(ui->recentSearchClearDataPushButton, SIGNAL(clicked()), this, SLOT(recentSearchClearDataClicked()));
 	populateRecentSearch();
+
+	// Added by Kwantsin
+	// Load data files and visualize them
+	connect(ui->importCoordinate, SIGNAL(clicked()), this, SLOT(on_importCoordinate_clicked()));
+	connect(ui->coordinateBrowseButton, SIGNAL(clicked()), this, SLOT(browseForCoordinateDir()));
+	connect(ui->loadSelectedClearButton, SIGNAL(clicked()), this, SLOT(on_loadSelectedClearButton_clicked()));
+	connect(ui->loadSelectedButton, SIGNAL(clicked()), this, SLOT(on_loadSelectedButton_clicked()));
+	connect(ui->selectAllButton, SIGNAL(clicked()), this, SLOT(selectAllFiles()));
+	connect(ui->deselectAllButton, SIGNAL(clicked()), this, SLOT(deselectAllFiles()));
+	connect(ui->clearCoordinateButton, SIGNAL(clicked()), this, SLOT(on_clearCoordinateButton_clicked()));
+
+	ui->labelCoordData->setFixedWidth(80);
+	ui->coordinateDir->setText(StelFileMgr::getCoordinateDir());
+	ui->coordinateDir->setMinimumWidth(200);
+	ui->coordinateDir->setMaximumWidth(500);
+	connect(ui->coordinateDir, SIGNAL(editingFinished()), this, SLOT(selectCoordinateDir()));
+
+	// Initialize star catalog list model
+	starCatalogModel = new QStringListModel(this);
+	ui->starCatalogListView->setModel(starCatalogModel);
+	ui->starCatalogListView->setSelectionMode(QAbstractItemView::ExtendedSelection);
+	ui->starCatalogListView->setSelectionBehavior(QAbstractItemView::SelectItems);
+
+	// Automatically load JSON files from starcatalog directory on startup
+	loadStarCatalogFiles();
 }
 
 void SearchDialog::populateRecentSearch()
@@ -1690,4 +1721,1003 @@ void SearchDialog::setVisible(bool v)
 	{
 		ui->lineEditSearchSkyObject->setFocus(Qt::PopupFocusReason);
 	}
+}
+
+// Added by Kwantsin
+void SearchDialog::selectCoordinateDir()
+{
+	QString dir = ui->coordinateDir->text();
+
+	if (dir.right(1) == "/")
+		dir = dir.left(dir.length() - 1);
+	try
+	{
+		StelFileMgr::setCoordinateDir(dir);
+		ui->coordinateDir->setText(StelFileMgr::getCoordinateDir());
+	}
+	catch (std::runtime_error& e)
+	{
+		Q_UNUSED(e)
+			// nop
+			// this will happen when people are only half way through typing dirs
+			// Restore the previous valid value
+			ui->coordinateDir->setText(StelFileMgr::getCoordinateDir());
+	}
+}
+
+void SearchDialog::browseForCoordinateDir()
+{
+	QString newCoordinateDir = QFileDialog::getOpenFileName(&StelMainView::getInstance(), q_("Select coordinate data file"), {}, q_("Comma-separated values (*.json)"));
+
+	if (!newCoordinateDir.isEmpty()) {
+		// remove trailing slash
+		if (newCoordinateDir.right(1) == "/")
+			newCoordinateDir = newCoordinateDir.left(newCoordinateDir.length() - 1);
+
+		ui->coordinateDir->setText(newCoordinateDir);
+	}
+	selectCoordinateDir();
+}
+
+double SearchDialog::loadEpoch(QString epoch) {
+	// Allow "Bxxxx.x", "Jxxxx.x", "JDjjjjjjjj.jjj" and pure doubles as JD
+	bool ok = false;
+	double res = StelUtils::J2000;
+
+	if (epoch.startsWith("JD", Qt::CaseInsensitive))
+	{
+		QString epochStrV = epoch.right(epoch.length() - 2);
+		res = epochStrV.toDouble(&ok); // pureJD
+	}
+	else if (epoch.startsWith("B", Qt::CaseInsensitive))
+	{
+		QString epochStrV = epoch.right(epoch.length() - 1);
+		double epochY = epochStrV.toDouble(&ok);
+		if (ok)
+		{
+			res = StelUtils::getJDFromBesselianEpoch(epochY);
+		}
+	}
+	else if (epoch.startsWith("J", Qt::CaseInsensitive))
+	{
+		QString epochStrV = epoch.right(epoch.length() - 1);
+		double epochY = epochStrV.toDouble(&ok);
+		if (ok)
+		{
+			res = StelUtils::getJDFromJulianEpoch(epochY);
+		}
+	}
+	else
+		res = epoch.toDouble(&ok); // pureJD
+
+	return res;
+}
+
+void SearchDialog::on_clearCoordinateButton_clicked()
+{
+	// 清屏，移除所有自定义对象
+	GETSTELMODULE(CustomObjectMgr)->removeCustomObjects();
+}
+
+void SearchDialog::loadStarCatalogFiles()
+{
+	// 从starcatalog路径读取JSON文件
+	QStringList jsonFiles;
+
+	// 获取应用程序路径
+	QString appPath = QCoreApplication::applicationDirPath();
+
+	// 尝试不同的starcatalog路径
+	QStringList starCatalogPaths;
+	// 正式发行版：exe与starcatalog在同一目录
+	starCatalogPaths << appPath + "/starcatalog";
+	// 调试版路径
+	starCatalogPaths << appPath + "/../../../../starcatalog";
+
+	// 遍历所有可能的路径
+	for (const QString& path : starCatalogPaths) {
+		QDir dir(path);
+		if (dir.exists()) {
+			// 查找所有JSON文件
+			QStringList filters;  
+			filters << "*.json";
+			dir.setNameFilters(filters);
+			QFileInfoList fileInfoList = dir.entryInfoList(QDir::Files, QDir::Name);
+
+			for (const QFileInfo& fileInfo : fileInfoList) {
+				// 使用相对路径
+				QString relativePath = "starcatalog/" + fileInfo.fileName();
+				jsonFiles << relativePath;
+			}
+		}
+	}
+
+	// 更新文件列表
+	starCatalogModel->setStringList(jsonFiles);
+
+	// 清空之前的选择
+	ui->starCatalogListView->clearSelection();
+}
+
+void SearchDialog::on_importCoordinate_clicked()
+{
+	// 加载用户指定目录的坐标数据
+	QString coordinatePath = ui->coordinateDir->text();
+	importCoordinate(coordinatePath);
+
+	// 重新加载star catalog文件列表
+	loadStarCatalogFiles();
+}
+
+void SearchDialog::on_loadSelectedClearButton_clicked()
+{
+	GETSTELMODULE(CustomObjectMgr)->removeCustomObjects();
+	// 按选择顺序加载文件
+	loadSelectedFiles();
+}
+
+void SearchDialog::on_loadSelectedButton_clicked()
+{
+	// 按选择顺序加载文件
+	loadSelectedFiles();
+}
+
+void SearchDialog::loadSelectedFiles()
+{
+	// 获取选择的文件
+	QModelIndexList selectedIndexes = ui->starCatalogListView->selectionModel()->selectedIndexes();
+
+	// 按选择顺序加载文件
+	for (const QModelIndex& index : selectedIndexes) {
+		QString relativePath = index.data().toString();
+		// 尝试不同的路径
+		QString appPath = QCoreApplication::applicationDirPath();
+		QStringList possiblePaths;
+		possiblePaths << appPath + "/" + relativePath;
+		possiblePaths << appPath + "/../../../../" + relativePath;
+
+		// 找到存在的文件路径
+		QString filePath;
+		for (const QString& path : possiblePaths) {
+			if (QFile::exists(path)) {
+				filePath = path;
+				break;
+			}
+		}
+
+		if (!filePath.isEmpty()) {
+			importCoordinate(filePath);
+		} else {
+			qWarning() << "File not found:" << relativePath;
+		}
+	}
+}
+
+void SearchDialog::selectAllFiles()
+{
+	// 全选所有文件
+	ui->starCatalogListView->selectAll();
+}
+
+void SearchDialog::deselectAllFiles()
+{
+	// 取消全选所有文件
+	ui->starCatalogListView->clearSelection();
+}
+
+void SearchDialog::importCoordinate(const QString& filepath)
+{
+	// Open and read JSON file
+	QFile jsonFile(filepath);
+	
+	if (!jsonFile.open(QIODevice::ReadOnly)) {
+		qWarning() << "Failed to open file:" << filepath;
+		return;
+	}
+
+	// Parsing JSON file
+	QJsonParseError parseError{};
+	QJsonDocument jsonDoc = QJsonDocument::fromJson(jsonFile.readAll(), &parseError);
+	jsonFile.close();
+
+	if (parseError.error != QJsonParseError::NoError) {
+		qWarning() << "JSON parse error:" << parseError.errorString();
+		return;
+	}
+
+	if (!jsonDoc.isArray()) {
+		qWarning() << "JSON format error: Root is not an array";
+		return;
+	}
+
+	// Read JSON array (star catalog list)
+	const QJsonArray catalogArray = jsonDoc.array();
+
+	// Traverse all star catalogs
+	for (const QJsonValue& catalogValue : catalogArray) {
+		if (!catalogValue.isObject()) {
+			qWarning() << "Skipping invalid catalog entry";
+			continue;
+		}
+
+		const QJsonObject catalogObj = catalogValue.toObject();
+
+		// Change epoch, allow "Bxxxx.x", "Jxxxx.x", "JDjjjjjjjj.jjj" and pure doubles as JD
+		bool useEpoch = catalogObj.value("use_epoch").toBool(false);
+		if (useEpoch && catalogObj.contains("epoch")) {
+			QString epochStr = catalogObj.value("epoch").toString("J2000.0");
+			double epoch = loadEpoch(epochStr);
+			StelCore* core = StelApp::getInstance().getCore();
+			core->setJD(epoch);
+			core->update(0); // Force update of core state (parameter is time increment, 0 means immediate refresh)
+		}
+
+		// Whether the star catalog needs to be visualized
+		bool show = catalogObj.value("show").toBool(true);
+
+		// Get the catalog ID (optional)
+		QString catalogId = catalogObj.value("id").toString();
+		if (!catalogId.isEmpty()) {
+			qDebug() << "Processing catalog:" << catalogId;
+		}
+
+		// Whether to update search lists
+		bool updateSearchLists = catalogObj.value("update_search_lists").toBool(false);
+
+		// Whether to display star names
+		bool showNames = catalogObj.value("show_names").toBool(true);
+
+		// Get the star catalog coordinate system
+		QString coordinateSystem = catalogObj.value("coordinate_system").toString();
+
+		// Get the default icon (cross or circle, the default is cross)
+		QString defaultIcon = "cross";
+		if (catalogObj.contains("default_icon")) {
+			QString newIcon = catalogObj.value("default_icon").toString();
+			if (newIcon == "cross" || newIcon == "circle" || newIcon == "dot") {
+				defaultIcon = newIcon;
+			}
+			else {
+				qWarning() << "Invalid Default Icon";
+			}
+		}
+
+		// Get the default icon size (number 0-7, default is 6)
+		int defaultSize = 6;
+		if (catalogObj.contains("default_size")) {
+			int newSize = catalogObj.value("default_size").toInt();
+			if (newSize >= 0 && newSize <= 7) {
+				defaultSize = newSize;
+			}
+			else {
+				qWarning() << "Invalid Default Size";
+			}
+		}
+
+		//QMap<int, float> sizeMapCross = {
+		//	{0, 12.5f},
+		//	{1, 11.25f},
+		//	{2, 10.f},
+		//	{3, 8.75f},
+		//	{4, 7.5f},
+		//	{5, 6.25f},
+		//	{6, 5.f},
+		//	{7, 3.75f},
+		//	{8, 2.5f}
+		//};
+
+		//QMap<int, float> sizeMapCircle = {
+		//	{0, 12.65625f},
+		//	{1, 10.3125f},
+		//	{2, 8.28125f},
+		//	{3, 6.5625f},
+		//	{4, 5.15625f},
+		//	{5, 4.0625f},
+		//	{6, 3.28125f},
+		//	{7, 2.8125f},
+		//	{8, 2.8125f},
+		//};
+
+		// Get the default color (RGB)
+		bool success;
+		Vec3f defaultColor = Vec3f(0.1f, 1.0f, 0.1f);
+		if (catalogObj.contains("default_color")) {
+			defaultColor = hexColorToVec3f(catalogObj.value("default_color").toString(), &success);
+		}
+
+		// Get export data options
+		bool exportData = catalogObj.value("export_data").toBool(false);
+		QString exportURL = ""; // Initialize to an empty string
+		if (exportData) {
+			// Trying to get the export path from JSON
+			if (catalogObj.contains("export_URL")) {
+				exportURL = catalogObj.value("export_URL").toString();
+
+				// Check if the path is a file or a directory
+				QFileInfo pathInfo(exportURL);
+
+				if (pathInfo.isDir()) {
+					// If it is a directory, add the default file name
+					exportURL = QDir(exportURL).filePath("export.json");
+					qInfo() << "Using directory path, created full path:" << exportURL;
+				}
+				else if (!pathInfo.suffix().isEmpty() && pathInfo.suffix().toLower() != "json") {
+					// If it is not a directory and not a JSON file
+					qWarning() << "Invalid export URL: Not a JSON file. Using default path.";
+					exportURL = ""; // Reset to invalid path
+				}
+			}
+
+			// If no path is specified or the path is invalid, the default path is used
+			if (exportURL.isEmpty()) {
+				// Get the directory where the program is located
+				QString appDir = QCoreApplication::applicationDirPath();
+
+				// Build default path: program_directory/data/export.json
+				exportURL = QDir(appDir).filePath("data/export.json");
+				qInfo() << "Using default export path:" << exportURL;
+			}
+
+			// Make sure the directory exists
+			QFileInfo finalPathInfo(exportURL);
+			QDir dir(finalPathInfo.path());
+
+			if (!dir.exists()) {
+				if (!dir.mkpath(".")) {
+					qCritical() << "Failed to create directory:" << dir.path();
+					exportData = false; // Disable export functionality
+				}
+				else {
+					qInfo() << "Created directory:" << dir.path();
+				}
+			}
+
+			// Check if the directory is writable
+			if (exportData) {
+				QFile testFile(dir.filePath("test_write.tmp"));
+				if (testFile.open(QIODevice::WriteOnly)) {
+					testFile.write("test");
+					testFile.close();
+					testFile.remove();
+				}
+				else {
+					qCritical() << "Directory not writable:" << dir.path();
+					exportData = false; // Disable export functionality
+				}
+			}
+
+			// Make sure the file exists (create an empty file if it doesn't exist)
+			if (exportData && !QFile::exists(exportURL)) {
+				QFile file(exportURL);
+				if (file.open(QIODevice::WriteOnly)) {
+					file.write("{}"); // Write an empty JSON object
+					file.close();
+					qInfo() << "Created empty JSON file:" << exportURL;
+				}
+				else {
+					qCritical() << "Failed to create JSON file:" << exportURL;
+					exportData = false; // Disable export functionality
+				}
+			}
+		}
+		else {
+			qInfo() << "Data export is disabled";
+		}
+
+		QJsonArray exportArray;
+
+		// Get the star data array
+		if (!catalogObj.contains("data") || !catalogObj.value("data").isArray()) {
+			qWarning() << "Catalog missing data array";
+			continue;
+		}
+
+		const QJsonArray starArray = catalogObj.value("data").toArray();
+
+		// Process coordinates according to the coordinate system type
+		if (coordinateSystem == "equatorial_cn") {
+			// Processing the traditional Chinese equatorial coordinate system
+
+			// Get the number of degrees per circle (default is 365.25)
+			double degreesPerCircleX = catalogObj.value("degrees_per_circle").toDouble(365.25);
+			double degreesPerCircleY = catalogObj.value("degrees_per_circle").toDouble(365.25);
+			if (catalogObj.contains("degrees_per_circle_x")) {
+				degreesPerCircleX = catalogObj.value("degrees_per_circle_x").toDouble();
+			}
+			if (catalogObj.contains("degrees_per_circle_y")) {
+				degreesPerCircleY = catalogObj.value("degrees_per_circle_y").toDouble();
+			}
+
+			// Default list of twenty-eight mansions (Simplified and Traditional Chinese)
+			QMap<QString, int> defaultMansions = {
+				{"角", 65474}, {"亢", 69427}, {"氐", 72622}, {"房", 78265}, {"心", 80112}, {"尾", 82514}, {"箕", 88635},
+				{"斗", 92041}, {"牛", 100345}, {"女", 102618}, {"虚", 106278}, {"危", 109074}, {"室", 113963}, {"壁", 1067},
+				{"奎", 3693}, {"娄", 8903}, {"胃", 12719}, {"昴", 17499}, {"毕", 20889}, {"觜", 26176}, {"参", 25930},
+				{"井", 30343}, {"鬼", 41822}, {"柳", 42313}, {"星", 46390}, {"张", 48356}, {"翼", 53740}, {"轸", 59803},
+				{"虛", 106278}, {"婁", 8903}, {"畢", 20889}, {"參", 25930}, {"張", 48356}, {"軫", 59803}
+			};
+
+			// Get the data of the twenty-eight mansions from file (default is the built-in list)
+			QMap<QString, int> mansions = defaultMansions;
+			if (catalogObj.contains("mansions")) {
+				QJsonArray mansionArray = catalogObj.value("mansions").toArray();
+				for (const QJsonValue& mansionValue : mansionArray) {
+					if (mansionValue.isObject()) {
+						QJsonObject mansionObj = mansionValue.toObject();
+						QString name = mansionObj.value("name").toString();
+						int definingStar = mansionObj.value("defining_star").toInt();
+						if (!name.isEmpty()) {
+							mansions[name] = definingStar;
+						}
+					}
+				}
+			}
+
+			coordinateSystem = "equatorial";
+
+			// Process all stars in the Chinese star catalog
+			for (const QJsonValue& starValue : starArray) {
+				if (!starValue.isObject()) {
+					qWarning() << "Skipping invalid star entry";
+					continue;
+				}
+
+				const QJsonObject starObj = starValue.toObject();
+
+				// Extracting star data
+				QString name = starObj.value("name").toString();
+
+				// Verify that required fields exist
+				//if (name.isEmpty()) {
+				//	qWarning() << "Skipping star with missing name";
+				//	continue;
+				//}
+
+				// Processing coordinates
+				Vec3d v;
+
+				double x = -1, y = -1;
+				QString mansion = starObj.value("mansion").toString();
+				x = starObj.value("x").toDouble();
+				y = starObj.value("y").toDouble();
+
+				if (mansion.isEmpty() || x == -1 || y == -1) {
+					qWarning() << "Skipping star with missing mansion:" << name;
+					continue;
+				}
+				if (x < 0 || x > degreesPerCircleX) {
+					qWarning() << "Unvalid mansion degree:" << name;
+					continue;
+				}
+				if (y < 0 || y > degreesPerCircleY / 2) {
+					qWarning() << "Unvalid pole degree:" << name;
+					continue;
+				}
+
+				x = x * 2.0 * M_PI / degreesPerCircleX;
+				y = (90.0 - (y * 360.0 / degreesPerCircleY)) * M_PI / 180.0;
+
+				if (!mansions.contains(mansion)) {
+					qWarning() << "Mansion not found:" << mansion;
+					continue;
+				}
+				int linkStar = mansions[mansion];
+				if (linkStar <= 0) {
+					qWarning() << "Invalid defining star ID for mansion" << mansion << ":" << linkStar;
+					continue;
+				}
+
+				StarMgr* starMgr = GETSTELMODULE(StarMgr);
+				StelCore* core = StelApp::getInstance().getCore();
+				const StelObjectP star = starMgr->searchHP(linkStar);
+				if (!star) {
+					qWarning() << "Defining star not found for mansion" << mansion << ":" << linkStar;
+					continue; // Skip this coordinate data
+				}
+				Vec3d pos = star->getEquinoxEquatorialPosAuto(core);
+				double ra, dec;
+				StelUtils::rectToSphe(&ra, &dec, pos);
+				x += ra;
+
+				v = SearchDialog::manualPositionChangedForData(x, y, coordinateSystem);
+
+				// Handling icon style and size
+				QString icon = defaultIcon;
+				if (starObj.contains("icon")) {
+					QString new_icon = starObj.value("icon").toString();
+					if (new_icon == "cross" || new_icon == "circle" || new_icon == "dot") {
+						icon = new_icon;
+					}
+					else {
+						qWarning() << "Invalid Icon for" << name;
+					}
+				}
+				float size = (float)defaultSize;
+				if (starObj.contains("size")) {
+					float new_size = starObj.value("size").toDouble();
+					if (new_size >= 0.f && new_size <= 9.f) {
+						size = new_size;
+					}
+					else {
+						qWarning() << "Invalid Size for" << name;
+					}
+				}
+
+				if (icon == "cross" && size >= 7.5f) {
+					icon = "dot";
+				}
+				if (size >= 8.5f) {
+					icon = "dot";
+				}
+
+				float fSize;
+				QString combinedIcon;
+				if (icon == "circle") {
+					fSize = (5 * size * size - 80 * size + 405) / 32;
+					int fNumber = round(size);
+					if (fNumber == 8) fNumber = 7;
+					combinedIcon = icon + QString::number(fNumber);
+				}
+				else if(icon == "cross") {
+					fSize = 12.5 - 1.25 * size;
+					combinedIcon = icon + QString::number(round(size));
+				}
+				else {
+					fSize = 2.f;
+					combinedIcon = icon;
+				}
+
+				// Get the default color field (RGB)
+				Vec3f color = defaultColor;
+				if (starObj.contains("color")) {
+					Vec3f new_color = hexColorToVec3f(starObj.value("color").toString(), &success);
+					if (success) color = new_color;
+				}
+
+				// Adding stars to the custom object manager
+				if (show) GETSTELMODULE(CustomObjectMgr)->addCustomObjectWithoutSearch(name, v, combinedIcon, color, fSize, true, updateSearchLists, showNames);
+
+
+				// Prepare to export data
+				if (exportData) {
+					QJsonObject exportObj;
+
+					exportObj["name"] = name;
+					exportObj["mansion"] = mansion;
+					exportObj["x"] = starObj.value("x").toDouble();
+					exportObj["y"] = starObj.value("y").toDouble();
+					if (starObj.contains("io_degree")) {
+						exportObj["io_degree"] = starObj.value("io_degree").toDouble();
+					}
+					if (starObj.contains("size")) {
+						exportObj["size"] = starObj.value("size").toInt();
+					}
+					double _ra = x * 12 / M_PI;
+					if (_ra < 0) _ra += 24;
+					exportObj["ra"] = _ra;
+					exportObj["dec"] = y * 180 / M_PI;
+					if (starObj.contains("id_star")) {
+						exportObj["id_star"] = starObj.value("id_star").toString();
+					}
+
+					double ra, dec;
+
+					if (starObj.contains("HIP")) {
+						QJsonArray HIPArray = starObj.value("HIP").toArray();
+						int HIP = HIPArray[0].toInt(0);
+
+						const StelObjectP star = starMgr->searchHP(HIP);
+						if (!star) {
+							qWarning() << "Defining star not found for star" << name << ":" << HIP;
+						}
+						else {
+							Vec3d pos = star->getEquinoxEquatorialPosAuto(core);
+							StelUtils::rectToSphe(&ra, &dec, pos);
+						}
+						_ra = ra * 12 / M_PI;
+						if (_ra < 0) _ra += 24;
+						exportObj["id_ra"] = _ra;
+						exportObj["id_dec"] = dec * 180 / M_PI;
+					}
+					if (starObj.contains("note")) {
+						exportObj["note"] = starObj.value("note").toString();
+					}
+
+					exportArray.append(exportObj);
+				}
+			}
+		}
+		else {
+			// Process all stars in the default coordinate system
+			for (const QJsonValue& starValue : starArray) {
+				if (!starValue.isObject()) {
+					qWarning() << "Skipping invalid star entry";
+					continue;
+				}
+
+				const QJsonObject starObj = starValue.toObject();
+
+				// Extracting star data
+				QString name = starObj.value("name").toString();
+
+				// Verify that required fields exist
+				//if (name.isEmpty()) {
+				//	qWarning() << "Skipping star with missing name";
+				//	continue;
+				//}
+
+				// Handle the default coordinate system (string format)
+				QString xCoord = starObj.value("x").toString();
+				QString yCoord = starObj.value("y").toString();
+
+				if (xCoord.isEmpty() || yCoord.isEmpty()) {
+					qWarning() << "Skipping star with missing coordinates:" << name;
+					continue;
+				}
+
+				QValidator::State state;
+				double x, y;
+				x = stringToDouble(xCoord, &state);
+				if (state != QValidator::Acceptable) {
+					qWarning() << "Skipping star with wrong coordinates:" << name;
+					continue;
+				}
+				y = stringToDouble(yCoord, &state);
+				if (state != QValidator::Acceptable) {
+					qWarning() << "Skipping star with wrong coordinates:" << name;
+					continue;
+				}
+
+				Vec3d v = SearchDialog::manualPositionChangedForData(x, y, coordinateSystem);
+
+				// Handling icon style and size
+				QString icon = defaultIcon;
+				if (starObj.contains("icon")) {
+					QString new_icon = starObj.value("icon").toString();
+					if (new_icon == "cross" || new_icon == "circle" || new_icon == "dot") {
+						icon = new_icon;
+					}
+					else {
+						qWarning() << "Invalid Icon for" << name;
+					}
+				}
+				float size = (float)defaultSize;
+				if (starObj.contains("size")) {
+					float new_size = starObj.value("size").toDouble();
+					if (new_size >= 0.f && new_size <= 9.f) {
+						size = new_size;
+					}
+					else {
+						qWarning() << "Invalid Size for" << name;
+					}
+				}
+
+				if (size >= 8.5f) {
+					icon = "dot";
+				}
+
+				float fSize;
+				QString combinedIcon;
+				if (icon == "circle") {
+					fSize = (5 * size * size - 80 * size + 405) / 32;
+					int fNumber = round(size);
+					if (fNumber == 8) fNumber = 7;
+					combinedIcon = icon + QString::number(fNumber);
+				}
+				else if (icon == "cross") {
+					fSize = 12.5 - 1.25 * size;
+					combinedIcon = icon + QString::number(round(size));
+				}
+				else {
+					fSize = 2.f;
+					combinedIcon = icon;
+				}
+
+				// Get the default color field (RGB)
+				Vec3f color = defaultColor;
+				if (starObj.contains("color")) {
+					Vec3f new_color = hexColorToVec3f(starObj.value("color").toString(), &success);
+					if (success) color = new_color;
+				}
+
+				// Adding stars to the custom object manager
+				if (show) GETSTELMODULE(CustomObjectMgr)->addCustomObjectWithoutSearch(name, v, combinedIcon, color, fSize, true, updateSearchLists, showNames);
+
+
+				// Prepare to export data
+				if (exportData) {
+					QJsonObject exportObj;
+
+					exportObj["name"] = name;
+					exportObj["x"] = starObj.value("x").toString();
+					exportObj["y"] = starObj.value("y").toString();
+					if (starObj.contains("size")) {
+						exportObj["size"] = starObj.value("size").toInt();
+					}
+					if (starObj.contains("id_star")) {
+						exportObj["id_star"] = starObj.value("id_star").toString();
+					}
+
+					double ra, dec;
+
+					if (starObj.contains("HIP")) {
+						QJsonArray HIPArray = starObj.value("HIP").toArray();
+						int HIP = HIPArray[0].toInt(0);
+
+						StarMgr* starMgr = GETSTELMODULE(StarMgr);
+						StelCore* core = StelApp::getInstance().getCore();
+						const StelObjectP star = starMgr->searchHP(HIP);
+						if (!star) {
+							qWarning() << "Defining star not found for star" << name << ":" << HIP;
+						}
+						else {
+							Vec3d pos = star->getEquinoxEquatorialPosAuto(core);
+							StelUtils::rectToSphe(&ra, &dec, pos);
+						}
+						double _ra = ra * 12 / M_PI;
+						if (_ra < 0) _ra += 24;
+						exportObj["id_ra"] = _ra;
+						exportObj["id_dec"] = dec * 180 / M_PI;
+					}
+					if (starObj.contains("note")) {
+						exportObj["note"] = starObj.value("note").toString();
+					}
+
+					exportArray.append(exportObj);
+				}
+			}
+		}
+
+		if (exportData) {
+			// Creating a top-level JSON object
+			QJsonObject rootObj;
+			rootObj["metadata"] = QJsonObject{
+				{"export_date", QDateTime::currentDateTime().toString(Qt::ISODate)},
+				{"star_count", starArray.size()}
+			};
+			rootObj["data"] = exportArray;
+
+			// Creating a JSON document
+			QJsonDocument doc(rootObj);
+
+			// Writing to the File
+			QFile file(exportURL);
+			if (!file.open(QIODevice::WriteOnly)) {
+				qCritical() << "Failed to open file for writing:" << exportURL;
+			}
+			else {
+				file.write(doc.toJson(QJsonDocument::Indented));
+				file.close();
+
+				qInfo() << "Successfully exported" << exportArray.size() << "stars to" << exportURL;
+			}
+		}
+	}
+}
+
+Vec3f SearchDialog::hexColorToVec3f(const QString& hexColor, bool* success) {
+	// Handling cases with #
+	QString colorStr = hexColor;
+	if (colorStr.startsWith('#')) {
+		colorStr = colorStr.mid(1); // 移除#号
+	}
+
+	// Verify length
+	if (colorStr.length() != 6) {
+		qWarning() << "Invalid hex color length:" << hexColor;
+		*success = false;
+		return Vec3f(0.1f, 1.0f, 0.1f); // Return to default green
+	}
+
+	// Extract RGB components
+	bool ok;
+	int r = colorStr.mid(0, 2).toInt(&ok, 16);
+	if (!ok) {
+		*success = false;
+		return Vec3f(0.1f, 1.0f, 0.1f);
+	}
+
+	int g = colorStr.mid(2, 2).toInt(&ok, 16);
+	if (!ok) {
+		*success = false;
+		return Vec3f(0.1f, 1.0f, 0.1f);
+	}
+
+	int b = colorStr.mid(4, 2).toInt(&ok, 16);
+	if (!ok) {
+		*success = false;
+		return Vec3f(0.1f, 1.0f, 0.1f);
+	}
+
+	// Convert to a floating point number in the range 0-1
+	*success = true;
+	return Vec3f(r / 255.0f, g / 255.0f, b / 255.0f);
+}
+
+double SearchDialog::stringToDouble(QString input, QValidator::State* state)
+{
+	int sign = 1;
+	if (input.startsWith("-", Qt::CaseInsensitive))
+	{
+		sign = -1;
+		input = input.mid(1);
+	}
+	else if (input.startsWith("+", Qt::CaseInsensitive))
+	{
+		sign = 1;
+		input = input.mid(1);
+	}
+
+	static const QRegularExpression dmsRx("^\\s*(\\d+)\\s*[d°](\\s*(\\d+(\\.\\d*)?)\\s*[m'](\\s*(\\d+(\\.\\d*)?)\\s*[s\"]\\s*)?)?$",
+		QRegularExpression::CaseInsensitiveOption);
+	static const QRegularExpression hmsRx("^\\s*(\\d+)\\s*h(\\s*(\\d+(\\.\\d*)?)\\s*[m'](\\s*(\\d+(\\.\\d*)?)\\s*[s\"]\\s*)?)?$",
+		QRegularExpression::CaseInsensitiveOption);
+	static const QRegularExpression decRx(u8"^(\\d+(\\.\\d*)?)(\\s*\u00b0\\s*)?$");
+	static const QRegularExpression badRx("[^hdms0-9 °'\"\\.]", QRegularExpression::CaseInsensitiveOption);
+	QRegularExpressionMatch dmsMatch = dmsRx.match(input);
+	QRegularExpressionMatch hmsMatch = hmsRx.match(input);
+	QRegularExpressionMatch decMatch = decRx.match(input);
+
+	QValidator::State dummy;
+	if (state == Q_NULLPTR)
+	{
+		state = &dummy;
+	}
+
+	if (dmsMatch.hasMatch())
+	{
+		double degree = dmsMatch.captured(1).toDouble();
+		double minute = dmsMatch.captured(3).toDouble();
+		double second = dmsMatch.captured(6).toDouble();
+		if (degree > 360.0 || degree < -360.0)
+		{
+			*state = QValidator::Invalid;
+			return 0.0;
+		}
+
+		if (minute > 60.0 || minute < 0.0)
+		{
+			*state = QValidator::Invalid;
+			return 0.0;
+		}
+
+		if (second > 60.0 || second < 0.0)
+		{
+			*state = QValidator::Invalid;
+			return 0.0;
+		}
+
+		*state = QValidator::Acceptable;
+		return (sign * (degree + (minute / 60.0) + (second / 3600.0))) * M_PI / 180.0;
+	}
+	else if (hmsMatch.hasMatch())
+	{
+		double hour = hmsMatch.captured(1).toDouble();
+		double minute = hmsMatch.captured(3).toDouble();
+		double second = hmsMatch.captured(6).toDouble();
+		if (hour >= 24.0 || hour < 0.0)
+		{
+			*state = QValidator::Invalid;
+			return 0.0;
+		}
+
+		if (minute > 60.0 || minute < 0.0)
+		{
+			*state = QValidator::Invalid;
+			return 0.0;
+		}
+
+		if (second > 60.0 || second < 0.0)
+		{
+			*state = QValidator::Invalid;
+			return 0.0;
+		}
+
+		*state = QValidator::Acceptable;
+		return sign * (((360.0 * hour / 24.0) + (minute * 15 / 60.0) + (second * 15 / 3600.0)) * M_PI / 180.0);
+	}
+	else if (decMatch.hasMatch())
+	{
+		double dec = decMatch.captured(1).toDouble();
+		if (dec < 0.0 || dec > 360.0)
+		{
+			*state = QValidator::Invalid;
+			return 0.0;
+		}
+		else
+		{
+			*state = QValidator::Acceptable;
+			return sign * (dec * M_PI / 180.0);
+		}
+	}
+	else if (input.contains(badRx))
+	{
+		*state = QValidator::Invalid;
+		return 0.0;
+	}
+	*state = QValidator::Intermediate;
+	return 0.0;
+}
+
+Vec3d SearchDialog::manualPositionChangedForData(double spinLong, double spinLat, QString strCoordinateSystem)
+{
+	searchListModel->clearValues();
+	StelCore* core = StelApp::getInstance().getCore();
+	StelMovementMgr* mvmgr = GETSTELMODULE(StelMovementMgr);
+	Vec3d pos;
+	// Since 0.15: proper handling of aimUp vector. This does not depend on the searched coordinate system, but on the MovementManager's C.S.
+	// However, if those are identical, we have a problem when we want to look right into the pole. (e.g. zenith), which requires a special up vector.
+	// aimUp depends on MovementMgr::MountMode mvmgr->mountMode!
+	mvmgr->setViewUpVector(Vec3d(0., 0., 1.));
+	Vec3d aimUp = mvmgr->getViewUpVectorJ2000();
+	StelMovementMgr::MountMode mountMode = mvmgr->getMountMode();
+
+	QMap<QString, CoordinateSystem> CoordinateSystems = {
+		{"equatorialJ2000", equatorialJ2000},
+		{"equatorial", equatorial},
+		{"equatorial_dms", equatorial},
+		{"horizontal", horizontal},
+		{"galactic", galactic},
+		{"supergalactic", supergalactic},
+		{"ecliptic", ecliptic},
+		{"eclipticJ2000", eclipticJ2000}
+	};
+
+	CoordinateSystem coordSystem = getCurrentCoordinateSystem();
+	if (!strCoordinateSystem.isEmpty() && CoordinateSystems.find(strCoordinateSystem) != CoordinateSystems.end()) {
+		coordSystem = CoordinateSystems[strCoordinateSystem];
+	}
+
+	switch (coordSystem)
+	{
+	case equatorialJ2000:
+	{
+		StelUtils::spheToRect(spinLong, spinLat, pos);
+		break;
+	}
+	case equatorial:
+	{
+		StelUtils::spheToRect(spinLong, spinLat, pos);
+		pos = core->equinoxEquToJ2000(pos, StelCore::RefractionOff);
+		break;
+	}
+	case horizontal:
+	{
+		double cx;
+		cx = 3. * M_PI - spinLong; // N is zero, E is 90 degrees
+		if (StelApp::getInstance().getFlagSouthAzimuthUsage())
+			cx -= M_PI;
+		StelUtils::spheToRect(cx, spinLat, pos);
+		pos = core->altAzToJ2000(pos, StelCore::RefractionOff);
+		break;
+	}
+	case galactic:
+	{
+		StelUtils::spheToRect(spinLong, spinLat, pos);
+		pos = core->galacticToJ2000(pos);
+		break;
+	}
+	case supergalactic:
+	{
+		StelUtils::spheToRect(spinLong, spinLat, pos);
+		pos = core->supergalacticToJ2000(pos);
+		break;
+	}
+	case eclipticJ2000:
+	{
+		double ra, dec;
+		StelUtils::eclToEqu(spinLong, spinLat, GETSTELMODULE(SolarSystem)->getEarth()->getRotObliquity(2451545.0), &ra, &dec);
+		StelUtils::spheToRect(ra, dec, pos);
+		break;
+	}
+	case ecliptic:
+	{
+		double ra, dec;
+		StelUtils::eclToEqu(spinLong, spinLat, GETSTELMODULE(SolarSystem)->getEarth()->getRotObliquity(core->getJDE()), &ra, &dec);
+		StelUtils::spheToRect(ra, dec, pos);
+		pos = core->equinoxEquToJ2000(pos, StelCore::RefractionOff);
+		break;
+	}
+	}
+	return pos;
 }

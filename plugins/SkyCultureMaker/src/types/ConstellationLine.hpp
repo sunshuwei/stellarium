@@ -123,22 +123,23 @@ struct ConstellationLine
 	/**
     * @brief Converts the coordinates of the line to a JSON array.
     * 
+    * @param decimals The number of decimal places to use for coordinates (default: 6).
     * @return QJsonArray The JSON representation of the coordinates of the line.
     */
-	QJsonArray coordinatesToJson() const
+	QJsonArray coordinatesToJson(int decimals = 6) const
     {
 		QJsonArray json;
         QJsonArray startCoordinateArray;
         double RA, DE;
         convertToSphereCoords(RA, DE, start.coordinate);
-        startCoordinateArray.append(RA);
-        startCoordinateArray.append(DE);
+        startCoordinateArray.append(QString::number(RA, 'f', decimals).toDouble());
+        startCoordinateArray.append(QString::number(DE, 'f', decimals).toDouble());
         json.append(startCoordinateArray);
 
         QJsonArray endCoordinateArray;
         convertToSphereCoords(RA, DE, end.coordinate);
-        endCoordinateArray.append(RA);
-        endCoordinateArray.append(DE);
+        endCoordinateArray.append(QString::number(RA, 'f', decimals).toDouble());
+        endCoordinateArray.append(QString::number(DE, 'f', decimals).toDouble());
         json.append(endCoordinateArray);
 
 		return json;

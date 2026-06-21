@@ -1,0 +1,46 @@
+[
+    {
+        "id": "test",
+        "coordinate_system": "equatorial_cn",
+        "data": [
+            {"name": "0", "mansion": "角", "x": 1, "y": 10, "icon": "cross", "size": 0},
+            {"name": "1", "mansion": "角", "x": 1, "y": 11, "icon": "cross", "size": 1},
+            {"name": "2", "mansion": "角", "x": 1, "y": 12, "icon": "cross", "size": 2},
+            {"name": "3", "mansion": "角", "x": 1, "y": 13, "icon": "cross", "size": 3},
+            {"name": "4", "mansion": "角", "x": 1, "y": 14, "icon": "cross", "size": 4},
+            {"name": "5", "mansion": "角", "x": 1, "y": 15, "icon": "cross", "size": 5},
+            {"name": "6", "mansion": "角", "x": 1, "y": 16, "icon": "cross", "size": 6},
+            {"name": "7", "mansion": "角", "x": 1, "y": 17, "icon": "cross", "size": 7},
+            {"name": "8", "mansion": "角", "x": 1, "y": 18, "icon": "cross", "size": 8},
+            {"name": "9", "mansion": "角", "x": 1, "y": 19, "icon": "cross", "size": 9}
+        ]
+    },
+    {
+        "id": "test",
+        "coordinate_system": "equatorial_cn",
+        "data": [
+            {"name": "0", "mansion": "亢", "x": 1, "y": 10, "icon": "circle", "size": 0},
+            {"name": "1", "mansion": "亢", "x": 1, "y": 11, "icon": "circle", "size": 1},
+            {"name": "2", "mansion": "亢", "x": 1, "y": 12, "icon": "circle", "size": 2},
+            {"name": "3", "mansion": "亢", "x": 1, "y": 13, "icon": "circle", "size": 3},
+            {"name": "4", "mansion": "亢", "x": 1, "y": 14, "icon": "circle", "size": 4},
+            {"name": "5", "mansion": "亢", "x": 1, "y": 15, "icon": "circle", "size": 5},
+            {"name": "6", "mansion": "亢", "x": 1, "y": 16, "icon": "circle", "size": 6},
+            {"name": "7", "mansion": "亢", "x": 1, "y": 17, "icon": "circle", "size": 7},
+            {"name": "8", "mansion": "亢", "x": 1, "y": 18, "icon": "circle", "size": 8},
+            {"name": "9", "mansion": "亢", "x": 1, "y": 19, "icon": "circle", "size": 9},
+            {"name": "0", "mansion": "亢", "x": 1, "y": 10.5, "icon": "circle", "size": 0.5},
+            {"name": "1", "mansion": "亢", "x": 1, "y": 11.5, "icon": "circle", "size": 1.5},
+            {"name": "2", "mansion": "亢", "x": 1, "y": 12.3333333, "icon": "circle", "size": 2.333333},
+            {"name": "2", "mansion": "亢", "x": 1, "y": 12.5, "icon": "circle", "size": 2.5},
+            {"name": "3", "mansion": "亢", "x": 1, "y": 13.5, "icon": "circle", "size": 3.5},
+            {"name": "4", "mansion": "亢", "x": 1, "y": 14.5, "icon": "circle", "size": 4.5},
+            {"name": "5", "mansion": "亢", "x": 1, "y": 15.5, "icon": "circle", "size": 5.5},
+            {"name": "6", "mansion": "亢", "x": 1, "y": 16.5, "icon": "circle", "size": 6.5},
+            {"name": "7", "mansion": "亢", "x": 1, "y": 17.5, "icon": "circle", "size": 7.5},
+            {"name": "8", "mansion": "亢", "x": 1, "y": 18.5, "icon": "circle", "size": 8.5},
+            {"name": "9", "mansion": "亢", "x": 1, "y": 19.5, "icon": "circle", "size": 9}
+        ]
+    }
+
+]

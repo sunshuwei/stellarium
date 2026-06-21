@@ -154,7 +154,7 @@ void scm::ScmConstellation::drawArtwork(StelCore *core, StelPainter &sPainter) c
 	artwork.draw(core, sPainter);
 }
 
-QJsonObject scm::ScmConstellation::toJson(const QString &skyCultureId, const bool mergeLines) const
+QJsonObject scm::ScmConstellation::toJson(const QString &skyCultureId, const bool mergeLines, int coordinateDecimals) const
 {
 	QJsonObject json;
 
@@ -174,7 +174,7 @@ QJsonObject scm::ScmConstellation::toJson(const QString &skyCultureId, const boo
 		// dark constellation, so only add coordinates
 		for (const auto &line : lines)
 		{
-			linesArray.append(line.coordinatesToJson());
+			linesArray.append(line.coordinatesToJson(coordinateDecimals));
 		}
 	}
 

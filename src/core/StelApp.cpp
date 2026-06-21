@@ -208,6 +208,10 @@ Q_IMPORT_PLUGIN(Scenery3dStelPluginInterface)
 Q_IMPORT_PLUGIN(SkyCultureMakerStelPluginInterface)
 #endif
 
+#ifdef USE_STATIC_PLUGIN_BOUNDARYMAKER
+Q_IMPORT_PLUGIN(BoundaryMakerStelPluginInterface)
+#endif
+
 #ifdef USE_STATIC_PLUGIN_REMOTECONTROL
 Q_IMPORT_PLUGIN(RemoteControlStelPluginInterface)
 #endif

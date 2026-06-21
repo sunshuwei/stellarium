@@ -46,6 +46,7 @@ QString StelFileMgr::userDir;
 QString StelFileMgr::screenshotDir;
 QString StelFileMgr::obsListDir;
 QString StelFileMgr::installDir;
+QString StelFileMgr::coordinateDir; // Added by Kwantsin
 
 void StelFileMgr::init()
 {
@@ -444,6 +445,29 @@ void StelFileMgr::setScreenshotDir(const QString& newDir)
 	screenshotDir = userDirFI.filePath();
 }
 
+// Added by Kwantsin
+QString StelFileMgr::getCoordinateDir()
+{
+	if (coordinateDir.isEmpty()) {
+		QSettings* settings = StelApp::getInstance().getSettings();
+		coordinateDir = settings->value(COORDINATE_DIR_KEY).toString();
+	}
+	return coordinateDir;
+}
+
+void StelFileMgr::setCoordinateDir(const QString& newDir)
+{
+	QFileInfo userDirFI(newDir);
+	if (userDirFI.exists()) {
+		coordinateDir = userDirFI.filePath();
+
+		// Save to configuration file
+		QSettings* settings = StelApp::getInstance().getSettings();
+		settings->setValue(COORDINATE_DIR_KEY, coordinateDir);
+		settings->sync();
+	}
+}
+
 QString StelFileMgr::getObsListDir()
 {
 	return obsListDir;
@@ -462,6 +486,33 @@ QString StelFileMgr::getLocaleDir()
 	// (SS) 2025-10-19: allow Vsual Studio builds to find the translations path directory
 	// while keeping the original logic for other platforms/build systems.
 	QFileInfo localePath = QFileInfo(getInstallationDir() + "/translations");
+	if (localePath.exists())
+	{
+		return localePath.filePath();
+	}
+	else
+	{
+		// If not found, try to look in the standard build directory (useful for developer)
+		localePath = QFileInfo(QCoreApplication::applicationDirPath() + QString("/../translations"));
+		if (localePath.exists())
+		{
+			return localePath.filePath();
+		}
+		else
+		{
+			// Added by Kwantsin
+			localePath = QFileInfo(QCoreApplication::applicationDirPath() + QString("/../../translations"));
+			if (localePath.exists())
+			{
+				return localePath.filePath();
+			}
+			else {
+				qWarning() << "Could not determine locale directory";
+				return "";
+			}
+		}
+	}
+
 	if (localePath.exists()) return localePath.filePath();
 
 	// Try ../translations (Qt Creator layout)

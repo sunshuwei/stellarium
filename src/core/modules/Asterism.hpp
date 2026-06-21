@@ -44,6 +44,11 @@ class Asterism : public StelObject
 	friend class AsterismMgr;
 public:
 	static const QString ASTERISM_TYPE;
+
+	//! Set the narration text for the asterism
+	void setNarration(const QString &narration);
+	//! Get the narration text for the asterism
+	QString getNarration(const StelCore *core, const InfoStringGroup &flags) const override;
 private:
 	Asterism();
 	~Asterism() override;
@@ -149,17 +154,21 @@ private:
 	{
 		RayHelper,          //!< Ray helper
 		Asterism,           //!< An asterism with lines between HIP/Gaia stars
-		TelescopicAsterism, //!< An asterism with lines defined by J2000.0 coordinates
+		DarkAsterism,       //!< An asterism with lines defined by J2000.0 coordinates (dark asterism)
 	};
 	//! Type of asterism
 	Type typeOfAsterism = Type::Asterism;
 	bool flagAsterism; //!< True for genuine asterisms, false for ray helpers
 	//! List of stars forming the segments
 	std::vector<StelObjectP> asterism;
+	//! List of coordinates for dark asterisms (J2000.0 coordinates)
+	std::vector<Vec3d> darkAsterismCoordinates;
 	//! In case this describes a single-star asterism (i.e. just one line segment that starts and ends at the same star),
 	//! or we have a line segment with such single star somewhere within the asterism,
 	//! we will draw a circle with this opening radius.
 	double singleStarAsterismRadius;
+	//! Narration text for the asterism
+	QString narration;
 
 	SphericalCap boundingCap;
 

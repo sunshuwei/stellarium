@@ -394,15 +394,7 @@ bool ScmConstellationDialog::canConstellationBeSaved() const
 		return false;
 	}
 
-	// English name is required and whitespace-only is not allowed
-	if (constellationCulturalName.translated.trimmed().isEmpty())
-	{
-		maker->showUserErrorMessage(this->dialog, ui->titleBar->title(),
-		                            q_("Could not save: English name is empty"));
-		qDebug() << "SkyCultureMaker: Could not save: English name is empty";
-		return false;
-	}
-
+	// English name is no longer required - will auto-fill with default if empty
 	// It is okay for the constellationId to be empty, as long as the constellationPlaceholderId is set
 	QString finalId = constellationId.trimmed().isEmpty() ? constellationPlaceholderId : constellationId;
 	if (finalId.trimmed().isEmpty())
@@ -490,6 +482,12 @@ void ScmConstellationDialog::saveConstellation()
 		scm::ScmConstellation &constellation = culture->addConstellation(id, lines,
 		                                                                 isDarkConstellation);
 
+		// Auto-fill default English name if empty
+		if (constellationCulturalName.translated.trimmed().isEmpty())
+		{
+			constellationCulturalName.translated = "Unknown Constellation";
+		}
+		
 		constellation.setCulturalName(constellationCulturalName.trimmed());
 		constellation.setDescription(constellationDescription);
 		if (imageItem->isVisible() && imageItem->getArtwork().getHasArt())

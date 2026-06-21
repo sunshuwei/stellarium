@@ -22,6 +22,7 @@
 #include <QJsonArray>
 #include <QFont>
 #include <QFontMetrics>
+#include <limits>
 
 #include "StarMgr.hpp"
 #include "StelLocaleMgr.hpp"
@@ -40,7 +41,9 @@ StelSkyCultureSkyPartition::StelSkyCultureSkyPartition(const QJsonObject &json):
 	offset(0.0),
 	eclObl(0.0),
         offsetFromAries(0.0),
-        context()
+        context(),
+        labelLatitude(std::numeric_limits<double>::quiet_NaN()),
+        customOffset(std::numeric_limits<double>::quiet_NaN())
 {
 	// Parse defining centerline type
 	SkyLine::SKY_LINE_TYPE skylineType=SkyLine::ECLIPTIC_CULTURAL;
@@ -162,6 +165,18 @@ StelSkyCultureSkyPartition::StelSkyCultureSkyPartition(const QJsonObject &json):
 	}
 	Q_ASSERT(symbols.length() == names.length());
 
+	// Parse custom label latitude
+	if (json.contains("label_latitude") && json["label_latitude"].isDouble())
+	{
+		labelLatitude = json["label_latitude"].toDouble();
+	}
+
+	// Parse custom start offset (direct longitude offset)
+	if (json.contains("start_offset") && json["start_offset"].isDouble())
+	{
+		customOffset = json["start_offset"].toDouble();
+	}
+
 	if (json.contains("link"))
 	{
 		Q_ASSERT(linkStars.isEmpty());
@@ -208,8 +223,12 @@ void StelSkyCultureSkyPartition::draw(StelPainter& sPainter, const Vec3d &obsVel
 	const float yShift = vertFlipped ? -fontSize : 0.f;
 	const float screenScale = prj->getDevicePixelsPerPixel();
 
-	// If defined, find the necessary shift from single linkStar and offset
-	if (linkStars.length()==1)
+	// If defined, find the necessary shift from single linkStar and offset, or use custom offset
+	if (!std::isnan(customOffset))
+	{
+		offsetFromAries = customOffset;
+	}
+	else if (linkStars.length()==1)
 	{
 		const StelObjectP star=starMgr->searchHP(linkStars.first());
 		Vec3d pos=star->getEquinoxEquatorialPosAuto(core);
@@ -302,6 +321,14 @@ void StelSkyCultureSkyPartition::draw(StelPainter& sPainter, const Vec3d &obsVel
 	centerLine->setCulturalOffset(offsetFromAries);
 	centerLine->draw(sPainter, 1.f); // The second arg. is irrelevant, will be restored again in the caller...
 
+	// Helper function to get label latitude
+	auto getLabelLat = [this]() -> double {
+		if (!std::isnan(labelLatitude)) {
+			return labelLatitude * M_PI_180;
+		}
+		return (extent.at(0)<50. ? -extent.at(0)+0.2 : -10.) *M_PI_180;
+	};
+
 	// Symbols: At the beginning of the respective zone.
 	if (symbols.length() && linkStars.length()<2)
 	{
@@ -311,8 +338,7 @@ void StelSkyCultureSkyPartition::draw(StelPainter& sPainter, const Vec3d &obsVel
 			// To have tilted labels, we project a point 0.1deg from the actual label point and derive screen-based angle.
 			double lng  = (360./partitions[0]*i + offsetFromAries)*M_PI_180;
 			double lng1 = (360./partitions[0]*i + offsetFromAries + txtOffset)*M_PI_180;
-			// the displayed latitude is defined in the first LM.
-			double lat = (extent.at(0)<50. ? -extent.at(0)+0.2 : -10.) *M_PI_180;
+			double lat = getLabelLat();
 			Vec3d pos, pos1, scr, scr1;
 			StelUtils::spheToRect(lng, lat, pos);
 			StelUtils::spheToRect(lng1, lat, pos1);
@@ -338,7 +364,7 @@ void StelSkyCultureSkyPartition::draw(StelPainter& sPainter, const Vec3d &obsVel
 
 			//ra += 2.*M_PI_180; // push a bit into the mansion area. Problem: the narrow mansions...
 			double ra1 = ra+txtOffset*M_PI_180;
-			double dec1  = (extent.at(0)<50. ? -extent.at(0)+0.2 : -10.) *M_PI_180;
+			double dec1  = getLabelLat();
 			Vec3d pos, pos1, scr, scr1;
 			StelUtils::spheToRect(ra, dec1, pos);
 			StelUtils::spheToRect(ra1, dec1, pos1);
@@ -361,7 +387,7 @@ void StelSkyCultureSkyPartition::draw(StelPainter& sPainter, const Vec3d &obsVel
 			// To have tilted labels, we project a point 0.1deg from the actual label point and derive screen-based angle.
 			const double lng  = (360./partitions[0]*(double(i)+0.5) + offsetFromAries)*M_PI_180;
 			const double lng1 = (360./partitions[0]*(double(i)+0.5) + offsetFromAries+txtOffset)*M_PI_180;
-			const double lat  = (extent.at(0)<50. ? -extent.at(0)+0.2 : -10.) *M_PI_180;
+			const double lat  = getLabelLat();
 			Vec3d pos, pos1, scr, scr1;
 			StelUtils::spheToRect(lng, lat, pos);
 			StelUtils::spheToRect(lng1, lat, pos1);
@@ -387,7 +413,7 @@ void StelSkyCultureSkyPartition::draw(StelPainter& sPainter, const Vec3d &obsVel
 			StelUtils::rectToSphe(&ra, &dec, mid);
 
 			const double ra1 = ra+txtOffset*M_PI_180;
-			const double dec1  = (extent.at(0)<50. ? -extent.at(0)+0.2 : -10.) *M_PI_180;
+			const double dec1  = getLabelLat();
 			Vec3d pos, pos1, scr, scr1;
 			StelUtils::spheToRect(ra, dec1, pos);
 			StelUtils::spheToRect(ra1, dec1, pos1);
@@ -586,34 +612,61 @@ QString StelSkyCultureSkyPartition::getLongitudeCoordinate(Vec3d &eqPos, bool na
 	}
 	else
 	{
-		// We only know Chinese mansions here. Provide Mansion symbol+name. So far I don't know any further subdivision.
-		static StarMgr *starMgr=GETSTELMODULE(StarMgr);
-		static StelCore *core=StelApp::getInstance().getCore();
-
+		// Equatorial coordinate system
 		const double raDeg=StelUtils::fmodpos(ra*M_180_PI, 360.); // object RA of date, degrees
-		const Vec3d starPos0=starMgr->searchHP(linkStars.at(0))->getEquinoxEquatorialPos(core);
-		double raStar0, decStar0;
-		StelUtils::rectToSphe(&raStar0, &decStar0, starPos0); // start of mansion 0.
-		const double raDeg0=StelUtils::fmodpos(raStar0*M_180_PI, 360.); // start RA of mansion 0, date, degrees
-		const double lngInMansions=StelUtils::fmodpos(raDeg-raDeg0, 360.); // object's 'longitude' counted from the start of mansion 0 along the equator, degrees.
 
-		int mansion=0;
-		while (mansion<linkStars.length()-1)
+		if (!linkStars.isEmpty())
 		{
-			int nextStarIdx=StelUtils::imod(mansion+1, 28);
-			Vec3d starPos=starMgr->searchHP(linkStars.at(nextStarIdx))->getEquinoxEquatorialPos(core);
-			double raStar, decStar;
-			StelUtils::rectToSphe(&raStar, &decStar, starPos); // start of next mansion.
-			double lngNxtMansion=StelUtils::fmodpos(raStar*M_180_PI-raDeg0, 360.);
-			if (lngNxtMansion>lngInMansions)
-				break;
-			++mansion;
-		}
-		QString mnName=scMgr->createCulturalLabel(names.at(mansion), scMgr->getScreenLabelStyle(), names.at(mansion).getOneIdentifier(narration));
+			// Chinese mansions with defining stars
+			static StarMgr *starMgr=GETSTELMODULE(StarMgr);
+			static StelCore *core=StelApp::getInstance().getCore();
 
-		if (narration)
-			return names.at(mansion).getOneIdentifier(narration);
+			const Vec3d starPos0=starMgr->searchHP(linkStars.at(0))->getEquinoxEquatorialPos(core);
+			double raStar0, decStar0;
+			StelUtils::rectToSphe(&raStar0, &decStar0, starPos0); // start of mansion 0.
+			const double raDeg0=StelUtils::fmodpos(raStar0*M_180_PI, 360.); // start RA of mansion 0, date, degrees
+			const double lngInMansions=StelUtils::fmodpos(raDeg-raDeg0, 360.); // object's 'longitude' counted from the start of mansion 0 along the equator, degrees.
+
+			int mansion=0;
+			while (mansion<linkStars.length()-1)
+			{
+				int nextStarIdx=StelUtils::imod(mansion+1, 28);
+				Vec3d starPos=starMgr->searchHP(linkStars.at(nextStarIdx))->getEquinoxEquatorialPos(core);
+				double raStar, decStar;
+				StelUtils::rectToSphe(&raStar, &decStar, starPos); // start of next mansion.
+				double lngNxtMansion=StelUtils::fmodpos(raStar*M_180_PI-raDeg0, 360.);
+				if (lngNxtMansion>lngInMansions)
+					break;
+				++mansion;
+			}
+			QString mnName=scMgr->createCulturalLabel(names.at(mansion), scMgr->getScreenLabelStyle(), names.at(mansion).getOneIdentifier(narration));
+
+			if (narration)
+				return names.at(mansion).getOneIdentifier(narration);
+			else
+				return QString("%1 - %2").arg(symbols.at(mansion), mnName);
+		}
+		else if (!partitions.isEmpty())
+		{
+			// Equatorial system defined by partitions (e.g., Chinese Jupiter Stations)
+			const double widthOfSign=(360./partitions.at(0));
+			int sign=int(floor(raDeg/widthOfSign));
+			sign=StelUtils::imod(sign, partitions.at(0)); // ensure within range
+			
+			if (narration)
+				return names.at(sign).getOneIdentifier(narration);
+			else
+				return QString("%1 - %2").arg(symbols.at(sign), names.at(sign).native);
+		}
 		else
-			return QString("%1 - %2").arg(symbols.at(mansion), mnName);
+		{
+			static bool reported=false;
+			if (!reported)
+			{
+				qWarning() << "No defining stars or partitions found for equatorial sky partition " << name.translated;
+				reported=true;
+			}
+			return QString();
+		}
 	}
 }

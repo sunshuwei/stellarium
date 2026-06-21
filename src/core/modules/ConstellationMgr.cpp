@@ -1792,6 +1792,152 @@ QString ConstellationMgr::getLunarSystemCoordinate(Vec3d eqNow, bool narration) 
 		return QString();
 }
 
+//! Check if current skyculture has Chinese-style lunar system (chinese, korean, japanese)
+bool ConstellationMgr::isChineseLunarSystem() const
+{
+	if (!lunarSystem)
+		return false;
+	
+	// Check if lunar system uses defining_stars (linkStars) - characteristic of Chinese system
+	if (lunarSystem->getLinkStars().isEmpty())
+		return false;
+	
+	// Check if current skyculture ID indicates Chinese-style culture
+	QString cultureId = StelApp::getInstance().getSkyCultureMgr().getCurrentSkyCultureID();
+	if (cultureId.contains("chinese", Qt::CaseInsensitive) ||
+	    cultureId.contains("korean", Qt::CaseInsensitive) ||
+	    cultureId.contains("japanese", Qt::CaseInsensitive))
+		return true;
+	
+	return false;
+}
+
+//! Return Chinese-style lunar mansion coordinate with entry degree and polar distance
+QString ConstellationMgr::getChineseLunarMansionCoordinate(Vec3d eqNow) const
+{
+	if (!lunarSystem || lunarSystem->getLinkStars().isEmpty())
+		return QString();
+	
+	static StarMgr *starMgr=GETSTELMODULE(StarMgr);
+	static StelCore *core=StelApp::getInstance().getCore();
+	static StelSkyCultureMgr *scMgr=GETSTELMODULE(StelSkyCultureMgr);
+	
+	// Get object's equatorial coordinates
+	double ra, dec;
+	StelUtils::rectToSphe(&ra, &dec, eqNow);
+	const double raDeg = StelUtils::fmodpos(ra * M_180_PI, 360.);
+	const double decDeg = dec * M_180_PI;
+	
+	// Get the first defining star (start of mansion 0)
+	const QList<int> linkStars = lunarSystem->getLinkStars();
+	const Vec3d starPos0 = starMgr->searchHP(linkStars.at(0))->getEquinoxEquatorialPos(core);
+	double raStar0, decStar0;
+	StelUtils::rectToSphe(&raStar0, &decStar0, starPos0);
+	const double raDeg0 = StelUtils::fmodpos(raStar0 * M_180_PI, 360.);
+	
+	// Find which mansion the object is in
+	int mansion = 0;
+	while (mansion < linkStars.length() - 1)
+	{
+		int nextStarIdx = StelUtils::imod(mansion + 1, linkStars.length());
+		Vec3d starPos = starMgr->searchHP(linkStars.at(nextStarIdx))->getEquinoxEquatorialPos(core);
+		double raStar, decStar;
+		StelUtils::rectToSphe(&raStar, &decStar, starPos);
+		double lngNxtMansion = StelUtils::fmodpos(raStar * M_180_PI - raDeg0, 360.);
+		double lngInMansions = StelUtils::fmodpos(raDeg - raDeg0, 360.);
+		if (lngNxtMansion > lngInMansions)
+			break;
+		++mansion;
+	}
+	
+	// Get the defining star for current mansion
+	Vec3d mansionStarPos = starMgr->searchHP(linkStars.at(mansion))->getEquinoxEquatorialPos(core);
+	double raMansionStar, decMansionStar;
+	StelUtils::rectToSphe(&raMansionStar, &decMansionStar, mansionStarPos);
+	const double raMansionDeg = StelUtils::fmodpos(raMansionStar * M_180_PI, 360.);
+	
+	// Calculate entry degree (Ruxiudu): RA difference from mansion's defining star
+	// Convert to Chinese degrees (365.25/360)
+	double entryDegreeRA = StelUtils::fmodpos(raDeg - raMansionDeg, 360.);
+	// Handle wrap-around for last mansion
+	if (mansion == linkStars.length() - 1)
+	{
+		// For the last mansion, entry degree is measured from its defining star to the first mansion's defining star
+		entryDegreeRA = StelUtils::fmodpos(raDeg - raMansionDeg, 360.);
+	}
+	double entryDegreeChinese = entryDegreeRA * 365.25 / 360.0;
+	
+	// 中国古代分数显示方式：小数部分转换为十二分之分数
+	// 35.50° → 35+6/12 (35.50°)
+	// 特殊处理：11/12 进位显示为 36-1/12
+	int integerPartEntry = static_cast<int>(floor(entryDegreeChinese));
+	double fractionalPartEntry = entryDegreeChinese - integerPartEntry;
+	int entryMinute = static_cast<int>(round(fractionalPartEntry * 12));
+	
+	QString entryDegreeFraction;
+	if (entryMinute == 0)
+	{
+		// 整数度，无分数部分
+		entryDegreeFraction = QString("%1°").arg(integerPartEntry);
+	}
+	else if (entryMinute == 12)
+	{
+		// 进位到下一度
+		entryDegreeFraction = QString("%1°").arg(integerPartEntry + 1);
+	}
+	else if (entryMinute == 11)
+	{
+		// 特殊显示：35+11/12 → 36-1/12
+		entryDegreeFraction = QString("%1-1/12").arg(QString::number(integerPartEntry + 1));
+	}
+	else
+	{
+		// 正常分数显示：35+6/12
+		entryDegreeFraction = QString("%1+%2/12").arg(QString::number(integerPartEntry)).arg(QString::number(entryMinute));
+	}
+
+	// Calculate polar distance (Qujidu): 90 - declination, in Chinese degrees
+	double polarDistanceDeg = 90.0 - decDeg;
+	double polarDistanceChinese = polarDistanceDeg * 365.25 / 360.0;
+
+	int integerPartPolar = static_cast<int>(floor(polarDistanceChinese));
+	double fractionalPartPolar = polarDistanceChinese - integerPartPolar;
+	int polarMinute = static_cast<int>(round(fractionalPartPolar * 12));
+	
+	QString polarDistanceFraction;
+	if (polarMinute == 0)
+	{
+		// 整数度，无分数部分
+		polarDistanceFraction = QString("%1°").arg(integerPartPolar);
+	}
+	else if (polarMinute == 12)
+	{
+		// 进位到下一度
+		polarDistanceFraction = QString("%1°").arg(integerPartPolar + 1);
+	}
+	else if (polarMinute == 11)
+	{
+		// 特殊显示：35+11/12 → 36-1/12
+		polarDistanceFraction = QString("%1-1/12").arg(QString::number(integerPartPolar + 1));
+	}
+	else
+	{
+		// 正常分数显示：35+6/12
+		polarDistanceFraction = QString("%1+%2/12").arg(QString::number(integerPartPolar)).arg(QString::number(polarMinute));
+	}
+	
+	// Get mansion name
+	const QList<StelObject::CulturalName> names = lunarSystem->getNames();
+	QString mansionName = scMgr->createCulturalLabel(names.at(mansion), scMgr->getScreenLabelStyle(), QString());
+	
+	// Format: "宿名 入宿度分数, 去极度分数, (宿名 十进制入宿度, 十进制去极度)"
+	return QString("%1 %2, %3, (%1 %4°, %5°)").arg(mansionName,
+		entryDegreeFraction,
+		polarDistanceFraction,
+		QString::number(entryDegreeChinese, 'f', 2),
+		QString::number(polarDistanceChinese, 'f', 2));
+}
+
 StelObjectP ConstellationMgr::searchByNameI18n(const QString& nameI18n) const
 {
 	QString nameI18nUpper = nameI18n.toUpper();

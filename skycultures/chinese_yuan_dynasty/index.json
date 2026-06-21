@@ -3,6 +3,8 @@
   "region": "Eastern Asia",
   "classification": ["historical"],
   "fallback_to_international_names": false,
+  "beginTime": 1271,
+  "endTime": 1368,
   "asterisms": [
     {
       "id": "AST chinese_yuan_dynasty P11",
@@ -356,9 +358,9 @@
       "common_name": {"english": "Patriarchal Clan Stars", "native": "宗星", "pronounce": "Zōng Xīng", "IPA": "t͡sʊŋ˥.ɕiŋ˥"}
     },
     {
-      "id": "CON chinese_yuan_dynasty H08",
+      "id1": "CON chinese_yuan_dynasty H08",
       "lines": [[88267, 88899]],
-      "label_positions": [[]],
+      "label_positions": [[18.09, 20.4]],
       "comment": "Bodu and Tusi completely overlap. In the Stellarium implementation, only Tusi is displayed, while *Bodu* (Textile Ruler) is not shown.",
       "common_name": {"english": "Textile Ruler", "native": "帛度", "pronounce": "Bó Dù", "IPA": "pwo˧˥.tu˥˩"}
     },

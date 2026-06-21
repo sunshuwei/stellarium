@@ -143,6 +143,11 @@ public:
 	QString getZodiacCoordinate(Vec3d eqNow, bool narration=false) const;
 	//! @return lunar station in the culture's Lunar system
 	QString getLunarSystemCoordinate(Vec3d eqNow, bool narration=false) const;
+	//! @return true if current skyculture has Chinese-style lunar system (chinese, korean, japanese)
+	bool isChineseLunarSystem() const;
+	//! @return Chinese-style lunar mansion coordinate with entry degree and polar distance
+	//! Format: "Chinese_lunar_mansion Ruxiudu Qujidu" (using Chinese degrees: 365.25/360)
+	QString getChineseLunarMansionCoordinate(Vec3d eqNow) const;
 
 	//! @return the translated name of IAU constellation cst
 	static QString getIAUconstellationName(const QString &cst);

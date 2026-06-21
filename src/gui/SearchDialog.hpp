@@ -32,6 +32,7 @@
 #include "StelObjectType.hpp"
 #include "SimbadSearcher.hpp"
 #include "VecMath.hpp"
+#include "qvalidator.h" // Added by Kwantsin
 
 // pre declaration of the ui class
 class Ui_searchDialogForm;
@@ -290,6 +291,27 @@ private slots:
 	//! Setting coordinates of the center of screen in spinboxes (following axes of current coordinate system)
 	void setCenterOfScreenCoordinates();
 
+	//! Select the local coordinate data JSON file
+	void selectCoordinateDir();
+	void browseForCoordinateDir();
+
+	//! Load epoch
+	double loadEpoch(QString epoch);
+
+	//! Read coordinate data file, process and visualize
+	void on_importCoordinate_clicked();
+	void on_clearCoordinateButton_clicked();  // Added by Kwantsin
+	void on_loadSelectedClearButton_clicked();
+	void on_loadSelectedButton_clicked();
+	void loadStarCatalogFiles();  // Added by Kwantsin
+	void selectAllFiles();  // Added by Kwantsin
+	void deselectAllFiles();  // Added by Kwantsin
+	void loadSelectedFiles();  // Added by Kwantsin
+	void importCoordinate(const QString& filepath);
+	Vec3f hexColorToVec3f(const QString& hexColor, bool* success);
+	double stringToDouble(QString input, QValidator::State* state);
+	Vec3d manualPositionChangedForData(double spinLong, double spinLat, QString coordinateSystem);
+
 private:
 	bool simbadSearchEnabled() const {return useSimbad;}
 	int  getSimbadQueryDist () const { return simbadDist;}
@@ -307,6 +329,7 @@ private:
 	class QSettings* conf;
 	QStringListModel* listModel;
 	QSortFilterProxyModel *proxyModel;
+	QStringListModel* starCatalogModel;  // Added by Kwantsin
 
 	//! Used when substituting text with a Greek letter.
 	bool flagHasSelectedText;
