@@ -3,6 +3,18 @@
   "region": "Northern Asia",
   "classification": ["historical"],
   "fallback_to_international_names": false,
+  "asterisms": [
+    {
+      "id": "AST mangbo 001",
+      "lines": [[17702, 17573, 17531, 17489, 17499, 17608, 17702, 17847]],
+      "common_name": {"english": "七女星", "native": ""}
+    },
+    {
+      "id": "AST mangbo 002",
+      "lines": [[25428, 25984, 29696, 28380, 27673, 28360, 24608, 23767, 23453, 21476, 22678, 23015, 24727, 25428]],
+      "common_name": {"english": "神鹰", "native": ""}
+    }
+  ],
   "constellations": [
     {
       "id": "CON mangbo 001",
