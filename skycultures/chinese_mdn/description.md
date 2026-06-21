@@ -188,11 +188,14 @@
 
 ##### Eight Kinds of Crops
 
-八谷8星，在*五车*北,*内阶*前。八种粮食作物，即稻、黍、大麦、小麦、大豆、小豆、粟、麻。用于占卜农耕收获。
+八谷8星，在*五车*北,*内阶*前。
+八种粮食作物，即稻、黍、大麦、小麦、大豆、小豆、粟、麻。
+用于占卜农耕收获。
 
 ##### Inner Steps
 
-内阶6星，在*文昌*北，天帝上下行走的阶梯，连接*紫微垣*后门与*文昌*。
+内阶6星，在*文昌*北，
+天帝上下行走的阶梯，连接*紫微垣*与*文昌*。
 
 ##### Administrative Center
 
@@ -912,7 +915,7 @@ Basket for Mulberry Leaves (Chinese: 扶筐, Pinyin: Fú Kuāng) consists of 7 s
 
 [**天溷**](constellation:15C)7星在[**外屏**](constellation:15B)南。为甘氏外官，属[**奎宿**](constellation:15A)。<br>
 **天溷**是天上的猪圈和厕所。<br>
-溷为厕所与猪圈相连的建筑形式，此类结构在古代为积肥所需。
+“溷”为厕所与猪圈相连的建筑形式，此类结构在古代为积肥所需。
 
 ##### Master of Constructions
 
