@@ -1112,8 +1112,17 @@ QString StelObject::getCommonInfoString(const StelCore *core, const InfoStringGr
 		if (cMgr->hasLunarSystem() && (currentPlanet==L1S("Earth")))
 		{
 			QString lunarSystemLabel = cMgr->getLunarSystemName();
-			QString lunarSystemPos = (fuzzyEquals(eqNow.normSquared(),0.) ? "---" : cMgr->getLunarSystemCoordinate(eqNow));
-			res += QString("%1: %2<br/>").arg(lunarSystemLabel, lunarSystemPos);
+			// For Chinese-style lunar system, show entry degree and polar distance
+			if (cMgr->isChineseLunarSystem())
+			{
+				QString lunarMansionPos = (fuzzyEquals(eqNow.normSquared(),0.) ? "---" : cMgr->getChineseLunarMansionCoordinate(eqNow));
+				res += QString("%1: %2<br/>").arg(lunarSystemLabel, lunarMansionPos);
+			}
+			else
+			{
+				QString lunarSystemPos = (fuzzyEquals(eqNow.normSquared(),0.) ? "---" : cMgr->getLunarSystemCoordinate(eqNow));
+				res += QString("%1: %2<br/>").arg(lunarSystemLabel, lunarSystemPos);
+			}
 		}
 	}
 

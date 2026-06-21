@@ -157,6 +157,10 @@ public:
 	//! For Lunar systems, it is usually only STATION or, with partitions, STATION:part
 	//! with @param narration true, create a speech-friendly longer string.
 	QString getLongitudeCoordinate(Vec3d &eqPos, bool narration=false) const;
+	//! @return the list of HIP numbers defining start of mansions (Chinese style)
+	QList<int> getLinkStars() const { return linkStars; }
+	//! @return the list of names for the partitions
+	QList<StelObject::CulturalName> getNames() const { return names; }
 
 private:
 	void drawCap(StelPainter &sPainter, const SphericalCap& viewPortSphericalCap, double latDeg) const;
